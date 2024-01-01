@@ -28,7 +28,11 @@ Variables (colors, text, spacing, etc.)
 */
 
 :root {
-	/* Colors} */
+	/* Color Definitions */
+	--color-white: #fff;
+
+	/* Color Assignment */
+	--body-background-color: var(--color-white);
 
 	/* Text */
 
@@ -46,9 +50,11 @@ Global Styles (html, body, text, links, etc.)
 */
 
 html {
+	font-size: 16px;
 }
 
 body {
+	background-color: var(--body-background-color);
 }
 
 /* Images */
@@ -107,6 +113,6 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 }
 
 /* Desktop Only */
-@media scren (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
 	/* Add styles that apply specifically to desktop */
 }
