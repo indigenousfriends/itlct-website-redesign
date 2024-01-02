@@ -93,26 +93,18 @@ Global Component Styles (buttons, forms, etc.)
 /* 
 ===================================
 Media Queries (overriding styles for different screen sizes)
-
-Note: Here we are using a mobile-first approach, so we start with the smallest screen size and work our way up.
-Start by writing styles for the mobile version of the design on the lines above.
-Anything that needs to change for larger screens should be added to the media queries below.
-
 Feel free to change the min/max-width values to whatever you need. Use variables.
 ===================================
 */
 
+/* Tablet & Smaller */
+@media (max-width: 768px) {
+}
+
 /* Tablet Only */
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-	/* Add styles that only apply to tablet. These are usually fixes to get resposnivenes right */
+@media (min-width: 768px) and (max-width: 1024px) {
 }
 
-/* Tablet and Larger */
-@media screen and (min-width: 768px) {
-	/* Add styles that apply to table and desktop */
-}
-
-/* Desktop Only */
-@media screen and (min-width: 1024px) {
-	/* Add styles that apply specifically to desktop */
+/* Phone Only */
+@media (max-width: 480px) {
 }
