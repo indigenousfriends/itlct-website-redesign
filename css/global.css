@@ -1,7 +1,110 @@
-/* Global Styles */
+/*
+===================================
+===================================
+Global styles
 
-/* Variables */
+- The is the file for CSS that applies to the entire site.
+- Variables, resets, global styles, etc. should be added here.
+- This file should be linked to every page on the site.
+- We can also add global component styles here (buttons, forms, etc.)
+===================================
+===================================
+*/
 
-/* Custom CSS */
+/* 
+===================================
+Resets (box-sizing, normalize, etc.) 
+===================================
+*/
 
-/* Media Queries */
+* {
+	box-sizing: border-box;
+}
+
+/* 
+===================================
+Variables (colors, text, spacing, etc.)
+===================================
+*/
+
+:root {
+	/* Color Definitions */
+	--color-white: #fff;
+
+	/* Color Assignment */
+	--body-background-color: var(--color-white);
+
+	/* Text */
+
+	/* Spacing */
+
+	/* Wrappers */
+
+	/* Media Queries */
+}
+
+/* 
+===================================
+Global Styles (html, body, text, links, etc.)
+===================================
+*/
+
+html {
+	font-size: 16px;
+}
+
+body {
+	background-color: var(--body-background-color);
+}
+
+/* Images */
+img {
+	max-width: 100%;
+}
+
+/* Text */
+
+/* Links */
+
+/* Lists */
+
+/* Forms */
+
+/* 
+===================================
+Wrappers (container, flexbox, etc.)
+===================================
+*/
+
+/* Container */
+
+/* Wrappers */
+
+/* 
+===================================
+Global Component Styles (buttons, forms, etc.)
+===================================
+*/
+
+/* Buttons */
+
+/* Forms */
+
+/* 
+===================================
+Media Queries (overriding styles for different screen sizes)
+Feel free to change the min/max-width values to whatever you need. Use variables.
+===================================
+*/
+
+/* Tablet & Smaller */
+@media (max-width: 768px) {
+}
+
+/* Tablet Only */
+@media (min-width: 768px) and (max-width: 1024px) {
+}
+
+/* Phone Only */
+@media (max-width: 480px) {
+}
