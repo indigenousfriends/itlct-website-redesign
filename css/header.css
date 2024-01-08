@@ -41,7 +41,7 @@ display:block;
 .logo-icon {
 	width: 75px;
 }
-
+ 
 /* top bar section */
 .top-bar {
 	background-color: #1f1d1d;
@@ -67,13 +67,51 @@ button {
 	padding: 11px 92px;
 	border: 2px solid #B91515;
 	border-radius: 10px;
+	cursor: pointer;
 }
 
 button:hover {
 	background-color: transparent;
 }
 
+/* mobile menu button style */
+.mobile-menu {
+	background-color: transparent;
+	color: #fff;
+	border: 0px;
+	
+}
 
+.mobile-menu svg{
+	fill: #fff;
+} 
+/* menu container */
+.menu-container {
+	position: relative;
+
+}
+
+/* nav-links style */
+.nav-links {
+	list-style-type: none;
+	margin: 0;
+	display: flex;
+	gap: 20px;
+	flex-direction: column;
+	position: absolute;
+	top: 70px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	z-index: 10;
+	background-color: #1f1d1d;
+}
+
+.nav-links a{
+	color: #fff;
+	text-decoration: none;
+
+}
 /* 
 ===================================
 Media Queries (overriding styles for different screen sizes)
