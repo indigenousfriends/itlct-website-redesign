@@ -173,3 +173,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 /* Desktop & Larger */
 @media screen and (min-width: 1024px) {
 }
+
+
+/* https://bholmes.dev/blog/alternative-to-css-variable-media-queries/
+Well, it comes down to what the :root element actually means: the root element of the HTML document. But conceptually, media queries aren't attached to HTML elements at all. These declarations are processed while your CSS is being parsed, so it won't know to look to the :root and pull in the variable values. */
