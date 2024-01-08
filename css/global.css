@@ -74,7 +74,7 @@ Variables (colors, text, spacing, etc.)
 	--font46: 2.875rem;
 	--font56: 3.5rem;
 
-	/* Spacing */
+	/* Line Height */
 	--line-height20: 1.25rem;
 	--line-height26: 1.625rem;
 	--line-height28: 1.75rem;
@@ -83,14 +83,20 @@ Variables (colors, text, spacing, etc.)
 	--line-height50: 3.125rem;
 	--line-height58: 3.625rem;
 
+	/* Spacing */
 	--spacing10: 10px;
 	--spacing20: 20px;
 	--spacing40: 40px;
 	--spacing65: 65px;
 	--spacing80: 80px;
 	--spacing84: 84px;
+	--spacing100: 100px;
+	--spacing164: 164px;
+	--spacing185: 185px;
+	--spacing213: 213px;
 
 	--spacing-footer: 50px 160px;
+	--spacing-header-button: 125px 279px;
 
 	/* Wrappers */
 	--desktop-wrapper-width: 90%;
@@ -161,10 +167,9 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 }
 
 /* Tablet Only */
-@media screen and (min-width:768px) and (max-width:1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
 }
 
 /* Desktop & Larger */
 @media screen and (min-width: 1024px) {
 }
-
