@@ -101,7 +101,15 @@ Global Component Styles (buttons, forms, etc.)
 */
 
 /* Buttons */
-
+button {
+	border-radius: 10px;
+	background: #B91515;
+	padding: 10px 40px;
+	color: #FFFFFF;
+	border: none;
+	width: 187px;
+	margin: 20px;
+}
 /* Forms */
 
 /* FOOTER STYLES */
@@ -159,6 +167,52 @@ footer {
 	backdrop-filter: blur(3px);
 	z-index: 1;
 }
+
+.btn-la {
+	background-color: transparent;
+	color: #FFFFFF;
+	border: none;
+}
+
+/* FORM Styles */
+.footer-main,
+.footer-logo-btn {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+form {
+	text-align: center;
+}
+/* .text-input {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+} */
+.text-input input {
+	height: 50px;
+	/* is the width ok? */
+	min-width: 320px;
+	border-radius: 10px;
+	
+}
+
+/* bottom links */
+.bottom-links {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.social-svgs {
+	display: flex;
+	flex-direction: row;
+	column-gap: 20px;
+}
+
+
 
 /* 
 ===================================
