@@ -30,11 +30,43 @@ Variables (colors, text, spacing, etc.)
 :root {
 	/* Color Definitions */
 	--color-white: #fff;
+	--color-amaranth: #B91515;
+	--color-teal: #007A80;
+	--color-cybergrape: #6C4681;
+	--color-onyx: #1F1D1D;
+	--color-yaleblue: #184F85;
+	--color-hotpink: #FA6CB7;
+	--color-citrine: #D3C53F;
+	--color-citron: #92A32D;
+	--color-copper:#B37122;
+	--color-bluepurple:linear-gradient(180deg, #6C4681 -5.71%, #184F85 103.44%);
+	--color-yellowgreen:linear-gradient(180deg, #D3C53F 0%, #D3C53F 26.04%, #92A32D 58.85%, #B37122 100%);
 
 	/* Color Assignment */
 	--body-background-color: var(--color-white);
+--button1-color: var(--color-white);
+--button1-hover-border:var(--color-white);
+--button2-color: var(--color-amaranth);
+--button2-hover: var(--color-white);
+--button3-color:var(--color-amaranth);
+--button3-hover-border: var(--color-amaranth);
 
 	/* Text */
+	--headings-text:'Josefin Sans',sans-serif;
+	--body-text:'Josefin Sans',sans-serif;
+	--button-text: 'Josefin Sans',sans-serif;
+
+	--font-weight-regular: 400;
+	--font-weight-medium: 500;
+	--font-weight-bold: 700;
+
+	--font56: 3.5rem;
+	--font46: 2.875rem;
+	--font36: 2.25rem;
+--font28:1.75rem;
+--font24:1.5rem;
+--font21:1.313rem;
+--font16:1rem;
 
 	/* Spacing */
 
