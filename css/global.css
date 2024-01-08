@@ -30,56 +30,76 @@ Variables (colors, text, spacing, etc.)
 :root {
 	/* Color Definitions */
 	--color-white: #fff;
-	--color-amaranth: #B91515;
-	--color-teal: #007A80;
-	--color-cybergrape: #6C4681;
-	--color-onyx: #1F1D1D;
-	--color-yaleblue: #184F85;
-	--color-hotpink: #FA6CB7;
-	--color-citrine: #D3C53F;
-	--color-citron: #92A32D;
-	--color-copper:#B37122;
-	--color-bluepurple:linear-gradient(180deg, #6C4681 -5.71%, #184F85 103.44%);
-	--color-yellowgreen:linear-gradient(180deg, #D3C53F 0%, #D3C53F 26.04%, #92A32D 58.85%, #B37122 100%);
+	--color-amaranth: #b91515;
+	--color-teal: #007a80;
+	--color-cybergrape: #6c4681;
+	--color-onyx: #1f1d1d;
+	--color-yaleblue: #184f85;
+	--color-hotpink: #fa6cb7;
+	--color-citrine: #d3c53f;
+	--color-citron: #92a32d;
+	--color-copper: #b37122;
+	--color-bluepurple: linear-gradient(180deg, #6c4681 -5.71%, #184f85 103.44%);
+	--color-yellowgreen: linear-gradient(
+		180deg,
+		#d3c53f 0%,
+		#d3c53f 26.04%,
+		#92a32d 58.85%,
+		#b37122 100%
+	);
 
 	/* Color Assignment */
 	--body-background-color: var(--color-white);
---button1-color: var(--color-white);
---button1-hover-border:var(--color-white);
---button2-color: var(--color-amaranth);
---button2-hover: var(--color-white);
---button3-color:var(--color-amaranth);
---button3-hover-border: var(--color-amaranth);
+	--button1-color: var(--color-white);
+	--button1-hover-border: var(--color-white);
+	--button2-color: var(--color-amaranth);
+	--button2-hover: var(--color-white);
+	--button3-color: var(--color-amaranth);
+	--button3-hover-border: var(--color-amaranth);
 
 	/* Text */
-	--headings-text:'Josefin Sans',sans-serif;
-	--body-text:'Josefin Sans',sans-serif;
-	--button-text: 'Josefin Sans',sans-serif;
+	--headings-text: "Josefin Sans", sans-serif;
+	--body-text: "Josefin Sans", sans-serif;
+	--button-text: "Josefin Sans", sans-serif;
 
 	--font-weight-regular: 400;
 	--font-weight-medium: 500;
 	--font-weight-bold: 700;
 
-	--font56: 3.5rem;
-	--font46: 2.875rem;
+	--font16: 1rem;
+	--font21: 1.313rem;
+	--font24: 1.5rem;
+	--font28: 1.75rem;
 	--font36: 2.25rem;
---font28:1.75rem;
---font24:1.5rem;
---font21:1.313rem;
---font16:1rem;
+	--font46: 2.875rem;
+	--font56: 3.5rem;
 
 	/* Spacing */
---line-height58:3.625rem;
---line-height26:1.625rem;
---line-height40:2.5rem;
---line-height50:3.125rem;
---line-height32:2rem;
---line-height20:1.25rem;
---line-height28:1.75rem;
+	--line-height20: 1.25rem;
+	--line-height26: 1.625rem;
+	--line-height28: 1.75rem;
+	--line-height32: 2rem;
+	--line-height40: 2.5rem;
+	--line-height50: 3.125rem;
+	--line-height58: 3.625rem;
+
+	--spacing10: 10px;
+	--spacing20: 20px;
+	--spacing40: 40px;
+	--spacing65: 65px;
+	--spacing80: 80px;
+	--spacing84: 84px;
+
+	--spacing-footer: 50px 160px;
 
 	/* Wrappers */
+	--desktop-wrapper-width: 90%;
+	--mobile-wrapper-width: 95%;
 
 	/* Media Queries */
+	/* --media-mobile-max:480px;
+ --media-tablet-min:768px;
+ --media-desktop-min:1024px; */
 }
 
 /* 
@@ -136,14 +156,15 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 ===================================
 */
 
-/* Tablet & Smaller */
-@media (max-width: 768px) {
+/* Tablet & Larger */
+@media screen and (min-width: 768px) {
 }
 
 /* Tablet Only */
-@media (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width:768px) and (max-width:1024px) {
 }
 
-/* Phone Only */
-@media (max-width: 480px) {
+/* Desktop & Larger */
+@media screen and (min-width: 1024px) {
 }
+
