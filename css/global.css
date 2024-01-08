@@ -120,6 +120,7 @@ html {
 
 body {
 	background-color: var(--body-background-color);
+	font-family: var(--headings-text);
 }
 
 /* Images */
@@ -128,6 +129,54 @@ img {
 }
 
 /* Text */
+h1 {
+	font-size: var(--font56);
+	font-weight: var(--font-weight-bold);
+	line-height: var(--line-height58);
+	color: var(--color-white);
+}
+
+h2 {
+	font-size: var(--font46);
+	font-weight: var(--font-weight-bold);
+	line-height: var(--line-height50);
+	color: var(--color-onyx);
+}
+
+h3 {
+	font-size: var(--font36);
+	font-weight: var(--font-weight-bold);
+	line-height: var(--line-height40);
+	color: var(--color-white);
+}
+
+h4 {
+	font-size: var(--font28);
+	font-weight: var(--font-weight-bold);
+	line-height: var(--line-height32);
+	color: var(--color-white);
+}
+
+h5 {
+	font-size: var(--font24);
+	font-weight: var(--font-weight-medium);
+	line-height: var(--line-height28);
+	color: var(--color-onyx);
+}
+
+p {
+	font-size: var(--font16);
+	font-weight: var(--font-weight-regular);
+	line-height: var(--line-height20);
+	color: var(--color-white);
+}
+
+.body1 {
+	font-size: var(--font21);
+	font-weight: var(--font-weight-regular);
+	line-height: var(--line-height26);
+	color: var(--color-onyx);
+}
 
 /* Links */
 
@@ -173,7 +222,6 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 /* Desktop & Larger */
 @media screen and (min-width: 1024px) {
 }
-
 
 /* https://bholmes.dev/blog/alternative-to-css-variable-media-queries/
 Well, it comes down to what the :root element actually means: the root element of the HTML document. But conceptually, media queries aren't attached to HTML elements at all. These declarations are processed while your CSS is being parsed, so it won't know to look to the :root and pull in the variable values. */
