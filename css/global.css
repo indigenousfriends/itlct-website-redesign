@@ -69,6 +69,13 @@ Variables (colors, text, spacing, etc.)
 --font16:1rem;
 
 	/* Spacing */
+--line-height58:3.625rem;
+--line-height26:1.625rem;
+--line-height40:2.5rem;
+--line-height50:3.125rem;
+--line-height32:2rem;
+--line-height20:1.25rem;
+--line-height28:1.75rem;
 
 	/* Wrappers */
 
