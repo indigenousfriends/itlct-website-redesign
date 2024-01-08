@@ -39,7 +39,7 @@ Variables (colors, text, spacing, etc.)
 	/* Spacing */
 
 	/* Wrappers */
-
+	
 	/* Media Queries */
 }
 
@@ -65,8 +65,18 @@ img {
 /* Text */
 
 /* Links */
-
+a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
 /* Lists */
+li {
+	list-style-type: none;
+}
+
+/* a {
+	color: #FFFFFF;
+} */
 
 /* Forms */
 
@@ -79,6 +89,10 @@ Wrappers (container, flexbox, etc.)
 /* Container */
 
 /* Wrappers */
+.wrapper {
+	width: 90%;
+	margin: 0 auto;
+}
 
 /* 
 ===================================
@@ -89,6 +103,62 @@ Global Component Styles (buttons, forms, etc.)
 /* Buttons */
 
 /* Forms */
+
+/* FOOTER STYLES */
+footer {
+	background-color: #1F1D1D;
+	color: #FFFFFF;
+}
+/* MODAL */
+.hidden {
+	display: none;
+}
+.modal {
+	height: 95vh;
+	width: 90%;
+	margin: 0 auto;
+	padding: 26px;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 2vh;
+	background-color: white;
+	color: black;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	z-index: 2;
+	
+}
+
+.modal-wrapper {
+	position: relative;
+}
+.btn-close {
+	position: absolute;
+	right: 0;
+	top: -20px;
+}
+.btn-close button {
+	border: none;
+	background-color: transparent;
+}
+.btn-close svg {
+	width: 32px;
+	height: 32px;
+}
+
+.overlay-la {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	backdrop-filter: blur(3px);
+	z-index: 1;
+}
 
 /* 
 ===================================
