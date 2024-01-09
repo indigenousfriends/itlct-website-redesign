@@ -202,6 +202,10 @@ Wrappers (container, flexbox, etc.)
 	max-width: var(--wrapper-width-max);
 }
 
+/* Global Hidden Class */
+.hidden {
+	display: none;
+}
 /* 
 ===================================
 Global Component Styles (buttons, forms, etc.)
