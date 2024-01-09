@@ -1,7 +1,3 @@
-body {
-	color: black;
-}
-
 /*
 ===================================
 ===================================
@@ -19,7 +15,17 @@ Styles for an individual page
 Page Component Styles (icon grid, team member card)
 ===================================
 */
+p,
+h4 {
+	color: var(--color-onyx);
+}
 
+.signature {
+	font-size: var(--font21);
+	font-weight: var(--font-weight-regular);
+	line-height: var(--line-height26);
+	color: var(--color-onyx);
+}
 /* 
 ===================================
 Section Styles (background, padding, etc.)
@@ -51,4 +57,12 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 /* Desktop Only */
 @media screen and (min-width: 1024px) {
 	/* Add styles that apply specifically to desktop */
+	.signature {
+		font-size: var(--font24);
+		font-weight: var(--font-weight-medium);
+		line-height: var(--line-height28);
+	}
+	.about-wrapper {
+		max-width: 800px;
+	}
 }
