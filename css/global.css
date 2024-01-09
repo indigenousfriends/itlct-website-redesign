@@ -178,7 +178,7 @@ p {
 	font-size: var(--font16);
 	font-weight: var(--font-weight-regular);
 	line-height: var(--line-height20);
-	color: var(--color-white);
+	/* color: var(--color-white); */
 }
 
 /* Links */
