@@ -35,8 +35,7 @@ h4 {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 75vh; /* Adjust the height as needed */
-	/* box-sizing: content-box; Set box-sizing to content-box */
+	height: 45vh; /* Adjust the height as needed */
 	padding: 20px; /* Add padding to the container */
 }
 
@@ -62,7 +61,10 @@ button {
 }
 
 button:hover {
-	background: var(--button3-hover-border);
+	/* background: var(--button3-hover-border); */
+	background: rgb(0, 0, 0, 0);
+	border: 2px solid var(--button3-color);
+	color: var(--color-onyx);
 }
 
 /* 
@@ -117,5 +119,9 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		font-size: var(--font24);
 		font-weight: var(--font-weight-medium);
 		line-height: var(--line-height28);
+	}
+
+	.btn-container {
+		height: auto;
 	}
 }
