@@ -18,11 +18,12 @@
 // <button="mobile-menu
 
 var mobileMenu = document.getElementById('mobile-menu');
-var navLinks = document.getElementById('nav-links');
+var navLinks = document.getElementById('nav-links-container');
 
 
 mobileMenu.addEventListener("click", function () {
   // remove the button from the DOM
-  navLinks.style.display = "inline-grid";
+  // navLinks.style.display = "inline-grid";
+  navLinks.classList.toggle('hidden');
 });
 
