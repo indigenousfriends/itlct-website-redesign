@@ -288,9 +288,11 @@ footer {
 .modal p {
 	margin: 26px;
 }
-.modal-header h4 {
+footer .modal-header h4 {
 	text-align: center;
+	color: var(--color-onyx);
 }
+
 
 .modal-wrapper {
 	position: relative;
