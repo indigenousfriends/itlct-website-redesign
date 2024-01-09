@@ -24,40 +24,43 @@ Section Styles (background, padding, etc.)
 body {
 	font-family: 'Josefin Sans', sans-serif;
 }
+
 img {
 	display: block;
 	max-width: 100%;
 }
+
 .img-container {
-	max-width: 390px; 
+	max-width: 390px;
 	/* for dev purpose only */
 }
 
 .block {
-display:block;
+	display: block;
 
 }
 
 .logo-icon {
 	width: 75px;
 }
- 
+
 /* top bar section */
 .top-bar {
 	background-color: #1f1d1d;
 	color: #fff;
-	display:flex;
+	display: flex;
 	justify-content: space-between;
 	padding: 20px;
 }
 
 .logo-container {
-display: flex;
+	display: flex;
 
 }
+
 /* Hero section */
 .hero {
-color: #424241;
+	color: #424241;
 }
 
 button {
@@ -79,15 +82,17 @@ button:hover {
 	background-color: transparent;
 	color: #fff;
 	border: 0px;
-	
+
 }
 
-.mobile-menu svg{
+.mobile-menu svg {
 	fill: #fff;
-} 
+}
+
 /* menu container */
 .menu-container {
 	position: relative;
+	display: hidden;
 
 }
 
@@ -107,11 +112,12 @@ button:hover {
 	background-color: #1f1d1d;
 }
 
-.nav-links a{
+.nav-links a {
 	color: #fff;
 	text-decoration: none;
 
 }
+
 /* 
 ===================================
 Media Queries (overriding styles for different screen sizes)
