@@ -301,14 +301,17 @@ footer {
 
 /* FORM Styles */
 .footer-main {
-	padding: 40px;
+	padding: 40px 0;
 }
 
-.footer-main,
-.footer-logo-btn {
+.footer-main{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+}
+.footer-logo-btn {
+	display: flex;
+	flex-direction: column;
 }
 
 form {
@@ -385,6 +388,9 @@ form {
 	flex-direction: column;
 	text-align: left;
 }
+}
+.wrapper {
+	width: var(--desktop-wrapper-width);
 }
 
 /* Tablet Only */
