@@ -244,7 +244,7 @@ footer {
 	display: none;
 }
 .modal {
-	height: 95vh;
+	/* height: 95vh; */
 	width: 90%;
 	margin: 0 auto;
 	padding: 26px;
@@ -257,7 +257,16 @@ footer {
 	border: 1px solid var(--body-background-color);
 	border-radius: 4px;
 	z-index: 2;
-	
+}
+/* without this the text was white */
+.modal-header h3, .modal p {
+	color: var(--color-onyx);
+}
+.modal p {
+	margin: 126px;
+}
+.modal-header h3 {
+	text-align: center;
 }
 
 .modal-wrapper {
@@ -312,6 +321,7 @@ footer {
 .footer-logo-btn {
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 }
 
 form {
@@ -391,6 +401,10 @@ form {
 }
 .wrapper {
 	width: var(--desktop-wrapper-width);
+}
+.modal {
+	padding: auto 100px 100px 100px;
+	max-height: 70vh;
 }
 
 /* Tablet Only */
