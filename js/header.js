@@ -17,12 +17,12 @@
 // <div="menu-container"
 // <button="mobile-menu
 
-var mobileMenu = document.getElementsById('mobile-menu')
-var menuContainer = document.getElementsById('menu-container')
+var mobileMenu = document.getElementById('mobile-menu');
+var navLinks = document.getElementById('nav-links');
 
-console.log(menuContainer);
+
 mobileMenu.addEventListener("click", function () {
   // remove the button from the DOM
-  menuContainer.style.display = "none";
+  navLinks.style.display = "inline-grid";
 });
 

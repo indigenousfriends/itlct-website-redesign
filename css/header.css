@@ -78,29 +78,31 @@ button:hover {
 }
 
 /* mobile menu button style */
-.mobile-menu {
+#mobile-menu {
 	background-color: transparent;
-	color: #fff;
+	color: red;
 	border: 0px;
 
 }
 
-.mobile-menu svg {
+#mobile-menu svg {
 	fill: #fff;
 }
 
 /* menu container */
-.menu-container {
+#menu-container {
 	position: relative;
 	display: hidden;
+
+
 
 }
 
 /* nav-links style */
-.nav-links {
+#nav-links {
 	list-style-type: none;
 	margin: 0;
-	display: flex;
+	display: none;
 	gap: 20px;
 	flex-direction: column;
 	position: absolute;
@@ -112,8 +114,8 @@ button:hover {
 	background-color: #1f1d1d;
 }
 
-.nav-links a {
-	color: #fff;
+#nav-links a {
+	color: red;
 	text-decoration: none;
 
 }
