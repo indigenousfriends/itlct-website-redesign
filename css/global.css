@@ -300,7 +300,7 @@ footer a img:hover {
 .modal p {
 	margin: 26px;
 }
-footer .modal-header h4 {
+.modal-header h4 {
 	text-align: center;
 	color: var(--color-onyx);
 }
