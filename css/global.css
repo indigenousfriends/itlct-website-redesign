@@ -72,6 +72,8 @@ a {
 /* Lists */
 li {
 	list-style-type: none;
+	/* need variable for line height */
+	line-height: 2rem;
 }
 
 /* a {
@@ -107,7 +109,8 @@ button {
 	padding: 10px 40px;
 	color: #FFFFFF;
 	border: none;
-	width: 187px;
+	min-width: 187px;
+	min-height: 50px;
 	margin: 20px;
 }
 /* Forms */
@@ -185,16 +188,17 @@ footer {
 form {
 	text-align: center;
 }
-/* .text-input {
+.text-input {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-} */
+}
 .text-input input {
 	height: 50px;
 	/* is the width ok? */
 	min-width: 320px;
 	border-radius: 10px;
+	border: none;
 	
 }
 
@@ -221,14 +225,31 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 ===================================
 */
 
-/* Tablet & Smaller */
-@media (max-width: 768px) {
+/* Tablet & Larger */
+@media (min-width: 1024px) {
+.footer-main {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	/* gap: 100px; */
+	text-align: left;
+}
+.text-input {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+form {
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+}
 }
 
 /* Tablet Only */
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (min-width: 1024px) {
 }
 
 /* Phone Only */
-@media (max-width: 480px) {
+@media (min-width: 480px) {
 }
