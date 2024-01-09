@@ -243,9 +243,22 @@ footer {
 .hidden {
 	display: none;
 }
+/* modal overlay */
+.overlay-la {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	backdrop-filter: blur(3px);
+	z-index: 1;
+}
 .modal {
-	/* height: 95vh; */
-	width: 90%;
+	max-width: 1100px;
+	max-height: 90vh;
 	margin: 0 auto;
 	padding: 26px;
 	position: fixed;
@@ -259,23 +272,34 @@ footer {
 	z-index: 2;
 }
 /* without this the text was white */
-.modal-header h3, .modal p {
+.modal-header h4, .modal p {
 	color: var(--color-onyx);
 }
 .modal p {
-	margin: 126px;
+	margin: 26px;
 }
-.modal-header h3 {
+.modal-header h4 {
 	text-align: center;
 }
 
 .modal-wrapper {
 	position: relative;
 }
+.modal-content {
+	
+	max-height:90vh
+}
+.modal-scroll {
+	overflow-y: scroll;
+	/* height: 85vh; */
+	max-height: calc(85vh 300px);
+	/* overflow-y: hidden; */
+}
 .btn-close {
 	position: absolute;
 	right: 0;
-	top: -20px;
+	top: -40px;
+
 }
 .btn-close button {
 	border: none;
@@ -286,18 +310,7 @@ footer {
 	height: 32px;
 }
 
-.overlay-la {
-	position: fixed;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	width: 100%;
-	height: 100%;
-	background: rgba(0, 0, 0, 0.5);
-	backdrop-filter: blur(3px);
-	z-index: 1;
-}
+
 
 .btn-la {
 	background-color: transparent;
@@ -404,8 +417,9 @@ form {
 }
 .modal {
 	padding: auto 100px 100px 100px;
-	max-height: 70vh;
+	/* max-height: 70vh; */
 }
+
 
 /* Tablet Only */
 @media (min-width: 768px) and (min-width: 1024px) {
