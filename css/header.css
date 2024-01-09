@@ -22,7 +22,7 @@ Section Styles (background, padding, etc.)
 ===================================
 */
 body {
-	font-family: 'Josefin Sans', sans-serif;
+	font-family: var(--main-font);
 }
 
 img {
@@ -46,8 +46,8 @@ img {
 
 /* top bar section */
 .top-bar {
-	background-color: #1f1d1d;
-	color: #fff;
+	background-color: var(--color-onyx);
+	color: var(--color-white);
 	display: flex;
 	justify-content: space-between;
 	padding: 20px;
@@ -55,7 +55,6 @@ img {
 
 .logo-container {
 	display: flex;
-
 }
 
 /* Hero section */
@@ -64,31 +63,36 @@ img {
 }
 
 button {
-	background-color: #B91515;
-	color: #fff;
-	font-family: 'Josefin Sans', sans-serif;
+	background-color: var(--color-amaranth);
+	color: var(--color-white);
+	font-family: var(--main-font);
+	font-weight: var(--font-weight-bold);
 	padding: 11px 92px;
-	border: 2px solid #B91515;
+	border: 2px solid var(--color-amaranth);
 	border-radius: 10px;
 	cursor: pointer;
 }
 
 button:hover {
+	/* font-family: inherit; */
+	/* font-family: var(--main-font); */
+	/* font-weight: var(--font-weight-bold); */
 	background-color: transparent;
+	color: var(--color-onyx);
+	border: 2px solid var(--color-amaranth);
+	border-radius: 10px;
+	cursor: pointer;
 }
 
 /* mobile menu button style */
 #mobile-menu {
 	background-color: transparent;
-	color: red;
 	border: 0px;
 	padding: 0;
-
-
 }
 
 #mobile-menu svg {
-	fill: #fff;
+	fill: var(--color-white);
 }
 
 /* menu container */
@@ -112,7 +116,7 @@ button:hover {
 	margin: 0;
 	gap: 20px;
 	flex-direction: column;
-	background-color: #1f1d1d;
+	background-color: var(--color-onyx);
 	width: 200px;
 	height: auto;
 	overflow: hidden;
@@ -120,7 +124,7 @@ button:hover {
 }
 
 #nav-links a {
-	color: #fff;
+	color: var(--color-white);
 	text-decoration: none;
 
 }
