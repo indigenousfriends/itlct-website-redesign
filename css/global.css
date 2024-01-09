@@ -198,10 +198,6 @@ footer ul {
 	padding-inline-start: 0px;
 }
 
-/* a {
-	color: #FFFFFF;
-} */
-
 /* Forms */
 
 /* 
@@ -247,12 +243,11 @@ Global Component Styles (buttons, forms, etc.)
 	background-color: var(--color-white);
 	color: var(--color-onyx);
 }
-/* Forms */
 
 /* FOOTER STYLES */
 footer {
 	background-color: var(--color-onyx);
-	color: var(--color-white)
+	color: var(--color-white);
 }
 
 footer a img {
@@ -261,6 +256,70 @@ footer a img {
 footer a img:hover {
 	transform: scale(110%);
 }
+
+.footer-main {
+	padding: 40px 0;
+}
+
+.footer-main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.footer-logo-btn {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+/* Land Acknowledgement button */
+.btn-la {
+	background-color: transparent;
+	color: var(--color-white);
+	border: none;
+	margin: 30px 0;
+	font-size: var(--font21);
+}
+
+.btn-la:hover,
+.footer-main ul li a:hover,
+.bottom-links a:hover {
+	border-bottom: 2px solid var(--color-white);
+}
+
+/* FORM Styles */
+form {
+	text-align: center;
+}
+.text-input {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.text-input input {
+	height: 50px;
+	min-width: 320px;
+	border-radius: 10px;
+	border: none;
+}
+#newsletter-input {
+	padding-left: 24px;
+}
+
+/* bottom links */
+.bottom-links {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.social-svgs {
+	display: flex;
+	flex-direction: row;
+	column-gap: 20px;
+}
+
 /* MODAL */
 .hidden {
 	display: none;
@@ -294,7 +353,8 @@ footer a img:hover {
 	z-index: 2;
 }
 /* without this the text was white */
-.modal-header h4, .modal p {
+.modal-header h4,
+.modal p {
 	color: var(--color-onyx);
 }
 .modal p {
@@ -305,26 +365,20 @@ footer a img:hover {
 	color: var(--color-onyx);
 }
 
-
 .modal-wrapper {
 	position: relative;
 }
 .modal-content {
 	overflow-y: scroll;
 	max-height: 65vh;
-	/* padding-bottom: 26px; */
 }
 .modal-scroll {
-	
-	/* height: 85vh; */
 	max-height: calc(85vh 300px);
-	/* overflow-y: hidden; */
 }
 .btn-close {
 	position: absolute;
 	right: -10px;
 	top: -40px;
-
 }
 .btn-close button {
 	border: none;
@@ -335,74 +389,7 @@ footer a img:hover {
 	height: 32px;
 }
 
-
-
-.btn-la {
-	background-color: transparent;
-	color: var(--color-white);
-	border: none;
-	margin: 30px 0;
-	/* align-items: center; */
-	font-size: var(--font21);
-}
-
-.btn-la:hover,
-.footer-main ul li a:hover,
-.bottom-links a:hover {
-	border-bottom: 2px solid var(--color-white);
-}
-
-/* FORM Styles */
-.footer-main {
-	padding: 40px 0;
-}
-
-.footer-main{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-.footer-logo-btn {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
-form {
-	text-align: center;
-}
-.text-input {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-.text-input input {
-	height: 50px;
-	/* is the width ok? */
-	min-width: 320px;
-	border-radius: 10px;
-	border: none;
-}
-#newsletter-input {
-	/* does this need a variable for spacing?? */
-padding-left: 24px;
-}
-
-/* bottom links */
-.bottom-links {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
-}
-
-.social-svgs {
-	display: flex;
-	flex-direction: row;
-	column-gap: 20px;
-}
-
-
+/* End of modal styles */
 
 /* 
 ===================================
@@ -413,58 +400,52 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 
 /* Tablet & Larger */
 @media (min-width: 1024px) {
-.footer-main {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	/* gap: 100px; */
-	/* text-align: left; */
-}
-.footer-main h4 {
-	font-size: var(--font36);
-	font-weight: var(--font-weight-bold);
-	line-height: 0px;
-	color: var(--color-white);
-}
-.footer-main p {
-	margin: 0px;
-}
-footer li {
-	text-align: left;
-}
+	/* Footer styles */
+	.footer-main {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	.footer-main h4 {
+		font-size: var(--font36);
+		font-weight: var(--font-weight-bold);
+		line-height: 0px;
+		color: var(--color-white);
+	}
+	.footer-main p {
+		margin: 0px;
+	}
+	footer li {
+		text-align: left;
+	}
 
-.footer-logo-btn {
-	align-items: start;
+	.footer-logo-btn {
+		align-items: start;
+	}
+	.text-input {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+	form {
+		display: flex;
+		flex-direction: column;
+		text-align: left;
+	}
+	form p {
+		color: var(--color-white);
+	}
+	.wrapper {
+		width: var(--desktop-wrapper-width);
+	}
+	.modal-content {
+		overflow-y: auto;
+	}
+	.modal {
+		padding: auto 100px 100px 100px;
+	}
+	/* End of footer styles */
 }
-.text-input {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-}
-form {
-	display: flex;
-	flex-direction: column;
-	text-align: left;
-}
-form p {
-	color: var(--color-white);
-}
-.wrapper {
-	width: var(--desktop-wrapper-width);
-}
-.modal-content {
-	overflow-y: auto;
-}
-.modal {
-	padding: auto 100px 100px 100px;
-	/* max-height: 70vh; */
-}
-}
-
-
-
-
-
 
 /* Tablet Only */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
