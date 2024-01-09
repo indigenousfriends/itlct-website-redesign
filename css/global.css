@@ -242,12 +242,24 @@ Global Component Styles (buttons, forms, etc.)
 	font-weight: var(--font-weight-bold);
 	font-size: var(--font21);
 }
+
+.button2:hover {
+	background-color: var(--color-white);
+	color: var(--color-onyx);
+}
 /* Forms */
 
 /* FOOTER STYLES */
 footer {
 	background-color: var(--color-onyx);
 	color: var(--color-white)
+}
+
+footer a img {
+	transition: all 0.1s ease-in;
+}
+footer a img:hover {
+	transform: scale(110%);
 }
 /* MODAL */
 .hidden {
@@ -298,18 +310,19 @@ footer .modal-header h4 {
 	position: relative;
 }
 .modal-content {
-	
-	max-height:90vh
+	overflow-y: scroll;
+	max-height: 65vh;
+	/* padding-bottom: 26px; */
 }
 .modal-scroll {
-	overflow-y: scroll;
+	
 	/* height: 85vh; */
 	max-height: calc(85vh 300px);
 	/* overflow-y: hidden; */
 }
 .btn-close {
 	position: absolute;
-	right: 0;
+	right: -10px;
 	top: -40px;
 
 }
@@ -331,6 +344,12 @@ footer .modal-header h4 {
 	margin: 30px 0;
 	/* align-items: center; */
 	font-size: var(--font21);
+}
+
+.btn-la:hover,
+.footer-main ul li a:hover,
+.bottom-links a:hover {
+	border-bottom: 2px solid var(--color-white);
 }
 
 /* FORM Styles */
@@ -413,6 +432,10 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 footer li {
 	text-align: left;
 }
+
+.footer-logo-btn {
+	align-items: start;
+}
 .text-input {
 	display: flex;
 	flex-direction: row;
@@ -423,14 +446,24 @@ form {
 	flex-direction: column;
 	text-align: left;
 }
+form p {
+	color: var(--color-white);
 }
 .wrapper {
 	width: var(--desktop-wrapper-width);
+}
+.modal-content {
+	overflow-y: auto;
 }
 .modal {
 	padding: auto 100px 100px 100px;
 	/* max-height: 70vh; */
 }
+}
+
+
+
+
 
 
 /* Tablet Only */
