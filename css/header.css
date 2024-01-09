@@ -82,6 +82,8 @@ button:hover {
 	background-color: transparent;
 	color: red;
 	border: 0px;
+	padding: 0;
+
 
 }
 
@@ -97,6 +99,10 @@ button:hover {
 
 #nav-links-container {
 	position: absolute;
+	top: 50px;
+	bottom: 0px;
+	right: -20px;
+	z-index: 10;
 }
 
 /* nav-links style */
@@ -106,16 +112,11 @@ button:hover {
 	margin: 0;
 	gap: 20px;
 	flex-direction: column;
-	top: 50px;
-	bottom: 0px;
-	left: 0px;
-	right: 0px;
-	z-index: 10;
 	background-color: #1f1d1d;
 	width: 200px;
 	height: auto;
 	overflow: hidden;
-	padding: 104px 55px 44px 46px;
+	padding: 28px 55px 44px 46px;
 }
 
 #nav-links a {
@@ -123,10 +124,15 @@ button:hover {
 	text-decoration: none;
 
 }
+
 .hidden {
 	display: none;
 }
 
+/* The Mobile X */
+#mobileClose {
+	display: hidden;
+}
 
 
 /* 

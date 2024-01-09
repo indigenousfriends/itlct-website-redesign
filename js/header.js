@@ -19,11 +19,17 @@
 
 var mobileMenu = document.getElementById('mobile-menu');
 var navLinks = document.getElementById('nav-links-container');
+// X button
+var mobileClose = document.getElementById('mobileClose');
+// Hamburger
+var mobileOpen = document.getElementById('mobileOpen');
 
+console.log('mobile-menu');
 
 mobileMenu.addEventListener("click", function () {
-  // remove the button from the DOM
-  // navLinks.style.display = "inline-grid";
+  // Toggle Menu Appear
   navLinks.classList.toggle('hidden');
+  mobileClose.classList.toggle('hidden');
+  mobileOpen.classList.toggle('hidden');
 });
 
