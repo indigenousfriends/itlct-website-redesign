@@ -182,8 +182,25 @@ p {
 }
 
 /* Links */
-
+a {
+	color: var(--color-white);
+	text-decoration: none;
+}
 /* Lists */
+footer li {
+	list-style-type: none;
+	/* need variable for line height */
+	line-height: var(--line-height32);
+	text-align: center;
+}
+footer ul {
+	padding-left: 0px;
+	padding-inline-start: 0px;
+}
+
+/* a {
+	color: #FFFFFF;
+} */
 
 /* Forms */
 
@@ -213,8 +230,179 @@ Global Component Styles (buttons, forms, etc.)
 */
 
 /* Buttons */
+.button2 {
+	border-radius: 10px;
+	background-color: var(--button2-color);
+	padding: 10px 40px;
+	color: var(--color-white);
+	border: none;
+	min-width: 187px;
+	min-height: 50px;
+	margin: 20px;
+	font-weight: var(--font-weight-bold);
+	font-size: var(--font21);
+}
 
+.button2:hover {
+	background-color: var(--color-white);
+	color: var(--color-onyx);
+}
 /* Forms */
+
+/* FOOTER STYLES */
+footer {
+	background-color: var(--color-onyx);
+	color: var(--color-white)
+}
+
+footer a img {
+	transition: all 0.1s ease-in;
+}
+footer a img:hover {
+	transform: scale(110%);
+}
+/* MODAL */
+.hidden {
+	display: none;
+}
+/* modal overlay */
+.overlay-la {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	backdrop-filter: blur(3px);
+	z-index: 1;
+}
+.modal {
+	max-width: 1100px;
+	max-height: 90vh;
+	margin: 0 auto;
+	padding: 26px;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 2vh;
+	background-color: var(--body-background-color);
+	color: var(--color-onyx);
+	border: 1px solid var(--body-background-color);
+	border-radius: 4px;
+	z-index: 2;
+}
+/* without this the text was white */
+.modal-header h4, .modal p {
+	color: var(--color-onyx);
+}
+.modal p {
+	margin: 26px;
+}
+.modal-header h4 {
+	text-align: center;
+	color: var(--color-onyx);
+}
+
+
+.modal-wrapper {
+	position: relative;
+}
+.modal-content {
+	overflow-y: scroll;
+	max-height: 65vh;
+	/* padding-bottom: 26px; */
+}
+.modal-scroll {
+	
+	/* height: 85vh; */
+	max-height: calc(85vh 300px);
+	/* overflow-y: hidden; */
+}
+.btn-close {
+	position: absolute;
+	right: -10px;
+	top: -40px;
+
+}
+.btn-close button {
+	border: none;
+	background-color: transparent;
+}
+.btn-close svg {
+	width: 32px;
+	height: 32px;
+}
+
+
+
+.btn-la {
+	background-color: transparent;
+	color: var(--color-white);
+	border: none;
+	margin: 30px 0;
+	/* align-items: center; */
+	font-size: var(--font21);
+}
+
+.btn-la:hover,
+.footer-main ul li a:hover,
+.bottom-links a:hover {
+	border-bottom: 2px solid var(--color-white);
+}
+
+/* FORM Styles */
+.footer-main {
+	padding: 40px 0;
+}
+
+.footer-main{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.footer-logo-btn {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+form {
+	text-align: center;
+}
+.text-input {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.text-input input {
+	height: 50px;
+	/* is the width ok? */
+	min-width: 320px;
+	border-radius: 10px;
+	border: none;
+}
+#newsletter-input {
+	/* does this need a variable for spacing?? */
+padding-left: 24px;
+}
+
+/* bottom links */
+.bottom-links {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.social-svgs {
+	display: flex;
+	flex-direction: row;
+	column-gap: 20px;
+}
+
+
 
 /* 
 ===================================
@@ -224,8 +412,59 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 */
 
 /* Tablet & Larger */
-@media screen and (min-width: 768px) {
+@media (min-width: 1024px) {
+.footer-main {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	/* gap: 100px; */
+	/* text-align: left; */
 }
+.footer-main h4 {
+	font-size: var(--font36);
+	font-weight: var(--font-weight-bold);
+	line-height: 0px;
+	color: var(--color-white);
+}
+.footer-main p {
+	margin: 0px;
+}
+footer li {
+	text-align: left;
+}
+
+.footer-logo-btn {
+	align-items: start;
+}
+.text-input {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+form {
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+}
+form p {
+	color: var(--color-white);
+}
+.wrapper {
+	width: var(--desktop-wrapper-width);
+}
+.modal-content {
+	overflow-y: auto;
+}
+.modal {
+	padding: auto 100px 100px 100px;
+	/* max-height: 70vh; */
+}
+}
+
+
+
+
+
 
 /* Tablet Only */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
