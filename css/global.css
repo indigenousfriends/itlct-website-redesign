@@ -17,8 +17,14 @@ Resets (box-sizing, normalize, etc.)
 ===================================
 */
 
-* {
+html {
 	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
 }
 
 /* 
@@ -50,6 +56,7 @@ Variables (colors, text, spacing, etc.)
 
 	/* Color Assignment */
 	--body-background-color: var(--color-white);
+	/* button colors */
 	--button1-color: var(--color-white);
 	--button1-hover-border: var(--color-white);
 	--button2-color: var(--color-amaranth);
@@ -58,14 +65,14 @@ Variables (colors, text, spacing, etc.)
 	--button3-hover-border: var(--color-amaranth);
 
 	/* Text */
-	--headings-text: "Josefin Sans", sans-serif;
-	--body-text: "Josefin Sans", sans-serif;
-	--button-text: "Josefin Sans", sans-serif;
+	--main-font: "Josefin Sans", sans-serif;
 
+	/* Styles for fonts */
 	--font-weight-regular: 400;
 	--font-weight-medium: 500;
 	--font-weight-bold: 700;
 
+	/* Font sizes */
 	--font16: 1rem;
 	--font21: 1.313rem;
 	--font24: 1.5rem;
@@ -99,6 +106,7 @@ Variables (colors, text, spacing, etc.)
 	--spacing-header-button: 125px 279px;
 
 	/* Wrappers */
+	--wrapper-width-max: 1328px;
 	--desktop-wrapper-width: 90%;
 	--mobile-wrapper-width: 95%;
 
@@ -120,12 +128,13 @@ html {
 
 body {
 	background-color: var(--body-background-color);
-	font-family: var(--headings-text);
+	font-family: var(--main-font);
 }
 
 /* Images */
 img {
 	max-width: 100%;
+	display: block;
 }
 
 /* Text */
@@ -164,18 +173,12 @@ h5 {
 	color: var(--color-onyx);
 }
 
+/* Mobile body2 in figma */
 p {
 	font-size: var(--font16);
 	font-weight: var(--font-weight-regular);
 	line-height: var(--line-height20);
 	color: var(--color-white);
-}
-
-.body1 {
-	font-size: var(--font21);
-	font-weight: var(--font-weight-regular);
-	line-height: var(--line-height26);
-	color: var(--color-onyx);
 }
 
 /* Links */
@@ -193,7 +196,16 @@ Wrappers (container, flexbox, etc.)
 /* Container */
 
 /* Wrappers */
+.wrapper {
+	width: var(--mobile-wrapper-width);
+	margin: 0 auto;
+	max-width: var(--wrapper-width-max);
+}
 
+/* Global Hidden Class */
+.hidden {
+	display: none;
+}
 /* 
 ===================================
 Global Component Styles (buttons, forms, etc.)
@@ -221,6 +233,13 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 
 /* Desktop & Larger */
 @media screen and (min-width: 1024px) {
+	/* adjusting font sizes and styling for p tags (in figma this is body1)*/
+	p {
+		font-size: var(--font21);
+		font-weight: var(--font-weight-regular);
+		line-height: var(--line-height26);
+		color: var(--color-onyx);
+	}
 }
 
 /* https://bholmes.dev/blog/alternative-to-css-variable-media-queries/
