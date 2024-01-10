@@ -95,11 +95,6 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 ===================================
 */
 
-/* Tablet Only */
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-	/* Add styles that only apply to tablet. These are usually fixes to get resposnivenes right */
-}
-
 /* Tablet and Larger */
 @media screen and (min-width: 768px) {
 	/* Add styles that apply to table and desktop */
@@ -120,6 +115,17 @@ Feel free to change the min/max-width values to whatever you need. Use variables
     }
     .wrapper {
         width: var(--desktop-wrapper-width);
+    }
+}
+
+/* Tablet Only */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+	/* Add styles that only apply to tablet. These are usually fixes to get resposnivenes right */
+    .contact-form-parent {
+        margin: 100px 75px;
+    }
+    .form-info {
+        width: 50%;
     }
 }
 
