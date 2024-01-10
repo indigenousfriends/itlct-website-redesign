@@ -12,7 +12,7 @@
 	</head>
 
 	<body>
-		<div class="form">
+		<div class="wrapper">
 			<div class="form-info">
 				<h3>Get in Touch</h3>
 				<p>
@@ -22,18 +22,22 @@
 				</p>
 				<p>We look forward to connecting</p>
 			</div>
-			<div class="form-input">
+			<div>
 				<form action="" class="contact-form">
-					<input type="text" name="name" id="name" placeholder="Name" />
-					<input type="email" name="email" id="email" placeholder="Email" />
-					<input
-						type="text"
-						name="message"
-						id="message"
-						placeholder="Message"
-					/>
-					<p>Success we will get back to you soon!</p>
-					<button type="submit" class="button2">Send Message</button>
+					<div class="form-input" >
+						<input type="text" name="name" id="name" placeholder="Name" />
+						<input type="email" name="email" id="email" placeholder="Email" />
+						<textarea
+							type="text"
+							name="message"
+							class="message"
+							required="true"
+							placeholder="Message">
+							Message
+						</textarea>
+						<p>Success we will get back to you soon!</p>
+						<button type="submit" class="button2">Send Message</button>
+					</div>
 				</form>
 			</div>
 		</div>

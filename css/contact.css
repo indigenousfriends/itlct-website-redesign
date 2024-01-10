@@ -14,17 +14,54 @@ Styles for an individual page
 Page Component Styles (icon grid, team member card)
 ===================================
 */
-form {
-    padding: 20px 80px;
+.wrapper {
+	width: var(--mobile-wrapper-width);
 }
-.contact-form {
+.form-input {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    padding: 20px;
+    justify-content: space-around;
+    /* padding: 20px; */
 }
-.name {
-    min-height: 500px;
+
+input[type='text'],
+[type='email'],
+select,
+textarea {
+	resize: vertical;
+	font-family: var(--main-font);
+	font-size: var(--font16);
+	font-weight: var(--font-weight-regular);
+	color: var(--color-onyx);
+	background-color: var(--color-white);
+	border: 1px solid #6C6C6C;
+	width: 100%;
+	border-radius: 5px;
+	padding: 10px;
+	margin: 5px 0;
+}
+textarea {
+	border: 2px solid red;
+}
+.message {
+	min-height: 140px;
+	width: 100%;
+	border-radius: 10px;
+	border: none;
+	margin: 10px 0;
+	align-self: flex-start;
+}
+.button2 {
+	border-radius: 10px;
+	background-color: var(--button2-color);
+	padding: 10px 40px;
+	color: var(--color-white);
+	border: none;
+	min-width: 187px;
+	min-height: 50px;
+	margin: 20px;
+	font-weight: var(--font-weight-bold);
+	font-size: var(--font21);
 }
 /* 
 ===================================
