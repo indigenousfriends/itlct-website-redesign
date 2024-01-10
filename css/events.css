@@ -21,7 +21,55 @@ Page Component Styles (icon grid, team member card)
 Section Styles (background, padding, etc.)
 ===================================
 */
+h3 {
+	font-size: 28px;
+	line-height: var(--line-height32);
+	margin: 0px;
+}
+.title-img {
+	width: 100%;
+	height: 250px;
+	background-image: url("https://placekitten.com/200/300");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.title {
+	text-align: center;
+}
+.title p {
+	color: var(--ONYX, #424241);
+	text-align: center;
+}
 
+/* Event cards */
+.event-card-title {
+	width: 100%;
+	height: 130px;
+	text-align: center;
+	padding:20px
+}
+.event-card-title h3 {
+	margin-bottom: 20px;
+}
+.event-card-text p {
+	color: var(--color-onyx);
+}
+.card-item1 .event-card-title {
+	background: var(--color-yaleblue);
+	border-radius: 10px;
+}
+.card-item2 .event-card-title {
+	border-radius: 10px;
+	background: var(--color-cybergrape);
+}
+.card-item3 .event-card-title {
+	border-radius: 10px;
+	background: var(--color-copper);
+}
+.card-item3 .event-card-title {
+	border-radius: 10px;
+	background: var(--color-teal);
+}
 /* 
 ===================================
 Media Queries (overriding styles for different screen sizes)
