@@ -49,14 +49,37 @@ img {
 	background-color: var(--color-onyx);
 	color: var(--color-white);
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	padding: 20px;
 }
 
 .logo-container {
 	display: flex;
 }
+/* desktop menu */
+.desktop-menu {
+	display: none;
+	flex-direction: row;
+	align-items: center;
+	
 
+}
+.desktop-nav {
+	list-style-type: none;
+	text-decoration: none;
+	display: flex;
+	justify-content: space-around;
+	
+}
+.desktop-nav li {
+	padding: 20px;
+}
+a {
+	text-decoration: none;
+}
+a:visited {
+	color: inherit;
+}
 /* Hero section */
 .hero {
 	color: #424241;
@@ -83,12 +106,27 @@ button:hover {
 	border-radius: 10px;
 	cursor: pointer;
 }
+.button2 {
+	background-color: var(--color-amaranth);
+	color: var(--color-white);
+	font-family: var(--main-font);
+	font-weight: var(--font-weight-bold);
+	/* trying to center text vertically */
+	padding: 1rem;
+	border: 2px solid var(--color-amaranth);
+	border-radius: 10px;
+	cursor: pointer;
+	height: 50px;
+	margin-left: 85px;
+}
 
 /* mobile menu button style */
 #mobile-menu {
 	background-color: transparent;
 	border: 0px;
 	padding: 0;
+	align-items: center;
+	display: flex;
 }
 
 #mobile-menu svg {
@@ -98,9 +136,22 @@ button:hover {
 /* menu container */
 #menu-container {
 	position: relative;
+	display: flex;
+	align-items: center;
 	/* overflow: hidden; */
 }
-
+.img-container  {
+	display: flex;
+	justify-content: center;
+	margin: auto;
+}
+/* heading for text */
+.text-container {
+	text-align: center;
+}
+.text-container p {
+	color: var(--color-onyx);
+}
 #nav-links-container {
 	position: absolute;
 	top: 50px;
@@ -164,4 +215,22 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 /* Desktop Only */
 @media screen and (min-width: 1024px) {
 	/* Add styles that apply specifically to desktop */
+}
+/* Desktop & Larger */
+
+@media screen and (min-width: 1024px) {
+	/* adjusting font sizes and styling for p tags (in figma this is body1)*/
+	p {
+		font-size: var(--font21);
+		font-weight: var(--font-weight-regular);
+		line-height: var(--line-height26);
+		color: var(--color-onyx);
+	}
+	/* hide menu bar for larger screen */
+	#menu-container {
+		display: none;
+	} 
+.desktop-menu {
+	display: flex;
+}
 }
