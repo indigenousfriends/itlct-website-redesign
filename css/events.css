@@ -51,6 +51,9 @@ h3 {
 	margin: 0px;
 }
 /* Event cards */
+.event-cards {
+	margin: 80px 0px;
+}
 /* event card img */
 .event-card-img {
 	width: 100%;
@@ -167,6 +170,34 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	.wrapper {
 		width: 85%;
 	}
+
+	/* Title/Hero section */
+	.title-img {
+		display: none;
+	}
+	
+	.title {
+		height: 992px;
+		background-image: url("/assets/images/pages/events/hero.png");
+		background-size: cover;
+		background-position: center;
+
+		display: flex;
+		justify-content: left;
+		align-items: center;
+	}
+	.title-text {
+		width: 100%;
+		height: 100%;
+		background: linear-gradient(92deg, rgba(9, 9, 9, 0.77) 40.35%, rgba(9, 9, 9, 0.74) 44.51%, rgba(9, 9, 9, 0.71) 48.63%, rgba(9, 9, 9, 0.00) 83.13%);
+
+	}
+	.title-text p,
+	.title-text h2 {
+		text-align: left;
+		color: var(--color-white);
+	}
+
 
 	/* Event Cards */
 	.event-cards {
