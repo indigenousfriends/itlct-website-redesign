@@ -20,13 +20,13 @@ Page Component Styles (icon grid, team member card)
 	width: var(--mobile-wrapper-width);
 }
 .form-input {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    /* padding: 20px; */
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	/* padding: 20px; */
 }
-input[type='text'],
-[type='email'],
+input[type="text"],
+[type="email"],
 select,
 textarea {
 	resize: vertical;
@@ -35,7 +35,7 @@ textarea {
 	font-weight: var(--font-weight-regular);
 	color: var(--color-onyx);
 	background-color: var(--color-white);
-	border: 1px solid #6C6C6C;
+	border: 1px solid #6c6c6c;
 	width: 100%;
 	border-radius: 5px;
 	padding: 10px;
@@ -71,16 +71,16 @@ Section Styles (background, padding, etc.)
 ===================================
 */
 body {
-    background: var(--color-bluepurple);
-    color: var(--color-white);
+	background: var(--color-bluepurple);
+	color: var(--color-white);
 }
 h3 {
-    color: var(--color-white);
-    text-align: center;
+	color: var(--color-white);
+	text-align: center;
 }
 p {
-    color: var(--color-white);
-    gap: 20px;
+	color: var(--color-white);
+	gap: 20px;
 }
 
 /* 
@@ -98,45 +98,45 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 /* Tablet and Larger */
 @media screen and (min-width: 768px) {
 	/* Add styles that apply to table and desktop */
-    .contact-form-parent {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        text-align: left;
-        margin: 100px 150px;
-        gap: 100px;
-    }
-    .form-info {
-        width: 35%;
-    }
-    .form-info h3 {
-        text-align: left;
-    }
-    .wrapper {
-        width: var(--desktop-wrapper-width);
-    }
+	.contact-form-parent {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		text-align: left;
+		margin: 100px 150px;
+		gap: 100px;
+	}
+	.form-info {
+		width: 35%;
+	}
+	.form-info h3 {
+		text-align: left;
+	}
+	.wrapper {
+		width: var(--desktop-wrapper-width);
+	}
 }
 
 /* Tablet Only */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
 	/* Add styles that only apply to tablet. These are usually fixes to get resposnivenes right */
-    .contact-form-parent {
-        margin: 100px 75px;
-    }
-    .form-info {
-        width: 50%;
-    }
+	.contact-form-parent {
+		margin: 100px 75px;
+	}
+	.form-info {
+		width: 50%;
+	}
 }
 
 /* Desktop Only */
 @media screen and (min-width: 1024px) {
 	/* Add styles that apply specifically to desktop */
-    .form-info h3 {
-        font-size: var(--font46);
-        font-weight: var(--font-weight-bold);
-        line-height: var(--line-height50);
-        color: var(--color-white);
-        text-align: left;
-    }
+	.form-info h3 {
+		font-size: var(--font46);
+		font-weight: var(--font-weight-bold);
+		line-height: var(--line-height50);
+		color: var(--color-white);
+		text-align: left;
+	}
 }
