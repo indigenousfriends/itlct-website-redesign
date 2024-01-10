@@ -15,27 +15,35 @@ Styles for an individual page
 Page Component Styles (icon grid, team member card)
 ===================================
 */
+
 .support {
 	background-color: var(--color-yaleblue);
-	color: var(--color-white);
+	color: var(--color-onyx);
 }
 
 .support-header {
 	color: var(--color-amaranth);
 }
 
-.empowering {
+/* .empowering{
 	background-color: var(--color-white);
+	color:var(--color-onyx)
+}
+.empowering-img {
+	background-color: var(--color-amaranth);
 	color: var(--color-onyx);
 }
 
 .values-list {
 	background-color: var(--color-white);
 	color: var(--color-onyx);
-}
+} */
 
 /* shape backgrounds for values-list texts */
 /* How to code them: display and flexbox */
+body{ 
+	display: flexbox;
+
 .rectangle-1 {
 	width: 350px;
 	height: 204px;
@@ -74,7 +82,7 @@ Page Component Styles (icon grid, team member card)
 	border-radius: 10px;
 	background: var(--color-teal);
 }
-
+}
 /* 
 ===================================
 Section Styles (background, padding, etc.)
