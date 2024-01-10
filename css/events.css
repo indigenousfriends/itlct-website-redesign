@@ -56,9 +56,27 @@ h3 {
 	width: 100%;
 	/* might need to change height later */
 	height: 200px;
-
 	/* just until we have the assets */
 	border: 1px black solid;
+}
+/* Network card */
+.card-item1 .event-card-img {
+	background-image: url();
+}
+
+/* Share card */
+.card-item2 .event-card-img {
+	background-image: url();
+}
+
+/* Brainstorm card */
+.card-item3 .event-card-img {
+	background-image: url();
+}
+
+/* Collaborate card */
+.card-item4 .event-card-img {
+	background-image: url();
 }
 
 /* Card title boxes */
@@ -116,6 +134,11 @@ h4 {
 	margin-bottom: 80px;
 }
 
+/* Hiding desktop only events for mobile */
+.desktop-only {
+	display: none;
+}
+
 /* 
 ===================================
 Media Queries (overriding styles for different screen sizes)
@@ -136,6 +159,74 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 /* Tablet and Larger */
 @media screen and (min-width: 768px) {
 	/* Add styles that apply to table and desktop */
+	/* hiding event card text */
+	.event-card-text {
+		display: none;
+	}
+
+	.wrapper {
+		width: 85%;
+	}
+
+	/* Event Cards */
+	.event-cards {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.event-cards > * {
+		margin: 10px;
+		width: 45%;
+
+		/* positioning */
+		position: relative;
+	}
+
+	.event-card-title {
+		text-align: start;
+		border-radius: 0px 0px 10px 10px;
+		/* positioning */
+		position: absolute;
+		bottom: 0px;
+	}
+	.event-card-title p {
+		color: var(--color-white);
+	}
+
+	/* event card title background color changes */
+	.card-item1 .event-card-title {
+		background: linear-gradient(60deg, #195085 55.81%, rgba(66, 66, 65, 0.00) 70.18%);
+	}
+	.card-item2 .event-card-title {
+		background: linear-gradient(60deg, #563867 55.81%, rgba(66, 66, 65, 0.00) 70.18%);
+	}
+	.card-item3 .event-card-title {
+		background: linear-gradient(60deg, #955C17 55.81%, rgba(66, 66, 65, 0.00) 70.18%);
+	}
+	.card-item4 .event-card-title {
+		background: linear-gradient(60deg, #017B80 55.81%, rgba(66, 66, 65, 0.00) 70.18%);
+	}
+
+	/* showing extra desktop only events */
+	.desktop-only {
+		display: block;
+	}
+
+	/* Upcoming Events */
+	/* Previous Events */
+	.upcoming-events,
+	.previous-events {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.upcoming-events > *,
+	.previous-events > * {
+		width: 26%;
+	}
+
 }
 
 /* Desktop Only */
