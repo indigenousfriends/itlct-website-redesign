@@ -31,7 +31,7 @@ img {
 }
 
 .img-container {
-	max-width: 390px;
+	/* max-width: 390px; */
 	/* for dev purpose only */
 }
 
@@ -56,30 +56,36 @@ img {
 .logo-container {
 	display: flex;
 }
+
 /* desktop menu */
 .desktop-menu {
 	display: none;
 	flex-direction: row;
 	align-items: center;
-	
+
 
 }
+
 .desktop-nav {
 	list-style-type: none;
 	text-decoration: none;
 	display: flex;
 	justify-content: space-around;
-	
+
 }
+
 .desktop-nav li {
 	padding: 20px;
 }
+
 a {
 	text-decoration: none;
 }
+
 a:visited {
 	color: inherit;
 }
+
 /* Hero section */
 .hero {
 	color: #424241;
@@ -106,6 +112,7 @@ button:hover {
 	border-radius: 10px;
 	cursor: pointer;
 }
+
 .button2 {
 	background-color: var(--color-amaranth);
 	color: var(--color-white);
@@ -140,18 +147,22 @@ button:hover {
 	align-items: center;
 	/* overflow: hidden; */
 }
-.img-container  {
+
+.img-container {
 	display: flex;
 	justify-content: center;
 	margin: auto;
 }
+
 /* heading for text */
 .text-container {
 	text-align: center;
 }
+
 .text-container p {
 	color: var(--color-onyx);
 }
+
 #nav-links-container {
 	position: absolute;
 	top: 50px;
@@ -216,9 +227,11 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 @media screen and (min-width: 1024px) {
 	/* Add styles that apply specifically to desktop */
 }
+
 /* Desktop & Larger */
 
 @media screen and (min-width: 1024px) {
+
 	/* adjusting font sizes and styling for p tags (in figma this is body1)*/
 	p {
 		font-size: var(--font21);
@@ -226,11 +239,27 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		line-height: var(--line-height26);
 		color: var(--color-onyx);
 	}
+
 	/* hide menu bar for larger screen */
 	#menu-container {
 		display: none;
-	} 
-.desktop-menu {
-	display: flex;
-}
+	}
+
+	.desktop-menu {
+		display: flex;
+	}
+
+	.hero {
+		position: relative;
+	}
+
+	.hero .img-container {
+		max-height: 100vh;
+	}
+
+	.text-container {
+		position: absolute;
+		z-index: 10;
+		bottom: 15%;
+	}
 }
