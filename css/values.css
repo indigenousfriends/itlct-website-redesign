@@ -15,13 +15,69 @@ Styles for an individual page
 Page Component Styles (icon grid, team member card)
 ===================================
 */
-.support{
+.support {
 	background-color: var(--color-yaleblue);
 	color: var(--color-white);
 }
 
-.support-header{
+.support-header {
 	color: var(--color-amaranth);
+}
+
+.empowering {
+	background-color: var(--color-white);
+	color: var(--color-black);
+}
+
+.values-list {
+	background-color: var(--color-white);
+	color: var(--color-black);
+}
+
+.rectangle-1 {
+	width: 350px;
+	height: 204px;
+	flex-shrink: 0;
+	border-radius: 10px;
+	background: var(--color-copper);
+}
+.rectangle-2{
+	width: 350px;
+	height: 204px;
+	flex-shrink: 0;
+	border-radius: 10px;
+	background: var(--color-black);
+}.rectangle-3{
+	width: 350px;
+	height: 204px;
+	flex-shrink: 0;
+	border-radius: 10px;
+	background: var(--color-amaranth);
+}.rectangle-3 {
+	width: 350px;
+	height: 204px;
+	flex-shrink: 0;
+	border-radius: 10px;
+	background: var(--COPPER, #b37122);
+}.rectangle-4 {
+	width: 350px;
+	height: 204px;
+	flex-shrink: 0;
+	border-radius: 10px;
+	background: var(--COPPER, #b37122);
+}.rectangle-5 {
+	width: 350px;
+	height: 204px;
+	flex-shrink: 0;
+	border-radius: 10px;
+	background: var(--COPPER, #b37122);
+}
+.rectangle-6 {
+	width: 350px;
+	height: 204px;
+	flex-shrink: 0;
+	border-radius: 10px;
+	background: var(--COPPER, #b37122);
 }
 /* 
 ===================================
