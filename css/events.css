@@ -21,55 +21,101 @@ Page Component Styles (icon grid, team member card)
 Section Styles (background, padding, etc.)
 ===================================
 */
-h3 {
-	font-size: 28px;
-	line-height: var(--line-height32);
-	margin: 0px;
+/* title section */
+.title {
+	text-align: center;
 }
 .title-img {
 	width: 100%;
 	height: 250px;
-	background-image: url("https://placekitten.com/200/300");
+	background-image: url("/assets/images/pages/events/title.png");
 	background-repeat: no-repeat;
-	background-position: center;
+	background-size: cover;
+	
 }
-.title {
-	text-align: center;
+.title h2 {
+	font-size: var(--font36);
+	font-family: var(--main-font);
+	line-height: var(--line-height40);
 }
 .title p {
 	color: var(--ONYX, #424241);
 	text-align: center;
 }
 
+
+
+h3 {
+	font-size: 28px;
+	line-height: var(--line-height32);
+	margin: 0px;
+}
 /* Event cards */
+/* event card img */
+.event-card-img {
+	width: 100%;
+	/* might need to change height later */
+	height: 200px;
+
+	/* just until we have the assets */
+	border: 1px black solid;
+}
+
+/* Card title boxes */
 .event-card-title {
 	width: 100%;
 	height: 130px;
 	text-align: center;
-	padding:20px
+	padding:20px;
+	border-radius: 10px;
 }
 .event-card-title h3 {
 	margin-bottom: 20px;
 }
+
+/* card title box background colors */
+.card-item1 .event-card-title {
+	background-color: var(--color-yaleblue);
+}
+.card-item2 .event-card-title {
+	background-color: var(--color-cybergrape);
+}
+.card-item3 .event-card-title {
+	background-color: var(--color-copper);
+}
+.card-item4 .event-card-title {
+	background-color: var(--color-teal);
+}
+
 .event-card-text p {
 	color: var(--color-onyx);
 }
-.card-item1 .event-card-title {
-	background: var(--color-yaleblue);
-	border-radius: 10px;
+
+
+/* Upcoming Events and Programs */
+.upcoming-events {
+	margin-bottom: 80px;
 }
-.card-item2 .event-card-title {
-	border-radius: 10px;
-	background: var(--color-cybergrape);
+h4 {
+	margin: 20px 0px;
+	color: var(--color-onyx);
 }
-.card-item3 .event-card-title {
-	border-radius: 10px;
-	background: var(--color-copper);
+.h4-title {
+	text-align: center;
 }
-.card-item3 .event-card-title {
-	border-radius: 10px;
-	background: var(--color-teal);
+/* upcoming events img */
+
+
+/* upcoming events text */
+.event-info p {
+	color: var(--color-onyx);
 }
+
+/* Previous Events */
+.previous-events {
+	margin-bottom: 80px;
+}
+
 /* 
 ===================================
 Media Queries (overriding styles for different screen sizes)
