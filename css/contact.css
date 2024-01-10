@@ -103,9 +103,34 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 /* Tablet and Larger */
 @media screen and (min-width: 768px) {
 	/* Add styles that apply to table and desktop */
+    .contact-form-parent {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+        margin: 100px 150px;
+        gap: 100px;
+    }
+    .form-info {
+        width: 35%;
+    }
+    .form-info h3 {
+        text-align: left;
+    }
+    .wrapper {
+        width: var(--desktop-wrapper-width);
+    }
 }
 
 /* Desktop Only */
 @media screen and (min-width: 1024px) {
 	/* Add styles that apply specifically to desktop */
+    .form-info h3 {
+        font-size: var(--font46);
+        font-weight: var(--font-weight-bold);
+        line-height: var(--line-height50);
+        color: var(--color-white);
+        text-align: left;
+    }
 }
