@@ -146,7 +146,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	}
 	.get-involved {
 		display: flex;
-		flex-direction: row;
+		flex-direction: row-reverse;
 		justify-content: center;
 		/* gradient is opposite- needs to be adjusted in global styles */
 		background: var(--color-bluepurple);
