@@ -43,11 +43,28 @@ Section Styles (background, padding, etc.)
 */
 .team-card {
     background: var(--color-teal);
+	border: none;
+	border-radius: 10px;
+	margin: var(--spacing20) 0;;
 }
 h5 {
     color: var(--color-white);
 }
+.team-card p {
+	color: var(--color-white);
+}
+.team-parent {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.curent-positions {
+	margin: var(--spacing164) 0;
+}
 
+.black-text h3, .black-text h4 {
+	text-align: center;
+}
 /* 
 ===================================
 Media Queries (overriding styles for different screen sizes)
