@@ -25,39 +25,23 @@ body {
 	font-family: var(--main-font);
 }
 
-h2 {
-	font-family: var(--main-font);
-	font-size: var(--font36);
-	font-weight: var(--font-weight-bold);
-	line-height: var(--line-height40);
-	color: var(--color-onyx);
-}
-
-p {
-	font-family: var(--main-font);
-	font-size: var(--font16);
-	font-weight: var(--font-weight-regular);
-	line-height: var(--line-height20);
-	color: var(--color-onyx);
-}
-
-img {
+/* img {
 	display: block;
 	max-width: 100%;
-}
+} */
 
 .img-container {
-	/* max-width: 390px; */
+	max-width: 390px;
 	/* for dev purpose only */
 }
 
-.block {
+/* .block {
 	display: block;
-}
-
-/* .logo-icon {
-	width: 75px;
 } */
+
+.logo-icon {
+	/* width: 75px; */
+}
 
 /* top bar section */
 .top-bar {
@@ -88,7 +72,7 @@ img {
 }
 
 .desktop-nav li {
-	padding: 20px;
+	padding: 10px;
 }
 
 a {
@@ -106,44 +90,7 @@ a:visited {
 	color: inherit;
 }
 
-/* Hero section */
-.hero {
-	color: #424241;
-}
-
-/* hello */
-
-/* Styles for the container */
 /* Button styles */
-/* button1 */
-.button1 {
-	display: flex;
-	width: 300px;
-	height: 50px;
-	padding: 11px 92px;
-	justify-content: center;
-	align-items: center;
-	margin: 0 auto;
-	gap: 10px;
-	flex-shrink: 0;
-	border-radius: 10px;
-	border-color: var(--color-white);
-	background: rgb(0, 0, 0, 0);
-	color: var(--color-white);
-	cursor: pointer;
-	border: 3px solid var(--color-white);
-	font-size: var(--font21);
-	font-weight: var(--font-weight-bold);
-	line-height: var(--line-height26);
-}
-
-.button1:hover {
-	/* background: var(--button3-hover-border); */
-	background: var(--color-white);
-	/* border: 3px solid var(--button3-color); */
-	color: var(--color-onyx);
-}
-/* button2  */
 .button2 {
 	display: flex;
 	width: 300px;
@@ -154,89 +101,18 @@ a:visited {
 	gap: 10px;
 	flex-shrink: 0;
 	border-radius: 10px;
-	background: var(--button3-color);
+	background: var(--button2-color);
 	color: var(--color-white);
 	cursor: pointer;
 	border: none;
 	font-size: var(--font21);
 	font-weight: var(--font-weight-bold);
-	line-height: var(--line-height26);
+	line-height: var(--line-height32);
 }
 
 .button2:hover {
-	/* background: var(--button3-hover-border); */
-	background: rgb(0, 0, 0, 0);
-	border: 3px solid var(--button3-color);
+	background: var(--color-white);
 	color: var(--color-onyx);
-}
-.button3 {
-	display: flex;
-	width: 300px;
-	height: 50px;
-	padding: 11px 92px;
-	justify-content: center;
-	align-items: center;
-	margin: 0 auto;
-	gap: 10px;
-	flex-shrink: 0;
-	border-radius: 10px;
-	background: var(--button3-color);
-	color: var(--color-white);
-	cursor: pointer;
-	border: none;
-	font-size: var(--font21);
-	font-weight: var(--font-weight-bold);
-	line-height: var(--line-height26);
-}
-
-.button3:hover {
-	/* background: var(--button3-hover-border); */
-	background: rgb(0, 0, 0, 0);
-	border: 3px solid var(--button3-color);
-	color: var(--color-onyx);
-}
-
-/* hello */
-
-/* button {
-	background-color: var(--color-amaranth);
-	color: var(--color-white);
-	font-family: var(--main-font);
-	font-weight: var(--font-weight-bold);
-	padding: 11px 92px;
-	border: 2px solid var(--color-amaranth);
-	border-radius: 10px;
-	cursor: pointer;
-} */
-
-/* button:hover {
-	/* font-family: inherit; this was co*/
-/* font-family: var(--main-font); co */
-/* font-weight: var(--font-weight-bold); co */
-/* background-color: transparent;
-	color: var(--color-onyx);
-	border: 2px solid var(--color-amaranth);
-	border-radius: 10px;
-	cursor: pointer;
-} */
-*/
-
-/* .button2 {
-	background-color: var(--color-amaranth);
-	color: var(--color-white);
-	font-family: var(--main-font);
-	font-weight: var(--font-weight-bold);
-	/* trying to center text vertically co*/
-	/* padding: 1rem;
-	border: 2px solid var(--color-amaranth);
-	border-radius: 10px;
-	cursor: pointer;
-	height: 50px;
-	margin-left: 85px; */
-/* } */ */
-
-.hidden {
-	display: none;
 }
 
 /* mobile menu button style */
@@ -342,24 +218,8 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	/* adjusting font sizes and styling for p tags (in figma this is body1)*/
 	a {
 		font-weight: var(--font-weight-regular);
-		font-size: var(--font21);
+		/* font-size: var(--font16); */
 		line-height: var(--line-height26);
-	}
-
-	h2 {
-		font-family: var(--main-font);
-		font-size: var(--font56);
-		font-weight: var(--font-weight-bold);
-		line-height: var(--line-height58);
-		color: var(--color-white);
-	}
-
-	p {
-		font-family: var(--main-font);
-		font-size: var(--font21);
-		font-weight: var(--font-weight-regular);
-		line-height: var(--line-height26);
-		color: var(--color-white);
 	}
 
 	/* hide menu bar for larger screen */
@@ -367,9 +227,6 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		display: none;
 	}
 
-	.hidden.button1 {
-		display: block;
-	}
 	.desktop-menu {
 		display: flex;
 	}
@@ -384,32 +241,4 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		width: 100%;
 		z-index: 20;
 	}
-	.hero {
-		position: relative;
-	}
-
-	.hero .btn-container {
-		display: flex;
-		justify-content: space-around;
-	}
-	.hero .button3 {
-		display: none;
-	}
-	.hero img {
-		object-fit: fill;
-		width: 100%;
-		/* max-height: 100vh; */
-	}
-
-	.text-container {
-		position: absolute;
-		z-index: 10;
-		bottom: 10%;
-		max-width: var(--wrapper-width-max);
-		border: 2px solid red;
-		left: 50%;
-		/* bring your own prefixes */
-		transform: translate(-50%, 0%);
-	}
-	/* button */
 }
