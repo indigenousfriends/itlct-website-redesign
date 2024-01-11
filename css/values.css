@@ -30,6 +30,33 @@ Page Component Styles (icon grid, team member card)
 	color: var(--color-onyx);
 
 }
+.copperback{
+	background-color: var(--color-copper);
+}
+.copperback p{
+	color: var(--color-white);
+}
+
+.onyxback{
+	background-color: var(--color-onyx);
+}
+.onyxback p{
+	color: var(--color-white);
+}
+	.amaraback{
+		background-color:var(--color-amaranth);
+	}
+
+
+.grapeback{
+	background-color: var(--color-cybergrape);
+}
+.blueback{
+	background-color: var(--color-yaleblue);
+}
+.tealback{
+	background-color: var(--color-teal);
+}
 .support {
 	background-color: var(--color-yaleblue);
 	color: var(--color-onyx);
