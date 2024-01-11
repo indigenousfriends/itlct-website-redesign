@@ -9,6 +9,11 @@ Styles for an individual page
 ===================================
 ===================================
 */
+html{
+	box-sizing: border-box;
+	display: flex;
+
+}
 
 /* 
 ===================================
@@ -20,12 +25,17 @@ Page Component Styles (icon grid, team member card)
 	background-color: var(--color-yaleblue);
 	color: var(--color-onyx);
 }
-
+/* Turns We Support to Red */
 .support-header {
 	color: var(--color-amaranth);
+	display: inline-block;
+	
+}
+/* Turns paragraph to White */
+.support-text p{
+	color: white;
 }
 
-.
 /* .empowering{
 	background-color: var(--color-white);
 	color:var(--color-onyx)
@@ -42,8 +52,6 @@ Page Component Styles (icon grid, team member card)
 
 /* shape backgrounds for values-list texts */
 /* How to code them: display and flexbox */
-body{ 
-	display: flexbox;
 
 .rectangle-1 {
 	width: 350px;
