@@ -51,7 +51,7 @@ Section Styles (background, padding, etc.)
 	margin: var(--spacing20) 0;;
 }
 h5 {
-    color: var(--color-white);
+    color: var(--color-amaranth);
 }
 .team-card p {
 	color: var(--color-white);
