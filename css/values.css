@@ -14,13 +14,22 @@ html{
 	display: flex;
 
 }
-
+values-body{
+	/* do I even need this? Maybe for mobile to desktop? */
+	flex-direction:column;
+	position: relative;
+}
 /* 
 ===================================
 Page Component Styles (icon grid, team member card)
 ===================================
 */
 
+/* Turns Our Values Title Black */
+.h3-black{
+	color: var(--color-onyx);
+
+}
 .support {
 	background-color: var(--color-yaleblue);
 	color: var(--color-onyx);
@@ -33,64 +42,7 @@ Page Component Styles (icon grid, team member card)
 }
 /* Turns paragraph to White */
 .support-text p{
-	color: white;
-}
-
-/* .empowering{
-	background-color: var(--color-white);
-	color:var(--color-onyx)
-}
-.empowering-img {
-	background-color: var(--color-amaranth);
-	color: var(--color-onyx);
-}
-
-.values-list {
-	background-color: var(--color-white);
-	color: var(--color-onyx);
-} */
-
-/* shape backgrounds for values-list texts */
-/* How to code them: display and flexbox */
-
-.rectangle-1 {
-	width: 350px;
-	height: 204px;
-	flex-shrink: 0;
-	border-radius: 10px;
-	background: var(--color-copper);
-}
-.rectangle-2{
-	width: 350px;
-	height: 204px;
-	flex-shrink: 0;
-	border-radius: 10px;
-	background: var(--color-onyx);
-}.rectangle-3{
-	width: 350px;
-	height: 204px;
-	flex-shrink: 0;
-	border-radius: 10px;
-	background: var(--color-amaranth);
-}.rectangle-4{
-	width: 350px;
-	height: 204px;
-	flex-shrink: 0;
-	border-radius: 10px;
-	background: var(--color-cybergrape);
-}.rectangle-5 {
-	width: 350px;
-	height: 204px;
-	flex-shrink: 0;
-	border-radius: 10px;
-	background: var(--color-yaleblue);
-}.rectangle-6 {
-	width: 350px;
-	height: 204px;
-	flex-shrink: 0;
-	border-radius: 10px;
-	background: var(--color-teal);
-}
+	color: var(--color-white);
 }
 /* 
 ===================================
