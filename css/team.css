@@ -73,8 +73,14 @@ h5 {
 .black-text h3, .black-text h4 {
 	text-align: center;
 }
-img {
+.team-card img, .get-involved img {
 	border-radius: 10px;
+}
+.current-positions {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 /* 
 ===================================
@@ -96,9 +102,61 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 /* Tablet and Larger */
 @media screen and (min-width: 768px) {
 	/* Add styles that apply to table and desktop */
+	.wrapper {
+		width: var(--desktop-wrapper-width);
+	}
+	.header-section {
+		width: 100%;
+		background-size: cover;
+		background-position: center;
+		background-image: url("/assets/images/pages/our-team/desktop/header-section-background.png");
+	}
+	.header-content {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		width: 70%;
+		margin: 0 auto;
+	}
+	.header-content img {
+		max-height: 435px;
+	}
+	.header-info {
+		width: 30%;
+	}
+	.header-info h3 {
+		font-size: var(--font56);
+		font-weight: var(--font-weight-bold);
+		line-height: var(--line-height58);
+		color: var(--color-white);
+	}
+	.header-info p {
+		color: var(--color-white);
+	}
+	.team-card {
+		display: flex;
+		flex-direction: row;
+		justify-content: left;
+	}
+	.current-positions {
+		width: 60%;
+		margin: 0 auto;
+		padding: var(--spacing40) 0;
+	}
 }
 
 /* Desktop Only */
 @media screen and (min-width: 1024px) {
 	/* Add styles that apply specifically to desktop */
+	.team-parent {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		align-items: center;
+		margin: 0 auto;
+	}
+	.team-card {
+		width: 45%;
+	}
 }
