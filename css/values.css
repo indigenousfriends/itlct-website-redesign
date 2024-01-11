@@ -30,6 +30,9 @@ Page Component Styles (icon grid, team member card)
 	color: var(--color-onyx);
 
 }
+.values-head p{
+	color: var(--color-onyx);
+}
 .copperback{
 	background-color: var(--color-copper);
 }
@@ -70,6 +73,13 @@ Page Component Styles (icon grid, team member card)
 /* Turns paragraph to White */
 .support-text p{
 	color: var(--color-white);
+}
+
+.empowering-title{
+	color: var(--color-onyx);
+}
+.empowering p{
+	color: var(--color-onyx);
 }
 /* 
 ===================================
