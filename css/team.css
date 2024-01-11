@@ -41,6 +41,9 @@ Page Component Styles (icon grid, team member card)
 Section Styles (background, padding, etc.)
 ===================================
 */
+.wrapper {
+	width: var(--mobile-wrapper-width);
+}
 .team-card {
     background: var(--color-teal);
 	border: none;
@@ -59,7 +62,7 @@ h5 {
 	justify-content: space-between;
 }
 .curent-positions {
-	margin: var(--spacing164) 0;
+	margin: var(--spacing40) 0;
 }
 
 .black-text h3, .black-text h4 {
