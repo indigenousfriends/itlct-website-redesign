@@ -286,9 +286,12 @@ footer a img:hover {
 	border-bottom: 2px solid var(--color-white);
 }
 
+
+
 /* Form Styles */
 form {
 	text-align: center;
+	padding: var(--spacing20);
 }
 .text-input {
 	display: flex;
@@ -322,6 +325,10 @@ form {
 /* MODAL */
 .hidden {
 	display: none;
+}
+
+.fixed {
+	position: fixed;
 }
 /* modal overlay */
 .overlay-la {
@@ -438,6 +445,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	}
 	form p {
 		color: var(--color-white);
+		width: 60%;
 	}
 	
 	.modal-content {
@@ -452,6 +460,10 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 
 /* Tablet Only */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
+	/* need to add margin to .modal */
+	.modal p {
+		padding: 0 var(--spacing40);
+	}
 }
 
 /* Desktop & Larger */
