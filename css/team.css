@@ -44,14 +44,19 @@ Section Styles (background, padding, etc.)
 .wrapper {
 	width: var(--mobile-wrapper-width);
 }
+h5 {
+    color: var(--color-white);
+}
 .team-card {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
     background: var(--color-teal);
 	border: none;
 	border-radius: 10px;
-	margin: var(--spacing20) 0;;
-}
-h5 {
-    color: var(--color-white);
+	padding: var(--spacing20);
+	margin: var(--spacing20) 0;
 }
 .team-card p {
 	color: var(--color-white);
@@ -67,6 +72,9 @@ h5 {
 
 .black-text h3, .black-text h4 {
 	text-align: center;
+}
+img {
+	border-radius: 10px;
 }
 /* 
 ===================================
