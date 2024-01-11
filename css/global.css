@@ -173,21 +173,6 @@ h5 {
 	color: var(--color-onyx);
 }
 
-a {
-	text-decoration: none;
-	color: inherit;
-}
-
-a:hover,
-a:focus {
-	text-decoration: underline;
-	cursor: pointer;
-}
-
-a:visited {
-	color: inherit;
-}
-
 /* Mobile body2 in figma */
 p {
 	font-size: var(--font16);
