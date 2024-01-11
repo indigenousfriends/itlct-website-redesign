@@ -33,12 +33,14 @@ Page Component Styles (icon grid, team member card)
 .values-head p{
 	color: var(--color-onyx);
 }
+/* Adds a background color in lieu of those rectangle shapes */
 .copperback{
 	background-color: var(--color-copper);
 }
 .copperback p{
 	color: var(--color-white);
 }
+/* Adds a background color in lieu of those rectangle shapes */
 
 .onyxback{
 	background-color: var(--color-onyx);
@@ -46,20 +48,29 @@ Page Component Styles (icon grid, team member card)
 .onyxback p{
 	color: var(--color-white);
 }
+/* Adds a background color in lieu of those rectangle shapes */
+
 	.amaraback{
 		background-color:var(--color-amaranth);
 	}
 
+/* Adds a background color in lieu of those rectangle shapes */
 
 .grapeback{
 	background-color: var(--color-cybergrape);
 }
+/* Adds a background color in lieu of those rectangle shapes */
+
 .blueback{
 	background-color: var(--color-yaleblue);
 }
+/* Adds a background color in lieu of those rectangle shapes */
+
 .tealback{
 	background-color: var(--color-teal);
 }
+/* Adds a background color in lieu of those rectangle shapes */
+
 .support {
 	background-color: var(--color-yaleblue);
 	color: var(--color-onyx);
@@ -74,14 +85,15 @@ Page Component Styles (icon grid, team member card)
 .support-text p{
 	color: var(--color-white);
 }
-
+/* Turns Title and Paragraph to Black */
 .empowering-title{
 	color: var(--color-onyx);
 }
 .empowering p{
 	color: var(--color-onyx);
 }
-.empowering{
+/* Adds Red Block behind this img - this changes in desktop version somehow */
+.empowering-img{
 	background-color: var(--color-amaranth);
 }
 /* 
