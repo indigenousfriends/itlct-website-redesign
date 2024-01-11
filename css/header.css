@@ -25,6 +25,22 @@ body {
 	font-family: var(--main-font);
 }
 
+h2 {
+	font-family: var(--main-font);
+	font-size: var(--font36);
+	font-weight: var(--font-weight-bold);
+	line-height: var(--line-height40);
+	color: var(--color-onyx);
+}
+
+p {
+	font-family: var(--main-font);
+	font-size: var(--font16);
+	font-weight: var(--font-weight-regular);
+	line-height: var(--line-height20);
+	color: var(--color-onyx);
+}
+
 img {
 	display: block;
 	max-width: 100%;
@@ -37,7 +53,6 @@ img {
 
 .block {
 	display: block;
-
 }
 
 /* .logo-icon {
@@ -62,8 +77,6 @@ img {
 	display: none;
 	flex-direction: row;
 	align-items: center;
-
-
 }
 
 .desktop-nav {
@@ -71,7 +84,6 @@ img {
 	text-decoration: none;
 	display: flex;
 	justify-content: space-around;
-
 }
 
 .desktop-nav li {
@@ -80,6 +92,13 @@ img {
 
 a {
 	text-decoration: none;
+	color: inherit;
+}
+
+a:hover,
+a:focus {
+	text-decoration: underline;
+	cursor: pointer;
 }
 
 a:visited {
@@ -159,10 +178,6 @@ button:hover {
 	text-align: center;
 }
 
-.text-container p {
-	color: var(--color-onyx);
-}
-
 #nav-links-container {
 	position: absolute;
 	top: 50px;
@@ -188,7 +203,8 @@ button:hover {
 #nav-links a {
 	color: var(--color-white);
 	text-decoration: none;
-
+	font-weight: var(--font-weight-regular);
+	font-size: var(--font16);
 }
 
 .hidden {
@@ -199,7 +215,6 @@ button:hover {
 #mobileClose {
 	display: hidden;
 }
-
 
 /* 
 ===================================
@@ -231,13 +246,27 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 /* Desktop & Larger */
 
 @media screen and (min-width: 1024px) {
-
 	/* adjusting font sizes and styling for p tags (in figma this is body1)*/
+	a {
+		font-weight: var(--font-weight-regular);
+		font-size: var(--font21);
+		line-height: var(--line-height26);
+	}
+
+	h2 {
+		font-family: var(--main-font);
+		font-size: var(--font56);
+		font-weight: var(--font-weight-bold);
+		line-height: var(--line-height58);
+		color: var(--color-white);
+	}
+
 	p {
+		font-family: var(--main-font);
 		font-size: var(--font21);
 		font-weight: var(--font-weight-regular);
 		line-height: var(--line-height26);
-		color: var(--color-onyx);
+		color: var(--color-white);
 	}
 
 	/* hide menu bar for larger screen */
@@ -262,4 +291,5 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		z-index: 10;
 		bottom: 15%;
 	}
+	/* button */
 }
