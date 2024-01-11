@@ -374,6 +374,16 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		display: flex;
 	}
 
+	/* top bar positioning shanangings */
+	header {
+		position: relative;
+	}
+
+	.top-bar {
+		position: absolute;
+		width: 100%;
+		z-index: 20;
+	}
 	.hero {
 		position: relative;
 	}
@@ -387,6 +397,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	}
 	.hero img {
 		object-fit: fill;
+		width: 100%;
 		/* max-height: 100vh; */
 	}
 
