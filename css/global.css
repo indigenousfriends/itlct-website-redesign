@@ -189,7 +189,6 @@ a {
 /* Lists */
 footer li {
 	list-style-type: none;
-	/* need variable for line height */
 	line-height: var(--line-height32);
 	text-align: center;
 }
@@ -222,20 +221,21 @@ Global Component Styles (buttons, forms, etc.)
 */
 
 /* Buttons */
-.button2 {
+/* footer submit button */
+.text-input .button2 {
 	border-radius: 10px;
 	background-color: var(--button2-color);
-	padding: 10px 40px;
+	padding: var(--spacing10) var(--spacing40);
 	color: var(--color-white);
 	border: none;
 	min-width: 187px;
 	min-height: 50px;
-	margin: 20px;
+	margin: var(--spacing20);
 	font-weight: var(--font-weight-bold);
 	font-size: var(--font21);
 }
 
-.button2:hover {
+.text-input .button2:hover {
 	background-color: var(--color-white);
 	color: var(--color-onyx);
 }
@@ -246,6 +246,7 @@ footer {
 	color: var(--color-white);
 }
 
+/* Transition and transform for logo and social links for better visual */
 footer a img {
 	transition: all 0.1s ease-in;
 }
@@ -253,15 +254,16 @@ footer a img:hover {
 	transform: scale(110%);
 }
 
+/* footer main is the container for all content except for very bottom links */
 .footer-main {
-	padding: 40px 0;
-}
+	padding: var(--spacing40) 0;
 
-.footer-main {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
+
+/* Logo and land acknowledgement button container*/
 .footer-logo-btn {
 	display: flex;
 	flex-direction: column;
@@ -273,17 +275,18 @@ footer a img:hover {
 	background-color: transparent;
 	color: var(--color-white);
 	border: none;
-	margin: 30px 0;
+	margin: var(--spacing40) 0;
 	font-size: var(--font21);
 }
 
+/* hover effect on all footer links */
 .btn-la:hover,
 .footer-main ul li a:hover,
 .bottom-links a:hover {
 	border-bottom: 2px solid var(--color-white);
 }
 
-/* FORM Styles */
+/* Form Styles */
 form {
 	text-align: center;
 }
@@ -337,7 +340,8 @@ form {
 	max-width: 1100px;
 	max-height: 90vh;
 	margin: 0 auto;
-	padding: 26px;
+	/* was 26px and replaced with variable */
+	padding: var(--spacing20);
 	position: fixed;
 	left: 0;
 	right: 0;
@@ -397,6 +401,10 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 /* Tablet & Larger */
 @media (min-width: 1024px) {
 	/* Footer styles */
+	.wrapper {
+		width: var(--desktop-wrapper-width);
+	}
+	
 	.footer-main {
 		display: flex;
 		flex-direction: row;
@@ -431,9 +439,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	form p {
 		color: var(--color-white);
 	}
-	.wrapper {
-		width: var(--desktop-wrapper-width);
-	}
+	
 	.modal-content {
 		overflow-y: auto;
 	}
@@ -442,6 +448,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	}
 	/* End of footer styles */
 }
+
 
 /* Tablet Only */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -455,6 +462,13 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		font-weight: var(--font-weight-regular);
 		line-height: var(--line-height26);
 		color: var(--color-onyx);
+	}
+}
+
+/* For larger screens */
+@media (min-width: 1280px) {
+	footer {
+		padding: 0 var(--spacing65);
 	}
 }
 
