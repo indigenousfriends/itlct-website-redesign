@@ -144,6 +144,22 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		margin: 0 auto;
 		padding: var(--spacing40) 0;
 	}
+	.get-involved {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		/* gradient is opposite- needs to be adjusted in global styles */
+		background: var(--color-bluepurple);
+	}
+	.get-involved h4 {
+		color: var(--color-white);
+	}
+	.get-involved p {
+		color: var(--color-white);
+	}
+	.get-involved .button2 {
+		/* need to make styles for the button */
+	}
 }
 
 /* Desktop Only */
@@ -158,5 +174,11 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	}
 	.team-card {
 		width: 45%;
+	}
+	.get-involved h4 {
+		font-size: var(--font46);
+		font-weight: var(--font-weight-bold);
+		line-height: var(--line-height50);
+		color: var(--color-white);
 	}
 }
