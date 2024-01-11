@@ -25,6 +25,7 @@ values-body{
 	flex-direction:column;
 	position: relative;
 }
+
 /* 
 ===================================
 Page Component Styles (icon grid, team member card)
@@ -87,6 +88,11 @@ Page Component Styles (icon grid, team member card)
 	display: inline-block;
 	
 }
+/* Aligns heart icon to the end of Support header */
+.heart{
+display:inline-block;
+}
+
 /* Turns paragraph to White */
 .support-text p{
 	color: var(--color-white);
@@ -102,11 +108,13 @@ Page Component Styles (icon grid, team member card)
 .empowering-img{
 	background-color: var(--color-amaranth);
 }
-/* s
-===================================
+
+
+
+/* ===================================
 Section Styles (background, padding, etc.)
 ===================================
-*/
+*/ */
 
 /* 
 ===================================
