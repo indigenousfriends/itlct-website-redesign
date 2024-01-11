@@ -14,6 +14,12 @@ html{
 	display: flex;
 
 }
+body{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+}
 values-body{
 	/* do I even need this? Maybe for mobile to desktop? */
 	flex-direction:column;
@@ -96,7 +102,7 @@ Page Component Styles (icon grid, team member card)
 .empowering-img{
 	background-color: var(--color-amaranth);
 }
-/* 
+/* s
 ===================================
 Section Styles (background, padding, etc.)
 ===================================
