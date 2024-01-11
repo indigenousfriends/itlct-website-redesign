@@ -1,3 +1,4 @@
+// Footer Modal
 const modal = document.querySelector(".modal");
 const overlay = document.querySelector(".overlay-la");
 const openModalBtn = document.querySelector(".btn-la");
@@ -27,3 +28,4 @@ document.addEventListener("keydown", function (e) {
     closeModal();
   }
 });
+// End of footer modal
