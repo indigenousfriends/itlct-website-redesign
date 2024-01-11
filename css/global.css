@@ -226,15 +226,16 @@ Global Component Styles (buttons, forms, etc.)
 */
 
 /* Buttons */
+/* footer submit button */
 .button2 {
 	border-radius: 10px;
 	background-color: var(--button2-color);
-	padding: 10px 40px;
+	padding: var(--spacing10) var(--spacing40);
 	color: var(--color-white);
 	border: none;
 	min-width: 187px;
 	min-height: 50px;
-	margin: 20px;
+	margin: var(--spacing20);
 	font-weight: var(--font-weight-bold);
 	font-size: var(--font21);
 }
@@ -250,6 +251,7 @@ footer {
 	color: var(--color-white);
 }
 
+/* Adding in transition and transform to logo and social links for better visuals */
 footer a img {
 	transition: all 0.1s ease-in;
 }
@@ -258,10 +260,8 @@ footer a img:hover {
 }
 
 .footer-main {
-	padding: 40px 0;
-}
+	padding: var(--spacing40) 0;
 
-.footer-main {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
