@@ -20,17 +20,18 @@ Styles for an individual page
 html {
 	/* does this need before and after */
 	box-sizing: border-box; 
-	display: flex;
 }
 body {
+	width: var(--mobile-wrapper-width);
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	border: none;
-	border-radius: 10px;
-	padding: var(--spacing20);
-	margin: var(--spacing20) 0;
+
+	/* border: none; */
+	/* border-radius: 10px; */
+	/* padding: var(--spacing20); */
+	/* margin: var(--spacing20) 0; */
 }
 
 
@@ -156,4 +157,19 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 /* Desktop Only */
 @media screen and (min-width: 1024px) {
 	/* Add styles that apply specifically to desktop */
+	body {
+	width: var(--desktop-wrapper-width)
+	}
+	.hero {
+		width: 100vw;
+		height: 100vh;
+		background-image: url(../assets/images/pages/values/hero-values.jpg);
+		background-image: linear-gradient(260deg, rgba(9, 9, 9, 0.80) 46.9%, rgba(9, 9, 9, 0.00) 86.82%),url(../assets/images/pages/values/hero-values.jpg);;
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	.hero img {
+        display: none;
+    }
 }
