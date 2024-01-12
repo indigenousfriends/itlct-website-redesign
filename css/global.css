@@ -344,6 +344,7 @@ form {
 	z-index: 1;
 }
 .modal {
+	width: 90%;
 	max-width: 1100px;
 	max-height: 90vh;
 	margin: 0 auto;
@@ -370,6 +371,7 @@ form {
 .modal-header h4 {
 	text-align: center;
 	color: var(--color-onyx);
+	margin-bottom: 0px;
 }
 
 .modal-wrapper {
@@ -405,7 +407,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 ===================================
 */
 
-/* Tablet & Larger */
+/* Desktop & Larger */
 @media (min-width: 1024px) {
 	/* Footer styles */
 	.wrapper {
@@ -451,9 +453,11 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	.modal-content {
 		overflow-y: auto;
 	}
-	.modal {
-		padding: auto 100px 100px 100px;
+
+	.modal-scroll {
+		padding: var(--spacing20);
 	}
+	
 	/* End of footer styles */
 }
 
@@ -461,8 +465,8 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 /* Tablet Only */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
 	/* need to add margin to .modal */
-	.modal p {
-		padding: 0 var(--spacing40);
+	.modal-scroll {
+		padding: var(--spacing20);
 	}
 }
 
