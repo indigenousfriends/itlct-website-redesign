@@ -326,9 +326,10 @@ form {
 .hidden {
 	display: none;
 }
-
+/* positioning for body to stop scroll when modal is open */
 .fixed {
 	position: fixed;
+	width: 100%;
 }
 /* modal overlay */
 .overlay-la {
@@ -360,19 +361,6 @@ form {
 	border-radius: 4px;
 	z-index: 2;
 }
-/* without this the text was white */
-.modal-header h4,
-.modal p {
-	color: var(--color-onyx);
-}
-.modal p {
-	margin: 26px;
-}
-.modal-header h4 {
-	text-align: center;
-	color: var(--color-onyx);
-	margin-bottom: 0px;
-}
 
 .modal-wrapper {
 	position: relative;
@@ -383,6 +371,16 @@ form {
 }
 .modal-scroll {
 	max-height: calc(85vh 300px);
+}
+/* modal text content */
+.modal p {
+	color: var(--color-onyx);
+	margin: var(--spacing20);
+}
+.modal-header h4 {
+	text-align: center;
+	color: var(--color-onyx);
+	margin-bottom: 0px;
 }
 .btn-close {
 	position: absolute;
@@ -471,7 +469,6 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 
 /* Tablet Only */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-	/* need to add margin to .modal */
 	.modal-scroll {
 		padding: var(--spacing20);
 	}
