@@ -23,7 +23,11 @@
 		<!-- Header section -->
 	<!-- add aria labels -->
 	<container class="container"> 
-		<img src="./assets/images/pages/values/mobile/hero-values-m.jpg" alt="a young man smiling">
+		<picture> 
+			<source media="(min-width:768px)" srcset ="./assets/images/pages/values/hero-values.jpg" alt="">
+		<!-- Not sure if desktop img needs new line  -->
+			<img src="./assets/images/pages/values/mobile/hero-values-m.jpg" alt="a young man smiling">
+		</picture> 	
 		<div class="values-head">
 			<h3 class="h3-black">Our Values</h3>
 			<p>
@@ -35,7 +39,7 @@
 	</div>
 		<!-- Values-list section -->
 		<section class="values-list">
-			<div class="copperback"> 
+			<div class="copperback card"> 
 				<h4>Humanity and Inclusion</h4>
 				<p>
 					We believe in human rights, equity, inclusion, and fostering belonging
@@ -44,10 +48,14 @@
 			</div>
 			</section>
 			<section class="sustainability">
-				<div>
-					<img src="./assets/images/pages/values/mobile/sustainability-m.jpg" alt="a person holding a tablet in nature">
+				<div class="card">
+					<picture> 
+						<source media="(min-width:768px)" srcset ="./assets/images/pages/values/sustainability.jpg" alt="">
+						<img src="./assets/images/pages/values/mobile/sustainability-m.jpg" alt="a person holding a tablet in the middle of nature">
+					</picture> 
 				</div>
-			<div class="onyxback">
+
+			<div class="onyxback card">
 					<h4>Sustainability</h4>
 					<p>
 						We support long term sustainability and responsible treatment of our
@@ -56,7 +64,7 @@
 				</div>
 			</section>
 			<section class="authenticity"> 
-				<div class="amaraback">
+				<div class="amaraback card">
 					<h4>Authenticity</h4>
 					<p>
 						We believe in authentic representation and utility for indigenous
@@ -64,11 +72,14 @@
 					</p>
 				</div>
 				<div>
+					<picture> 
+						<source media="(min-width:768px)" srcset ="./assets/images/pages/values/authenticity.jpg" alt="">
 					<img src="./assets/images/pages/values/mobile/authenticity-m.jpg" alt="an indigenous family laughing together">
+					</picture>
 				</div>
 			</section>
 
-<div class="grapeback"> 
+<div class="grapeback card"> 
 					<h4>Multigenerational Connection</h4>
 					<p>
 						We support multigenerational needs and beliefs that are important to
@@ -84,11 +95,14 @@
 					</p>
 				</div>
 				<div>
+					<picture> 
+						<source media="(min-width:768px)" srcset ="./assets/images/pages/values/education.jpg" alt="">
 					<img src="./assets/images/pages/values/mobile/education-m.jpg" alt="an aboriginal woman working">
+					</picture>
 				</div>
 			</section>
 			<section class="tech"> 
-<div class="tealback"> 
+<div class="tealback card"> 
 					<h4>Technology and Innovation</h4>
 					<p>
 						We advocate responsible stewardship with digital tech & innovation.
@@ -104,8 +118,8 @@
 		<container2> 
 		<section class="support">
 			<!-- <div class="wrapper"> -->
-				<!-- <div class="support-header"> -->
-					<h4 class="support-header">WE SUPPORT</h4>
+				<div class="support-header">
+					<h4>WE SUPPORT</h4>
 					<!-- add heart icon -->
 					<img class=heart src="./assets/icons/values/mobile/Heart-m.svg" alt="heart icon">
 				</div>
@@ -125,8 +139,8 @@
 		<!-- Empowering section  -->
 		<container3> 
 		<section class="empowering">
-			<!-- <div class="wrapper"> -->
-					<h4 class="empowering-title">Empowering Self-Determination</h4>
+			<div class="empowering card">
+					<h4>Empowering Self-Determination</h4>
 					<p>
 						We advocate for native and Indigenous rights through digital
 						empowerment, aligning with the UN Declaration on the Rights of
@@ -139,7 +153,10 @@
 				<!-- </div> -->
 				<!-- img box -->
 				<div class="empowering-img">
+					<picture> 
+						<source media="(min-width:768px)" srcset ="./assets/images/pages/values/empowering.jpg" alt="">
 					<img src="./assets/images/pages/values/mobile/empowering-m.jpg" alt="youths working together on a project" />
+					</picture>
 				</div>
 			</div>
 		</section>
