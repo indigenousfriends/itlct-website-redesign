@@ -435,19 +435,26 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	.footer-logo-btn {
 		align-items: start;
 	}
+
+	form {
+		display: flex;
+		flex-direction: column;
+		text-align: left;
+		/* removing padding on button to align with content */
+		padding-right: 0px;
+	}
+	form p {
+		color: var(--color-white);
+		width: 60%;
+	}
 	.text-input {
 		display: flex;
 		flex-direction: row;
 		align-items: center;
 	}
-	form {
-		display: flex;
-		flex-direction: column;
-		text-align: left;
-	}
-	form p {
-		color: var(--color-white);
-		width: 60%;
+	/* removing margin on button to align with content */
+	.text-input .button2 {
+		margin-right: 0px;
 	}
 	
 	.modal-content {
