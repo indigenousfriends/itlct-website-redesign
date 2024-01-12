@@ -194,7 +194,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 }
 
 /* Desktop Only */
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1217px) {
 	/* Add styles that apply specifically to desktop */
 }
 
