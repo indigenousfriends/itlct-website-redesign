@@ -65,6 +65,7 @@ img {
 	color: var(--color-white);
 	display: flex;
 	justify-content: space-around;
+	align-items: center;
 	padding: 20px;
 }
 
@@ -110,7 +111,94 @@ a:visited {
 	color: #424241;
 }
 
-button {
+/* hello */
+
+/* Styles for the container */
+/* Button styles */
+/* button1 */
+.button1 {
+	display: flex;
+	width: 300px;
+	height: 50px;
+	padding: 11px 92px;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	gap: 10px;
+	flex-shrink: 0;
+	border-radius: 10px;
+	border-color: var(--color-white);
+	background: rgb(0, 0, 0, 0);
+	color: var(--color-white);
+	cursor: pointer;
+	border: 3px solid var(--color-white);
+	font-size: var(--font21);
+	font-weight: var(--font-weight-bold);
+	line-height: var(--line-height26);
+}
+
+.button1:hover {
+	/* background: var(--button3-hover-border); */
+	background: var(--color-white);
+	/* border: 3px solid var(--button3-color); */
+	color: var(--color-onyx);
+}
+/* button2  */
+.button2 {
+	display: flex;
+	width: 300px;
+	height: 50px;
+	padding: 11px 92px;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	flex-shrink: 0;
+	border-radius: 10px;
+	background: var(--button3-color);
+	color: var(--color-white);
+	cursor: pointer;
+	border: none;
+	font-size: var(--font21);
+	font-weight: var(--font-weight-bold);
+	line-height: var(--line-height26);
+}
+
+.button2:hover {
+	/* background: var(--button3-hover-border); */
+	background: rgb(0, 0, 0, 0);
+	border: 3px solid var(--button3-color);
+	color: var(--color-onyx);
+}
+.button3 {
+	display: flex;
+	width: 300px;
+	height: 50px;
+	padding: 11px 92px;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	gap: 10px;
+	flex-shrink: 0;
+	border-radius: 10px;
+	background: var(--button3-color);
+	color: var(--color-white);
+	cursor: pointer;
+	border: none;
+	font-size: var(--font21);
+	font-weight: var(--font-weight-bold);
+	line-height: var(--line-height26);
+}
+
+.button3:hover {
+	/* background: var(--button3-hover-border); */
+	background: rgb(0, 0, 0, 0);
+	border: 3px solid var(--button3-color);
+	color: var(--color-onyx);
+}
+
+/* hello */
+
+/* button {
 	background-color: var(--color-amaranth);
 	color: var(--color-white);
 	font-family: var(--main-font);
@@ -119,31 +207,36 @@ button {
 	border: 2px solid var(--color-amaranth);
 	border-radius: 10px;
 	cursor: pointer;
-}
+} */
 
-button:hover {
-	/* font-family: inherit; */
-	/* font-family: var(--main-font); */
-	/* font-weight: var(--font-weight-bold); */
-	background-color: transparent;
+/* button:hover {
+	/* font-family: inherit; this was co*/
+/* font-family: var(--main-font); co */
+/* font-weight: var(--font-weight-bold); co */
+/* background-color: transparent;
 	color: var(--color-onyx);
 	border: 2px solid var(--color-amaranth);
 	border-radius: 10px;
 	cursor: pointer;
-}
+} */
+*/
 
-.button2 {
+/* .button2 {
 	background-color: var(--color-amaranth);
 	color: var(--color-white);
 	font-family: var(--main-font);
 	font-weight: var(--font-weight-bold);
-	/* trying to center text vertically */
-	padding: 1rem;
+	/* trying to center text vertically co*/
+	/* padding: 1rem;
 	border: 2px solid var(--color-amaranth);
 	border-radius: 10px;
 	cursor: pointer;
 	height: 50px;
-	margin-left: 85px;
+	margin-left: 85px; */
+/* } */ */
+
+.hidden {
+	display: none;
 }
 
 /* mobile menu button style */
@@ -168,8 +261,8 @@ button:hover {
 }
 
 .img-container {
-	display: flex;
-	justify-content: center;
+	/* display: flex; */
+	/* justify-content: center; */
 	margin: auto;
 }
 
@@ -274,6 +367,9 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		display: none;
 	}
 
+	.hidden.button1 {
+		display: block;
+	}
 	.desktop-menu {
 		display: flex;
 	}
@@ -282,14 +378,27 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		position: relative;
 	}
 
-	.hero .img-container {
-		max-height: 100vh;
+	.hero .btn-container {
+		display: flex;
+		justify-content: space-around;
+	}
+	.hero .button3 {
+		display: none;
+	}
+	.hero img {
+		object-fit: fill;
+		/* max-height: 100vh; */
 	}
 
 	.text-container {
 		position: absolute;
 		z-index: 10;
-		bottom: 15%;
+		bottom: 10%;
+		max-width: var(--wrapper-width-max);
+		border: 2px solid red;
+		left: 50%;
+		/* bring your own prefixes */
+		transform: translate(-50%, 0%);
 	}
 	/* button */
 }
