@@ -65,11 +65,8 @@ picture img {
 	border: none;
 	border-radius: 10px;
 	padding: var(--spacing20);
-	padding-top: 100px;
+	padding-top: var(--spacing65);
 	margin: var(--spacing20) 0;
-}
-.team-card div picture {
-	margin-top: var(--spacing40);
 }
 .team-card div {
 	margin: 10px;
