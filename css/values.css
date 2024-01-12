@@ -9,8 +9,17 @@ Styles for an individual page
 ===================================
 ===================================
 */
+
+/* need to add wrapper */
+/* red background for bottom section needs fixing */
+/* some text changes from white to black when in desktop mode */
+/* blue background for support us needs fixing */
+/* heart color and gap needed for support us */
+/* white icons in support us need flexbox to move side by side in desktop mode */
+/* align title text to center somehow hoping wrapper fixes some stuff */
 html {
-	box-sizing: border-box;
+	/* does this need before and after */
+	box-sizing: border-box; 
 	display: flex;
 }
 body {
@@ -113,7 +122,7 @@ Page Component Styles (icon grid, team member card)
 }
 /* Adds Red Block behind this img - this changes in desktop version somehow */
 .empowering-img{
-	background-color: var(--color-amaranth);
+	background-color: avar(--color-amaranth);
 	width: cover;
 }
 
