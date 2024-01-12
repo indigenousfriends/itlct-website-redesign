@@ -31,24 +31,98 @@ Page Component Styles (icon grid, team member card)
 	background-color: var(--color-yaleblue);
 }
 
-
 /* 
 ===================================
 Section Styles (background, padding, etc.)
 ===================================
 */
+
+/* hero section */
+.hero {
+	margin: 0, auto;
+}
+.hero-image {
+	width: 100%;
+	height: auto;
+}
+
+.alternate {
+	color: var(--color-onyx);
+}
+
+/* button styles - likely will be replaced later */
+.button1 {
+	display: flex;
+	width: 300px;
+	height: 50px;
+	padding: 11px 92px;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	gap: 10px;
+	flex-shrink: 0;
+	border-radius: 10px;
+	border-color: var(--color-white);
+	background: rgb(0, 0, 0, 0);
+	color: var(--color-white);
+	cursor: pointer;
+	border: 3px solid var(--color-white);
+	font-family: var(--main-font);
+	font-size: var(--font21);
+	font-weight: var(--font-weight-bold);
+	line-height: var(--line-height26);
+}
+
+.button1:hover {
+	background: var(--color-white);
+	color: var(--color-onyx);
+}
+
+.button3 {
+	display: flex;
+	width: 300px;
+	height: 50px;
+	padding: 11px 92px;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	gap: 10px;
+	flex-shrink: 0;
+	border-radius: 10px;
+	background: var(--button3-color);
+	color: var(--color-white);
+	cursor: pointer;
+	border: none;
+	font-family: var(--main-font);
+	font-size: var(--font21);
+	font-weight: var(--font-weight-bold);
+	line-height: var(--line-height26);
+}
+
+.button3:hover {
+	/* background: var(--button3-hover-border); */
+	background: rgb(0, 0, 0, 0);
+	border: 3px solid var(--button3-color);
+	color: var(--color-onyx);
+}
+
+/* community partnerships section */
 .community {
 	background-color: var(--color-amaranth);
 }
 
+/* A global ecosystem section */
 .ecosystem {
 	background-color: var(--color-cybergrape);
 }
-
-.values {
+.blockquote {
 	background-color: var(--color-onyx);
 }
 
+/* our values section */
+.values {
+	background-color: var(--color-onyx);
+}
 
 /* 
 ===================================
@@ -65,6 +139,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 /* Tablet Only */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
 	/* Add styles that only apply to tablet. These are usually fixes to get resposnivenes right */
+
 	h3 {
 		color: var(--color-onyx);
 	}
@@ -73,18 +148,64 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 /* Tablet and Larger */
 @media screen and (min-width: 340px) {
 	/* Add styles that apply to tablet and desktop */
+
 	h3 {
 		color: var(--color-onyx);
 	}
 	.card {
-	border: none;
-	border-radius: 10px;
-	padding: var(--spacing20);
-	margin: var(--spacing20) 0;
+		border: none;
+		border-radius: 10px;
+		padding: var(--spacing20);
+		margin: var(--spacing20) 0;
+	}
+	.events-and-programs {
+		color: var(--color-onyx);
 	}
 }
 
 /* Desktop Only */
 @media screen and (min-width: 1024px) {
 	/* Add styles that apply specifically to desktop */
+	.hero {
+		position: relative;
+	}
+
+	.hero .btn-container {
+		display: flex;
+		justify-content: space-around;
+	}
+	.hero .button3 {
+		display: none;
+	}
+	.hero img {
+		object-fit: fill;
+		/* max-height: 100vh; */
+	}
+
+	.hero-home {
+		position: absolute;
+		z-index: 10;
+		bottom: 10%;
+		max-width: var(--wrapper-width-max);
+		border: 2px solid red;
+		left: 50%;
+		/* bring your own prefixes */
+		transform: translate(-50%, 0%);
+	}
+
+	.ecosystem {
+		background: url(../assets/images/pages/home/bg-overlay-vector-01.svg),
+			var(--color-bluepurple);
+		background-size: cover;
+	}
+
+	.values {
+		background-image: url(../assets/images/pages/home/values.jpg);
+	}
+
+	.events-and-programs {
+		background: url(../assets/images/pages/home/bg-overlay-vector-02.svg),
+			var(--color-bluepurple);
+		background-size: cover;
+	}
 }
