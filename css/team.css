@@ -64,8 +64,8 @@ picture img {
     background: var(--color-teal);
 	border: none;
 	border-radius: 10px;
-	padding-top: 100px;
 	padding: var(--spacing20);
+	padding-top: 100px;
 	margin: var(--spacing20) 0;
 }
 .team-card div picture {
