@@ -64,11 +64,22 @@ picture img {
     background: var(--color-teal);
 	border: none;
 	border-radius: 10px;
+	padding-top: 100px;
 	padding: var(--spacing20);
 	margin: var(--spacing20) 0;
 }
+.team-card div picture {
+	margin-top: var(--spacing40);
+}
 .team-card div {
 	margin: 10px;
+}
+.team-card h4{
+	margin: 0px;
+}
+.team-card h5 {
+	margin-top: var(--spacing10);
+
 }
 .team-card p {
 	color: var(--color-white);
