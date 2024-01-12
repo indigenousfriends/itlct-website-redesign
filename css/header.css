@@ -39,9 +39,7 @@ body {
 	display: block;
 } */
 
-.logo-icon {
-	/* width: 75px; */
-}
+
 
 /* top bar section */
 .top-bar {
@@ -52,13 +50,12 @@ body {
 	align-items: center;
 	padding: 20px;
 }
-
 .dp-wrapper {
-	max-width: var(--desktop-wrapper-width);
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
+width: var(--mobile-wrapper-width);
+display: flex;
+justify-content: space-between;
 }
+
 
 .logo-container {
 	display: flex;
@@ -256,5 +253,14 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		/* border: 3px solid var(--button3-color); */
 		color: var(--color-onyx);
 		text-decoration: none;
+	}
+	.dp-wrapper {
+		max-width: var(--desktop-wrapper-width);
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.logo-icon {
+	min-width: 205px;
 	}
 }
