@@ -23,6 +23,10 @@ Page Component Styles (icon grid, team member card)
 	background-color: var(--color-copper);
 }
 
+.technology-programs {
+	background-color: var(--color-yaleblue);
+}
+
 .our-values {
 	background-color: var(--color-yaleblue);
 }
@@ -61,11 +65,23 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 /* Tablet Only */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
 	/* Add styles that only apply to tablet. These are usually fixes to get resposnivenes right */
+	h3 {
+		color: var(--color-onyx);
+	}
 }
 
 /* Tablet and Larger */
-@media screen and (min-width: 768px) {
-	/* Add styles that apply to table and desktop */
+@media screen and (min-width: 340px) {
+	/* Add styles that apply to tablet and desktop */
+	h3 {
+		color: var(--color-onyx);
+	}
+	.card {
+	border: none;
+	border-radius: 10px;
+	padding: var(--spacing20);
+	margin: var(--spacing20) 0;
+	}
 }
 
 /* Desktop Only */
