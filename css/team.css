@@ -39,7 +39,7 @@ Page Component Styles (icon grid, team member card)
 .button3 {
 	border-radius: 10px;
 	background-color: var(--button2-color);
-	padding: 10px 40px;
+	padding: 11px 92px;
 	color: var(--color-white);
 	border: none;
 	min-width: 300px;
