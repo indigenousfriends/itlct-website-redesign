@@ -95,6 +95,7 @@ Page Component Styles (icon grid, team member card)
 	color: var(--color-amaranth);
 }
 /* Aligns heart icon to the end of Support header */
+/* need small gap between icon and text */
 .heart {
 	display:inline-flex;
 }
@@ -104,14 +105,14 @@ Page Component Styles (icon grid, team member card)
 	color: var(--color-white);
 }
 /* Turns Title and Paragraph to Black */
-.empowering-title {
+.empowering h4{
 	color: var(--color-onyx);
 }
 .empowering p {
 	color: var(--color-onyx);
 }
 /* Adds Red Block behind this img - this changes in desktop version somehow */
-.empowering-img {
+.empowering-img{
 	background-color: var(--color-amaranth);
 	width: cover;
 }
@@ -119,7 +120,6 @@ Page Component Styles (icon grid, team member card)
 /* ===================================
 Section Styles (background, padding, etc.)
 ===================================
-*/
 */
 
 /* 
