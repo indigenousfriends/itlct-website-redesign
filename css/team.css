@@ -28,6 +28,7 @@ Page Component Styles (icon grid, team member card)
 	min-width: 187px;
 	min-height: 50px;
 	margin: 20px;
+	font-family: var(--main-font);
 	font-weight: var(--font-weight-bold);
 	font-size: var(--font21);
 }
@@ -65,6 +66,9 @@ picture img {
 	border-radius: 10px;
 	padding: var(--spacing20);
 	margin: var(--spacing20) 0;
+}
+.team-card div {
+	margin: 10px;
 }
 .team-card p {
 	color: var(--color-white);
