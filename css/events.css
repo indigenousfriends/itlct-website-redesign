@@ -28,7 +28,7 @@ Section Styles (background, padding, etc.)
 .title-img {
 	width: 100%;
 	height: 250px;
-	background-image: url("/assets/images/pages/events/title.png");
+	background-image: url("/assets/images/pages/event-program/introspective.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	
@@ -59,27 +59,28 @@ h3 {
 	width: 100%;
 	/* might need to change height later */
 	height: 200px;
-	/* just until we have the assets */
-	border: 1px black solid;
+	border-radius: 10px;
+	background-position: center;
+	background-size: cover;
 }
 /* Network card */
 .card-item1 .event-card-img {
-	background-image: url();
+	background-image: url("/assets/images/pages/event-program/networking.jpg");
 }
 
 /* Share card */
 .card-item2 .event-card-img {
-	background-image: url();
+	background-image: url("/assets/images/pages/event-program/share.jpg");
 }
 
 /* Brainstorm card */
 .card-item3 .event-card-img {
-	background-image: url();
+	background-image: url("/assets/images/pages/event-program/brianstorm.jpg");
 }
 
 /* Collaborate card */
 .card-item4 .event-card-img {
-	background-image: url();
+	background-image: url("/assets/images/pages/event-program/collaborate.jpg");
 }
 
 /* Card title boxes */
@@ -108,33 +109,40 @@ h3 {
 	background-color: var(--color-teal);
 }
 
+/* text below the cards */
 .event-card-text p {
 	color: var(--color-onyx);
 }
 
+/* Upcoming Events/Previous Events */
+/* event image and text containers */
+.event-img,
+.event-info {
+	width: 100%;
+	margin: 0 auto;
+}
+.event-img img {
+	width: 100%;
+}
 
-/* Upcoming Events and Programs */
-.upcoming-events {
+/* Upcoming/Previous events bottom margin */
+.upcoming-events, 
+.previous-events{
 	margin-bottom: 80px;
 }
-h4 {
-	margin: 20px 0px;
-	color: var(--color-onyx);
-}
+
+
+/* Upcoming/Previous events text */
 .h4-title {
 	text-align: center;
+	color: var(--color-onyx);
 }
-/* upcoming events img */
-
-
-/* upcoming events text */
 .event-info p {
 	color: var(--color-onyx);
 }
-
-/* Previous Events */
-.previous-events {
-	margin-bottom: 80px;
+.event-info h4 {
+	margin: 20px 0px;
+	color: var(--color-onyx);
 }
 
 /* Hiding desktop only events for mobile */
@@ -178,7 +186,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	
 	.title {
 		height: 992px;
-		background-image: url("/assets/images/pages/events/hero.png");
+		background-image: url("/assets/images/pages/event-program/desktop/hero-d.jpg");
 		background-size: cover;
 		background-position: center;
 
@@ -212,7 +220,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		/* positioning */
 		position: relative;
 	}
-
+	
 	.event-card-title {
 		text-align: start;
 		border-radius: 0px 0px 10px 10px;
@@ -263,4 +271,29 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 /* Desktop Only */
 @media screen and (min-width: 1024px) {
 	/* Add styles that apply specifically to desktop */
+	.event-card-img {
+		height: 400px;
+	}
+
+	/* Network card */
+	.card-item1 .event-card-img {
+		background-image: url("/assets/images/pages/event-program/desktop/network-d.jpg");
+	}
+
+	/* Share card */
+	.card-item2 .event-card-img {
+		background-image: url("/assets/images/pages/event-program/desktop/share-d.jpg");
+	}
+
+	/* Brainstorm card */
+	.card-item3 .event-card-img {
+		background-image: url("/assets/images/pages/event-program/desktop/brainstorm-d.jpg");
+	}
+
+	/* Collaborate card */
+	.card-item4 .event-card-img {
+		background-image: url("/assets/images/pages/event-program/desktop/collaborate-d.jpg");
+	}
+
+
 }
