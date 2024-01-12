@@ -44,7 +44,6 @@ button {
 	display: flex;
 	width: 300px;
 	height: 50px;
-	padding: 11px 92px;
 	justify-content: center;
 	align-items: center;
 	gap: 10px;
@@ -64,6 +63,7 @@ button:hover {
 	background: rgb(0, 0, 0, 0);
 	border: 3px solid var(--button3-color);
 	color: var(--color-onyx);
+	
 }
 
 /* 
