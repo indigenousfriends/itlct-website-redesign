@@ -30,6 +30,9 @@ Page Component Styles (icon grid, team member card)
 .our-values {
 	background-color: var(--color-yaleblue);
 }
+.card-img img {
+	width: 100%;
+}
 
 /* 
 ===================================
@@ -40,10 +43,6 @@ Section Styles (background, padding, etc.)
 /* hero section */
 .hero {
 	margin: 0, auto;
-}
-.hero-image {
-	width: 100%;
-	height: auto;
 }
 
 .alternate {
@@ -116,7 +115,25 @@ Section Styles (background, padding, etc.)
 	background-color: var(--color-cybergrape);
 }
 .blockquote {
+	margin: 0 auto;
+	padding: 15px;
+	width: 90%;
+	border-radius: 10px;
 	background-color: var(--color-onyx);
+}
+
+/* what we do section */
+.card {
+	border: none;
+	border-radius: 10px;
+	padding-bottom: var(--spacing20);
+	margin: var(--spacing20) 0;
+}
+.card .text-container {
+	margin: var(--spacing20);
+}
+.events-and-programs {
+	color: var(--color-onyx);
 }
 
 /* our values section */
@@ -150,15 +167,6 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	/* Add styles that apply to tablet and desktop */
 
 	h3 {
-		color: var(--color-onyx);
-	}
-	.card {
-		border: none;
-		border-radius: 10px;
-		padding: var(--spacing20);
-		margin: var(--spacing20) 0;
-	}
-	.events-and-programs {
 		color: var(--color-onyx);
 	}
 }
