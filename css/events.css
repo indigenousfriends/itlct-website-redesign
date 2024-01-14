@@ -50,12 +50,12 @@ h3 {
 	line-height: var(--line-height32);
 	margin: 0px;
 }
-/* Event cards */
-.event-cards {
+/* Page cards */
+.page-cards {
 	margin: 80px 0px;
 }
 /* event card img */
-.event-card-img {
+.page-card-img {
 	width: 100%;
 	/* might need to change height later */
 	height: 200px;
@@ -64,53 +64,53 @@ h3 {
 	background-size: cover;
 }
 /* Network card */
-.card-item1 .event-card-img {
+.card-item1 .page-card-img {
 	background-image: url("/assets/images/pages/event-program/networking.jpg");
 }
 
 /* Share card */
-.card-item2 .event-card-img {
+.card-item2 .page-card-img {
 	background-image: url("/assets/images/pages/event-program/share.jpg");
 }
 
 /* Brainstorm card */
-.card-item3 .event-card-img {
+.card-item3 .page-card-img {
 	background-image: url("/assets/images/pages/event-program/brianstorm.jpg");
 }
 
 /* Collaborate card */
-.card-item4 .event-card-img {
+.card-item4 .page-card-img {
 	background-image: url("/assets/images/pages/event-program/collaborate.jpg");
 }
 
 /* Card title boxes */
-.event-card-title {
+.page-card-title {
 	width: 100%;
 	height: 130px;
 	text-align: center;
 	padding:20px;
 	border-radius: 10px;
 }
-.event-card-title h3 {
+.page-card-title h3 {
 	margin-bottom: 20px;
 }
 
 /* card title box background colors */
-.card-item1 .event-card-title {
+.card-item1 .page-card-title {
 	background-color: var(--color-yaleblue);
 }
-.card-item2 .event-card-title {
+.card-item2 .page-card-title {
 	background-color: var(--color-cybergrape);
 }
-.card-item3 .event-card-title {
+.card-item3 .page-card-title {
 	background-color: var(--color-copper);
 }
-.card-item4 .event-card-title {
+.card-item4 .page-card-title {
 	background-color: var(--color-teal);
 }
 
 /* text below the cards */
-.event-card-text p {
+.page-card-text p {
 	color: var(--color-onyx);
 }
 
@@ -171,12 +171,12 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 @media screen and (min-width: 768px) {
 	/* Add styles that apply to table and desktop */
 	/* hiding event card text */
-	.event-card-text {
+	.page-card-text {
 		display: none;
 	}
 
 	.wrapper {
-		width: 85%;
+		width: var(--desktop-wrapper-width);
 	}
 
 	/* Title/Hero section */
@@ -189,31 +189,43 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		background-image: url("/assets/images/pages/event-program/desktop/hero-d.jpg");
 		background-size: cover;
 		background-position: center;
-
-		display: flex;
-		justify-content: left;
-		align-items: center;
+		
 	}
 	.title-text {
 		width: 100%;
 		height: 100%;
 		background: linear-gradient(92deg, rgba(9, 9, 9, 0.77) 40.35%, rgba(9, 9, 9, 0.74) 44.51%, rgba(9, 9, 9, 0.71) 48.63%, rgba(9, 9, 9, 0.00) 83.13%);
+		
+		display: flex;
+		align-items: center;
+	}
+	.title-text div {
+		width: var(--desktop-wrapper-width);
+		margin: 0 auto;
 
+		display: flex;
+		flex-direction: column;
 	}
 	.title-text p,
 	.title-text h2 {
+		width: 40%;
 		text-align: left;
 		color: var(--color-white);
+	}
+	.title-text h2 {
+		font-size: var(--font56);
+		line-height: var(--line-height58);
+		margin-bottom: var(--spacing20);
 	}
 
 
 	/* Event Cards */
-	.event-cards {
+	.page-cards {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
 	}
-	.event-cards > * {
+	.page-cards > * {
 		margin: 10px;
 		width: 45%;
 
@@ -221,28 +233,28 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		position: relative;
 	}
 	
-	.event-card-title {
+	.page-card-title {
 		text-align: start;
 		border-radius: 0px 0px 10px 10px;
 		/* positioning */
 		position: absolute;
 		bottom: 0px;
 	}
-	.event-card-title p {
+	.page-card-title p {
 		color: var(--color-white);
 	}
 
 	/* event card title background color changes */
-	.card-item1 .event-card-title {
+	.card-item1 .page-card-title {
 		background: linear-gradient(60deg, #195085 55.81%, rgba(66, 66, 65, 0.00) 70.18%);
 	}
-	.card-item2 .event-card-title {
+	.card-item2 .page-card-title {
 		background: linear-gradient(60deg, #563867 55.81%, rgba(66, 66, 65, 0.00) 70.18%);
 	}
-	.card-item3 .event-card-title {
+	.card-item3 .page-card-title {
 		background: linear-gradient(60deg, #955C17 55.81%, rgba(66, 66, 65, 0.00) 70.18%);
 	}
-	.card-item4 .event-card-title {
+	.card-item4 .page-card-title {
 		background: linear-gradient(60deg, #017B80 55.81%, rgba(66, 66, 65, 0.00) 70.18%);
 	}
 
@@ -271,27 +283,27 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 /* Desktop Only */
 @media screen and (min-width: 1024px) {
 	/* Add styles that apply specifically to desktop */
-	.event-card-img {
+	.page-card-img {
 		height: 400px;
 	}
 
 	/* Network card */
-	.card-item1 .event-card-img {
+	.card-item1 .page-card-img {
 		background-image: url("/assets/images/pages/event-program/desktop/network-d.jpg");
 	}
 
 	/* Share card */
-	.card-item2 .event-card-img {
+	.card-item2 .page-card-img {
 		background-image: url("/assets/images/pages/event-program/desktop/share-d.jpg");
 	}
 
 	/* Brainstorm card */
-	.card-item3 .event-card-img {
+	.card-item3 .page-card-img {
 		background-image: url("/assets/images/pages/event-program/desktop/brainstorm-d.jpg");
 	}
 
 	/* Collaborate card */
-	.card-item4 .event-card-img {
+	.card-item4 .page-card-img {
 		background-image: url("/assets/images/pages/event-program/desktop/collaborate-d.jpg");
 	}
 
