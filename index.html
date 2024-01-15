@@ -21,29 +21,30 @@
 
 		<!-- Hero -->
 		<section class="hero">
-			<!-- girl with flower -->
-			<div class="hero-image">
-				<picture class="card-img">
+			<!-- image of girl with flower -->
+			<div>
+				<picture class=" hero-image">
 					<source
 						media="(min-width:768px)"
 						srcset="./assets/images/pages/home/hero-image-home.jpg"
 					/>
+					<!-- mobile image? we may need to create another version so that the image is not grainy - currently using desktop image in mobile version -->
 					<img
-						src="./assets/images/pages/home/mobile/hero-home-mobile.jpg"
-						alt="a little girl holding a flower"
+						src="./assets/images/pages/home/mobile/hero-home-mobile-2.jpg"
+						alt="a little girl holding a flower" 
 					/>
 				</picture>
 			</div>
-
+			<!-- this div holds the heading and paragraph for the hero image -->
 			<div class="hero-home wrapper align-text">
-				<h3>Preserving Tomorrow by Building Today</h3>
-				<p class="alternate">
+				<h3 class="text-container">Preserving Tomorrow by Building Today</h3>
+				<p class="alternate text-container">
 					If These Lands Could Talk (ITLCT) is global network of change-makers,
 					supporters, and allies who support native and indigenous communities
 					to thrive authentically and on their own terms with digital technology
 					both now and in the future.
 				</p>
-
+				<!-- this div holds the buttons for the hero section -->
 				<div class="btn-container">
 					<button class="button3">About US</button>
 					<button class="hidden button1">Our Impact</button>
@@ -68,14 +69,17 @@
 				/>
 			</picture>
 			<!-- div holding text and button-->
-			<div class="community-description wrapper">
+			<div class="wrapper">
 				<!-- background color amaranth -->
 				<h4>Community Partnerships</h4>
+				<div class="text-container-subsection">
+				
 				<p>
 					We partner with communities and create aligned programming and events
 					that amplify the voices, experiences, and excellence of native and
 					indigenous populations throughout the world.
 				</p>
+			</div>
 				<button class="button1">Learn More</button>
 			</div>
 		</section>
@@ -83,17 +87,19 @@
 		<!-- A global ecosystem section -->
 		<section class="global-ecosystem">
 			<!-- on desktop background color - bluepurple gradient with vector-1 svg layer-->
-
+			<!-- this div holds the entire section -->
 			<div class="ecosystem align-text">
-				<!-- background color cyber grape -->
+				<!-- this div is holding the heading and paragraph -->
+				<div class="text-container-subsection">
 				<h4>A Global Ecosystem</h4>
 				<p>
 					Supporting authentic representation of Indigenous and Native
 					communities throughout the world with digital technology and community
-					engagement, but on their own terms. ITLCT supports the rights to
-					self-determination and agency with digital technology.
+					engagement, but on their own terms. 
 				</p>
-				<!-- quote block - background color onyx -->
+				<p>ITLCT supports the rights to self-determination and agency with digital technology.</p>
+				</div>
+				<!-- this div holds the quote block - background color onyx -->
 				<div class="blockquote">
 					<!-- Ask JC how to do css pseudo elements -->
 					<!-- <img
@@ -118,9 +124,9 @@
 			<h3 class="align-text">What We Do</h3>
 			<!-- div holds all 3 sections of what we do-->
 			<div>
-				<!-- div -->
+				<!-- div for digital fluency card - on a teal background -->
 				<div class="digital-fluency card">
-					<!-- img - digital fluency -->
+					<!-- img for digital fluency -->
 					<picture class="card-img">
 						<source
 							media="(min-width:768px)"
@@ -132,7 +138,7 @@
 						/>
 					</picture>
 
-					<!-- rectangle? or square? teal -->
+					<!-- div that holds the heading and text -->
 					<div class="text-container">
 						<h4>Digital Fluency</h4>
 						<p>
@@ -143,7 +149,7 @@
 					</div>
 				</div>
 
-				<!-- div -->
+				<!-- div for community-engagement card - on a copper background -->
 				<div class="community-engagement card">
 					<!-- img - community engagement -->
 					<picture class="card-img">
@@ -156,7 +162,7 @@
 							alt="a group of people team building"
 						/>
 					</picture>
-					<!-- rectangle? or square? copper -->
+					<!-- div that holds the heading and text -->
 					<div class="text-container">
 						<h4>Community Engagement</h4>
 						<p>
@@ -166,10 +172,9 @@
 						</p>
 					</div>
 				</div>
-				<!-- div -->
+				<!-- div for technology-programs card - on a yaleblue background -->
 				<div class="technology-programs card">
 					<!-- img - digital technology programs -->
-					<!-- rectangle? or square? yale blue -->
 					<picture class="card-img">
 						<source
 							media="(min-width:768px)"
@@ -180,6 +185,7 @@
 							alt="a group of people"
 						/>
 					</picture>
+					<!-- div that holds the heading and text -->
 					<div class="text-container">
 						<h4>Digital Technology Programs</h4>
 						<p>
@@ -193,26 +199,28 @@
 
 		<!-- our values section -->
 		<section class="values align-text">
-			<!-- background color onyx -->
-			<!-- background image for desktop - our values  -->
-			<!-- div? holding text -->
+			
+			<!-- background image for desktop version in css MQ - our values  -->
+			<!-- div that is holding header and paragraph text -->
+			<div class="text-container">
 			<h4>Our Values</h4>
 			<p>Appreciate the past, understand the present, adapt to the future.</p>
-			<!-- div - border radius 10px -  background color yale blue -->
-			<div class="our-values card">
-				<!-- div -->
+			</div>
+			<!-- div holding all 3 headings and paragraphs with a background color yale blue -->
+			<div class="our-values">
+				<!-- div? -->
 				<h4>Past</h4>
 				<p>
 					Appreciate the past by preserving heritage and culture to pass onto
 					future generations.
 				</p>
-				<!-- div -->
+				<!-- div? -->
 				<h4>Present</h4>
 				<p>
 					Understand current needs and history. Amplify and share native
 					excellence. Enable creativity and growth.
 				</p>
-				<!-- div -->
+				<!-- div? -->
 				<h4>Future</h4>
 				<p>
 					Adapt to new innovation where it makes sense. Prepare and support
@@ -224,9 +232,8 @@
 		<!-- upcoming events and programs section -->
 		<section class="events-and-programs">
 			<h3 class="align-text">Upcoming Events and Programs</h3>
-			<!-- on desktop background color - bluepurple gradient with vector-2 svg layer-->
+			<!-- in MQ: desktop background color is bluepurple gradient with vector-2 svg layer -->
 
-			<!-- take note that background color mobile is white -->
 			<picture>
 				<source
 					media="(min-width:768px)"
@@ -237,10 +244,12 @@
 					alt="a person with a globe"
 				/>
 			</picture>
+			<div class="event-description">
 			<h4 class="alternate">Walking in Multiple Worlds</h4>
 			<p class="alternate">
 				Is an ITLCT program series consisting of global workshops
 			</p>
+			</div>
 			<picture>
 				<source
 					media="(min-width:768px)"
@@ -251,10 +260,12 @@
 					alt="a person with a globe"
 				/>
 			</picture>
-			<h4 class="alternate">Walking in Multiple Worlds</h4>
-			<p class="alternate">
-				Is an ITLCT program series consisting of global workshops
-			</p>
+			<div class="event-description">
+				<h4 class="alternate">Walking in Multiple Worlds</h4>
+				<p class="alternate">
+					Is an ITLCT program series consisting of global workshops
+				</p>
+				</div>
 			<picture>
 				<source
 					media="(min-width:768px)"
@@ -265,10 +276,12 @@
 					alt="a person with a globe"
 				/>
 			</picture>
-			<h4 class="alternate">Walking in Multiple Worlds</h4>
-			<p class="alternate">
-				Is an ITLCT program series consisting of global workshops
-			</p>
+			<div class="event-description">
+				<h4 class="alternate">Walking in Multiple Worlds</h4>
+				<p class="alternate">
+					Is an ITLCT program series consisting of global workshops
+				</p>
+				</div>
 		</section>
 
 		<!-- Footer -->

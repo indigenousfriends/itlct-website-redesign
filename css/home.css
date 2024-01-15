@@ -1,22 +1,45 @@
 /*
 ===================================
 ===================================
-Styles for an individual page
+Styles for home-page
 
-- Rename this file to match the page you are working on (e.g. home.css, about.css, etc.)
-- Create a new file for your page and link this file to it in the <head> of your HTML document
-- Variables from global.css will work in this CSS file as well. Do not add any variables to this file.
 ===================================
 ===================================
 */
+/* this is to align text in the center throughout the entire design */
 .align-text {
 	text-align: center;
+	
 }
 /* 
 ===================================
 Page Component Styles (icon grid, team member card)
 ===================================
 */
+/* hero section */
+.hero-image img {
+	margin: 0;
+	border-radius: 0;
+}
+
+.text-container {
+	margin: var(--spacing20);
+}
+.text-container-subsection {
+	margin: var(--spacing10);
+	padding-bottom: var(--spacing10);
+}
+
+.hero-description {
+	margin: var(--spacing10);
+}
+/* community partnerships section */
+.community .card-img img{
+	width: 100%;
+	border-radius: 0;
+}
+
+/* what we do section */
 .digital-fluency {
 	background-color: var(--color-teal);
 }
@@ -29,8 +52,13 @@ Page Component Styles (icon grid, team member card)
 	background-color: var(--color-yaleblue);
 }
 
+.card-img img {
+	width: 100%;
+	border-radius: 10px 10px 0 0;
+}
 
 
+/* our values section */
 
 .our-values {
 	margin: 0 auto;
@@ -38,14 +66,10 @@ Page Component Styles (icon grid, team member card)
 	width: 90%;
 	border-radius: 10px;
 	background-color: var(--color-yaleblue);
-}
-.card-img img {
-	width: 100%;
+
 }
 
-.hero-image img {
-	margin: 0;
-}
+
 /* 
 ===================================
 Section Styles (background, padding, etc.)
@@ -64,6 +88,7 @@ Section Styles (background, padding, etc.)
 
 }
 
+/* this overrides the global style of white text */
 .alternate {
 	color: var(--color-onyx);
 }
@@ -127,13 +152,16 @@ Section Styles (background, padding, etc.)
 /* community partnerships section */
 .community {
 	background-color: var(--color-amaranth);
+	padding-bottom: 50px;
 	
 }
 
 /* A global ecosystem section */
 .ecosystem {
 	background-color: var(--color-cybergrape);
-	
+	padding-top: var(--spacing10);
+	padding-bottom: 50px;
+		
 }
 .blockquote {
 	margin: 0 auto;
@@ -145,6 +173,10 @@ Section Styles (background, padding, etc.)
 
 /* what we do section */
 
+.what-we-do {
+	padding-bottom: var(--spacing40);	
+}
+
 .card {
 	border: none;
 	border-radius: 10px;
@@ -155,9 +187,12 @@ Section Styles (background, padding, etc.)
 	margin: var(--spacing20);
 }
 
+
 /* our values section */
 .values {
 	background-color: var(--color-onyx);
+	padding-top: var(--spacing20);
+	padding-bottom: var(--spacing40);
 }
 
 /* events and programs section */
@@ -165,7 +200,13 @@ Section Styles (background, padding, etc.)
 	color: var(--color-onyx);
 }
 
+.events-and-programs img {
+	margin: 0 auto;
+}
 
+.event-description {
+	margin: var(--spacing20);
+}
 
 /* 
 ===================================
@@ -199,7 +240,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 
 /* Desktop Only */
 @media screen and (min-width: 1024px) {
-	/* Add styles that apply specifically to desktop */
+	/* hero section */
 	.hero {
 		position: relative;
 	}
@@ -213,7 +254,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	}
 	.hero img {
 		object-fit: fill;
-		/* max-height: 100vh; */
+		
 	}
 
 	.hero-home {
@@ -221,22 +262,21 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		z-index: 10;
 		bottom: 10%;
 		max-width: var(--wrapper-width-max);
-		border: 2px solid red;
+		/* border: 2px solid red; */
 		left: 50%;
-		/* bring your own prefixes */
 		transform: translate(-50%, 0%);
 	}
-
+	/* global ecosystem section */
 	.ecosystem {
 		background: url(../assets/images/pages/home/bg-overlay-vector-01.svg),
 			var(--color-bluepurple);
 		background-size: cover;
 	}
-
+	/* our values section */
 	.values {
 		background-image: url(../assets/images/pages/home/values.jpg);
 	}
-
+	/* events and programs section */
 	.events-and-programs {
 		background: url(../assets/images/pages/home/bg-overlay-vector-02.svg),
 			var(--color-bluepurple);
