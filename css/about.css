@@ -18,13 +18,15 @@ Page Component Styles (icon grid, team member card)
 html {
 	max-width: var(--wrapper-width-max);
 }
+
 .wrapper {
 	max-width: var(--mobile-wrapper-width);
 }
 
 
 
-h3, section div p {
+h3,
+section div p {
 	color: var(--color-onyx)
 }
 
@@ -50,6 +52,7 @@ h4 {
 h4 {
 	text-align: center;
 }
+
 .signature {
 	font-size: var(--font21);
 	font-weight: var(--font-weight-regular);
@@ -62,8 +65,10 @@ h4 {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 45vh; /* Adjust the height as needed */
-	padding: 20px; /* Add padding to the container */
+	height: 45vh;
+	/* Adjust the height as needed */
+	padding: 20px;
+	/* Add padding to the container */
 }
 
 /* Button styles */
@@ -90,7 +95,7 @@ button:hover {
 	background: rgb(0, 0, 0, 0);
 	border: 3px solid var(--button3-color);
 	color: var(--color-onyx);
-	
+
 }
 
 /* 
@@ -118,15 +123,23 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 
 /* Tablet and Larger */
 @media screen and (min-width: 768px) {
+
 	/* Add styles that apply to table and desktop */
 	.wrapper {
 		max-width: var(--desktop-wrapper-width);
 	}
+
+	.wrapper.hero {
+		max-width: 100%;
+	}
+
 	.hero {
 		position: relative;
 
 	}
-	section div {
+
+
+	.hero-text {
 		/* this applies to everything, change to more specific */
 		position: absolute;
 		z-index: 10;
@@ -136,20 +149,25 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		left: 50%;
 		transform: translate(-50%, 0%);
 	}
+
 	.about-wrapper {
 		max-width: 800px;
 	}
-	h3, section div p {
+
+	h3,
+	section div p {
 		color: var(--color-white)
 	}
+
 	h3 {
 		font-family: var(--main-font);
 		font-size: var(--font56);
 		font-style: normal;
 		font-weight: var(--font-weight-bold);
 		line-height: var(--line-height58);
-		
+
 	}
+
 	section div p {
 		font-family: var(--main-font);
 		font-size: var(--font21);
@@ -157,6 +175,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		line-height: var(--line-height26);
 
 	}
+
 	h4 {
 		font-size: var(--font46);
 		font-weight: var(--font-weight-bold);
@@ -174,6 +193,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 
 /* Desktop Only */
 @media screen and (min-width: 1024px) {
+
 	/* Add styles that apply specifically to desktop */
 	.signature {
 		font-size: var(--font24);
