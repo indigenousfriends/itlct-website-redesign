@@ -22,6 +22,8 @@ html {
 	max-width: var(--mobile-wrapper-width);
 }
 
+
+
 h3, section div p {
 	color: var(--color-onyx)
 }
@@ -119,6 +121,20 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	/* Add styles that apply to table and desktop */
 	.wrapper {
 		max-width: var(--desktop-wrapper-width);
+	}
+	.hero {
+		position: relative;
+
+	}
+	section div {
+		/* this applies to everything, change to more specific */
+		position: absolute;
+		z-index: 10;
+		bottom: 20%;
+		max-width: var(--wrapper-width-max);
+		border: 2px solid red;
+		left: 50%;
+		transform: translate(-50%, 0%);
 	}
 	.about-wrapper {
 		max-width: 800px;
