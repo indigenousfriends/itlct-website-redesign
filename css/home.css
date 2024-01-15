@@ -9,7 +9,9 @@ Styles for an individual page
 ===================================
 ===================================
 */
-
+.align-text {
+	text-align: center;
+}
 /* 
 ===================================
 Page Component Styles (icon grid, team member card)
@@ -27,13 +29,23 @@ Page Component Styles (icon grid, team member card)
 	background-color: var(--color-yaleblue);
 }
 
+
+
+
 .our-values {
+	margin: 0 auto;
+	padding: 15px;
+	width: 90%;
+	border-radius: 10px;
 	background-color: var(--color-yaleblue);
 }
 .card-img img {
 	width: 100%;
 }
 
+.hero-image img {
+	margin: 0;
+}
 /* 
 ===================================
 Section Styles (background, padding, etc.)
@@ -43,6 +55,13 @@ Section Styles (background, padding, etc.)
 /* hero section */
 .hero {
 	margin: 0, auto;
+}
+
+.hero-home {
+	display: flex;
+	flex-direction: column;
+	
+
 }
 
 .alternate {
@@ -108,11 +127,13 @@ Section Styles (background, padding, etc.)
 /* community partnerships section */
 .community {
 	background-color: var(--color-amaranth);
+	
 }
 
 /* A global ecosystem section */
 .ecosystem {
 	background-color: var(--color-cybergrape);
+	
 }
 .blockquote {
 	margin: 0 auto;
@@ -123,6 +144,7 @@ Section Styles (background, padding, etc.)
 }
 
 /* what we do section */
+
 .card {
 	border: none;
 	border-radius: 10px;
@@ -132,14 +154,18 @@ Section Styles (background, padding, etc.)
 .card .text-container {
 	margin: var(--spacing20);
 }
-.events-and-programs {
-	color: var(--color-onyx);
-}
 
 /* our values section */
 .values {
 	background-color: var(--color-onyx);
 }
+
+/* events and programs section */
+.events-and-programs {
+	color: var(--color-onyx);
+}
+
+
 
 /* 
 ===================================
