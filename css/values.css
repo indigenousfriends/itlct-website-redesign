@@ -94,16 +94,23 @@ Page Component Styles (icon grid, team member card)
 }
 .support-header {
 	display: flex;
+    flex-direction: row;
+	align-items: center;
+	font-size: var(--font28);
+	font-weight: var(--font-weight-bold);
+	line-height: var(--line-height32);
+	margin: 90px 0px 20px;
 }
 /* Turns We Support to Red */
 /* inline block allows the alignment with heart icon but doesn't fill desktop */
 .support-header h4{
+	margin: 0px;
 	color: var(--color-amaranth);
 }
 /* Aligns heart icon to the end of Support header */
 /* need small gap between icon and text */
 .heart {
-	display:inline-flex;
+	/* display:flex; */
 }
 
 .empowering-text {
