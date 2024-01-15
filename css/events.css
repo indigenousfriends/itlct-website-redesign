@@ -40,6 +40,7 @@ Section Styles (background, padding, etc.)
 	margin: 0 auto;
 }
 .title h2 {
+	margin-top: 0px;
 	margin-bottom: var(--spacing20);
 	font-size: var(--font36);
 	line-height: var(--line-height40);
@@ -209,7 +210,8 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	/* adding desktop image */
 	.title {
 		/* might need to reduce height for tablet and add height to desktop */
-		height: 992px;
+		height: 90vh;
+		max-height: 992px;
 		background-image: url("/assets/images/pages/event-program/desktop/hero-d.jpg");
 		background-size: cover;
 		background-position: center;
@@ -341,7 +343,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 /* Desktop Only */
 @media screen and (min-width: 1024px) {
 	/* Add styles that apply specifically to desktop */
-
+	
 	/* page cards */
 	.page-cards {
 		/* adding top and bottom margin to section for desktop */
