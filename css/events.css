@@ -23,24 +23,31 @@ Section Styles (background, padding, etc.)
 */
 /* title section */
 .title {
+	width: 100%;
 	text-align: center;
 }
 .title-img {
 	width: 100%;
 	height: 250px;
 	background-image: url("/assets/images/pages/event-program/introspective.jpg");
-	background-repeat: no-repeat;
 	background-size: cover;
-	
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.title-text {
+	width: 80%;
+	margin: 0 auto;
 }
 .title h2 {
 	font-size: var(--font36);
 	font-family: var(--main-font);
 	line-height: var(--line-height40);
+	margin-bottom: var(--spacing20);
 }
 .title p {
 	color: var(--ONYX, #424241);
 	text-align: center;
+	margin: 0px;
 }
 
 
@@ -52,9 +59,10 @@ h3 {
 }
 /* Page cards */
 .page-cards {
-	margin: 80px 0px;
+	/* is it a good idea to use % for margin? */
+	margin: 15% 0px;
 }
-/* event card img */
+/* card img */
 .page-card-img {
 	width: 100%;
 	/* might need to change height later */
@@ -95,7 +103,7 @@ h3 {
 	margin-bottom: 20px;
 }
 
-/* card title box background colors */
+/* card title background colors */
 .card-item1 .page-card-title {
 	background-color: var(--color-yaleblue);
 }
@@ -112,9 +120,28 @@ h3 {
 /* text below the cards */
 .page-card-text p {
 	color: var(--color-onyx);
+	margin-bottom: var(--spacing65);
 }
 
 /* Upcoming Events/Previous Events */
+
+.upcoming-events,
+.previous-events {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	row-gap: var(--spacing65);
+	column-gap: var(--spacing40);
+
+	/* Upcoming/Previous events bottom margin */
+	margin-bottom: 80px;
+}
+/* .upcoming-events > *,
+.previous-events > * {
+	min-width: 50%;
+} */
+
 /* event image and text containers */
 .event-img,
 .event-info {
@@ -125,23 +152,19 @@ h3 {
 	width: 100%;
 }
 
-/* Upcoming/Previous events bottom margin */
-.upcoming-events, 
-.previous-events{
-	margin-bottom: 80px;
-}
-
-
 /* Upcoming/Previous events text */
 .h4-title {
-	text-align: center;
+	margin: var(--spacing20);
 	color: var(--color-onyx);
+	text-align: center;
 }
 .event-info p {
+	font-size: var(--font21);
+	line-height: var(--line-height26);
 	color: var(--color-onyx);
 }
 .event-info h4 {
-	margin: 20px 0px;
+	margin: var(--spacing20) 0px;
 	color: var(--color-onyx);
 }
 
@@ -200,7 +223,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		align-items: center;
 	}
 	.title-text div {
-		width: var(--desktop-wrapper-width);
+		width: 70%;
 		margin: 0 auto;
 
 		display: flex;
@@ -215,26 +238,29 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	.title-text h2 {
 		font-size: var(--font56);
 		line-height: var(--line-height58);
-		margin-bottom: var(--spacing20);
 	}
 
 
-	/* Event Cards */
+	/* Page Cards */
 	.page-cards {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
+		gap: var(--spacing20);
 	}
 	.page-cards > * {
-		margin: 10px;
 		width: 45%;
 
 		/* positioning */
 		position: relative;
 	}
+	.page-card-img {
+		height: 300px;
+	}
 	
 	.page-card-title {
-		text-align: start;
+		height: 126px;
+		text-align: left;
 		border-radius: 0px 0px 10px 10px;
 		/* positioning */
 		position: absolute;
@@ -244,7 +270,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		color: var(--color-white);
 	}
 
-	/* event card title background color changes */
+	/* page card title background color changes */
 	.card-item1 .page-card-title {
 		background: linear-gradient(60deg, #195085 55.81%, rgba(66, 66, 65, 0.00) 70.18%);
 	}
@@ -265,17 +291,16 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 
 	/* Upcoming Events */
 	/* Previous Events */
-	.upcoming-events,
-	.previous-events {
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		justify-content: center;
-	}
-
 	.upcoming-events > *,
 	.previous-events > * {
-		width: 26%;
+		/* width: 30%; */
+		flex-basis: 30%;
+	}
+
+	/* title for upcoming/previous events */
+	.h4-title {
+		font-size: var(--font46);
+		line-height: var(--line-height50);
 	}
 
 }
@@ -283,6 +308,8 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 /* Desktop Only */
 @media screen and (min-width: 1024px) {
 	/* Add styles that apply specifically to desktop */
+
+	/* page cards */
 	.page-card-img {
 		height: 400px;
 	}
