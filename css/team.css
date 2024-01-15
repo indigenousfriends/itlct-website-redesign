@@ -36,14 +36,13 @@ Page Component Styles (icon grid, team member card)
 	color: var(--color-onyx);
 }
 .button3 {
-	border-radius: 10px;
-	background-color: var(--button2-color);
-	padding: 11px 92px;
-	color: var(--color-white);
-	border: none;
 	min-width: 300px;
 	min-height: 50px;
-	margin: 20px;
+	padding: 11px 92px;
+	border: none;
+	border-radius: 10px;
+	background-color: var(--button2-color);
+	color: var(--color-white);
 	font-family: var(--main-font);
 	font-weight: var(--font-weight-bold);
 	font-size: var(--font21);
@@ -256,20 +255,47 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 
 	/* get involved */
 	.get-involved {
+		height: 70vh;
+		max-height: 800px;
+		margin-bottom: 0px;
+		/* gradient is opposite- needs to be adjusted in global styles */
+		background: var(--color-bluepurple);
+
+		display: flex;
+		align-items: center;
+	}
+	.get-involved-wrapper {
+		width: 70%;
+		margin: 0 auto;
 		display: flex;
 		flex-direction: row-reverse;
 		justify-content: center;
-		/* gradient is opposite- needs to be adjusted in global styles */
-		background: var(--color-bluepurple);
+		align-items: center;
+		gap: 10%;
+	}
+
+	.get-involved-text {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
 	}
 	.get-involved h4 {
 		color: var(--color-white);
 	}
 	.get-involved p {
 		color: var(--color-white);
+		margin-bottom: 20px;
 	}
-	.get-involved .button2 {
-		/* need to make styles for the button */
+
+	.get-involved-picture {
+		margin-bottom: 0px;
+		width: 435px;
+	}
+
+	/* get involved button */
+	.get-involved-text .button3 {
+		background-color: transparent;
+		border: 3px solid #FFF;
 	}
 }
 
@@ -292,5 +318,6 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		font-weight: var(--font-weight-bold);
 		line-height: var(--line-height50);
 		color: var(--color-white);
+		text-align: left;
 	}
 }
