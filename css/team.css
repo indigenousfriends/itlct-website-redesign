@@ -20,14 +20,13 @@ Page Component Styles (icon grid, team member card)
 }
 
 .button2 {
-	border-radius: 10px;
-	background-color: var(--button2-color);
+	min-width: 187px;
+	min-height: 50px;
 	padding: 10px 40px;
 	color: var(--color-white);
 	border: none;
-	min-width: 187px;
-	min-height: 50px;
-	margin: 20px;
+	border-radius: 10px;
+	background-color: var(--button2-color);
 	font-family: var(--main-font);
 	font-weight: var(--font-weight-bold);
 	font-size: var(--font21);
@@ -65,10 +64,15 @@ h3 {
 }
 
 /* team card section */
+.team-parent {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
 .team-card {
 	margin: var(--spacing20) 0;
-	padding: var(--spacing20);
-	padding-top: 60px;
+	padding: 60px 26px;
     background: var(--color-teal);
 	border: none;
 	border-radius: 10px;
@@ -79,11 +83,8 @@ h3 {
 	align-items: center;
 }
 
-.team-card div {
-	margin: 10px;
-}
 .team-card h4{
-	margin: 0px;
+	margin: 20px 0px 0px 0px;
 }
 .team-card h5 {
 	margin: var(--spacing10) 0px;
@@ -92,11 +93,21 @@ h3 {
 .team-card p {
 	color: var(--color-white);
 }
-.team-parent {
+
+/* icon and button container */
+.icon-button {
+	margin: 0px;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	align-items: self-start;
+	gap: 20px;
 }
+/* icon container */
+.icons {
+	display: flex;
+	gap: 20px;
+}
+
 
 /* Current positions */
 .current-positions {
@@ -108,13 +119,37 @@ h3 {
 	justify-content: center;
 	align-items: center;
 }
-.current-positions h4 {
+
+/* Margin for current positions and get involved text */
+.current-positions h4,
+.get-involved h4 {
 	margin: 0px 0px 20px 0px;
 }
+.current-positions p,
+.get-involved p {
+	margin: 0px 0px 40px 0px;
+}
+
+/* get involved section */
+.get-involved {
+	margin-bottom: 140px;
+}
+.get-involved-picture {
+	margin-bottom: 60px;
+}
+.get-involved-text {
+	width: 90%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
 
 .black-text h3, .black-text h4 {
 	text-align: center;
 }
+
 .team-card img, .get-involved img {
 	border-radius: 10px;
 }
@@ -141,15 +176,19 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	.wrapper {
 		width: var(--desktop-wrapper-width);
 	}
+	/* header section */
 	.header-section {
 		width: 100%;
 		height: 992px;
+		background-image: url("/assets/images/pages/our-team/desktop/header-section-background.png");
 		background-size: cover;
 		background-position: center;
-		background-image: url("/assets/images/pages/our-team/desktop/header-section-background.png");
 
 		display: flex;
 		align-items: center;
+	}
+	.header-picture {
+		margin-bottom: 0px;
 	}
 	.header-content {
 		width: 70%;
@@ -177,16 +216,28 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	.header-info p {
 		color: var(--color-white);
 	}
+
+	/* team card section */
+	.team-parent {
+		margin: var(--spacing164) 0px;
+	}
 	.team-card {
-		display: flex;
 		flex-direction: row;
 		justify-content: left;
+		gap: 30px;
 	}
+	.icon-button {
+		flex-direction: row;
+	}
+
+	/* current positions */
 	.current-positions {
-		width: 60%;
+		width: 50%;
 		margin: 0 auto;
 		padding: var(--spacing40) 0;
 	}
+
+	/* get involved */
 	.get-involved {
 		display: flex;
 		flex-direction: row-reverse;
@@ -213,11 +264,12 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		flex-direction: row;
 		justify-content: space-evenly;
 		align-items: center;
-		margin: 0 auto;
 	}
 	.team-card {
-		width: 45%;
+		width: 48%;
+		padding: 20px;
 	}
+	
 	.get-involved h4 {
 		font-size: var(--font46);
 		font-weight: var(--font-weight-bold);
