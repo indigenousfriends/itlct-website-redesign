@@ -15,6 +15,51 @@ Styles for an individual page
 Page Component Styles (icon grid, team member card)
 ===================================
 */
+
+.wrapper {
+	max-width: var(--mobile-wrapper-width);
+	margin: none;
+}
+
+.invis-flex {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	/* max-height: 120px; */
+}
+
+.hero-text {
+	border: 2px solid transparent;
+	width: 369px;
+	/* display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center; */
+}
+
+h3,
+section div p {
+	color: var(--color-onyx);
+	text-align: center;
+}
+
+h3 {
+	font-family: var(--main-font);
+	font-size: var(--font36);
+	font-weight: var(--font-weight-bold);
+	line-height: var(--line-height40);
+	margin-bottom: 20px;
+}
+
+section div p {
+	font-family: var(--main-font);
+	font-size: var(--font16);
+	font-weight: var(--font-weight-regular);
+	line-height: var(--line-height20);
+	margin-bottom: 100px;
+}
+
 p,
 h4 {
 	color: var(--color-onyx);
@@ -23,6 +68,7 @@ h4 {
 h4 {
 	text-align: center;
 }
+
 .signature {
 	font-size: var(--font21);
 	font-weight: var(--font-weight-regular);
@@ -35,8 +81,10 @@ h4 {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 45vh; /* Adjust the height as needed */
-	padding: 20px; /* Add padding to the container */
+	height: 45vh;
+	/* Adjust the height as needed */
+	padding: 20px;
+	/* Add padding to the container */
 }
 
 /* Button styles */
@@ -44,7 +92,6 @@ button {
 	display: flex;
 	width: 300px;
 	height: 50px;
-	padding: 11px 92px;
 	justify-content: center;
 	align-items: center;
 	gap: 10px;
@@ -92,8 +139,53 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 /* Tablet and Larger */
 @media screen and (min-width: 768px) {
 	/* Add styles that apply to table and desktop */
+	.wrapper {
+		max-width: var(--desktop-wrapper-width);
+	}
+
+	/* .wrapper.hero {
+		max-width: 100%;
+	} */
+
+	.hero {
+		position: relative;
+		max-width: 100%;
+	}
+
+	.hero-text {
+		/* this applies to everything, change to more specific */
+		position: absolute;
+		z-index: 10;
+		bottom: 20%;
+		max-width: var(--wrapper-width-max);
+		border: 2px solid red;
+		left: 50%;
+		transform: translate(-50%, 0%);
+	}
+
 	.about-wrapper {
 		max-width: 800px;
+	}
+
+	h3,
+	section div p {
+		color: var(--color-white);
+	}
+
+	h3 {
+		font-family: var(--main-font);
+		font-size: var(--font56);
+		font-style: normal;
+		font-weight: var(--font-weight-bold);
+		line-height: var(--line-height58);
+	}
+
+	section div p {
+		font-family: var(--main-font);
+		font-size: var(--font21);
+		font-weight: var(--font-weight-regular);
+		line-height: var(--line-height26);
+		margin-bottom: 0px;
 	}
 
 	h4 {
