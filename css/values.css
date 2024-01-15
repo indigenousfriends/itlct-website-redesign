@@ -110,15 +110,22 @@ Page Component Styles (icon grid, team member card)
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	text-align: center;
+	margin-top: 60px;
 }
-
 
 /* Turns Title and Paragraph to Black */
 .empowering h4{
+	font-size: var(--font28);
+	font-weight: var(--font-weight-bold);
+	line-height: var(--line-height32);
 	color: var(--color-onyx);
+	margin: 0;
 }
 .empowering p {
 	color: var(--color-onyx);
+	padding: 0px var(--spacing20);
+	margin-bottom: 60px;
 }
 /* Adds Red Block behind this img - this changes in desktop version somehow */
 .empowering-img-block {
