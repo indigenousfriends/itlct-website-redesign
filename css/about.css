@@ -26,15 +26,16 @@ Page Component Styles (icon grid, team member card)
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	/* max-height: 120px; */
 }
 
 .hero-text {
 	border: 2px solid transparent;
 	width: 369px;
-	display: flex;
+	/* display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items: center;
+	align-items: center; */
 }
 
 h3,
@@ -48,6 +49,7 @@ h3 {
 	font-size: var(--font36);
 	font-weight: var(--font-weight-bold);
 	line-height: var(--line-height40);
+	margin-bottom: 20px;
 }
 
 section div p {
@@ -55,6 +57,7 @@ section div p {
 	font-size: var(--font16);
 	font-weight: var(--font-weight-regular);
 	line-height: var(--line-height20);
+	margin-bottom: 100px;
 }
 
 p,
@@ -182,6 +185,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		font-size: var(--font21);
 		font-weight: var(--font-weight-regular);
 		line-height: var(--line-height26);
+		margin-bottom: 0px;
 	}
 
 	h4 {
