@@ -260,6 +260,27 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		justify-content: center;
 		gap: var(--spacing20);
 	}
+	
+	/* Network card */
+	.card-item1 .page-card-img {
+		background-image: url("/assets/images/pages/event-program/desktop/network-d.jpg");
+	}
+
+	/* Share card */
+	.card-item2 .page-card-img {
+		background-image: url("/assets/images/pages/event-program/desktop/share-d.jpg");
+	}
+
+	/* Brainstorm card */
+	.card-item3 .page-card-img {
+		background-image: url("/assets/images/pages/event-program/desktop/brainstorm-d.jpg");
+	}
+
+	/* Collaborate card */
+	.card-item4 .page-card-img {
+		background-image: url("/assets/images/pages/event-program/desktop/collaborate-d.jpg");
+	}
+
 	.page-cards > * {
 		width: 45%;
 
@@ -341,27 +362,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		font-size: var(--font36);
 		line-height: var(--line-height40);
 	}
-
-	/* Network card */
-	.card-item1 .page-card-img {
-		background-image: url("/assets/images/pages/event-program/desktop/network-d.jpg");
-	}
-
-	/* Share card */
-	.card-item2 .page-card-img {
-		background-image: url("/assets/images/pages/event-program/desktop/share-d.jpg");
-	}
-
-	/* Brainstorm card */
-	.card-item3 .page-card-img {
-		background-image: url("/assets/images/pages/event-program/desktop/brainstorm-d.jpg");
-	}
-
-	/* Collaborate card */
-	.card-item4 .page-card-img {
-		background-image: url("/assets/images/pages/event-program/desktop/collaborate-d.jpg");
-	}
-
+	
 	/* Upcoming/previous title margin bottom */
 	.h4-title {
 		margin-bottom: var(--spacing65);
