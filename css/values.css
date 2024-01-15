@@ -22,16 +22,6 @@ html {
 	box-sizing: border-box; 
 }
 body {
-	width: var(--mobile-wrapper-width);
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-
-	/* border: none; */
-	/* border-radius: 10px; */
-	/* padding: var(--spacing20); */
-	/* margin: var(--spacing20) 0; */
 }
 
 
@@ -40,16 +30,29 @@ body {
 Page Component Styles (icon grid, team member card)
 ===================================
 */
+.hero {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
 .card{
+	color: var(--color-white);
 	border: none;
 	border-radius: 10px;
 	padding: var(--spacing20);
 	margin: var(--spacing20) 0;
 }
 /* Turns Our Values Title Black */
+.values-head {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
 .h3-black {
 	color: var(--color-onyx);
 }
+
 .values-head p {
 	color: var(--color-onyx);
 }
@@ -57,16 +60,11 @@ Page Component Styles (icon grid, team member card)
 .copperback {
 	background-color: var(--color-copper);
 }
-.copperback p {
-	color: var(--color-white);
-}
+
 /* Adds a background color in lieu of those rectangle shapes */
 
 .onyxback {
 	background-color: var(--color-onyx);
-}
-.onyxback p {
-	color: var(--color-white);
 }
 /* Adds a background color in lieu of those rectangle shapes */
 
@@ -93,8 +91,6 @@ Page Component Styles (icon grid, team member card)
 
 .support {
 	background-color: var(--color-yaleblue);
-	color: var(--color-onyx);
-	/* width: 100%; */
 }
 .support-header {
 	display: flex;
@@ -110,10 +106,13 @@ Page Component Styles (icon grid, team member card)
 	display:inline-flex;
 }
 
-/* Turns paragraph to White */
-.support-text p {
-	color: var(--color-white);
+.empowering-text {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
+
+
 /* Turns Title and Paragraph to Black */
 .empowering h4{
 	color: var(--color-onyx);
@@ -122,10 +121,17 @@ Page Component Styles (icon grid, team member card)
 	color: var(--color-onyx);
 }
 /* Adds Red Block behind this img - this changes in desktop version somehow */
-.empowering-img{
-	background-color: avar(--color-amaranth);
-	width: cover;
+.empowering-img-block {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: var(--color-amaranth);
 }
+.empowering-img-block img {
+	margin: 30px;
+}
+
+
 
 /* ===================================
 Section Styles (background, padding, etc.)
@@ -157,9 +163,8 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 /* Desktop Only */
 @media screen and (min-width: 1024px) {
 	/* Add styles that apply specifically to desktop */
-	body {
-	width: var(--desktop-wrapper-width)
-	}
+
+	/* adjusting font sizes and styling for p tags */
 	.hero {
 		width: 100vw;
 		height: 100vh;
