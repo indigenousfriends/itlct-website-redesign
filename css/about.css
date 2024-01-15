@@ -143,24 +143,19 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		max-width: var(--desktop-wrapper-width);
 	}
 
-	/* .wrapper.hero {
-		max-width: 100%;
-	} */
-
 	.hero {
 		position: relative;
 		max-width: 100%;
 	}
 
 	.hero-text {
-		/* this applies to everything, change to more specific */
 		position: absolute;
 		z-index: 10;
 		bottom: 20%;
-		max-width: var(--wrapper-width-max);
-		border: 2px solid red;
-		left: 50%;
-		transform: translate(-50%, 0%);
+		width: 25%;
+		border: 2px solid transparent;
+		left: 31%;
+		transform: translate(-50%, -33%);
 	}
 
 	.about-wrapper {
@@ -178,6 +173,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		font-style: normal;
 		font-weight: var(--font-weight-bold);
 		line-height: var(--line-height58);
+		text-align: left;
 	}
 
 	section div p {
@@ -186,6 +182,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		font-weight: var(--font-weight-regular);
 		line-height: var(--line-height26);
 		margin-bottom: 0px;
+		text-align: left;
 	}
 
 	h4 {
@@ -193,6 +190,8 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		font-weight: var(--font-weight-bold);
 		line-height: var(--line-height50);
 		text-align: left;
+		margin-top: 165px;
+		margin-bottom: 0px;
 	}
 
 	p {
@@ -200,6 +199,14 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		font-weight: var(--font-weight-regular);
 		line-height: var(--line-height26);
 		color: var(--color-onyx);
+	}
+
+	.signature {
+		margin-top: 40px;
+	}
+
+	button {
+		display: none;
 	}
 }
 
