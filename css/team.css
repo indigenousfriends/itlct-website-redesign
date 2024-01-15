@@ -249,8 +249,6 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	/* current positions */
 	.current-positions {
 		width: 50%;
-		margin: 0 auto;
-		padding: var(--spacing40) 0;
 	}
 
 	/* get involved */
@@ -311,6 +309,16 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	.team-card {
 		width: 48%;
 		padding: 20px;
+		/* might need to adjust height later */
+		height: 310px;
+	}
+
+	.team-card h4 {
+		margin: 0px;
+	}
+	.team-card p {
+		/* adjust later */
+		margin-top: 8px;
 	}
 	
 	.get-involved h4 {
