@@ -21,10 +21,6 @@ Page Component Styles (icon grid, team member card)
 Section Styles (background, padding, etc.)
 ===================================
 */
-/* wrapper */
-.wrapper {
-	width: 90%;
-}
 /* title section */
 .title {
 	width: 100%;
@@ -44,10 +40,9 @@ Section Styles (background, padding, etc.)
 	margin: 0 auto;
 }
 .title h2 {
-	font-size: var(--font36);
-	font-family: var(--main-font);
-	line-height: var(--line-height40);
 	margin-bottom: var(--spacing20);
+	font-size: var(--font36);
+	line-height: var(--line-height40);
 }
 .title p {
 	margin: 0px;
@@ -55,18 +50,23 @@ Section Styles (background, padding, etc.)
 	text-align: center;
 }
 
+/* wrapper */
+.wrapper {
+	width: 90%;
+}
 
 /* Page cards */
 .page-cards {
-	margin: 100px 0px;
+	margin: var(--spacing100) 0px;
 }
 /* card img */
 .page-card-img {
 	width: 100%;
 	height: 204px;
 	border-radius: 10px;
-	background-position: center;
 	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 }
 /* Network card */
 .card-item1 .page-card-img {
@@ -184,52 +184,57 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 /* Tablet Only */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
 	/* Add styles that only apply to tablet. These are usually fixes to get resposnivenes right */
+	/* page cards */
+	/* page card background/container */
+	.page-card-img {
+		/* increasing card height for tablet */
+		height: 300px;
+	}
+	
 	.page-card-title h3 {
+		/* reducing margin between h3 and p to fit into smaller card title size */
 		margin: 0px 0px 15px 0px;
 	}
+
 }
 
 /* Tablet and Larger */
 @media screen and (min-width: 768px) {
 	/* Add styles that apply to table and desktop */
-	/* hiding event card text */
-	.page-card-text {
-		display: none;
-	}
-
-	.wrapper {
-		width: var(--desktop-wrapper-width);
-	}
-
+	
 	/* Title/Hero section */
 	.title-img {
 		display: none;
 	}
-	
+	/* adding desktop image */
 	.title {
+		/* might need to reduce height for tablet and add height to desktop */
 		height: 992px;
 		background-image: url("/assets/images/pages/event-program/desktop/hero-d.jpg");
 		background-size: cover;
 		background-position: center;
-		
+		background-repeat: no-repeat;
 	}
 	.title-text {
 		width: 100%;
 		height: 100%;
 		background: linear-gradient(92deg, rgba(9, 9, 9, 0.77) 40.35%, rgba(9, 9, 9, 0.74) 44.51%, rgba(9, 9, 9, 0.71) 48.63%, rgba(9, 9, 9, 0.00) 83.13%);
 		
+		/* aligning the title text div */
 		display: flex;
 		align-items: center;
 	}
 	.title-text div {
+		/* adding width instead of margin for responsiveness */
 		width: 70%;
 		margin: 0 auto;
-
+		
 		display: flex;
 		flex-direction: column;
 	}
 	.title-text p,
 	.title-text h2 {
+		/* adding width to make sure text stays on left side */
 		width: 40%;
 		text-align: left;
 		color: var(--color-white);
@@ -239,6 +244,14 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		line-height: var(--line-height58);
 	}
 
+	.wrapper {
+		width: var(--desktop-wrapper-width);
+	}
+
+	/* hiding the div that's below the card title */
+	.page-card-text {
+		display: none;
+	}
 
 	/* Page Cards */
 	.page-cards {
@@ -250,15 +263,13 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	.page-cards > * {
 		width: 45%;
 
-		/* positioning */
+		/* positioning the card title */
 		position: relative;
-	}
-	.page-card-img {
-		height: 300px;
 	}
 	
 	.page-card-title {
 		height: 110px;
+		/* padding reduces for tablet and up */
 		padding: 20px;
 		margin: 0px;
 		border-radius: 0px 0px 10px 10px;
@@ -285,13 +296,14 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		background: linear-gradient(60deg, #017B80 55.81%, rgba(66, 66, 65, 0.00) 70.18%);
 	}
 
+	
+	/* Upcoming Events */
+	/* Previous Events */
+	
 	/* Displaying larger screen only events */
 	.larger-screen {
 		display: block;
 	}
-
-	/* Upcoming Events */
-	/* Previous Events */
 	.upcoming-events > *,
 	.previous-events > * {
 		flex-basis: 30%;
@@ -310,11 +322,18 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	/* Add styles that apply specifically to desktop */
 
 	/* page cards */
+	.page-cards {
+		/* adding top and bottom margin to section for desktop */
+		margin: var(--spacing213) 0px;
+	}
+
 	.page-card-img {
+		/* increasing card height */
 		height: 435px;
 	}
 
 	.page-card-title {
+		/* increasing card title height */
 		height: 126px;
 	}
 
@@ -343,9 +362,9 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		background-image: url("/assets/images/pages/event-program/desktop/collaborate-d.jpg");
 	}
 
-	/* Upcoming/previous events title margin bottom */
+	/* Upcoming/previous title margin bottom */
 	.h4-title {
-		margin-bottom: 65px;
+		margin-bottom: var(--spacing65);
 	}
 
 }
