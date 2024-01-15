@@ -35,7 +35,7 @@ Section Styles (background, padding, etc.)
 	background-repeat: no-repeat;
 }
 .title-text {
-	width: 80%;
+	width: 90%;
 	margin: 0 auto;
 }
 .title h2 {
@@ -51,12 +51,6 @@ Section Styles (background, padding, etc.)
 }
 
 
-
-h3 {
-	font-size: 28px;
-	line-height: var(--line-height32);
-	margin: 0px;
-}
 /* Page cards */
 .page-cards {
 	/* is it a good idea to use % for margin? */
@@ -96,11 +90,13 @@ h3 {
 	width: 100%;
 	height: 130px;
 	text-align: center;
-	padding:20px;
+	padding: 29px;
 	border-radius: 10px;
 }
 .page-card-title h3 {
-	margin-bottom: 20px;
+	margin: 0px 0px var(--spacing20) 0px;
+	font-size: 28px;
+	line-height: var(--line-height32);
 }
 
 /* card title background colors */
@@ -168,8 +164,8 @@ h3 {
 	color: var(--color-onyx);
 }
 
-/* Hiding desktop only events for mobile */
-.desktop-only {
+/* Hiding larger screen events in mobile view*/
+.larger-screen {
 	display: none;
 }
 
@@ -188,6 +184,9 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 /* Tablet Only */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
 	/* Add styles that only apply to tablet. These are usually fixes to get resposnivenes right */
+	.page-card-title h3 {
+		margin: 0px 0px 15px 0px;
+	}
 }
 
 /* Tablet and Larger */
@@ -259,9 +258,10 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	}
 	
 	.page-card-title {
-		height: 126px;
-		text-align: left;
+		height: 110px;
+		padding: 20px;
 		border-radius: 0px 0px 10px 10px;
+		text-align: left;
 		/* positioning */
 		position: absolute;
 		bottom: 0px;
@@ -284,8 +284,8 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		background: linear-gradient(60deg, #017B80 55.81%, rgba(66, 66, 65, 0.00) 70.18%);
 	}
 
-	/* showing extra desktop only events */
-	.desktop-only {
+	/* Displaying larger screen only events */
+	.larger-screen {
 		display: block;
 	}
 
@@ -314,6 +314,15 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		height: 400px;
 	}
 
+	.page-card-title {
+		height: 126px;
+	}
+
+	.page-card-title h3 {
+		font-size: var(--font36);
+		line-height: var(--line-height40);
+	}
+
 	/* Network card */
 	.card-item1 .page-card-img {
 		background-image: url("/assets/images/pages/event-program/desktop/network-d.jpg");
@@ -334,5 +343,9 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		background-image: url("/assets/images/pages/event-program/desktop/collaborate-d.jpg");
 	}
 
+	/* Upcoming/previous events title margin bottom */
+	.h4-title {
+		margin-bottom: 65px;
+	}
 
 }
