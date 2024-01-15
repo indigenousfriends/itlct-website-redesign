@@ -19,11 +19,10 @@ Styles for an individual page
 /* align title text to center somehow hoping wrapper fixes some stuff */
 html {
 	/* does this need before and after */
-	box-sizing: border-box; 
+	box-sizing: border-box;
 }
 body {
 }
-
 
 /* 
 ===================================
@@ -35,7 +34,7 @@ Page Component Styles (icon grid, team member card)
 	flex-direction: column;
 	justify-content: center;
 }
-.card{
+.card {
 	color: var(--color-white);
 	border: none;
 	border-radius: 10px;
@@ -94,16 +93,23 @@ Page Component Styles (icon grid, team member card)
 }
 .support-header {
 	display: flex;
+	flex-direction: row;
+	align-items: center;
+	font-size: var(--font28);
+	font-weight: var(--font-weight-bold);
+	line-height: var(--line-height32);
+	margin: 90px 0px 20px;
 }
 /* Turns We Support to Red */
 /* inline block allows the alignment with heart icon but doesn't fill desktop */
-.support-header h4{
+.support-header h4 {
+	margin: 0px;
 	color: var(--color-amaranth);
 }
 /* Aligns heart icon to the end of Support header */
 /* need small gap between icon and text */
 .heart {
-	display:inline-flex;
+	/* display:flex; */
 }
 
 .empowering-text {
@@ -115,7 +121,7 @@ Page Component Styles (icon grid, team member card)
 }
 
 /* Turns Title and Paragraph to Black */
-.empowering h4{
+.empowering h4 {
 	font-size: var(--font28);
 	font-weight: var(--font-weight-bold);
 	line-height: var(--line-height32);
@@ -137,8 +143,6 @@ Page Component Styles (icon grid, team member card)
 .empowering-img-block img {
 	margin: 30px;
 }
-
-
 
 /* ===================================
 Section Styles (background, padding, etc.)
@@ -176,12 +180,17 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		width: 100vw;
 		height: 100vh;
 		background-image: url(../assets/images/pages/values/hero-values.jpg);
-		background-image: linear-gradient(260deg, rgba(9, 9, 9, 0.80) 46.9%, rgba(9, 9, 9, 0.00) 86.82%),url(../assets/images/pages/values/hero-values.jpg);;
+		background-image: linear-gradient(
+				260deg,
+				rgba(9, 9, 9, 0.8) 46.9%,
+				rgba(9, 9, 9, 0) 86.82%
+			),
+			url(../assets/images/pages/values/hero-values.jpg);
 		background-position: center center;
 		background-size: cover;
 		background-repeat: no-repeat;
 	}
 	.hero img {
-        display: none;
-    }
+		display: none;
+	}
 }
