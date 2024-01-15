@@ -39,28 +39,50 @@ Page Component Styles (icon grid, team member card)
 	color: var(--color-white);
 	border: none;
 	border-radius: 10px;
-	padding: var(--spacing20);
-	margin: var(--spacing20) 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	margin: 0px 20px;
 }
 /* Turns Our Values Title Black */
 .values-head {
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	text-align: center;
+	margin-bottom: 100px;
 }
 
 .h3-black {
 	color: var(--color-onyx);
+	margin: 60px 0 20px 0;
 }
 
 .values-head p {
 	color: var(--color-onyx);
+	margin: 0 20px 0;
 }
 /* Adds a background color in lieu of those rectangle shapes */
 .copperback {
 	background-color: var(--color-copper);
+	display: flex;
+	flex-direction: column;
+	text-align: center;
 }
+.copperback h4, .copperback p {
+	margin: var(--spacing20);
+} 
 
+.copperback h4 {
+	font-size: var(--font28);
+	font-weight: var(--font-weight-bold);
+	line-height: var(--line-height32)
+}
+.copperback p {
+	font-size: var(--font16);
+    font-weight: var(--font-weight-regular);
+    line-height: var(--line-height20)
+}
 /* Adds a background color in lieu of those rectangle shapes */
 
 .onyxback {
@@ -91,28 +113,45 @@ Page Component Styles (icon grid, team member card)
 
 .support {
 	background-color: var(--color-yaleblue);
+	margin-top: 90px;
+}
+.support-header, .support-text {
+	margin: 0px 0px 0px 20px;
+
 }
 .support-header {
 	display: flex;
     flex-direction: row;
-	align-items: center;
+	justify-content: left;
 	font-size: var(--font28);
 	font-weight: var(--font-weight-bold);
 	line-height: var(--line-height32);
-	margin: 90px 0px 20px;
+
 }
 /* Turns We Support to Red */
 /* inline block allows the alignment with heart icon but doesn't fill desktop */
-.support-header h4{
-	margin: 0px;
+.support-header h4, .support-header svg {
+	margin: 90px 0px 20px 0px;
 	color: var(--color-amaranth);
 }
-/* Aligns heart icon to the end of Support header */
-/* need small gap between icon and text */
-.heart {
-	/* display:flex; */
+.support-text h4 {
+	font-size: var(--font28);
+	font-weight: var(--font-weight-bold);
+	line-height: var(--line-height32);
+	margin: 0;
 }
-
+.support-text p {
+	font-size: var(--font21);
+    font-weight: var(--font-weight-regular);
+    line-height: var(--line-height26);
+	margin: 20px 0px 0px 0px;
+}
+.support-logo-01 {
+	margin: 40px 0px 20px;
+}
+.support-logos {
+	padding-bottom: 80px;
+}
 .empowering-text {
 	display: flex;
 	flex-direction: column;
