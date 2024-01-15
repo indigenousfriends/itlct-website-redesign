@@ -15,19 +15,32 @@ Styles for an individual page
 Page Component Styles (icon grid, team member card)
 ===================================
 */
-html {
-	max-width: var(--wrapper-width-max);
-}
 
 .wrapper {
 	max-width: var(--mobile-wrapper-width);
+	margin: none;
 }
 
+.invis-flex {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
 
+.hero-text {
+	border: 2px solid transparent;
+	width: 369px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
 
 h3,
 section div p {
-	color: var(--color-onyx)
+	color: var(--color-onyx);
+	text-align: center;
 }
 
 h3 {
@@ -95,7 +108,6 @@ button:hover {
 	background: rgb(0, 0, 0, 0);
 	border: 3px solid var(--button3-color);
 	color: var(--color-onyx);
-
 }
 
 /* 
@@ -123,21 +135,19 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 
 /* Tablet and Larger */
 @media screen and (min-width: 768px) {
-
 	/* Add styles that apply to table and desktop */
 	.wrapper {
 		max-width: var(--desktop-wrapper-width);
 	}
 
-	.wrapper.hero {
+	/* .wrapper.hero {
 		max-width: 100%;
-	}
+	} */
 
 	.hero {
 		position: relative;
-
+		max-width: 100%;
 	}
-
 
 	.hero-text {
 		/* this applies to everything, change to more specific */
@@ -156,7 +166,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 
 	h3,
 	section div p {
-		color: var(--color-white)
+		color: var(--color-white);
 	}
 
 	h3 {
@@ -165,7 +175,6 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		font-style: normal;
 		font-weight: var(--font-weight-bold);
 		line-height: var(--line-height58);
-
 	}
 
 	section div p {
@@ -173,7 +182,6 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		font-size: var(--font21);
 		font-weight: var(--font-weight-regular);
 		line-height: var(--line-height26);
-
 	}
 
 	h4 {
@@ -193,7 +201,6 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 
 /* Desktop Only */
 @media screen and (min-width: 1024px) {
-
 	/* Add styles that apply specifically to desktop */
 	.signature {
 		font-size: var(--font24);
