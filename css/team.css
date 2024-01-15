@@ -50,27 +50,35 @@ h5 {
 }
 
 /* header section */
+.header-picture {
+	margin-bottom: var(--spacing80);
+}
 picture {
 	width: 100%;
 }
 picture img {
 	min-width: 100%;
 }
+h3 {
+	margin-top: 0px;
+	margin-bottom: var(--spacing20);
+}
+
+/* team card section */
 .team-card {
+	margin: var(--spacing20) 0;
+	padding: var(--spacing20);
+	padding-top: 60px;
+    background: var(--color-teal);
+	border: none;
+	border-radius: 10px;
+
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-    background: var(--color-teal);
-	border: none;
-	border-radius: 10px;
-	padding: var(--spacing20);
-	padding-top: 100px;
-	margin: var(--spacing20) 0;
 }
-.team-card div picture {
-	margin-top: var(--spacing40);
-}
+
 .team-card div {
 	margin: 10px;
 }
@@ -78,7 +86,7 @@ picture img {
 	margin: 0px;
 }
 .team-card h5 {
-	margin-top: var(--spacing10);
+	margin: var(--spacing10) 0px;
 
 }
 .team-card p {
@@ -89,8 +97,19 @@ picture img {
 	flex-direction: column;
 	justify-content: space-between;
 }
+
+/* Current positions */
 .current-positions {
-	margin: var(--spacing40) 0;
+	width: 90%;
+	margin: 150px auto;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.current-positions h4 {
+	margin: 0px 0px 20px 0px;
 }
 
 .black-text h3, .black-text h4 {
@@ -98,12 +117,6 @@ picture img {
 }
 .team-card img, .get-involved img {
 	border-radius: 10px;
-}
-.current-positions {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
 }
 /* 
 ===================================
