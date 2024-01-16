@@ -1,0 +1,49 @@
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+a:hover,
+a:focus {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+a:visited {
+	color: inherit;
+}
+
+/* needs alternation */
+.button1 {
+	display: flex;
+	width: 300px;
+	height: 50px;
+	padding: 11px 92px;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	gap: 10px;
+	flex-shrink: 0;
+	border-radius: 10px;
+	border-color: var(--color-white);
+	background: rgb(0, 0, 0, 0);
+	color: var(--color-white);
+	cursor: pointer;
+	border: 3px solid var(--color-white);
+	font-size: var(--font21);
+	font-weight: var(--font-weight-bold);
+	line-height: var(--line-height26);
+}
+
+.button1:hover {
+	/* background: var(--button3-hover-border); */
+	background: var(--color-white);
+	/* border: 3px solid var(--button3-color); */
+	color: var(--color-onyx);
+}
+
+.button2 {
+}
+
+.button3 {
+}
