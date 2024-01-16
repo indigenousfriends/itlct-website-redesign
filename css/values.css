@@ -230,6 +230,13 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 
 
 /* Values header and p needs to be on top of the hero */
+.values-main{
+display:flex;
+position:absolute;
+margin: 470px, 67px, 392px, 800px;
+}
+
+
 /* Cards need to change from column to row with some stylized sizing and padding*/
 /* imgs need to change from -m to normal desktop size */
 /* Imgs, gradients, background colors */
@@ -238,6 +245,15 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 /* Empowerment section needs to collapse with text on the right side of left side img */
 /* Empowerment red background needs to change size and position on X-Y */
 /* All Text white except Empowerment section and We Support Header */
+.h3-black{
+	color: var(--color-white);
+}
+.values-head p{
+	color: var(--color-white);
+}
+p{
+	color: var(--color-white)
+}
 
 	/* Gradients */
 	.hero {
