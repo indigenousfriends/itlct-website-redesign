@@ -1,19 +1,30 @@
-const modal = document.querySelector(".modal");
+const natashaModal = document.querySelector(".natasha-modal");
+const marshaModal = document.querySelector(".marsha-modal");
 const overlay = document.querySelector(".overlay-la");
-const openModalBtn = document.querySelector(".btn-la");
 const closeModalBtn = document.querySelector(".btn-close");
+const natashaBtn = document.getElementById("#natasha-modal-open");
+const marshaBtn = document.getElementById("#marsha-modal-open");
 
-// Function for opening the modal
-const openModal = function () {
-  modal.classList.remove("hidden");
+// Function for opening the natasha modal
+const openNatashaModal = function () {
+  natashaModal.classList.remove("hidden");
   overlay.classList.remove("hidden");
 };
-// Event listener for opening the modal when the button is clicked
-openModalBtn.addEventListener("click", openModal);
+// Function for opening the marsha modal
+const openMarshaModal = function () {
+    marshaModal.classList.remove("hidden");
+    overlay.classList.remove("hidden");
+  };
+// Event listener for opening the modal when the natasha button is clicked
+natashaBtn.addEventListener("click", openNatashaModal);
+
+// Event listener for opening the modal when the marsha button is clicked
+marshaBtn.addEventListener("click", openMarshaModal);
 
 // Function for closing the modal
 const closeModal = function () {
-  modal.classList.add("hidden");
+  natashaModal.classList.add("hidden");
+  marshaModal.classList.add("hidden");
   overlay.classList.add("hidden");
 };
 
