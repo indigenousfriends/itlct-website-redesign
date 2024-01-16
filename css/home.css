@@ -276,48 +276,91 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 
 	/* global ecosystem section */
 	.global-ecosystem {
-		padding-top: var(--spacing80);
+		padding-top: var(--spacing100);
+		padding-bottom: var(--spacing100);
 		background: url(../assets/images/pages/home/bg-overlay-vector-01.svg),
 			var(--color-bluepurple);
 		background-size: cover;
 	}
 
+	.global-ecosystem h4 {
+		font-size: var(--font36);
+		font-weight: var(--font-weight-bold);
+		line-height: var(--line-height40);
+		color: var(--color-white);
+	}
+
 	.ecosystem {
+		width: 90%;
+		margin: 0 auto;
 		text-align: left;
 		display: flex;
 		flex-direction: row;
+		align-items: center;
+		justify-content: center;
 	}
 
 	.ecosystem-subsection {
-		margin: 0 auto;
-		padding: var(--spacing40);
+		margin: 0;
+		border-radius: 10px;
+		padding-top: var(--spacing40);
+		padding-bottom: var(--spacing40);
+		padding-left: 100px;
+		padding-right: 100px;
 		width: 50%;
+		left: 70px;
 	}
 
 	.ecosystem-subsection p {
 		color: var(--color-white);
 	}
 	.blockquote {
-		height: 30%;
-		width: 40%;
-		margin: 0 auto;
+		position: relative;
+		right: 70px;
+		width: 45%;
+		margin: 0;
+		padding-top: 40px;
+		padding-bottom: 40px;
+		padding-left: 60px;
+		padding-right: 30px;
+		/* padding-top: 50px;
+		padding-bottom: 50px;
+		padding-left: 75px;
+		padding-right: var(--spacing40); */
 	}
 
 	.blockquote p {
-		display: none;
-	}
-
-	.blockquote h5::before {
-		content: url(../assets/images/pages/home/quotes-open.svg);
-	}
-
-	.blockquote h5::after {
-		content: url(../assets/images/pages/home/quotes-close.svg);
+		font-size: var(--font24);
+		font-weight: var(--font-weight-medium);
+		line-height: var(--line-height28);
+		color: var(--color-white);
+		font-style: italic;
 	}
 
 	/* what we do section */
+	.what-we-do h3 {
+		font-size: var(--font46);
+		font-weight: var(--font-weight-bold);
+		line-height: var(--line-height50);
+		color: var(--color-onyx);
+	}
+	.what-we-do h4 {
+		font-size: var(--font36);
+		font-weight: var(--font-weight-bold);
+		line-height: var(--line-height40);
+		color: var(--color-white);
+	}
+
+	.what-we-do p {
+		color: var(--color-white);
+	}
+
+	.what-we-do {
+		padding-top: 80px;
+		padding-bottom: 80px;
+	}
 	.card-container {
-		width: 80%;
+		width: 90%;
 		margin: 0 auto;
 		display: flex;
 		flex-direction: row;
@@ -334,6 +377,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	.values {
 		background-image: url(../assets/images/pages/home/values.jpg);
 	}
+
 	/* events and programs section */
 	.events-and-programs {
 		background: url(../assets/images/pages/home/bg-overlay-vector-02.svg),
