@@ -2,24 +2,26 @@ const natashaModal = document.querySelector(".natasha-modal");
 const marshaModal = document.querySelector(".marsha-modal");
 const overlay = document.querySelector(".overlay-la");
 const closeModalBtn = document.querySelector(".btn-close");
-const natashaBtn = document.getElementById("#natasha-modal-open");
-const marshaBtn = document.getElementById("#marsha-modal-open");
+const natashaBtn = document.querySelector("#natasha-modal-open");
+const marshaBtn = document.querySelector("#marsha-modal-open");
+
+console.log(natashaBtn);
 
 // Function for opening the natasha modal
-const openNatashaModal = function () {
+const opennatashaModal = function () {
   natashaModal.classList.remove("hidden");
   overlay.classList.remove("hidden");
 };
 // Function for opening the marsha modal
-const openMarshaModal = function () {
+const openmarshaModal = function () {
     marshaModal.classList.remove("hidden");
     overlay.classList.remove("hidden");
   };
 // Event listener for opening the modal when the natasha button is clicked
-natashaBtn.addEventListener("click", openNatashaModal);
+natashaBtn.addEventListener("click", opennatashaModal);
 
 // Event listener for opening the modal when the marsha button is clicked
-marshaBtn.addEventListener("click", openMarshaModal);
+marshaBtn.addEventListener("click", openmarshaModal);
 
 // Function for closing the modal
 const closeModal = function () {
