@@ -227,6 +227,19 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	/* Add styles that apply specifically to desktop */
 
 	/* adjusting font sizes and styling for p tags */
+
+
+/* Values header and p needs to be on top of the hero */
+/* Cards need to change from column to row with some stylized sizing and padding*/
+/* imgs need to change from -m to normal desktop size */
+/* Imgs, gradients, background colors */
+/* We Support - new padding */
+/* We Support logos flex row */
+/* Empowerment section needs to collapse with text on the right side of left side img */
+/* Empowerment red background needs to change size and position on X-Y */
+/* All Text white except Empowerment section and We Support Header */
+
+	/* Gradients */
 	.hero {
 		width: 100vw;
 		height: 100vh;
@@ -245,3 +258,12 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		display: none;
 	}
 }
+/* .sustainability-img{
+	background-image: url(../assets/images/pages/values/sustainability.jpg);
+	background: linear-gradient(269deg, #0E0E0E 46.26%, rgba(27, 27, 27, 0.00) 99.04%),
+	url(../assets/images/pages/values/sustainability.jpg);
+	position: relative;
+	z-index: -1;
+	width: ;
+	background-position: relative;
+} */
