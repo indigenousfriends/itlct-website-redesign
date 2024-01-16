@@ -82,62 +82,6 @@ Section Styles (background, padding, etc.)
 	flex-direction: column;
 }
 
-/* button styles - likely will be replaced later */
-.button1 {
-	display: flex;
-	width: 300px;
-	height: 50px;
-	padding: 11px 92px;
-	justify-content: center;
-	align-items: center;
-	margin: 0 auto;
-	gap: 10px;
-	flex-shrink: 0;
-	border-radius: 10px;
-	border-color: var(--color-white);
-	background: rgb(0, 0, 0, 0);
-	color: var(--color-white);
-	cursor: pointer;
-	border: 3px solid var(--color-white);
-	font-family: var(--main-font);
-	font-size: var(--font21);
-	font-weight: var(--font-weight-bold);
-	line-height: var(--line-height26);
-}
-
-.button1:hover {
-	background: var(--color-white);
-	color: var(--color-onyx);
-}
-
-.button3 {
-	display: flex;
-	width: 300px;
-	height: 50px;
-	padding: 11px 92px;
-	justify-content: center;
-	align-items: center;
-	margin: 0 auto;
-	gap: 10px;
-	flex-shrink: 0;
-	border-radius: 10px;
-	background: var(--button3-color);
-	color: var(--color-white);
-	cursor: pointer;
-	border: none;
-	font-family: var(--main-font);
-	font-size: var(--font21);
-	font-weight: var(--font-weight-bold);
-	line-height: var(--line-height26);
-}
-
-.button3:hover {
-	/* background: var(--button3-hover-border); */
-	background: rgb(0, 0, 0, 0);
-	border: 3px solid var(--button3-color);
-	color: var(--color-onyx);
-}
-
 /* community partnerships section */
 .community {
 	background-color: var(--color-amaranth);
@@ -176,17 +120,17 @@ Section Styles (background, padding, etc.)
 	padding-bottom: var(--spacing40);
 }
 
-.card-container .card {
+.card-container .home-card {
 	min-height: 430px;
 }
 
-.card {
+.home-card {
 	border: none;
 	border-radius: 10px;
 	padding-bottom: var(--spacing20);
 	margin: var(--spacing20) 0;
 }
-.card .text-container {
+.home-card .text-container {
 	margin: var(--spacing20);
 }
 
@@ -381,7 +325,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		align-content: center;
 	}
 
-	.card-container .card {
+	.card-container .home-card {
 		width: 30%;
 		min-height: 530px;
 	}
