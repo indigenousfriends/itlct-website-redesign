@@ -43,7 +43,35 @@ a:visited {
 }
 
 .button2 {
+	min-width: 187px;
+	min-height: 50px;
+	padding: 10px 40px;
+	color: var(--color-white);
+	border: none;
+	border-radius: 10px;
+	background-color: var(--button2-color);
+	font-family: var(--main-font);
+	font-weight: var(--font-weight-bold);
+	font-size: var(--font21);
+}
+.button2:hover {
+	background-color: var(--color-white);
+	color: var(--color-onyx);
 }
 
 .button3 {
+	min-width: 300px;
+	min-height: 50px;
+	padding: 11px 92px;
+	border: none;
+	border-radius: 10px;
+	background-color: var(--button2-color);
+	color: var(--color-white);
+	font-family: var(--main-font);
+	font-weight: var(--font-weight-bold);
+	font-size: var(--font21);
+}
+.button3:hover {
+	background-color: var(--color-white);
+	color: var(--color-onyx);
 }
