@@ -145,7 +145,13 @@ Section Styles (background, padding, etc.)
 }
 
 /* A global ecosystem section */
-.ecosystem {
+
+.global-ecosystem {
+	background-color: var(--color-cybergrape);
+	padding-bottom: var(--spacing40);
+}
+
+.ecosystem-subsection {
 	background-color: var(--color-cybergrape);
 	padding-top: var(--spacing10);
 	padding-bottom: 50px;
@@ -168,6 +174,10 @@ Section Styles (background, padding, etc.)
 
 .what-we-do {
 	padding-bottom: var(--spacing40);
+}
+
+.card-container .card {
+	min-height: 430px;
 }
 
 .card {
@@ -224,7 +234,9 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	}
 
 	/* community partnerships */
-	.community h3 {
+
+	/* global ecosystem section */
+	.blockquote h5 {
 		display: none;
 	}
 }
@@ -276,49 +288,104 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	}
 
 	/* community partnerships section */
-	.community {
+	.community-partnerships-section {
 		margin: 0 auto;
-		width: 75%;
+		width: 80%;
+		padding-bottom: var(--spacing80);
+	}
+
+	.community-partnerships-section p {
+		color: var(--color-white);
+	}
+
+	.community-partnerships-section .button1 {
+		margin: 0;
+	}
+
+	.community {
 		display: flex;
 		flex-direction: row-reverse;
 		border-radius: 10px;
 		padding-bottom: 0;
 		text-align: left;
 	}
-
+	.community h4 {
+		font-size: var(--font36);
+		font-weight: var(--font-weight-bold);
+		line-height: var(--line-height40);
+		color: var(--color-white);
+		margin: 0;
+	}
 	.community img {
 		height: 100%;
 	}
-	.community h4 {
-		display: none;
-	}
-
 	.community-partner-wrapper {
 		margin: 0 auto;
-		padding: var(--spacing40);
+		padding-left: var(--spacing80);
+		padding-right: var(--spacing84);
+		padding-top: var(--spacing80);
 		width: 50%;
 		display: flex;
 		flex-direction: column;
-		align-items: start;
-	}
-	.text-container-subsection {
-		margin: 0;
-	}
-
-	.text-container-subsection p {
-		color: var(--color-white);
+		align-items: flex-start;
 	}
 
 	/* global ecosystem section */
 	.global-ecosystem {
 		padding-top: var(--spacing80);
-	}
-
-	.ecosystem {
 		background: url(../assets/images/pages/home/bg-overlay-vector-01.svg),
 			var(--color-bluepurple);
 		background-size: cover;
 	}
+
+	.ecosystem {
+		text-align: left;
+		display: flex;
+		flex-direction: row;
+	}
+
+	.ecosystem-subsection {
+		margin: 0 auto;
+		padding: var(--spacing40);
+		width: 50%;
+	}
+
+	.ecosystem-subsection p {
+		color: var(--color-white);
+	}
+	.blockquote {
+		height: 30%;
+		width: 40%;
+		margin: 0 auto;
+	}
+
+	.blockquote p {
+		display: none;
+	}
+
+	.blockquote h5::before {
+		content: url(../assets/images/pages/home/quotes-open.svg);
+	}
+
+	.blockquote h5::after {
+		content: url(../assets/images/pages/home/quotes-close.svg);
+	}
+
+	/* what we do section */
+	.card-container {
+		width: 80%;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-content: center;
+	}
+
+	.card-container .card {
+		width: 30%;
+		min-height: 530px;
+	}
+
 	/* our values section */
 	.values {
 		background-image: url(../assets/images/pages/home/values.jpg);
