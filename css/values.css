@@ -34,6 +34,10 @@ Page Component Styles (icon grid, team member card)
 	flex-direction: column;
 	justify-content: center;
 }
+
+.hero img{
+	width: 100%;
+}
 .values-card {
 	min-height: 204px;
 	color: var(--color-white);
@@ -212,14 +216,15 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 ===================================
 */
 
-/* Tablet Only */
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-	/* Add styles that only apply to tablet. These are usually fixes to get resposnivenes right */
-}
 
 /* Tablet and Larger */
 @media screen and (min-width: 768px) {
 	/* Add styles that apply to table and desktop */
+}
+
+/* Tablet Only */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+	/* Add styles that only apply to tablet. These are usually fixes to get resposnivenes right */
 }
 
 /* Desktop Only */
@@ -238,9 +243,10 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 
 	/* Cards need to change from column to row with some stylized sizing and padding*/
 	.desktop-group {
-		display: flex;
-		align-content: flex-start;
-	}
+	display: flex;
+	padding: 200px;
+	justify-content: space-around;
+	align-items: center;	}
 	/* imgs need to change from -m to normal desktop size */
 	/* Imgs, gradients, background colors */
 	/* We Support - new padding */
