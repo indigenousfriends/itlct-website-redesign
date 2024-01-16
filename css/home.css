@@ -9,7 +9,6 @@ Styles for home-page
 /* this is to align text in the center throughout the entire design */
 .align-text {
 	text-align: center;
-	
 }
 /* 
 ===================================
@@ -34,7 +33,7 @@ Page Component Styles (icon grid, team member card)
 	margin: var(--spacing10);
 }
 /* community partnerships section */
-.community .card-img img{
+.community .card-img img {
 	width: 100%;
 	border-radius: 0;
 }
@@ -57,7 +56,6 @@ Page Component Styles (icon grid, team member card)
 	border-radius: 10px 10px 0 0;
 }
 
-
 /* our values section */
 
 .our-values {
@@ -66,9 +64,7 @@ Page Component Styles (icon grid, team member card)
 	width: 90%;
 	border-radius: 10px;
 	background-color: var(--color-yaleblue);
-
 }
-
 
 /* 
 ===================================
@@ -84,13 +80,6 @@ Section Styles (background, padding, etc.)
 .hero-home {
 	display: flex;
 	flex-direction: column;
-	
-
-}
-
-/* this overrides the global style of white text */
-.alternate {
-	color: var(--color-onyx);
 }
 
 /* button styles - likely will be replaced later */
@@ -153,7 +142,6 @@ Section Styles (background, padding, etc.)
 .community {
 	background-color: var(--color-amaranth);
 	padding-bottom: 50px;
-	
 }
 
 /* A global ecosystem section */
@@ -161,7 +149,6 @@ Section Styles (background, padding, etc.)
 	background-color: var(--color-cybergrape);
 	padding-top: var(--spacing10);
 	padding-bottom: 50px;
-		
 }
 .blockquote {
 	margin: 0 auto;
@@ -171,10 +158,16 @@ Section Styles (background, padding, etc.)
 	background-color: var(--color-onyx);
 }
 
+.blockquote p::before {
+	content: url(../assets/images/pages/home/quotes-open.svg);
+}
+.blockquote p::after {
+	content: url(../assets/images/pages/home/quotes-close.svg);
+}
 /* what we do section */
 
 .what-we-do {
-	padding-bottom: var(--spacing40);	
+	padding-bottom: var(--spacing40);
 }
 
 .card {
@@ -186,7 +179,6 @@ Section Styles (background, padding, etc.)
 .card .text-container {
 	margin: var(--spacing20);
 }
-
 
 /* our values section */
 .values {
@@ -220,19 +212,30 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 ===================================
 */
 
-/* Tablet Only */
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-	/* Add styles that only apply to tablet. These are usually fixes to get resposnivenes right */
-
+/* mobile and Larger */
+@media screen and (min-width: 340px) and (max-width: 768px) {
+	/* Add styles that apply to tablet and desktop */
+	/* this overrides the global style of white text */
+	.alternate {
+		color: var(--color-onyx);
+	}
 	h3 {
 		color: var(--color-onyx);
 	}
+
+	/* community partnerships */
+	.community h3 {
+		display: none;
+	}
 }
 
-/* Tablet and Larger */
-@media screen and (min-width: 340px) {
-	/* Add styles that apply to tablet and desktop */
-
+/* Tablet Only */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+	/* Add styles that only apply to tablet. These are usually fixes to get resposnivenes right */
+	/* this overrides the global style of white text */
+	.alternate {
+		color: var(--color-onyx);
+	}
 	h3 {
 		color: var(--color-onyx);
 	}
@@ -240,9 +243,14 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 
 /* Desktop Only */
 @media screen and (min-width: 1024px) {
+	.alternate {
+		color: var(--color-white);
+	}
+
 	/* hero section */
 	.hero {
 		position: relative;
+		padding-bottom: var(--spacing80);
 	}
 
 	.hero .btn-container {
@@ -253,8 +261,8 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		display: none;
 	}
 	.hero img {
-		object-fit: fill;
-		
+		object-fit: cover;
+		margin: 0 auto;
 	}
 
 	.hero-home {
@@ -266,7 +274,46 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		left: 50%;
 		transform: translate(-50%, 0%);
 	}
+
+	/* community partnerships section */
+	.community {
+		margin: 0 auto;
+		width: 75%;
+		display: flex;
+		flex-direction: row-reverse;
+		border-radius: 10px;
+		padding-bottom: 0;
+		text-align: left;
+	}
+
+	.community img {
+		height: 100%;
+	}
+	.community h4 {
+		display: none;
+	}
+
+	.community-partner-wrapper {
+		margin: 0 auto;
+		padding: var(--spacing40);
+		width: 50%;
+		display: flex;
+		flex-direction: column;
+		align-items: start;
+	}
+	.text-container-subsection {
+		margin: 0;
+	}
+
+	.text-container-subsection p {
+		color: var(--color-white);
+	}
+
 	/* global ecosystem section */
+	.global-ecosystem {
+		padding-top: var(--spacing80);
+	}
+
 	.ecosystem {
 		background: url(../assets/images/pages/home/bg-overlay-vector-01.svg),
 			var(--color-bluepurple);
@@ -281,5 +328,19 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		background: url(../assets/images/pages/home/bg-overlay-vector-02.svg),
 			var(--color-bluepurple);
 		background-size: cover;
+		padding-top: var(--spacing20);
+	}
+
+	.events-container {
+		margin: 0 auto;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+	}
+	.placeholder {
+		display: flex;
+		flex-direction: column;
+		width: 30%;
 	}
 }
