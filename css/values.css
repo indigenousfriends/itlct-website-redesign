@@ -241,9 +241,18 @@ margin: 470px, 67px, 392px, 800px;
 /* imgs need to change from -m to normal desktop size */
 /* Imgs, gradients, background colors */
 /* We Support - new padding */
+.support{
+	padding-left: 200px;
+}
 /* We Support logos flex row */
+.support-logos{
+	display: flex;
+	gap: 40px;
+}
 /* Empowerment section needs to collapse with text on the right side of left side img */
 /* Empowerment red background needs to change size and position on X-Y */
+
+
 /* All Text white except Empowerment section and We Support Header */
 .h3-black{
 	color: var(--color-white);
