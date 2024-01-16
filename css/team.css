@@ -364,6 +364,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	.icon-button .button2 {
 		padding: 0px;
 	}
+}
 
 /* MODAL STYLES */
 .hidden {
@@ -387,7 +388,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	backdrop-filter: blur(3px);
 	z-index: 1;
 }
-.modal {
+.natasha-modal, .marsha-modal {
 	width: 90%;
 	max-width: 1100px;
 	max-height: 90vh;
@@ -416,7 +417,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	max-height: calc(85vh 300px);
 }
 /* modal text content */
-.modal p {
+.natasha-modal p, .marsha-modal p {
 	color: var(--color-onyx);
 	margin: var(--spacing20);
 }
@@ -440,4 +441,3 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 }
 
 /* End of modal styles */
-}
