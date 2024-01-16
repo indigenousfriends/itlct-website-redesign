@@ -34,7 +34,7 @@ Page Component Styles (icon grid, team member card)
 	flex-direction: column;
 	justify-content: center;
 }
-.card{
+.values-card {
 	min-height: 204px;
 	color: var(--color-white);
 	border: none;
@@ -45,18 +45,18 @@ Page Component Styles (icon grid, team member card)
 	text-align: center;
 	margin: 0px 20px;
 }
-.card h4 {
+.values-card h4 {
 	margin: 20px 0px 0px 0px;
 	font-size: var(--font28);
 	font-weight: var(--font-weight-bold);
 	line-height: var(--line-height32);
 }
-.card p {
+.values-card p {
 	display: flex;
 	text-align: left;
 	font-size: var(--font16);
-    font-weight: var(--font-weight-regular);
-    line-height: var(--line-height20);
+	font-weight: var(--font-weight-regular);
+	line-height: var(--line-height20);
 	margin: var(--spacing20);
 }
 /* Turns Our Values Title Black */
@@ -125,22 +125,22 @@ Page Component Styles (icon grid, team member card)
 	background-color: var(--color-yaleblue);
 	margin-top: 90px;
 }
-.support-header, .support-text {
+.support-header,
+.support-text {
 	margin: 0px 0px 0px 20px;
-
 }
 .support-header {
 	display: flex;
-    flex-direction: row;
+	flex-direction: row;
 	justify-content: left;
 	font-size: var(--font28);
 	font-weight: var(--font-weight-bold);
 	line-height: var(--line-height32);
-
 }
 /* Turns We Support to Red */
 /* inline block allows the alignment with heart icon but doesn't fill desktop */
-.support-header h4, .support-header svg {
+.support-header h4,
+.support-header svg {
 	margin: 90px 0px 20px 0px;
 	color: var(--color-amaranth);
 }
@@ -152,8 +152,8 @@ Page Component Styles (icon grid, team member card)
 }
 .support-text p {
 	font-size: var(--font21);
-    font-weight: var(--font-weight-regular);
-    line-height: var(--line-height26);
+	font-weight: var(--font-weight-regular);
+	line-height: var(--line-height26);
 	margin: 20px 0px 0px 0px;
 }
 .support-logo-01 {
@@ -228,46 +228,43 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 
 	/* adjusting font sizes and styling for p tags */
 
+	/* Values header and p needs to be on top of the hero */
+	.values-main {
+		display: flex;
+		position: absolute;
+		left: 50%;
+		top: 45%;
+	}
 
-/* Values header and p needs to be on top of the hero */
-.values-main{
-display:flex;
-position:absolute;
-left: 50%;
-top: 45%;
-}
+	/* Cards need to change from column to row with some stylized sizing and padding*/
+	.desktop-group {
+		display: flex;
+		align-content: flex-start;
+	}
+	/* imgs need to change from -m to normal desktop size */
+	/* Imgs, gradients, background colors */
+	/* We Support - new padding */
+	.support {
+		padding-left: 100px;
+	}
+	/* We Support logos flex row */
+	.support-logos {
+		display: flex;
+		gap: 40px;
+	}
+	/* Empowerment section needs to collapse with text on the right side of left side img */
+	/* Empowerment red background needs to change size and position on X-Y */
 
-
-/* Cards need to change from column to row with some stylized sizing and padding*/
-.desktop-group{
-	display: flex;
-	
-}
-/* imgs need to change from -m to normal desktop size */
-/* Imgs, gradients, background colors */
-/* We Support - new padding */
-.support{
-	padding-left: 100px;
-}
-/* We Support logos flex row */
-.support-logos{
-	display: flex;
-	gap: 40px;
-}
-/* Empowerment section needs to collapse with text on the right side of left side img */
-/* Empowerment red background needs to change size and position on X-Y */
-
-
-/* All Text white except Empowerment section and We Support Header */
-.h3-black{
-	color: var(--color-white);
-}
-.values-head p{
-	color: var(--color-white);
-}
-p{
-	color: var(--color-white)
-}
+	/* All Text white except Empowerment section and We Support Header */
+	.h3-black {
+		color: var(--color-white);
+	}
+	.values-head p {
+		color: var(--color-white);
+	}
+	p {
+		color: var(--color-white);
+	}
 
 	/* Gradients */
 	.hero {
