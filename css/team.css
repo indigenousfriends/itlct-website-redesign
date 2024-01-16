@@ -169,6 +169,103 @@ h3 {
 .team-card img, .get-involved img {
 	border-radius: 10px;
 }
+
+
+/* MODAL STYLES */
+.hidden {
+	display: none;
+}
+/* positioning for body to stop scroll when modal is open */
+.fixed {
+	position: fixed;
+	width: 100%;
+}
+/* modal overlay */
+.overlay-la {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	backdrop-filter: blur(3px);
+	z-index: 1;
+}
+.natasha-modal, .marsha-modal {
+	width: 90%;
+	max-width: 1100px;
+	max-height: 90vh;
+	margin: 0 auto;
+	/* was 26px and replaced with variable */
+	padding: var(--spacing20);
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 2vh;
+	background-color: var(--body-background-color);
+	color: var(--color-onyx);
+	border: 1px solid var(--body-background-color);
+	border-radius: 4px;
+	z-index: 2;
+}
+
+.modal-wrapper {
+	position: relative;
+}
+.modal-content {
+	overflow-y: scroll;
+	max-height: 65vh;
+}
+.modal-scroll {
+	/* need to fix scroll */
+	/* max-height: calc(85vh 300px); */
+	max-height: 350px;
+}
+.modal-header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 15px;
+}
+.modal-header .team-card-picture {
+	min-width: 200px;
+}
+/* modal text content */
+.natasha-modal p, .marsha-modal p {
+	color: var(--color-onyx);
+	margin: var(--spacing20);
+}
+
+.team-card-info-modal {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	
+}
+
+.team-card-info-modal h4, .team-card-info-modal h5 {
+	text-align: center;
+	color: var(--color-onyx);
+	margin: 10px 0px;
+}
+.btn-close {
+	position: absolute;
+	right: -10px;
+	top: 1px;
+}
+.btn-close button {
+	border: none;
+	background-color: transparent;
+}
+.btn-close svg {
+	width: 32px;
+	height: 32px;
+}
+
+/* End of modal styles */
+
 /* 
 ===================================
 Media Queries (overriding styles for different screen sizes)
@@ -304,6 +401,12 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		background-color: transparent;
 		border: 3px solid #FFF;
 	}
+
+	/* Modal */
+	.modal-header {
+		flex-direction: row;
+		gap: 5%;
+	}
 }
 
 /* Tablet Only */
@@ -366,78 +469,3 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	}
 }
 
-/* MODAL STYLES */
-.hidden {
-	display: none;
-}
-/* positioning for body to stop scroll when modal is open */
-.fixed {
-	position: fixed;
-	width: 100%;
-}
-/* modal overlay */
-.overlay-la {
-	position: fixed;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	width: 100%;
-	height: 100%;
-	background: rgba(0, 0, 0, 0.5);
-	backdrop-filter: blur(3px);
-	z-index: 1;
-}
-.natasha-modal, .marsha-modal {
-	width: 90%;
-	max-width: 1100px;
-	max-height: 90vh;
-	margin: 0 auto;
-	/* was 26px and replaced with variable */
-	padding: var(--spacing20);
-	position: fixed;
-	left: 0;
-	right: 0;
-	top: 2vh;
-	background-color: var(--body-background-color);
-	color: var(--color-onyx);
-	border: 1px solid var(--body-background-color);
-	border-radius: 4px;
-	z-index: 2;
-}
-
-.modal-wrapper {
-	position: relative;
-}
-.modal-content {
-	overflow-y: scroll;
-	max-height: 65vh;
-}
-.modal-scroll {
-	max-height: calc(85vh 300px);
-}
-/* modal text content */
-.natasha-modal p, .marsha-modal p {
-	color: var(--color-onyx);
-	margin: var(--spacing20);
-}
-.modal-header h4 {
-	text-align: center;
-	color: var(--color-onyx);
-	margin-bottom: 0px;
-}
-.btn-close {
-	position: absolute;
-	right: -10px;
-	top: -40px;
-}
-.btn-close button {
-	border: none;
-	background-color: transparent;
-}
-.btn-close svg {
-	width: 32px;
-	height: 32px;
-}
-
-/* End of modal styles */
