@@ -233,7 +233,9 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 .values-main{
 display:flex;
 position:absolute;
-margin: 470px, 67px, 392px, 800px;
+padding-left: 1000px;
+/* margin-right: 267px; */
+/* margin-bottom: 392px; */
 }
 
 
