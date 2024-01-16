@@ -233,18 +233,21 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 .values-main{
 display:flex;
 position:absolute;
-padding-left: 1000px;
-/* margin-right: 267px; */
-/* margin-bottom: 392px; */
+left: 50%;
+top: 45%;
 }
 
 
 /* Cards need to change from column to row with some stylized sizing and padding*/
+.desktop-group{
+	display: flex;
+	
+}
 /* imgs need to change from -m to normal desktop size */
 /* Imgs, gradients, background colors */
 /* We Support - new padding */
 .support{
-	padding-left: 200px;
+	padding-left: 100px;
 }
 /* We Support logos flex row */
 .support-logos{
@@ -280,6 +283,7 @@ p{
 		background-position: center center;
 		background-size: cover;
 		background-repeat: no-repeat;
+		position: relative;
 	}
 	.hero img {
 		display: none;
