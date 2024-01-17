@@ -22,7 +22,6 @@ Page Component Styles (icon grid, team member card)
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
-	/* padding: 20px; */
 }
 input[type="text"],
 [type="email"],
@@ -73,6 +72,7 @@ Section Styles (background, padding, etc.)
 body {
 	background: var(--color-bluepurple);
 	color: var(--color-white);
+	min-height: 100vh;
 }
 h3 {
 	color: var(--color-white);
@@ -80,7 +80,9 @@ h3 {
 }
 p {
 	color: var(--color-white);
-	gap: var(--spacing20);
+}
+.form-info {
+	padding: 0px var(--spacing20);
 }
 
 /* 
@@ -104,7 +106,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		justify-content: space-between;
 		align-items: center;
 		text-align: left;
-		margin: var(--spacing100) 150px;
+		padding: var(--spacing100) 150px;
 		gap: var(--spacing100);
 	}
 	.form-info {
@@ -122,11 +124,14 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 /* Tablet Only */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
 	/* Add styles that only apply to tablet. These are usually fixes to get resposnivenes right */
-	.contact-form-parent {
+	/* .contact-form-parent {
 		margin: var(--spacing100) var(--spacing80);
-	}
+	} */
 	.form-info {
 		width: 50%;
+	}
+	.contact-form-parent {
+		padding: var(--spacing100) var(--spacing80);
 	}
 }
 
@@ -139,5 +144,13 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		line-height: var(--line-height50);
 		color: var(--color-white);
 		text-align: left;
+	}
+}
+
+/* for 1300 and larger */
+@media screen and (min-width: 1300px) {
+	.contact-form-parent {
+		width: 75%;
+		margin: 0 auto;
 	}
 }
