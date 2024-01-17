@@ -56,7 +56,7 @@ Section Styles (background, padding, etc.)
 	width: 90%;
 }
 
-/* Page cards */
+/* Event Page Cards */
 .event-page-cards {
 	margin: var(--spacing100) 0px;
 }
@@ -138,8 +138,7 @@ Section Styles (background, padding, etc.)
 	row-gap: var(--spacing65);
 	column-gap: var(--spacing40);
 }
-
-/* event image and text containers */
+/* image and text containers for upcoming/previous events */
 .event-img,
 .event-info {
 	width: 100%;
@@ -151,7 +150,7 @@ Section Styles (background, padding, etc.)
 
 /* Upcoming/Previous events text */
 .h4-title {
-	margin: 150px 20px var(--spacing20) 20px;
+	margin: 150px var(--spacing20) var(--spacing20) var(--spacing20);
 	color: var(--color-onyx);
 	text-align: center;
 }
@@ -186,8 +185,8 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 /* Tablet Only */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
 	/* Add styles that only apply to tablet. These are usually fixes to get resposnivenes right */
-	/* page cards */
-	/* page card background/container */
+	/* Event page cards */
+	/* Event page card background/container */
 	.event-page-card-img {
 		/* increasing card height for tablet */
 		height: 300px;
@@ -210,7 +209,6 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	}
 	/* adding desktop image */
 	.title {
-		/* might need to reduce height for tablet and add height to desktop */
 		height: 100vh;
 		max-height: 992px;
 		background-image: url("/assets/images/pages/event-program/desktop/hero-d.jpg");
@@ -287,14 +285,14 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	.event-page-cards > * {
 		width: 45%;
 
-		/* positioning the card title */
+		/* positioning for the card title */
 		position: relative;
 	}
 	
 	.event-page-card-title {
 		height: 110px;
 		/* padding reduces for tablet and up */
-		padding: 20px;
+		padding: var(--spacing20);
 		margin: 0px;
 		border-radius: 0px 0px 10px 10px;
 		text-align: left;
