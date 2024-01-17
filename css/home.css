@@ -102,17 +102,24 @@ Section Styles (background, padding, etc.)
 }
 .blockquote {
 	margin: 0 auto;
-	padding: 15px;
+	padding: 45px 15px;
 	width: 90%;
 	border-radius: 10px;
 	background-color: var(--color-onyx);
+	position: relative;
 }
 
 .blockquote p::before {
 	content: url(../assets/images/pages/home/quotes-open.svg);
+	position: absolute;
+	top: 20px;
+	left: 10px;
 }
 .blockquote p::after {
 	content: url(../assets/images/pages/home/quotes-close.svg);
+	position: absolute;
+	bottom: 20px;
+	right: 10px;
 }
 /* what we do section */
 
@@ -307,7 +314,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		padding-bottom: var(--spacing40);
 		padding-left: 100px;
 		padding-right: 100px;
-		width: 50%;
+		width: 70%;
 		left: 70px;
 	}
 
@@ -316,17 +323,22 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	}
 	.blockquote {
 		position: relative;
-		right: 70px;
-		width: 45%;
+		right: 80px;
+		width: 65%;
 		margin: 0;
 		padding-top: 40px;
 		padding-bottom: 40px;
 		padding-left: 60px;
-		padding-right: 30px;
-		/* padding-top: 50px;
-		padding-bottom: 50px;
-		padding-left: 75px;
-		padding-right: var(--spacing40); */
+		padding-right: 80px;
+	}
+
+	.blockquote p::before {
+		top: 30px;
+		left: 20px;
+	}
+	.blockquote p::after {
+		bottom: 30px;
+		right: 20px;
 	}
 
 	.blockquote p {
@@ -338,27 +350,33 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	}
 
 	/* what we do section */
+
+	/* targeting the h3 stylings */
 	.what-we-do h3 {
 		font-size: var(--font46);
 		font-weight: var(--font-weight-bold);
 		line-height: var(--line-height50);
 		color: var(--color-onyx);
 	}
+	/* targeting the h4 stylings */
 	.what-we-do h4 {
 		font-size: var(--font36);
 		font-weight: var(--font-weight-bold);
 		line-height: var(--line-height40);
 		color: var(--color-white);
 	}
-
+	/* targeting the p styling to change the color */
 	.what-we-do p {
 		color: var(--color-white);
 	}
 
+	/* entire section */
 	.what-we-do {
 		padding-top: 80px;
 		padding-bottom: 80px;
 	}
+
+	/* the div holding the 3 cards */
 	.card-container {
 		width: 90%;
 		margin: 0 auto;
@@ -374,58 +392,66 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	}
 
 	/* our values section */
+
+	/* adjusting the background image for the entire section */
 	.values {
 		background-image: url(../assets/images/pages/home/values.jpg);
 		background-size: cover;
-		padding: var(--spacing80);
+		background-position: center;
+		padding-bottom: 185px;
+		padding-top: 100px;
 	}
-
+	/* the div holding both the title and the blue rectangle */
 	.values-holder {
 		margin: 0 auto;
 		width: 80%;
-		border: 5px solid red;
 	}
+	/* the div holding the title and the description */
 	.values .text-container {
 		width: 40%;
 		margin: 0;
 		text-align: left;
 	}
-
+	/* targeting the header style */
 	.values h4 {
 		font-size: var(--font36);
 		font-weight: var(--font-weight-bold);
 		line-height: var(--line-height40);
 		color: var(--color-white);
 	}
+	/* targeting the paragrah color */
 	.values p {
 		color: var(--color-white);
 	}
+	/* stylings for the blue rectangle  */
 	.our-values {
 		display: flex;
 		flex-direction: row;
 		justify-content: center;
 		width: 100%;
 		margin: 0;
+		padding-bottom: 60px;
 	}
-
+	/* stylings for the 3 divs within the blue rectangle  */
 	.our-values div {
 		display: flex;
 		flex-direction: column;
 		justify-items: center;
-
 		width: 30%;
 		text-align: left;
-		padding: 40px;
+		padding: 15px;
 	}
 
 	/* events and programs section */
+
+	/* stylings for the background for the entire section */
 	.events-and-programs {
 		background: url(../assets/images/pages/home/bg-overlay-vector-02.svg),
 			var(--color-bluepurple);
 		background-size: cover;
 		padding-top: var(--spacing20);
 	}
-
+	/* stylings for the div holding all 3 placeholders */
 	.events-container {
 		margin: 0 auto;
 		display: flex;
@@ -433,6 +459,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		justify-content: center;
 		align-items: center;
 	}
+	/* placeholder holding the image and event description */
 	.placeholder {
 		display: flex;
 		flex-direction: column;
