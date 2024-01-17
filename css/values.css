@@ -282,6 +282,10 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	.copperback h4, .amaraback h4, .grapeback h4, .blueback h4, .copperback p, .amaraback p, .grapeback p, .blueback p {
 		margin-left: 60px;
 	}
+	.onyxback, .grapeback, .tealback {
+		padding-right: 44px;
+	}
+
 	/* Cards need to change from column to row with some stylized sizing and padding*/
 	.desktop-group {
 		display: flex;
@@ -405,7 +409,9 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	p {
 		color: var(--color-white);
 	}
-
+	.support {
+		padding-bottom: 116px;
+	}
 	.support h4 {
 		font-size: var(--font46);
 		font-weight: var(--font-weight-bold);
@@ -426,7 +432,13 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		width: 39px;
 		height: 39px;
 	}
-	.support-logos img {
+	.support-logos {
+		display: flex;
+        flex-direction: row;
+		align-items: baseline;
+	}
+	.support-logo-01, .support-logo-02 {
+		width: auto;
 		height: 100px;
 	}
 
@@ -455,15 +467,14 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		background-color: transparent;
 		position: relative;
 	}
-		.empowering-img-block img {
-		position: absolute;
-		top: 15%;
-		left: 25%;
-		object-fit: cover;
-		aspect-ratio: 1;
-		width: 55%;
-		border-radius: 10px;
-		
+	.empowering-img-block img {
+	position: absolute;
+	top: 15%;
+	left: 25%;
+	object-fit: cover;
+	aspect-ratio: 1;
+	width: 55%;
+	border-radius: 10px;
 	}
 	.empowering-img-block::before {
 		position: absolute;
