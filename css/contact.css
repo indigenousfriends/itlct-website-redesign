@@ -50,6 +50,7 @@ textarea {
 	align-self: flex-start;
 }
 .button2 {
+	font-family: var(--main-font);
 	border-radius: var(--spacing10);
 	background-color: var(--button2-color);
 	padding: 10px 40px;
