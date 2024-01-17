@@ -284,6 +284,9 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	.wrapper {
 		width: var(--desktop-wrapper-width);
 	}
+	picture img {
+		min-width: 60%;
+	}
 	/* header section */
 	.header-section {
 		width: 100%;
@@ -312,13 +315,9 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	.header-content > * {
 		width: 50%;
 	}
-
-	.header-content img {
-		max-width: 420px;
-	}
-	.header-info {
+	/* .header-info {
 		width: 30%;
-	}
+	} */
 	.header-info h3 {
 		font-weight: var(--font-weight-bold);
 		line-height: var(--line-height58);
@@ -327,7 +326,6 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	}
 	.header-info p {
 		color: var(--color-white);
-		font-size: var(--font21);
 		line-height: var(--line-height26);
 	}
 
@@ -415,15 +413,27 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	.header-info h3, .header-info p {
 		margin: 0px;
 	}
+	.header-content picture {
+		max-width: 300px;
+	}
+	.header-content {
+		gap: 0px;
+	}
 }
 
 /* Desktop Only */
 @media screen and (min-width: 1024px) {
 	/* Add styles that apply specifically to desktop */
 	.header-content h3 {
-		font-size: var(--font56);
+		font-size: var(--font46);
 	}
-	
+	.header-content img {
+		max-width: 420px;
+	}
+	.header-info p {
+		font-size: var(--font21);
+	}
+
 	/* .team-card h4 {
 		margin: 0px;
 	} */
@@ -449,7 +459,11 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 
 @media screen and (min-width: 1300px) {
 	.header-content {
-		width: 55%;
+		width: 62%;
+		gap: 185px;
+	}
+	.header-content h3 {
+		font-size: var(--font56);
 	}
 	.team-parent {
 		display: flex;
