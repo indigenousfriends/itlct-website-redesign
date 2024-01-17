@@ -227,6 +227,8 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		display: flex;
 		flex-direction: column;
 		gap: 20px;
+		margin-top: 190px;
+		margin-bottom: 193px;
 	}
 	.values-main {
 		display: flex;
@@ -234,7 +236,23 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		left: 50%;
 		top: 45%;
 	}
-
+	.values-card h4 {
+		margin: 20px 0px 0px 20px;
+		font-size: var(--font36);
+		font-weight: var(--font-weight-bold);
+		line-height: var(--line-height40);
+		text-align: left;
+	}
+	.values-card p {
+		display: flex;
+		font-size: var(--font21);
+		font-weight: var(--font-weight-regular);
+		line-height: var(--line-height26);
+		margin: var(--spacing20);
+	}
+	.copperback h4, .amaraback h4, .grapeback h4, .blueback h4, .copperback p, .amaraback p, .grapeback p, .blueback p {
+		margin-left: 60px;
+	}
 	/* Cards need to change from column to row with some stylized sizing and padding*/
 	.desktop-group {
 		display: flex;
@@ -243,6 +261,25 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		gap: 20px;
 		padding: 0 200px 0 200px;
 	}
+	/* Gradients */
+	.hero {
+		width: 100vw;
+		height: 100vh;
+		background-image: linear-gradient(
+				260deg,
+				rgba(9, 9, 9, 0.8) 46.9%,
+				rgba(9, 9, 9, 0) 86.82%
+			),
+			url(../assets/images/pages/values/hero-values.jpg);
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		position: relative;
+	}
+	.hero img {
+		display: none;
+	}
+
 	/* Changing values card imgs to background imgs */
 	.values-card img {
 		display: none;
@@ -280,6 +317,11 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 				rgba(119, 45, 45, 0.4) 68.47%
 			),
 			url(../assets/images/pages/values/authenticity.jpg);
+
+			/* background-position: center center;
+			background-size: cover;
+			background-repeat: no-repeat;
+			position: relative; */
 	}
 
 	.blueback {
@@ -304,8 +346,10 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	.amaraback,
 	.blueback,
 	.tealback {
-		background-repeat: no-repeat;
+		background-position: center center;
 		background-size: cover;
+		background-repeat: no-repeat;
+		position: relative;
 	}
 	/* imgs need to change from -m to normal desktop size */
 	/* Imgs, gradients, background colors */
@@ -333,25 +377,25 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		color: var(--color-white);
 	}
 
-	/* Gradients */
-	.hero {
-		width: 100vw;
-		height: 100vh;
-		background-image: linear-gradient(
-				260deg,
-				rgba(9, 9, 9, 0.8) 46.9%,
-				rgba(9, 9, 9, 0) 86.82%
-			),
-			url(../assets/images/pages/values/hero-values.jpg);
-		background-position: center center;
-		background-size: cover;
-		background-repeat: no-repeat;
-		position: relative;
+	.empowering {
+		display: flex;
+		flex-direction: row-reverse;
 	}
-	.hero img {
-		display: none;
+	.empowering-text, .empowering-img-block {
+		width: 50%;
+	}
+	.empowering-text{
+		text-align: left;
+		padding-right:270px;
+	}
+	.empowering-text h4 {
+		font-size: var(--font46);
+		font-weight: var(--font-weight-bold);
+		line-height: var(--line-height50);
+		margin-bottom: 20px;
+	}
+	.empowering-text p {
+		margin: 0 0 0 0;
+		padding: 0 0 0 0 ;
 	}
 }
-/* .sustainability-img{
-	background-image: linear-gradient(269deg, #0E0E0E 46.26%, rgba(27, 27, 27, 0.00) 99.04%), url(../assets/images/pages/values/mobile/sustainability-m.jpg);
-} */
