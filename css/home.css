@@ -31,13 +31,8 @@ Mobile Styles
 /* hero section */
 /* entire section style */
 .hero {
-	margin: 0, auto;
-}
-
-/* targeting the image */
-.hero-image img {
-	margin: 0;
-	border-radius: 0;
+	margin: 0 auto;
+	padding-bottom: 40px;
 }
 
 /* div holding text and buttons */
@@ -190,7 +185,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 */
 
 /* mobile and Larger */
-@media screen and (min-width: 340px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
 	/* Add styles that apply to tablet and desktop */
 	/* this overrides the global style of white text */
 	.alternate {
@@ -209,10 +204,11 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	.alternate {
 		color: var(--color-onyx);
 	}
-	h3 {
-		color: var(--color-onyx);
-	}
+
+	/* 768 background image center/center */
 }
+
+/* in-between media query  */
 
 /* Desktop Only */
 @media screen and (min-width: 1024px) {
@@ -225,14 +221,21 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 
 	/* the entire section */
 	.hero {
+		background: linear-gradient(
+				352deg,
+				rgba(9, 9, 9, 0.8) 32.03%,
+				rgba(9, 9, 9, 0) 73.42%
+			),
+			url(../assets/images/pages/home/hero-image-home.jpg);
+
+		background-size: cover;
 		position: relative;
-		padding-bottom: var(--spacing80);
+		height: 100vh;
 	}
 
-	/* the image for the section */
+	/* hides the default image for the section */
 	.hero img {
-		object-fit: cover;
-		margin: 0 auto;
+		display: none;
 	}
 
 	/* contains heading, paragraph, and buttons for the hero image */
@@ -262,6 +265,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	.community-partnerships-section {
 		margin: 0 auto;
 		width: 80%;
+		padding-top: var(--spacing80);
 		padding-bottom: var(--spacing80);
 	}
 
@@ -290,7 +294,10 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		margin: 0;
 	}
 	/* targeting the img */
-	.community img {
+	.community .card-img img {
+		object-fit: cover;
+		object-position: center;
+		border-radius: 0 10px 10px 0;
 		height: 100%;
 	}
 	/* div holding the h4, p, and button */
@@ -318,6 +325,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 
 	/* targeting the header styling  */
 	.global-ecosystem h4 {
+		margin-bottom: 0;
 		font-size: var(--font36);
 		font-weight: var(--font-weight-bold);
 		line-height: var(--line-height40);
@@ -357,7 +365,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		margin: 0;
 		padding-top: 40px;
 		padding-bottom: 40px;
-		padding-left: 60px;
+		padding-left: 70px;
 		padding-right: 80px;
 	}
 
@@ -384,6 +392,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 
 	/* targeting the h3 stylings */
 	.what-we-do h3 {
+		margin-bottom: 0;
 		font-size: var(--font46);
 		font-weight: var(--font-weight-bold);
 		line-height: var(--line-height50);
@@ -391,6 +400,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	}
 	/* targeting the h4 stylings */
 	.what-we-do h4 {
+		margin-bottom: 0;
 		font-size: var(--font36);
 		font-weight: var(--font-weight-bold);
 		line-height: var(--line-height40);
@@ -445,12 +455,13 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	}
 	/* targeting the header style */
 	.values h4 {
+		margin-bottom: 0;
 		font-size: var(--font36);
 		font-weight: var(--font-weight-bold);
 		line-height: var(--line-height40);
 		color: var(--color-white);
 	}
-	/* targeting the paragrah color */
+	/* targeting the paragraph color */
 	.values p {
 		color: var(--color-white);
 	}
@@ -496,4 +507,64 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		flex-direction: column;
 		width: 30%;
 	}
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1130px) {
+	/* fixing the wrapper sizing */
+	.what-we-do.wrapper {
+		width: auto;
+	}
+
+	/* community partnerships */
+
+	/* targeting the entire section */
+	.community-partnerships-section {
+		padding-left: 40px;
+		padding-right: 40px;
+		width: 100%;
+	}
+	/* targeting the div holding the text and button */
+	.community-partner-wrapper {
+		padding-left: 60px;
+		padding-right: 40px;
+	}
+}
+
+/* global ecosystem  */
+
+/* the entire section */
+.ecosystem {
+	width: 80%;
+}
+/* positioning for the cybergrape ecosystem div */
+.ecosystem-subsection {
+	padding-left: 60px;
+	padding-right: 90px;
+	position: relative;
+	left: 30px;
+	padding-top: 0;
+}
+/* positioning for the onyx blockquote */
+.blockquote {
+	right: 44px;
+	width: 60%;
+	padding-right: 70px;
+}
+
+/* what we do */
+/* removing the padding from the bottom of the card */
+.home-card {
+	padding-bottom: 0;
+}
+
+/* our values */
+/* removing the padding from the bottom of the values card */
+.our-values {
+	padding-bottom: 0;
+}
+
+/* events and programs */
+/* adding padding to the placeholder div */
+.placeholder {
+	padding: 10px;
 }
