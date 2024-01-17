@@ -422,11 +422,13 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		line-height: var(--line-height28);
 	}
 	.support svg {
+		
 		margin-left: 30px;
 		width: 39px;
 		height: 39px;
 	}
 	.support-logos img {
+		display: flex;
 		height: 100px;
 	}
 
