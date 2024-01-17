@@ -473,16 +473,25 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		flex-direction: row;
 		justify-content: space-evenly;
 		align-items: center;
+		width: 90%;
 	}
 	.team-card {
 		width: 48%;
 		padding: 20px;
 		/* might need to adjust height later */
-		height: 310px;
+		height: 45vh; 
+		max-height: 400px;
+		min-height: 350px;
 	}
-
+	.team-card-picture {
+		width: 200px;
+	}
+	.icons a {
+		min-width: 50px;
+	}
 	.icon-button .button2 {
 		padding: 0px;
+		width: 50%;
 	}
 }
 
