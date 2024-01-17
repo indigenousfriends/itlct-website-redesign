@@ -84,6 +84,8 @@ h3 {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	width: 90%;
+	margin: 0 auto;
 }
 
 .team-card {
@@ -331,7 +333,8 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 
 	/* team card section */
 	.team-parent {
-		margin: var(--spacing164) 0px;
+		margin: var(--spacing164) auto;
+		width: 80%;
 	}
 	.team-card {
 		flex-direction: row;
