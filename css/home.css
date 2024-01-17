@@ -10,35 +10,103 @@ Styles for home-page
 .align-text {
 	text-align: center;
 }
-/* 
-===================================
-Page Component Styles (icon grid, team member card)
-===================================
-*/
-/* hero section */
-.hero-image img {
-	margin: 0;
-	border-radius: 0;
-}
 
+/* adding a margin */
 .text-container {
 	margin: var(--spacing20);
 }
+
+/* adding margin and padding to tagged divs */
 .text-container-subsection {
 	margin: var(--spacing10);
 	padding-bottom: var(--spacing10);
 }
 
-.hero-description {
-	margin: var(--spacing10);
+/* 
+===================================
+Mobile Styles 
+===================================
+*/
+
+/* hero section */
+/* entire section style */
+.hero {
+	margin: 0, auto;
 }
+
+/* targeting the image */
+.hero-image img {
+	margin: 0;
+	border-radius: 0;
+}
+
+/* div holding text and buttons */
+.hero-home {
+	display: flex;
+	flex-direction: column;
+}
+
 /* community partnerships section */
+/* entire section style */
+.community {
+	background-color: var(--color-amaranth);
+	padding-bottom: 50px;
+}
+
+/* targeting the image in the card-img div */
 .community .card-img img {
 	width: 100%;
 	border-radius: 0;
 }
 
+/* A global ecosystem section */
+
+/* entire section style */
+.global-ecosystem {
+	background-color: var(--color-cybergrape);
+	padding-bottom: var(--spacing40);
+}
+
+/* styling for the ecosystem div */
+.ecosystem-subsection {
+	background-color: var(--color-cybergrape);
+	padding-top: var(--spacing10);
+	padding-bottom: 50px;
+}
+
+/* styling for the onyx blockquote div */
+.blockquote {
+	margin: 0 auto;
+	padding: 45px 15px;
+	width: 90%;
+	border-radius: 10px;
+	background-color: var(--color-onyx);
+	position: relative;
+}
+
+/* adding and styling the open quotes svg */
+.blockquote p::before {
+	content: url(../assets/images/pages/home/quotes-open.svg);
+	position: absolute;
+	top: 20px;
+	left: 10px;
+}
+/* adding and styling the close quotes svg */
+.blockquote p::after {
+	content: url(../assets/images/pages/home/quotes-close.svg);
+	position: absolute;
+	bottom: 20px;
+	right: 10px;
+}
+
 /* what we do section */
+
+/* entire section */
+.what-we-do {
+	padding-bottom: var(--spacing40);
+}
+
+/* targeting colors for individual cards */
 .digital-fluency {
 	background-color: var(--color-teal);
 }
@@ -51,13 +119,39 @@ Page Component Styles (icon grid, team member card)
 	background-color: var(--color-yaleblue);
 }
 
+/* targeting the images within the card-img container */
 .card-img img {
 	width: 100%;
 	border-radius: 10px 10px 0 0;
 }
 
+/* stylings for the card div */
+.home-card {
+	border: none;
+	border-radius: 10px;
+	padding-bottom: var(--spacing20);
+	margin: var(--spacing20) 0;
+}
+
+/* targeting the home-card height within the card container div */
+.card-container .home-card {
+	min-height: 430px;
+}
+
+/* targeting the text div within the home-card */
+.home-card .text-container {
+	margin: var(--spacing20);
+}
+
 /* our values section */
 
+/* the entire section */
+.values {
+	background-color: var(--color-onyx);
+	padding-top: var(--spacing20);
+	padding-bottom: var(--spacing40);
+}
+/* contains the blue rectangle with divs  */
 .our-values {
 	margin: 0 auto;
 	padding: 15px;
@@ -66,97 +160,19 @@ Page Component Styles (icon grid, team member card)
 	background-color: var(--color-yaleblue);
 }
 
-/* 
-===================================
-Section Styles (background, padding, etc.)
-===================================
-*/
-
-/* hero section */
-.hero {
-	margin: 0, auto;
-}
-
-.hero-home {
-	display: flex;
-	flex-direction: column;
-}
-
-/* community partnerships section */
-.community {
-	background-color: var(--color-amaranth);
-	padding-bottom: 50px;
-}
-
-/* A global ecosystem section */
-
-.global-ecosystem {
-	background-color: var(--color-cybergrape);
-	padding-bottom: var(--spacing40);
-}
-
-.ecosystem-subsection {
-	background-color: var(--color-cybergrape);
-	padding-top: var(--spacing10);
-	padding-bottom: 50px;
-}
-.blockquote {
-	margin: 0 auto;
-	padding: 45px 15px;
-	width: 90%;
-	border-radius: 10px;
-	background-color: var(--color-onyx);
-	position: relative;
-}
-
-.blockquote p::before {
-	content: url(../assets/images/pages/home/quotes-open.svg);
-	position: absolute;
-	top: 20px;
-	left: 10px;
-}
-.blockquote p::after {
-	content: url(../assets/images/pages/home/quotes-close.svg);
-	position: absolute;
-	bottom: 20px;
-	right: 10px;
-}
-/* what we do section */
-
-.what-we-do {
-	padding-bottom: var(--spacing40);
-}
-
-.card-container .home-card {
-	min-height: 430px;
-}
-
-.home-card {
-	border: none;
-	border-radius: 10px;
-	padding-bottom: var(--spacing20);
-	margin: var(--spacing20) 0;
-}
-.home-card .text-container {
-	margin: var(--spacing20);
-}
-
-/* our values section */
-.values {
-	background-color: var(--color-onyx);
-	padding-top: var(--spacing20);
-	padding-bottom: var(--spacing40);
-}
-
 /* events and programs section */
+
+/* targets the entire section */
 .events-and-programs {
 	color: var(--color-onyx);
 }
 
+/* targeting the images in the section */
 .events-and-programs img {
 	margin: 0 auto;
 }
 
+/* targeting the text div in the section */
 .event-description {
 	margin: var(--spacing20);
 }
@@ -183,19 +199,13 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	h3 {
 		color: var(--color-onyx);
 	}
-
-	/* community partnerships */
-
-	/* global ecosystem section */
-	.blockquote h5 {
-		display: none;
-	}
 }
 
 /* Tablet Only */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
 	/* Add styles that only apply to tablet. These are usually fixes to get resposnivenes right */
-	/* this overrides the global style of white text */
+
+	/* overrides the global style of white text */
 	.alternate {
 		color: var(--color-onyx);
 	}
@@ -206,53 +216,64 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 
 /* Desktop Only */
 @media screen and (min-width: 1024px) {
+	/* targeting tag to change the style from onyx to white */
 	.alternate {
 		color: var(--color-white);
 	}
 
 	/* hero section */
+
+	/* the entire section */
 	.hero {
 		position: relative;
 		padding-bottom: var(--spacing80);
 	}
 
-	.hero .btn-container {
-		display: flex;
-		justify-content: space-around;
-	}
-	.hero .button3 {
-		display: none;
-	}
+	/* the image for the section */
 	.hero img {
 		object-fit: cover;
 		margin: 0 auto;
 	}
 
+	/* contains heading, paragraph, and buttons for the hero image */
 	.hero-home {
 		position: absolute;
 		z-index: 10;
 		bottom: 10%;
 		max-width: var(--wrapper-width-max);
-		/* border: 2px solid red; */
 		left: 50%;
 		transform: translate(-50%, 0%);
 	}
 
+	/* targeting the div holding the buttons */
+	.hero .btn-container {
+		display: flex;
+		justify-content: space-around;
+	}
+
+	/* targeting the buttons that need to be hidden on desktop version */
+	.hero .button3 {
+		display: none;
+	}
+
 	/* community partnerships section */
+
+	/* style for the entire section */
 	.community-partnerships-section {
 		margin: 0 auto;
 		width: 80%;
 		padding-bottom: var(--spacing80);
 	}
 
+	/* targeting the text to make it white */
 	.community-partnerships-section p {
 		color: var(--color-white);
 	}
-
+	/* targeting the button */
 	.community-partnerships-section .button1 {
 		margin: 0;
 	}
-
+	/* div holding the picture and the community-partner-wrapper */
 	.community {
 		display: flex;
 		flex-direction: row-reverse;
@@ -260,6 +281,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		padding-bottom: 0;
 		text-align: left;
 	}
+	/* targeting the header style */
 	.community h4 {
 		font-size: var(--font36);
 		font-weight: var(--font-weight-bold);
@@ -267,9 +289,11 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		color: var(--color-white);
 		margin: 0;
 	}
+	/* targeting the img */
 	.community img {
 		height: 100%;
 	}
+	/* div holding the h4, p, and button */
 	.community-partner-wrapper {
 		margin: 0 auto;
 		padding-left: var(--spacing80);
@@ -282,6 +306,8 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	}
 
 	/* global ecosystem section */
+
+	/* the background for the entire section */
 	.global-ecosystem {
 		padding-top: var(--spacing100);
 		padding-bottom: var(--spacing100);
@@ -290,13 +316,14 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		background-size: cover;
 	}
 
+	/* targeting the header styling  */
 	.global-ecosystem h4 {
 		font-size: var(--font36);
 		font-weight: var(--font-weight-bold);
 		line-height: var(--line-height40);
 		color: var(--color-white);
 	}
-
+	/* contains 2 divs - ecosystem subsection (cybergrape) and the blockquote */
 	.ecosystem {
 		width: 90%;
 		margin: 0 auto;
@@ -306,7 +333,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		align-items: center;
 		justify-content: center;
 	}
-
+	/* targeting the style for the cybergrape div */
 	.ecosystem-subsection {
 		margin: 0;
 		border-radius: 10px;
@@ -317,10 +344,12 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		width: 70%;
 		left: 70px;
 	}
-
+	/* targeting the color of the font in the div */
 	.ecosystem-subsection p {
 		color: var(--color-white);
 	}
+
+	/* stylings for the onyx block quote */
 	.blockquote {
 		position: relative;
 		right: 80px;
@@ -332,6 +361,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		padding-right: 80px;
 	}
 
+	/* targeting positioning for the svgs in the blockquote */
 	.blockquote p::before {
 		top: 30px;
 		left: 20px;
@@ -341,6 +371,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		right: 20px;
 	}
 
+	/* targeting the text in the blockquote */
 	.blockquote p {
 		font-size: var(--font24);
 		font-weight: var(--font-weight-medium);
@@ -385,7 +416,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		justify-content: space-around;
 		align-content: center;
 	}
-
+	/* targeting the size of the individual cards */
 	.card-container .home-card {
 		width: 30%;
 		min-height: 530px;
