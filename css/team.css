@@ -78,6 +78,10 @@ h3 {
 	margin-top: 0px;
 	margin-bottom: var(--spacing20);
 }
+.header-info {
+	width: 90%;
+	margin-bottom: 70px;
+}
 
 /* team card section */
 .team-parent {
@@ -432,9 +436,6 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	}
 	.header-content picture {
 		max-width: 300px;
-	}
-	.header-content {
-		gap: 0px;
 	}
 }
 

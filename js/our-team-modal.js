@@ -1,12 +1,12 @@
 const natashaModal = document.querySelector(".natasha-modal");
 const marshaModal = document.querySelector(".marsha-modal");
 const overlay = document.querySelector(".overlay-la");
-const closeModalBtn = document.querySelector(".btn-close");
+const closeModalBtns = document.querySelectorAll(".btn-close");
 const natashaBtn = document.querySelector("#natasha-modal-open");
 const marshaBtn = document.querySelector("#marsha-modal-open");
 const body = document.body;
 
-console.log(natashaModal);
+console.log(closeModalBtns);
 
 // Function for opening the natasha modal
 const openNatashaModal = function () {
@@ -35,12 +35,15 @@ const closeModal = function () {
 };
 
 // Event listeners for clicking the close button, clicking the overlay, or pressing Esc key
-closeModalBtn.addEventListener("click", closeModal);
+// closeModalBtns.addEventListener("click", closeModal);
+closeModalBtns.forEach( (btn) => {
+  btn.addEventListener("click", closeModal);
+})
 
 overlay.addEventListener("click", closeModal);
 
 document.addEventListener("keydown", function (e) {
-  if (e.key === "Escape" && !modal.classList.contains("hidden")) {
+  if (e.key === "Escape" && (!natashaModal.classList.contains("hidden") || !marshaModal.classList.contains("hidden"))) {
     closeModal();
   }
 });
