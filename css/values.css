@@ -246,7 +246,10 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	display: flex;
 	padding: 200px;
 	justify-content: space-around;
-	align-items: center;	}
+	align-items: center;
+}
+
+
 	/* imgs need to change from -m to normal desktop size */
 	/* Imgs, gradients, background colors */
 	/* We Support - new padding */
