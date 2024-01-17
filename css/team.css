@@ -356,6 +356,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	/* get involved */
 	.get-involved {
 		height: 70vh;
+		min-height: 70vh;
 		max-height: 800px;
 		margin-bottom: 0px;
 		/* gradient is opposite- needs to be adjusted in global styles */
@@ -460,6 +461,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	}
 }
 
+/* for screen sizes 1300 and larger */
 @media screen and (min-width: 1300px) {
 	.header-content {
 		width: 62%;
@@ -480,18 +482,39 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		padding: 20px;
 		/* might need to adjust height later */
 		height: 45vh; 
-		max-height: 400px;
-		min-height: 350px;
+		max-height: 600px;
+		min-height: 420px;
 	}
 	.team-card-picture {
 		width: 200px;
+	}
+	.team-card-info {
+		width: 50%;
 	}
 	.icons a {
 		min-width: 50px;
 	}
 	.icon-button .button2 {
 		padding: 0px;
-		width: 50%;
+		max-width: 50%;
+	}
+	.icon-button {
+		display: flex;
+		flex-direction: column;
 	}
 }
-
+/* for screen sizes 1600 and larger */
+@media screen and (min-width: 1600px) {
+	.icon-button {
+		flex-direction: row;
+	}
+	.team-card-parent {
+	width: 75%;
+	}
+	.team-card {
+		min-height: 400px;
+	}
+	.get-involved-text {
+		width: 40%;
+	}
+}
