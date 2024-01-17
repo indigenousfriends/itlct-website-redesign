@@ -28,7 +28,7 @@ Section Styles (background, padding, etc.)
 }
 .title-img {
 	width: 100%;
-	height: 250px;
+	min-height: 250px;
 	margin-bottom: 60px;
 	background-image: url("/assets/images/pages/event-program/introspective.jpg");
 	background-size: cover;
@@ -57,11 +57,11 @@ Section Styles (background, padding, etc.)
 }
 
 /* Page cards */
-.page-cards {
+.event-page-cards {
 	margin: var(--spacing100) 0px;
 }
 /* card img */
-.page-card-img {
+.event-page-card-img {
 	width: 100%;
 	height: 204px;
 	border-radius: 10px;
@@ -70,27 +70,27 @@ Section Styles (background, padding, etc.)
 	background-repeat: no-repeat;
 }
 /* Network card */
-.card-item1 .page-card-img {
+.card-item1 .event-page-card-img {
 	background-image: url("/assets/images/pages/event-program/networking.jpg");
 }
 
 /* Share card */
-.card-item2 .page-card-img {
+.card-item2 .event-page-card-img {
 	background-image: url("/assets/images/pages/event-program/share.jpg");
 }
 
 /* Brainstorm card */
-.card-item3 .page-card-img {
+.card-item3 .event-page-card-img {
 	background-image: url("/assets/images/pages/event-program/brianstorm.jpg");
 }
 
 /* Collaborate card */
-.card-item4 .page-card-img {
+.card-item4 .event-page-card-img {
 	background-image: url("/assets/images/pages/event-program/collaborate.jpg");
 }
 
 /* Card title boxes */
-.page-card-title {
+.event-page-card-title {
 	width: 100%;
 	height: 130px;
 	padding: 29px;
@@ -98,31 +98,31 @@ Section Styles (background, padding, etc.)
 	border-radius: 10px;
 	text-align: center;
 }
-.page-card-title h3 {
+.event-page-card-title h3 {
 	margin: 0px 0px var(--spacing20) 0px;
 	font-size: var(--font28);
 	line-height: var(--line-height32);
 }
 
 /* card title background colors */
-.card-item1 .page-card-title {
+.card-item1 .event-page-card-title {
 	background-color: var(--color-yaleblue);
 }
-.card-item2 .page-card-title {
+.card-item2 .event-page-card-title {
 	background-color: var(--color-cybergrape);
 }
-.card-item3 .page-card-title {
+.card-item3 .event-page-card-title {
 	background-color: var(--color-copper);
 }
-.card-item4 .page-card-title {
+.card-item4 .event-page-card-title {
 	background-color: var(--color-teal);
 }
 
 /* text below the cards */
-.page-card-text {
+.event-page-card-text {
 	margin-bottom: var(--spacing80);
 }
-.page-card-text p {
+.event-page-card-text p {
 	color: var(--color-onyx);
 }
 
@@ -155,13 +155,14 @@ Section Styles (background, padding, etc.)
 	color: var(--color-onyx);
 	text-align: center;
 }
-.event-info p {
-	font-size: var(--font21);
-	line-height: var(--line-height26);
+.event-info h4 {
+	margin: 11px 0px 15px 0px;
 	color: var(--color-onyx);
 }
-.event-info h4 {
-	margin: var(--spacing20) 0px;
+.event-info p {
+	margin: 0px;
+	font-size: var(--font21);
+	line-height: var(--line-height26);
 	color: var(--color-onyx);
 }
 
@@ -187,12 +188,12 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	/* Add styles that only apply to tablet. These are usually fixes to get resposnivenes right */
 	/* page cards */
 	/* page card background/container */
-	.page-card-img {
+	.event-page-card-img {
 		/* increasing card height for tablet */
 		height: 300px;
 	}
 	
-	.page-card-title h3 {
+	.event-page-card-title h3 {
 		/* reducing margin between h3 and p to fit into smaller card title size */
 		margin: 0px 0px 15px 0px;
 	}
@@ -210,7 +211,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	/* adding desktop image */
 	.title {
 		/* might need to reduce height for tablet and add height to desktop */
-		height: 90vh;
+		height: 100vh;
 		max-height: 992px;
 		background-image: url("/assets/images/pages/event-program/desktop/hero-d.jpg");
 		background-size: cover;
@@ -251,12 +252,12 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	}
 
 	/* hiding the div that's below the card title */
-	.page-card-text {
+	.event-page-card-text {
 		display: none;
 	}
 
 	/* Page Cards */
-	.page-cards {
+	.event-page-cards {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
@@ -264,33 +265,33 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	}
 	
 	/* Network card */
-	.card-item1 .page-card-img {
+	.card-item1 .event-page-card-img {
 		background-image: url("/assets/images/pages/event-program/desktop/network-d.jpg");
 	}
 
 	/* Share card */
-	.card-item2 .page-card-img {
+	.card-item2 .event-page-card-img {
 		background-image: url("/assets/images/pages/event-program/desktop/share-d.jpg");
 	}
 
 	/* Brainstorm card */
-	.card-item3 .page-card-img {
+	.card-item3 .event-page-card-img {
 		background-image: url("/assets/images/pages/event-program/desktop/brainstorm-d.jpg");
 	}
 
 	/* Collaborate card */
-	.card-item4 .page-card-img {
+	.card-item4 .event-page-card-img {
 		background-image: url("/assets/images/pages/event-program/desktop/collaborate-d.jpg");
 	}
 
-	.page-cards > * {
+	.event-page-cards > * {
 		width: 45%;
 
 		/* positioning the card title */
 		position: relative;
 	}
 	
-	.page-card-title {
+	.event-page-card-title {
 		height: 110px;
 		/* padding reduces for tablet and up */
 		padding: 20px;
@@ -301,21 +302,21 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		position: absolute;
 		bottom: 0px;
 	}
-	.page-card-title p {
+	.event-page-card-title p {
 		color: var(--color-white);
 	}
 
 	/* page card title background color changes */
-	.card-item1 .page-card-title {
+	.card-item1 .event-page-card-title {
 		background: linear-gradient(60deg, #195085 55.81%, rgba(66, 66, 65, 0.00) 70.18%);
 	}
-	.card-item2 .page-card-title {
+	.card-item2 .event-page-card-title {
 		background: linear-gradient(60deg, #563867 55.81%, rgba(66, 66, 65, 0.00) 70.18%);
 	}
-	.card-item3 .page-card-title {
+	.card-item3 .event-page-card-title {
 		background: linear-gradient(60deg, #955C17 55.81%, rgba(66, 66, 65, 0.00) 70.18%);
 	}
-	.card-item4 .page-card-title {
+	.card-item4 .event-page-card-title {
 		background: linear-gradient(60deg, #017B80 55.81%, rgba(66, 66, 65, 0.00) 70.18%);
 	}
 
@@ -345,22 +346,22 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	/* Add styles that apply specifically to desktop */
 	
 	/* page cards */
-	.page-cards {
+	.event-page-cards {
 		/* adding top and bottom margin to section for desktop */
 		margin: var(--spacing213) 0px;
 	}
 
-	.page-card-img {
+	.event-page-card-img {
 		/* increasing card height */
 		height: 435px;
 	}
 
-	.page-card-title {
+	.event-page-card-title {
 		/* increasing card title height */
 		height: 126px;
 	}
 
-	.page-card-title h3 {
+	.event-page-card-title h3 {
 		font-size: var(--font36);
 		line-height: var(--line-height40);
 	}
