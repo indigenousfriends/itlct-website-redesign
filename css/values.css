@@ -97,7 +97,28 @@ Page Component Styles (icon grid, team member card)
 .amaraback {
 	background-color: var(--color-amaranth);
 }
-
+.sustainability-text {
+	display: flex;
+	flex-direction: column;
+	width: 55%;
+	margin-left: auto;
+}
+.authenticity-text {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+}
+.education-text {
+	display: flex;
+	flex-direction: column;
+	width: 65%;
+}
+.tech-text {
+	display: flex;
+	flex-direction: column;
+	width: 70%;
+	margin-left: auto;
+}
 /* Adds a background color in lieu of those rectangle shapes */
 
 .grapeback {
@@ -150,11 +171,19 @@ Page Component Styles (icon grid, team member card)
 	line-height: var(--line-height26);
 	margin: 20px 0px 0px 0px;
 }
+.support-logos {
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 80px;
+}
 .support-logo-01 {
+	width: 82px;
+	height: 69px;
 	margin: 40px 0px 20px;
 }
-.support-logos {
-	padding-bottom: 80px;
+.support-logo-02 {
+	width: 149px;
+	height: 62px;
 }
 .empowering-text {
 	display: flex;
@@ -377,6 +406,30 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		color: var(--color-white);
 	}
 
+	.support h4 {
+		font-size: var(--font46);
+		font-weight: var(--font-weight-bold);
+		line-height: var(--line-height50);
+		width: 60%;
+	}
+	.support-header h4  {
+		width: auto;
+	}
+
+	.support p {
+		font-size: var(--font24);
+		font-weight: var(--font-weight-regular);
+		line-height: var(--line-height28);
+	}
+	.support svg {
+		margin-left: 30px;
+		width: 39px;
+		height: 39px;
+	}
+	.support-logos img {
+		height: 100px;
+	}
+
 	.empowering {
 		display: flex;
 		flex-direction: row-reverse;
@@ -396,6 +449,32 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	}
 	.empowering-text p {
 		margin: 0 0 0 0;
-		padding: 0 0 0 0 ;
+		padding: 0 0 0 0;
 	}
+	.empowering-img-block {
+		background-color: transparent;
+		position: relative;
+	}
+		.empowering-img-block img {
+		position: absolute;
+		top: 15%;
+		left: 25%;
+		object-fit: cover;
+		aspect-ratio: 1;
+		width: 55%;
+		border-radius: 10px;
+		
+	}
+	.empowering-img-block::before {
+		position: absolute;
+		top: 10%;
+		left: 20%;
+		content: " ";
+		background-color: var(--color-amaranth);
+		border-radius: 10px;
+		width: 299px;
+		height: 299px;
+		z-index: -1;
+	}
+	
 }
