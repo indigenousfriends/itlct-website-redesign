@@ -123,6 +123,7 @@ h3 {
 /* icon container */
 .icons {
 	display: flex;
+	align-items: center;
 	gap: 20px;
 }
 
@@ -198,10 +199,10 @@ h3 {
 .natasha-modal, .marsha-modal {
 	width: 90%;
 	max-width: 1100px;
-	max-height: 90vh;
+	height: 95vh;
 	margin: 0 auto;
 	/* was 26px and replaced with variable */
-	padding: var(--spacing20);
+	padding: 26px;
 	position: fixed;
 	left: 0;
 	right: 0;
@@ -211,19 +212,21 @@ h3 {
 	border: 1px solid var(--body-background-color);
 	border-radius: 4px;
 	z-index: 2;
+	overflow: hidden;
 }
 
 .modal-wrapper {
 	position: relative;
+	height: 95vh;
 }
 .modal-content {
 	overflow-y: scroll;
-	max-height: 65vh;
+	height: 40%;
 }
 .modal-scroll {
 	/* need to fix scroll */
 	/* max-height: calc(85vh 300px); */
-	max-height: 350px;
+	/* max-height: 35vh; */
 }
 .modal-header {
 	display: flex;
@@ -237,7 +240,6 @@ h3 {
 /* modal text content */
 .natasha-modal p, .marsha-modal p {
 	color: var(--color-onyx);
-	margin: var(--spacing20);
 }
 
 .team-card-info-modal {
@@ -405,9 +407,20 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	}
 
 	/* Modal */
+	.modal-wrapper {
+		margin: 50px;
+	}
 	.modal-header {
 		flex-direction: row;
 		gap: 5%;
+	}
+
+	.modal-content {
+		height: 55%;
+	}
+	.btn-close {
+		right: -50px;
+		top: -50px;
 	}
 }
 
