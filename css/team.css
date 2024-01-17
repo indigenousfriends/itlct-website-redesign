@@ -232,7 +232,7 @@ h3 {
 	margin-bottom: 15px;
 }
 .modal-header .team-card-picture {
-	min-width: 200px;
+	max-width: 140px;
 }
 /* modal text content */
 .natasha-modal p, .marsha-modal p {
