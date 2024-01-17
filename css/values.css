@@ -21,8 +21,6 @@ html {
 	/* does this need before and after */
 	box-sizing: border-box;
 }
-body {
-}
 
 /* 
 ===================================
@@ -35,7 +33,7 @@ Page Component Styles (icon grid, team member card)
 	justify-content: center;
 }
 
-.hero img{
+.hero img {
 	width: 100%;
 }
 .values-card {
@@ -47,7 +45,7 @@ Page Component Styles (icon grid, team member card)
 	flex-direction: column;
 	justify-content: center;
 	text-align: center;
-	margin: 0px 20px;
+	
 }
 .values-card h4 {
 	margin: 20px 0px 0px 0px;
@@ -86,41 +84,33 @@ Page Component Styles (icon grid, team member card)
 	display: flex;
 	flex-direction: column;
 	text-align: center;
-	margin-bottom: 20px;
 }
 
 /* Adds a background color in lieu of those rectangle shapes */
 
 .onyxback {
-	margin-top: 20px;
 	background-color: var(--color-onyx);
 }
 
 /* Adds a background color in lieu of those rectangle shapes */
 
 .amaraback {
-	margin-top: 20px;
-	margin-bottom: 20px;
 	background-color: var(--color-amaranth);
 }
 
 /* Adds a background color in lieu of those rectangle shapes */
 
 .grapeback {
-	margin-top: 20px;
 	background-color: var(--color-cybergrape);
 }
 /* Adds a background color in lieu of those rectangle shapes */
 
 .blueback {
-	margin-top: 20px;
-	margin-bottom: 20px;
 	background-color: var(--color-yaleblue);
 }
 /* Adds a background color in lieu of those rectangle shapes */
 
 .tealback {
-	margin-top: 20px;
 	background-color: var(--color-teal);
 }
 /* Adds a background color in lieu of those rectangle shapes */
@@ -216,7 +206,6 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 ===================================
 */
 
-
 /* Tablet and Larger */
 @media screen and (min-width: 768px) {
 	/* Add styles that apply to table and desktop */
@@ -224,7 +213,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 
 /* Tablet Only */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-	/* Add styles that only apply to tablet. These are usually fixes to get resposnivenes right */
+	/* Add styles that only apply to tablet. These are usually fixes to get responsiveness right */
 }
 
 /* Desktop Only */
@@ -234,6 +223,11 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	/* adjusting font sizes and styling for p tags */
 
 	/* Values header and p needs to be on top of the hero */
+	.desktop-parent {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+	}
 	.values-main {
 		display: flex;
 		position: absolute;
@@ -243,15 +237,79 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 
 	/* Cards need to change from column to row with some stylized sizing and padding*/
 	.desktop-group {
-	display: flex;
-	padding: 200px;
-	justify-content: space-around;
-	align-items: center;
-}
+		display: flex;
+		flex-direction: row;
+		height: 290px;
+		gap: 20px;
+		padding: 0 200px 0 200px;
+	}
+	/* Changing values card imgs to background imgs */
+	.values-card img {
+		display: none;
+	}
+	/* Individual card widths */
+	/* copper and grape 40% */
+	.copperback,
+	.grapeback {
+		width: 40%;
+	}
+	/* onyx and amaranth 60%*/
+	.onyxback,
+	.amaraback {
+		width: 60%;
+	}
+	/* blue and teal 50%*/
+	.blueback,
+	.tealback {
+		width: 50%;
+	}
+	.onyxback {
+		background-image: linear-gradient(
+				269deg,
+				#0e0e0e 46.26%,
+				rgba(27, 27, 27, 0) 99.04%
+			),
+			url(../assets/images/pages/values/sustainability.jpg);
+	}
 
+	.amaraback {
+		background-image: linear-gradient(
+				88deg,
+				#b91515 47.26%,
+				rgba(185, 21, 21, 0.73) 55.57%,
+				rgba(119, 45, 45, 0.4) 68.47%
+			),
+			url(../assets/images/pages/values/authenticity.jpg);
+	}
 
+	.blueback {
+		background-image: linear-gradient(
+				90deg,
+				#184f85 63.23%,
+				rgba(24, 79, 133, 0) 83.39%
+			),
+			url(../assets/images/pages/values/education.jpg);
+	}
+
+	.tealback {
+		background-image: linear-gradient(
+				280deg,
+				#007a80 67.16%,
+				rgba(0, 122, 128, 0) 80.36%
+			),
+			url(../assets/images/pages/values/techinnovation.jpg);
+	}
+
+	.onyxback,
+	.amaraback,
+	.blueback,
+	.tealback {
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
 	/* imgs need to change from -m to normal desktop size */
 	/* Imgs, gradients, background colors */
+
 	/* We Support - new padding */
 	.support {
 		padding-left: 100px;
@@ -279,7 +337,6 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	.hero {
 		width: 100vw;
 		height: 100vh;
-		background-image: url(../assets/images/pages/values/hero-values.jpg);
 		background-image: linear-gradient(
 				260deg,
 				rgba(9, 9, 9, 0.8) 46.9%,
@@ -296,11 +353,5 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	}
 }
 /* .sustainability-img{
-	background-image: url(../assets/images/pages/values/sustainability.jpg);
-	background: linear-gradient(269deg, #0E0E0E 46.26%, rgba(27, 27, 27, 0.00) 99.04%),
-	url(../assets/images/pages/values/sustainability.jpg);
-	position: relative;
-	z-index: -1;
-	width: ;
-	background-position: relative;
+	background-image: linear-gradient(269deg, #0E0E0E 46.26%, rgba(27, 27, 27, 0.00) 99.04%), url(../assets/images/pages/values/mobile/sustainability-m.jpg);
 } */
