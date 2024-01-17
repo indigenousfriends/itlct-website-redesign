@@ -1,7 +1,6 @@
 /*
 ===================================
 ===================================
-Styles for an individual page
 
 - Rename this file to match the page you are working on (e.g. home.css, about.css, etc.)
 - Create a new file for your page and link this file to it in the <head> of your HTML document
@@ -53,12 +52,12 @@ textarea {
 	font-family: var(--main-font);
 	border-radius: var(--spacing10);
 	background-color: var(--button2-color);
-	padding: 10px 40px;
+	padding: var(--spacing10) var(--spacing40);
 	color: var(--color-white);
 	border: none;
 	min-width: 187px;
 	min-height: 50px;
-	margin: 20px;
+	margin: var(--spacing20);
 	font-weight: var(--font-weight-bold);
 	font-size: var(--font21);
 }
@@ -81,7 +80,7 @@ h3 {
 }
 p {
 	color: var(--color-white);
-	gap: 20px;
+	gap: var(--spacing20);
 }
 
 /* 
@@ -105,14 +104,15 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		justify-content: space-between;
 		align-items: center;
 		text-align: left;
-		margin: 100px 150px;
-		gap: 100px;
+		margin: var(--spacing100) 150px;
+		gap: var(--spacing100);
 	}
 	.form-info {
 		width: 35%;
 	}
 	.form-info h3 {
 		text-align: left;
+		margin-top: 0px;
 	}
 	.wrapper {
 		width: var(--desktop-wrapper-width);
@@ -123,7 +123,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 @media screen and (min-width: 768px) and (max-width: 1024px) {
 	/* Add styles that only apply to tablet. These are usually fixes to get resposnivenes right */
 	.contact-form-parent {
-		margin: 100px 75px;
+		margin: var(--spacing100) var(--spacing80);
 	}
 	.form-info {
 		width: 50%;
