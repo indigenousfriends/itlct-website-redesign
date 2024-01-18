@@ -2,7 +2,6 @@
 ===================================
 ===================================
 Styles for home-page
-
 ===================================
 ===================================
 */
@@ -22,13 +21,55 @@ Styles for home-page
 	padding-bottom: var(--spacing10);
 }
 
+/* button styles */
+.button1 {
+	display: flex;
+	width: 300px;
+	height: 50px;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	border-radius: 10px;
+	border-color: var(--color-white);
+	background: rgb(0, 0, 0, 0);
+	color: var(--color-white);
+	border: 3px solid var(--color-white);
+	font-size: var(--font21);
+	font-weight: var(--font-weight-bold);
+	line-height: var(--line-height26);
+}
+
+.button1:hover {
+	background: var(--color-white);
+	color: var(--color-onyx);
+}
+
+.button3 {
+	min-width: 300px;
+	min-height: 50px;
+	padding: 11px 92px;
+	border: none;
+	border-radius: 10px;
+	background-color: var(--button2-color);
+	color: var(--color-white);
+	font-family: var(--main-font);
+	font-weight: var(--font-weight-bold);
+	font-size: var(--font21);
+}
+.button3:hover {
+	background-color: var(--color-white);
+	color: var(--color-onyx);
+}
+
 /* 
 ===================================
 Mobile Styles 
 ===================================
 */
 
-/* hero section */
+/* ================================
+Hero Section
+===================================  */
 /* entire section style */
 .hero {
 	margin: 0 auto;
@@ -41,7 +82,9 @@ Mobile Styles
 	flex-direction: column;
 }
 
-/* community partnerships section */
+/* ================================
+Community Partnerships Section
+===================================  */
 /* entire section style */
 .community {
 	background-color: var(--color-amaranth);
@@ -54,7 +97,9 @@ Mobile Styles
 	border-radius: 0;
 }
 
-/* A global ecosystem section */
+/* ================================
+Global Ecosystem Section
+===================================  */
 
 /* entire section style */
 .global-ecosystem {
@@ -94,7 +139,9 @@ Mobile Styles
 	right: 10px;
 }
 
-/* what we do section */
+/* ================================
+What We Do Section
+===================================  */
 
 /* entire section */
 .what-we-do {
@@ -130,7 +177,7 @@ Mobile Styles
 
 /* targeting the home-card height within the card container div */
 .card-container .home-card {
-	min-height: 430px;
+	min-height: 500px;
 }
 
 /* targeting the text div within the home-card */
@@ -138,7 +185,9 @@ Mobile Styles
 	margin: var(--spacing20);
 }
 
-/* our values section */
+/* ================================
+Our Values Section
+===================================  */
 
 /* the entire section */
 .values {
@@ -155,7 +204,9 @@ Mobile Styles
 	background-color: var(--color-yaleblue);
 }
 
-/* events and programs section */
+/* ================================
+Events and Programs Section
+===================================  */
 
 /* targets the entire section */
 .events-and-programs {
@@ -184,7 +235,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 ===================================
 */
 
-/* mobile and Larger */
+/* Mobile and Larger */
 @media screen and (max-width: 768px) {
 	/* Add styles that apply to tablet and desktop */
 	/* this overrides the global style of white text */
@@ -217,7 +268,13 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		color: var(--color-white);
 	}
 
-	/* hero section */
+	/* ================================
+Hero Section
+===================================  */
+	/* hides the default image for the section */
+	.hero img {
+		display: none;
+	}
 
 	/* the entire section */
 	.hero {
@@ -231,11 +288,8 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		background-size: cover;
 		position: relative;
 		height: 100vh;
-	}
-
-	/* hides the default image for the section */
-	.hero img {
-		display: none;
+		/* justify-content: center;
+		align-items: center; */
 	}
 
 	/* contains heading, paragraph, and buttons for the hero image */
@@ -259,7 +313,9 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		display: none;
 	}
 
-	/* community partnerships section */
+	/* ================================
+Community Partnerships Section
+===================================  */
 
 	/* style for the entire section */
 	.community-partnerships-section {
@@ -288,7 +344,6 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	/* targeting the header style */
 	.community h4 {
 		font-size: var(--font36);
-		font-weight: var(--font-weight-bold);
 		line-height: var(--line-height40);
 		color: var(--color-white);
 		margin: 0;
@@ -312,7 +367,9 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		align-items: flex-start;
 	}
 
-	/* global ecosystem section */
+	/* ================================
+Global Ecosystems Section
+===================================  */
 
 	/* the background for the entire section */
 	.global-ecosystem {
@@ -327,7 +384,6 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	.global-ecosystem h4 {
 		margin-bottom: 0;
 		font-size: var(--font36);
-		font-weight: var(--font-weight-bold);
 		line-height: var(--line-height40);
 		color: var(--color-white);
 	}
@@ -388,13 +444,14 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		font-style: italic;
 	}
 
-	/* what we do section */
+	/* ================================
+What We Do Section
+===================================  */
 
 	/* targeting the h3 stylings */
 	.what-we-do h3 {
 		margin-bottom: 0;
 		font-size: var(--font46);
-		font-weight: var(--font-weight-bold);
 		line-height: var(--line-height50);
 		color: var(--color-onyx);
 	}
@@ -402,7 +459,6 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	.what-we-do h4 {
 		margin-bottom: 0;
 		font-size: var(--font36);
-		font-weight: var(--font-weight-bold);
 		line-height: var(--line-height40);
 		color: var(--color-white);
 	}
@@ -432,7 +488,9 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		min-height: 530px;
 	}
 
-	/* our values section */
+	/* ================================
+Our Values Section
+===================================  */
 
 	/* adjusting the background image for the entire section */
 	.values {
@@ -457,7 +515,6 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	.values h4 {
 		margin-bottom: 0;
 		font-size: var(--font36);
-		font-weight: var(--font-weight-bold);
 		line-height: var(--line-height40);
 		color: var(--color-white);
 	}
@@ -484,7 +541,9 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		padding: 15px;
 	}
 
-	/* events and programs section */
+	/* ================================
+Events and Programs Section
+===================================  */
 
 	/* stylings for the background for the entire section */
 	.events-and-programs {
@@ -515,7 +574,9 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		width: auto;
 	}
 
-	/* community partnerships */
+	/* ================================
+Community Partnerships Section
+===================================  */
 
 	/* targeting the entire section */
 	.community-partnerships-section {
@@ -530,7 +591,9 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	}
 }
 
-/* global ecosystem  */
+/* ================================
+Global Ecosystem Section
+===================================  */
 
 /* the entire section */
 .ecosystem {
@@ -551,19 +614,39 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	padding-right: 70px;
 }
 
-/* what we do */
-/* removing the padding from the bottom of the card */
-.home-card {
+/* ================================
+What We Do Section
+===================================  */
+
+/* adjusting the width of the div holding the cards */
+.card-container {
+	width: 95%;
+	/* remove align content center */
+}
+
+/* adjusting the card size within the div */
+.card-container .home-card {
+	width: 45%;
+	margin: 10px;
 	padding-bottom: 0;
 }
 
-/* our values */
+/* ================================
+Our Values Section
+===================================  */
+/* the entire section */
+.values {
+	padding-top: 52px;
+}
+
 /* removing the padding from the bottom of the values card */
 .our-values {
 	padding-bottom: 0;
 }
 
-/* events and programs */
+/* ================================
+Events and Programs Section
+===================================  */
 /* adding padding to the placeholder div */
 .placeholder {
 	padding: 10px;
