@@ -134,9 +134,7 @@ h3 {
 
 /* Current positions */
 .current-positions {
-	width: 90%;
 	margin: 150px auto;
-
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -338,10 +336,6 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	}
 
 	/* team card section */
-	.team-parent {
-		margin: var(--spacing164) auto;
-		width: 80%;
-	}
 	.team-card {
 		flex-direction: row;
 		justify-content: left;
