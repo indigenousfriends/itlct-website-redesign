@@ -45,7 +45,8 @@ Variables (colors, text, spacing, etc.)
 	--color-citrine: #d3c53f;
 	--color-citron: #92a32d;
 	--color-copper: #b37122;
-	--color-bluepurple: linear-gradient(180deg, #6c4681 -5.71%, #184f85 103.44%);
+	--color-bluepurple: linear-gradient(0deg, #6c4681 -5.71%, #184f85 103.44%);
+	--color-purpleblue: linear-gradient(180deg, #6c4681 -5.71%, #184f85 103.44%);
 	--color-yellowgreen: linear-gradient(
 		180deg,
 		#d3c53f 0%,
@@ -183,17 +184,20 @@ p {
 
 /* Links */
 a {
-	color: #FFFFFF;
+	color: var(--color-white);
 	text-decoration: none;
 }
 /* Lists */
-li {
+footer li {
 	list-style-type: none;
+	line-height: var(--line-height32);
+	text-align: center;
+	margin-bottom: 20px;
 }
-
-/* a {
-	color: #FFFFFF;
-} */
+footer ul {
+	padding-left: 0px;
+	padding-inline-start: 0px;
+}
 
 /* Forms */
 
@@ -223,52 +227,117 @@ Global Component Styles (buttons, forms, etc.)
 */
 
 /* Buttons */
+/* footer submit button */
+.text-input .button2 {
+	border-radius: 10px;
+	background-color: var(--button2-color);
+	padding: var(--spacing10) var(--spacing40);
+	color: var(--color-white);
+	border: none;
+	min-width: 187px;
+	min-height: 50px;
+	margin: var(--spacing20);
+	font-weight: var(--font-weight-bold);
+	font-size: var(--font21);
+}
 
-/* Forms */
+.text-input .button2:hover {
+	background-color: var(--color-white);
+	color: var(--color-onyx);
+}
 
 /* FOOTER STYLES */
 footer {
-	background-color: #1F1D1D;
-	color: #FFFFFF;
+	background-color: var(--color-onyx);
+	color: var(--color-white);
 }
+
+/* Transition and transform for logo and social links for better visual */
+footer a img {
+	transition: all 0.1s ease-in;
+}
+footer a img:hover {
+	transform: scale(110%);
+}
+
+/* footer main is the container for all content except for very bottom links */
+.footer-main {
+	padding: var(--spacing40) 0;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+/* Logo and land acknowledgement button container*/
+.footer-logo-btn {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+/* Land Acknowledgement button */
+.btn-la {
+	background-color: transparent;
+	color: var(--color-white);
+	border: none;
+	margin: var(--spacing40) 0;
+	font-size: var(--font21);
+}
+
+/* hover effect on all footer links */
+.btn-la:hover,
+.footer-main ul li a:hover,
+.bottom-links a:hover {
+	border-bottom: 2px solid var(--color-white);
+}
+
+
+
+/* Form Styles */
+form {
+	text-align: center;
+	padding: var(--spacing20);
+}
+.text-input {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.text-input input {
+	height: 50px;
+	width: 100%;
+	border-radius: 10px;
+	border: none;
+}
+#newsletter-input {
+	padding-left: 24px;
+}
+
+/* bottom links */
+.bottom-links {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.social-svgs {
+	display: flex;
+	flex-direction: row;
+	column-gap: 20px;
+}
+
 /* MODAL */
 .hidden {
 	display: none;
 }
-.modal {
-	height: 95vh;
-	width: 90%;
-	margin: 0 auto;
-	padding: 26px;
+/* positioning for body to stop scroll when modal is open */
+.fixed {
 	position: fixed;
-	left: 0;
-	right: 0;
-	top: 2vh;
-	background-color: white;
-	color: black;
-	border: 1px solid #ddd;
-	border-radius: 4px;
-	z-index: 2;
-	
+	width: 100%;
 }
-
-.modal-wrapper {
-	position: relative;
-}
-.btn-close {
-	position: absolute;
-	right: 0;
-	top: -20px;
-}
-.btn-close button {
-	border: none;
-	background-color: transparent;
-}
-.btn-close svg {
-	width: 32px;
-	height: 32px;
-}
-
+/* modal overlay */
 .overlay-la {
 	position: fixed;
 	top: 0;
@@ -281,6 +350,59 @@ footer {
 	backdrop-filter: blur(3px);
 	z-index: 1;
 }
+.modal {
+	width: 90%;
+	max-width: 1100px;
+	max-height: 90vh;
+	margin: 0 auto;
+	/* was 26px and replaced with variable */
+	padding: var(--spacing20);
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 2vh;
+	background-color: var(--body-background-color);
+	color: var(--color-onyx);
+	border: 1px solid var(--body-background-color);
+	border-radius: 4px;
+	z-index: 2;
+}
+
+.modal-wrapper {
+	position: relative;
+}
+.modal-content {
+	overflow-y: scroll;
+	max-height: 65vh;
+}
+.modal-scroll {
+	max-height: calc(85vh 300px);
+}
+/* modal text content */
+.modal p {
+	color: var(--color-onyx);
+	margin: var(--spacing20);
+}
+.modal-header h4 {
+	text-align: center;
+	color: var(--color-onyx);
+	margin-bottom: 0px;
+}
+.btn-close {
+	position: absolute;
+	right: -10px;
+	top: -40px;
+}
+.btn-close button {
+	border: none;
+	background-color: transparent;
+}
+.btn-close svg {
+	width: 32px;
+	height: 32px;
+}
+
+/* End of modal styles */
 
 /* 
 ===================================
@@ -289,12 +411,73 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 ===================================
 */
 
-/* Tablet & Larger */
-@media screen and (min-width: 768px) {
+/* Desktop & Larger */
+@media (min-width: 1024px) {
+	/* Footer styles */
+	.wrapper {
+		width: var(--desktop-wrapper-width);
+	}
+	
+	.footer-main {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	.footer-main h4 {
+		font-size: var(--font36);
+		font-weight: var(--font-weight-bold);
+		line-height: 0px;
+		color: var(--color-white);
+	}
+	.footer-main p {
+		margin: 0px;
+	}
+	footer li {
+		text-align: left;
+	}
+
+	.footer-logo-btn {
+		align-items: start;
+	}
+
+	form {
+		display: flex;
+		flex-direction: column;
+		text-align: left;
+		/* removing padding on button to align with content */
+		padding-right: 0px;
+	}
+	form p {
+		color: var(--color-white);
+		width: 60%;
+	}
+	.text-input {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+	/* removing margin on button to align with content */
+	.text-input .button2 {
+		margin-right: 0px;
+	}
+	
+	.modal-content {
+		overflow-y: auto;
+	}
+
+	.modal-scroll {
+		padding: var(--spacing20);
+	}
+	
+	/* End of footer styles */
 }
+
 
 /* Tablet Only */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
+	.modal-scroll {
+		padding: var(--spacing20);
+	}
 }
 
 /* Desktop & Larger */
@@ -305,6 +488,13 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		font-weight: var(--font-weight-regular);
 		line-height: var(--line-height26);
 		color: var(--color-onyx);
+	}
+}
+
+/* For larger screens */
+@media (min-width: 1280px) {
+	footer {
+		padding: 0 var(--spacing65);
 	}
 }
 
