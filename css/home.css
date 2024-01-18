@@ -74,6 +74,7 @@ Hero Section
 .hero {
 	margin: 0 auto;
 	padding-bottom: 40px;
+	width: 100%;
 }
 
 /* div holding text and buttons */
@@ -97,6 +98,11 @@ Community Partnerships Section
 	padding-bottom: 50px;
 }
 
+.community-partnerships-section.wrapper {
+	margin: 0;
+	width: 100%;
+}
+
 /* targeting the image in the card-img div */
 .community .card-img img {
 	width: 100%;
@@ -115,6 +121,10 @@ Global Ecosystem Section
 .global-ecosystem {
 	background-color: var(--color-cybergrape);
 	padding-bottom: var(--spacing40);
+}
+
+.global-ecosystem.wrapper {
+	width: 100%;
 }
 
 /* styling for the ecosystem div */
@@ -210,6 +220,10 @@ Our Values Section
 	padding-bottom: var(--spacing40);
 }
 
+.values.wrapper {
+	width: 100%;
+}
+
 /* contains the blue rectangle with divs  */
 .our-values {
 	margin: 0 auto;
@@ -228,6 +242,7 @@ Events and Programs Section
 	color: var(--color-onyx);
 }
 .events-and-programs h4 {
+	margin-bottom: 0;
 	color: var(--color-onyx);
 }
 .events-and-programs p {
@@ -241,6 +256,10 @@ Events and Programs Section
 /* targeting the text div in the section */
 .event-description {
 	margin: var(--spacing20);
+}
+
+.events-container {
+	width: 80%;
 }
 
 /* 
@@ -258,23 +277,11 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 /* Mobile and Larger */
 @media screen and (max-width: 768px) {
 	/* Add styles that apply to tablet and desktop */
-	/* this overrides the global style of white text */
-	/* .alternate {
-		color: var(--color-onyx);
-	}
-	h3 {
-		color: var(--color-onyx);
-	} */
 }
 
 /* Tablet Only */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-	/* Add styles that only apply to tablet. These are usually fixes to get resposnivenes right */
-
-	/* overrides the global style of white text */
-	/* .alternate {
-		color: var(--color-white);
-	} */
+	/* Add styles that only apply to tablet. These are usually fixes to get responsiveness right */
 
 	/* ================================
 Hero Section
@@ -297,8 +304,6 @@ Hero Section
 		position: relative;
 		height: 100vh;
 		background-position: center;
-		/* justify-content: center;
-		align-items: center; */
 	}
 
 	/* contains heading, paragraph, and buttons for the hero image */
@@ -490,9 +495,6 @@ Events and Programs Section
 /* Desktop Only */
 @media screen and (min-width: 1025px) {
 	/* targeting tag to change the style from onyx to white */
-	.alternate {
-		color: var(--color-white);
-	}
 
 	/* ================================
 Hero Section
@@ -596,10 +598,16 @@ Community Partnerships Section
 		padding-left: var(--spacing80);
 		padding-right: var(--spacing84);
 		padding-top: var(--spacing80);
-		width: 50%;
+		padding-bottom: 80px;
+		width: 60%;
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
+	}
+
+	.community-partnerships-section.wrapper {
+		margin: 0 auto;
+		width: 90%;
 	}
 
 	/* ================================
@@ -735,6 +743,7 @@ Our Values Section
 		padding-bottom: 185px;
 		padding-top: 100px;
 	}
+
 	/* the div holding both the title and the blue rectangle */
 	.values-holder {
 		margin: 0 auto;
@@ -794,6 +803,7 @@ Events and Programs Section
 		flex-direction: row;
 		justify-content: center;
 		align-items: center;
+		gap: 15px;
 	}
 	/* placeholder holding the image and event description */
 	.placeholder {
@@ -807,9 +817,14 @@ Events and Programs Section
 
 	.events-and-programs h4 {
 		color: var(--color-white);
+		margin-bottom: 0;
 	}
 	.events-and-programs p {
 		color: var(--color-white);
+	}
+
+	.events-and-programs.wrapper {
+		width: 100%;
 	}
 }
 @media screen and (min-width: 1025px) and (max-width: 1250px) {
