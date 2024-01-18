@@ -115,6 +115,85 @@ Variables (colors, text, spacing, etc.)
 	/* --media-mobile-max:480px;
  --media-tablet-min:768px;
  --media-desktop-min:1024px; */
+
+	/* button styles and a tags */
+	/* overwrite sizes if needed. */
+	a {
+		text-decoration: none;
+		color: inherit;
+	}
+
+	a:hover,
+	a:focus {
+		text-decoration: underline;
+		cursor: pointer;
+	}
+
+	a:visited {
+		color: inherit;
+	}
+
+	/* needs alternation */
+	.button1 {
+		width: 300px;
+		height: 50px;
+		padding: 11px 92px;
+		margin: 0 auto;
+		gap: 10px;
+		flex-shrink: 0;
+		border-radius: 10px;
+		background: rgb(0, 0, 0, 0);
+		color: var(--color-white);
+		border: 3px solid var(--color-white);
+		font-size: var(--font21);
+		font-weight: var(--font-weight-bold);
+		line-height: var(--line-height26);
+		cursor: pointer;
+	}
+
+	.button1:hover,
+	.button1:focus {
+		background: var(--button1-hover-border);
+		color: var(--color-onyx);
+	}
+
+	.button2 {
+		min-width: 187px;
+		min-height: 50px;
+		padding: 10px 40px;
+		color: var(--color-white);
+		border: none;
+		border-radius: 10px;
+		background-color: var(--button2-color);
+		font-family: var(--main-font);
+		font-weight: var(--font-weight-bold);
+		font-size: var(--font21);
+		cursor: pointer;
+	}
+	.button2:hover,
+	.button2:focus {
+		background-color: var(--button2-hover);
+		color: var(--color-onyx);
+	}
+
+	.button3 {
+		min-width: 300px;
+		min-height: 50px;
+		padding: 11px 92px;
+		border: none;
+		border-radius: 10px;
+		background-color: var(--button2-color);
+		color: var(--color-white);
+		font-family: var(--main-font);
+		font-weight: var(--font-weight-bold);
+		font-size: var(--font21);
+		cursor: pointer;
+	}
+	.button3:hover,
+	.button3:focus {
+		background-color: var(--button3-hover-border);
+		color: var(--color-onyx);
+	}
 }
 
 /* 
