@@ -15,30 +15,25 @@ a:visited {
 
 /* needs alternation */
 .button1 {
-	display: flex;
 	width: 300px;
 	height: 50px;
 	padding: 11px 92px;
-	justify-content: center;
-	align-items: center;
 	margin: 0 auto;
 	gap: 10px;
 	flex-shrink: 0;
 	border-radius: 10px;
-	border-color: var(--color-white);
 	background: rgb(0, 0, 0, 0);
 	color: var(--color-white);
-	cursor: pointer;
 	border: 3px solid var(--color-white);
 	font-size: var(--font21);
 	font-weight: var(--font-weight-bold);
 	line-height: var(--line-height26);
+	cursor: pointer;
 }
 
-.button1:hover {
-	/* background: var(--button3-hover-border); */
-	background: var(--color-white);
-	/* border: 3px solid var(--button3-color); */
+.button1:hover,
+.button1:focus {
+	background: var(--button1-hover-border);
 	color: var(--color-onyx);
 }
 
@@ -53,9 +48,11 @@ a:visited {
 	font-family: var(--main-font);
 	font-weight: var(--font-weight-bold);
 	font-size: var(--font21);
+	cursor: pointer;
 }
-.button2:hover {
-	background-color: var(--color-white);
+.button2:hover,
+.button2:focus {
+	background-color: var(--button2-hover);
 	color: var(--color-onyx);
 }
 
@@ -70,8 +67,10 @@ a:visited {
 	font-family: var(--main-font);
 	font-weight: var(--font-weight-bold);
 	font-size: var(--font21);
+	cursor: pointer;
 }
-.button3:hover {
-	background-color: var(--color-white);
+.button3:hover,
+.button3:focus {
+	background-color: var(--button3-hover-border);
 	color: var(--color-onyx);
 }
