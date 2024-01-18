@@ -45,7 +45,8 @@ Variables (colors, text, spacing, etc.)
 	--color-citrine: #d3c53f;
 	--color-citron: #92a32d;
 	--color-copper: #b37122;
-	--color-bluepurple: linear-gradient(180deg, #184f85 -5.71%, #6c4681 103.44%);
+	--color-bluepurple: linear-gradient(0deg, #6c4681 -5.71%, #184f85 103.44%);
+	--color-purpleblue: linear-gradient(180deg, #6c4681 -5.71%, #184f85 103.44%);
 	--color-yellowgreen: linear-gradient(
 		180deg,
 		#d3c53f 0%,
@@ -191,6 +192,7 @@ footer li {
 	list-style-type: none;
 	line-height: var(--line-height32);
 	text-align: center;
+	margin-bottom: 20px;
 }
 footer ul {
 	padding-left: 0px;
@@ -326,9 +328,10 @@ form {
 .hidden {
 	display: none;
 }
-
+/* positioning for body to stop scroll when modal is open */
 .fixed {
 	position: fixed;
+	width: 100%;
 }
 /* modal overlay */
 .overlay-la {
@@ -360,19 +363,6 @@ form {
 	border-radius: 4px;
 	z-index: 2;
 }
-/* without this the text was white */
-.modal-header h4,
-.modal p {
-	color: var(--color-onyx);
-}
-.modal p {
-	margin: 26px;
-}
-.modal-header h4 {
-	text-align: center;
-	color: var(--color-onyx);
-	margin-bottom: 0px;
-}
 
 .modal-wrapper {
 	position: relative;
@@ -383,6 +373,16 @@ form {
 }
 .modal-scroll {
 	max-height: calc(85vh 300px);
+}
+/* modal text content */
+.modal p {
+	color: var(--color-onyx);
+	margin: var(--spacing20);
+}
+.modal-header h4 {
+	text-align: center;
+	color: var(--color-onyx);
+	margin-bottom: 0px;
 }
 .btn-close {
 	position: absolute;
@@ -471,7 +471,6 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 
 /* Tablet Only */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-	/* need to add margin to .modal */
 	.modal-scroll {
 		padding: var(--spacing20);
 	}
