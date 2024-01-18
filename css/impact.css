@@ -29,6 +29,11 @@ Section Styles (background, padding, etc.)
 p, h4 {
     color: var(--color-onyx);
 }
+
+img {
+    margin: 0 auto;
+    border-radius: 10px;
+}
 /* Hero/Title */
 .hero {
 	width: 100%;
@@ -61,18 +66,21 @@ p, h4 {
 
 /* tech around us section */
 .red-background {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-color: var(--color-amaranth);
-    padding: var(--spacing40) var(--spacing20);
+}
+.tech-img {
+    margin: 30px;
 }
 
-img {
-    margin: 0 auto;
-    border-radius: 10px;
-}
 
 .red-block {
     display: none;
 }
+
+
 
 /* 
 ===================================
@@ -96,11 +104,6 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	/* Add styles that apply to table and desktop */
 
     /* tech around us section */
-    .red-background {
-        background-color: transparent;
-        padding: 60px;
-        border: 1px solid black;
-    }
 
     .tech-around,
     .responsible-parent {
@@ -108,30 +111,34 @@ Feel free to change the min/max-width values to whatever you need. Use variables
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        position: relative;
+        /* position: relative; */
     }
     .tech-around > * {
         width: 50%;
     }
 
-    .tech-img img {
-        z-index: 2;
-    }
 
+    .red-background {
+		background-color: transparent;
+		position: relative;
+        border: 1px solid black;
+	}
     .red-block {
-        display: block;
-        min-width: 60px;
-        width: 25%;
-        min-height: 60px;
-        height: 25%;
         background-color: var(--color-amaranth);
         border-radius: 10px;
-
+        display: block;
+        min-width: 200px;
+        min-height: 200px;
         position: absolute;
-        top: 10px;
-        left: 10px;
-        z-index: -1;
+        top: 0px;
+        left: 0px;
 
+    }
+	
+    .tech-img {
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
     }
     
 }
@@ -139,4 +146,24 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 /* Desktop Only */
 @media screen and (min-width: 1024px) {
 	/* Add styles that apply specifically to desktop */
+    /* .tech-img {
+        position: absolute;
+        top: 15%;
+        left: 25%;
+        object-fit: cover;
+        aspect-ratio: 1;
+        width: 55%;
+        border-radius: 10px;
+	}
+	.tech-img::before {
+		position: absolute;
+		top: 10%;
+		left: 20%;
+		content: " ";
+		background-color: var(--color-amaranth);
+		border-radius: 10px;
+		width: 299px;
+		height: 299px;
+		z-index: -1;
+	} */
 }
