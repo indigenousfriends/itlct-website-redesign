@@ -97,6 +97,10 @@ Community Partnerships Section
 	border-radius: 0;
 }
 
+.community-partner-wrapper .button1 {
+	margin: 0 auto;
+}
+
 /* ================================
 Global Ecosystem Section
 ===================================  */
@@ -177,7 +181,7 @@ What We Do Section
 
 /* targeting the home-card height within the card container div */
 .card-container .home-card {
-	min-height: 500px;
+	min-height: 430px;
 }
 
 /* targeting the text div within the home-card */
@@ -566,88 +570,4 @@ Events and Programs Section
 		flex-direction: column;
 		width: 30%;
 	}
-}
-
-@media screen and (min-width: 1024px) and (max-width: 1130px) {
-	/* fixing the wrapper sizing */
-	.what-we-do.wrapper {
-		width: auto;
-	}
-
-	/* ================================
-Community Partnerships Section
-===================================  */
-
-	/* targeting the entire section */
-	.community-partnerships-section {
-		padding-left: 40px;
-		padding-right: 40px;
-		width: 100%;
-	}
-	/* targeting the div holding the text and button */
-	.community-partner-wrapper {
-		padding-left: 60px;
-		padding-right: 40px;
-	}
-}
-
-/* ================================
-Global Ecosystem Section
-===================================  */
-
-/* the entire section */
-.ecosystem {
-	width: 80%;
-}
-/* positioning for the cybergrape ecosystem div */
-.ecosystem-subsection {
-	padding-left: 60px;
-	padding-right: 90px;
-	position: relative;
-	left: 30px;
-	padding-top: 0;
-}
-/* positioning for the onyx blockquote */
-.blockquote {
-	right: 44px;
-	width: 60%;
-	padding-right: 70px;
-}
-
-/* ================================
-What We Do Section
-===================================  */
-
-/* adjusting the width of the div holding the cards */
-.card-container {
-	width: 95%;
-	/* remove align content center */
-}
-
-/* adjusting the card size within the div */
-.card-container .home-card {
-	width: 45%;
-	margin: 10px;
-	padding-bottom: 0;
-}
-
-/* ================================
-Our Values Section
-===================================  */
-/* the entire section */
-.values {
-	padding-top: 52px;
-}
-
-/* removing the padding from the bottom of the values card */
-.our-values {
-	padding-bottom: 0;
-}
-
-/* ================================
-Events and Programs Section
-===================================  */
-/* adding padding to the placeholder div */
-.placeholder {
-	padding: 10px;
 }
