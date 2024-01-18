@@ -81,7 +81,13 @@ Hero Section
 	display: flex;
 	flex-direction: column;
 }
+.hero h3 {
+	color: var(--color-onyx);
+}
 
+.hero p {
+	color: var(--color-onyx);
+}
 /* ================================
 Community Partnerships Section
 ===================================  */
@@ -152,6 +158,10 @@ What We Do Section
 	padding-bottom: var(--spacing40);
 }
 
+.what-we-do h3 {
+	color: var(--color-onyx);
+}
+
 /* targeting colors for individual cards */
 .digital-fluency {
 	background-color: var(--color-teal);
@@ -199,6 +209,7 @@ Our Values Section
 	padding-top: var(--spacing20);
 	padding-bottom: var(--spacing40);
 }
+
 /* contains the blue rectangle with divs  */
 .our-values {
 	margin: 0 auto;
@@ -213,10 +224,15 @@ Events and Programs Section
 ===================================  */
 
 /* targets the entire section */
-.events-and-programs {
+.events-and-programs h3 {
 	color: var(--color-onyx);
 }
-
+.events-and-programs h4 {
+	color: var(--color-onyx);
+}
+.events-and-programs p {
+	color: var(--color-onyx);
+}
 /* targeting the images in the section */
 .events-and-programs img {
 	margin: 0 auto;
@@ -243,12 +259,12 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 @media screen and (max-width: 768px) {
 	/* Add styles that apply to tablet and desktop */
 	/* this overrides the global style of white text */
-	.alternate {
+	/* .alternate {
 		color: var(--color-onyx);
 	}
 	h3 {
 		color: var(--color-onyx);
-	}
+	} */
 }
 
 /* Tablet Only */
@@ -256,17 +272,223 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	/* Add styles that only apply to tablet. These are usually fixes to get resposnivenes right */
 
 	/* overrides the global style of white text */
-	.alternate {
+	/* .alternate {
+		color: var(--color-white);
+	} */
+
+	/* ================================
+Hero Section
+===================================  */
+	/* hides the default image for the section */
+	.hero img {
+		display: none;
+	}
+
+	/* the entire section */
+	.hero {
+		background: linear-gradient(
+				352deg,
+				rgba(9, 9, 9, 0.8) 32.03%,
+				rgba(9, 9, 9, 0) 73.42%
+			),
+			url(../assets/images/pages/home/hero-image-home.jpg);
+
+		background-size: cover;
+		position: relative;
+		height: 100vh;
+		background-position: center;
+		/* justify-content: center;
+		align-items: center; */
+	}
+
+	/* contains heading, paragraph, and buttons for the hero image */
+	.hero-home {
+		position: absolute;
+		z-index: 10;
+		bottom: 10%;
+		max-width: var(--wrapper-width-max);
+		left: 50%;
+		transform: translate(-50%, 0%);
+	}
+
+	/* targeting the div holding the buttons */
+	.hero .btn-container {
+		display: flex;
+		justify-content: space-around;
+	}
+
+	/* targeting the buttons that need to be hidden on desktop version */
+	.hero .button3 {
+		display: none;
+	}
+
+	.hero-home h3 {
+		color: var(--color-white);
+	}
+
+	.hero-home p {
+		color: var(--color-white);
+	}
+
+	/* ================================
+Community Partnerships Section
+===================================  */
+	.community-partner-wrapper {
+		width: 80%;
+	}
+
+	.community-partnerships-section p {
+		color: var(--color-white);
+	}
+
+	/* ================================
+Global Ecosystems Section
+===================================  */
+
+	/* the background for the entire section */
+	.global-ecosystem {
+		padding-top: var(--spacing100);
+		padding-bottom: var(--spacing100);
+		background: url(../assets/images/pages/home/bg-overlay-vector-01.svg),
+			var(--color-bluepurple);
+		background-size: cover;
+	}
+
+	/* targeting the header styling  */
+	.global-ecosystem h4 {
+		margin-bottom: 0;
+		font-size: var(--font36);
+		line-height: var(--line-height40);
+		color: var(--color-white);
+	}
+	/* contains 2 divs - ecosystem subsection (cybergrape) and the blockquote */
+	.ecosystem {
+		width: 100%;
+		margin: 0 auto;
+		text-align: left;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+	}
+	/* targeting the style for the cybergrape div */
+	.ecosystem-subsection {
+		margin: 0;
+		border-radius: 10px;
+
+		padding-bottom: var(--spacing40);
+		padding-left: 52px;
+		padding-right: 100px;
+		width: 70%;
+		position: relative;
+		left: 30px;
+	}
+	/* targeting the color of the font in the div */
+	.ecosystem-subsection p {
+		color: var(--color-white);
+	}
+
+	/* stylings for the onyx block quote */
+	.blockquote {
+		position: relative;
+		right: 30px;
+		width: 60%;
+		margin: 0;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		padding-left: 64px;
+		padding-right: 46px;
+	}
+
+	/* targeting positioning for the svgs in the blockquote */
+	.blockquote p::before {
+		top: 30px;
+		left: 20px;
+	}
+	.blockquote p::after {
+		bottom: 30px;
+		right: 20px;
+	}
+
+	/* targeting the text in the blockquote */
+	.blockquote p {
+		font-size: var(--font24);
+		font-weight: var(--font-weight-medium);
+		line-height: var(--line-height28);
+		color: var(--color-white);
+		font-style: italic;
+	}
+
+	/* ================================
+What We Do Section
+===================================  */
+
+	/* entire section */
+	.what-we-do {
+		width: 80%;
+		padding-bottom: var(--spacing40);
+	}
+
+	.what-we-do h3 {
 		color: var(--color-onyx);
 	}
 
-	/* 768 background image center/center */
+	.what-we-do p {
+		color: var(--color-white);
+	}
+	/* ================================
+Our Values Section
+===================================  */
+	.our-values {
+		width: 80%;
+	}
+
+	.values p {
+		color: var(--color-white);
+	}
+
+	/* ================================
+Events and Programs Section
+===================================  */
+	.events-and-programs h3 {
+		color: var(--color-onyx);
+	}
+	.events-and-programs h4 {
+		color: var(--color-onyx);
+		margin-bottom: 0;
+	}
+	.events-and-programs p {
+		color: var(--color-onyx);
+	}
+
+	/* .events-container {
+		width: 80%;
+		margin: 0 auto;
+	}
+	.placeholder {
+		width: 60%;
+		margin: 0 auto;
+	}
+	.event-description {
+		width: 60%;
+		text-align: left;
+	} */
+
+	.events-container {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-content: center;
+	}
+	.placeholder {
+		width: 30%;
+		gap: 10px;
+	}
 }
 
-/* in-between media query  */
-
 /* Desktop Only */
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1025px) {
 	/* targeting tag to change the style from onyx to white */
 	.alternate {
 		color: var(--color-white);
@@ -290,6 +512,7 @@ Hero Section
 			url(../assets/images/pages/home/hero-image-home.jpg);
 
 		background-size: cover;
+		background-position: center;
 		position: relative;
 		height: 100vh;
 		/* justify-content: center;
@@ -315,6 +538,14 @@ Hero Section
 	/* targeting the buttons that need to be hidden on desktop version */
 	.hero .button3 {
 		display: none;
+	}
+
+	.hero h3 {
+		color: var(--color-white);
+	}
+
+	.hero p {
+		color: var(--color-white);
 	}
 
 	/* ================================
@@ -356,7 +587,7 @@ Community Partnerships Section
 	.community .card-img img {
 		object-fit: cover;
 		object-position: center;
-		border-radius: 0 10px 10px 0;
+
 		height: 100%;
 	}
 	/* div holding the h4, p, and button */
@@ -569,5 +800,108 @@ Events and Programs Section
 		display: flex;
 		flex-direction: column;
 		width: 30%;
+	}
+	.events-and-programs h3 {
+		color: var(--color-white);
+	}
+
+	.events-and-programs h4 {
+		color: var(--color-white);
+	}
+	.events-and-programs p {
+		color: var(--color-white);
+	}
+}
+@media screen and (min-width: 1025px) and (max-width: 1250px) {
+	/* fixing the wrapper sizing */
+	.what-we-do.wrapper {
+		width: auto;
+	}
+
+	/* ================================
+Community Partnerships Section
+===================================  */
+
+	/* targeting the entire section */
+	.community-partnerships-section {
+		padding-left: 40px;
+		padding-right: 40px;
+		width: 100%;
+	}
+	/* targeting the div holding the text and button */
+	.community-partner-wrapper {
+		padding-left: 60px;
+		padding-right: 40px;
+	}
+
+	/* ================================
+Global Ecosystem Section
+===================================  */
+
+	/* the entire section */
+	.ecosystem {
+		width: 80%;
+	}
+	/* positioning for the cybergrape ecosystem div */
+	.ecosystem-subsection {
+		padding-left: 60px;
+		padding-right: 90px;
+		position: relative;
+		left: 30px;
+		padding-top: 0;
+	}
+	/* positioning for the onyx blockquote */
+	.blockquote {
+		right: 44px;
+		width: 60%;
+		padding-right: 70px;
+	}
+
+	/* ================================
+What We Do Section
+===================================  */
+
+	/* adjusting the width of the div holding the cards */
+	.card-container {
+		width: 95%;
+		/* remove align content center */
+	}
+
+	/* adjusting the card size within the div */
+	.card-container .home-card {
+		width: 45%;
+		margin: 10px;
+		padding-bottom: 0;
+	}
+
+	/* ================================
+Our Values Section
+===================================  */
+	/* the entire section */
+	.values {
+		padding-top: 52px;
+	}
+
+	/* removing the padding from the bottom of the values card */
+	.our-values {
+		padding-bottom: 0;
+	}
+
+	/* ================================
+Events and Programs Section
+===================================  */
+	/* adding padding to the placeholder div */
+	.placeholder {
+		padding: 10px;
+	}
+	.events-and-programs h3 {
+		color: var(--color-white);
+	}
+
+	.events-and-programs h4 {
+		color: var(--color-white);
+	}
+	.events-and-programs p {
+		color: var(--color-white);
 	}
 }
