@@ -1,8 +1,3 @@
-/* Links */
-.image-link {
-	text-decoration: none;
-}
-
 /*
 ===================================
 ===================================
@@ -10,6 +5,12 @@ Styles for home-page
 ===================================
 ===================================
 */
+
+/* Links */
+.image-link {
+	text-decoration: none;
+}
+
 /* this is to align text in the center throughout the entire design */
 .align-text {
 	text-align: center;
@@ -78,7 +79,7 @@ Hero Section
 /* entire section style */
 .hero {
 	margin: 0 auto;
-	padding-bottom: 40px;
+	padding-bottom: var(--spacing40);
 	width: 100%;
 }
 
@@ -151,15 +152,15 @@ Global Ecosystem Section
 .blockquote p::before {
 	content: url(../assets/images/pages/home/quotes-open.svg);
 	position: absolute;
-	top: 20px;
-	left: 10px;
+	top: var(--spacing20);
+	left: var(--spacing10);
 }
 /* adding and styling the close quotes svg */
 .blockquote p::after {
 	content: url(../assets/images/pages/home/quotes-close.svg);
 	position: absolute;
-	bottom: 20px;
-	right: 10px;
+	bottom: var(--spacing20);
+	right: var(--spacing10);
 }
 
 /* ================================
@@ -381,7 +382,7 @@ Global Ecosystems Section
 		border-radius: 10px;
 		padding-bottom: var(--spacing40);
 		padding-left: 52px;
-		padding-right: 100px;
+		padding-right: var(--spacing100);
 		width: 70%;
 		position: relative;
 		left: 30px;
@@ -397,8 +398,8 @@ Global Ecosystems Section
 		right: 30px;
 		width: 60%;
 		margin: 0;
-		padding-top: 20px;
-		padding-bottom: 20px;
+		padding-top: var(--spacing20);
+		padding-bottom: var(--spacing20);
 		padding-left: 64px;
 		padding-right: 46px;
 	}
@@ -490,7 +491,7 @@ Events and Programs Section
 	/* targeting div that is holding the image and text for "placeholder" */
 	.placeholder {
 		width: 30%;
-		gap: 10px;
+		gap: var(--spacing10);
 	}
 }
 
@@ -596,7 +597,7 @@ Community Partnerships Section
 		padding-left: var(--spacing80);
 		padding-right: var(--spacing84);
 		padding-top: var(--spacing80);
-		padding-bottom: 80px;
+		padding-bottom: var(--spacing80);
 		width: 60%;
 		display: flex;
 		flex-direction: column;
@@ -645,8 +646,8 @@ Global Ecosystems Section
 		border-radius: 10px;
 		padding-top: var(--spacing40);
 		padding-bottom: var(--spacing40);
-		padding-left: 100px;
-		padding-right: 100px;
+		padding-left: var(--spacing100);
+		padding-right: var(--spacing100);
 		width: 70%;
 		left: 70px;
 	}
@@ -658,13 +659,13 @@ Global Ecosystems Section
 	/* stylings for the onyx block quote */
 	.blockquote {
 		position: relative;
-		right: 80px;
+		right: var(--spacing80);
 		width: 65%;
 		margin: 0;
-		padding-top: 40px;
-		padding-bottom: 40px;
+		padding-top: var(--spacing40);
+		padding-bottom: var(--spacing40);
 		padding-left: 70px;
-		padding-right: 80px;
+		padding-right: var(--spacing80);
 	}
 
 	/* targeting positioning for the svgs in the blockquote */
@@ -711,8 +712,8 @@ What We Do Section
 
 	/* entire section */
 	.what-we-do {
-		padding-top: 80px;
-		padding-bottom: 80px;
+		padding-top: var(--spacing80);
+		padding-bottom: var(--spacing80);
 	}
 
 	/* the div holding the 3 cards */
@@ -739,8 +740,8 @@ Our Values Section
 		background-image: url(../assets/images/pages/home/values.jpg);
 		background-size: cover;
 		background-position: center;
-		padding-bottom: 185px;
-		padding-top: 100px;
+		padding-bottom: var(--spacing185);
+		padding-top: var(--spacing100);
 	}
 
 	/* the div holding both the title and the blue rectangle */
@@ -833,14 +834,14 @@ Community Partnerships Section
 
 	/* targeting the entire section */
 	.community-partnerships-section {
-		padding-left: 40px;
-		padding-right: 40px;
+		padding-left: var(--spacing40);
+		padding-right: var(--spacing40);
 		width: 100%;
 	}
 	/* targeting the div holding the text and button */
 	.community-partner-wrapper {
 		padding-left: 60px;
-		padding-right: 40px;
+		padding-right: var(--spacing40);
 	}
 
 	/* ================================
@@ -879,7 +880,7 @@ What We Do Section
 	/* adjusting the card size within the div */
 	.card-container .home-card {
 		width: 45%;
-		margin: 10px;
+		margin: var(--spacing10);
 		padding-bottom: 0;
 	}
 
@@ -901,6 +902,6 @@ Events and Programs Section
 ===================================  */
 	/* adding padding to the placeholder div */
 	.placeholder {
-		padding: 10px;
+		padding: var(--spacing10);
 	}
 }
