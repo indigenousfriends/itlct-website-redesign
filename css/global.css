@@ -288,8 +288,6 @@ footer a img:hover {
 	border-bottom: 2px solid var(--color-white);
 }
 
-
-
 /* Form Styles */
 form {
 	text-align: center;
@@ -413,7 +411,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	.wrapper {
 		width: var(--desktop-wrapper-width);
 	}
-	
+
 	.footer-main {
 		display: flex;
 		flex-direction: row;
@@ -456,7 +454,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	.text-input .button2 {
 		margin-right: 0px;
 	}
-	
+
 	.modal-content {
 		overflow-y: auto;
 	}
@@ -464,10 +462,9 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	.modal-scroll {
 		padding: var(--spacing20);
 	}
-	
+
 	/* End of footer styles */
 }
-
 
 /* Tablet Only */
 @media screen and (min-width: 768px) and (max-width: 1024px) {

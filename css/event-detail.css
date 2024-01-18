@@ -26,7 +26,9 @@ html {
 }
 
 /* Needs to be centered, and button 3 attributes */
+/* Maybe needs to be called on in its own class? */
 .template-wrapper button {
+	align-self: baseline;
 	/* justify-content: center; */
 }
 .template-hero-img {
