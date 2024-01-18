@@ -45,7 +45,10 @@ Page Component Styles (icon grid, team member card)
 	flex-direction: column;
 	justify-content: center;
 	text-align: center;
-	/* margin: 0px 20px; */
+	margin: 0px 20px;
+}
+.values-card img {
+	margin-bottom: 20px;
 }
 .values-card h4 {
 	margin: 20px 0px 0px 0px;
@@ -97,45 +100,42 @@ Page Component Styles (icon grid, team member card)
 .amaraback {
 	background-color: var(--color-amaranth);
 }
-.sustainability-text {
+
+.sustainability-text, .authenticity-text, .education-text, .tech-text {
 	display: flex;
 	flex-direction: column;
-	width: 55%;
-	margin-left: auto;
+	border-radius: 10px;
+}
+
+.copperback, .sustainability-text, .grapeback, .authenticity-text, .education-text, .tech-text {
+	margin-bottom: 20px;
+}
+
+.sustainability-text {
+	background-color: var(--color-onyx);
 }
 .authenticity-text {
-	display: flex;
-	flex-direction: column;
-	width: 50%;
+	background-color: var(--color-amaranth);
 }
 .education-text {
-	display: flex;
-	flex-direction: column;
-	width: 65%;
+	background-color: var(--color-yaleblue);
 }
 .tech-text {
-	display: flex;
-	flex-direction: column;
-	width: 70%;
-	margin-left: auto;
+	background-color: var(--color-teal);
 }
 /* Adds a background color in lieu of those rectangle shapes */
-
 .grapeback {
 	background-color: var(--color-cybergrape);
 }
 /* Adds a background color in lieu of those rectangle shapes */
-
 .blueback {
 	background-color: var(--color-yaleblue);
 }
 /* Adds a background color in lieu of those rectangle shapes */
-
 .tealback {
 	background-color: var(--color-teal);
 }
 /* Adds a background color in lieu of those rectangle shapes */
-
 .support {
 	background-color: var(--color-yaleblue);
 	margin-top: 90px;
@@ -265,6 +265,15 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		left: 50%;
 		top: 45%;
 	}
+	.values-card {
+		margin: 0px 10px;
+	}
+	.copperback, .authenticity, .education {
+		margin-right: 10px;
+	}
+	.sustainability-text, .grapeback,.technology{
+        margin-left: 10px;
+    }
 	.values-card h4 {
 		margin: 20px 0px 0px 20px;
 		font-size: var(--font36);
@@ -291,7 +300,6 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		display: flex;
 		flex-direction: row;
 		height: 290px;
-		gap: 20px;
 		padding: 0 200px 0 200px;
 	}
 	/* Gradients */
@@ -312,12 +320,80 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	.hero img {
 		display: none;
 	}
+	.sustainability {
+		/* background-color: var(--color-onyx); */
+		background-image: linear-gradient(
+				269deg,
+				#0e0e0e 46.26%,
+				rgba(27, 27, 27, 0) 99.04%
+			),
+			url(../assets/images/pages/values/sustainability.jpg);
+	}
+	.authenticity {
+		background-image: linear-gradient(
+			88deg,
+			#b91515 47.26%,
+			rgba(185, 21, 21, 0.73) 55.57%,
+			rgba(119, 45, 45, 0.4) 68.47%
+		),
+		url(../assets/images/pages/values/authenticity.jpg);
+	}
+	.education {
+		background-image: linear-gradient(
+				90deg,
+				#184f85 63.23%,
+				rgba(24, 79, 133, 0) 83.39%
+			),
+			url(../assets/images/pages/values/education.jpg);
+	}
 
+	.technology {
+		background-image: linear-gradient(
+				280deg,
+				#007a80 67.16%,
+				rgba(0, 122, 128, 0) 80.36%
+			),
+			url(../assets/images/pages/values/techinnovation.jpg);
+	}
+	.copperback, .sustainability-text, .grapeback, .authenticity-text, .education-text, .tech-text {
+		margin-bottom: 0px;
+	}
 	/* Changing values card imgs to background imgs */
 	.values-card img {
 		display: none;
 	}
 	/* Individual card widths */
+	.sustainability-text {
+		display: flex;
+		flex-direction: column;
+		width: 55%;
+		margin-left: auto;
+		background-color: transparent;
+		border-radius: 10px;
+	}
+	.authenticity-text {
+		display: flex;
+		flex-direction: column;
+		width: 50%;
+		background-color: transparent;
+		border-radius: 10px;
+	}
+	.education-text {
+		display: flex;
+		flex-direction: column;
+		width: 65%;
+		background-color: transparent;
+		border-radius: 10px;
+	}
+	.tech-text {
+		display: flex;
+		flex-direction: column;
+		width: 70%;
+		margin-left: auto;
+		background-color: transparent;
+		border-radius: 10px;
+	}
+
 	/* copper and grape 40% */
 	.copperback,
 	.grapeback {
@@ -329,20 +405,11 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		width: 60%;
 	}
 	/* blue and teal 50%*/
-	.blueback,
-	.tealback {
+	.education, .technology{
 		width: 50%;
 	}
-	.onyxback {
-		background-image: linear-gradient(
-				269deg,
-				#0e0e0e 46.26%,
-				rgba(27, 27, 27, 0) 99.04%
-			),
-			url(../assets/images/pages/values/sustainability.jpg);
-	}
 
-	.amaraback {
+	/* .amaraback {
 		background-image: linear-gradient(
 				88deg,
 				#b91515 47.26%,
@@ -350,30 +417,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 				rgba(119, 45, 45, 0.4) 68.47%
 			),
 			url(../assets/images/pages/values/authenticity.jpg);
-
-			/* background-position: center center;
-			background-size: cover;
-			background-repeat: no-repeat;
-			position: relative; */
-	}
-
-	.blueback {
-		background-image: linear-gradient(
-				90deg,
-				#184f85 63.23%,
-				rgba(24, 79, 133, 0) 83.39%
-			),
-			url(../assets/images/pages/values/education.jpg);
-	}
-
-	.tealback {
-		background-image: linear-gradient(
-				280deg,
-				#007a80 67.16%,
-				rgba(0, 122, 128, 0) 80.36%
-			),
-			url(../assets/images/pages/values/techinnovation.jpg);
-	}
+	} */
 
 	.onyxback,
 	.amaraback,
@@ -418,7 +462,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		line-height: var(--line-height50);
 		width: 60%;
 	}
-	.support-header h4  {
+	.support-header h4 {
 		width: auto;
 	}
 
@@ -477,15 +521,15 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	border-radius: 10px;
 	}
 	.empowering-img-block::before {
-		position: absolute;
-		top: 10%;
-		left: 20%;
-		content: " ";
-		background-color: var(--color-amaranth);
-		border-radius: 10px;
-		width: 299px;
-		height: 299px;
-		z-index: -1;
+	position: absolute;
+	top: 10%;
+	left: 20%;
+	content: " ";
+	background-color: var(--color-amaranth);
+	border-radius: 10px;
+	width: 299px;
+	height: 299px;
+	z-index: -1;
 	}
 	
 }
