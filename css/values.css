@@ -256,8 +256,8 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		display: flex;
 		flex-direction: column;
 		gap: 20px;
-		margin-top: 190px;
-		margin-bottom: 193px;
+		margin: 190px auto 193px auto;
+		max-width: 1328px;
 	}
 	.values-main {
 		display: flex;
@@ -289,7 +289,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		margin: var(--spacing20);
 	}
 	.copperback h4, .amaraback h4, .grapeback h4, .blueback h4, .copperback p, .amaraback p, .grapeback p, .blueback p {
-		margin-left: 60px;
+		/* margin-left: 60px; */
 	}
 	.onyxback, .grapeback, .tealback {
 		padding-right: 44px;
@@ -300,7 +300,6 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		display: flex;
 		flex-direction: row;
 		height: 290px;
-		padding: 0 200px 0 200px;
 	}
 	/* Gradients */
 	.hero {
@@ -328,6 +327,9 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 				rgba(27, 27, 27, 0) 99.04%
 			),
 			url(../assets/images/pages/values/sustainability.jpg);
+			background-position: center center;
+			background-size: cover;
+			background-repeat: no-repeat;
 	}
 	.authenticity {
 		background-image: linear-gradient(
@@ -337,6 +339,9 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 			rgba(119, 45, 45, 0.4) 68.47%
 		),
 		url(../assets/images/pages/values/authenticity.jpg);
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
 	}
 	.education {
 		background-image: linear-gradient(
@@ -345,6 +350,9 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 				rgba(24, 79, 133, 0) 83.39%
 			),
 			url(../assets/images/pages/values/education.jpg);
+			background-position: center center;
+			background-size: cover;
+			background-repeat: no-repeat;
 	}
 
 	.technology {
@@ -354,6 +362,9 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 				rgba(0, 122, 128, 0) 80.36%
 			),
 			url(../assets/images/pages/values/techinnovation.jpg);
+			background-position: center center;
+			background-size: cover;
+			background-repeat: no-repeat;
 	}
 	.copperback, .sustainability-text, .grapeback, .authenticity-text, .education-text, .tech-text {
 		margin-bottom: 0px;
@@ -366,7 +377,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	.sustainability-text {
 		display: flex;
 		flex-direction: column;
-		width: 55%;
+		width: 60%;
 		margin-left: auto;
 		background-color: transparent;
 		border-radius: 10px;
@@ -397,27 +408,16 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	/* copper and grape 40% */
 	.copperback,
 	.grapeback {
-		width: 40%;
+		max-width: 40%;
 	}
 	/* onyx and amaranth 60%*/
-	.onyxback,
-	.amaraback {
-		width: 60%;
+	.onyxback, .authenticity {
+		max-width: 60%;
 	}
 	/* blue and teal 50%*/
 	.education, .technology{
 		width: 50%;
 	}
-
-	/* .amaraback {
-		background-image: linear-gradient(
-				88deg,
-				#b91515 47.26%,
-				rgba(185, 21, 21, 0.73) 55.57%,
-				rgba(119, 45, 45, 0.4) 68.47%
-			),
-			url(../assets/images/pages/values/authenticity.jpg);
-	} */
 
 	.onyxback,
 	.amaraback,
