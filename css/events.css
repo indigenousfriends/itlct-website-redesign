@@ -51,10 +51,6 @@ Section Styles (background, padding, etc.)
 	text-align: center;
 }
 
-/* wrapper */
-.wrapper {
-	width: 90%;
-}
 
 /* Event Page Cards */
 .event-page-cards {
@@ -245,9 +241,6 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		line-height: var(--line-height58);
 	}
 
-	.wrapper {
-		width: var(--desktop-wrapper-width);
-	}
 
 	/* hiding the div that's below the card title */
 	.event-page-card-text {
