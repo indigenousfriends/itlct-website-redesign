@@ -72,7 +72,8 @@ img {
     background-color: var(--color-amaranth);
 }
 .tech-img {
-    margin: 30px;
+    /* testing */
+    margin: 100px;
 }
 
 
