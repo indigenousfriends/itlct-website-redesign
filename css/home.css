@@ -82,6 +82,8 @@ Hero Section
 	display: flex;
 	flex-direction: column;
 }
+
+/* overriding global styles */
 .hero h3 {
 	color: var(--color-onyx);
 }
@@ -98,8 +100,8 @@ Community Partnerships Section
 	padding-bottom: 50px;
 }
 
+/* overriding .wrapper class */
 .community-partnerships-section.wrapper {
-	margin: 0;
 	width: 100%;
 }
 
@@ -109,6 +111,7 @@ Community Partnerships Section
 	border-radius: 0;
 }
 
+/* targeting button in the div to center it */
 .community-partner-wrapper .button1 {
 	margin: 0 auto;
 }
@@ -123,6 +126,7 @@ Global Ecosystem Section
 	padding-bottom: var(--spacing40);
 }
 
+/* overriding the .wrapper class */
 .global-ecosystem.wrapper {
 	width: 100%;
 }
@@ -168,6 +172,7 @@ What We Do Section
 	padding-bottom: var(--spacing40);
 }
 
+/* overriding global style */
 .what-we-do h3 {
 	color: var(--color-onyx);
 }
@@ -220,6 +225,7 @@ Our Values Section
 	padding-bottom: var(--spacing40);
 }
 
+/* overriding the .wrapper class */
 .values.wrapper {
 	width: 100%;
 }
@@ -237,7 +243,11 @@ Our Values Section
 Events and Programs Section
 ===================================  */
 
-/* targets the entire section */
+/* targets the div holding "placeholder" */
+.events-container {
+	width: 80%;
+}
+/* overriding global styles*/
 .events-and-programs h3 {
 	color: var(--color-onyx);
 }
@@ -256,10 +266,6 @@ Events and Programs Section
 /* targeting the text div in the section */
 .event-description {
 	margin: var(--spacing20);
-}
-
-.events-container {
-	width: 80%;
 }
 
 /* 
@@ -327,6 +333,7 @@ Hero Section
 		display: none;
 	}
 
+	/* overriding global styles */
 	.hero-home h3 {
 		color: var(--color-white);
 	}
@@ -338,10 +345,12 @@ Hero Section
 	/* ================================
 Community Partnerships Section
 ===================================  */
+	/*targeting the div holding text and button  */
 	.community-partner-wrapper {
 		width: 80%;
 	}
 
+	/* overriding global styles */
 	.community-partnerships-section p {
 		color: var(--color-white);
 	}
@@ -380,7 +389,6 @@ Global Ecosystems Section
 	.ecosystem-subsection {
 		margin: 0;
 		border-radius: 10px;
-
 		padding-bottom: var(--spacing40);
 		padding-left: 52px;
 		padding-right: 100px;
@@ -433,7 +441,7 @@ What We Do Section
 		width: 80%;
 		padding-bottom: var(--spacing40);
 	}
-
+	/* overriding global styles */
 	.what-we-do h3 {
 		color: var(--color-onyx);
 	}
@@ -444,10 +452,11 @@ What We Do Section
 	/* ================================
 Our Values Section
 ===================================  */
+	/*targeting the div holding the blue rectangle  */
 	.our-values {
 		width: 80%;
 	}
-
+	/* overriding global styles */
 	.values p {
 		color: var(--color-white);
 	}
@@ -455,6 +464,7 @@ Our Values Section
 	/* ================================
 Events and Programs Section
 ===================================  */
+	/*overriding global styles  */
 	.events-and-programs h3 {
 		color: var(--color-onyx);
 	}
@@ -465,6 +475,8 @@ Events and Programs Section
 	.events-and-programs p {
 		color: var(--color-onyx);
 	}
+
+	/* if we want column style instead of row */
 
 	/* .events-container {
 		width: 80%;
@@ -478,7 +490,7 @@ Events and Programs Section
 		width: 60%;
 		text-align: left;
 	} */
-
+	/* targeting the div holding placeholder */
 	.events-container {
 		width: 100%;
 		display: flex;
@@ -486,6 +498,8 @@ Events and Programs Section
 		justify-content: center;
 		align-content: center;
 	}
+
+	/* targeting div that is holding the image and text for "placeholder" */
 	.placeholder {
 		width: 30%;
 		gap: 10px;
@@ -517,8 +531,6 @@ Hero Section
 		background-position: center;
 		position: relative;
 		height: 100vh;
-		/* justify-content: center;
-		align-items: center; */
 	}
 
 	/* contains heading, paragraph, and buttons for the hero image */
@@ -542,6 +554,7 @@ Hero Section
 		display: none;
 	}
 
+	/* overriding global styles */
 	.hero h3 {
 		color: var(--color-white);
 	}
@@ -589,7 +602,6 @@ Community Partnerships Section
 	.community .card-img img {
 		object-fit: cover;
 		object-position: center;
-
 		height: 100%;
 	}
 	/* div holding the h4, p, and button */
@@ -605,6 +617,7 @@ Community Partnerships Section
 		align-items: flex-start;
 	}
 
+	/* overriding the .wrapper class */
 	.community-partnerships-section.wrapper {
 		margin: 0 auto;
 		width: 90%;
@@ -811,6 +824,7 @@ Events and Programs Section
 		flex-direction: column;
 		width: 30%;
 	}
+	/* overriding global styles */
 	.events-and-programs h3 {
 		color: var(--color-white);
 	}
@@ -909,14 +923,16 @@ Events and Programs Section
 	.placeholder {
 		padding: 10px;
 	}
-	.events-and-programs h3 {
-		color: var(--color-white);
-	}
 
-	.events-and-programs h4 {
+	/* overriding global styles */
+	/* .events-and-programs h3 {
+		color: var(--color-white);
+	} */
+
+	/* .events-and-programs h4 {
 		color: var(--color-white);
 	}
 	.events-and-programs p {
 		color: var(--color-white);
-	}
+	} */
 }
