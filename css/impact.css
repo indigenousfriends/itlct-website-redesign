@@ -54,7 +54,9 @@ Section Styles (background, padding, etc.)
 /* icon section code */
 .yellow-background {
 	background: var(--color-yellowgreen);
-	height: 90%;
+	background-size: auto 95%;
+	background-repeat: no-repeat;
+	background-position: center center;
 }
 .icons-parent {
 	display: flex;
@@ -103,6 +105,17 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 /* Tablet and Larger */
 @media screen and (min-width: 768px) {
 	/* Add styles that apply to table and desktop */
+	.icons-parent {
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.icon-child {
+		min-width: 40%;
+	}
+	.yellow-background {
+		background-size: auto 90%;
+	}
 }
 
 /* Desktop Only */
