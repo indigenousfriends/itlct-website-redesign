@@ -1,3 +1,8 @@
+/* Links */
+.image-link {
+	text-decoration: none;
+}
+
 /*
 ===================================
 ===================================
@@ -84,13 +89,12 @@ Hero Section
 }
 
 /* overriding global styles */
-.hero h3 {
-	color: var(--color-onyx);
-}
-
+.hero h3,
 .hero p {
 	color: var(--color-onyx);
+	margin: var(--spacing20);
 }
+
 /* ================================
 Community Partnerships Section
 ===================================  */
@@ -124,11 +128,6 @@ Global Ecosystem Section
 .global-ecosystem {
 	background-color: var(--color-cybergrape);
 	padding-bottom: var(--spacing40);
-}
-
-/* overriding the .wrapper class */
-.global-ecosystem.wrapper {
-	width: 100%;
 }
 
 /* styling for the ecosystem div */
@@ -225,11 +224,6 @@ Our Values Section
 	padding-bottom: var(--spacing40);
 }
 
-/* overriding the .wrapper class */
-.values.wrapper {
-	width: 100%;
-}
-
 /* contains the blue rectangle with divs  */
 .our-values {
 	margin: 0 auto;
@@ -248,16 +242,15 @@ Events and Programs Section
 	width: 80%;
 }
 /* overriding global styles*/
-.events-and-programs h3 {
+.events-and-programs h3,
+.events-and-programs p {
 	color: var(--color-onyx);
 }
 .events-and-programs h4 {
 	margin-bottom: 0;
 	color: var(--color-onyx);
 }
-.events-and-programs p {
-	color: var(--color-onyx);
-}
+
 /* targeting the images in the section */
 .events-and-programs img {
 	margin: 0 auto;
@@ -334,10 +327,7 @@ Hero Section
 	}
 
 	/* overriding global styles */
-	.hero-home h3 {
-		color: var(--color-white);
-	}
-
+	.hero-home h3,
 	.hero-home p {
 		color: var(--color-white);
 	}
@@ -465,15 +455,13 @@ Our Values Section
 Events and Programs Section
 ===================================  */
 	/*overriding global styles  */
-	.events-and-programs h3 {
+	.events-and-programs h3,
+	.events-and-programs p {
 		color: var(--color-onyx);
 	}
 	.events-and-programs h4 {
 		color: var(--color-onyx);
 		margin-bottom: 0;
-	}
-	.events-and-programs p {
-		color: var(--color-onyx);
 	}
 
 	/* if we want column style instead of row */
@@ -555,10 +543,7 @@ Hero Section
 	}
 
 	/* overriding global styles */
-	.hero h3 {
-		color: var(--color-white);
-	}
-
+	.hero h3,
 	.hero p {
 		color: var(--color-white);
 	}
@@ -603,6 +588,7 @@ Community Partnerships Section
 		object-fit: cover;
 		object-position: center;
 		height: 100%;
+		border-radius: 0 10px 10px 0;
 	}
 	/* div holding the h4, p, and button */
 	.community-partner-wrapper {
@@ -825,20 +811,14 @@ Events and Programs Section
 		width: 30%;
 	}
 	/* overriding global styles */
-	.events-and-programs h3 {
+	.events-and-programs h3,
+	.events-and-programs p {
 		color: var(--color-white);
 	}
 
 	.events-and-programs h4 {
 		color: var(--color-white);
 		margin-bottom: 0;
-	}
-	.events-and-programs p {
-		color: var(--color-white);
-	}
-
-	.events-and-programs.wrapper {
-		width: 100%;
 	}
 }
 @media screen and (min-width: 1025px) and (max-width: 1250px) {
@@ -923,16 +903,4 @@ Events and Programs Section
 	.placeholder {
 		padding: 10px;
 	}
-
-	/* overriding global styles */
-	/* .events-and-programs h3 {
-		color: var(--color-white);
-	} */
-
-	/* .events-and-programs h4 {
-		color: var(--color-white);
-	}
-	.events-and-programs p {
-		color: var(--color-white);
-	} */
 }
