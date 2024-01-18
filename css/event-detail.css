@@ -27,9 +27,16 @@ html {
 
 /* Needs to be centered, and button 3 attributes */
 /* Maybe needs to be called on in its own class? */
-.template-wrapper button {
-	align-self: baseline;
-	/* justify-content: center; */
+.template-button {
+	display: flex;
+	min-width: 300px;
+	min-height: 50px;
+	/* Justify content is keeping text middle top but needs to be true middle*/
+	justify-content: center;
+	background-color: var(--color-amaranth);
+	color: var(--color-white);
+	border: none;
+	border-radius: 10px;
 }
 .template-hero-img {
 	padding-top: 80px;
