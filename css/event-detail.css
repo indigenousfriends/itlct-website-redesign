@@ -1,0 +1,42 @@
+html {
+	box-sizing: border-box;
+}
+
+.template-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.template-wrapper img {
+	align-items: center;
+}
+
+.template-wrapper h4 {
+	text-align: center;
+	color: var(--color-onyx);
+}
+
+.template-hero-img {
+	padding-top: 80px;
+}
+
+.template-main-header {
+	padding: top 60px;
+}
+
+.template-p {
+	color: var(--color-onyx);
+}
+
+.template-button {
+}
+
+.template-highlights {
+	display: flex;
+	justify-content: center;
+	/* background: var
+		(--color-bluepurple: linear-gradient(0deg, #6c4681 -5.71%, #184f85 103.44%)); */
+}
