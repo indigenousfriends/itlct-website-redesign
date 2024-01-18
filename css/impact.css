@@ -21,6 +21,19 @@ Page Component Styles (icon grid, team member card)
 Section Styles (background, padding, etc.)
 ===================================
 */
+
+/* desktop page wrapper */
+/* .impact-wrapper {
+    width: ;
+} */
+p, h4 {
+    color: var(--color-onyx);
+}
+
+img {
+    margin: 0 auto;
+    border-radius: 10px;
+}
 /* Hero/Title */
 .hero {
 	width: 100%;
@@ -39,13 +52,13 @@ Section Styles (background, padding, etc.)
 	width: 90%;
 	margin: 0 auto;
 }
-.title h2 {
+.hero h2 {
 	margin-top: 0px;
 	margin-bottom: var(--spacing20);
 	font-size: var(--font36);
 	line-height: var(--line-height40);
 }
-.title p {
+.hero p {
 	margin: 0px;
 	color: var(--ONYX, #424241);
 	text-align: center;
