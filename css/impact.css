@@ -51,6 +51,22 @@ Section Styles (background, padding, etc.)
 	text-align: center;
 }
 
+/* icon section code */
+.icons-parent {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.icons-child {
+	display: flex;
+	align-content: center;
+	text-align: center;
+}
+
+.icons-child img {
+	margin: 0 auto;
+}
 /* 
 ===================================
 Media Queries (overriding styles for different screen sizes)
@@ -65,7 +81,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 
 /* Tablet Only */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-	/* Add styles that only apply to tablet. These are usually fixes to get resposnivenes right */
+	/* Add styles that only apply to tablet. These are usually fixes to get responsiveness right */
 }
 
 /* Tablet and Larger */
@@ -76,4 +92,14 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 /* Desktop Only */
 @media screen and (min-width: 1024px) {
 	/* Add styles that apply specifically to desktop */
+
+	/* icon section code */
+	.icons-parent {
+		display: flex;
+		position: relative;
+	}
+
+	.icons-child {
+		position: absolute;
+	}
 }
