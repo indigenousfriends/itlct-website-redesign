@@ -21,6 +21,35 @@ Page Component Styles (icon grid, team member card)
 Section Styles (background, padding, etc.)
 ===================================
 */
+/* Hero/Title */
+.hero {
+	width: 100%;
+	text-align: center;
+}
+.title-img {
+	width: 100%;
+	min-height: 250px;
+	margin-bottom: 60px;
+	background-image: url("/assets/images/pages/our-impact/vr-ar.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.title-text {
+	width: 90%;
+	margin: 0 auto;
+}
+.title h2 {
+	margin-top: 0px;
+	margin-bottom: var(--spacing20);
+	font-size: var(--font36);
+	line-height: var(--line-height40);
+}
+.title p {
+	margin: 0px;
+	color: var(--ONYX, #424241);
+	text-align: center;
+}
 
 /* 
 ===================================
