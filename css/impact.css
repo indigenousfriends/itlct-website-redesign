@@ -21,6 +21,14 @@ Page Component Styles (icon grid, team member card)
 Section Styles (background, padding, etc.)
 ===================================
 */
+
+/* desktop page wrapper */
+/* .impact-wrapper {
+    width: ;
+} */
+p, h4 {
+    color: var(--color-onyx);
+}
 /* Hero/Title */
 .hero {
 	width: 100%;
@@ -39,16 +47,31 @@ Section Styles (background, padding, etc.)
 	width: 90%;
 	margin: 0 auto;
 }
-.title h2 {
+.hero h2 {
 	margin-top: 0px;
 	margin-bottom: var(--spacing20);
 	font-size: var(--font36);
 	line-height: var(--line-height40);
 }
-.title p {
+.hero p {
 	margin: 0px;
 	color: var(--ONYX, #424241);
 	text-align: center;
+}
+
+/* tech around us section */
+.red-background {
+    background-color: var(--color-amaranth);
+    padding: var(--spacing40) var(--spacing20);
+}
+
+img {
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.red-block {
+    display: none;
 }
 
 /* 
@@ -71,6 +94,46 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 /* Tablet and Larger */
 @media screen and (min-width: 768px) {
 	/* Add styles that apply to table and desktop */
+
+    /* tech around us section */
+    .red-background {
+        background-color: transparent;
+        padding: 60px;
+        border: 1px solid black;
+    }
+
+    .tech-around,
+    .responsible-parent {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+    .tech-around > * {
+        width: 50%;
+    }
+
+    .tech-img img {
+        z-index: 2;
+    }
+
+    .red-block {
+        display: block;
+        min-width: 60px;
+        width: 25%;
+        min-height: 60px;
+        height: 25%;
+        background-color: var(--color-amaranth);
+        border-radius: 10px;
+
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        z-index: -1;
+
+    }
+    
 }
 
 /* Desktop Only */
