@@ -6,12 +6,16 @@ html {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	justify-content: center;
 	padding-left: 20px;
 	padding-right: 20px;
+	width: var(--mobile-wrapper-width);
+	margin: 0 auto;
+	max-width: var(--wrapper-width-max);
 }
 
 .template-wrapper img {
-	align-items: center;
+	/* align-items: center; */
 }
 
 .template-wrapper h4 {
@@ -20,15 +24,12 @@ html {
 }
 
 .template-wrapper p {
-	word-wrap: break-word;
 	color: var(--color-onyx);
 	align-items: center;
 }
 
 /* Needs to be centered, and button 3 attributes */
-/* Maybe needs to be called on in its own class? */
 .template-button {
-	display: flex;
 	min-width: 300px;
 	min-height: 50px;
 	/* Justify content is keeping text middle top but needs to be true middle*/
@@ -37,6 +38,12 @@ html {
 	color: var(--color-white);
 	border: none;
 	border-radius: 10px;
+	padding-left: 25px;
+	padding-right: 25px;
+	font-size: 21px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 26px;
 }
 .template-hero-img {
 	padding-top: 80px;
@@ -47,12 +54,17 @@ html {
 }
 
 /* Need to add gradient background, change text to white */
+.template-gradient {
+	display: flex;
+	background-color: var(
+		--color-purpleblue linear-gradient(180deg, #6c4681 -5.71%, #184f85 103.44%)
+	);
+}
 /* this is an H4 */
 .template-highlights {
-	display: flex;
+	/* display: flex; */
 	justify-content: center;
-	/* background: var
-		(--color-bluepurple: linear-gradient(0deg, #6c4681 -5.71%, #184f85 103.44%)); */
+	
 }
 
 .template-concept-img {
