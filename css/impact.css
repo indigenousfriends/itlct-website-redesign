@@ -29,6 +29,9 @@ Section Styles (background, padding, etc.)
 p, h4 {
     color: var(--color-onyx);
 }
+h4 {
+    text-align: center;
+}
 
 img {
     margin: 0 auto;
@@ -51,6 +54,7 @@ img {
 .title-text {
 	width: 90%;
 	margin: 0 auto;
+    margin-bottom: var(--spacing80);
 }
 .hero h2 {
 	margin-top: 0px;
@@ -64,16 +68,16 @@ img {
 	text-align: center;
 }
 
-/* tech around us section */
+/* tech around us AND responsible section */
 .red-background {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     background-color: var(--color-amaranth);
+    padding: 30px;
 }
-.tech-img {
-    /* testing */
-    margin: 100px;
+
+/* margin for our sections with text */
+.tech-around-info,
+.responsible-info {
+    margin: 60px auto;
 }
 
 
@@ -142,11 +146,12 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 
     .tech-around,
     .responsible-parent {
+        margin: 100px auto;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        /* position: relative; */
+    
     }
     .tech-around > * {
         width: 50%;
@@ -158,26 +163,31 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		position: relative;
         border: 1px solid black;
 	}
-    .red-block {
+    .tech-around .red-background {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    .red-block-one {
         background-color: var(--color-amaranth);
         border-radius: 10px;
         display: block;
         min-width: 200px;
         min-height: 200px;
         position: absolute;
-        top: -62px;
-        left: 150px;
+        bottom: -80%;
+        left: 30%;
         transform: translate(-50%, -50%);
 
     }
 	
     .tech-img {
+        margin: 0px;
         position: absolute;
-        top: -25px;
-        right: -92px;
-        width: 60%;
+        left: 60%;
+        width: 85%;
         transform: translate(-50%, -50%);
     }
+    
 
 	/* icon section */
 	.icons-parent {
