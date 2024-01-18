@@ -213,7 +213,7 @@ Our Values Section
 /* contains the blue rectangle with divs  */
 .our-values {
 	margin: 0 auto;
-	padding: 15px;
+	padding: 40px 15px 60px 15px;
 	width: 90%;
 	border-radius: 10px;
 	background-color: var(--color-yaleblue);
