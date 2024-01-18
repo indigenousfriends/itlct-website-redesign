@@ -130,16 +130,16 @@ Feel free to change the min/max-width values to whatever you need. Use variables
         min-width: 200px;
         min-height: 200px;
         position: absolute;
-        top: 40px;
-        left: 90px;
+        top: -62px;
+        left: 150px;
         transform: translate(-50%, -50%);
 
     }
 	
     .tech-img {
         position: absolute;
-        top: -190px;
-        right: -80px;
+        top: -25px;
+        right: -92px;
         width: 60%;
         transform: translate(-50%, -50%);
     }
