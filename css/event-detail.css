@@ -56,15 +56,15 @@ html {
 /* Need to add gradient background, change text to white */
 .template-gradient {
 	display: flex;
-	background-color: var(
-		--color-purpleblue linear-gradient(180deg, #6c4681 -5.71%, #184f85 103.44%)
-	);
+	width: 100%;
+	height: 73px;
+	background-image: linear-gradient(180deg, #184f85 -29.55%, #6c4681 118.18%);
 }
 /* this is an H4 */
 .template-highlights {
 	/* display: flex; */
+	display: flex;
 	justify-content: center;
-	
 }
 
 .template-concept-img {
