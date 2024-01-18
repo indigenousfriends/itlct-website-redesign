@@ -81,6 +81,40 @@ img {
     display: none;
 }
 
+/* icon section code */
+.yellow-background {
+	background: var(--color-yellowgreen);
+	background-size: auto 95%;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.icons-parent {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: var(--color-onyx);
+	border-radius: 10px;
+	padding-top: 80px;
+	padding-bottom: 80px;
+	margin: 0 auto;
+	gap: 40px;
+}
+
+.icon-child {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	text-align: center;
+}
+
+.icon-child img {
+	margin: 0 auto;
+}
+.icon-child h5 {
+	color: var(--color-white);
+	margin: 40px 0 0 0;
+} 
 
 
 /* 
@@ -144,7 +178,19 @@ Feel free to change the min/max-width values to whatever you need. Use variables
         width: 60%;
         transform: translate(-50%, -50%);
     }
-    
+
+	/* icon section */
+	.icons-parent {
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.icon-child {
+		min-width: 40%;
+	}
+	.yellow-background {
+		background-size: auto 90%;
+	}
 }
 
 /* Desktop Only */
