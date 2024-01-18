@@ -15,7 +15,7 @@ html {
 }
 
 .template-wrapper img {
-	/* align-items: center; */
+	align-items: center;
 }
 
 .template-wrapper h4 {
@@ -30,10 +30,9 @@ html {
 
 /* Needs to be centered, and button 3 attributes */
 .template-button {
-	min-width: 300px;
+	width: var(--mobile-wrapper-width);
+	max-width: var(--wrapper-width-max);
 	min-height: 50px;
-	/* Justify content is keeping text middle top but needs to be true middle*/
-	justify-content: center;
 	background-color: var(--color-amaranth);
 	color: var(--color-white);
 	border: none;
@@ -53,18 +52,11 @@ html {
 	padding-top: 60px;
 }
 
-/* Need to add gradient background, change text to white */
+/* Need to fix width of gradient background, change text to white */
 .template-gradient {
 	display: flex;
-	width: 100%;
-	height: 73px;
+	flex-direction: column;
 	background-image: linear-gradient(180deg, #184f85 -29.55%, #6c4681 118.18%);
-}
-/* this is an H4 */
-.template-highlights {
-	/* display: flex; */
-	display: flex;
-	justify-content: center;
 }
 
 .template-concept-img {
