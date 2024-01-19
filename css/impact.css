@@ -75,6 +75,11 @@ img {
 	padding: 30px;
 }
 
+/* .tech-around-info heading styles */
+.block {
+	display: block;
+}
+
 /* margin for our sections with text */
 .tech-around-info,
 .responsible-info {
