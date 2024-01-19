@@ -209,7 +209,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	.red-background {
 		background-color: transparent;
 		position: relative;
-		border: 1px solid black;
+		/* border: 1px solid black; */
 	}
 
 	.tech-around .red-background,
