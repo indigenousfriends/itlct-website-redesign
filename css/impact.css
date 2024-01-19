@@ -81,7 +81,7 @@ img {
 }
 
 
-.red-block {
+.red-block-one, .red-block-two {
     display: none;
 }
 
@@ -184,7 +184,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	}
 
 
-    /* tech around us section */
+    /* top and bottom section */
 
     .tech-around,
     .responsible-parent {
@@ -198,17 +198,21 @@ Feel free to change the min/max-width values to whatever you need. Use variables
     .tech-around > * {
         width: 50%;
     }
-
+	.responsible-parent > * {
+		width: 50%;
+	}
 
     .red-background {
 		background-color: transparent;
 		position: relative;
         border: 1px solid black;
 	}
-    .tech-around .red-background {
+
+    .tech-around .red-background, .responsible-parent .red-background {
         max-width: 500px;
         margin: 0 auto;
     }
+	/* tech around section */
     .red-block-one {
         background-color: var(--color-amaranth);
         border-radius: 10px;
@@ -229,6 +233,27 @@ Feel free to change the min/max-width values to whatever you need. Use variables
         width: 85%;
         transform: translate(-50%, -50%);
     }
+
+	/* responsible section */
+	.red-block-two {
+		background-color: var(--color-amaranth);
+        border-radius: 10px;
+        display: block;
+        min-width: 200px;
+        min-height: 200px;
+        position: absolute;
+        bottom: -80%;
+        left: 80%;
+        transform: translate(-50%, -50%);
+	}
+
+	.responsible-img {
+		margin: 0px;
+        position: absolute;
+        left: 40%;
+        width: 85%;
+        transform: translate(-50%, -50%);
+	}
     
 
 	/* icon section */
