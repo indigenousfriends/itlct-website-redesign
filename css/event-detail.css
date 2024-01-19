@@ -91,4 +91,13 @@ html {
 /* Desktop Only */
 @media screen and (min-width: 1024px) {
 	/* Add styles that apply specifically to desktop */
+
+	.template-wrapper {
+		display: flex;
+		flex-direction: column;
+	}
+	.template-button {
+		justify-content: center;
+		padding: 31px 714px 139px 714px;
+	}
 }
