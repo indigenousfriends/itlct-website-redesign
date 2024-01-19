@@ -72,7 +72,7 @@ Page Component Styles (icon grid, team member card)
 	margin-bottom: 100px;
 }
 
-.h3-black {
+.h1-black {
 	color: var(--color-onyx);
 	margin: 60px 0 20px 0;
 }
@@ -101,13 +101,21 @@ Page Component Styles (icon grid, team member card)
 	background-color: var(--color-amaranth);
 }
 
-.sustainability-text, .authenticity-text, .education-text, .tech-text {
+.sustainability-text,
+.authenticity-text,
+.education-text,
+.tech-text {
 	display: flex;
 	flex-direction: column;
 	border-radius: 10px;
 }
 
-.copperback, .sustainability-text, .grapeback, .authenticity-text, .education-text, .tech-text {
+.copperback,
+.sustainability-text,
+.grapeback,
+.authenticity-text,
+.education-text,
+.tech-text {
 	margin-bottom: 20px;
 }
 
@@ -268,12 +276,16 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	.values-card {
 		margin: 0px 10px;
 	}
-	.copperback, .authenticity, .education {
+	.copperback,
+	.authenticity,
+	.education {
 		margin-right: 10px;
 	}
-	.sustainability-text, .grapeback,.technology{
-        margin-left: 10px;
-    }
+	.sustainability-text,
+	.grapeback,
+	.technology {
+		margin-left: 10px;
+	}
 	.values-card h4 {
 		margin: 20px 0px 0px 20px;
 		font-size: var(--font36);
@@ -288,10 +300,19 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		line-height: var(--line-height26);
 		margin: var(--spacing20);
 	}
-	.copperback h4, .amaraback h4, .grapeback h4, .blueback h4, .copperback p, .amaraback p, .grapeback p, .blueback p {
+	.copperback h4,
+	.amaraback h4,
+	.grapeback h4,
+	.blueback h4,
+	.copperback p,
+	.amaraback p,
+	.grapeback p,
+	.blueback p {
 		/* margin-left: 60px; */
 	}
-	.onyxback, .grapeback, .tealback {
+	.onyxback,
+	.grapeback,
+	.tealback {
 		padding-right: 44px;
 	}
 
@@ -327,18 +348,18 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 				rgba(27, 27, 27, 0) 99.04%
 			),
 			url(../assets/images/pages/values/sustainability.jpg);
-			background-position: center center;
-			background-size: cover;
-			background-repeat: no-repeat;
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
 	}
 	.authenticity {
 		background-image: linear-gradient(
-			88deg,
-			#b91515 47.26%,
-			rgba(185, 21, 21, 0.73) 55.57%,
-			rgba(119, 45, 45, 0.4) 68.47%
-		),
-		url(../assets/images/pages/values/authenticity.jpg);
+				88deg,
+				#b91515 47.26%,
+				rgba(185, 21, 21, 0.73) 55.57%,
+				rgba(119, 45, 45, 0.4) 68.47%
+			),
+			url(../assets/images/pages/values/authenticity.jpg);
 		background-position: center center;
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -350,9 +371,9 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 				rgba(24, 79, 133, 0) 83.39%
 			),
 			url(../assets/images/pages/values/education.jpg);
-			background-position: center center;
-			background-size: cover;
-			background-repeat: no-repeat;
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
 	}
 
 	.technology {
@@ -362,11 +383,16 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 				rgba(0, 122, 128, 0) 80.36%
 			),
 			url(../assets/images/pages/values/techinnovation.jpg);
-			background-position: center center;
-			background-size: cover;
-			background-repeat: no-repeat;
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
 	}
-	.copperback, .sustainability-text, .grapeback, .authenticity-text, .education-text, .tech-text {
+	.copperback,
+	.sustainability-text,
+	.grapeback,
+	.authenticity-text,
+	.education-text,
+	.tech-text {
 		margin-bottom: 0px;
 	}
 	/* Changing values card imgs to background imgs */
@@ -411,11 +437,13 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		max-width: 40%;
 	}
 	/* onyx and amaranth 60%*/
-	.onyxback, .authenticity {
+	.onyxback,
+	.authenticity {
 		max-width: 60%;
 	}
 	/* blue and teal 50%*/
-	.education, .technology{
+	.education,
+	.technology {
 		width: 50%;
 	}
 
@@ -444,7 +472,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	/* Empowerment red background needs to change size and position on X-Y */
 
 	/* All Text white except Empowerment section and We Support Header */
-	.h3-black {
+	.h1-black {
 		color: var(--color-white);
 	}
 	.values-head p {
@@ -472,17 +500,17 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		line-height: var(--line-height28);
 	}
 	.support svg {
-		
 		margin-left: 30px;
 		width: 39px;
 		height: 39px;
 	}
 	.support-logos {
 		display: flex;
-        flex-direction: row;
+		flex-direction: row;
 		align-items: baseline;
 	}
-	.support-logo-01, .support-logo-02 {
+	.support-logo-01,
+	.support-logo-02 {
 		width: auto;
 		height: 100px;
 	}
@@ -491,12 +519,13 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		display: flex;
 		flex-direction: row-reverse;
 	}
-	.empowering-text, .empowering-img-block {
+	.empowering-text,
+	.empowering-img-block {
 		width: 50%;
 	}
-	.empowering-text{
+	.empowering-text {
 		text-align: left;
-		padding-right:270px;
+		padding-right: 270px;
 	}
 	.empowering-text h4 {
 		font-size: var(--font46);
@@ -513,24 +542,23 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		position: relative;
 	}
 	.empowering-img-block img {
-	position: absolute;
-	top: 15%;
-	left: 25%;
-	object-fit: cover;
-	aspect-ratio: 1;
-	width: 55%;
-	border-radius: 10px;
+		position: absolute;
+		top: 15%;
+		left: 25%;
+		object-fit: cover;
+		aspect-ratio: 1;
+		width: 55%;
+		border-radius: 10px;
 	}
 	.empowering-img-block::before {
-	position: absolute;
-	top: 10%;
-	left: 20%;
-	content: " ";
-	background-color: var(--color-amaranth);
-	border-radius: 10px;
-	width: 299px;
-	height: 299px;
-	z-index: -1;
+		position: absolute;
+		top: 10%;
+		left: 20%;
+		content: " ";
+		background-color: var(--color-amaranth);
+		border-radius: 10px;
+		width: 299px;
+		height: 299px;
+		z-index: -1;
 	}
-	
 }
