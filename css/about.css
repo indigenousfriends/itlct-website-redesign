@@ -26,18 +26,14 @@ Page Component Styles (icon grid, team member card)
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	/* max-height: 120px; */
 }
 
 .hero-text {
 	border: 2px solid transparent;
 	width: 369px;
-	/* display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center; */
 }
 
+/* making text content black and centering it */
 .h3-styles,
 section div p {
 	color: var(--color-onyx);
@@ -82,9 +78,7 @@ p,
 	justify-content: center;
 	align-items: center;
 	height: 45vh;
-	/* Adjust the height as needed */
 	padding: 20px;
-	/* Add padding to the container */
 }
 
 /* Button styles */
@@ -107,7 +101,6 @@ button {
 }
 
 button:hover {
-	/* background: var(--button3-hover-border); */
 	background: rgb(0, 0, 0, 0);
 	border: 3px solid var(--button3-color);
 	color: var(--color-onyx);
