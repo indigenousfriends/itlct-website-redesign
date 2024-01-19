@@ -39,7 +39,8 @@ Section Styles (background, padding, etc.)
 	width: 90%;
 	margin: 0 auto;
 }
-.title h2 {
+.title h1 {
+	color: var(--color-onyx);
 	margin-top: 0px;
 	margin-bottom: var(--spacing20);
 	font-size: var(--font36);
