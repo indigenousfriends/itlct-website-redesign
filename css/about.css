@@ -38,7 +38,7 @@ Page Component Styles (icon grid, team member card)
 	align-items: center; */
 }
 
-h3,
+.h3-styles,
 section div p {
 	color: var(--color-onyx);
 	text-align: center;
@@ -61,11 +61,11 @@ section div p {
 }
 
 p,
-h4 {
+.h4-styles {
 	color: var(--color-onyx);
 }
 
-h4 {
+.h4-styles {
 	text-align: center;
 }
 
@@ -164,12 +164,12 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		max-width: 800px;
 	}
 
-	h3,
+	.h3-styles,
 	section div p {
 		color: var(--color-white);
 	}
 
-	h3 {
+	.h3-styles {
 		font-family: var(--main-font);
 		font-size: var(--font56);
 		font-style: normal;
@@ -187,7 +187,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		text-align: left;
 	}
 
-	h4 {
+	.h4-styles {
 		font-size: var(--font46);
 		font-weight: var(--font-weight-bold);
 		line-height: var(--line-height50);
