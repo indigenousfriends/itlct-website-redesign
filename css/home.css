@@ -339,6 +339,7 @@ Community Partnerships Section
 	/*targeting the div holding text and button  */
 	.partnerships-paragraph {
 		width: 80%;
+		margin: 0 auto;
 	}
 
 	/* overriding global styles */
@@ -594,14 +595,19 @@ Community Partnerships Section
 	/* div holding the h4, p, and button */
 	.partnerships-paragraph {
 		margin: 0 auto;
-		padding-left: var(--spacing80);
-		padding-right: var(--spacing84);
-		padding-top: var(--spacing80);
+		padding-left: var(--spacing40);
+		padding-right: var(--spacing40);
+		padding-top: var(--spacing100);
 		padding-bottom: var(--spacing80);
-		width: 60%;
+		width: 40%;
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
+	}
+
+	/* fixing the button width for larger screen sizes */
+	.partnerships-paragraph .button1 {
+		width: 100%;
 	}
 
 	/* overriding the .wrapper class */
