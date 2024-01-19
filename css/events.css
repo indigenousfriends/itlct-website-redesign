@@ -95,7 +95,7 @@ Section Styles (background, padding, etc.)
 	border-radius: 10px;
 	text-align: center;
 }
-.event-page-card-title h3 {
+.event-page-card-title .h3-styles {
 	margin: 0px 0px var(--spacing20) 0px;
 	font-size: var(--font28);
 	line-height: var(--line-height32);
@@ -150,11 +150,14 @@ Section Styles (background, padding, etc.)
 
 /* Upcoming/Previous events text */
 .h4-title {
-	margin: 150px var(--spacing20) var(--spacing20) var(--spacing20);
+	font-size: var(--font28);
+	font-weight: var(--font-weight-bold);
+	line-height: var(--line-height32);
 	color: var(--color-onyx);
+	margin: 150px var(--spacing20) var(--spacing20) var(--spacing20);
 	text-align: center;
 }
-.event-info h4 {
+.event-info .h4-styles {
 	margin: 11px 0px 15px 0px;
 	color: var(--color-onyx);
 }
@@ -192,7 +195,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		height: 300px;
 	}
 	
-	.event-page-card-title h3 {
+	.event-page-card-title .h3-styles {
 		/* reducing margin between h3 and p to fit into smaller card title size */
 		margin: 0px 0px 15px 0px;
 	}
@@ -234,13 +237,13 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		flex-direction: column;
 	}
 	.title-text p,
-	.title-text h2 {
+	.title-text .h2-styles {
 		/* adding width to make sure text stays on left side */
 		width: 40%;
 		text-align: left;
 		color: var(--color-white);
 	}
-	.title-text h2 {
+	.title-text .h2-styles {
 		font-size: var(--font56);
 		line-height: var(--line-height58);
 	}
@@ -356,7 +359,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		height: 126px;
 	}
 
-	.event-page-card-title h3 {
+	.event-page-card-title .h3-styles {
 		font-size: var(--font36);
 		line-height: var(--line-height40);
 	}
