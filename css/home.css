@@ -106,7 +106,7 @@ Community Partnerships Section
 }
 
 /* overriding .wrapper class */
-.community-partnerships-section.wrapper {
+.community-partnerships.wrapper {
 	width: 100%;
 }
 
@@ -117,7 +117,7 @@ Community Partnerships Section
 }
 
 /* targeting button in the div to center it */
-.community-partner-wrapper .button1 {
+.partnerships-paragraph .button1 {
 	margin: 0 auto;
 }
 
@@ -337,12 +337,12 @@ Hero Section
 Community Partnerships Section
 ===================================  */
 	/*targeting the div holding text and button  */
-	.community-partner-wrapper {
+	.partnerships-paragraph {
 		width: 80%;
 	}
 
 	/* overriding global styles */
-	.community-partnerships-section p {
+	.community-partnerships p {
 		color: var(--color-white);
 	}
 
@@ -554,7 +554,7 @@ Community Partnerships Section
 ===================================  */
 
 	/* style for the entire section */
-	.community-partnerships-section {
+	.community-partnerships {
 		margin: 0 auto;
 		width: 80%;
 		padding-top: var(--spacing80);
@@ -562,14 +562,14 @@ Community Partnerships Section
 	}
 
 	/* targeting the text to make it white */
-	.community-partnerships-section p {
+	.community-partnerships p {
 		color: var(--color-white);
 	}
 	/* targeting the button */
-	.community-partnerships-section .button1 {
+	.community-partnerships .button1 {
 		margin: 0;
 	}
-	/* div holding the picture and the community-partner-wrapper */
+	/* div holding the picture and the partnerships-paragraph */
 	.community {
 		display: flex;
 		flex-direction: row-reverse;
@@ -592,7 +592,7 @@ Community Partnerships Section
 		border-radius: 0 10px 10px 0;
 	}
 	/* div holding the h4, p, and button */
-	.community-partner-wrapper {
+	.partnerships-paragraph {
 		margin: 0 auto;
 		padding-left: var(--spacing80);
 		padding-right: var(--spacing84);
@@ -605,7 +605,7 @@ Community Partnerships Section
 	}
 
 	/* overriding the .wrapper class */
-	.community-partnerships-section.wrapper {
+	.community-partnerships.wrapper {
 		margin: 0 auto;
 		width: 90%;
 	}
@@ -839,7 +839,7 @@ Community Partnerships Section
 		width: 100%;
 	}
 	/* targeting the div holding the text and button */
-	.community-partner-wrapper {
+	.partnerships-paragraph {
 		padding-left: 60px;
 		padding-right: var(--spacing40);
 	}

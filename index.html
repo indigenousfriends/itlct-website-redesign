@@ -17,18 +17,24 @@
 	</head>
 
 	<body>
-		<!-- Header Navigation-->
+		<!-- header section -->
 
-		<!-- Hero -->
+		<!-- =======================
+		Hero Section
+		========================== -->
+
+		<!-- "hero" is the class for the entire section -->
 		<section class="hero">
-			<!-- image of girl with flower -->
-
+			<!-- image of girl with dandelion -->
+			<!-- this image is only displayed on mobile and does not use a source set like the other sections -->
 			<img
 				src="./assets/images/pages/home/mobile/hero-home-mobile-2.jpg"
 				alt="a little girl holding a flower"
 			/>
 
-			<!-- this div holds the heading and paragraph for the hero image -->
+			<!-- "hero-home" holds the heading, paragraph and buttons for the hero image section -->
+			<!-- global class of "wrapper" is applied -->
+			<!-- "align-text" is a home-page class to center the text -->
 			<div class="hero-home wrapper align-text">
 				<h3>Preserving Tomorrow by Building Today</h3>
 				<p>
@@ -37,10 +43,12 @@
 					to thrive authentically and on their own terms with digital technology
 					both now and in the future.
 				</p>
+				<!-- about us "button" visible on mobile style only -->
 				<div>
 					<button class="button3">About US</button>
 				</div>
-				<!-- this div holds the buttons for the hero section -->
+				<!-- "btn-container" holds the other two buttons for the hero section -->
+				<!-- these buttons are "hidden" for mobile and only visible for tablet and larger -->
 				<div class="hidden btn-container">
 					<button class="hidden button1">Our Impact</button>
 					<button class="hidden button1">Our Values</button>
@@ -50,10 +58,16 @@
 
 		<!-- Main content -->
 
-		<!-- community partnerships section-->
-		<section class="community-partnerships-section wrapper">
+		<!-- =======================
+		Community Partnerships Section
+		========================== -->
+
+		<!-- "community-partnerships" is the tag used to target the entire section-->
+		<!-- global class of "wrapper" is applied -->
+		<section class="community-partnerships wrapper">
+			<!-- "community" contains the image and the "partnerships-paragraph" -->
 			<div class="community align-text">
-				<!-- image community partnerships.jpg-->
+				<!-- image source set used here - community partnerships.jpg and partnerships-mobile.jpg-->
 				<picture class="card-img">
 					<source
 						media="(min-width:1025px)"
@@ -64,10 +78,9 @@
 						alt="a group of people"
 					/>
 				</picture>
-				<!-- div holding text and button-->
-
-				<div class="community-partner-wrapper wrapper">
-					<!-- background color amaranth -->
+				<!-- "partnerships-paragraph" contains the header, paragraph text, and button on amaranth background-->
+				<!-- global class of "wrapper" is applied -->
+				<div class="partnerships-paragraph wrapper">
 					<h4>Community Partnerships</h4>
 
 					<p>
@@ -81,12 +94,16 @@
 			</div>
 		</section>
 
-		<!-- A global ecosystem section -->
+		<!-- =======================
+		Global Ecosystem Section
+		========================== -->
+
+		<!-- "global-ecosystem" targets the entire section -->
+		<!-- on tablet and larger, this is where the bg color 'bluepurple' with vector-1 svg  is applied-->
 		<section class="global-ecosystem">
-			<!-- on desktop background color - bluepurple gradient with vector-1 svg layer-->
-			<!-- this div holds the entire section -->
+			<!-- "ecosystem" holds the cybergrape "ecosystem-subsection", and the onyx "blockquote" -->
 			<div class="ecosystem wrapper align-text">
-				<!-- this div is holding the heading and paragraph -->
+				<!-- "ecosystem-subsection" is cybergrape and holds heading and paragraph -->
 				<div class="ecosystem-subsection">
 					<h4>A Global Ecosystem</h4>
 					<p>
@@ -99,7 +116,7 @@
 						digital technology.
 					</p>
 				</div>
-				<!-- this div holds the quote block - background color onyx -->
+				<!-- "blockquote" holds the onyx quote  block -->
 				<div class="blockquote">
 					<p>
 						We believe in an authentic, responsible, inclusive, and sustainable
@@ -110,14 +127,23 @@
 			</div>
 		</section>
 
-		<!-- what we do section -->
+		<!-- =======================
+		What We Do Section
+		========================== -->
+
+		<!-- "what-we-do" targets the whole section -->
+		<!-- global class of "wrapper" is applied -->
 		<section class="what-we-do wrapper">
+			<!-- "align-text" is a home-page class to center the text -->
 			<h3 class="align-text">What We Do</h3>
-			<!-- div holds all 3 sections of what we do-->
+
+			<!-- "card-container" holds all 3 "home-card" divs-->
 			<div class="card-container">
-				<!-- div for digital fluency card - on a teal background -->
+				<!-- "digital fluency" tag to create a teal background -->
+				<!-- "home-card" keeps cards uniform -->
 				<div class="digital-fluency home-card">
-					<!-- img for digital fluency -->
+					<!-- "card-img" tag targets the image on the card -->
+					<!-- img for digital fluency uses a source set with digital-fluency.jpg and digital-fluency-mobile.jpg-->
 					<picture class="card-img">
 						<source
 							media="(min-width:768px)"
@@ -129,7 +155,7 @@
 						/>
 					</picture>
 
-					<!-- div that holds the heading and text -->
+					<!-- "text-container" adds a margin to the heading and paragraph-->
 					<div class="text-container">
 						<h4>Digital Fluency</h4>
 						<p>
@@ -140,9 +166,11 @@
 					</div>
 				</div>
 
-				<!-- div for community-engagement card - on a copper background -->
+				<!-- "community-engagement" tag to create a copper background -->
+				<!-- "home-card" keeps cards uniform -->
 				<div class="community-engagement home-card">
-					<!-- img - community engagement -->
+					<!-- "card-img" tag targets the image on the card -->
+					<!-- img for community-engagement uses a source set community-engagement.jpg and community-engagement-mobile.jpg-->
 					<picture class="card-img">
 						<source
 							media="(min-width:768px)"
@@ -153,7 +181,8 @@
 							alt="a group of people team building"
 						/>
 					</picture>
-					<!-- div that holds the heading and text -->
+
+					<!-- "text-container" adds a margin to the heading and paragraph-->
 					<div class="text-container">
 						<h4>Community Engagement</h4>
 						<p>
@@ -163,9 +192,12 @@
 						</p>
 					</div>
 				</div>
-				<!-- div for technology-programs card - on a yaleblue background -->
+
+				<!-- "technology-programs" tag to create a yaleblue background -->
+				<!-- "home-card" keeps cards uniform -->
 				<div class="technology-programs home-card">
-					<!-- img - digital technology programs -->
+					<!-- "card-img" tag targets the image on the card -->
+					<!-- img for digital technology programs uses a source set technology-programs.jpg and technology-programs-mobile.jpg-->
 					<picture class="card-img">
 						<source
 							media="(min-width:768px)"
@@ -176,7 +208,8 @@
 							alt="a group of people"
 						/>
 					</picture>
-					<!-- div that holds the heading and text -->
+
+					<!-- "text-container" adds a margin to the heading and paragraph-->
 					<div class="text-container">
 						<h4>Digital Technology Programs</h4>
 						<p>
@@ -188,20 +221,27 @@
 			</div>
 		</section>
 
-		<!-- our values section -->
+		<!-- =======================
+		Our Values Section
+		========================== -->
+
+		<!-- "values" targets the entire section -->
+		<!-- "align-text" is a home-page class to center the text -->
+		<!-- on tablet and larger, this is where the bg image "values.jpg"  is applied-->
 		<section class="values align-text">
-			<!-- background image for desktop version in css MQ - our values  -->
-			<!-- div holding text container and our values  -->
+			<!-- "values-holder" holding "text-container" and "our-values" -->
 			<div class="values-holder">
-				<!-- div that is holding header and paragraph text -->
+				<!-- "text-container" adds a margin to the heading and paragraph-->
 				<div class="text-container">
 					<h4>Our Values</h4>
 					<p>
 						Appreciate the past, understand the present, adapt to the future.
 					</p>
 				</div>
-				<!-- div holding all 3 headings and paragraphs with a background color yale blue -->
+
+				<!-- "our-values" is the yaleblue container with 3 sections of text -->
 				<div class="our-values">
+					<!-- past -->
 					<div>
 						<h4>Past</h4>
 						<p>
@@ -209,6 +249,7 @@
 							onto future generations.
 						</p>
 					</div>
+					<!-- present -->
 					<div>
 						<h4>Present</h4>
 						<p>
@@ -216,6 +257,7 @@
 							excellence. Enable creativity and growth.
 						</p>
 					</div>
+					<!-- future -->
 					<div>
 						<h4>Future</h4>
 						<p>
@@ -228,13 +270,23 @@
 			</div>
 		</section>
 
-		<!-- upcoming events and programs section -->
+		<!-- =======================
+		Events and Programs Section
+		========================== -->
+
+		<!-- "events-and-programs" targets the entire section -->
+		<!-- on desktop, this is where the bg color 'bluepurple' with vector-2 svg  is applied-->
 		<section class="events-and-programs">
+			<!-- "align-text" is a home-page class to center the text -->
 			<h3 class="align-text">Upcoming Events and Programs</h3>
-			<!-- in MQ: desktop background color is bluepurple gradient with vector-2 svg layer -->
+			<!-- "events-container" holds the "placeholder" divs - applying flexbox and styling to them -->
+			<!-- global class of "wrapper" is applied -->
 			<div class="events-container wrapper">
+				<!-- "placeholder" is the linked div that holds the image and the event heading and description -->
 				<div class="placeholder">
+					<!-- "image-link" is used to remove the underline for the link -->
 					<a href="#" class="image-link">
+						<!-- the image is a source set, currently using events-placeholder.jpg and events-placeholder-mobile.jpg -->
 						<picture>
 							<source
 								media="(min-width:768px)"
@@ -245,14 +297,18 @@
 								alt="a person with a globe"
 							/>
 						</picture>
+						<!-- event-description contains and styles the heading and paragraph -->
 						<div class="event-description">
 							<h4>Walking in Multiple Worlds</h4>
 							<p>Is an ITLCT program series consisting of global workshops</p>
 						</div>
 					</a>
 				</div>
+				<!-- "placeholder" is the linked div that holds the image and the event heading and description -->
 				<div class="placeholder">
+					<!-- "image-link" is used to remove the underline for the link -->
 					<a href="#" class="image-link">
+						<!-- the image is a source set, currently using events-placeholder.jpg and events-placeholder-mobile.jpg -->
 						<picture>
 							<source
 								media="(min-width:768px)"
@@ -263,14 +319,18 @@
 								alt="a person with a globe"
 							/>
 						</picture>
+						<!-- event-description contains and styles the heading and paragraph -->
 						<div class="event-description">
 							<h4>Walking in Multiple Worlds</h4>
 							<p>Is an ITLCT program series consisting of global workshops</p>
 						</div>
 					</a>
 				</div>
+				<!-- "placeholder" is the linked div that holds the image and the event heading and description -->
 				<div class="placeholder">
+					<!-- "image-link" is used to remove the underline for the link -->
 					<a href="#" class="image-link">
+						<!-- the image is a source set, currently using events-placeholder.jpg and events-placeholder-mobile.jpg -->
 						<picture>
 							<source
 								media="(min-width:768px)"
@@ -281,6 +341,7 @@
 								alt="a person with a globe"
 							/>
 						</picture>
+						<!-- event-description contains and styles the heading and paragraph -->
 						<div class="event-description">
 							<h4>Walking in Multiple Worlds</h4>
 							<p>Is an ITLCT program series consisting of global workshops</p>
