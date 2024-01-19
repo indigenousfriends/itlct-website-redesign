@@ -50,7 +50,7 @@ Page Component Styles (icon grid, team member card)
 .values-card img {
 	margin-bottom: 20px;
 }
-.values-card h4 {
+.values-card h2 {
 	margin: 20px 0px 0px 0px;
 	font-size: var(--font28);
 	font-weight: var(--font-weight-bold);
@@ -162,12 +162,12 @@ Page Component Styles (icon grid, team member card)
 }
 /* Turns We Support to Red */
 /* inline block allows the alignment with heart icon but doesn't fill desktop */
-.support-header h4,
+.support-header h2,
 .support-header svg {
 	margin: 90px 0px 20px 0px;
 	color: var(--color-amaranth);
 }
-.support-text h4 {
+.support-text h2 {
 	font-size: var(--font28);
 	font-weight: var(--font-weight-bold);
 	line-height: var(--line-height32);
@@ -202,7 +202,7 @@ Page Component Styles (icon grid, team member card)
 }
 
 /* Turns Title and Paragraph to Black */
-.empowering h4 {
+.empowering h2 {
 	font-size: var(--font28);
 	font-weight: var(--font-weight-bold);
 	line-height: var(--line-height32);
@@ -286,7 +286,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	.technology {
 		margin-left: 10px;
 	}
-	.values-card h4 {
+	.values-card h2 {
 		margin: 20px 0px 0px 20px;
 		font-size: var(--font36);
 		font-weight: var(--font-weight-bold);
@@ -300,16 +300,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		line-height: var(--line-height26);
 		margin: var(--spacing20);
 	}
-	.copperback h4,
-	.amaraback h4,
-	.grapeback h4,
-	.blueback h4,
-	.copperback p,
-	.amaraback p,
-	.grapeback p,
-	.blueback p {
-		/* margin-left: 60px; */
-	}
+
 	.onyxback,
 	.grapeback,
 	.tealback {
@@ -484,13 +475,13 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	.support {
 		padding-bottom: 116px;
 	}
-	.support h4 {
+	.support h2 {
 		font-size: var(--font46);
 		font-weight: var(--font-weight-bold);
 		line-height: var(--line-height50);
 		width: 60%;
 	}
-	.support-header h4 {
+	.support-header h2 {
 		width: auto;
 	}
 
@@ -526,8 +517,10 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	.empowering-text {
 		text-align: left;
 		padding-right: 270px;
+		color: var(--color-onyx);
 	}
-	.empowering-text h4 {
+	.empowering-text h2 {
+		/* color: var(--color-onyx); */
 		font-size: var(--font46);
 		font-weight: var(--font-weight-bold);
 		line-height: var(--line-height50);
