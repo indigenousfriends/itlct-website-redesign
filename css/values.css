@@ -44,8 +44,9 @@ Page Component Styles (icon grid, team member card)
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	text-align: center;
+	/* text-align: center; */
 	margin: 0px 20px;
+	padding: 0 20px 0 20px;
 }
 .values-card img {
 	margin-bottom: 20px;
@@ -62,7 +63,7 @@ Page Component Styles (icon grid, team member card)
 	font-size: var(--font16);
 	font-weight: var(--font-weight-regular);
 	line-height: var(--line-height20);
-	margin: var(--spacing20);
+	/* margin: var(--spacing20); */
 }
 /* Turns Our Values Title Black */
 .values-head {
@@ -160,12 +161,10 @@ Page Component Styles (icon grid, team member card)
 	font-weight: var(--font-weight-bold);
 	line-height: var(--line-height32);
 }
-/* Turns We Support to Red */
 /* inline block allows the alignment with heart icon but doesn't fill desktop */
 .support-header h4,
 .support-header svg {
 	margin: 90px 0px 20px 0px;
-	color: var(--color-amaranth);
 }
 .support-text h2 {
 	font-size: var(--font28);
