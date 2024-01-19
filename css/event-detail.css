@@ -28,22 +28,33 @@ html {
 	align-items: center;
 }
 
-/* Needs to be centered, and button 3 attributes */
 .template-button {
-	width: var(--mobile-wrapper-width);
-	max-width: var(--wrapper-width-max);
+	display: flex;
+	justify-content: center;
+	padding-left: 45px;
+	padding-right: 45px;
+	padding-bottom: 150px;
+}
+
+.button3 {
+	min-width: 300px;
 	min-height: 50px;
-	background-color: var(--color-amaranth);
-	color: var(--color-white);
+	padding: 11px 92px;
 	border: none;
 	border-radius: 10px;
-	padding-left: 25px;
-	padding-right: 25px;
-	font-size: 21px;
-	font-style: normal;
-	font-weight: 700;
-	line-height: 26px;
+	background-color: var(--button2-color);
+	color: var(--color-white);
+	font-family: var(--main-font);
+	font-weight: var(--font-weight-bold);
+	font-size: var(--font21);
+	cursor: pointer;
 }
+.button3:hover,
+.button3:focus {
+	background-color: var(--button3-hover-border);
+	color: var(--color-onyx);
+}
+
 .template-hero-img {
 	padding-top: 80px;
 }
