@@ -238,7 +238,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	.tech-img {
 		margin: 0px;
 		position: absolute;
-		left: 60%;
+		left: 55%;
 		width: 85%;
 		transform: translate(-50%, -50%);
 	}
