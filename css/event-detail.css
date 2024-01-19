@@ -7,8 +7,6 @@ html {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	padding-left: 20px;
-	padding-right: 20px;
 	width: var(--mobile-wrapper-width);
 	margin: 0 auto;
 	max-width: var(--wrapper-width-max);
@@ -18,22 +16,20 @@ html {
 	align-items: center;
 }
 
-.template-wrapper h4 {
+.template-main-header {
 	text-align: center;
 	color: var(--color-onyx);
+	padding: 0 20px 0px 20px;
 }
 
 .template-wrapper p {
 	color: var(--color-onyx);
-	align-items: center;
+	padding: 0 20px 0px 20px;
 }
 
 .template-button {
 	display: flex;
-	justify-content: center;
-	padding-left: 45px;
-	padding-right: 45px;
-	padding-bottom: 150px;
+	padding: 40px 45px 150px 40px;
 }
 
 .button3 {
@@ -63,13 +59,16 @@ html {
 	padding-top: 60px;
 }
 
-/* Need to fix width of gradient background, change text to white */
 .template-gradient {
-	display: flex;
-	flex-direction: column;
+	display: block;
+	min-width: 390px;
+	min-height: 73px;
 	background-image: linear-gradient(180deg, #184f85 -29.55%, #6c4681 118.18%);
 }
-
+.template-highlights {
+	color: var(--color-white);
+	text-indent: 20%;
+}
 .template-concept-img {
 	padding-top: 40px;
 }
