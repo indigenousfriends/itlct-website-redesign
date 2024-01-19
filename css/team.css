@@ -306,7 +306,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		background-image: url("/assets/images/pages/our-team/desktop/header-section-background.png");
 		background-size: cover;
 		background-position: center;
-
+		background-color: var(--color-yaleblue);
 		display: flex;
 		align-items: center;
 	}
