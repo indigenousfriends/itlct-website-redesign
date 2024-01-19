@@ -47,7 +47,7 @@ Section Styles (background, padding, etc.)
 }
 .title p {
 	margin: 0px;
-	color: var(--ONYX, #424241);
+	color: var(--color-onyx);
 	text-align: center;
 }
 
@@ -59,7 +59,7 @@ Section Styles (background, padding, etc.)
 /* card img */
 .event-page-card-img {
 	width: 100%;
-	height: 204px;
+	height: var(--spacing213);
 	border-radius: 10px;
 	background-size: cover;
 	background-position: center;
@@ -135,6 +135,9 @@ Section Styles (background, padding, etc.)
 	column-gap: var(--spacing40);
 }
 /* image and text containers for upcoming/previous events */
+.event {
+	max-width: 350px;
+}
 .event-img,
 .event-info {
 	width: 100%;
