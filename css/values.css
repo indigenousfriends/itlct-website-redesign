@@ -437,15 +437,6 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		width: 50%;
 	}
 
-	.onyxback,
-	.amaraback,
-	.blueback,
-	.tealback {
-		background-position: center center;
-		background-size: cover;
-		background-repeat: no-repeat;
-		position: relative;
-	}
 	/* imgs need to change from -m to normal desktop size */
 	/* Imgs, gradients, background colors */
 
