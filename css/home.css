@@ -27,46 +27,6 @@ Styles for home-page
 	padding-bottom: var(--spacing10);
 }
 
-/* button styles */
-.button1 {
-	display: flex;
-	width: 300px;
-	height: 50px;
-	justify-content: center;
-	align-items: center;
-	gap: 10px;
-	border-radius: 10px;
-	border-color: var(--color-white);
-	background: rgb(0, 0, 0, 0);
-	color: var(--color-white);
-	border: 3px solid var(--color-white);
-	font-size: var(--font21);
-	font-weight: var(--font-weight-bold);
-	line-height: var(--line-height26);
-}
-
-.button1:hover {
-	background: var(--color-white);
-	color: var(--color-onyx);
-}
-
-.button3 {
-	min-width: 300px;
-	min-height: 50px;
-	padding: 11px 92px;
-	border: none;
-	border-radius: 10px;
-	background-color: var(--button2-color);
-	color: var(--color-white);
-	font-family: var(--main-font);
-	font-weight: var(--font-weight-bold);
-	font-size: var(--font21);
-}
-.button3:hover {
-	background-color: var(--color-white);
-	color: var(--color-onyx);
-}
-
 /* 
 ===================================
 Mobile Styles 
