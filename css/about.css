@@ -146,8 +146,9 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	.hero-text {
 		position: absolute;
 		z-index: 10;
-		bottom: 20%;
+		top: 43%;
 		width: 25%;
+		min-width: 400px;
 		border: 2px solid transparent;
 		left: 31%;
 		transform: translate(-50%, -33%);
