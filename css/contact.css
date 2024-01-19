@@ -13,11 +13,11 @@
 Page Component Styles (icon grid, team member card)
 ===================================
 */
+.contact-form-parent {
+	min-height: 100vh;
+}
 
 /* contact form */
-.wrapper {
-	width: var(--mobile-wrapper-width);
-}
 .form-input {
 	display: flex;
 	flex-direction: column;
@@ -71,8 +71,8 @@ Section Styles (background, padding, etc.)
 */
 body {
 	background: var(--color-bluepurple);
+	background-repeat: no-repeat;
 	color: var(--color-white);
-	min-height: 100vh;
 }
 h3 {
 	color: var(--color-white);
@@ -124,9 +124,6 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 /* Tablet Only */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
 	/* Add styles that only apply to tablet. These are usually fixes to get resposnivenes right */
-	/* .contact-form-parent {
-		margin: var(--spacing100) var(--spacing80);
-	} */
 	.form-info {
 		width: 50%;
 	}
@@ -145,12 +142,8 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		color: var(--color-white);
 		text-align: left;
 	}
-}
-
-/* for 1300 and larger */
-@media screen and (min-width: 1300px) {
 	.contact-form-parent {
-		width: 75%;
+		max-width: 1080px;
 		margin: 0 auto;
 	}
 }
