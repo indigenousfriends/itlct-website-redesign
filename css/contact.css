@@ -106,11 +106,12 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		justify-content: space-between;
 		align-items: center;
 		text-align: left;
-		padding: var(--spacing100) 150px;
+		padding: var(--spacing40) 50px;
 		gap: var(--spacing100);
+		line-height: 6px;
 	}
 	.form-info {
-		width: 35%;
+		width: 45%;
 	}
 	.form-info h3 {
 		text-align: left;
@@ -128,7 +129,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		width: 50%;
 	}
 	.contact-form-parent {
-		padding: var(--spacing100) var(--spacing80);
+		padding: var(--spacing40) 50px;
 	}
 }
 
