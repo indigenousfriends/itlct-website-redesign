@@ -34,8 +34,8 @@ html {
 }
 
 .button3 {
-	min-width: 300px;
-	min-height: 50px;
+	/* min-width: 300px;
+	min-height: 50px; */
 	padding: 11px 92px;
 	border: none;
 	border-radius: 10px;
@@ -62,8 +62,8 @@ html {
 
 .template-gradient {
 	display: block;
-	min-width: 390px;
-	min-height: 73px;
+	/* min-width: 390px;
+	min-height: 73px; */
 	background-image: linear-gradient(180deg, #184f85 -29.55%, #6c4681 118.18%);
 }
 .template-highlights {
