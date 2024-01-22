@@ -1,0 +1,404 @@
+/*
+===================================
+===================================
+Styles for an individual page
+
+- Rename this file to match the page you are working on (e.g. home.css, about.css, etc.)
+- Create a new file for your page and link this file to it in the <head> of your HTML document
+- Variables from global.css will work in this CSS file as well. Do not add any variables to this file.
+===================================
+===================================
+*/
+
+/* 
+===================================
+Page Component Styles (icon grid, team member card)
+===================================
+*/
+
+/* 
+===================================
+Section Styles (background, padding, etc.)
+===================================
+*/
+body {
+	font-family: var(--main-font);
+}
+
+h2 {
+	font-family: var(--main-font);
+	font-size: var(--font36);
+	font-weight: var(--font-weight-bold);
+	line-height: var(--line-height40);
+	color: var(--color-onyx);
+}
+
+p {
+	font-family: var(--main-font);
+	font-size: var(--font16);
+	font-weight: var(--font-weight-regular);
+	line-height: var(--line-height20);
+	color: var(--color-onyx);
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+.img-container {
+	/* max-width: 390px; */
+	/* for dev purpose only */
+}
+
+.block {
+	display: block;
+}
+
+/* .logo-icon {
+	width: 75px;
+} */
+
+/* top bar section */
+.top-bar {
+	background-color: var(--color-onyx);
+	color: var(--color-white);
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 20px;
+}
+
+.logo-container {
+	display: flex;
+}
+
+/* desktop menu */
+.desktop-menu {
+	display: none;
+	flex-direction: row;
+	align-items: center;
+}
+
+.desktop-nav {
+	list-style-type: none;
+	text-decoration: none;
+	display: flex;
+	justify-content: space-around;
+}
+
+.desktop-nav li {
+	padding: 20px;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+a:hover,
+a:focus {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+a:visited {
+	color: inherit;
+}
+
+/* Hero section */
+.hero {
+	color: #424241;
+}
+
+/* hello */
+
+/* Styles for the container */
+/* Button styles */
+/* button1 */
+.button1 {
+	display: flex;
+	width: 300px;
+	height: 50px;
+	padding: 11px 92px;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	gap: 10px;
+	flex-shrink: 0;
+	border-radius: 10px;
+	border-color: var(--color-white);
+	background: rgb(0, 0, 0, 0);
+	color: var(--color-white);
+	cursor: pointer;
+	border: 3px solid var(--color-white);
+	font-size: var(--font21);
+	font-weight: var(--font-weight-bold);
+	line-height: var(--line-height26);
+}
+
+.button1:hover {
+	/* background: var(--button3-hover-border); */
+	background: var(--color-white);
+	/* border: 3px solid var(--button3-color); */
+	color: var(--color-onyx);
+}
+/* button2  */
+.button2 {
+	display: flex;
+	width: 300px;
+	height: 50px;
+	padding: 11px 92px;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	flex-shrink: 0;
+	border-radius: 10px;
+	background: var(--button3-color);
+	color: var(--color-white);
+	cursor: pointer;
+	border: none;
+	font-size: var(--font21);
+	font-weight: var(--font-weight-bold);
+	line-height: var(--line-height26);
+}
+
+.button2:hover {
+	/* background: var(--button3-hover-border); */
+	background: rgb(0, 0, 0, 0);
+	border: 3px solid var(--button3-color);
+	color: var(--color-onyx);
+}
+.button3 {
+	display: flex;
+	width: 300px;
+	height: 50px;
+	padding: 11px 92px;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	gap: 10px;
+	flex-shrink: 0;
+	border-radius: 10px;
+	background: var(--button3-color);
+	color: var(--color-white);
+	cursor: pointer;
+	border: none;
+	font-size: var(--font21);
+	font-weight: var(--font-weight-bold);
+	line-height: var(--line-height26);
+}
+
+.button3:hover {
+	/* background: var(--button3-hover-border); */
+	background: rgb(0, 0, 0, 0);
+	border: 3px solid var(--button3-color);
+	color: var(--color-onyx);
+}
+
+/* hello */
+
+/* button {
+	background-color: var(--color-amaranth);
+	color: var(--color-white);
+	font-family: var(--main-font);
+	font-weight: var(--font-weight-bold);
+	padding: 11px 92px;
+	border: 2px solid var(--color-amaranth);
+	border-radius: 10px;
+	cursor: pointer;
+} */
+
+/* button:hover {
+	/* font-family: inherit; this was co*/
+/* font-family: var(--main-font); co */
+/* font-weight: var(--font-weight-bold); co */
+/* background-color: transparent;
+	color: var(--color-onyx);
+	border: 2px solid var(--color-amaranth);
+	border-radius: 10px;
+	cursor: pointer;
+} */
+*/
+
+/* .button2 {
+	background-color: var(--color-amaranth);
+	color: var(--color-white);
+	font-family: var(--main-font);
+	font-weight: var(--font-weight-bold);
+	/* trying to center text vertically co*/
+	/* padding: 1rem;
+	border: 2px solid var(--color-amaranth);
+	border-radius: 10px;
+	cursor: pointer;
+	height: 50px;
+	margin-left: 85px; */
+/* } */ */
+
+.hidden {
+	display: none;
+}
+
+/* mobile menu button style */
+#mobile-menu {
+	background-color: transparent;
+	border: 0px;
+	padding: 0;
+	align-items: center;
+	display: flex;
+}
+
+#mobile-menu svg {
+	fill: var(--color-white);
+}
+
+/* menu container */
+#menu-container {
+	position: relative;
+	display: flex;
+	align-items: center;
+	/* overflow: hidden; */
+}
+
+.img-container {
+	/* display: flex; */
+	/* justify-content: center; */
+	margin: auto;
+}
+
+/* heading for text */
+.text-container {
+	text-align: center;
+}
+
+#nav-links-container {
+	position: absolute;
+	top: 50px;
+	bottom: 0px;
+	right: -20px;
+	z-index: 10;
+}
+
+/* nav-links style */
+#nav-links {
+	display: flex;
+	list-style-type: none;
+	margin: 0;
+	gap: 20px;
+	flex-direction: column;
+	background-color: var(--color-onyx);
+	width: 200px;
+	height: auto;
+	overflow: hidden;
+	padding: 28px 55px 44px 46px;
+}
+
+#nav-links a {
+	color: var(--color-white);
+	text-decoration: none;
+	font-weight: var(--font-weight-regular);
+	font-size: var(--font16);
+}
+
+.hidden {
+	display: none;
+}
+
+/* The Mobile X */
+#mobileClose {
+	display: hidden;
+}
+
+/* 
+===================================
+Media Queries (overriding styles for different screen sizes)
+
+Note: Here we are using a mobile-first approach, so we start with the smallest screen size and work our way up.
+Start by writing styles for the mobile version of the design on the lines above.
+Anything that needs to change for larger screens should be added to the media queries below.
+
+Feel free to change the min/max-width values to whatever you need. Use variables.
+===================================
+*/
+
+/* Tablet Only */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+	/* Add styles that only apply to tablet. These are usually fixes to get resposnivenes right */
+}
+
+/* Tablet and Larger */
+@media screen and (min-width: 768px) {
+	/* Add styles that apply to table and desktop */
+}
+
+/* Desktop Only */
+@media screen and (min-width: 1024px) {
+	/* Add styles that apply specifically to desktop */
+}
+
+/* Desktop & Larger */
+
+@media screen and (min-width: 1024px) {
+	/* adjusting font sizes and styling for p tags (in figma this is body1)*/
+	a {
+		font-weight: var(--font-weight-regular);
+		font-size: var(--font21);
+		line-height: var(--line-height26);
+	}
+
+	h2 {
+		font-family: var(--main-font);
+		font-size: var(--font56);
+		font-weight: var(--font-weight-bold);
+		line-height: var(--line-height58);
+		color: var(--color-white);
+	}
+
+	p {
+		font-family: var(--main-font);
+		font-size: var(--font21);
+		font-weight: var(--font-weight-regular);
+		line-height: var(--line-height26);
+		color: var(--color-white);
+	}
+
+	/* hide menu bar for larger screen */
+	#menu-container {
+		display: none;
+	}
+
+	.hidden.button1 {
+		display: block;
+	}
+	.desktop-menu {
+		display: flex;
+	}
+
+	.hero {
+		position: relative;
+	}
+
+	.hero .btn-container {
+		display: flex;
+		justify-content: space-around;
+	}
+	.hero .button3 {
+		display: none;
+	}
+	.hero img {
+		object-fit: fill;
+		/* max-height: 100vh; */
+	}
+
+	.text-container {
+		position: absolute;
+		z-index: 10;
+		bottom: 10%;
+		max-width: var(--wrapper-width-max);
+		border: 2px solid red;
+		left: 50%;
+		/* bring your own prefixes */
+		transform: translate(-50%, 0%);
+	}
+	/* button */
+}
