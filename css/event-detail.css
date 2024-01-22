@@ -4,39 +4,39 @@ html {
 }
 
 .template-wrapper {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+	/* display: flex; */
+	/* flex-direction: column; */
+	/* align-items: center; */
+	/* justify-content: center; */
 	/* width: var(--mobile-wrapper-width);
 	margin: 0 auto;
 	max-width: var(--wrapper-width-max); */
 }
 
 .template-wrapper img {
-	align-items: center;
+	/* align-items: center; */
 }
 
 .template-main-header {
-	text-align: center;
+	/* text-align: center; */
 	color: var(--color-onyx);
-	padding: 0 20px 0px 20px;
+	/* padding: 0 20px 0px 20px; */
 }
 
 .template-p {
 	color: var(--color-onyx);
-	padding: 0 20px 0px 20px;
+	/* padding: 0 20px 0px 20px; */
 }
 
 .template-button {
-	display: flex;
-	padding: 40px 45px 150px 40px;
+	/* display: flex; */
+	/* padding: 40px 45px 150px 40px; */
 }
 
 .button3 {
 	/* min-width: 300px;
 	min-height: 50px; */
-	padding: 11px 92px;
+	/* padding: 11px 92px; */
 	border: none;
 	border-radius: 10px;
 	background-color: var(--button2-color);
@@ -53,30 +53,30 @@ html {
 }
 
 .template-hero-img {
-	padding-top: 80px;
+	/* padding-top: 80px; */
 }
 
 .template-main-header {
-	padding-top: 60px;
+	/* padding-top: 60px; */
 }
 
 .template-gradient {
-	display: block;
+	/* display: block; */
 	/* min-width: 390px;
 	min-height: 73px; */
 	background-image: linear-gradient(180deg, #184f85 -29.55%, #6c4681 118.18%);
 }
 .template-highlights {
 	color: var(--color-white);
-	text-indent: 20%;
+	/* text-align: center; */
 }
 .template-concept-img {
-	padding-top: 40px;
+	/* padding-top: 40px; */
 }
 
 .template-three-img {
-	padding-top: 60px;
-	padding-bottom: 100px;
+	/* padding-top: 60px;
+	padding-bottom: 100px; */
 }
 
 /* Tablet Only */
@@ -94,11 +94,12 @@ html {
 	/* Add styles that apply specifically to desktop */
 
 	.template-wrapper {
-		display: flex;
+		/* display: flex;
 		flex-direction: column;
-	}
-	.template-button {
-		justify-content: center;
-		padding: 31px 714px 139px 714px;
+	} */
+		.template-button {
+			/* justify-content: center; */
+			/* padding: 31px 714px 139px 714px; */
+		}
 	}
 }
