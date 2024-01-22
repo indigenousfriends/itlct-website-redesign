@@ -204,6 +204,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		flex-direction: row;
 		justify-content: space-between;
 		align-items: center;
+		gap: 100px;
 	}
 	.tech-around > * {
 		width: 50%;
