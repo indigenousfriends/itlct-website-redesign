@@ -69,12 +69,12 @@ textarea {
 Section Styles (background, padding, etc.)
 ===================================
 */
-body {
+.blue-purple {
 	background: var(--color-bluepurple);
 	background-repeat: no-repeat;
 	color: var(--color-white);
 }
-h3 {
+.h3-styles {
 	color: var(--color-white);
 	text-align: center;
 }
@@ -100,6 +100,9 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 /* Tablet and Larger */
 @media screen and (min-width: 768px) {
 	/* Add styles that apply to table and desktop */
+	.h3-styles {
+		text-align: left;
+	}
 	.contact-form-parent {
 		display: flex;
 		flex-direction: row;
