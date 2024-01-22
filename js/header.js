@@ -22,9 +22,8 @@ var navLinks = document.getElementById('nav-links-container');
 // X button
 var mobileClose = document.getElementById('mobileClose');
 // // Hamburger
-// var mobileOpen = document.getElementById('mobileOpen');
+ var mobileOpen = document.getElementById('mobileOpen');
 
-// console.log('mobile-menu');
 
 mobileMenu.addEventListener("click", function () {
   // Toggle Menu Appear
