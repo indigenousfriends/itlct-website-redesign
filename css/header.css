@@ -190,6 +190,9 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 
 /* Tablet and Larger */
 @media screen and (min-width: 768px) {
+	#nav-links-container {
+		top: 80px;
+	}
 	/* Add styles that apply to table and desktop */
 }
 
@@ -200,7 +203,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 
 /* Desktop & Larger */
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1350px) {
 	/* adjusting font sizes and styling for p tags (in figma this is body1)*/
 	a {
 		font-weight: var(--font-weight-regular);
