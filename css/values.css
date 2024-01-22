@@ -48,6 +48,11 @@ Page Component Styles (icon grid, team member card)
 .text-container {
 	min-height: 204px;
 	padding: 0 20px 0 20px;
+	margin-bottom: 20px;
+	display: flex;
+	flex-direction: column;
+	border-radius: 10px;
+	justify-content: center;
 }
 .values-card img {
 	margin-bottom: 20px;
@@ -104,24 +109,6 @@ Page Component Styles (icon grid, team member card)
 	background-color: var(--color-amaranth);
 }
 
-.sustainability-text,
-.authenticity-text,
-.education-text,
-.tech-text {
-	display: flex;
-	flex-direction: column;
-	border-radius: 10px;
-}
-
-.copperback,
-.sustainability-text,
-.grapeback,
-.authenticity-text,
-.education-text,
-.tech-text {
-	margin-bottom: 20px;
-}
-
 .sustainability-text {
 	background-color: var(--color-onyx);
 }
@@ -133,6 +120,7 @@ Page Component Styles (icon grid, team member card)
 }
 .tech-text {
 	background-color: var(--color-teal);
+	padding-bottom: 20px;
 }
 /* Adds a background color in lieu of those rectangle shapes */
 .grapeback {
@@ -162,21 +150,19 @@ Page Component Styles (icon grid, team member card)
 	font-size: var(--font28);
 	font-weight: var(--font-weight-bold);
 	line-height: var(--line-height32);
+	padding-top: 90px;
+	align-items: center;
 }
 .support-header h2 {
 	color: var(--color-white);
-}
-/* inline block allows the alignment with heart icon but doesn't fill desktop */
-.support-header h4,
-.support-header svg {
-	margin: 90px 0px 20px 0px;
-}
-.support-text h2 {
 	font-size: var(--font28);
-	font-weight: var(--font-weight-bold);
-	line-height: var(--line-height32);
-	margin: 0;
 }
+.support-header svg{
+	position: relative;
+    bottom: 2.5px;
+    left: 5px;
+}
+
 .support-text p {
 	font-size: var(--font21);
 	font-weight: var(--font-weight-regular);
@@ -470,14 +456,10 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	.support {
 		padding-bottom: 116px;
 	}
-	.support h2 {
-		font-size: var(--font46);
+	.support-header h2.h2-styles {
+		font-size: var(--font28);
 		font-weight: var(--font-weight-bold);
-		line-height: var(--line-height50);
-		width: 60%;
-	}
-	.support-header h2 {
-		width: auto;
+		line-height: var(--line-height32);as
 	}
 
 	.support p {
@@ -486,7 +468,6 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		line-height: var(--line-height28);
 	}
 	.support svg {
-		margin-left: 30px;
 		width: 39px;
 		height: 39px;
 	}
