@@ -44,6 +44,7 @@ Page Component Styles (icon grid, team member card)
 	flex-direction: column;
 	justify-content: center;
 	text-align: center;
+	margin: 0 20px;
 }
 .text-container {
 	min-height: 204px;
@@ -70,7 +71,6 @@ Page Component Styles (icon grid, team member card)
 	font-size: var(--font16);
 	font-weight: var(--font-weight-regular);
 	line-height: var(--line-height20);
-	/* margin: var(--spacing20); */
 }
 /* Turns Our Values Title Black */
 .values-head {
@@ -95,6 +95,7 @@ Page Component Styles (icon grid, team member card)
 	display: flex;
 	flex-direction: column;
 	text-align: center;
+	margin-bottom: 20px;
 }
 
 /* Adds a background color in lieu of those rectangle shapes */
@@ -265,6 +266,9 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	}
 	.values-card {
 		margin: 0px 10px;
+	}
+	.values-card p {
+		margin: var(--spacing20);
 	}
 	.copperback,
 	.authenticity,
