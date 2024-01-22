@@ -229,11 +229,6 @@ picture img {
 	overflow-y: scroll;
 	height: 40%;
 }
-/* .modal-scroll { */
-	/* need to fix scroll */
-	/* max-height: calc(85vh 300px); */
-	/* max-height: 35vh; */
-/* } */
 .modal-header {
 	display: flex;
 	flex-direction: column;
