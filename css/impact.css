@@ -198,6 +198,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 
 	.tech-around,
 	.responsible-parent {
+		width: var(--desktop-wrapper-width);
 		margin: 100px auto;
 		display: flex;
 		flex-direction: row;
