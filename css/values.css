@@ -329,7 +329,6 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		display: none;
 	}
 	.sustainability {
-		/* background-color: var(--color-onyx); */
 		background-image: linear-gradient(
 				269deg,
 				#0e0e0e 46.26%,
