@@ -45,7 +45,7 @@ h3 {
 	font-size: var(--font36);
 	font-weight: var(--font-weight-bold);
 	line-height: var(--line-height40);
-	margin-bottom: 20px;
+	margin-bottom: var(--spacing20);
 }
 
 section div p {
@@ -53,7 +53,7 @@ section div p {
 	font-size: var(--font16);
 	font-weight: var(--font-weight-regular);
 	line-height: var(--line-height20);
-	margin-bottom: 100px;
+	margin-bottom: var(--spacing100);
 }
 
 p,
@@ -77,35 +77,19 @@ p,
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 45vh;
-	padding: 20px;
+	padding: var(--spacing20);
+	margin-top: var(--spacing65);
+	margin-bottom: var(--spacing65);
 }
 
-/* Button styles */
-button {
+.about-wrapper .button3 {
 	display: flex;
-	width: 300px;
-	height: 50px;
-	justify-content: center;
 	align-items: center;
-	gap: 10px;
-	flex-shrink: 0;
-	border-radius: 10px;
-	background: var(--button3-color);
+}
+
+.about-wrapper a:visited {
 	color: var(--color-white);
-	cursor: pointer;
-	border: none;
-	font-size: var(--font21);
-	font-weight: var(--font-weight-bold);
-	line-height: var(--line-height26);
 }
-
-button:hover {
-	background: rgb(0, 0, 0, 0);
-	border: 3px solid var(--button3-color);
-	color: var(--color-onyx);
-}
-
 /* 
 ===================================
 Section Styles (background, padding, etc.)
@@ -170,6 +154,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 
 	.about-wrapper {
 		max-width: 800px;
+		margin-bottom: 200px;
 	}
 
 	.h3-styles,
@@ -200,7 +185,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		font-weight: var(--font-weight-bold);
 		line-height: var(--line-height50);
 		text-align: left;
-		margin-top: 165px;
+		margin-top: var(--spacing164);
 		margin-bottom: 0px;
 	}
 
@@ -212,11 +197,12 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	}
 
 	.signature {
-		margin-top: 40px;
+		margin-top: var(--spacing40);
 	}
 
-	button {
+	.btn-container {
 		display: none;
+		/* text-decoration: none; */
 	}
 }
 
@@ -227,9 +213,5 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		font-size: var(--font24);
 		font-weight: var(--font-weight-medium);
 		line-height: var(--line-height28);
-	}
-
-	.btn-container {
-		height: auto;
 	}
 }
