@@ -21,10 +21,10 @@ var mobileMenu = document.getElementById('mobile-menu');
 var navLinks = document.getElementById('nav-links-container');
 // X button
 var mobileClose = document.getElementById('mobileClose');
-// Hamburger
-var mobileOpen = document.getElementById('mobileOpen');
+// // Hamburger
+// var mobileOpen = document.getElementById('mobileOpen');
 
-console.log('mobile-menu');
+// console.log('mobile-menu');
 
 mobileMenu.addEventListener("click", function () {
   // Toggle Menu Appear
