@@ -283,12 +283,12 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		line-height: var(--line-height40);
 		text-align: left;
 	}
-	.values-card p {
-		display: flex;
+	.values-head p {
+		text-align: left;
+		margin: 0;
 		font-size: var(--font21);
 		font-weight: var(--font-weight-regular);
 		line-height: var(--line-height26);
-		margin: var(--spacing20);
 	}
 
 	.onyxback,
@@ -415,12 +415,12 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	/* copper and grape 40% */
 	.copperback,
 	.grapeback {
-		max-width: 40%;
+	width: 40%;
 	}
 	/* onyx and amaranth 60%*/
 	.onyxback,
 	.authenticity {
-		max-width: 60%;
+		width: 60%;
 	}
 	/* blue and teal 50%*/
 	.education,
@@ -446,6 +446,11 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	/* All Text white except Empowerment section and We Support Header */
 	.h1-black {
 		color: var(--color-white);
+	}
+	.values-head{
+		text-align: left;
+		max-width: 475px;
+		padding-left: 20px;
 	}
 	.values-head p {
 		color: var(--color-white);
