@@ -258,7 +258,7 @@ h5,
 	color: var(--color-onyx);
 }
 
-/* Mobile paragraph/body */
+/* Mobile body2 in figma */
 p {
 	font-size: var(--font16);
 	font-weight: var(--font-weight-regular);
@@ -300,6 +300,10 @@ Wrappers (container, flexbox, etc.)
 	max-width: var(--wrapper-width-max);
 }
 
+/* Global Hidden Class */
+.hidden {
+	display: none;
+}
 /* 
 ===================================
 Global Component Styles (buttons, forms, etc.)
@@ -562,7 +566,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 
 /* Desktop & Larger */
 @media screen and (min-width: 1024px) {
-	/* adjusting font sizes and styling for p tags */
+	/* adjusting font sizes and styling for p tags (in figma this is body1)*/
 	p {
 		font-size: var(--font21);
 		font-weight: var(--font-weight-regular);
