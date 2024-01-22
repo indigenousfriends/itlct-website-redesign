@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+	<!-- This file is a placehodler for a page. Rename this file to the name of the page you are working on. -->
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>If These Lands Could Talk - Page Name</title>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="css/normalize.css" />
+		<link rel="stylesheet" href="css/global.css" />
+		<!-- In a new branch, rename this page.css file to the name of that actual page (Example: home.css) -->
+		<link rel="stylesheet" href="css/team.css" />
+	</head>
+
+	<body>
+		<div class="header-section black-text">
+			<div class="header-content">
+				<div class="header-picture">
+					<!-- add soil hands img -->
+					<picture>
+						<source
+							media="(min-width:768px)"
+							srcset="/assets/images/pages/our-team/desktop/earth-d.jpg"
+						/>
+						<img
+							src="/assets/images/pages/our-team/earth.jpg"
+							alt="two sets of hands, one holding a tiny plant with soil"
+							style="width: auto"
+						/>
+					</picture>
+				</div>
+				<div class="header-info wrapper">
+					<h1 class="h3-styles">Our Team</h1>
+					<p>
+						The vision of our team is to leverage digital technology and
+						innovation to improve STEAM (Science, Technology, Engineering, Art,
+						and Math) excellence, retention, community building, and advancement
+						in native and indigenous communities across the world.
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="team-parent wrapper">
+			<!-- card 1: natasha -->
+			<div class="team-card">
+				<!-- natasha img -->
+				<div class="team-card-picture">
+					<picture>
+						<source
+							media="(min-width:768px)"
+							srcset="/assets/images/pages/our-team/desktop/natasha-d.jpg"
+						/>
+						<img
+							src="/assets/images/pages/our-team/natasha.jpg"
+							alt="Natasha Rabsatt, M.S."
+							style="width: auto"
+						/>
+					</picture>
+				</div>
+				<!-- natasha info -->
+				<div class="team-card-info">
+					<h2 class="h4-styles">Natasha Rabsatt, M.S.</h2>
+					<h3 class="h5-styles">Co-founder</h3>
+					<p>
+						Natasha is Caribbean afro-indigenous with Classic Taino (Puerto Rico
+						- Boriken) and African Heritage.
+					</p>
+					<!-- div for icon and button -->
+					<div class="icon-button">
+						<!-- link svgs for email and linkedin -->
+						<div class="icons">
+							<a href="">
+								<!-- email icon -->
+								<img
+									src="/assets/icons/our-team-icons/email-icon.svg"
+									alt="email icon"
+								/>
+							</a>
+							<a href="">
+								<!-- LinkedIn icon -->
+								<img
+									src="/assets/icons/our-team-icons//linkedin.svg"
+									alt="linkedin icon"
+								/>
+							</a>
+						</div>
+						<div>
+							<button class="button2" id="natasha-modal-open">Read More</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- card 2: marsha -->
+			<div class="team-card">
+				<!-- marsha img -->
+				<div class="team-card-picture">
+					<picture>
+						<source
+							media="(min-width:768px)"
+							srcset="/assets/images/pages/our-team/desktop/marsha-d.jpg"
+						/>
+						<img
+							src="/assets/images/pages/our-team/marsha.jpg"
+							alt="two sets of hands, one holding a tiny plant with soil"
+							style="width: auto"
+						/>
+					</picture>
+				</div>
+				<!-- marsha info -->
+				<div class="team-card-info">
+					<h2 class="h4-styles">Dr. Marsha Maxwell, CETL</h2>
+					<h3 class="h5-styles">Co-founder</h3>
+					<p>
+						Dr. Maxwell has strategic, tactical and operational technology
+						experience.
+					</p>
+					<div class="icon-button">
+						<!-- link svgs for email and linkedin -->
+						<div class="icons">
+							<a href="">
+								<!-- email icon -->
+								<img
+									src="/assets/icons/our-team-icons/email-icon.svg"
+									alt="email icon"
+								/>
+							</a>
+							<a href="">
+								<!-- LinkedIn icon -->
+								<img
+									src="/assets/icons/our-team-icons/linkedin.svg"
+									alt="linkedin icon"
+								/>
+							</a>
+						</div>
+						<button class="button2" id="marsha-modal-open">Read More</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- our current positions -->
+		<div class="black-text current-positions wrapper">
+			<h2 class="h4-styles">Our Current Positions</h2>
+			<p>
+				We are currently seeking aligned advisory board members to support the
+				cause. If you are interested or know someone who is, please reach out.
+			</p>
+			<button class="button3">Contact Us</button>
+		</div>
+
+		<!-- get involved section -->
+		<div class="black-text get-involved">
+			<div class="get-involved-wrapper">
+				<!-- img of someone in front of a blackboard wearing jewelery -->
+				<div class="get-involved-picture">
+					<picture>
+						<source
+							media="(min-width:768px)"
+							srcset="/assets/images/pages/our-team/desktop/involved-d.jpg"
+						/>
+						<img
+							src="/assets/images/pages/our-team/involved.jpg"
+							alt="two sets of hands, one holding a tiny plant with soil"
+							style="width: auto"
+						/>
+					</picture>
+				</div>
+				<!-- text want to get involved block -->
+				<div class="get-involved-text">
+					<h2 class="h4-styles">Want to Get Involved?</h2>
+					<p>
+						As we grow the community and build impact, you or someone you know
+						may want to know how to get involved with our events.
+					</p>
+					<button class="button3">Contact Us</button>
+				</div>
+			</div>
+		</div>
+		<!-- NATASHA MODAL STARTS HERE -->
+		<section class="natasha-modal hidden">
+			<div class="modal-wrapper">
+				<div class="btn-close">
+					<button>
+						<svg
+							width="64"
+							height="64"
+							viewBox="0 0 64 64"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<title>Close pop-up window</title>
+							<path
+								d="M17.0668 50.6667L13.3335 46.9333L28.2668 32L13.3335 17.0667L17.0668 13.3333L32.0002 28.2667L46.9335 13.3333L50.6668 17.0667L35.7335 32L50.6668 46.9333L46.9335 50.6667L32.0002 35.7333L17.0668 50.6667Z"
+								fill="#1A1A1A"
+							/>
+						</svg>
+					</button>
+				</div>
+				<div class="modal-header">
+					<!-- natasha -->
+
+					<!-- natasha img -->
+					<div class="team-card-picture">
+						<picture>
+							<source
+								media="(min-width:768px)"
+								srcset="
+									/assets/images/pages/our-team/desktop/natasha-modal-d.jpg
+								"
+							/>
+							<img
+								src="/assets/images/pages/our-team/natasha-modal.jpg"
+								alt="Natasha Rabsatt, M.S."
+								style="width: auto"
+							/>
+						</picture>
+					</div>
+
+					<!-- natasha info -->
+					<div class="team-card-info-modal">
+						<h2 class="h4-styles">Natasha Rabsatt, M.S.</h2>
+
+						<!-- div for icon and button -->
+
+						<!-- link svgs for email and linkedin -->
+						<div class="icons">
+							<h3 class="h5-styles">Co-founder</h3>
+							<a href="">
+								<!-- email icon -->
+								<img
+									src="/assets/icons/our-team-icons/email-icon.svg"
+									alt="email icon"
+								/>
+							</a>
+							<a href="">
+								<!-- LinkedIn icon -->
+								<img
+									src="/assets/icons/our-team-icons/linkedin.svg"
+									alt="linkedin icon"
+								/>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="modal-content">
+					<div class="modal-scroll">
+						<p>
+							Natasha is Caribbean afro-indigenous with Classic Taíno (Puerto
+							Rico - Boríken) and African heritage.
+						</p>
+						<p>
+							She is passionate about creating value and social impact through
+							mindful stewardship with innovation, technology, and creative
+							experiences. She is an avid world traveler and has lived in many
+							different regions of the United States and also abroad.
+						</p>
+						<p>
+							Professionally, Natasha is a strategic designer, tech strategist,
+							advisor, U.S. Army veteran, and entrepreneur. She has nearly 2
+							decades of experience in diverse industries and sectors leading
+							people and directing initiatives and programs centered around
+							learning, design, innovation, business development, and
+							technology. Over the years, she has supported a number of
+							businesses and organizations through the design and development of
+							inclusive learning experiences, business development, innovation
+							strategy, creative design, and Immersive Technology - AR/VR,
+							Emerging Technologies - NFTs, Blockchain, Web 3.0 initiatives, and
+							more.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<div class="overlay-la hidden"></div>
+		<!-- MARSHA MODAL STARTS HERE -->
+		<section class="marsha-modal hidden">
+			<div class="modal-wrapper">
+				<div class="btn-close">
+					<button>
+						<svg
+							width="64"
+							height="64"
+							viewBox="0 0 64 64"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<title>Close pop-up window</title>
+							<path
+								d="M17.0668 50.6667L13.3335 46.9333L28.2668 32L13.3335 17.0667L17.0668 13.3333L32.0002 28.2667L46.9335 13.3333L50.6668 17.0667L35.7335 32L50.6668 46.9333L46.9335 50.6667L32.0002 35.7333L17.0668 50.6667Z"
+								fill="#1A1A1A"
+							/>
+						</svg>
+					</button>
+				</div>
+				<div class="modal-header">
+					<!-- marsha -->
+
+					<!-- marsha img -->
+					<div class="team-card-picture">
+						<picture>
+							<source
+								media="(min-width:768px)"
+								srcset="
+									/assets/images/pages/our-team/desktop/marsha-modal-d.jpg
+								"
+							/>
+							<img
+								src="/assets/images/pages/our-team/marsha.jpg"
+								alt="Dr. Marsha Maxwell, CETL"
+								style="width: auto"
+							/>
+						</picture>
+					</div>
+
+					<!-- Marsha info -->
+					<div class="team-card-info-modal">
+						<h2 class="h4-styles">Dr. Marsha Maxwell, CETL</h2>
+
+						<!-- div for icon and button -->
+
+						<!-- link svgs for email and linkedin -->
+						<div class="icons">
+							<h3 class="h5-styles">Co-founder</h3>
+							<a href="">
+								<!-- email icon -->
+								<img
+									src="/assets/icons/our-team-icons/email-icon.svg"
+									alt="email icon"
+								/>
+							</a>
+							<a href="">
+								<!-- LinkedIn icon -->
+								<img
+									src="/assets/icons/our-team-icons/linkedin.svg"
+									alt="linkedin icon"
+								/>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="modal-content">
+					<div class="modal-scroll">
+						<p>
+							With strategic, tactical and operational technology experience,
+							Dr. Marsha Maxwell creates innovative environments and
+							applications that harness the power of emerging technologies and
+							neuroscience to enhance the educator's reach to better engage
+							students and foster a culture of innovation in organizations.
+						</p>
+						<p>
+							Her areas of interest include Augmented Analytics, Immersive
+							Experiences, Artificial Intelligence, Machine Learning, STEAM
+							programs, and cybersecurity. Marsha has also been very active in
+							bringing STEM/STEAM initiatives to life especially for underserved
+							and underrepresented groups throughout their educational journey
+							from kindergarten to university and beyond
+						</p>
+						<p>
+							Marsha has been a featured speaker for various organizations'
+							educational summits and workshops including Microsoft, Apple, and
+							Google for her skills in education technology, innovation
+							leadership, strategic analysis and decision-making, and equity and
+							inclusion in technology.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<div class="overlay-la hidden"></div>
+
+		<script src="/js/our-team-modal.js"></script>
+	</body>
+</html>
