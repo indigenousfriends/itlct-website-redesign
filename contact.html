@@ -6,8 +6,6 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>If These Lands Could Talk - Page Name</title>
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;700&display=swap"
 			rel="stylesheet"
@@ -15,74 +13,58 @@
 		<link rel="stylesheet" href="./css/normalize.css" />
 		<link rel="stylesheet" href="css/global.css" />
 		<!-- In a new branch, rename this page.css file to the name of that actual page (Example: home.css) -->
-		<!-- done -->
-		<link rel="stylesheet" href="./css/about.css" />
+		<link rel="stylesheet" href="css/contact.css" />
 	</head>
 
 	<body>
-		<!-- mobile hero and pictures -->
-		<section class="hero">
-			<div class="parent">
-				<div class="overlay"></div>
-				<picture>
-					<source
-						media="(min-width:768px)"
-						srcset="./assets/images/pages/about/hero-about.jpg"
-					/>
-					<img
-						src="./assets/images/pages/about/mobile/hero-about-mobile.jpg"
-						alt="woman meditating"
-						style="width: 100%"
-					/>
-				</picture>
-			</div>
-
-			<div class="invis-flex">
-				<div class="hero-text">
-					<h1 class="h3-styles">
-						If These Lands Could Talk... What Would They Say?
-					</h1>
+		<div class="blue-purple">
+			<div class="contact-form-parent" class="wrapper">
+				<div class="form-info">
+					<h1 class="h3-styles">Get in Touch</h1>
 					<p>
-						Born from spoken words. A question, a conversation for humanity.
+						We would love to hear from you! Please fill out the contact form to
+						get in touch. In your message, please let us know a little about
+						yourself and how we can assist you.
 					</p>
+					<p>We look forward to connecting!</p>
+				</div>
+				<div>
+					<form action="" class="contact-form">
+						<div class="form-input">
+							<label for="name" class="hidden">Name</label>
+							<input
+								type="text"
+								name="name"
+								id="name"
+								placeholder="Name"
+								aria-label="name"
+							/>
+							<label for="email" class="hidden">Email</label>
+							<input
+								type="email"
+								name="email"
+								id="email"
+								placeholder="Email"
+								aria-label="email"
+							/>
+							<label for="message" class="hidden">Message</label>
+							<textarea
+								type="text"
+								name="message"
+								id="message"
+								class="message"
+								required="true"
+								placeholder="Message"
+								aria-label="message"
+							></textarea>
+							<p>Success we will get back to you soon!</p>
+							<button type="submit" class="button2">Send Message</button>
+						</div>
+					</form>
 				</div>
 			</div>
-		</section>
+		</div>
 
-		<section class="wrapper about-wrapper">
-			<h2 class="h4-styles">Our Story</h2>
-			<p>
-				The land has a way of teaching us if we want to know, if we want to
-				learn. "If These Lands Could Talk" started as an internal conversation
-				that emerged during travel across traditional Diné (or Navajo) homelands
-				in the summer of 2019. Driving through the red-pigmented and towering
-				mountains and canyons, I couldn't help but to wonder what these lands
-				would reveal if they had a voice. As I read through stories written by
-				local indigenous people accounting lessons from the past and the impact
-				that persists today - I learned that there are many gaps in education
-				and what is taught in traditional education or found in textbooks. As a
-				world traveler, I noticed parallels between these lands and other lands
-				that I had the privilege to travel to throughout my life. Much of our
-				world's history is passed down through generations, best and most
-				accurately at times told through the people who inhabited the land for
-				generations, and through the people who still nurture these lands today.
-			</p>
-			<p>
-				In a sudden moment, the words just came out of my mouth, "If These Lands
-				Could Talk, What Would They Say?" A question and statement all at once.
-				I couldn't help but to wonder how many times have we traveled somewhere
-				but are not aware of what peoples lived and cultivated the land or what
-				structures they built to mold, shape, or even elevate the human
-				condition as we know it today?
-			</p>
-			<p>
-				Through these experiences, I realize how the past, present, and future
-				are part of an overlapping continuum of human experience - like deep
-				roots coming out of a mountain.
-			</p>
-			<p class="signature">ITLCT Co-Founder, Natasha Rabsatt</p>
-			<div class="btn-container"><button>Our Impact</button></div>
-		</section>
 		<!-- Footer -->
 
 		<footer>
