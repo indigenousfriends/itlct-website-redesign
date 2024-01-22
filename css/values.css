@@ -157,10 +157,10 @@ Page Component Styles (icon grid, team member card)
 	color: var(--color-white);
 	font-size: var(--font28);
 }
-.support-header svg{
+.support-header svg {
 	position: relative;
-    bottom: 2.5px;
-    left: 5px;
+	bottom: 2.5px;
+	left: 5px;
 }
 
 .support-text p {
@@ -415,7 +415,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	/* copper and grape 40% */
 	.copperback,
 	.grapeback {
-	width: 40%;
+		width: 40%;
 	}
 	/* onyx and amaranth 60%*/
 	.onyxback,
@@ -447,7 +447,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	.h1-black {
 		color: var(--color-white);
 	}
-	.values-head{
+	.values-head {
 		text-align: left;
 		max-width: 475px;
 		padding-left: 20px;
@@ -464,7 +464,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	.support-header h2.h2-styles {
 		font-size: var(--font28);
 		font-weight: var(--font-weight-bold);
-		line-height: var(--line-height32);as
+		line-height: var(--line-height32);
 	}
 
 	.support p {
