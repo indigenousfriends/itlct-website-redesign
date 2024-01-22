@@ -70,6 +70,7 @@ p,
 	font-weight: var(--font-weight-regular);
 	line-height: var(--line-height26);
 	color: var(--color-onyx);
+	margin-top: 50px;
 }
 
 /* Styles for the container */
