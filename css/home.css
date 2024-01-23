@@ -7,8 +7,9 @@ Styles for home-page
 */
 
 /* Links */
-.image-link {
+a.image-link {
 	text-decoration: none;
+	color: var(--color-white);
 }
 
 /* this is to align text in the center throughout the entire design */
