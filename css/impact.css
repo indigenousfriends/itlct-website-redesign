@@ -22,8 +22,8 @@ Section Styles (background, padding, etc.)
 ===================================
 */
 
-p,
-.h4-styles {
+.impact-wrapper p,
+.impact-wrapper .h4-styles {
 	color: var(--color-onyx);
 }
 .h4-styles {
