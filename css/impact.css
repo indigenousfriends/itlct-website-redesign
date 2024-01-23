@@ -22,10 +22,6 @@ Section Styles (background, padding, etc.)
 ===================================
 */
 
-/* desktop page wrapper */
-/* .impact-wrapper {
-    width: ;
-} */
 p,
 .h4-styles {
 	color: var(--color-onyx);
@@ -86,10 +82,6 @@ img {
 	margin: 60px auto;
 }
 
-.red-block-one,
-.red-block-two {
-	display: none;
-}
 
 /* icon section code */
 .yellow-background {
@@ -215,12 +207,19 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	/* Add styles that apply specifically to desktop */
   
 	/* top and bottom section */
+	.h4-styles {
+		font-size: var(--font46);
+		line-height: var(--line-height50);
+		margin-bottom: var(--spacing20);
+		text-align: left;
+	}
 
 	.tech-around,
 	.responsible-parent {
 		width: var(--desktop-wrapper-width);
 		max-width: var(--wrapper-width-max);
-		margin: var(--spacing100) auto;
+		margin: auto;
+		padding: var(--spacing100);
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
@@ -245,42 +244,48 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		margin: 0 auto;
 	}
 	/* tech around section */
-	.red-block-one {
+	/* red block */
+	.tech-img.style-left::before {
+		transform: translate(-15%, -15%);
+	}
+	.tech-img::before {
 		background-color: var(--color-amaranth);
 		border-radius: var(--spacing10);
-		display: block;
-		min-width: 200px;
-		min-height: 200px;
 		position: absolute;
-		transform: translate(-45px, -235px);
+		content: " ";
+		width: 80%;
+		aspect-ratio: 1/1;
+		z-index: -1;
 	}
 
-	.tech-img {
-		margin: 0px;
-		position: absolute;
-		left: 55%;
-		width: 425px;
-		transform: translate(-50%, -50%);
+	.tech-img img {
+		max-height: 550px;
+		object-fit: cover;
+		object-position: top;
+		aspect-ratio: 1/1;
 	}
+
 
 	/* responsible section */
-	.red-block-two {
+	/* red block */
+	.responsible-img.right-style::before {
+		transform: translate(25%, -15%);
+	}
+	.responsible-img::before {
 		background-color: var(--color-amaranth);
 		border-radius: var(--spacing10);
-		display: block;
-		min-width: 200px;
-		min-height: 200px;
 		position: absolute;
-		bottom: -80%;
-		left: 80%;
-		transform: translate(-50%, -50%);
+		content: " ";
+		width: 80%;
+		aspect-ratio: 1/1;
+		z-index: -1;
 	}
 
-	.responsible-img {
-		margin: 0px;
-		position: absolute;
-		left: 40%;
-		width: 85%;
-		transform: translate(-50%, -50%);
+	.responsible-img img {
+		max-height: 550px;
+		object-fit: cover;
+		object-position: top;
+		aspect-ratio: 1/1;
 	}
+
 }
