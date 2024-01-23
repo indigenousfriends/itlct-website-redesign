@@ -25,39 +25,21 @@ body {
 	font-family: var(--main-font);
 }
 
-h2 {
-	font-family: var(--main-font);
-	font-size: var(--font36);
-	font-weight: var(--font-weight-bold);
-	line-height: var(--line-height40);
-	color: var(--color-onyx);
-}
-
-p {
-	font-family: var(--main-font);
-	font-size: var(--font16);
-	font-weight: var(--font-weight-regular);
-	line-height: var(--line-height20);
-	color: var(--color-onyx);
-}
-
-img {
+/* img {
 	display: block;
 	max-width: 100%;
-}
+} */
 
 .img-container {
-	/* max-width: 390px; */
+	max-width: 390px;
 	/* for dev purpose only */
 }
 
-.block {
+/* .block {
 	display: block;
-}
-
-/* .logo-icon {
-	width: 75px;
 } */
+
+
 
 /* top bar section */
 .top-bar {
@@ -68,9 +50,16 @@ img {
 	align-items: center;
 	padding: 20px;
 }
+.dp-wrapper {
+width: var(--mobile-wrapper-width);
+display: flex;
+justify-content: space-between;
+}
+
 
 .logo-container {
 	display: flex;
+	margin-right: 65px;
 }
 
 /* desktop menu */
@@ -84,11 +73,12 @@ img {
 	list-style-type: none;
 	text-decoration: none;
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
+	padding: 0;
 }
 
 .desktop-nav li {
-	padding: 20px;
+	padding: 10px 20px;
 }
 
 a {
@@ -106,136 +96,8 @@ a:visited {
 	color: inherit;
 }
 
-/* Hero section */
-.hero {
-	color: #424241;
-}
-
-/* hello */
-
-/* Styles for the container */
-/* Button styles */
-/* button1 */
-.button1 {
-	display: flex;
-	width: 300px;
-	height: 50px;
-	padding: 11px 92px;
-	justify-content: center;
-	align-items: center;
-	margin: 0 auto;
-	gap: 10px;
-	flex-shrink: 0;
-	border-radius: 10px;
-	border-color: var(--color-white);
-	background: rgb(0, 0, 0, 0);
-	color: var(--color-white);
-	cursor: pointer;
-	border: 3px solid var(--color-white);
-	font-size: var(--font21);
-	font-weight: var(--font-weight-bold);
-	line-height: var(--line-height26);
-}
-
-.button1:hover {
-	/* background: var(--button3-hover-border); */
-	background: var(--color-white);
-	/* border: 3px solid var(--button3-color); */
-	color: var(--color-onyx);
-}
-/* button2  */
 .button2 {
-	display: flex;
-	width: 300px;
-	height: 50px;
-	padding: 11px 92px;
-	justify-content: center;
-	align-items: center;
-	gap: 10px;
-	flex-shrink: 0;
-	border-radius: 10px;
-	background: var(--button3-color);
-	color: var(--color-white);
-	cursor: pointer;
-	border: none;
-	font-size: var(--font21);
-	font-weight: var(--font-weight-bold);
-	line-height: var(--line-height26);
-}
-
-.button2:hover {
-	/* background: var(--button3-hover-border); */
-	background: rgb(0, 0, 0, 0);
-	border: 3px solid var(--button3-color);
-	color: var(--color-onyx);
-}
-.button3 {
-	display: flex;
-	width: 300px;
-	height: 50px;
-	padding: 11px 92px;
-	justify-content: center;
-	align-items: center;
-	margin: 0 auto;
-	gap: 10px;
-	flex-shrink: 0;
-	border-radius: 10px;
-	background: var(--button3-color);
-	color: var(--color-white);
-	cursor: pointer;
-	border: none;
-	font-size: var(--font21);
-	font-weight: var(--font-weight-bold);
-	line-height: var(--line-height26);
-}
-
-.button3:hover {
-	/* background: var(--button3-hover-border); */
-	background: rgb(0, 0, 0, 0);
-	border: 3px solid var(--button3-color);
-	color: var(--color-onyx);
-}
-
-/* hello */
-
-/* button {
-	background-color: var(--color-amaranth);
-	color: var(--color-white);
-	font-family: var(--main-font);
-	font-weight: var(--font-weight-bold);
-	padding: 11px 92px;
-	border: 2px solid var(--color-amaranth);
-	border-radius: 10px;
-	cursor: pointer;
-} */
-
-/* button:hover {
-	/* font-family: inherit; this was co*/
-/* font-family: var(--main-font); co */
-/* font-weight: var(--font-weight-bold); co */
-/* background-color: transparent;
-	color: var(--color-onyx);
-	border: 2px solid var(--color-amaranth);
-	border-radius: 10px;
-	cursor: pointer;
-} */
-*/
-
-/* .button2 {
-	background-color: var(--color-amaranth);
-	color: var(--color-white);
-	font-family: var(--main-font);
-	font-weight: var(--font-weight-bold);
-	/* trying to center text vertically co*/
-	/* padding: 1rem;
-	border: 2px solid var(--color-amaranth);
-	border-radius: 10px;
-	cursor: pointer;
-	height: 50px;
-	margin-left: 85px; */
-/* } */ */
-
-.hidden {
+	margin-left: 65px;
 	display: none;
 }
 
@@ -246,6 +108,7 @@ a:visited {
 	padding: 0;
 	align-items: center;
 	display: flex;
+	z-index: 11;
 }
 
 #mobile-menu svg {
@@ -328,38 +191,25 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 
 /* Tablet and Larger */
 @media screen and (min-width: 768px) {
+	#nav-links-container {
+		top: 80px;
+	}
 	/* Add styles that apply to table and desktop */
 }
 
 /* Desktop Only */
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1217px) {
 	/* Add styles that apply specifically to desktop */
 }
 
 /* Desktop & Larger */
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1350px) {
 	/* adjusting font sizes and styling for p tags (in figma this is body1)*/
 	a {
 		font-weight: var(--font-weight-regular);
-		font-size: var(--font21);
+		/* font-size: var(--font16); */
 		line-height: var(--line-height26);
-	}
-
-	h2 {
-		font-family: var(--main-font);
-		font-size: var(--font56);
-		font-weight: var(--font-weight-bold);
-		line-height: var(--line-height58);
-		color: var(--color-white);
-	}
-
-	p {
-		font-family: var(--main-font);
-		font-size: var(--font21);
-		font-weight: var(--font-weight-regular);
-		line-height: var(--line-height26);
-		color: var(--color-white);
 	}
 
 	/* hide menu bar for larger screen */
@@ -367,38 +217,54 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		display: none;
 	}
 
-	.hidden.button1 {
-		display: block;
-	}
 	.desktop-menu {
 		display: flex;
 	}
 
-	.hero {
+	/* top bar positioning shanangings */
+	header {
 		position: relative;
 	}
 
-	.hero .btn-container {
-		display: flex;
-		justify-content: space-around;
-	}
-	.hero .button3 {
-		display: none;
-	}
-	.hero img {
-		object-fit: fill;
-		/* max-height: 100vh; */
+	.top-bar {
+		position: absolute;
+		width: 100%;
+		z-index: 20;
 	}
 
-	.text-container {
-		position: absolute;
-		z-index: 10;
-		bottom: 10%;
-		max-width: var(--wrapper-width-max);
-		border: 2px solid red;
-		left: 50%;
-		/* bring your own prefixes */
-		transform: translate(-50%, 0%);
+	.button2 {
+		font-family: var(--main-font);
+		display: flex;
+		width: 194px;
+		height: 50px;
+		padding: 10px 40px;
+		justify-content: center;
+		align-items: center;
+		gap: 10px;
+		flex-shrink: 0;
+		border-radius: 10px;
+		background: var(--button2-color);
+		color: var(--color-white);
+		cursor: pointer;
+		border: none;
+		font-size: var(--font21);
+		font-weight: var(--font-weight-bold);
+		line-height: var(--line-height32);
 	}
-	/* button */
+
+	.button2:hover {
+		background: var(--color-white);
+		/* border: 3px solid var(--button3-color); */
+		color: var(--color-onyx);
+		text-decoration: none;
+	}
+	.dp-wrapper {
+		max-width: var(--desktop-wrapper-width);
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.logo-icon {
+	min-width: 205px;
+	}
 }
