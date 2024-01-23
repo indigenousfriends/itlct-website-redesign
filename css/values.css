@@ -265,10 +265,13 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		top: 45%;
 	}
 	.values-card {
-		margin: 0px 10px;
+		margin: 10px 0px;
 	}
 	.values-card p {
 		margin: var(--spacing20);
+		font-size: var(--font21);
+		font-weight: var(--font-weight-regular);
+		line-height: var(--spacing32);
 	}
 	.copperback,
 	.authenticity,
@@ -419,17 +422,17 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	/* copper and grape 40% */
 	.copperback,
 	.grapeback {
-		width: 40%;
+		max-width: 40%;
 	}
 	/* onyx and amaranth 60%*/
 	.onyxback,
 	.authenticity {
-		width: 60%;
+		max-width: 60%;
 	}
 	/* blue and teal 50%*/
 	.education,
 	.technology {
-		width: 50%;
+		max-width: 50%;
 	}
 
 	/* imgs need to change from -m to normal desktop size */
