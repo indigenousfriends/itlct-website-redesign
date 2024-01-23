@@ -15,8 +15,12 @@ Styles for an individual page
 Page Component Styles (icon grid, team member card)
 ===================================
 */
-.black-text h3, .black-text h4, .black-text p {
+.black-text .h3-styles, .black-text .h4-styles, .black-text p {
     color: var(--color-onyx);
+}
+
+h1 {
+	text-align: center;
 }
 
 .button2 {
@@ -60,7 +64,7 @@ Section Styles (background, padding, etc.)
 .wrapper {
 	width: var(--mobile-wrapper-width);
 }
-h5 {
+.h5-styles {
     color: var(--color-white);
 }
 
@@ -74,7 +78,7 @@ picture {
 picture img {
 	min-width: 100%;
 }
-h3 {
+.h3-styles {
 	margin-top: 0px;
 	margin-bottom: var(--spacing20);
 }
@@ -105,10 +109,10 @@ h3 {
 	align-items: center;
 }
 
-.team-card h4{
+.team-card .h4-styles{
 	margin: 20px 0px 0px 0px;
 }
-.team-card h5 {
+.team-card .h5-styles {
 	margin: var(--spacing10) 0px;
 
 }
@@ -134,9 +138,7 @@ h3 {
 
 /* Current positions */
 .current-positions {
-	width: 90%;
 	margin: 150px auto;
-
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -144,8 +146,8 @@ h3 {
 }
 
 /* Margin for current positions and get involved text */
-.current-positions h4,
-.get-involved h4 {
+.current-positions .h4-styles,
+.get-involved .h4-styles {
 	margin: 0px 0px 20px 0px;
 }
 .current-positions p,
@@ -169,7 +171,7 @@ h3 {
 }
 
 
-.black-text h3, .black-text h4 {
+.black-text .h3-styles, .black-text .h4-styles {
 	text-align: center;
 }
 
@@ -227,11 +229,6 @@ h3 {
 	overflow-y: scroll;
 	height: 40%;
 }
-.modal-scroll {
-	/* need to fix scroll */
-	/* max-height: calc(85vh 300px); */
-	/* max-height: 35vh; */
-}
 .modal-header {
 	display: flex;
 	flex-direction: column;
@@ -253,7 +250,7 @@ h3 {
 	
 }
 
-.team-card-info-modal h4, .team-card-info-modal h5 {
+.team-card-info-modal .h4-styles, .team-card-info-modal .h5-styles {
 	text-align: center;
 	color: var(--color-onyx);
 	margin: 10px 0px;
@@ -304,7 +301,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		background-image: url("/assets/images/pages/our-team/desktop/header-section-background.png");
 		background-size: cover;
 		background-position: center;
-
+		background-color: var(--color-yaleblue);
 		display: flex;
 		align-items: center;
 	}
@@ -326,7 +323,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	/* .header-info {
 		width: 30%;
 	} */
-	.header-info h3 {
+	.header-info .h3-styles {
 		font-weight: var(--font-weight-bold);
 		line-height: var(--line-height58);
 		color: var(--color-white);
@@ -338,10 +335,6 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	}
 
 	/* team card section */
-	.team-parent {
-		margin: var(--spacing164) auto;
-		width: 80%;
-	}
 	.team-card {
 		flex-direction: row;
 		justify-content: left;
@@ -386,7 +379,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		flex-direction: column;
 		align-items: flex-start;
 	}
-	.get-involved h4 {
+	.get-involved .h4-styles {
 		color: var(--color-white);
 	}
 	.get-involved p {
@@ -431,7 +424,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 /* Tablet Only */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
 	/* Add styles that only apply to tablet. These are usually fixes to get resposnivenes right */
-	.header-info h3, .header-info p {
+	.header-info .h3-styles, .header-info p {
 		margin: 0px;
 	}
 	.header-content picture {
@@ -442,7 +435,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 /* Desktop Only */
 @media screen and (min-width: 1024px) {
 	/* Add styles that apply specifically to desktop */
-	.header-content h3 {
+	.header-content .h3-styles {
 		font-size: var(--font46);
 	}
 	.header-content img {
@@ -460,7 +453,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		margin-top: 8px;
 	}
 	
-	.get-involved h4 {
+	.get-involved .h4-styles {
 		font-size: var(--font46);
 		font-weight: var(--font-weight-bold);
 		line-height: var(--line-height50);
@@ -469,7 +462,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	}
 
 	/* current positions */
-	.current-positions h4 {
+	.current-positions .h4-styles {
 		font-size: var(--font46);
 		line-height: var(--line-height50);
 	}
@@ -481,7 +474,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		width: 62%;
 		gap: 185px;
 	}
-	.header-content h3 {
+	.header-content .h3-styles {
 		font-size: var(--font56);
 	}
 	.team-parent {
