@@ -110,7 +110,7 @@ Page Component Styles (icon grid, team member card)
 .support-header,
 .support-text {
 	width: var(--desktop-wrapper-width);
-	margin-left: 10px;
+	margin-left: 20px;
 }
 
 .support-header {
@@ -125,6 +125,7 @@ Page Component Styles (icon grid, team member card)
 .support-header h2 {
 	color: var(--color-white);
 	font-size: var(--font28);
+	line-height: var(--line-height32);
 }
 .support-header svg {
 	position: relative;
@@ -132,15 +133,20 @@ Page Component Styles (icon grid, team member card)
 	left: 5px;
 }
 .support-text p {
+	font-size: var(--font28);
+	font-weight: var(--font-weight-bold);
+	line-height: var(--line-height32);
+	margin: 20px 0px 0px 0px;
+}
+.support-text a {
 	font-size: var(--font21);
 	font-weight: var(--font-weight-regular);
-	line-height: var(--line-height26);
-	margin: 20px 0px 0px 0px;
+	line-height: var(--line-height32);
 }
 .support-logos {
 	display: flex;
 	flex-direction: column;
-	padding-bottom: 80px;
+	padding-bottom: 116px;
 }
 .support-logo-01 {
 	width: 82px;
@@ -376,9 +382,9 @@ Media Queries (overriding styles for different screen sizes)
 	.technology {
 		width: 50%;
 	}
-	.support {
+	/* .support {
 		padding-left: 100px;
-	}
+	} */
 	.support-logos {
 		display: flex;
 		gap: 40px;
@@ -399,16 +405,28 @@ Media Queries (overriding styles for different screen sizes)
 		color: var(--color-white);
 	}
 	.support {
-		padding-bottom: 116px;
+		/* margin-top: 116px; */
+		/* padding-bottom: 116px; */
+	}
+	.support-header {
+		padding-top: 115px;
+	}
+	.support-header, .support-text {
+		margin-left: 200px;
 	}
 	.support-header h2.h2-styles {
-		font-size: var(--font28);
+		font-size: var(--font46);
 		font-weight: var(--font-weight-bold);
-		line-height: var(--line-height32);
+		line-height: var(--line-height50);
 	}
 	.support p {
-		font-size: var(--font24);
-		font-weight: var(--font-weight-regular);
+		font-size: var(--font46);
+		font-weight: var(--font-weight-bold);
+		line-height: var(--line-height50);
+	}
+	.support-text a {
+		font-size: var(--font28);
+		font-weight: var(--font-weight-medium);
 		line-height: var(--line-height28);
 	}
 	.support svg {
@@ -428,6 +446,7 @@ Media Queries (overriding styles for different screen sizes)
 	.empowering {
 		display: flex;
 		flex-direction: row-reverse;
+		padding-bottom: 100px;
 	}
 	.empowering-text,
 	.empowering-img-block {
@@ -458,7 +477,7 @@ Media Queries (overriding styles for different screen sizes)
 		left: 25%;
 		object-fit: cover;
 		aspect-ratio: 1;
-		width: 55%;
+		width: 40%;
 		border-radius: 10px;
 	}
 	.empowering-img-block::before {
