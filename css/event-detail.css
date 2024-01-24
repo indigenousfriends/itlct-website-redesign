@@ -1,4 +1,3 @@
-/* everything is wonky - on my screen it cuts off on the left - on Gurjeets screen it cuts off on the right or works fine. Looks fine at size 390 */
 html {
 	box-sizing: border-box;
 }
@@ -7,7 +6,6 @@ html {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	/* justify-content: center; */
 	width: var(--mobile-wrapper-width);
 	margin: 0 auto;
 	max-width: var(--wrapper-width-max);
@@ -20,27 +18,22 @@ html {
 .template-main-header {
 	text-align: center;
 	color: var(--color-onyx);
-	padding: 0 20px 0px 20px;
+	--spacing20: 20px;
 }
 
 .template-p {
 	color: var(--color-onyx);
-	padding: 0 20px 0px 20px;
+	--spacing20: 20px;
 }
 
 .template-button {
 	display: flex;
 	padding-top: 40px;
 	padding-bottom: 150px;
-}
-
+	text-wrap: nowrap;
 
 .template-hero-img {
 	padding-top: 80px;
-}
-
-.template-main-header {
-	padding-top: 60px;
 }
 
 .template-gradient {
