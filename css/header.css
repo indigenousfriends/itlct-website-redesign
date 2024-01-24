@@ -42,7 +42,6 @@ body {
 
 .logo-container {
 	display: flex;
-	margin-right: 65px;
 }
 
 /* desktop menu */
@@ -80,7 +79,6 @@ a:visited {
 }
 
 .dp-wrapper .button2 {
-	margin-left: 65px;
 	display: none;
 }
 
@@ -180,7 +178,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 
 /* Desktop & Larger */
 
-@media screen and (min-width: 1350px) {
+@media screen and (min-width: 1180px) {
 	/* adjusting font sizes and styling for p tags (in figma this is body1)*/
 	a {
 		font-weight: var(--font-weight-regular);
@@ -233,7 +231,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		text-decoration: none;
 	}
 	.dp-wrapper {
-		max-width: var(--desktop-wrapper-width);
+		/* max-width: var(--desktop-wrapper-width); */
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
