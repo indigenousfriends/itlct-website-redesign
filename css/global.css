@@ -590,12 +590,32 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		line-height: var(--line-height26);
 		color: var(--color-onyx);
 	}
+	.text-input {
+		display: flex;
+		flex-direction: column;
+		align-items: start;
+	}
+	.text-input .button2 {
+		margin-left: 0px;
+	}
+	form p{
+		width: 100%;
+		padding-bottom: var(--spacing10);
+	}
 }
 
 /* For larger screens */
 @media (min-width: 1280px) {
 	footer {
 		padding: 0 var(--spacing65);
+	}
+}
+/* For EVEN larger screens */
+@media (min-width: 1500px) {
+	.text-input {
+		flex-direction: row;
+		align-items: center;
+		gap: 5%;
 	}
 }
 
