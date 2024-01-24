@@ -79,7 +79,7 @@ a:visited {
 	color: inherit;
 }
 
-.button2 {
+.dp-wrapper .button2 {
 	margin-left: 65px;
 	display: none;
 }
@@ -207,7 +207,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		z-index: 20;
 	}
 
-	.button2 {
+	.dp-wrapper .button2 {
 		font-family: var(--main-font);
 		display: flex;
 		width: 194px;
