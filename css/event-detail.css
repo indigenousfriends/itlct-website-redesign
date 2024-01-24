@@ -34,6 +34,7 @@ html {
 	padding-bottom: 150px;
 }
 
+
 .template-hero-img {
 	padding-top: 80px;
 }
@@ -81,8 +82,10 @@ html {
 	}
 	.template-button {
 		justify-content: center;
+		color: var(--color-white);
 	}
-	/* .template-three-img {
-		padding-top: 308.5px;
-	} */
+
+	.button3 {
+		padding: 0%;
+	}
 }
