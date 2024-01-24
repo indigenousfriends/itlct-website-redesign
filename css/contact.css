@@ -1,0 +1,153 @@
+/*
+===================================
+===================================
+
+- Rename this file to match the page you are working on (e.g. home.css, about.css, etc.)
+- Create a new file for your page and link this file to it in the <head> of your HTML document
+- Variables from global.css will work in this CSS file as well. Do not add any variables to this file.
+===================================
+===================================
+*/
+/* 
+===================================
+Page Component Styles (icon grid, team member card)
+===================================
+*/
+.contact-form-parent {
+	min-height: 100vh;
+}
+
+/* contact form */
+.form-input {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+input[type="text"],
+[type="email"],
+select,
+textarea {
+	resize: vertical;
+	font-family: var(--main-font);
+	font-size: var(--font16);
+	font-weight: var(--font-weight-regular);
+	color: var(--color-onyx);
+	background-color: var(--color-white);
+	border: 1px solid #6c6c6c;
+	width: 100%;
+	border-radius: 5px;
+	padding: var(--spacing10);
+	margin: 5px 0;
+}
+.message {
+	min-height: 140px;
+	width: 100%;
+	border-radius: var(--spacing10);
+	border: none;
+	margin: var(--spacing10) 0;
+	align-self: flex-start;
+}
+.button2 {
+	font-family: var(--main-font);
+	border-radius: var(--spacing10);
+	background-color: var(--button2-color);
+	padding: var(--spacing10) var(--spacing40);
+	color: var(--color-white);
+	border: none;
+	min-width: 187px;
+	min-height: 50px;
+	margin: var(--spacing20);
+	font-weight: var(--font-weight-bold);
+	font-size: var(--font21);
+}
+.button2:hover {
+	background-color: var(--color-white);
+	color: var(--color-onyx);
+}
+/* 
+===================================
+Section Styles (background, padding, etc.)
+===================================
+*/
+.blue-purple {
+	background: var(--color-bluepurple);
+	background-repeat: no-repeat;
+	color: var(--color-white);
+}
+.h3-styles {
+	color: var(--color-white);
+	text-align: center;
+}
+p {
+	color: var(--color-white);
+}
+.form-info {
+	padding: 0px var(--spacing20);
+}
+
+/* 
+===================================
+Media Queries (overriding styles for different screen sizes)
+
+Note: Here we are using a mobile-first approach, so we start with the smallest screen size and work our way up.
+Start by writing styles for the mobile version of the design on the lines above.
+Anything that needs to change for larger screens should be added to the media queries below.
+
+Feel free to change the min/max-width values to whatever you need. Use variables.
+===================================
+*/
+
+/* Tablet and Larger */
+@media screen and (min-width: 768px) {
+	/* Add styles that apply to table and desktop */
+	.h3-styles {
+		text-align: left;
+	}
+	.contact-form-parent {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		text-align: left;
+		padding: var(--spacing40) 50px;
+		gap: var(--spacing100);
+		line-height: 6px;
+	}
+	.form-info {
+		width: 45%;
+	}
+	.form-info h3 {
+		text-align: left;
+		margin-top: 0px;
+	}
+	.wrapper {
+		width: var(--desktop-wrapper-width);
+	}
+}
+
+/* Tablet Only */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+	/* Add styles that only apply to tablet. These are usually fixes to get resposnivenes right */
+	.form-info {
+		width: 50%;
+	}
+	.contact-form-parent {
+		padding: var(--spacing40) 50px;
+	}
+}
+
+/* Desktop Only */
+@media screen and (min-width: 1024px) {
+	/* Add styles that apply specifically to desktop */
+	.form-info h3 {
+		font-size: var(--font46);
+		font-weight: var(--font-weight-bold);
+		line-height: var(--line-height50);
+		color: var(--color-white);
+		text-align: left;
+	}
+	.contact-form-parent {
+		max-width: 1080px;
+		margin: 0 auto;
+	}
+}
