@@ -25,22 +25,6 @@ body {
 	font-family: var(--main-font);
 }
 
-/* img {
-	display: block;
-	max-width: 100%;
-} */
-
-.img-container {
-	max-width: 390px;
-	/* for dev purpose only */
-}
-
-/* .block {
-	display: block;
-} */
-
-
-
 /* top bar section */
 .top-bar {
 	background-color: var(--color-onyx);
@@ -51,11 +35,10 @@ body {
 	padding: 20px;
 }
 .dp-wrapper {
-width: var(--mobile-wrapper-width);
-display: flex;
-justify-content: space-between;
+	width: var(--mobile-wrapper-width);
+	display: flex;
+	justify-content: space-between;
 }
-
 
 .logo-container {
 	display: flex;
@@ -120,18 +103,11 @@ a:visited {
 	position: relative;
 	display: flex;
 	align-items: center;
-	/* overflow: hidden; */
 }
 
-.img-container {
-	/* display: flex; */
-	/* justify-content: center; */
+nav .img-container {
+	max-width: 390px;
 	margin: auto;
-}
-
-/* heading for text */
-.text-container {
-	text-align: center;
 }
 
 #nav-links-container {
@@ -208,7 +184,6 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	/* adjusting font sizes and styling for p tags (in figma this is body1)*/
 	a {
 		font-weight: var(--font-weight-regular);
-		/* font-size: var(--font16); */
 		line-height: var(--line-height26);
 	}
 
@@ -221,7 +196,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		display: flex;
 	}
 
-	/* top bar positioning shanangings */
+	/* top bar positioning */
 	header {
 		position: relative;
 	}
@@ -254,7 +229,6 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 
 	.button2:hover {
 		background: var(--color-white);
-		/* border: 3px solid var(--button3-color); */
 		color: var(--color-onyx);
 		text-decoration: none;
 	}
@@ -265,6 +239,6 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		align-items: center;
 	}
 	.logo-icon {
-	min-width: 205px;
+		min-width: 205px;
 	}
 }
