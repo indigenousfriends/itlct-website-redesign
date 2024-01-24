@@ -1,27 +1,5 @@
-/*
-===================================
-===================================
-Styles for an individual page
-
-- Rename this file to match the page you are working on (e.g. home.css, about.css, etc.)
-- Create a new file for your page and link this file to it in the <head> of your HTML document
-- Variables from global.css will work in this CSS file as well. Do not add any variables to this file.
-===================================
-===================================
-*/
-
-/* need to add wrapper */
-/* red background for bottom section needs fixing */
-/* some text changes from white to black when in desktop mode */
-/* blue background for support us needs fixing */
-/* heart color and gap needed for support us */
-/* white icons in support us need flexbox to move side by side in desktop mode */
-/* align title text to center somehow hoping wrapper fixes some stuff */
 html {
-	/* does this need before and after */
 	box-sizing: border-box;
-}
-body {
 }
 
 /* 
@@ -34,30 +12,45 @@ Page Component Styles (icon grid, team member card)
 	flex-direction: column;
 	justify-content: center;
 }
-.card{
+
+.hero img {
+	width: 100%;
+}
+.values-card {
 	min-height: 204px;
-	color: var(--color-white);
 	border: none;
 	border-radius: 10px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	text-align: center;
-	margin: 0px 20px;
+	margin: 0 20px;
 }
-.card h4 {
-	margin: 20px 0px 0px 0px;
+.text-container {
+	min-height: 204px;
+	padding: 0 20px 0 20px;
+	margin-bottom: 20px;
+	display: flex;
+	flex-direction: column;
+	border-radius: 10px;
+	justify-content: center;
+}
+.values-card img {
+	margin-bottom: 20px;
+}
+.values-card h2 {
+	margin: 20px 0px 10px 0px;
 	font-size: var(--font28);
 	font-weight: var(--font-weight-bold);
 	line-height: var(--line-height32);
+	color: var(--color-white);
 }
-.card p {
+.values-card p {
 	display: flex;
 	text-align: left;
 	font-size: var(--font16);
-    font-weight: var(--font-weight-regular);
-    line-height: var(--line-height20);
-	margin: var(--spacing20);
+	font-weight: var(--font-weight-regular);
+	line-height: var(--line-height20);
 }
 /* Turns Our Values Title Black */
 .values-head {
@@ -67,7 +60,7 @@ Page Component Styles (icon grid, team member card)
 	margin-bottom: 100px;
 }
 
-.h3-black {
+.h1-black {
 	color: var(--color-onyx);
 	margin: 60px 0 20px 0;
 }
@@ -76,7 +69,6 @@ Page Component Styles (icon grid, team member card)
 	color: var(--color-onyx);
 	margin: 0 20px 0;
 }
-/* Adds a background color in lieu of those rectangle shapes */
 .copperback {
 	background-color: var(--color-copper);
 	display: flex;
@@ -84,83 +76,86 @@ Page Component Styles (icon grid, team member card)
 	text-align: center;
 	margin-bottom: 20px;
 }
-
-/* Adds a background color in lieu of those rectangle shapes */
-
 .onyxback {
-	margin-top: 20px;
 	background-color: var(--color-onyx);
 }
-
-/* Adds a background color in lieu of those rectangle shapes */
-
 .amaraback {
-	margin-top: 20px;
-	margin-bottom: 20px;
 	background-color: var(--color-amaranth);
 }
-
-/* Adds a background color in lieu of those rectangle shapes */
-
+.sustainability-text {
+	background-color: var(--color-onyx);
+}
+.authenticity-text {
+	background-color: var(--color-amaranth);
+}
+.education-text {
+	background-color: var(--color-yaleblue);
+}
+.tech-text {
+	background-color: var(--color-teal);
+	padding-bottom: 20px;
+}
 .grapeback {
-	margin-top: 20px;
 	background-color: var(--color-cybergrape);
 }
-/* Adds a background color in lieu of those rectangle shapes */
-
 .blueback {
-	margin-top: 20px;
-	margin-bottom: 20px;
 	background-color: var(--color-yaleblue);
 }
-/* Adds a background color in lieu of those rectangle shapes */
-
 .tealback {
-	margin-top: 20px;
 	background-color: var(--color-teal);
 }
-/* Adds a background color in lieu of those rectangle shapes */
-
 .support {
 	background-color: var(--color-yaleblue);
-	margin-top: 90px;
 }
-.support-header, .support-text {
-	margin: 0px 0px 0px 20px;
+.support-header,
+.support-text {
+	width: var(--desktop-wrapper-width);
+	margin-left: 20px;
+}
 
-}
 .support-header {
 	display: flex;
-    flex-direction: row;
+	flex-direction: row;
 	justify-content: left;
 	font-size: var(--font28);
 	font-weight: var(--font-weight-bold);
 	line-height: var(--line-height32);
-
+	align-items: center;
 }
-/* Turns We Support to Red */
-/* inline block allows the alignment with heart icon but doesn't fill desktop */
-.support-header h4, .support-header svg {
-	margin: 90px 0px 20px 0px;
-	color: var(--color-amaranth);
+.support-header h2 {
+	color: var(--color-white);
+	font-size: var(--font28);
+	line-height: var(--line-height32);
 }
-.support-text h4 {
+.support-header svg {
+	position: relative;
+	bottom: 2.5px;
+	left: 5px;
+}
+.support-text p {
 	font-size: var(--font28);
 	font-weight: var(--font-weight-bold);
 	line-height: var(--line-height32);
-	margin: 0;
-}
-.support-text p {
-	font-size: var(--font21);
-    font-weight: var(--font-weight-regular);
-    line-height: var(--line-height26);
 	margin: 20px 0px 0px 0px;
 }
-.support-logo-01 {
-	margin: 40px 0px 20px;
+.support-text a {
+	font-size: var(--font21);
+	font-weight: var(--font-weight-regular);
+	line-height: var(--line-height32);
 }
 .support-logos {
-	padding-bottom: 80px;
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 116px;
+}
+.support-logo-01 {
+	width: 82px;
+	height: 69px;
+	margin: 40px 0px 20px;
+}
+.support-logo-02 {
+	width: 149px;
+	height: 62px;
 }
 .empowering-text {
 	display: flex;
@@ -169,14 +164,12 @@ Page Component Styles (icon grid, team member card)
 	text-align: center;
 	margin-top: 60px;
 }
-
-/* Turns Title and Paragraph to Black */
-.empowering h4 {
+.empowering h2 {
 	font-size: var(--font28);
 	font-weight: var(--font-weight-bold);
 	line-height: var(--line-height32);
 	color: var(--color-onyx);
-	margin: 0;
+	margin-bottom: 20px;
 }
 .empowering p {
 	text-align: left;
@@ -184,7 +177,7 @@ Page Component Styles (icon grid, team member card)
 	padding: 0px var(--spacing20);
 	margin-bottom: 60px;
 }
-/* Adds Red Block behind this img - this changes in desktop version somehow */
+/* Adds Red Block behind this img - this changes in the desktop version */
 .empowering-img-block {
 	display: flex;
 	flex-direction: column;
@@ -203,34 +196,82 @@ Section Styles (background, padding, etc.)
 /* 
 ===================================
 Media Queries (overriding styles for different screen sizes)
-
-Note: Here we are using a mobile-first approach, so we start with the smallest screen size and work our way up.
-Start by writing styles for the mobile version of the design on the lines above.
-Anything that needs to change for larger screens should be added to the media queries below.
-
-Feel free to change the min/max-width values to whatever you need. Use variables.
 ===================================
 */
-
-/* Tablet Only */
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-	/* Add styles that only apply to tablet. These are usually fixes to get resposnivenes right */
-}
 
 /* Tablet and Larger */
 @media screen and (min-width: 768px) {
 	/* Add styles that apply to table and desktop */
 }
 
+/* Tablet Only */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+	/* Add styles that only apply to tablet. These are usually fixes to get responsiveness right */
+}
+
 /* Desktop Only */
 @media screen and (min-width: 1024px) {
 	/* Add styles that apply specifically to desktop */
 
-	/* adjusting font sizes and styling for p tags */
+	/* Values header and p needs to be on top of the hero */
+	.desktop-parent {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		margin: 190px auto 193px auto;
+		max-width: 1328px;
+	}
+	.values-main {
+		display: flex;
+		position: absolute;
+		left: 50%;
+	}
+	.values-card {
+		margin: 0px 10px;
+	}
+	.values-card p {
+		margin: 0px var(--spacing20);
+		font-size: var(--font21);
+		font-weight: var(--font-weight-regular);
+		line-height: var(--line-height32);
+	}
+	.copperback,
+	.authenticity,
+	.education {
+		margin-right: 10px;
+	}
+	.sustainability-text,
+	.grapeback,
+	.technology {
+		margin-left: 10px;
+	}
+	.values-card h2 {
+		margin: 20px 0px 0px 20px;
+		font-size: var(--font36);
+		font-weight: var(--font-weight-bold);
+		line-height: var(--line-height40);
+		text-align: left;
+	}
+	.values-head p {
+		text-align: left;
+		margin: 0;
+		font-size: var(--font21);
+		font-weight: var(--font-weight-regular);
+		line-height: var(--line-height26);
+	}
+	.onyxback,
+	.grapeback,
+	.tealback {
+		padding-right: 44px;
+	}
+	/* Cards need to change from column to row with some stylized sizing and padding*/
+	.desktop-group {
+		display: flex;
+		flex-direction: row;
+		height: 290px;
+	}
+	/* Gradients */
 	.hero {
-		width: 100vw;
-		height: 100vh;
-		background-image: url(../assets/images/pages/values/hero-values.jpg);
 		background-image: linear-gradient(
 				260deg,
 				rgba(9, 9, 9, 0.8) 46.9%,
@@ -240,9 +281,215 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		background-position: center center;
 		background-size: cover;
 		background-repeat: no-repeat;
+		position: relative;
 	}
 	.hero img {
 		display: none;
 	}
+	.sustainability {
+		background-image: linear-gradient(
+				269deg,
+				#0e0e0e 46.26%,
+				rgba(27, 27, 27, 0) 99.04%
+			),
+			url(../assets/images/pages/values/sustainability.jpg);
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	.authenticity {
+		background-image: linear-gradient(
+				88deg,
+				#b91515 47.26%,
+				rgba(185, 21, 21, 0.73) 55.57%,
+				rgba(119, 45, 45, 0.4) 68.47%
+			),
+			url(../assets/images/pages/values/authenticity.jpg);
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	.education {
+		background-image: linear-gradient(
+				90deg,
+				#184f85 63.23%,
+				rgba(24, 79, 133, 0) 83.39%
+			),
+			url(../assets/images/pages/values/education.jpg);
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	.technology {
+		background-image: linear-gradient(
+				280deg,
+				#007a80 67.16%,
+				rgba(0, 122, 128, 0) 80.36%
+			),
+			url(../assets/images/pages/values/techinnovation.jpg);
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	/* Changing values card imgs to background imgs */
+	.values-card img {
+		display: none;
+	}
+	/* Individual card widths */
+	.sustainability-text {
+		display: flex;
+		flex-direction: column;
+		width: 60%;
+		margin-left: auto;
+		background-color: transparent;
+		border-radius: 10px;
+	}
+	.authenticity-text {
+		display: flex;
+		flex-direction: column;
+		width: 50%;
+		background-color: transparent;
+		border-radius: 10px;
+	}
+	.education-text {
+		display: flex;
+		flex-direction: column;
+		width: 65%;
+		background-color: transparent;
+		border-radius: 10px;
+	}
+	.tech-text {
+		display: flex;
+		flex-direction: column;
+		width: 70%;
+		margin-left: auto;
+		background-color: transparent;
+		border-radius: 10px;
+	}
+	/* setting copper and grape cards maximum widths */
+	.copperback,
+	.grapeback {
+		max-width: 40%;
+	}
+	/* setting onyx and amaranth cards maximum widths */
+	.onyxback,
+	.authenticity {
+		max-width: 60%;
+	}
+	/* setting blue and teal cards widths */
+	.education,
+	.technology {
+		width: 50%;
+	}
+	/* .support {
+		padding-left: 100px;
+	} */
+	.support-logos {
+		display: flex;
+		gap: 40px;
+	}
+	/* All Text white except Empowerment section and We Support Header */
+	.h1-black {
+		color: var(--color-white);
+	}
+	.values-head {
+		text-align: left;
+		max-width: 475px;
+		padding-left: 20px;
+	}
+	.values-head p {
+		color: var(--color-white);
+	}
+	p {
+		color: var(--color-white);
+	}
+	.support {
+		/* margin-top: 116px; */
+		/* padding-bottom: 116px; */
+	}
+	.support-header {
+		padding-top: 115px;
+	}
+	.support-header,
+	.support-text {
+		margin-left: 200px;
+	}
+	.support-header h2.h2-styles {
+		font-size: var(--font46);
+		font-weight: var(--font-weight-bold);
+		line-height: var(--line-height50);
+	}
+	.support p {
+		font-size: var(--font46);
+		font-weight: var(--font-weight-bold);
+		line-height: var(--line-height50);
+	}
+	.support-text a {
+		font-size: var(--font28);
+		font-weight: var(--font-weight-medium);
+		line-height: var(--line-height28);
+	}
+	.support svg {
+		width: 39px;
+		height: 39px;
+	}
+	.support-logos {
+		display: flex;
+		flex-direction: row;
+		align-items: baseline;
+	}
+	.support-logo-01,
+	.support-logo-02 {
+		width: auto;
+		height: 100px;
+	}
+	.empowering {
+		display: flex;
+		flex-direction: row-reverse;
+		padding-bottom: 100px;
+	}
+	.empowering-text,
+	.empowering-img-block {
+		width: 50%;
+	}
+	.empowering-text {
+		text-align: left;
+		padding-right: 270px;
+		color: var(--color-onyx);
+	}
+	.empowering-text h2 {
+		font-size: var(--font46);
+		font-weight: var(--font-weight-bold);
+		line-height: var(--line-height50);
+		margin-bottom: 20px;
+	}
+	.empowering-text p {
+		margin: 0 0 0 0;
+		padding: 0 0 0 0;
+	}
+	.empowering-img-block {
+		background-color: transparent;
+		position: relative;
+	}
+	.empowering-img-block img {
+		position: absolute;
+		top: 15%;
+		left: 25%;
+		object-fit: cover;
+		aspect-ratio: 1;
+		width: 40%;
+		border-radius: 10px;
+	}
+	.empowering-img-block::before {
+		position: absolute;
+		top: 10%;
+		left: 20%;
+		content: " ";
+		background-color: var(--color-amaranth);
+		border-radius: 10px;
+		width: 299px;
+		height: 299px;
+		z-index: -1;
+	}
 }
-/* DO MEDIA QUERIES TO MOVE THINGS FOR MOBILE TO DESKTOP */
