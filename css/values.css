@@ -76,15 +76,12 @@ Page Component Styles (icon grid, team member card)
 	text-align: center;
 	margin-bottom: 20px;
 }
-
 .onyxback {
 	background-color: var(--color-onyx);
 }
-
 .amaraback {
 	background-color: var(--color-amaranth);
 }
-
 .sustainability-text {
 	background-color: var(--color-onyx);
 }
@@ -134,7 +131,6 @@ Page Component Styles (icon grid, team member card)
 	bottom: 2.5px;
 	left: 5px;
 }
-
 .support-text p {
 	font-size: var(--font21);
 	font-weight: var(--font-weight-regular);
@@ -162,8 +158,6 @@ Page Component Styles (icon grid, team member card)
 	text-align: center;
 	margin-top: 60px;
 }
-
-/* Turns Title and Paragraph to Black */
 .empowering h2 {
 	font-size: var(--font28);
 	font-weight: var(--font-weight-bold);
@@ -177,7 +171,7 @@ Page Component Styles (icon grid, team member card)
 	padding: 0px var(--spacing20);
 	margin-bottom: 60px;
 }
-/* Adds Red Block behind this img - this changes in desktop version somehow */
+/* Adds Red Block behind this img - this changes in the desktop version */
 .empowering-img-block {
 	display: flex;
 	flex-direction: column;
@@ -196,12 +190,6 @@ Section Styles (background, padding, etc.)
 /* 
 ===================================
 Media Queries (overriding styles for different screen sizes)
-
-Note: Here we are using a mobile-first approach, so we start with the smallest screen size and work our way up.
-Start by writing styles for the mobile version of the design on the lines above.
-Anything that needs to change for larger screens should be added to the media queries below.
-
-Feel free to change the min/max-width values to whatever you need. Use variables.
 ===================================
 */
 
@@ -219,6 +207,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 @media screen and (min-width: 1024px) {
 	/* Add styles that apply specifically to desktop */
 
+	/* Values header and p needs to be on top of the hero */
 	.desktop-parent {
 		display: flex;
 		flex-direction: column;
@@ -230,16 +219,15 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		display: flex;
 		position: absolute;
 		left: 50%;
-		top: 45%;
 	}
 	.values-card {
 		margin: 0px 10px;
 	}
 	.values-card p {
-		margin: var(--spacing20);
+		margin: 0px var(--spacing20);
 		font-size: var(--font21);
 		font-weight: var(--font-weight-regular);
-		line-height: var(--line-height28);
+		line-height: var(--line-height32);
 	}
 	.copperback,
 	.authenticity,
@@ -265,13 +253,12 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		font-weight: var(--font-weight-regular);
 		line-height: var(--line-height26);
 	}
-
 	.onyxback,
 	.grapeback,
 	.tealback {
 		padding-right: 44px;
 	}
-
+	/* Cards need to change from column to row with some stylized sizing and padding*/
 	.desktop-group {
 		display: flex;
 		flex-direction: row;
@@ -327,7 +314,6 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		background-size: cover;
 		background-repeat: no-repeat;
 	}
-
 	.technology {
 		background-image: linear-gradient(
 				280deg,
@@ -375,23 +361,21 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		background-color: transparent;
 		border-radius: 10px;
 	}
-
-	/* copper and grape 40% */
+	/* setting copper and grape cards maximum widths */
 	.copperback,
 	.grapeback {
-		width: 40%;
+		max-width: 40%;
 	}
-	/* onyx and amaranth 60%*/
+	/* setting onyx and amaranth cards maximum widths */
 	.onyxback,
 	.authenticity {
-		width: 60%;
+		max-width: 60%;
 	}
-	/* blue and teal 50%*/
+	/* setting blue and teal cards widths */
 	.education,
 	.technology {
 		width: 50%;
 	}
-
 	.support {
 		padding-left: 100px;
 	}
@@ -399,7 +383,6 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		display: flex;
 		gap: 40px;
 	}
-
 	/* All Text white except Empowerment section and We Support Header */
 	.h1-black {
 		color: var(--color-white);
@@ -423,7 +406,6 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		font-weight: var(--font-weight-bold);
 		line-height: var(--line-height32);
 	}
-
 	.support p {
 		font-size: var(--font24);
 		font-weight: var(--font-weight-regular);
@@ -443,7 +425,6 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		width: auto;
 		height: 100px;
 	}
-
 	.empowering {
 		display: flex;
 		flex-direction: row-reverse;
