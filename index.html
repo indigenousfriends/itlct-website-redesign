@@ -13,8 +13,7 @@
 		<link rel="stylesheet" href="css/normalize.css" />
 		<link rel="stylesheet" href="css/global.css" />
 		<link rel="stylesheet" href="css/header.css" />
-		<!-- In a new branch, rename the page.css file adding the name of that actual page (Example: home.css) -->
-		<link rel="stylesheet" href="css/page.css" />
+		<link rel="stylesheet" href="/css/home.css" />
 	</head>
 
 	<body>
@@ -38,10 +37,6 @@
 								/>
 							</picture>
 						</div>
-						<div>
-							<!-- waiting for sr class -->
-							<!-- <h1 class="sr-only">If These Lands <span class="block"> Could Talk</span></h1> -->
-						</div>
 					</div>
 					<!-- end logo -->
 					<!-- desktop menu -->
@@ -54,7 +49,7 @@
 								<a href="/imapct.html"> Our Impact</a>
 							</li>
 							<li>
-								<a href="/values.html"> Our Value</a>
+								<a href="/values.html"> Our Values</a>
 							</li>
 							<li>
 								<a href="/events.html"> Events</a>
@@ -114,7 +109,7 @@
 								</g>
 							</svg>
 						</button>
-	
+
 						<div id="nav-links-container" class="hidden">
 							<ul id="nav-links">
 								<li>
@@ -124,7 +119,7 @@
 									<a href="/impact.html"> Our Impact</a>
 								</li>
 								<li>
-									<a href="/values.html"> Our Value</a>
+									<a href="/values.html"> Our Values</a>
 								</li>
 								<li>
 									<a href="/events.html"> Events</a>
@@ -141,14 +136,344 @@
 							</ul>
 						</div>
 					</div>
-	
+
 					<!-- hamburger menu -->
-	
 				</div>
 			</nav>
 		</header>
 
+		<!-- =======================
+		Hero Section
+		========================== -->
 
+		<!-- "hero" is the class for the entire section -->
+		<section class="hero">
+			<!-- image of girl with dandelion -->
+			<!-- this image is only displayed on mobile and does not use a source set like the other sections -->
+			<img
+				src="./assets/images/pages/home/mobile/hero-home-mobile-2.jpg"
+				alt="a little girl holding a flower"
+			/>
+
+			<!-- "hero-home" holds the heading, paragraph and buttons for the hero image section -->
+			<!-- global class of "wrapper" is applied -->
+			<!-- "align-text" is a home-page class to center the text -->
+			<div class="hero-home wrapper align-text">
+				<h3>Preserving Tomorrow by Building Today</h3>
+				<p>
+					If These Lands Could Talk (ITLCT) is global network of change-makers,
+					supporters, and allies who support native and indigenous communities
+					to thrive authentically and on their own terms with digital technology
+					both now and in the future.
+				</p>
+				<!-- about us "button" visible on mobile style only -->
+				<div>
+					<button class="button3">About US</button>
+				</div>
+				<!-- "btn-container" holds the other two buttons for the hero section -->
+				<!-- these buttons are "hidden" for mobile and only visible for tablet and larger -->
+				<div class="hidden btn-container">
+					<button class="button1">Our Impact</button>
+					<button class="button1">Our Values</button>
+				</div>
+			</div>
+		</section>
+
+		<!-- Main content -->
+
+		<!-- =======================
+		Community Partnerships Section
+		========================== -->
+
+		<!-- "community-partnerships" is the tag used to target the entire section-->
+		<!-- global class of "wrapper" is applied -->
+		<section class="community-partnerships wrapper">
+			<!-- "community" contains the image and the "partnerships-paragraph" -->
+			<div class="community align-text">
+				<!-- image source set used here - community partnerships.jpg and partnerships-mobile.jpg-->
+				<picture class="card-img">
+					<source
+						media="(min-width:1025px)"
+						srcset="./assets/images/pages/home/community-partnerships.jpg"
+					/>
+					<img
+						src="./assets/images/pages/home/mobile/partnerships-mobile.jpg"
+						alt="a group of people"
+					/>
+				</picture>
+				<!-- "partnerships-paragraph" contains the header, paragraph text, and button on amaranth background-->
+				<div class="partnerships-paragraph">
+					<h4>Community Partnerships</h4>
+
+					<p>
+						We partner with communities and create aligned programming and
+						events that amplify the voices, experiences, and excellence of
+						native and indigenous populations throughout the world.
+					</p>
+
+					<button class="button1">Learn More</button>
+				</div>
+			</div>
+		</section>
+
+		<!-- =======================
+		Global Ecosystem Section
+		========================== -->
+
+		<!-- "global-ecosystem" targets the entire section -->
+		<!-- on tablet and larger, this is where the bg color 'bluepurple' with vector-1 svg  is applied-->
+		<section class="global-ecosystem">
+			<!-- "ecosystem" holds the cybergrape "ecosystem-subsection", and the onyx "blockquote" -->
+			<div class="ecosystem wrapper align-text">
+				<!-- "ecosystem-subsection" is cybergrape and holds heading and paragraph -->
+				<div class="ecosystem-subsection">
+					<h4>A Global Ecosystem</h4>
+					<p>
+						Supporting authentic representation of indigenous and native
+						communities throughout the world with digital technology and
+						community engagement, but on their own terms.
+					</p>
+					<p>
+						ITLCT supports the rights to self-determination and agency with
+						digital technology.
+					</p>
+				</div>
+				<!-- "blockquote" holds the onyx quote  block -->
+				<div class="blockquote">
+					<p>
+						We believe in an authentic, responsible, inclusive, and sustainable
+						digital future with positive social impact for native and indigenous
+						communities across the globe.
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- =======================
+		What We Do Section
+		========================== -->
+
+		<!-- "what-we-do" targets the whole section -->
+		<!-- global class of "wrapper" is applied -->
+		<section class="what-we-do wrapper">
+			<!-- "align-text" is a home-page class to center the text -->
+			<h3 class="align-text">What We Do</h3>
+
+			<!-- "card-container" holds all 3 "home-card" divs-->
+			<div class="card-container">
+				<!-- "digital fluency" tag to create a teal background -->
+				<!-- "home-card" keeps cards uniform -->
+				<div class="digital-fluency home-card">
+					<!-- "card-img" tag targets the image on the card -->
+					<!-- img for digital fluency uses a source set with digital-fluency.jpg and digital-fluency-mobile.jpg-->
+					<picture class="card-img">
+						<source
+							media="(min-width:768px)"
+							srcset="./assets/images/pages/home/digital-fluency.jpg"
+						/>
+						<img
+							src="./assets/images/pages/home/mobile/digital-fluency-mobile.jpg"
+							alt="group of people holding digital devices"
+						/>
+					</picture>
+
+					<!-- "text-container" adds a margin to the heading and paragraph-->
+					<div class="text-container">
+						<h4>Digital Fluency</h4>
+						<p>
+							We assist and partner with communities to engage with digital
+							technologies through education, community building, and
+							networking.
+						</p>
+					</div>
+				</div>
+
+				<!-- "community-engagement" tag to create a copper background -->
+				<!-- "home-card" keeps cards uniform -->
+				<div class="community-engagement home-card">
+					<!-- "card-img" tag targets the image on the card -->
+					<!-- img for community-engagement uses a source set community-engagement.jpg and community-engagement-mobile.jpg-->
+					<picture class="card-img">
+						<source
+							media="(min-width:768px)"
+							srcset="./assets/images/pages/home/community-engagement.jpg"
+						/>
+						<img
+							src="./assets/images/pages/home/mobile/community-engagement-mobile.jpg"
+							alt="a group of people team building"
+						/>
+					</picture>
+
+					<!-- "text-container" adds a margin to the heading and paragraph-->
+					<div class="text-container">
+						<h4>Community Engagement</h4>
+						<p>
+							We host community meetups in the metaverse and with digital
+							technology. We partner with communities as they navigate emerging
+							technologies.
+						</p>
+					</div>
+				</div>
+
+				<!-- "technology-programs" tag to create a yaleblue background -->
+				<!-- "home-card" keeps cards uniform -->
+				<div class="technology-programs home-card">
+					<!-- "card-img" tag targets the image on the card -->
+					<!-- img for digital technology programs uses a source set technology-programs.jpg and technology-programs-mobile.jpg-->
+					<picture class="card-img">
+						<source
+							media="(min-width:768px)"
+							srcset="./assets/images/pages/home/technology-programs.jpg"
+						/>
+						<img
+							src="./assets/images/pages/home/mobile/tenchnology-programs-mobile.jpg"
+							alt="a group of people"
+						/>
+					</picture>
+
+					<!-- "text-container" adds a margin to the heading and paragraph-->
+					<div class="text-container">
+						<h4>Digital Technology Programs</h4>
+						<p>
+							We provide STEAM opportunities that are relevant to native and
+							indigenous communities.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- =======================
+		Our Values Section
+		========================== -->
+
+		<!-- "values" targets the entire section -->
+		<!-- "align-text" is a home-page class to center the text -->
+		<!-- on tablet and larger, this is where the bg image "values.jpg"  is applied-->
+		<section class="values align-text">
+			<!-- "values-holder" holding "text-container" and "our-values" -->
+			<div class="values-holder wrapper">
+				<!-- "text-container" adds a margin to the heading and paragraph-->
+				<div class="text-container">
+					<h4>Our Values</h4>
+					<p>
+						Appreciate the past, understand the present, adapt to the future.
+					</p>
+				</div>
+
+				<!-- "our-values" is the yaleblue container with 3 sections of text -->
+				<div class="our-values">
+					<!-- past -->
+					<div>
+						<h4>Past</h4>
+						<p>
+							Appreciate the past by preserving heritage and culture to pass
+							onto future generations.
+						</p>
+					</div>
+					<!-- present -->
+					<div>
+						<h4>Present</h4>
+						<p>
+							Understand current needs and history. Amplify and share native
+							excellence. Enable creativity and growth.
+						</p>
+					</div>
+					<!-- future -->
+					<div>
+						<h4>Future</h4>
+						<p>
+							Adapt to new innovation where it makes sense. Prepare and support
+							communities to thrive with innovation beyond even what we know
+							today.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- =======================
+		Events and Programs Section
+		========================== -->
+
+		<!-- "events-and-programs" targets the entire section -->
+		<!-- on desktop, this is where the bg color 'bluepurple' with vector-2 svg  is applied-->
+		<section class="events-and-programs">
+			<!-- "align-text" is a home-page class to center the text -->
+			<h3 class="align-text">Upcoming Events and Programs</h3>
+			<!-- "events-container" holds the "placeholder" divs - applying flexbox and styling to them -->
+			<!-- global class of "wrapper" is applied -->
+			<div class="events-container wrapper">
+				<!-- "placeholder" is the linked div that holds the image and the event heading and description -->
+				<div class="placeholder">
+					<!-- "image-link" is used to remove the underline for the link -->
+					<a href="#" class="image-link">
+						<!-- the image is a source set, currently using events-placeholder.jpg and events-placeholder-mobile.jpg -->
+						<picture>
+							<source
+								media="(min-width:768px)"
+								srcset="./assets/images/pages/home/events-placeholder.jpg"
+							/>
+							<img
+								src="./assets/images/pages/home/mobile/events-placeholder-mobile.jpg"
+								alt="a person with a globe"
+							/>
+						</picture>
+						<!-- event-description contains and styles the heading and paragraph -->
+						<div class="event-description">
+							<h4>Walking in Multiple Worlds</h4>
+							<p>Is an ITLCT program series consisting of global workshops</p>
+						</div>
+					</a>
+				</div>
+				<!-- "placeholder" is the linked div that holds the image and the event heading and description -->
+				<div class="placeholder">
+					<!-- "image-link" is used to remove the underline for the link -->
+					<a href="#" class="image-link">
+						<!-- the image is a source set, currently using events-placeholder.jpg and events-placeholder-mobile.jpg -->
+						<picture>
+							<source
+								media="(min-width:768px)"
+								srcset="./assets/images/pages/home/events-placeholder.jpg"
+							/>
+							<img
+								src="./assets/images/pages/home/mobile/events-placeholder-mobile.jpg"
+								alt="a person with a globe"
+							/>
+						</picture>
+						<!-- event-description contains and styles the heading and paragraph -->
+						<div class="event-description">
+							<h4>Walking in Multiple Worlds</h4>
+							<p>Is an ITLCT program series consisting of global workshops</p>
+						</div>
+					</a>
+				</div>
+				<!-- "placeholder" is the linked div that holds the image and the event heading and description -->
+				<div class="placeholder">
+					<!-- "image-link" is used to remove the underline for the link -->
+					<a href="#" class="image-link">
+						<!-- the image is a source set, currently using events-placeholder.jpg and events-placeholder-mobile.jpg -->
+						<picture>
+							<source
+								media="(min-width:768px)"
+								srcset="./assets/images/pages/home/events-placeholder.jpg"
+							/>
+							<img
+								src="./assets/images/pages/home/mobile/events-placeholder-mobile.jpg"
+								alt="a person with a globe"
+							/>
+						</picture>
+						<!-- event-description contains and styles the heading and paragraph -->
+						<div class="event-description">
+							<h4>Walking in Multiple Worlds</h4>
+							<p>Is an ITLCT program series consisting of global workshops</p>
+						</div>
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<!-- Footer -->
 		<!-- Footer -->
 
 		<footer>
