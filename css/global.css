@@ -370,9 +370,7 @@ footer a img:hover {
 }
 
 /* hover effect on all footer links */
-.btn-la:hover,
-.footer-main ul li a:hover,
-.bottom-links a:hover {
+.btn-la:hover{
 	border-bottom: 2px solid var(--color-white);
 }
 
