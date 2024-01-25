@@ -463,7 +463,9 @@ Events and Programs Section
 
 /* Desktop Only */
 @media screen and (min-width: 1025px) {
-	/* targeting tag to change the style from onyx to white */
+	section .wrapper {
+		max-width: 1130px;
+	}
 
 	/* ================================
 Hero Section
@@ -501,7 +503,8 @@ Hero Section
 	/* targeting the div holding the buttons */
 	.hero .btn-container {
 		display: flex;
-		justify-content: space-around;
+		justify-content: center;
+		gap: 80px;
 	}
 
 	/* targeting the buttons that need to be hidden on desktop version */
@@ -513,6 +516,13 @@ Hero Section
 	.hero h3,
 	.hero p {
 		color: var(--color-white);
+	}
+
+	.hero h3 {
+		font-family: "Josefin Sans";
+		font-size: 56px;
+		font-weight: 700;
+		line-height: 58px;
 	}
 
 	/* ================================
@@ -578,7 +588,7 @@ Community Partnerships Section
 	/* overriding the .wrapper class */
 	.community-partnerships.wrapper {
 		margin: 0 auto;
-		width: 90%;
+		max-width: 1130px;
 	}
 
 	/* ================================
