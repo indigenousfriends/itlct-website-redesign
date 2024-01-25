@@ -378,7 +378,7 @@ footer a img:hover {
 }
 
 /* Form Styles */
-form {
+.footer-form {
 	text-align: center;
 	padding: var(--spacing20);
 }
@@ -390,6 +390,7 @@ form {
 .text-input input {
 	height: 50px;
 	width: 100%;
+	max-width: 450px;
 	border-radius: 10px;
 	border: none;
 }
@@ -536,13 +537,12 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	}
 	.footer-form {
 		width: 40%;
+		text-align: left;
+		padding: 0px;
 	}
 	.footer-form form {
 		display: flex;
 		flex-direction: column;
-		text-align: left;
-		/* removing padding on button to align with content */
-		padding: 0px;
 	}
 	.footer-form form p {
 		color: var(--color-white);
@@ -603,7 +603,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	.text-input .button2 {
 		margin-left: 0px;
 	}
-	form p{
+	.footer-form p{
 		width: 100%;
 		padding-bottom: var(--spacing10);
 	}
