@@ -107,6 +107,9 @@ Variables (colors, text, spacing, etc.)
 	--spacing-footer: 50px 160px;
 	--spacing-header-button: 125px 279px;
 
+	/* border-radius */
+	--border-radius10: 10px;
+
 	/* Wrappers */
 	--wrapper-width-max: 1328px;
 	--desktop-wrapper-width: 90%;
