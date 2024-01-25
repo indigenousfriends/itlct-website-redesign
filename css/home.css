@@ -51,7 +51,7 @@ Hero Section
 }
 
 /* overriding global styles */
-.hero h3,
+.hero h1,
 .hero p {
 	color: var(--color-onyx);
 	margin: var(--spacing20);
@@ -294,7 +294,7 @@ Hero Section
 	}
 
 	/* overriding global styles */
-	.hero-home h3,
+	.hero-home h1,
 	.hero-home p {
 		color: var(--color-white);
 	}
@@ -514,12 +514,12 @@ Hero Section
 	}
 
 	/* overriding global styles */
-	.hero h3,
+	.hero h1,
 	.hero p {
 		color: var(--color-white);
 	}
 
-	.hero h3 {
+	.hero h1 {
 		font-family: "Josefin Sans";
 		font-size: 56px;
 		font-weight: 700;
