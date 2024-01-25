@@ -106,6 +106,7 @@ Page Component Styles (icon grid, team member card)
 }
 .support {
 	background-color: var(--color-yaleblue);
+	margin-top: 90px;
 }
 .support-header,
 .support-text {
@@ -411,7 +412,8 @@ Media Queries (overriding styles for different screen sizes)
 	.support-header {
 		padding-top: 115px;
 	}
-	.support-header, .support-text {
+	.support-header,
+	.support-text {
 		margin-left: 200px;
 	}
 	.support-header h2.h2-styles {
