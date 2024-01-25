@@ -445,7 +445,7 @@ form {
 	color: var(--color-onyx);
 	border: 1px solid var(--body-background-color);
 	border-radius: 4px;
-	z-index: 2;
+	z-index: 30;
 }
 
 .modal-wrapper {
