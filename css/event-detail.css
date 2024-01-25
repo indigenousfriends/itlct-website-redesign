@@ -24,6 +24,7 @@ html {
 .template-p {
 	color: var(--color-onyx);
 	--spacing20: 20px;
+	font-family: var(--body-font);
 }
 
 .template-button {
@@ -73,6 +74,7 @@ html {
 	.template-wrapper {
 		display: flex;
 		flex-direction: column;
+		padding-top: 128.5px;
 	}
 	.template-button {
 		justify-content: center;
