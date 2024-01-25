@@ -195,13 +195,24 @@ Our Values Section
 	background-color: var(--color-yaleblue);
 }
 
+.values .text-container {
+	padding: 40px 0;
+}
+
+.values h4 {
+	margin-bottom: 0px;
+}
+
 /* ================================
 Events and Programs Section
 ===================================  */
 
 /* targets the div holding "placeholder" */
 .events-container {
-	width: 80%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 /* overriding global styles*/
 .events-and-programs h3,
@@ -213,18 +224,20 @@ Events and Programs Section
 	color: var(--color-onyx);
 }
 
+.placeholder {
+	margin-top: 40px;
+}
 /* targeting the images in the section */
-.events-and-programs img {
+/* .events-and-programs img {
 	margin: 0 auto;
-}
-
-/* targeting the text div in the section */
-.event-description {
-	margin: var(--spacing20);
-}
+} */
 
 .events-and-programs .image-link:hover {
 	color: var(--color-white);
+}
+
+.events-and-programs h3 {
+	text-align: center;
 }
 
 /* 
@@ -459,6 +472,15 @@ Events and Programs Section
 	.placeholder {
 		width: 30%;
 		gap: var(--spacing10);
+	}
+
+	.events-and-programs h3 {
+		text-align: left;
+		margin-left: 20px;
+	}
+
+	.placeholder {
+		margin-top: 0px;
 	}
 }
 
@@ -783,7 +805,7 @@ Events and Programs Section
 		flex-direction: row;
 		justify-content: center;
 		align-items: center;
-		gap: 15px;
+		gap: 50px;
 	}
 	/* placeholder holding the image and event description */
 	.placeholder {
@@ -800,6 +822,14 @@ Events and Programs Section
 	.events-and-programs h4 {
 		color: var(--color-white);
 		margin-bottom: 0;
+	}
+
+	.events-and-programs h3 {
+		text-align: left;
+	}
+
+	.placeholder {
+		margin-top: 0px;
 	}
 }
 @media screen and (min-width: 1025px) and (max-width: 1250px) {
