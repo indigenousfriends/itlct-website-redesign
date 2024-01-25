@@ -13,15 +13,16 @@
 Page Component Styles (icon grid, team member card)
 ===================================
 */
-.contact-form-parent {
-	min-height: 100vh;
-}
 
 /* contact form */
 .form-input {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
+	gap: var(--spacing20);
+}
+.form-input p {
+	margin: 0px 0px 30px 0px;
 }
 input[type="text"],
 [type="email"],
@@ -35,16 +36,16 @@ textarea {
 	background-color: var(--color-white);
 	border: 1px solid #6c6c6c;
 	width: 100%;
-	border-radius: 5px;
+	border-radius: var(--spacing10);
 	padding: var(--spacing10);
-	margin: 5px 0;
+	/* margin: 5px 0; */
 }
 .message {
 	min-height: 140px;
 	width: 100%;
 	border-radius: var(--spacing10);
 	border: none;
-	margin: var(--spacing10) 0;
+	/* margin: var(--spacing10) 0; */
 	align-self: flex-start;
 }
 .button2 {
@@ -56,7 +57,7 @@ textarea {
 	border: none;
 	min-width: 187px;
 	min-height: 50px;
-	margin: var(--spacing20);
+	margin: 0px var(--spacing20);
 	font-weight: var(--font-weight-bold);
 	font-size: var(--font21);
 }
@@ -73,6 +74,7 @@ Section Styles (background, padding, etc.)
 	background: var(--color-bluepurple);
 	background-repeat: no-repeat;
 	color: var(--color-white);
+	padding: var(--spacing80) 0px var(--spacing100) 0px;
 }
 .h3-styles {
 	color: var(--color-white);
@@ -149,5 +151,9 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	.contact-form-parent {
 		max-width: 1080px;
 		margin: 0 auto;
+	}
+
+	.form-input p {
+		margin: var(--spacing10) 0px;
 	}
 }
