@@ -118,7 +118,7 @@ Section Styles (background, padding, etc.)
 
 /* text below the cards */
 .event-page-card-text {
-	margin-bottom: var(--spacing80);
+	margin-bottom: var(--spacing20);
 }
 .event-page-card-text p {
 	color: var(--color-onyx);
