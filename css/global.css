@@ -47,13 +47,11 @@ Variables (colors, text, spacing, etc.)
 	--color-copper: #b16120;
 	--color-bluepurple: linear-gradient(0deg, #6c4681 -5.71%, #184f85 103.44%);
 	--color-purpleblue: linear-gradient(180deg, #6c4681 -5.71%, #184f85 103.44%);
-	--color-yellowgreen: linear-gradient(
-		180deg,
-		#d3c53f 0%,
-		#d3c53f 26.04%,
-		#92a32d 58.85%,
-		#b37122 100%
-	);
+	--color-yellowgreen: linear-gradient(180deg,
+			#d3c53f 0%,
+			#d3c53f 26.04%,
+			#92a32d 58.85%,
+			#b37122 100%);
 
 	/* Color Assignment */
 	--body-background-color: var(--color-white);
@@ -172,6 +170,7 @@ Variables (colors, text, spacing, etc.)
 		font-size: var(--font21);
 		cursor: pointer;
 	}
+
 	.button2:hover,
 	.button2:focus {
 		background-color: var(--button2-hover);
@@ -191,6 +190,7 @@ Variables (colors, text, spacing, etc.)
 		font-size: var(--font21);
 		cursor: pointer;
 	}
+
 	.button3:hover,
 	.button3:focus {
 		background-color: var(--button3-hover-border);
@@ -273,6 +273,7 @@ a {
 	color: var(--color-white);
 	text-decoration: none;
 }
+
 /* Lists */
 footer li {
 	list-style-type: none;
@@ -280,6 +281,7 @@ footer li {
 	text-align: center;
 	margin-bottom: 20px;
 }
+
 footer ul {
 	padding-left: 0px;
 	padding-inline-start: 0px;
@@ -306,6 +308,7 @@ Wrappers (container, flexbox, etc.)
 .hidden {
 	display: none;
 }
+
 /* 
 ===================================
 Global Component Styles (buttons, forms, etc.)
@@ -332,6 +335,256 @@ Global Component Styles (buttons, forms, etc.)
 	color: var(--color-onyx);
 }
 
+/* HEADER STYLES BB */
+/*
+===================================
+===================================
+Styles for an individual page
+
+- Rename this file to match the page you are working on (e.g. home.css, about.css, etc.)
+- Create a new file for your page and link this file to it in the <head> of your HTML document
+- Variables from global.css will work in this CSS file as well. Do not add any variables to this file.
+===================================
+===================================
+*/
+
+/* 
+===================================
+Page Component Styles (icon grid, team member card)
+===================================
+*/
+
+/* 
+===================================
+Section Styles (background, padding, etc.)
+===================================
+*/
+body {
+	font-family: var(--main-font);
+}
+
+/* top bar section */
+.top-bar {
+	background-color: var(--color-onyx);
+	color: var(--color-white);
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 20px;
+}
+
+.dp-wrapper {
+	width: var(--mobile-wrapper-width);
+	display: flex;
+	justify-content: space-between;
+}
+
+.logo-container {
+	display: flex;
+}
+
+/* desktop menu */
+.desktop-menu {
+	display: none;
+	flex-direction: row;
+	align-items: center;
+}
+
+.desktop-nav {
+	list-style-type: none;
+	text-decoration: none;
+	display: flex;
+	justify-content: space-between;
+	padding: 0;
+}
+
+.desktop-nav li {
+	padding: 10px 20px;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+a:hover,
+a:focus {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+a:visited {
+	color: inherit;
+}
+
+.dp-wrapper .button2 {
+	display: none;
+}
+
+/* mobile menu button style */
+#mobile-menu {
+	background-color: transparent;
+	border: 0px;
+	padding: 0;
+	align-items: center;
+	display: flex;
+	z-index: 11;
+}
+
+#mobile-menu svg {
+	fill: var(--color-white);
+}
+
+/* menu container */
+#menu-container {
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+
+nav .img-container {
+	max-width: 390px;
+	margin: auto;
+}
+
+#nav-links-container {
+	position: absolute;
+	top: 50px;
+	bottom: 0px;
+	right: -20px;
+	z-index: 10;
+}
+
+/* nav-links style */
+#nav-links {
+	display: flex;
+	list-style-type: none;
+	margin: 0;
+	gap: 20px;
+	flex-direction: column;
+	background-color: var(--color-onyx);
+	width: 200px;
+	height: auto;
+	overflow: hidden;
+	padding: 28px 55px 44px 46px;
+}
+
+#nav-links a {
+	color: var(--color-white);
+	text-decoration: none;
+	font-weight: var(--font-weight-regular);
+	font-size: var(--font16);
+}
+
+.hidden {
+	display: none;
+}
+
+/* The Mobile X */
+#mobileClose {
+	display: hidden;
+}
+
+/* 
+===================================
+Media Queries (overriding styles for different screen sizes)
+
+Note: Here we are using a mobile-first approach, so we start with the smallest screen size and work our way up.
+Start by writing styles for the mobile version of the design on the lines above.
+Anything that needs to change for larger screens should be added to the media queries below.
+
+Feel free to change the min/max-width values to whatever you need. Use variables.
+===================================
+*/
+
+/* Tablet Only */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+	/* Add styles that only apply to tablet. These are usually fixes to get resposnivenes right */
+}
+
+/* Tablet and Larger */
+@media screen and (min-width: 768px) {
+	#nav-links-container {
+		top: 80px;
+	}
+
+	/* Add styles that apply to table and desktop */
+}
+
+/* Desktop Only */
+@media screen and (min-width: 1217px) {
+	/* Add styles that apply specifically to desktop */
+}
+
+/* Desktop & Larger */
+
+@media screen and (min-width: 1180px) {
+
+	/* adjusting font sizes and styling for p tags (in figma this is body1)*/
+	a {
+		font-weight: var(--font-weight-regular);
+		line-height: var(--line-height26);
+	}
+
+	/* hide menu bar for larger screen */
+	#menu-container {
+		display: none;
+	}
+
+	.desktop-menu {
+		display: flex;
+	}
+
+	/* top bar positioning */
+	header {
+		position: relative;
+	}
+
+	.top-bar {
+		position: absolute;
+		width: 100%;
+		z-index: 20;
+	}
+
+	.dp-wrapper .button2 {
+		font-family: var(--main-font);
+		display: flex;
+		width: 194px;
+		height: 50px;
+		padding: 10px 40px;
+		justify-content: center;
+		align-items: center;
+		gap: 10px;
+		flex-shrink: 0;
+		border-radius: 10px;
+		background: var(--button2-color);
+		color: var(--color-white);
+		cursor: pointer;
+		border: none;
+		font-size: var(--font21);
+		font-weight: var(--font-weight-bold);
+		line-height: var(--line-height32);
+	}
+
+	.button2:hover {
+		background: var(--color-white);
+		color: var(--color-onyx);
+		text-decoration: none;
+	}
+
+	.dp-wrapper {
+		/* max-width: var(--desktop-wrapper-width); */
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.logo-icon {
+		min-width: 205px;
+	}
+}
+
+
 /* FOOTER STYLES */
 footer {
 	background-color: var(--color-onyx);
@@ -342,6 +595,7 @@ footer {
 footer a img {
 	transition: all 0.1s ease-in;
 }
+
 footer a img:hover {
 	transform: scale(110%);
 }
@@ -360,10 +614,12 @@ footer a img:hover {
 	flex-direction: column;
 	align-items: center;
 }
+
 /* footer links list */
 .links-columns {
 	min-width: 250px;
 }
+
 /* Land Acknowledgement button */
 .btn-la {
 	background-color: transparent;
@@ -385,17 +641,20 @@ form {
 	text-align: center;
 	padding: var(--spacing20);
 }
+
 .text-input {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
+
 .text-input input {
 	height: 50px;
 	width: 100%;
 	border-radius: 10px;
 	border: none;
 }
+
 #newsletter-input {
 	padding-left: 24px;
 }
@@ -418,11 +677,13 @@ form {
 .hidden {
 	display: none;
 }
+
 /* positioning for body to stop scroll when modal is open */
 .fixed {
 	position: fixed;
 	width: 100%;
 }
+
 /* modal overlay */
 .overlay-la {
 	position: fixed;
@@ -436,6 +697,7 @@ form {
 	backdrop-filter: blur(3px);
 	z-index: 1;
 }
+
 .modal {
 	width: 90%;
 	max-width: 1100px;
@@ -457,32 +719,39 @@ form {
 .modal-wrapper {
 	position: relative;
 }
+
 .modal-content {
 	overflow-y: scroll;
 	max-height: 65vh;
 }
+
 .modal-scroll {
 	max-height: calc(85vh 300px);
 }
+
 /* modal text content */
 .modal p {
 	color: var(--color-onyx);
 	margin: var(--spacing20);
 }
+
 .modal-header h4 {
 	text-align: center;
 	color: var(--color-onyx);
 	margin-bottom: 0px;
 }
+
 .btn-close {
 	position: absolute;
 	right: -10px;
 	top: -40px;
 }
+
 .btn-close button {
 	border: none;
 	background-color: transparent;
 }
+
 .btn-close svg {
 	width: 32px;
 	height: 32px;
@@ -499,6 +768,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 
 /* Desktop & Larger */
 @media (min-width: 1024px) {
+
 	/* Footer styles */
 	.wrapper {
 		width: var(--desktop-wrapper-width);
@@ -509,15 +779,18 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		flex-direction: row;
 		justify-content: space-between;
 	}
+
 	.footer-main h4 {
 		font-size: var(--font36);
 		font-weight: var(--font-weight-bold);
 		line-height: 0px;
 		color: var(--color-white);
 	}
+
 	.footer-main p {
 		margin: 0px;
 	}
+
 	footer li {
 		text-align: left;
 	}
@@ -525,6 +798,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	.footer-logo-btn {
 		align-items: start;
 	}
+
 	.links-columns {
 		display: flex;
 		flex-direction: row;
@@ -532,14 +806,17 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		width: 30%;
 		gap: 10%;
 	}
+
 	.links-child {
 		display: flex;
 		flex-direction: column;
 		width: fit-content;
 	}
+
 	.footer-form {
 		width: 40%;
 	}
+
 	form {
 		display: flex;
 		flex-direction: column;
@@ -547,15 +824,18 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		/* removing padding on button to align with content */
 		padding-right: 0px;
 	}
+
 	form p {
 		color: var(--color-white);
 		width: 60%;
 	}
+
 	.text-input {
 		display: flex;
 		flex-direction: row;
 		align-items: center;
 	}
+
 	/* removing margin on button to align with content */
 	.text-input .button2 {
 		margin-right: 0px;
@@ -577,19 +857,23 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	.modal-scroll {
 		padding: var(--spacing20);
 	}
+
 	.links-columns {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-evenly;
 		width: 80%;
 	}
+
 	.links-child {
 		display: flex;
 		flex-direction: column;
 	}
 }
+
 /* Desktop & Larger */
 @media screen and (min-width: 1024px) {
+
 	/* adjusting font sizes and styling for p tags (in figma this is body1)*/
 	p {
 		font-size: var(--font21);
@@ -597,14 +881,17 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		line-height: var(--line-height26);
 		color: var(--color-onyx);
 	}
+
 	.text-input {
 		display: flex;
 		flex-direction: column;
 		align-items: start;
 	}
+
 	.text-input .button2 {
 		margin-left: 0px;
 	}
+
 	form p {
 		width: 100%;
 		padding-bottom: var(--spacing10);
@@ -617,6 +904,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		padding: 0 var(--spacing65);
 	}
 }
+
 /* For EVEN larger screens */
 @media (min-width: 1500px) {
 	.text-input {
