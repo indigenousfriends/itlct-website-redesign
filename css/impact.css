@@ -1,0 +1,291 @@
+/*
+===================================
+===================================
+Styles for an individual page
+
+- Rename this file to match the page you are working on (e.g. home.css, about.css, etc.)
+- Create a new file for your page and link this file to it in the <head> of your HTML document
+- Variables from global.css will work in this CSS file as well. Do not add any variables to this file.
+===================================
+===================================
+*/
+
+/* 
+===================================
+Page Component Styles (icon grid, team member card)
+===================================
+*/
+
+/* 
+===================================
+Section Styles (background, padding, etc.)
+===================================
+*/
+
+.impact-wrapper p,
+.impact-wrapper .h4-styles {
+	color: var(--color-onyx);
+}
+.h4-styles {
+	text-align: center;
+}
+
+img {
+	margin: 0 auto;
+	border-radius: var(--spacing10);
+}
+/* Hero/Title */
+.hero {
+	width: 100%;
+	text-align: center;
+}
+.title-img {
+	width: 100%;
+	min-height: 250px;
+	margin-bottom: 60px;
+	background-image: url("/assets/images/pages/our-impact/vr-ar.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.title-text {
+	width: 90%;
+	margin: 0 auto;
+	margin-bottom: var(--spacing80);
+}
+.hero .h2-styles {
+	margin-top: 0px;
+	margin-bottom: var(--spacing20);
+	font-size: var(--font36);
+	line-height: var(--line-height40);
+}
+.hero p {
+	margin: 0px;
+	color: var(--color-onyx);
+	text-align: center;
+}
+
+/* tech around us AND responsible section */
+.red-background {
+	background-color: var(--color-amaranth);
+	padding: 30px;
+}
+
+/* .tech-around-info heading styles */
+.block {
+	display: block;
+}
+
+/* margin for our sections with text */
+.tech-around-info,
+.responsible-info {
+	margin: 60px auto;
+}
+
+
+/* icon section code */
+.yellow-background {
+	background: var(--color-yellowgreen);
+	background-size: auto 95%;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.icons-parent {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: var(--color-onyx);
+	border-radius: var(--spacing10);
+	padding-top: var(--spacing80);
+	padding-bottom: var(--spacing80);
+	margin: 0 auto;
+	gap: var(--spacing40);
+}
+
+.icon-child {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	text-align: center;
+}
+
+.icon-child img {
+	margin: 0 auto;
+}
+.icon-child .h5-styles {
+	color: var(--color-white);
+	margin: var(--spacing40) 0 0 0;
+}
+
+/* 
+===================================
+Media Queries (overriding styles for different screen sizes)
+
+Note: Here we are using a mobile-first approach, so we start with the smallest screen size and work our way up.
+Start by writing styles for the mobile version of the design on the lines above.
+Anything that needs to change for larger screens should be added to the media queries below.
+
+Feel free to change the min/max-width values to whatever you need. Use variables.
+===================================
+*/
+
+/* Tablet Only */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+	/* Add styles that only apply to tablet. These are usually fixes to get resposnivenes right */
+}
+
+/* Tablet and Larger */
+@media screen and (min-width: 768px) {
+	/* Add styles that apply to table and desktop */
+	/* Title/Hero section */
+	.title-img {
+		display: none;
+	}
+	/* adding desktop image */
+	.hero {
+		height: 100vh;
+		max-height: 1000px;
+		background-image: url("/assets/images/pages/our-impact/desktop/vr-ar-d.jpg");
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+	.title-text {
+		width: 100%;
+		height: 100%;
+		background: linear-gradient(
+			92deg,
+			rgba(9, 9, 9, 0.77) 40.35%,
+			rgba(9, 9, 9, 0.74) 44.51%,
+			rgba(9, 9, 9, 0.71) 48.63%,
+			rgba(9, 9, 9, 0) 83.13%
+		);
+
+		/* aligning the title text div */
+		display: flex;
+		align-items: center;
+	}
+	.title-text div {
+		/* adding width instead of margin for responsiveness */
+		width: 70%;
+		margin: 0 auto;
+
+		display: flex;
+		flex-direction: column;
+	}
+	.title-text p,
+	.title-text .h2-styles {
+		/* adding width to make sure text stays on left side */
+		width: 40%;
+		text-align: left;
+		color: var(--color-white);
+	}
+	.title-text .h2-styles {
+		font-size: var(--font56);
+		line-height: var(--line-height58);
+	}
+
+	
+
+	/* icon section */
+	.icons-parent {
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.icon-child {
+		min-width: 40%;
+	}
+	.yellow-background {
+		background-size: auto 90%;
+	}
+}
+
+/* Desktop Only */
+@media screen and (min-width: 1024px) {
+	/* Add styles that apply specifically to desktop */
+  
+	/* top and bottom section */
+	.h4-styles {
+		font-size: var(--font46);
+		line-height: var(--line-height50);
+		margin-bottom: var(--spacing20);
+		text-align: left;
+	}
+
+	.tech-around,
+	.responsible-parent {
+		width: var(--desktop-wrapper-width);
+		max-width: var(--wrapper-width-max);
+		margin: auto;
+		padding: var(--spacing100);
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		gap: var(--spacing100);
+	}
+	.tech-around > * {
+		width: 50%;
+	}
+	.responsible-parent > * {
+		width: 50%;
+	}
+
+	.red-background {
+		background-color: transparent;
+		position: relative;
+	}
+
+	.tech-around .red-background,
+	.responsible-parent .red-background {
+		max-width: 500px;
+		margin: 0 auto;
+	}
+	/* tech around section */
+	/* red block */
+	.tech-img.style-left::before {
+		transform: translate(-15%, -15%);
+	}
+	.tech-img::before {
+		background-color: var(--color-amaranth);
+		border-radius: var(--spacing10);
+		position: absolute;
+		content: " ";
+		width: 80%;
+		aspect-ratio: 1/1;
+		z-index: -1;
+	}
+
+	.tech-img img {
+		max-height: 550px;
+		object-fit: cover;
+		object-position: top;
+		aspect-ratio: 1/1;
+	}
+
+
+	/* responsible section */
+	/* red block */
+	.responsible-img.right-style::before {
+		transform: translate(25%, -15%);
+	}
+	.responsible-img::before {
+		background-color: var(--color-amaranth);
+		border-radius: var(--spacing10);
+		position: absolute;
+		content: " ";
+		width: 80%;
+		aspect-ratio: 1/1;
+		z-index: -1;
+	}
+
+	.responsible-img img {
+		max-height: 550px;
+		object-fit: cover;
+		object-position: top;
+		aspect-ratio: 1/1;
+	}
+
+}
