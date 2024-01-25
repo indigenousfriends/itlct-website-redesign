@@ -377,7 +377,7 @@ footer a img:hover {
 }
 
 /* hover effect on all footer links */
-.btn-la:hover{
+.btn-la:hover {
 	border-bottom: 2px solid var(--color-white);
 }
 
@@ -422,8 +422,7 @@ footer a img:hover {
 }
 /* positioning for body to stop scroll when modal is open */
 .fixed {
-	position: fixed;
-	width: 100%;
+	overflow: hidden;
 }
 /* modal overlay */
 .overlay-la {
@@ -607,7 +606,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	.text-input .button2 {
 		margin-left: 0px;
 	}
-	.footer-form p{
+	.footer-form p {
 		width: 100%;
 		padding-bottom: var(--spacing10);
 	}
