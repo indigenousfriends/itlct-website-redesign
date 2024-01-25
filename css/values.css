@@ -63,6 +63,9 @@ Page Component Styles (icon grid, team member card)
 .h1-black {
 	color: var(--color-onyx);
 	margin: 60px 0 20px 0;
+	font-size: var(--font36);
+	font-weight: var(--font-weight-bold);
+	line-height: var(--line-height40);
 }
 
 .values-head p {
@@ -147,7 +150,8 @@ Page Component Styles (icon grid, team member card)
 .support-logos {
 	display: flex;
 	flex-direction: column;
-	padding-bottom: 116px;
+	padding-bottom: 80px;
+	
 }
 .support-logo-01 {
 	width: 82px;
@@ -383,12 +387,11 @@ Media Queries (overriding styles for different screen sizes)
 	.technology {
 		width: 50%;
 	}
-	/* .support {
-		padding-left: 100px;
-	} */
+
 	.support-logos {
 		display: flex;
 		gap: 40px;
+		padding-bottom: 116px;
 	}
 	/* All Text white except Empowerment section and We Support Header */
 	.h1-black {
