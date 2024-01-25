@@ -223,6 +223,10 @@ Events and Programs Section
 	margin: var(--spacing20);
 }
 
+.events-and-programs .image-link:hover {
+	color: var(--color-white);
+}
+
 /* 
 ===================================
 Media Queries (overriding styles for different screen sizes)
@@ -763,6 +767,7 @@ Events and Programs Section
 		background-size: cover;
 		padding-top: var(--spacing20);
 	}
+
 	/* stylings for the div holding all 3 placeholders */
 	.events-container {
 		margin: 0 auto;
