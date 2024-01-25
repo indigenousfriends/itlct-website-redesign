@@ -67,6 +67,7 @@ Variables (colors, text, spacing, etc.)
 
 	/* Text */
 	--main-font: "Josefin Sans", sans-serif;
+	--body-font: "Open Sans", sans-serif;
 
 	/* Styles for fonts */
 	--font-weight-regular: 400;
@@ -491,7 +492,7 @@ form {
 Media Queries (overriding styles for different screen sizes)
 Feel free to change the min/max-width values to whatever you need. Use variables.
 ===================================
-*/ 
+*/
 
 /* Desktop & Larger */
 @media (min-width: 1024px) {
@@ -573,7 +574,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	.modal-scroll {
 		padding: var(--spacing20);
 	}
-	.links-columns{
+	.links-columns {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-evenly;
@@ -582,7 +583,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	.links-child {
 		display: flex;
 		flex-direction: column;
-	}	
+	}
 }
 /* Desktop & Larger */
 @media screen and (min-width: 1024px) {
@@ -601,7 +602,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	.text-input .button2 {
 		margin-left: 0px;
 	}
-	form p{
+	form p {
 		width: 100%;
 		padding-bottom: var(--spacing10);
 	}
