@@ -284,7 +284,8 @@ Hero Section
 	/* targeting the div holding the buttons */
 	.hero .btn-container {
 		display: flex;
-		justify-content: space-around;
+		justify-content: center;
+		gap: 80px;
 	}
 
 	/* targeting the buttons that need to be hidden on desktop version */
@@ -575,9 +576,6 @@ Community Partnerships Section
 		padding-top: var(--spacing100);
 		padding-bottom: var(--spacing80);
 		width: 40%;
-		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
 	}
 
 	/* fixing the button width for larger screen sizes */
