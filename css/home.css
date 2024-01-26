@@ -783,7 +783,8 @@ Events and Programs Section
 		background: url(../assets/images/pages/home/bg-overlay-vector-02.svg),
 			var(--color-bluepurple);
 		background-size: cover;
-		padding-top: var(--spacing20);
+		padding-top: var(--spacing80);
+		padding-bottom: var(--spacing80);
 	}
 
 	/* stylings for the div holding all 3 placeholders */
@@ -852,11 +853,10 @@ Global Ecosystem Section
 	}
 	/* positioning for the cybergrape ecosystem div */
 	.ecosystem-subsection {
-		padding-left: 60px;
-		padding-right: 90px;
+		
 		position: relative;
 		left: 30px;
-		padding-top: 0;
+		
 	}
 	/* positioning for the onyx blockquote */
 	.blockquote {
