@@ -232,6 +232,9 @@ picture img {
 	max-width: 140px;
 }
 /* modal text content */
+.natasha-modal .modal-scroll, .marsha-modal .modal-scroll {
+	padding: 0px;
+}
 .natasha-modal p, .marsha-modal p {
 	color: var(--color-onyx);
 }
