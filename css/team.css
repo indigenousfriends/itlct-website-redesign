@@ -137,6 +137,7 @@ picture img {
 	justify-content: center;
 	align-items: center;
 	max-width: 700px;
+	width: 90%;
 }
 
 /* Margin for current positions and get involved text */
