@@ -56,6 +56,10 @@ h1 {
 	color: var(--color-onyx);
 }
 
+.button3 a:hover {
+	text-decoration: none;
+}
+
 /* 
 ===================================
 Section Styles (background, padding, etc.)
