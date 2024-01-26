@@ -498,8 +498,44 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 ===================================
 */
 
+
+/* Tablet Only */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+	.modal-scroll {
+		padding: var(--spacing20);
+	}
+	.links-columns {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		width: 80%;
+	}
+	.links-child {
+		display: flex;
+		flex-direction: column;
+	}
+}
 /* Desktop & Larger */
-@media (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
+	/* adjusting font sizes and styling for p tags (in figma this is body1)*/
+	p {
+		font-size: var(--font21);
+		font-weight: var(--font-weight-regular);
+		line-height: var(--line-height32);
+		color: var(--color-onyx);
+	}
+	.text-input {
+		display: flex;
+		flex-direction: column;
+		align-items: start;
+	}
+	.text-input .button2 {
+		margin-left: 0px;
+	}
+	form p {
+		width: 100%;
+		padding-bottom: var(--spacing10);
+	}
 	/* Footer styles */
 	.wrapper {
 		width: var(--desktop-wrapper-width);
@@ -568,47 +604,6 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 
 	.modal-scroll {
 		padding: var(--spacing20);
-	}
-
-	/* End of footer styles */
-}
-
-/* Tablet Only */
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-	.modal-scroll {
-		padding: var(--spacing20);
-	}
-	.links-columns {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-evenly;
-		width: 80%;
-	}
-	.links-child {
-		display: flex;
-		flex-direction: column;
-	}
-}
-/* Desktop & Larger */
-@media screen and (min-width: 1024px) {
-	/* adjusting font sizes and styling for p tags (in figma this is body1)*/
-	p {
-		font-size: var(--font21);
-		font-weight: var(--font-weight-regular);
-		line-height: var(--line-height32);
-		color: var(--color-onyx);
-	}
-	.text-input {
-		display: flex;
-		flex-direction: column;
-		align-items: start;
-	}
-	.text-input .button2 {
-		margin-left: 0px;
-	}
-	form p {
-		width: 100%;
-		padding-bottom: var(--spacing10);
 	}
 }
 
