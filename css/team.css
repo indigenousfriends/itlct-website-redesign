@@ -199,7 +199,7 @@ picture img {
 .natasha-modal, .marsha-modal {
 	width: 90%;
 	max-width: 1100px;
-	height: 95vh;
+	max-height: 95vh;
 	margin: 0 auto;
 	/* was 26px and replaced with variable */
 	padding: 26px;
@@ -217,7 +217,7 @@ picture img {
 
 .modal-wrapper {
 	position: relative;
-	height: 95vh;
+	/* height: 95vh; */
 }
 .modal-content {
 	overflow-y: scroll;
