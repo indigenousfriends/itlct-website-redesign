@@ -71,6 +71,23 @@ Community Partnerships Section
 	width: 100%;
 }
 
+/* fixing width and position of paragraph */
+
+.partnerships-paragraph {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.partnerships-paragraph p {
+	width: 90%;
+	
+}
+
+.partnerships-paragraph h4 {
+	margin-bottom: 0;
+}
+
 /* targeting the image in the card-img div */
 .community .card-img img {
 	width: 100%;
@@ -598,12 +615,13 @@ Community Partnerships Section
 		padding-top: var(--spacing100);
 		padding-bottom: var(--spacing80);
 		width: 40%;
+		align-items: baseline;
 	}
 
 	/* fixing the button width for larger screen sizes */
-	.partnerships-paragraph .button1 {
+	/* .partnerships-paragraph .button1 {
 		width: 100%;
-	}
+	} */
 
 	/* overriding the .wrapper class */
 	.community-partnerships.wrapper {
