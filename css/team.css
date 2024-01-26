@@ -181,11 +181,10 @@ picture img {
 }
 /* positioning for body to stop scroll when modal is open */
 .fixed {
-	position: fixed;
-	width: 100%;
+	overflow: hidden;
 }
 /* modal overlay */
-.overlay-la {
+.overlay-team {
 	position: fixed;
 	top: 0;
 	bottom: 0;
@@ -252,16 +251,16 @@ picture img {
 	color: var(--color-onyx);
 	margin: 10px 0px;
 }
-.btn-close {
+.team-btn-close {
 	position: absolute;
 	right: -10px;
 	top: 1px;
 }
-.btn-close button {
+.team-btn-close button {
 	border: none;
 	background-color: transparent;
 }
-.btn-close svg {
+.team-btn-close svg {
 	width: 32px;
 	height: 32px;
 }
