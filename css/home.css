@@ -224,8 +224,15 @@ Events and Programs Section
 	color: var(--color-onyx);
 }
 
+/* adjusting spacing for placeholder */
 .placeholder {
 	margin-top: var(--spacing40);
+}
+
+/* centers placeholder */
+.placeholder picture {
+	display: flex;
+	flex-direction: column;
 }
 
 .events-and-programs .image-link:hover {
@@ -235,6 +242,8 @@ Events and Programs Section
 .events-and-programs h3 {
 	text-align: center;
 }
+
+
 
 /* 
 ===================================
