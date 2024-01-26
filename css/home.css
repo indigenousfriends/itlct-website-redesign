@@ -104,7 +104,7 @@ Global Ecosystem Section
 	margin: 0 auto;
 	padding: 45px 15px;
 	width: 90%;
-	border-radius: 10px;
+	border-radius: var(--spacing10);
 	background-color: var(--color-onyx);
 	position: relative;
 }
@@ -160,7 +160,7 @@ What We Do Section
 /* stylings for the card div */
 .home-card {
 	border: none;
-	border-radius: 10px;
+	border-radius: var(--spacing10);
 	padding-bottom: var(--spacing20);
 	margin: var(--spacing20) 0;
 }
@@ -191,7 +191,7 @@ Our Values Section
 	margin: 0 auto;
 	padding: 40px 15px 60px 15px;
 	width: 90%;
-	border-radius: 10px;
+	border-radius: var(--spacing10);
 	background-color: var(--color-yaleblue);
 }
 
@@ -225,12 +225,8 @@ Events and Programs Section
 }
 
 .placeholder {
-	margin-top: 40px;
+	margin-top: var(--spacing40);
 }
-/* targeting the images in the section */
-/* .events-and-programs img {
-	margin: 0 auto;
-} */
 
 .events-and-programs .image-link:hover {
 	color: var(--color-white);
@@ -244,11 +240,6 @@ Events and Programs Section
 ===================================
 Media Queries (overriding styles for different screen sizes)
 
-Note: Here we are using a mobile-first approach, so we start with the smallest screen size and work our way up.
-Start by writing styles for the mobile version of the design on the lines above.
-Anything that needs to change for larger screens should be added to the media queries below.
-
-Feel free to change the min/max-width values to whatever you need. Use variables.
 ===================================
 */
 
@@ -298,7 +289,7 @@ Hero Section
 	.hero .btn-container {
 		display: flex;
 		justify-content: center;
-		gap: 80px;
+		gap: var(--spacing80);
 	}
 
 	/* targeting the buttons that need to be hidden on desktop version */
@@ -359,7 +350,7 @@ Global Ecosystems Section
 	/* targeting the style for the cybergrape div */
 	.ecosystem-subsection {
 		margin: 0;
-		border-radius: 10px;
+		border-radius: var(--spacing10);
 		padding-bottom: var(--spacing40);
 		padding-left: 52px;
 		padding-right: var(--spacing100);
@@ -476,7 +467,7 @@ Events and Programs Section
 
 	.events-and-programs h3 {
 		text-align: left;
-		margin-left: 20px;
+		margin-left: var(--spacing20);
 	}
 
 	.placeholder {
@@ -527,7 +518,7 @@ Hero Section
 	.hero .btn-container {
 		display: flex;
 		justify-content: center;
-		gap: 80px;
+		gap: var(--spacing80);
 	}
 
 	/* targeting the buttons that need to be hidden on desktop version */
@@ -556,8 +547,8 @@ Community Partnerships Section
 	.community-partnerships {
 		margin: 0 auto;
 		width: 80%;
-		padding-top: var(--spacing80);
-		padding-bottom: var(--spacing80);
+		padding-top: var(--spacing164);
+		padding-bottom: var(--spacing164);
 	}
 
 	/* targeting the text to make it white */
@@ -572,7 +563,7 @@ Community Partnerships Section
 	.community {
 		display: flex;
 		flex-direction: row-reverse;
-		border-radius: 10px;
+		border-radius: var(--spacing10);
 		padding-bottom: 0;
 		text-align: left;
 	}
@@ -617,8 +608,8 @@ Global Ecosystems Section
 
 	/* the background for the entire section */
 	.global-ecosystem {
-		padding-top: var(--spacing100);
-		padding-bottom: var(--spacing100);
+		padding-top: var(--spacing185);
+		padding-bottom: var(--spacing185);
 		background: url(../assets/images/pages/home/bg-overlay-vector-01.svg),
 			var(--color-bluepurple);
 		background-size: cover;
@@ -644,13 +635,10 @@ Global Ecosystems Section
 	/* targeting the style for the cybergrape div */
 	.ecosystem-subsection {
 		margin: 0;
-		border-radius: 10px;
-		padding-top: var(--spacing40);
-		padding-bottom: var(--spacing40);
-		padding-left: var(--spacing100);
-		padding-right: var(--spacing100);
+		border-radius: var(--spacing10);
+		padding: var(--spacing100);
 		width: 70%;
-		left: 70px;
+		
 	}
 	/* targeting the color of the font in the div */
 	.ecosystem-subsection p {
@@ -694,7 +682,7 @@ What We Do Section
 
 	/* targeting the h3 stylings */
 	.what-we-do h3 {
-		margin-bottom: 0;
+		
 		font-size: var(--font46);
 		line-height: var(--line-height50);
 		color: var(--color-onyx);
