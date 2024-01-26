@@ -16,7 +16,8 @@ html {
 .template-wrapper img {
 	display: flex;
 	align-items: center;
-	margin-bottom: 380px;
+	margin-bottom: 60px;
+	margin-top: 40px;
 }
 
 .template-main-header {
@@ -80,6 +81,8 @@ html {
 		display: flex;
 		flex-direction: column;
 		padding-top: 128.5px;
+		margin-bottom: 380px;
+		margin-top: 71px;
 	}
 	.template-button {
 		justify-content: center;
