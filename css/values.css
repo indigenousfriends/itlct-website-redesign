@@ -405,8 +405,8 @@ Media Queries (overriding styles for different screen sizes)
 		color: var(--color-white);
 	}
 	.support {
-		/* margin-top: 116px; */
-		/* padding-bottom: 116px; */
+		margin-top: 116px;
+		padding-bottom: 116px;
 	}
 	.support-header {
 		padding-top: 115px;
