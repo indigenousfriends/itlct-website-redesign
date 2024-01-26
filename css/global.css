@@ -421,8 +421,7 @@ form {
 }
 /* positioning for body to stop scroll when modal is open */
 .fixed {
-	position: fixed;
-	width: 100%;
+	overflow: hidden;
 }
 /* modal overlay */
 .overlay-la {
