@@ -124,19 +124,8 @@ picture img {
 	color: var(--color-white);
 }
 
-/* icon and button container */
-.icon-button {
-	margin: 0px;
-	display: flex;
-	flex-direction: column;
-	align-items: self-start;
-	gap: 20px;
-}
-/* icon container */
-.icons {
-	display: flex;
-	align-items: center;
-	gap: 20px;
+.team-card-info {
+	max-width: 530px;
 }
 
 
@@ -324,9 +313,9 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	.header-content > * {
 		width: 50%;
 	}
-	/* .header-info {
-		width: 30%;
-	} */
+	.header-info {
+		margin-bottom: 0px;
+	}
 	.header-info .h3-styles {
 		font-weight: var(--font-weight-bold);
 		line-height: var(--line-height58);
@@ -339,10 +328,14 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	}
 
 	/* team card section */
+	.team-parent {
+		margin: var(--spacing164) auto;
+	}
 	.team-card {
 		flex-direction: row;
 		justify-content: left;
 		gap: 30px;
+		padding: 30px;
 	}
 	.team-card-picture {
 		min-width: 240px;
@@ -358,9 +351,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 
 	/* get involved */
 	.get-involved {
-		height: 70vh;
 		min-height: 70vh;
-		max-height: 800px;
 		margin-bottom: 0px;
 		/* gradient is opposite- needs to be adjusted in global styles */
 		background: var(--color-bluepurple);
@@ -370,7 +361,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	}
 	.get-involved-wrapper {
 		width: 70%;
-		margin: 0 auto;
+		margin: 190px auto;
 		display: flex;
 		flex-direction: row-reverse;
 		justify-content: center;
@@ -449,9 +440,10 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		font-size: var(--font21);
 	}
 
-	/* .team-card h4 {
-		margin: 0px;
-	} */
+	.team-card-info {
+		max-width: 100%;
+	}
+	
 	.team-card p {
 		/* adjust later */
 		margin-top: 8px;
@@ -466,6 +458,9 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	}
 
 	/* current positions */
+	.current-positions {
+		margin: var(--spacing213) auto;
+	}
 	.current-positions .h4-styles {
 		font-size: var(--font46);
 		line-height: var(--line-height50);
@@ -476,7 +471,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 @media screen and (min-width: 1300px) {
 	.header-content {
 		width: 62%;
-		gap: 185px;
+		gap: 15%;
 	}
 	.header-content .h3-styles {
 		font-size: var(--font56);
@@ -491,10 +486,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	.team-card {
 		width: 48%;
 		padding: 20px;
-		/* might need to adjust height later */
-		height: 45vh; 
-		max-height: 600px;
-		min-height: 420px;
+		min-height: 375px;
 	}
 	.team-card-picture {
 		width: 200px;
@@ -523,8 +515,9 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	width: 75%;
 	}
 	.team-card {
-		min-height: 400px;
+		min-height: 320px;
 	}
+
 	.get-involved-text {
 		width: 40%;
 	}
