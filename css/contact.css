@@ -1,27 +1,21 @@
-/*
-===================================
-===================================
-
-- Rename this file to match the page you are working on (e.g. home.css, about.css, etc.)
-- Create a new file for your page and link this file to it in the <head> of your HTML document
-- Variables from global.css will work in this CSS file as well. Do not add any variables to this file.
-===================================
-===================================
-*/
 /* 
 ===================================
 Page Component Styles (icon grid, team member card)
 ===================================
 */
-.contact-form-parent {
-	min-height: 100vh;
-}
 
 /* contact form */
+.contact-form-parent {
+	max-width: 475px;
+}
 .form-input {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
+	gap: var(--spacing20);
+}
+.form-input p {
+	margin: 0px 0px 30px 0px;
 }
 input[type="text"],
 [type="email"],
@@ -33,18 +27,16 @@ textarea {
 	font-weight: var(--font-weight-regular);
 	color: var(--color-onyx);
 	background-color: var(--color-white);
-	border: 1px solid #6c6c6c;
+	border: 1px solid var(--color-grey);
 	width: 100%;
-	border-radius: 5px;
+	border-radius: var(--spacing10);
 	padding: var(--spacing10);
-	margin: 5px 0;
 }
 .message {
 	min-height: 140px;
 	width: 100%;
 	border-radius: var(--spacing10);
 	border: none;
-	margin: var(--spacing10) 0;
 	align-self: flex-start;
 }
 .button2 {
@@ -56,7 +48,7 @@ textarea {
 	border: none;
 	min-width: 187px;
 	min-height: 50px;
-	margin: var(--spacing20);
+	margin: 0px var(--spacing20);
 	font-weight: var(--font-weight-bold);
 	font-size: var(--font21);
 }
@@ -73,6 +65,7 @@ Section Styles (background, padding, etc.)
 	background: var(--color-bluepurple);
 	background-repeat: no-repeat;
 	color: var(--color-white);
+	padding: var(--spacing80) 0px var(--spacing100) 0px;
 }
 .h3-styles {
 	color: var(--color-white);
@@ -88,15 +81,8 @@ p {
 /* 
 ===================================
 Media Queries (overriding styles for different screen sizes)
-
-Note: Here we are using a mobile-first approach, so we start with the smallest screen size and work our way up.
-Start by writing styles for the mobile version of the design on the lines above.
-Anything that needs to change for larger screens should be added to the media queries below.
-
-Feel free to change the min/max-width values to whatever you need. Use variables.
 ===================================
 */
-
 /* Tablet and Larger */
 @media screen and (min-width: 768px) {
 	/* Add styles that apply to table and desktop */
@@ -104,6 +90,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		text-align: left;
 	}
 	.contact-form-parent {
+		max-width: none;
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
@@ -149,5 +136,9 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	.contact-form-parent {
 		max-width: 1080px;
 		margin: 0 auto;
+	}
+
+	.form-input p {
+		margin: var(--spacing10) 0px;
 	}
 }
