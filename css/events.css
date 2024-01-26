@@ -301,6 +301,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	}
 	.event-page-card-title p {
 		color: var(--color-white);
+		margin-top: 10px;
 	}
 
 	/* page card title background color changes */
