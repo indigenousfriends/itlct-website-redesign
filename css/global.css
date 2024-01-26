@@ -45,6 +45,7 @@ Variables (colors, text, spacing, etc.)
 	--color-citrine: #d3c53f;
 	--color-citron: #92a32d;
 	--color-copper: #b16120;
+	--color-grey: #6c6c6c;
 	--color-bluepurple: linear-gradient(0deg, #6c4681 -5.71%, #184f85 103.44%);
 	--color-purpleblue: linear-gradient(180deg, #6c4681 -5.71%, #184f85 103.44%);
 	--color-yellowgreen: linear-gradient(
@@ -67,6 +68,7 @@ Variables (colors, text, spacing, etc.)
 
 	/* Text */
 	--main-font: "Josefin Sans", sans-serif;
+	--body-font: "Open Sans", sans-serif;
 
 	/* Styles for fonts */
 	--font-weight-regular: 400;
@@ -106,6 +108,9 @@ Variables (colors, text, spacing, etc.)
 	--spacing-footer: 50px 160px;
 	--spacing-header-button: 125px 279px;
 
+	/* border-radius */
+	--border-radius10: 10px;
+
 	/* Wrappers */
 	--wrapper-width-max: 1328px;
 	--desktop-wrapper-width: 90%;
@@ -133,11 +138,9 @@ Variables (colors, text, spacing, etc.)
 		color: inherit;
 	}
 
-	/* needs alternation */
 	.button1 {
 		width: 300px;
 		height: 50px;
-		padding: 11px 92px;
 		margin: 0 auto;
 		gap: 10px;
 		flex-shrink: 0;
@@ -346,20 +349,25 @@ footer a img:hover {
 
 /* footer main is the container for all content except for very bottom links */
 .footer-main {
-	padding: var(--spacing40) 0;
-
+	padding-top: var(--spacing40);
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	/* align-items: center; */
 }
-
+.footer-form .h4-styles {
+	margin-top: 0px;
+}
 /* Logo and land acknowledgement button container*/
 .footer-logo-btn {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
-
+/* footer links list */
+.links-columns {
+	min-width: 250px;
+	margin: 0px;
+}
 /* Land Acknowledgement button */
 .btn-la {
 	background-color: transparent;
@@ -370,16 +378,12 @@ footer a img:hover {
 }
 
 /* hover effect on all footer links */
-.btn-la:hover,
-.footer-main ul li a:hover,
-.bottom-links a:hover {
+.btn-la:hover {
 	border-bottom: 2px solid var(--color-white);
 }
 
-
-
 /* Form Styles */
-form {
+.footer-form {
 	text-align: center;
 	padding: var(--spacing20);
 }
@@ -391,6 +395,7 @@ form {
 .text-input input {
 	height: 50px;
 	width: 100%;
+	max-width: 450px;
 	border-radius: 10px;
 	border: none;
 }
@@ -418,8 +423,7 @@ form {
 }
 /* positioning for body to stop scroll when modal is open */
 .fixed {
-	position: fixed;
-	width: 100%;
+	overflow: hidden;
 }
 /* modal overlay */
 .overlay-la {
@@ -449,7 +453,7 @@ form {
 	color: var(--color-onyx);
 	border: 1px solid var(--body-background-color);
 	border-radius: 4px;
-	z-index: 2;
+	z-index: 30;
 }
 
 .modal-wrapper {
@@ -501,7 +505,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	.wrapper {
 		width: var(--desktop-wrapper-width);
 	}
-	
+
 	.footer-main {
 		display: flex;
 		flex-direction: row;
@@ -523,17 +527,30 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	.footer-logo-btn {
 		align-items: start;
 	}
-
-	form {
+	.links-columns {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		width: 30%;
+		gap: 10%;
+	}
+	.links-child {
 		display: flex;
 		flex-direction: column;
-		text-align: left;
-		/* removing padding on button to align with content */
-		padding-right: 0px;
+		width: fit-content;
 	}
-	form p {
+	.footer-form {
+		width: 40%;
+		text-align: left;
+		padding: 0px;
+	}
+	.footer-form form {
+		display: flex;
+		flex-direction: column;
+	}
+	.footer-form form p {
 		color: var(--color-white);
-		width: 60%;
+		width: 85%;
 	}
 	.text-input {
 		display: flex;
@@ -544,7 +561,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	.text-input .button2 {
 		margin-right: 0px;
 	}
-	
+
 	.modal-content {
 		overflow-y: auto;
 	}
@@ -552,18 +569,27 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	.modal-scroll {
 		padding: var(--spacing20);
 	}
-	
+
 	/* End of footer styles */
 }
-
 
 /* Tablet Only */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
 	.modal-scroll {
 		padding: var(--spacing20);
 	}
+	.links-columns {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		gap: 10%;
+		width: 100%;
+	}
+	.links-child {
+		display: flex;
+		flex-direction: column;
+	}
 }
-
 /* Desktop & Larger */
 @media screen and (min-width: 1024px) {
 	/* adjusting font sizes and styling for p tags (in figma this is body1)*/
@@ -573,12 +599,32 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		line-height: var(--line-height26);
 		color: var(--color-onyx);
 	}
+	.text-input {
+		display: flex;
+		flex-direction: column;
+		align-items: start;
+	}
+	.text-input .button2 {
+		margin-left: 0px;
+	}
+	.footer-form p {
+		width: 100%;
+		padding-bottom: var(--spacing10);
+	}
 }
 
 /* For larger screens */
 @media (min-width: 1280px) {
 	footer {
 		padding: 0 var(--spacing65);
+	}
+}
+/* For EVEN larger screens */
+@media (min-width: 1500px) {
+	.text-input {
+		flex-direction: row;
+		align-items: center;
+		gap: 5%;
 	}
 }
 

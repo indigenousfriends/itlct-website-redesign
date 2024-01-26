@@ -1,0 +1,372 @@
+/*
+===================================
+===================================
+Styles for an individual page
+
+- Rename this file to match the page you are working on (e.g. home.css, about.css, etc.)
+- Create a new file for your page and link this file to it in the <head> of your HTML document
+- Variables from global.css will work in this CSS file as well. Do not add any variables to this file.
+===================================
+===================================
+*/
+
+/* 
+===================================
+Page Component Styles (icon grid, team member card)
+===================================
+*/
+
+/* 
+===================================
+Section Styles (background, padding, etc.)
+===================================
+*/
+/* title section */
+.title {
+	width: 100%;
+	text-align: center;
+}
+.title-img {
+	width: 100%;
+	min-height: 250px;
+	margin-bottom: var(--spacing65);
+	background-image: url("/assets/images/pages/event-program/introspective.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.title-text {
+	width: 90%;
+	margin: 0 auto;
+}
+.title h1 {
+	color: var(--color-onyx);
+	margin-top: 0px;
+	margin-bottom: var(--spacing10);
+	font-size: var(--font36);
+	line-height: var(--line-height40);
+}
+.title p {
+	line-height: var(--line-height26);
+	margin: 0px;
+	color: var(--color-onyx);
+	text-align: center;
+}
+
+
+/* Event Page Cards */
+.event-page-cards {
+	margin: var(--spacing100) 0px;
+	width: 100%;
+}
+/* card img */
+.event-page-card-img {
+	width: 100%;
+	min-height: 250px;
+	border-radius: var(--spacing10);
+	background-size: cover;
+	background-position: 50% 0%;
+	background-repeat: no-repeat;
+}
+/* Network card */
+.card-item1 .event-page-card-img {
+	background-image: url("/assets/images/pages/event-program/network.jpg");
+}
+
+/* Share card */
+.card-item2 .event-page-card-img {
+	background-image: url("/assets/images/pages/event-program/share.jpg");
+}
+
+/* Brainstorm card */
+.card-item3 .event-page-card-img {
+	background-image: url("/assets/images/pages/event-program/brianstorm.jpg");
+}
+
+/* Collaborate card */
+.card-item4 .event-page-card-img {
+	background-image: url("/assets/images/pages/event-program/collaborate.jpg");
+}
+
+/* Card title boxes */
+.event-page-card-title {
+	width: 100%;
+	height: 130px;
+	padding: var(--spacing20);
+	margin: var(--spacing20) 0px;
+	border-radius: var(--spacing10);
+	text-align: center;
+}
+.event-page-card-title .h3-styles {
+	margin: 0px;
+	font-size: var(--font28);
+	line-height: var(--line-height32);
+}
+
+/* card title background colors */
+.card-item1 .event-page-card-title {
+	background-color: var(--color-yaleblue);
+}
+.card-item2 .event-page-card-title {
+	background-color: var(--color-cybergrape);
+}
+.card-item3 .event-page-card-title {
+	background-color: var(--color-copper);
+}
+.card-item4 .event-page-card-title {
+	background-color: var(--color-teal);
+}
+
+/* text below the cards */
+.event-page-card-text {
+	margin-bottom: var(--spacing20);
+}
+.event-page-card-text p {
+	color: var(--color-onyx);
+	line-height: var(--line-height26);
+}
+
+/* Upcoming Events/Previous Events */
+
+.upcoming-events,
+.previous-events {
+	margin-bottom: 150px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	row-gap: var(--spacing65);
+	column-gap: var(--spacing40);
+}
+/* image and text containers for upcoming/previous events */
+.event {
+	max-width: 350px;
+}
+.event-img,
+.event-info {
+	width: 100%;
+	margin: 0 auto;
+}
+.event-img img {
+	width: 100%;
+}
+
+/* Upcoming/Previous events text */
+.h4-title {
+	font-size: var(--font28);
+	font-weight: var(--font-weight-bold);
+	line-height: var(--line-height32);
+	color: var(--color-onyx);
+	margin: 150px var(--spacing20) var(--spacing20) var(--spacing20);
+	text-align: center;
+}
+.event-info .h4-styles {
+	margin: var(--spacing20) 0px;
+	color: var(--color-onyx);
+}
+.event-info p {
+	margin: 0px;
+	font-size: var(--font21);
+	line-height: var(--line-height32);
+	color: var(--color-onyx);
+}
+
+/* Hiding larger screen events in mobile view*/
+.larger-screen {
+	display: none;
+}
+
+/* 
+===================================
+Media Queries (overriding styles for different screen sizes)
+
+Note: Here we are using a mobile-first approach, so we start with the smallest screen size and work our way up.
+Start by writing styles for the mobile version of the design on the lines above.
+Anything that needs to change for larger screens should be added to the media queries below.
+
+Feel free to change the min/max-width values to whatever you need. Use variables.
+===================================
+*/
+
+/* Tablet Only */
+@media screen and (min-width: 768px) and (max-width: 1300px) {
+	/* Add styles that only apply to tablet. These are usually fixes to get resposnivenes right */
+	/* Event page cards */
+	/* Event page card background/container */
+	.event-page-card-img {
+		/* increasing card height for tablet */
+		height: 300px;
+	}
+}
+
+/* Tablet and Larger */
+@media screen and (min-width: 768px) {
+	/* Add styles that apply to table and desktop */
+	
+	/* Title/Hero section */
+	.title-img {
+		display: none;
+	}
+	/* adding desktop image */
+	.title {
+		height: 100vh;
+		max-height: 1000px;
+		background-image: url("/assets/images/pages/event-program/desktop/hero-d.jpg");
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+	.title-text {
+		width: 100%;
+		height: 100%;
+		background: linear-gradient(92deg, rgba(9, 9, 9, 0.77) 40.35%, rgba(9, 9, 9, 0.74) 44.51%, rgba(9, 9, 9, 0.71) 48.63%, rgba(9, 9, 9, 0.00) 83.13%);
+		
+		/* aligning the title text div */
+		display: flex;
+		align-items: center;
+	}
+	.title-text div {
+		/* adding width instead of margin for responsiveness */
+		width: 70%;
+		margin: 0 auto;
+		
+		display: flex;
+		flex-direction: column;
+	}
+	.title-text p,
+	.title-text .h2-styles {
+		/* adding width to make sure text stays on left side */
+		width: 40%;
+		text-align: left;
+		color: var(--color-white);
+	}
+	.title-text .h2-styles {
+		font-size: var(--font56);
+		line-height: var(--line-height58);
+		margin-bottom: var(--spacing20);
+	}
+	.title-text p {
+		line-height: var(--line-height32);
+	}
+
+
+	/* hiding the div that's below the card title */
+	.event-page-card-text {
+		display: none;
+	}
+
+	/* Page Cards */
+	.event-page-cards {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: var(--spacing20);
+	}
+	
+	/* Network card */
+	.card-item1 .event-page-card-img {
+		background-image: url("/assets/images/pages/event-program/desktop/network-d.jpg");
+	}
+
+	/* Share card */
+	.card-item2 .event-page-card-img {
+		background-image: url("/assets/images/pages/event-program/desktop/share-d.jpg");
+	}
+
+	/* Brainstorm card */
+	.card-item3 .event-page-card-img {
+		background-image: url("/assets/images/pages/event-program/desktop/brainstorm-d.jpg");
+	}
+
+	/* Collaborate card */
+	.card-item4 .event-page-card-img {
+		background-image: url("/assets/images/pages/event-program/desktop/collaborate-d.jpg");
+	}
+
+	.event-page-cards > * {
+		width: 45%;
+
+		/* positioning for the card title */
+		position: relative;
+	}
+	
+	.event-page-card-title {
+		height: 110px;
+		margin: 0px;
+		border-radius: 0px 0px var(--spacing10) var(--spacing10);
+		text-align: left;
+		/* positioning */
+		position: absolute;
+		bottom: 0px;
+	}
+	.event-page-card-title p {
+		color: var(--color-white);
+		margin-top: 10px;
+	}
+
+	/* page card title background color changes */
+	.card-item1 .event-page-card-title {
+		background: linear-gradient(60deg, #195085 55.81%, rgba(66, 66, 65, 0.00) 70.18%);
+	}
+	.card-item2 .event-page-card-title {
+		background: linear-gradient(60deg, #563867 55.81%, rgba(66, 66, 65, 0.00) 70.18%);
+	}
+	.card-item3 .event-page-card-title {
+		background: linear-gradient(60deg, #955C17 55.81%, rgba(66, 66, 65, 0.00) 70.18%);
+	}
+	.card-item4 .event-page-card-title {
+		background: linear-gradient(60deg, #017B80 55.81%, rgba(66, 66, 65, 0.00) 70.18%);
+	}
+
+	
+	/* Upcoming Events */
+	/* Previous Events */
+	
+	/* Displaying larger screen only events */
+	.larger-screen {
+		display: block;
+	}
+	.upcoming-events > *,
+	.previous-events > * {
+		flex-basis: 30%;
+	}
+
+	/* title for upcoming/previous events */
+	.h4-title {
+		font-size: var(--font46);
+		line-height: var(--line-height50);
+	}
+
+}
+
+/* Desktop Only */
+@media screen and (min-width: 1300px) {
+	/* Add styles that apply specifically to desktop */
+	
+	/* page cards */
+	.event-page-cards {
+		/* adding top and bottom margin to section for desktop */
+		margin: var(--spacing213) 0px;
+	}
+
+	.event-page-card-img {
+		/* increasing card height */
+		height: 435px;
+	}
+
+	.event-page-card-title {
+		/* increasing card title height */
+		height: 130px;
+	}
+
+	.event-page-card-title .h3-styles {
+		font-size: var(--font36);
+		line-height: var(--line-height40);
+	}
+	
+	/* Upcoming/previous title margin bottom */
+	.h4-title {
+		margin-bottom: var(--spacing65);
+	}
+
+}
