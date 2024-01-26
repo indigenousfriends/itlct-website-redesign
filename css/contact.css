@@ -78,7 +78,8 @@ p {
 /* 
 ===================================
 Media Queries (overriding styles for different screen sizes)
-
+===================================
+*/
 /* Tablet and Larger */
 @media screen and (min-width: 768px) {
 	/* Add styles that apply to table and desktop */
