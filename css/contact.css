@@ -5,6 +5,9 @@ Page Component Styles (icon grid, team member card)
 */
 
 /* contact form */
+.contact-form-parent {
+	max-width: 475px;
+}
 .form-input {
 	display: flex;
 	flex-direction: column;
@@ -86,6 +89,7 @@ Media Queries (overriding styles for different screen sizes)
 		text-align: left;
 	}
 	.contact-form-parent {
+		max-width: none;
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
