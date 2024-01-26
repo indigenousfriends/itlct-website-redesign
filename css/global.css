@@ -113,11 +113,7 @@ Variables (colors, text, spacing, etc.)
 	--wrapper-width-max: 1328px;
 	--desktop-wrapper-width: 90%;
 	--mobile-wrapper-width: 95%;
-
-	/* Media Queries */
-	/* --media-mobile-max:480px;
- --media-tablet-min:768px;
- --media-desktop-min:1024px; */
+}
 
 	/* button styles and a tags */
 	/* overwrite sizes if needed. */
@@ -197,7 +193,7 @@ Variables (colors, text, spacing, etc.)
 		background-color: var(--button3-hover-border);
 		color: var(--color-onyx);
 	}
-}
+
 
 /* 
 ===================================
@@ -338,29 +334,7 @@ Global Component Styles (buttons, forms, etc.)
 }
 
 /* HEADER STYLES BB */
-/*
-===================================
-===================================
-Styles for an individual page
 
-- Rename this file to match the page you are working on (e.g. home.css, about.css, etc.)
-- Create a new file for your page and link this file to it in the <head> of your HTML document
-- Variables from global.css will work in this CSS file as well. Do not add any variables to this file.
-===================================
-===================================
-*/
-
-/* 
-===================================
-Page Component Styles (icon grid, team member card)
-===================================
-*/
-
-/* 
-===================================
-Section Styles (background, padding, etc.)
-===================================
-*/
 body {
 	font-family: var(--main-font);
 }
@@ -478,9 +452,7 @@ nav .img-container {
 	font-size: var(--font16);
 }
 
-.hidden {
-	display: none;
-}
+
 
 /* The Mobile X */
 #mobileClose {
@@ -581,9 +553,7 @@ footer a img:hover {
 }
 
 /* MODAL */
-.hidden {
-	display: none;
-}
+
 
 /* positioning for body to stop scroll when modal is open */
 .fixed {
@@ -678,104 +648,6 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 
 /* Tablet Only */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-	/* Add styles that only apply to tablet. These are usually fixes to get resposnivenes right */
-}
-
-/* Tablet and Larger */
-@media screen and (min-width: 768px) {
-	#nav-links-container {
-		top: 80px;
-	}
-
-	/* Add styles that apply to table and desktop */
-}
-
-/* Desktop Only */
-@media screen and (min-width: 1217px) {
-	/* Add styles that apply specifically to desktop */
-}
-
-/* Desktop & Larger */
-
-@media screen and (min-width: 1180px) {
-
-	/* adjusting font sizes and styling for p tags (in figma this is body1)*/
-	a {
-		font-weight: var(--font-weight-regular);
-		line-height: var(--line-height26);
-	}
-
-	/* hide menu bar for larger screen */
-	#menu-container {
-		display: none;
-	}
-
-	.desktop-menu {
-		display: flex;
-	}
-
-	/* top bar positioning */
-	header {
-		position: relative;
-	}
-
-	.top-bar {
-		position: absolute;
-		width: 100%;
-		z-index: 20;
-	}
-
-	.dp-wrapper .button2 {
-		font-family: var(--main-font);
-		display: flex;
-		width: 194px;
-		height: 50px;
-		padding: 10px 40px;
-		justify-content: center;
-		align-items: center;
-		gap: 10px;
-		flex-shrink: 0;
-		border-radius: 10px;
-		background: var(--button2-color);
-		color: var(--color-white);
-		cursor: pointer;
-		border: none;
-		font-size: var(--font21);
-		font-weight: var(--font-weight-bold);
-		line-height: var(--line-height32);
-	}
-
-	.button2:hover {
-		background: var(--color-white);
-		color: var(--color-onyx);
-		text-decoration: none;
-	}
-
-	.dp-wrapper {
-		/* max-width: var(--desktop-wrapper-width); */
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-	}
-
-	.logo-icon {
-		min-width: 205px;
-	}
-}
-
-
-
-
-/* 
-===================================
-Media Queries (overriding styles for different screen sizes)
-Feel free to change the min/max-width values to whatever you need. Use variables.
-===================================
-*/
-
-
-/* Tablet Only */
-@media screen and (min-width: 768px) and (max-width: 1024px) {
 	.modal-scroll {
 		padding: var(--spacing20);
 	}
@@ -790,8 +662,35 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		flex-direction: column;
 	}
 }
-/* Desktop & Larger */
+
+/* Tablet and Larger */
+@media screen and (min-width: 768px) {
+	#nav-links-container {
+		top: 80px;
+	}
+
+	/* Add styles that apply to table and desktop */
+}
+/* desktop */
 @media (min-width: 1024px) {
+	p {
+		font-size: var(--font21);
+		font-weight: var(--font-weight-regular);
+		line-height: var(--line-height26);
+		color: var(--color-onyx);
+	}
+	.text-input {
+		display: flex;
+		flex-direction: column;
+		align-items: start;
+	}
+	.text-input .button2 {
+		margin-left: 0px;
+	}
+	form p {
+		width: 100%;
+		padding-bottom: var(--spacing10);
+	}
 	/* Footer styles */
 	.wrapper {
 		width: var(--desktop-wrapper-width);
@@ -873,44 +772,75 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 
 	/* End of footer styles */
 }
+/* desktop 1180px */
+@media screen and (min-width: 1180px) {
 
-/* Tablet Only */
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-	.modal-scroll {
-		padding: var(--spacing20);
-	}
-	.links-columns {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-evenly;
-		width: 80%;
-	}
-	.links-child {
-		display: flex;
-		flex-direction: column;
-	}
-}
-/* Desktop & Larger */
-@media screen and (min-width: 1024px) {
 	/* adjusting font sizes and styling for p tags (in figma this is body1)*/
-	p {
-		font-size: var(--font21);
+	a {
 		font-weight: var(--font-weight-regular);
 		line-height: var(--line-height26);
-		color: var(--color-onyx);
 	}
-	.text-input {
+
+	/* hide menu bar for larger screen */
+	#menu-container {
+		display: none;
+	}
+
+	.desktop-menu {
 		display: flex;
-		flex-direction: column;
-		align-items: start;
 	}
-	.text-input .button2 {
-		margin-left: 0px;
+
+	/* top bar positioning */
+	header {
+		position: relative;
 	}
-	form p {
+
+	.top-bar {
+		position: absolute;
 		width: 100%;
-		padding-bottom: var(--spacing10);
+		z-index: 20;
 	}
+
+	.dp-wrapper .button2 {
+		font-family: var(--main-font);
+		display: flex;
+		width: 194px;
+		height: 50px;
+		padding: 10px 40px;
+		justify-content: center;
+		align-items: center;
+		gap: 10px;
+		flex-shrink: 0;
+		border-radius: 10px;
+		background: var(--button2-color);
+		color: var(--color-white);
+		cursor: pointer;
+		border: none;
+		font-size: var(--font21);
+		font-weight: var(--font-weight-bold);
+		line-height: var(--line-height32);
+	}
+
+	.button2:hover {
+		background: var(--color-white);
+		color: var(--color-onyx);
+		text-decoration: none;
+	}
+
+	.dp-wrapper {
+		/* max-width: var(--desktop-wrapper-width); */
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.logo-icon {
+		min-width: 205px;
+	}
+}
+/* desktop 1217px */
+@media screen and (min-width: 1217px) {
+	/* Add styles that apply specifically to desktop */
 }
 
 /* For larger screens */
@@ -929,5 +859,3 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	}
 }
 
-/* https://bholmes.dev/blog/alternative-to-css-variable-media-queries/
-Well, it comes down to what the :root element actually means: the root element of the HTML document. But conceptually, media queries aren't attached to HTML elements at all. These declarations are processed while your CSS is being parsed, so it won't know to look to the :root and pull in the variable values. */
