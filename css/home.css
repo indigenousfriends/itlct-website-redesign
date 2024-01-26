@@ -51,7 +51,7 @@ Hero Section
 }
 
 /* overriding global styles */
-.hero h3,
+.hero h1,
 .hero p {
 	color: var(--color-onyx);
 	margin: var(--spacing20);
@@ -69,6 +69,23 @@ Community Partnerships Section
 /* overriding .wrapper class */
 .community-partnerships.wrapper {
 	width: 100%;
+}
+
+/* fixing width and position of paragraph */
+
+.partnerships-paragraph {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.partnerships-paragraph p {
+	width: 90%;
+	
+}
+
+.partnerships-paragraph h4 {
+	margin-bottom: 0;
 }
 
 /* targeting the image in the card-img div */
@@ -104,7 +121,7 @@ Global Ecosystem Section
 	margin: 0 auto;
 	padding: 45px 15px;
 	width: 90%;
-	border-radius: 10px;
+	border-radius: var(--spacing10);
 	background-color: var(--color-onyx);
 	position: relative;
 }
@@ -160,7 +177,7 @@ What We Do Section
 /* stylings for the card div */
 .home-card {
 	border: none;
-	border-radius: 10px;
+	border-radius: var(--spacing10);
 	padding-bottom: var(--spacing20);
 	margin: var(--spacing20) 0;
 }
@@ -191,8 +208,16 @@ Our Values Section
 	margin: 0 auto;
 	padding: 40px 15px 60px 15px;
 	width: 90%;
-	border-radius: 10px;
+	border-radius: var(--spacing10);
 	background-color: var(--color-yaleblue);
+}
+
+.values .text-container {
+	padding: 40px 0;
+}
+
+.values h4 {
+	margin-bottom: 0px;
 }
 
 /* ================================
@@ -201,7 +226,10 @@ Events and Programs Section
 
 /* targets the div holding "placeholder" */
 .events-container {
-	width: 80%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 /* overriding global styles*/
 .events-and-programs h3,
@@ -213,25 +241,31 @@ Events and Programs Section
 	color: var(--color-onyx);
 }
 
-/* targeting the images in the section */
-.events-and-programs img {
-	margin: 0 auto;
+/* adjusting spacing for placeholder */
+.placeholder {
+	margin-top: var(--spacing40);
 }
 
-/* targeting the text div in the section */
-.event-description {
-	margin: var(--spacing20);
+/* centers placeholder */
+.placeholder picture {
+	display: flex;
+	flex-direction: column;
 }
+
+.events-and-programs .image-link:hover {
+	color: var(--color-white);
+}
+
+.events-and-programs h3 {
+	text-align: center;
+}
+
+
 
 /* 
 ===================================
 Media Queries (overriding styles for different screen sizes)
 
-Note: Here we are using a mobile-first approach, so we start with the smallest screen size and work our way up.
-Start by writing styles for the mobile version of the design on the lines above.
-Anything that needs to change for larger screens should be added to the media queries below.
-
-Feel free to change the min/max-width values to whatever you need. Use variables.
 ===================================
 */
 
@@ -280,7 +314,8 @@ Hero Section
 	/* targeting the div holding the buttons */
 	.hero .btn-container {
 		display: flex;
-		justify-content: space-around;
+		justify-content: center;
+		gap: var(--spacing80);
 	}
 
 	/* targeting the buttons that need to be hidden on desktop version */
@@ -289,7 +324,7 @@ Hero Section
 	}
 
 	/* overriding global styles */
-	.hero-home h3,
+	.hero-home h1,
 	.hero-home p {
 		color: var(--color-white);
 	}
@@ -341,7 +376,7 @@ Global Ecosystems Section
 	/* targeting the style for the cybergrape div */
 	.ecosystem-subsection {
 		margin: 0;
-		border-radius: 10px;
+		border-radius: var(--spacing10);
 		padding-bottom: var(--spacing40);
 		padding-left: 52px;
 		padding-right: var(--spacing100);
@@ -455,11 +490,22 @@ Events and Programs Section
 		width: 30%;
 		gap: var(--spacing10);
 	}
+
+	.events-and-programs h3 {
+		text-align: left;
+		margin-left: var(--spacing20);
+	}
+
+	.placeholder {
+		margin-top: 0px;
+	}
 }
 
 /* Desktop Only */
 @media screen and (min-width: 1025px) {
-	/* targeting tag to change the style from onyx to white */
+	section .wrapper {
+		max-width: 1130px;
+	}
 
 	/* ================================
 Hero Section
@@ -497,7 +543,8 @@ Hero Section
 	/* targeting the div holding the buttons */
 	.hero .btn-container {
 		display: flex;
-		justify-content: space-around;
+		justify-content: center;
+		gap: var(--spacing80);
 	}
 
 	/* targeting the buttons that need to be hidden on desktop version */
@@ -506,9 +553,16 @@ Hero Section
 	}
 
 	/* overriding global styles */
-	.hero h3,
+	.hero h1,
 	.hero p {
 		color: var(--color-white);
+	}
+
+	.hero h1 {
+		font-family: "Josefin Sans";
+		font-size: 56px;
+		font-weight: 700;
+		line-height: 58px;
 	}
 
 	/* ================================
@@ -519,8 +573,8 @@ Community Partnerships Section
 	.community-partnerships {
 		margin: 0 auto;
 		width: 80%;
-		padding-top: var(--spacing80);
-		padding-bottom: var(--spacing80);
+		padding-top: var(--spacing164);
+		padding-bottom: var(--spacing164);
 	}
 
 	/* targeting the text to make it white */
@@ -535,7 +589,7 @@ Community Partnerships Section
 	.community {
 		display: flex;
 		flex-direction: row-reverse;
-		border-radius: 10px;
+		border-radius: var(--spacing10);
 		padding-bottom: 0;
 		text-align: left;
 	}
@@ -561,20 +615,18 @@ Community Partnerships Section
 		padding-top: var(--spacing100);
 		padding-bottom: var(--spacing80);
 		width: 40%;
-		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
+		align-items: baseline;
 	}
 
 	/* fixing the button width for larger screen sizes */
-	.partnerships-paragraph .button1 {
+	/* .partnerships-paragraph .button1 {
 		width: 100%;
-	}
+	} */
 
 	/* overriding the .wrapper class */
 	.community-partnerships.wrapper {
 		margin: 0 auto;
-		width: 90%;
+		max-width: 1130px;
 	}
 
 	/* ================================
@@ -583,8 +635,8 @@ Global Ecosystems Section
 
 	/* the background for the entire section */
 	.global-ecosystem {
-		padding-top: var(--spacing100);
-		padding-bottom: var(--spacing100);
+		padding-top: var(--spacing185);
+		padding-bottom: var(--spacing185);
 		background: url(../assets/images/pages/home/bg-overlay-vector-01.svg),
 			var(--color-bluepurple);
 		background-size: cover;
@@ -610,13 +662,10 @@ Global Ecosystems Section
 	/* targeting the style for the cybergrape div */
 	.ecosystem-subsection {
 		margin: 0;
-		border-radius: 10px;
-		padding-top: var(--spacing40);
-		padding-bottom: var(--spacing40);
-		padding-left: var(--spacing100);
-		padding-right: var(--spacing100);
+		border-radius: var(--spacing10);
+		padding: var(--spacing100);
 		width: 70%;
-		left: 70px;
+		
 	}
 	/* targeting the color of the font in the div */
 	.ecosystem-subsection p {
@@ -660,7 +709,7 @@ What We Do Section
 
 	/* targeting the h3 stylings */
 	.what-we-do h3 {
-		margin-bottom: 0;
+		
 		font-size: var(--font46);
 		line-height: var(--line-height50);
 		color: var(--color-onyx);
@@ -761,8 +810,10 @@ Events and Programs Section
 		background: url(../assets/images/pages/home/bg-overlay-vector-02.svg),
 			var(--color-bluepurple);
 		background-size: cover;
-		padding-top: var(--spacing20);
+		padding-top: var(--spacing80);
+		padding-bottom: var(--spacing80);
 	}
+
 	/* stylings for the div holding all 3 placeholders */
 	.events-container {
 		margin: 0 auto;
@@ -770,7 +821,7 @@ Events and Programs Section
 		flex-direction: row;
 		justify-content: center;
 		align-items: center;
-		gap: 15px;
+		gap: 50px;
 	}
 	/* placeholder holding the image and event description */
 	.placeholder {
@@ -787,6 +838,14 @@ Events and Programs Section
 	.events-and-programs h4 {
 		color: var(--color-white);
 		margin-bottom: 0;
+	}
+
+	.events-and-programs h3 {
+		text-align: left;
+	}
+
+	.placeholder {
+		margin-top: 0px;
 	}
 }
 @media screen and (min-width: 1025px) and (max-width: 1250px) {
@@ -821,11 +880,10 @@ Global Ecosystem Section
 	}
 	/* positioning for the cybergrape ecosystem div */
 	.ecosystem-subsection {
-		padding-left: 60px;
-		padding-right: 90px;
+		
 		position: relative;
 		left: 30px;
-		padding-top: 0;
+		
 	}
 	/* positioning for the onyx blockquote */
 	.blockquote {
