@@ -45,6 +45,7 @@ Variables (colors, text, spacing, etc.)
 	--color-citrine: #d3c53f;
 	--color-citron: #92a32d;
 	--color-copper: #b16120;
+	--color-grey: #6c6c6c;
 	--color-bluepurple: linear-gradient(0deg, #6c4681 -5.71%, #184f85 103.44%);
 	--color-purpleblue: linear-gradient(180deg, #6c4681 -5.71%, #184f85 103.44%);
 	--color-yellowgreen: linear-gradient(
@@ -348,12 +349,14 @@ footer a img:hover {
 
 /* footer main is the container for all content except for very bottom links */
 .footer-main {
-	padding: var(--spacing40) 0;
+	padding-top: var(--spacing40);
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	/* align-items: center; */
 }
-
+.footer-form .h4-styles {
+	margin-top: 0px;
+}
 /* Logo and land acknowledgement button container*/
 .footer-logo-btn {
 	display: flex;
@@ -363,6 +366,7 @@ footer a img:hover {
 /* footer links list */
 .links-columns {
 	min-width: 250px;
+	margin: 0px;
 }
 /* Land Acknowledgement button */
 .btn-la {
@@ -374,14 +378,12 @@ footer a img:hover {
 }
 
 /* hover effect on all footer links */
-.btn-la:hover,
-.footer-main ul li a:hover,
-.bottom-links a:hover {
+.btn-la:hover {
 	border-bottom: 2px solid var(--color-white);
 }
 
 /* Form Styles */
-form {
+.footer-form {
 	text-align: center;
 	padding: var(--spacing20);
 }
@@ -393,6 +395,7 @@ form {
 .text-input input {
 	height: 50px;
 	width: 100%;
+	max-width: 450px;
 	border-radius: 10px;
 	border: none;
 }
@@ -420,8 +423,7 @@ form {
 }
 /* positioning for body to stop scroll when modal is open */
 .fixed {
-	position: fixed;
-	width: 100%;
+	overflow: hidden;
 }
 /* modal overlay */
 .overlay-la {
@@ -539,17 +541,16 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	}
 	.footer-form {
 		width: 40%;
+		text-align: left;
+		padding: 0px;
 	}
-	form {
+	.footer-form form {
 		display: flex;
 		flex-direction: column;
-		text-align: left;
-		/* removing padding on button to align with content */
-		padding-right: 0px;
 	}
-	form p {
+	.footer-form form p {
 		color: var(--color-white);
-		width: 60%;
+		width: 85%;
 	}
 	.text-input {
 		display: flex;
@@ -580,8 +581,9 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	.links-columns {
 		display: flex;
 		flex-direction: row;
-		justify-content: space-evenly;
-		width: 80%;
+		justify-content: center;
+		gap: 10%;
+		width: 100%;
 	}
 	.links-child {
 		display: flex;
@@ -605,7 +607,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	.text-input .button2 {
 		margin-left: 0px;
 	}
-	form p {
+	.footer-form p {
 		width: 100%;
 		padding-bottom: var(--spacing10);
 	}
