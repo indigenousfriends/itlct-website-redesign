@@ -411,7 +411,8 @@ Media Queries (overriding styles for different screen sizes)
 	.support-header {
 		padding-top: 115px;
 	}
-	.support-header, .support-text {
+	.support-header,
+	.support-text {
 		margin-left: 200px;
 	}
 	.support-header h2.h2-styles {
