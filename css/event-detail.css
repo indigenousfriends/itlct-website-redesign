@@ -16,7 +16,7 @@ html {
 .template-wrapper img {
 	display: flex;
 	align-items: center;
-	margin-bottom: 60px;
+	margin-bottom: 380px;
 }
 
 .template-main-header {
@@ -53,12 +53,12 @@ html {
 	color: var(--color-white);
 }
 .template-concept-img {
-	display: block;
-	padding-left: 60px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 .template-three-img {
-	background: url(<path-to-image>), lightgray 50% / cover no-repeat;
 	justify-content: center;
 }
 
