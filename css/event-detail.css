@@ -9,10 +9,14 @@ html {
 	width: var(--mobile-wrapper-width);
 	margin: 0 auto;
 	max-width: var(--wrapper-width-max);
+	padding-left: 20px;
+	padding-right: 20px;
 }
 
 .template-wrapper img {
+	display: flex;
 	align-items: center;
+	margin-bottom: 60px;
 }
 
 .template-main-header {
