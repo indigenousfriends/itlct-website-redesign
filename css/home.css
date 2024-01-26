@@ -1,0 +1,874 @@
+/*
+===================================
+===================================
+Styles for home-page
+===================================
+===================================
+*/
+
+/* Links */
+a.image-link {
+	text-decoration: none;
+	color: var(--color-white);
+}
+
+/* this is to align text in the center throughout the entire design */
+.align-text {
+	text-align: center;
+}
+
+/* adding a margin */
+.text-container {
+	margin: var(--spacing20);
+}
+
+/* adding margin and padding to tagged divs */
+.text-container-subsection {
+	margin: var(--spacing10);
+	padding-bottom: var(--spacing10);
+}
+
+/* 
+===================================
+Mobile Styles 
+===================================
+*/
+
+/* ================================
+Hero Section
+===================================  */
+/* entire section style */
+.hero {
+	margin: 0 auto;
+	padding-bottom: var(--spacing40);
+	width: 100%;
+}
+
+/* div holding text and buttons */
+.hero-home {
+	display: flex;
+	flex-direction: column;
+}
+
+/* overriding global styles */
+.hero h3,
+.hero p {
+	color: var(--color-onyx);
+	margin: var(--spacing20);
+}
+
+/* ================================
+Community Partnerships Section
+===================================  */
+/* entire section style */
+.community {
+	background-color: var(--color-amaranth);
+	padding-bottom: 50px;
+}
+
+/* overriding .wrapper class */
+.community-partnerships.wrapper {
+	width: 100%;
+}
+
+/* targeting the image in the card-img div */
+.community .card-img img {
+	width: 100%;
+	border-radius: 0;
+}
+
+/* targeting button in the div to center it */
+.partnerships-paragraph .button1 {
+	margin: 0 auto;
+}
+
+/* ================================
+Global Ecosystem Section
+===================================  */
+
+/* entire section style */
+.global-ecosystem {
+	background-color: var(--color-cybergrape);
+	padding-bottom: var(--spacing40);
+}
+
+/* styling for the ecosystem div */
+.ecosystem-subsection {
+	background-color: var(--color-cybergrape);
+	padding-top: var(--spacing10);
+	padding-bottom: 50px;
+}
+
+/* styling for the onyx blockquote div */
+.blockquote {
+	margin: 0 auto;
+	padding: 45px 15px;
+	width: 90%;
+	border-radius: 10px;
+	background-color: var(--color-onyx);
+	position: relative;
+}
+
+/* adding and styling the open quotes svg */
+.blockquote p::before {
+	content: url(../assets/images/pages/home/quotes-open.svg);
+	position: absolute;
+	top: var(--spacing20);
+	left: var(--spacing10);
+}
+/* adding and styling the close quotes svg */
+.blockquote p::after {
+	content: url(../assets/images/pages/home/quotes-close.svg);
+	position: absolute;
+	bottom: var(--spacing20);
+	right: var(--spacing10);
+}
+
+/* ================================
+What We Do Section
+===================================  */
+
+/* entire section */
+.what-we-do {
+	padding-bottom: var(--spacing40);
+}
+
+/* overriding global style */
+.what-we-do h3 {
+	color: var(--color-onyx);
+}
+
+/* targeting colors for individual cards */
+.digital-fluency {
+	background-color: var(--color-teal);
+}
+
+.community-engagement {
+	background-color: var(--color-copper);
+}
+
+.technology-programs {
+	background-color: var(--color-yaleblue);
+}
+
+/* targeting the images within the card-img container */
+.card-img img {
+	width: 100%;
+	border-radius: 10px 10px 0 0;
+}
+
+/* stylings for the card div */
+.home-card {
+	border: none;
+	border-radius: 10px;
+	padding-bottom: var(--spacing20);
+	margin: var(--spacing20) 0;
+}
+
+/* targeting the home-card height within the card container div */
+.card-container .home-card {
+	min-height: 430px;
+}
+
+/* targeting the text div within the home-card */
+.home-card .text-container {
+	margin: var(--spacing20);
+}
+
+/* ================================
+Our Values Section
+===================================  */
+
+/* the entire section */
+.values {
+	background-color: var(--color-onyx);
+	padding-top: var(--spacing20);
+	padding-bottom: var(--spacing40);
+}
+
+/* contains the blue rectangle with divs  */
+.our-values {
+	margin: 0 auto;
+	padding: 40px 15px 60px 15px;
+	width: 90%;
+	border-radius: 10px;
+	background-color: var(--color-yaleblue);
+}
+
+/* ================================
+Events and Programs Section
+===================================  */
+
+/* targets the div holding "placeholder" */
+.events-container {
+	width: 80%;
+}
+/* overriding global styles*/
+.events-and-programs h3,
+.events-and-programs p {
+	color: var(--color-onyx);
+}
+.events-and-programs h4 {
+	margin-bottom: 0;
+	color: var(--color-onyx);
+}
+
+/* targeting the images in the section */
+.events-and-programs img {
+	margin: 0 auto;
+}
+
+/* targeting the text div in the section */
+.event-description {
+	margin: var(--spacing20);
+}
+
+/* 
+===================================
+Media Queries (overriding styles for different screen sizes)
+
+Note: Here we are using a mobile-first approach, so we start with the smallest screen size and work our way up.
+Start by writing styles for the mobile version of the design on the lines above.
+Anything that needs to change for larger screens should be added to the media queries below.
+
+Feel free to change the min/max-width values to whatever you need. Use variables.
+===================================
+*/
+
+/* Mobile and Larger */
+@media screen and (max-width: 768px) {
+	/* Add styles that apply to tablet and desktop */
+}
+
+/* Tablet Only */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+	/* Add styles that only apply to tablet. These are usually fixes to get responsiveness right */
+
+	/* ================================
+Hero Section
+===================================  */
+	/* hides the default image for the section */
+	.hero img {
+		display: none;
+	}
+
+	/* the entire section */
+	.hero {
+		background: linear-gradient(
+				352deg,
+				rgba(9, 9, 9, 0.8) 32.03%,
+				rgba(9, 9, 9, 0) 73.42%
+			),
+			url(../assets/images/pages/home/hero-image-home.jpg);
+
+		background-size: cover;
+		position: relative;
+		height: 100vh;
+		background-position: center;
+	}
+
+	/* contains heading, paragraph, and buttons for the hero image */
+	.hero-home {
+		position: absolute;
+		z-index: 10;
+		bottom: 10%;
+		max-width: var(--wrapper-width-max);
+		left: 50%;
+		transform: translate(-50%, 0%);
+	}
+
+	/* targeting the div holding the buttons */
+	.hero .btn-container {
+		display: flex;
+		justify-content: space-around;
+	}
+
+	/* targeting the buttons that need to be hidden on desktop version */
+	.hero .button3 {
+		display: none;
+	}
+
+	/* overriding global styles */
+	.hero-home h3,
+	.hero-home p {
+		color: var(--color-white);
+	}
+
+	/* ================================
+Community Partnerships Section
+===================================  */
+	/*targeting the div holding text and button  */
+	.partnerships-paragraph {
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	/* overriding global styles */
+	.community-partnerships p {
+		color: var(--color-white);
+	}
+
+	/* ================================
+Global Ecosystems Section
+===================================  */
+
+	/* the background for the entire section */
+	.global-ecosystem {
+		padding-top: var(--spacing100);
+		padding-bottom: var(--spacing100);
+		background: url(../assets/images/pages/home/bg-overlay-vector-01.svg),
+			var(--color-bluepurple);
+		background-size: cover;
+	}
+
+	/* targeting the header styling  */
+	.global-ecosystem h4 {
+		margin-bottom: 0;
+		font-size: var(--font36);
+		line-height: var(--line-height40);
+		color: var(--color-white);
+	}
+	/* contains 2 divs - ecosystem subsection (cybergrape) and the blockquote */
+	.ecosystem {
+		width: 100%;
+		margin: 0 auto;
+		text-align: left;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+	}
+	/* targeting the style for the cybergrape div */
+	.ecosystem-subsection {
+		margin: 0;
+		border-radius: 10px;
+		padding-bottom: var(--spacing40);
+		padding-left: 52px;
+		padding-right: var(--spacing100);
+		width: 70%;
+		position: relative;
+		left: 30px;
+	}
+	/* targeting the color of the font in the div */
+	.ecosystem-subsection p {
+		color: var(--color-white);
+	}
+
+	/* stylings for the onyx block quote */
+	.blockquote {
+		position: relative;
+		right: 30px;
+		width: 60%;
+		margin: 0;
+		padding-top: var(--spacing20);
+		padding-bottom: var(--spacing20);
+		padding-left: 64px;
+		padding-right: 46px;
+	}
+
+	/* targeting positioning for the svgs in the blockquote */
+	.blockquote p::before {
+		top: 30px;
+		left: 20px;
+	}
+	.blockquote p::after {
+		bottom: 30px;
+		right: 20px;
+	}
+
+	/* targeting the text in the blockquote */
+	.blockquote p {
+		font-size: var(--font24);
+		font-weight: var(--font-weight-medium);
+		line-height: var(--line-height28);
+		color: var(--color-white);
+		font-style: italic;
+	}
+
+	/* ================================
+What We Do Section
+===================================  */
+
+	/* entire section */
+	.what-we-do {
+		width: 80%;
+		padding-bottom: var(--spacing40);
+	}
+	/* overriding global styles */
+	.what-we-do h3 {
+		color: var(--color-onyx);
+	}
+
+	.what-we-do p {
+		color: var(--color-white);
+	}
+	/* ================================
+Our Values Section
+===================================  */
+	/*targeting the div holding the blue rectangle  */
+	.our-values {
+		width: 80%;
+	}
+	/* overriding global styles */
+	.values p {
+		color: var(--color-white);
+	}
+
+	/* ================================
+Events and Programs Section
+===================================  */
+	/*overriding global styles  */
+	.events-and-programs h3,
+	.events-and-programs p {
+		color: var(--color-onyx);
+	}
+	.events-and-programs h4 {
+		color: var(--color-onyx);
+		margin-bottom: 0;
+	}
+
+	/* if we want column style instead of row */
+
+	/* .events-container {
+		width: 80%;
+		margin: 0 auto;
+	}
+	.placeholder {
+		width: 60%;
+		margin: 0 auto;
+	}
+	.event-description {
+		width: 60%;
+		text-align: left;
+	} */
+	/* targeting the div holding placeholder */
+	.events-container {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-content: center;
+	}
+
+	/* targeting div that is holding the image and text for "placeholder" */
+	.placeholder {
+		width: 30%;
+		gap: var(--spacing10);
+	}
+}
+
+/* Desktop Only */
+@media screen and (min-width: 1025px) {
+	/* targeting tag to change the style from onyx to white */
+
+	/* ================================
+Hero Section
+===================================  */
+	/* hides the default image for the section */
+	.hero img {
+		display: none;
+	}
+
+	/* the entire section */
+	.hero {
+		background: linear-gradient(
+				352deg,
+				rgba(9, 9, 9, 0.8) 32.03%,
+				rgba(9, 9, 9, 0) 73.42%
+			),
+			url(../assets/images/pages/home/hero-image-home.jpg);
+
+		background-size: cover;
+		background-position: center;
+		position: relative;
+		height: 100vh;
+	}
+
+	/* contains heading, paragraph, and buttons for the hero image */
+	.hero-home {
+		position: absolute;
+		z-index: 10;
+		bottom: 10%;
+		max-width: var(--wrapper-width-max);
+		left: 50%;
+		transform: translate(-50%, 0%);
+	}
+
+	/* targeting the div holding the buttons */
+	.hero .btn-container {
+		display: flex;
+		justify-content: space-around;
+	}
+
+	/* targeting the buttons that need to be hidden on desktop version */
+	.hero .button3 {
+		display: none;
+	}
+
+	/* overriding global styles */
+	.hero h3,
+	.hero p {
+		color: var(--color-white);
+	}
+
+	/* ================================
+Community Partnerships Section
+===================================  */
+
+	/* style for the entire section */
+	.community-partnerships {
+		margin: 0 auto;
+		width: 80%;
+		padding-top: var(--spacing80);
+		padding-bottom: var(--spacing80);
+	}
+
+	/* targeting the text to make it white */
+	.community-partnerships p {
+		color: var(--color-white);
+	}
+	/* targeting the button */
+	.community-partnerships .button1 {
+		margin: 0;
+	}
+	/* div holding the picture and the partnerships-paragraph */
+	.community {
+		display: flex;
+		flex-direction: row-reverse;
+		border-radius: 10px;
+		padding-bottom: 0;
+		text-align: left;
+	}
+	/* targeting the header style */
+	.community h4 {
+		font-size: var(--font36);
+		line-height: var(--line-height40);
+		color: var(--color-white);
+		margin: 0;
+	}
+	/* targeting the img */
+	.community .card-img img {
+		object-fit: cover;
+		object-position: center;
+		height: 100%;
+		border-radius: 0 10px 10px 0;
+	}
+	/* div holding the h4, p, and button */
+	.partnerships-paragraph {
+		margin: 0 auto;
+		padding-left: var(--spacing40);
+		padding-right: var(--spacing40);
+		padding-top: var(--spacing100);
+		padding-bottom: var(--spacing80);
+		width: 40%;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	/* fixing the button width for larger screen sizes */
+	.partnerships-paragraph .button1 {
+		width: 100%;
+	}
+
+	/* overriding the .wrapper class */
+	.community-partnerships.wrapper {
+		margin: 0 auto;
+		width: 90%;
+	}
+
+	/* ================================
+Global Ecosystems Section
+===================================  */
+
+	/* the background for the entire section */
+	.global-ecosystem {
+		padding-top: var(--spacing100);
+		padding-bottom: var(--spacing100);
+		background: url(../assets/images/pages/home/bg-overlay-vector-01.svg),
+			var(--color-bluepurple);
+		background-size: cover;
+	}
+
+	/* targeting the header styling  */
+	.global-ecosystem h4 {
+		margin-bottom: 0;
+		font-size: var(--font36);
+		line-height: var(--line-height40);
+		color: var(--color-white);
+	}
+	/* contains 2 divs - ecosystem subsection (cybergrape) and the blockquote */
+	.ecosystem {
+		width: 90%;
+		margin: 0 auto;
+		text-align: left;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+	}
+	/* targeting the style for the cybergrape div */
+	.ecosystem-subsection {
+		margin: 0;
+		border-radius: 10px;
+		padding-top: var(--spacing40);
+		padding-bottom: var(--spacing40);
+		padding-left: var(--spacing100);
+		padding-right: var(--spacing100);
+		width: 70%;
+		left: 70px;
+	}
+	/* targeting the color of the font in the div */
+	.ecosystem-subsection p {
+		color: var(--color-white);
+	}
+
+	/* stylings for the onyx block quote */
+	.blockquote {
+		position: relative;
+		right: var(--spacing80);
+		width: 65%;
+		margin: 0;
+		padding-top: var(--spacing40);
+		padding-bottom: var(--spacing40);
+		padding-left: 70px;
+		padding-right: var(--spacing80);
+	}
+
+	/* targeting positioning for the svgs in the blockquote */
+	.blockquote p::before {
+		top: 30px;
+		left: 20px;
+	}
+	.blockquote p::after {
+		bottom: 30px;
+		right: 20px;
+	}
+
+	/* targeting the text in the blockquote */
+	.blockquote p {
+		font-size: var(--font24);
+		font-weight: var(--font-weight-medium);
+		line-height: var(--line-height28);
+		color: var(--color-white);
+		font-style: italic;
+	}
+
+	/* ================================
+What We Do Section
+===================================  */
+
+	/* targeting the h3 stylings */
+	.what-we-do h3 {
+		margin-bottom: 0;
+		font-size: var(--font46);
+		line-height: var(--line-height50);
+		color: var(--color-onyx);
+	}
+	/* targeting the h4 stylings */
+	.what-we-do h4 {
+		margin-bottom: 0;
+		font-size: var(--font36);
+		line-height: var(--line-height40);
+		color: var(--color-white);
+	}
+	/* targeting the p styling to change the color */
+	.what-we-do p {
+		color: var(--color-white);
+	}
+
+	/* entire section */
+	.what-we-do {
+		padding-top: var(--spacing80);
+		padding-bottom: var(--spacing80);
+	}
+
+	/* the div holding the 3 cards */
+	.card-container {
+		width: 90%;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-content: center;
+	}
+	/* targeting the size of the individual cards */
+	.card-container .home-card {
+		width: 30%;
+		min-height: 530px;
+	}
+
+	/* ================================
+Our Values Section
+===================================  */
+
+	/* adjusting the background image for the entire section */
+	.values {
+		background-image: url(../assets/images/pages/home/values.jpg);
+		background-size: cover;
+		background-position: center;
+		padding-bottom: var(--spacing185);
+		padding-top: var(--spacing100);
+	}
+
+	/* the div holding both the title and the blue rectangle */
+	.values-holder {
+		margin: 0 auto;
+		width: 80%;
+	}
+	/* the div holding the title and the description */
+	.values .text-container {
+		width: 40%;
+		margin: 0;
+		text-align: left;
+	}
+	/* targeting the header style */
+	.values h4 {
+		margin-bottom: 0;
+		font-size: var(--font36);
+		line-height: var(--line-height40);
+		color: var(--color-white);
+	}
+	/* targeting the paragraph color */
+	.values p {
+		color: var(--color-white);
+	}
+	/* stylings for the blue rectangle  */
+	.our-values {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		width: 100%;
+		margin: 0;
+		padding-bottom: 60px;
+	}
+	/* stylings for the 3 divs within the blue rectangle  */
+	.our-values div {
+		display: flex;
+		flex-direction: column;
+		justify-items: center;
+		width: 30%;
+		text-align: left;
+		padding: 15px;
+	}
+
+	/* ================================
+Events and Programs Section
+===================================  */
+
+	/* stylings for the background for the entire section */
+	.events-and-programs {
+		background: url(../assets/images/pages/home/bg-overlay-vector-02.svg),
+			var(--color-bluepurple);
+		background-size: cover;
+		padding-top: var(--spacing20);
+	}
+	/* stylings for the div holding all 3 placeholders */
+	.events-container {
+		margin: 0 auto;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		gap: 15px;
+	}
+	/* placeholder holding the image and event description */
+	.placeholder {
+		display: flex;
+		flex-direction: column;
+		width: 30%;
+	}
+	/* overriding global styles */
+	.events-and-programs h3,
+	.events-and-programs p {
+		color: var(--color-white);
+	}
+
+	.events-and-programs h4 {
+		color: var(--color-white);
+		margin-bottom: 0;
+	}
+}
+@media screen and (min-width: 1025px) and (max-width: 1250px) {
+	/* fixing the wrapper sizing */
+	.what-we-do.wrapper {
+		width: auto;
+	}
+
+	/* ================================
+Community Partnerships Section
+===================================  */
+
+	/* targeting the entire section */
+	.community-partnerships-section {
+		padding-left: var(--spacing40);
+		padding-right: var(--spacing40);
+		width: 100%;
+	}
+	/* targeting the div holding the text and button */
+	.partnerships-paragraph {
+		padding-left: 60px;
+		padding-right: var(--spacing40);
+	}
+
+	/* ================================
+Global Ecosystem Section
+===================================  */
+
+	/* the entire section */
+	.ecosystem {
+		width: 80%;
+	}
+	/* positioning for the cybergrape ecosystem div */
+	.ecosystem-subsection {
+		padding-left: 60px;
+		padding-right: 90px;
+		position: relative;
+		left: 30px;
+		padding-top: 0;
+	}
+	/* positioning for the onyx blockquote */
+	.blockquote {
+		right: 44px;
+		width: 60%;
+		padding-right: 70px;
+	}
+
+	/* ================================
+What We Do Section
+===================================  */
+
+	/* adjusting the width of the div holding the cards */
+	.card-container {
+		width: 95%;
+		/* remove align content center */
+	}
+
+	/* adjusting the card size within the div */
+	.card-container .home-card {
+		width: 45%;
+		margin: var(--spacing10);
+		padding-bottom: 0;
+	}
+
+	/* ================================
+Our Values Section
+===================================  */
+	/* the entire section */
+	.values {
+		padding-top: 52px;
+	}
+
+	/* removing the padding from the bottom of the values card */
+	.our-values {
+		padding-bottom: 0;
+	}
+
+	/* ================================
+Events and Programs Section
+===================================  */
+	/* adding padding to the placeholder div */
+	.placeholder {
+		padding: var(--spacing10);
+	}
+}

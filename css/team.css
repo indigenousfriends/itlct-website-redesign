@@ -1,0 +1,527 @@
+/*
+===================================
+===================================
+Styles for an individual page
+
+- Rename this file to match the page you are working on (e.g. home.css, about.css, etc.)
+- Create a new file for your page and link this file to it in the <head> of your HTML document
+- Variables from global.css will work in this CSS file as well. Do not add any variables to this file.
+===================================
+===================================
+*/
+
+/* 
+===================================
+Page Component Styles (icon grid, team member card)
+===================================
+*/
+.black-text .h3-styles, .black-text .h4-styles, .black-text p {
+    color: var(--color-onyx);
+}
+
+h1 {
+	text-align: center;
+}
+
+.button2 {
+	min-width: 187px;
+	min-height: 50px;
+	padding: 10px 40px;
+	color: var(--color-white);
+	border: none;
+	border-radius: 10px;
+	background-color: var(--button2-color);
+	font-family: var(--main-font);
+	font-weight: var(--font-weight-bold);
+	font-size: var(--font21);
+}
+.button2:hover {
+	background-color: var(--color-white);
+	color: var(--color-onyx);
+}
+.button3 {
+	min-width: 300px;
+	min-height: 50px;
+	padding: 11px 92px;
+	border: none;
+	border-radius: 10px;
+	background-color: var(--button2-color);
+	color: var(--color-white);
+	font-family: var(--main-font);
+	font-weight: var(--font-weight-bold);
+	font-size: var(--font21);
+}
+.button3:hover {
+	background-color: var(--color-white);
+	color: var(--color-onyx);
+}
+
+/* 
+===================================
+Section Styles (background, padding, etc.)
+===================================
+*/
+.wrapper {
+	width: var(--mobile-wrapper-width);
+}
+.h5-styles {
+    color: var(--color-white);
+}
+
+/* header section */
+.header-picture {
+	margin-bottom: var(--spacing80);
+}
+picture {
+	width: 100%;
+}
+picture img {
+	min-width: 100%;
+}
+.h3-styles {
+	margin-top: 0px;
+	margin-bottom: var(--spacing20);
+}
+.header-info {
+	width: 90%;
+	margin-bottom: 70px;
+}
+
+/* team card section */
+.team-parent {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 90%;
+	margin: 0 auto;
+}
+
+.team-card {
+	margin: var(--spacing20) 0;
+	padding: 60px 26px;
+    background: var(--color-teal);
+	border: none;
+	border-radius: 10px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.team-card .h4-styles{
+	margin: 20px 0px 0px 0px;
+}
+.team-card .h5-styles {
+	margin: var(--spacing10) 0px;
+
+}
+.team-card p {
+	color: var(--color-white);
+}
+
+/* icon and button container */
+.icon-button {
+	margin: 0px;
+	display: flex;
+	flex-direction: column;
+	align-items: self-start;
+	gap: 20px;
+}
+/* icon container */
+.icons {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+
+
+/* Current positions */
+.current-positions {
+	margin: 150px auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+/* Margin for current positions and get involved text */
+.current-positions .h4-styles,
+.get-involved .h4-styles {
+	margin: 0px 0px 20px 0px;
+}
+.current-positions p,
+.get-involved p {
+	margin: 0px 0px 40px 0px;
+}
+
+/* get involved section */
+.get-involved {
+	margin-bottom: 140px;
+}
+.get-involved-picture {
+	margin-bottom: 60px;
+}
+.get-involved-text {
+	width: 90%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+
+.black-text .h3-styles, .black-text .h4-styles {
+	text-align: center;
+}
+
+.team-card img, .get-involved img {
+	border-radius: 10px;
+}
+
+
+/* MODAL STYLES */
+.hidden {
+	display: none;
+}
+/* positioning for body to stop scroll when modal is open */
+.fixed {
+	position: fixed;
+	width: 100%;
+}
+/* modal overlay */
+.overlay-la {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	backdrop-filter: blur(3px);
+	z-index: 1;
+}
+.natasha-modal, .marsha-modal {
+	width: 90%;
+	max-width: 1100px;
+	height: 95vh;
+	margin: 0 auto;
+	/* was 26px and replaced with variable */
+	padding: 26px;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 2vh;
+	background-color: var(--body-background-color);
+	color: var(--color-onyx);
+	border: 1px solid var(--body-background-color);
+	border-radius: 4px;
+	z-index: 2;
+	overflow: hidden;
+}
+
+.modal-wrapper {
+	position: relative;
+	height: 95vh;
+}
+.modal-content {
+	overflow-y: scroll;
+	height: 40%;
+}
+.modal-header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 15px;
+}
+.modal-header .team-card-picture {
+	max-width: 140px;
+}
+/* modal text content */
+.natasha-modal p, .marsha-modal p {
+	color: var(--color-onyx);
+}
+
+.team-card-info-modal {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	
+}
+
+.team-card-info-modal .h4-styles, .team-card-info-modal .h5-styles {
+	text-align: center;
+	color: var(--color-onyx);
+	margin: 10px 0px;
+}
+.btn-close {
+	position: absolute;
+	right: -10px;
+	top: 1px;
+}
+.btn-close button {
+	border: none;
+	background-color: transparent;
+}
+.btn-close svg {
+	width: 32px;
+	height: 32px;
+}
+
+/* End of modal styles */
+
+/* 
+===================================
+Media Queries (overriding styles for different screen sizes)
+
+Note: Here we are using a mobile-first approach, so we start with the smallest screen size and work our way up.
+Start by writing styles for the mobile version of the design on the lines above.
+Anything that needs to change for larger screens should be added to the media queries below.
+
+Feel free to change the min/max-width values to whatever you need. Use variables.
+===================================
+*/
+
+/* Tablet and Larger */
+@media screen and (min-width: 768px) {
+	/* Add styles that apply to table and desktop */
+	.wrapper {
+		width: var(--desktop-wrapper-width);
+	}
+	picture img {
+		min-width: 60%;
+	}
+	/* header section */
+	.header-section {
+		width: 100%;
+		height: 100vh;
+		/* might need to put max height later */
+		/* max-height: 992px; */
+		background-image: url("/assets/images/pages/our-team/desktop/header-section-background.png");
+		background-size: cover;
+		background-position: center;
+		background-color: var(--color-yaleblue);
+		display: flex;
+		align-items: center;
+	}
+	.header-picture {
+		margin-bottom: 0px;
+	}
+	.header-content {
+		width: 85%;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		gap: 10%;
+	}
+	.header-content > * {
+		width: 50%;
+	}
+	/* .header-info {
+		width: 30%;
+	} */
+	.header-info .h3-styles {
+		font-weight: var(--font-weight-bold);
+		line-height: var(--line-height58);
+		color: var(--color-white);
+		text-align: left;
+	}
+	.header-info p {
+		color: var(--color-white);
+		line-height: var(--line-height26);
+	}
+
+	/* team card section */
+	.team-card {
+		flex-direction: row;
+		justify-content: left;
+		gap: 30px;
+	}
+	.team-card-picture {
+		min-width: 240px;
+	}
+	.icon-button {
+		flex-direction: row;
+	}
+
+	/* current positions */
+	.current-positions {
+		width: 50%;
+	}
+
+	/* get involved */
+	.get-involved {
+		height: 70vh;
+		min-height: 70vh;
+		max-height: 800px;
+		margin-bottom: 0px;
+		/* gradient is opposite- needs to be adjusted in global styles */
+		background: var(--color-bluepurple);
+
+		display: flex;
+		align-items: center;
+	}
+	.get-involved-wrapper {
+		width: 70%;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: center;
+		align-items: center;
+		gap: 10%;
+	}
+
+	.get-involved-text {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.get-involved .h4-styles {
+		color: var(--color-white);
+	}
+	.get-involved p {
+		color: var(--color-white);
+		margin-bottom: 20px;
+	}
+	.get-involved-text .button3 {
+		padding: 11px 10%;
+		width: 90%;
+		max-width: 350px;
+	}
+
+	.get-involved-picture {
+		margin-bottom: 0px;
+		width: 435px;
+	}
+
+	/* get involved button */
+	.get-involved-text .button3 {
+		background-color: transparent;
+		border: 3px solid #FFF;
+	}
+
+	/* Modal */
+	.modal-wrapper {
+		margin: 50px;
+	}
+	.modal-header {
+		flex-direction: row;
+		gap: 5%;
+	}
+
+	.modal-content {
+		height: 55%;
+	}
+	.btn-close {
+		right: -50px;
+		top: -50px;
+	}
+}
+
+/* Tablet Only */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+	/* Add styles that only apply to tablet. These are usually fixes to get resposnivenes right */
+	.header-info .h3-styles, .header-info p {
+		margin: 0px;
+	}
+	.header-content picture {
+		max-width: 300px;
+	}
+}
+
+/* Desktop Only */
+@media screen and (min-width: 1024px) {
+	/* Add styles that apply specifically to desktop */
+	.header-content .h3-styles {
+		font-size: var(--font46);
+	}
+	.header-content img {
+		max-width: 420px;
+	}
+	.header-info p {
+		font-size: var(--font21);
+	}
+
+	/* .team-card h4 {
+		margin: 0px;
+	} */
+	.team-card p {
+		/* adjust later */
+		margin-top: 8px;
+	}
+	
+	.get-involved .h4-styles {
+		font-size: var(--font46);
+		font-weight: var(--font-weight-bold);
+		line-height: var(--line-height50);
+		color: var(--color-white);
+		text-align: left;
+	}
+
+	/* current positions */
+	.current-positions .h4-styles {
+		font-size: var(--font46);
+		line-height: var(--line-height50);
+	}
+}
+
+/* for screen sizes 1300 and larger */
+@media screen and (min-width: 1300px) {
+	.header-content {
+		width: 62%;
+		gap: 185px;
+	}
+	.header-content .h3-styles {
+		font-size: var(--font56);
+	}
+	.team-parent {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		align-items: center;
+		width: 90%;
+	}
+	.team-card {
+		width: 48%;
+		padding: 20px;
+		/* might need to adjust height later */
+		height: 45vh; 
+		max-height: 600px;
+		min-height: 420px;
+	}
+	.team-card-picture {
+		width: 200px;
+	}
+	.team-card-info {
+		width: 50%;
+	}
+	.icons a {
+		min-width: 50px;
+	}
+	.icon-button .button2 {
+		padding: 0px;
+		max-width: 50%;
+	}
+	.icon-button {
+		display: flex;
+		flex-direction: column;
+	}
+}
+/* for screen sizes 1600 and larger */
+@media screen and (min-width: 1600px) {
+	.icon-button {
+		flex-direction: row;
+	}
+	.team-card-parent {
+	width: 75%;
+	}
+	.team-card {
+		min-height: 400px;
+	}
+	.get-involved-text {
+		width: 40%;
+	}
+}
