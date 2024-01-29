@@ -24,12 +24,12 @@ h1 {
 }
 
 .button2 {
-	min-width: 187px;
+	min-width: var(--spacing185);
 	min-height: 50px;
 	padding: 10px 40px;
 	color: var(--color-white);
 	border: none;
-	border-radius: 10px;
+	border-radius: var(--border-radius10);
 	background-color: var(--button2-color);
 	font-family: var(--main-font);
 	font-weight: var(--font-weight-bold);
@@ -40,11 +40,11 @@ h1 {
 	color: var(--color-onyx);
 }
 .button3 {
-	min-width: 300px;
+	width: 300px;
 	min-height: 50px;
 	padding: 11px 92px;
 	border: none;
-	border-radius: 10px;
+	border-radius: var(--border-radius10);
 	background-color: var(--button2-color);
 	color: var(--color-white);
 	font-family: var(--main-font);
@@ -105,7 +105,7 @@ picture img {
 	padding: 60px 26px;
     background: var(--color-teal);
 	border: none;
-	border-radius: 10px;
+	border-radius: var(--border-radius10);
 
 	display: flex;
 	flex-direction: column;
@@ -171,7 +171,7 @@ picture img {
 }
 
 .team-card img, .get-involved img {
-	border-radius: 10px;
+	border-radius: var(--border-radius10);
 }
 
 
@@ -217,7 +217,6 @@ picture img {
 
 .modal-wrapper {
 	position: relative;
-	/* height: 95vh; */
 }
 .modal-content {
 	overflow-y: scroll;
@@ -243,13 +242,12 @@ picture img {
 .team-card-info-modal {
 	display: flex;
 	flex-direction: column;
-	/* align-items: flex-start; */
 }
 
 .team-card-info-modal .h4-styles, .team-card-info-modal .h5-styles {
 	text-align: center;
 	color: var(--color-onyx);
-	margin: 10px 0px;
+	margin: var(--spacing10) 0px;
 }
 .team-btn-close {
 	position: absolute;
@@ -382,20 +380,17 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		margin-bottom: 20px;
 	}
 	.get-involved-text .button3 {
+		width: 300px;
 		padding: 11px 10%;
 		width: 90%;
 		max-width: 350px;
+		background-color: transparent;
+		border: 3px solid #FFF;
 	}
 
 	.get-involved-picture {
 		margin-bottom: 0px;
 		width: 435px;
-	}
-
-	/* get involved button */
-	.get-involved-text .button3 {
-		background-color: transparent;
-		border: 3px solid #FFF;
 	}
 
 	/* Modal */
