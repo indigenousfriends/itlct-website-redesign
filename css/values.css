@@ -19,27 +19,27 @@ Page Component Styles (icon grid, team member card)
 .values-card {
 	min-height: 204px;
 	border: none;
-	border-radius: 10px;
+	border-radius: var(--spacing10);
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	text-align: center;
-	margin: 0 20px;
+	margin: 0 var(--spacing20);
 }
 .text-container {
 	min-height: 204px;
-	padding: 0 20px 0 20px;
-	margin-bottom: 20px;
+	padding: 0 var(--spacing20) 0 var(--spacing20);
+	margin-bottom: var(--spacing20);
 	display: flex;
 	flex-direction: column;
-	border-radius: 10px;
+	border-radius: var(--spacing10);
 	justify-content: center;
 }
 .values-card img {
-	margin-bottom: 20px;
+	margin-bottom: var(--spacing20);
 }
 .values-card h2 {
-	margin: 20px 0px 10px 0px;
+	margin: var(--spacing20) 0px var(--spacing10) 0px;
 	font-size: var(--font28);
 	font-weight: var(--font-weight-bold);
 	line-height: var(--line-height32);
@@ -58,12 +58,12 @@ Page Component Styles (icon grid, team member card)
 	display: flex;
 	flex-direction: column;
 	text-align: center;
-	margin-bottom: 100px;
+	margin-bottom: var(--spacing100);
 }
 
 .h1-black {
 	color: var(--color-onyx);
-	margin: 60px 0 20px 0;
+	margin: 60px 0 var(--spacing20) 0;
 	font-size: var(--font36);
 	font-weight: var(--font-weight-bold);
 	line-height: var(--line-height40);
@@ -71,7 +71,7 @@ Page Component Styles (icon grid, team member card)
 
 .values-head p {
 	color: var(--color-onyx);
-	margin: 0 20px 0;
+	margin: 0 var(--spacing20) 0;
 	line-height: var(--line-height26);
 }
 .copperback {
@@ -79,7 +79,7 @@ Page Component Styles (icon grid, team member card)
 	display: flex;
 	flex-direction: column;
 	text-align: center;
-	margin-bottom: 20px;
+	margin-bottom: var(--spacing20);
 }
 .onyxback {
 	background-color: var(--color-onyx);
@@ -98,7 +98,7 @@ Page Component Styles (icon grid, team member card)
 }
 .tech-text {
 	background-color: var(--color-teal);
-	padding-bottom: 20px;
+	padding-bottom: var(--spacing20);
 }
 .grapeback {
 	background-color: var(--color-cybergrape);
@@ -112,11 +112,6 @@ Page Component Styles (icon grid, team member card)
 .support {
 	background-color: var(--color-yaleblue);
 	margin-top: 90px;
-}
-.support-header,
-.support-text {
-	/* width: var(--desktop-wrapper-width); */
-	/* margin-left: 20px; */
 }
 
 .support-header {
@@ -143,7 +138,7 @@ Page Component Styles (icon grid, team member card)
 	font-size: var(--font28);
 	font-weight: var(--font-weight-bold);
 	line-height: var(--line-height32);
-	margin: 20px 0px 0px 0px;
+	margin: var(--spacing20) 0px 0px 0px;
 }
 .support-text a {
 	font-size: var(--font21);
@@ -153,13 +148,13 @@ Page Component Styles (icon grid, team member card)
 .support-logos {
 	display: flex;
 	flex-direction: column;
-	padding-bottom: 80px;
+	padding-bottom: var(--spacing80);
 	
 }
 .support-logo-01 {
 	width: 82px;
 	height: 69px;
-	margin: 40px 0px 20px;
+	margin: var(--spacing40) 0px var(--spacing20);
 }
 .support-logo-02 {
 	width: 149px;
@@ -177,7 +172,7 @@ Page Component Styles (icon grid, team member card)
 	font-weight: var(--font-weight-bold);
 	line-height: var(--line-height32);
 	color: var(--color-onyx);
-	margin-bottom: 20px;
+	margin-bottom: var(--spacing20);
 }
 .empowering p {
 	text-align: left;
@@ -226,7 +221,7 @@ Media Queries (overriding styles for different screen sizes)
 	.desktop-parent {
 		display: flex;
 		flex-direction: column;
-		gap: 20px;
+		gap: var(--spacing20);
 		margin: 190px auto 193px auto;
 		max-width: 1328px;
 	}
@@ -236,7 +231,7 @@ Media Queries (overriding styles for different screen sizes)
 		left: 50%;
 	}
 	.values-card {
-		margin: 0px 10px;
+		margin: 0px var(--spacing10);
 	}
 	.values-card p {
 		margin: 0px var(--spacing20);
@@ -246,15 +241,15 @@ Media Queries (overriding styles for different screen sizes)
 	.copperback,
 	.authenticity,
 	.education {
-		margin-right: 10px;
+		margin-right: var(--spacing10);
 	}
 	.sustainability-text,
 	.grapeback,
 	.technology {
-		margin-left: 10px;
+		margin-left: var(--spacing10);
 	}
 	.values-card h2 {
-		margin: 20px 0px 0px 20px;
+		margin: var(--spacing20) 0px 0px var(--spacing20);
 		font-size: var(--font36);
 		font-weight: var(--font-weight-bold);
 		line-height: var(--line-height40);
@@ -288,7 +283,7 @@ Media Queries (overriding styles for different screen sizes)
 				rgba(9, 9, 9, 0.8) 46.9%,
 				rgba(9, 9, 9, 0) 86.82%
 			),
-			url(../assets/images/pages/values/hero-values.jpg);
+			url(/assets/images/pages/values/hero-values.jpg);
 		background-position: center center;
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -303,7 +298,7 @@ Media Queries (overriding styles for different screen sizes)
 				#0e0e0e 46.26%,
 				rgba(27, 27, 27, 0) 99.04%
 			),
-			url(../assets/images/pages/values/sustainability.jpg);
+			url(/assets/images/pages/values/sustainability.jpg);
 		background-position: center center;
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -315,7 +310,7 @@ Media Queries (overriding styles for different screen sizes)
 				rgba(185, 21, 21, 0.73) 55.57%,
 				rgba(119, 45, 45, 0.4) 68.47%
 			),
-			url(../assets/images/pages/values/authenticity.jpg);
+			url(/assets/images/pages/values/authenticity.jpg);
 		background-position: center center;
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -326,7 +321,7 @@ Media Queries (overriding styles for different screen sizes)
 				#184f85 63.23%,
 				rgba(24, 79, 133, 0) 83.39%
 			),
-			url(../assets/images/pages/values/education.jpg);
+			url(/assets/images/pages/values/education.jpg);
 		background-position: center center;
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -337,7 +332,7 @@ Media Queries (overriding styles for different screen sizes)
 				#007a80 67.16%,
 				rgba(0, 122, 128, 0) 80.36%
 			),
-			url(../assets/images/pages/values/techinnovation.jpg);
+			url(/assets/images/pages/values/techinnovation.jpg);
 		background-position: center center;
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -354,21 +349,21 @@ Media Queries (overriding styles for different screen sizes)
 		width: 60%;
 		margin-left: auto;
 		background-color: transparent;
-		border-radius: 10px;
+		border-radius: var(--spacing10);
 	}
 	.authenticity-text {
 		display: flex;
 		flex-direction: column;
 		width: 50%;
 		background-color: transparent;
-		border-radius: 10px;
+		border-radius: var(--spacing10);
 	}
 	.education-text {
 		display: flex;
 		flex-direction: column;
 		width: 65%;
 		background-color: transparent;
-		border-radius: 10px;
+		border-radius: var(--spacing10);
 	}
 	.tech-text {
 		display: flex;
@@ -376,7 +371,7 @@ Media Queries (overriding styles for different screen sizes)
 		width: 70%;
 		margin-left: auto;
 		background-color: transparent;
-		border-radius: 10px;
+		border-radius: var(--spacing10);
 	}
 	/* setting copper and grape cards maximum widths */
 	.copperback,
@@ -396,7 +391,7 @@ Media Queries (overriding styles for different screen sizes)
 
 	.support-logos {
 		display: flex;
-		gap: 40px;
+		gap: var(--spacing40);
 		padding-bottom: 116px;
 	}
 	/* All Text white except Empowerment section and We Support Header */
@@ -406,7 +401,7 @@ Media Queries (overriding styles for different screen sizes)
 	.values-head {
 		text-align: left;
 		max-width: 475px;
-		padding-left: 20px;
+		padding-left: var(--spacing20);
 		margin-bottom: 0px;
 	}
 	.values-head p {
@@ -415,17 +410,11 @@ Media Queries (overriding styles for different screen sizes)
 	p {
 		color: var(--color-white);
 	}
-	.support {
-		/* margin-top: 116px; */
-		/* padding-bottom: 116px; */
-	}
+	
 	.support-header {
 		padding-top: 115px;
 	}
-	.support-header,
-	.support-text {
-		/* margin-left: 200px; */
-	}
+	
 	.support-header h2.h2-styles {
 		font-size: var(--font46);
 		font-weight: var(--font-weight-bold);
@@ -453,13 +442,13 @@ Media Queries (overriding styles for different screen sizes)
 	.support-logo-01,
 	.support-logo-02 {
 		width: auto;
-		height: 100px;
+		height: var(--spacing100);
 	}
 	.empowering {
 		width: var(--desktop-wrapper-width);
 		max-width: var(--wrapper-width-max);
 		margin: 0 auto;
-		padding: 100px 0px;
+		padding: var(--spacing100) 0px;
 		display: flex;
 		flex-direction: row-reverse;
 		gap: 90px;
@@ -477,7 +466,7 @@ Media Queries (overriding styles for different screen sizes)
 		font-size: var(--font46);
 		font-weight: var(--font-weight-bold);
 		line-height: var(--line-height50);
-		margin-bottom: 20px;
+		margin-bottom: var(--spacing20);
 	}
 	.empowering-text p {
 		margin: 0 0 0 0;
@@ -498,30 +487,12 @@ Media Queries (overriding styles for different screen sizes)
 		justify-content: flex-end;
 		width: 80%;
 		max-width: 350px;
-		/* position: absolute; */
-		/* top: 15%;
-		left: 25%;
-		object-fit: cover;
-		aspect-ratio: 1;
-		width: 40%; */
-		border-radius: 10px;
-
-		max-height: 550px;
+		border-radius: var(--spacing10);
 		object-fit: cover;
 		object-position: top;
 		aspect-ratio: 1/1;
 	}
 	.empowering-img-block::before {
-		/* position: absolute;
-		top: 10%;
-		left: 20%;
-		content: " ";
-		background-color: var(--color-amaranth);
-		border-radius: 10px;
-		width: 299px;
-		height: 299px;
-		z-index: -1; */
-
 		background-color: var(--color-amaranth);
 		border-radius: var(--spacing10);
 		position: absolute;
@@ -534,7 +505,7 @@ Media Queries (overriding styles for different screen sizes)
 	}
 
 	.empowering-img-block picture img {
-		border-radius: 10px;
+		border-radius: var(--spacing10);
 	}
 }
 /* For 1300px and larger */
