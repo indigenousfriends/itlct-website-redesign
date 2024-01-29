@@ -277,6 +277,8 @@ Media Queries (overriding styles for different screen sizes)
 	}
 	/* Gradients */
 	.hero {
+		width: 100%;
+		height: 1000px;
 		background-image: linear-gradient(
 				260deg,
 				rgba(9, 9, 9, 0.8) 46.9%,
@@ -401,6 +403,7 @@ Media Queries (overriding styles for different screen sizes)
 		text-align: left;
 		max-width: 475px;
 		padding-left: 20px;
+		margin-bottom: 0px;
 	}
 	.values-head p {
 		color: var(--color-white);
