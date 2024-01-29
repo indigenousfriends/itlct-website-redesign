@@ -151,7 +151,7 @@ What We Do Section
 }
 
 /* overriding global style */
-.what-we-do h3 {
+.what-we-do h2 {
 	color: var(--color-onyx);
 }
 
@@ -430,9 +430,6 @@ What We Do Section
 		padding-bottom: var(--spacing40);
 	}
 	/* overriding global styles */
-	.what-we-do h3 {
-		color: var(--color-onyx);
-	}
 
 	.what-we-do p {
 		color: var(--color-white);
@@ -594,7 +591,7 @@ Community Partnerships Section
 		text-align: left;
 	}
 	/* targeting the header style */
-	.community h4 {
+	.community h2 {
 		font-size: var(--font36);
 		line-height: var(--line-height40);
 		color: var(--color-white);
@@ -618,11 +615,6 @@ Community Partnerships Section
 		align-items: baseline;
 	}
 
-	/* fixing the button width for larger screen sizes */
-	/* .partnerships-paragraph .button1 {
-		width: 100%;
-	} */
-
 	/* overriding the .wrapper class */
 	.community-partnerships.wrapper {
 		margin: 0 auto;
@@ -643,7 +635,7 @@ Global Ecosystems Section
 	}
 
 	/* targeting the header styling  */
-	.global-ecosystem h4 {
+	.global-ecosystem h2 {
 		margin-bottom: 0;
 		font-size: var(--font36);
 		line-height: var(--line-height40);
@@ -706,21 +698,17 @@ Global Ecosystems Section
 	/* ================================
 What We Do Section
 ===================================  */
-
-	/* targeting the h3 stylings */
-	.what-we-do h3 {
-		
+	/* overriding global style */
+	.what-we-do h2 {
 		font-size: var(--font46);
-		line-height: var(--line-height50);
-		color: var(--color-onyx);
 	}
-	/* targeting the h4 stylings */
-	.what-we-do h4 {
-		margin-bottom: 0;
+
+	.what-we-do h3 {
 		font-size: var(--font36);
 		line-height: var(--line-height40);
-		color: var(--color-white);
+		margin-bottom: 0;
 	}
+
 	/* targeting the p styling to change the color */
 	.what-we-do p {
 		color: var(--color-white);
@@ -772,7 +760,7 @@ Our Values Section
 		text-align: left;
 	}
 	/* targeting the header style */
-	.values h4 {
+	.values h3 {
 		margin-bottom: 0;
 		font-size: var(--font36);
 		line-height: var(--line-height40);
