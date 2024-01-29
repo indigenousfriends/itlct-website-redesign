@@ -26,7 +26,7 @@ h1 {
 .button2 {
 	min-width: var(--spacing185);
 	min-height: 50px;
-	padding: 10px 40px;
+	padding: var(--spacing10) var(--spacing40);
 	color: var(--color-white);
 	border: none;
 	border-radius: var(--border-radius10);
@@ -42,7 +42,7 @@ h1 {
 .button3 {
 	width: 300px;
 	min-height: 50px;
-	padding: 11px 92px;
+	padding: var(--spacing10) 92px;
 	border: none;
 	border-radius: var(--border-radius10);
 	background-color: var(--button2-color);
@@ -114,7 +114,7 @@ picture img {
 }
 
 .team-card .h4-styles{
-	margin: 20px 0px 0px 0px;
+	margin: var(--spacing20) 0px 0px 0px;
 }
 .team-card .h5-styles {
 	margin: var(--spacing10) 0px;
@@ -143,11 +143,11 @@ picture img {
 /* Margin for current positions and get involved text */
 .current-positions .h4-styles,
 .get-involved .h4-styles {
-	margin: 0px 0px 20px 0px;
+	margin: 0px 0px var(--spacing20) 0px;
 }
 .current-positions p,
 .get-involved p {
-	margin: 0px 0px 40px 0px;
+	margin: 0px 0px var(--spacing40) 0px;
 }
 
 /* get involved section */
@@ -377,11 +377,11 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	}
 	.get-involved p {
 		color: var(--color-white);
-		margin-bottom: 20px;
+		margin-bottom: var(--spacing20);
 	}
 	.get-involved-text .button3 {
 		width: 300px;
-		padding: 11px 10%;
+		padding: var(--spacing10) 10%;
 		width: 90%;
 		max-width: 350px;
 		background-color: transparent;
@@ -485,7 +485,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	}
 	.team-card {
 		width: 48%;
-		padding: 20px;
+		padding: var(--spacing20);
 		min-height: 375px;
 	}
 	.team-card-picture {
