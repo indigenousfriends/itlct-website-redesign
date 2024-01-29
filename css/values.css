@@ -46,11 +46,12 @@ Page Component Styles (icon grid, team member card)
 	color: var(--color-white);
 }
 .values-card p {
+	margin-top: 0px;
 	display: flex;
 	text-align: left;
 	font-size: var(--font16);
 	font-weight: var(--font-weight-regular);
-	line-height: var(--line-height20);
+	line-height: var(--line-height26);
 }
 /* Turns Our Values Title Black */
 .values-head {
@@ -71,6 +72,7 @@ Page Component Styles (icon grid, team member card)
 .values-head p {
 	color: var(--color-onyx);
 	margin: 0 20px 0;
+	line-height: var(--line-height26);
 }
 .copperback {
 	background-color: var(--color-copper);
@@ -113,11 +115,12 @@ Page Component Styles (icon grid, team member card)
 }
 .support-header,
 .support-text {
-	width: var(--desktop-wrapper-width);
-	margin-left: 20px;
+	/* width: var(--desktop-wrapper-width); */
+	/* margin-left: 20px; */
 }
 
 .support-header {
+	padding-top: 90px;
 	display: flex;
 	flex-direction: row;
 	justify-content: left;
@@ -278,7 +281,8 @@ Media Queries (overriding styles for different screen sizes)
 	/* Gradients */
 	.hero {
 		width: 100%;
-		height: 1000px;
+		height: 100vh;
+		max-height: 1000px;
 		background-image: linear-gradient(
 				260deg,
 				rgba(9, 9, 9, 0.8) 46.9%,
@@ -420,7 +424,7 @@ Media Queries (overriding styles for different screen sizes)
 	}
 	.support-header,
 	.support-text {
-		margin-left: 200px;
+		/* margin-left: 200px; */
 	}
 	.support-header h2.h2-styles {
 		font-size: var(--font46);
@@ -452,17 +456,18 @@ Media Queries (overriding styles for different screen sizes)
 		height: 100px;
 	}
 	.empowering {
+		padding: 100px;
 		display: flex;
 		flex-direction: row-reverse;
-		padding-bottom: 100px;
+		gap: 90px;
 	}
 	.empowering-text,
 	.empowering-img-block {
 		width: 50%;
 	}
 	.empowering-text {
+		margin-top: 0px;
 		text-align: left;
-		padding-right: 270px;
 		color: var(--color-onyx);
 	}
 	.empowering-text h2 {
