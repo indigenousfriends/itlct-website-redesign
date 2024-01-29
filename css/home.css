@@ -8,7 +8,7 @@ Styles for home-page
 
 /* Links */
 a.image-link {
-	text-decoration: none;
+	
 	color: var(--color-white);
 }
 
