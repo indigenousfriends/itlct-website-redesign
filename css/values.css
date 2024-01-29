@@ -190,9 +190,10 @@ Page Component Styles (icon grid, team member card)
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	align-items: center;
 	background-color: var(--color-amaranth);
 }
-.empowering-img-block img {
+.empowering-img-block picture {
 	margin: 30px;
 }
 
@@ -241,7 +242,6 @@ Media Queries (overriding styles for different screen sizes)
 		margin: 0px var(--spacing20);
 		font-size: var(--font21);
 		font-weight: var(--font-weight-regular);
-		line-height: var(--line-height32);
 	}
 	.copperback,
 	.authenticity,
@@ -456,7 +456,10 @@ Media Queries (overriding styles for different screen sizes)
 		height: 100px;
 	}
 	.empowering {
-		padding: 100px;
+		width: var(--desktop-wrapper-width);
+		max-width: var(--wrapper-width-max);
+		margin: 0 auto;
+		padding: 100px 0px;
 		display: flex;
 		flex-direction: row-reverse;
 		gap: 90px;
@@ -483,18 +486,33 @@ Media Queries (overriding styles for different screen sizes)
 	.empowering-img-block {
 		background-color: transparent;
 		position: relative;
+		flex-direction: row;
+		justify-content: right;
 	}
-	.empowering-img-block img {
-		position: absolute;
-		top: 15%;
+	.empowering-img-block.style-left::before {
+		transform: translate(-10%, -15%);
+	}
+	.empowering-img-block picture {
+		margin: 0px;
+		display: flex;
+		justify-content: flex-end;
+		width: 80%;
+		max-width: 350px;
+		/* position: absolute; */
+		/* top: 15%;
 		left: 25%;
 		object-fit: cover;
 		aspect-ratio: 1;
-		width: 40%;
+		width: 40%; */
 		border-radius: 10px;
+
+		max-height: 550px;
+		object-fit: cover;
+		object-position: top;
+		aspect-ratio: 1/1;
 	}
 	.empowering-img-block::before {
-		position: absolute;
+		/* position: absolute;
 		top: 10%;
 		left: 20%;
 		content: " ";
@@ -502,6 +520,26 @@ Media Queries (overriding styles for different screen sizes)
 		border-radius: 10px;
 		width: 299px;
 		height: 299px;
+		z-index: -1; */
+
+		background-color: var(--color-amaranth);
+		border-radius: var(--spacing10);
+		position: absolute;
+		content: " ";
+		width: 80%;
+		max-width: 350px;
+		margin-top: 30px;
+		aspect-ratio: 1/1;
 		z-index: -1;
+	}
+
+	.empowering-img-block picture img {
+		border-radius: 10px;
+	}
+}
+/* For 1300px and larger */
+@media screen and (min-width: 1300px) {
+	.values-card p {
+	line-height: var(--line-height32);
 	}
 }
