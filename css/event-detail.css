@@ -57,11 +57,16 @@ html {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	align-items: center;
 }
 
 .template-three-img {
 	justify-content: center;
 	padding-top: 0px;
+}
+
+.button3 {
+	text-align: center;
 }
 
 /* Tablet Only */
@@ -91,9 +96,5 @@ html {
 	.template-button {
 		justify-content: center;
 		color: var(--color-white);
-	}
-
-	.button3 {
-		padding: 0%;
 	}
 }
