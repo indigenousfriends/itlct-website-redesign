@@ -201,8 +201,6 @@ Media Queries (overriding styles for different screen sizes)
 		line-height: var(--line-height32);
 		color: var(--color-onyx);
 	}
-
-	
 }
 
 /* Desktop Only */
@@ -215,9 +213,8 @@ Media Queries (overriding styles for different screen sizes)
 	}
 }
 
-@media screen and (min-width: 1180px) { 
+@media screen and (min-width: 1049px) {
 	.btn-container {
-	display: none;
-}
-
+		display: none;
+	}
 }
