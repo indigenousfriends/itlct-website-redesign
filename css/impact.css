@@ -101,6 +101,7 @@ img {
 	padding-bottom: var(--spacing80);
 	margin: 0 auto;
 	gap: var(--spacing40);
+	width: 90%;
 }
 
 .icon-child {
