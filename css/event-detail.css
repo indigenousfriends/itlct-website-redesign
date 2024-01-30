@@ -6,7 +6,6 @@ html {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	width: var(--mobile-wrapper-width);
 	margin: 0 auto;
 	max-width: var(--wrapper-width-max);
 	padding-left: 20px;
@@ -16,8 +15,8 @@ html {
 .template-wrapper img {
 	display: flex;
 	align-items: center;
-	padding-top: 40px;
-	padding-bottom: 100px;
+	padding-top: 0px;
+	padding-bottom: 30px;
 }
 
 .template-main-header {
@@ -67,6 +66,16 @@ html {
 
 .button3 {
 	text-align: center;
+	text-decoration: none !important;
+	color: var(--color-white);
+	padding: 15px 0px;
+}
+
+.button3:hover,
+.button3:focus {
+	background-color: transparent;
+	border-color: 10px solid var(--button3-hover-border);
+	color: var(--color-onyx);
 }
 
 /* Tablet Only */
@@ -90,16 +99,21 @@ html {
 		width: 57%;
 	}
 
-	p {
-		line-height: var(--line-height32);
-	}
-
 	.template-hero-img {
 		padding-top: 180px;
 	}
 
 	.template-main-header {
 		margin-top: 150px;
+	}
+
+	.h3-styles {
+		line-height: var(--line-height58);
+		font-size: var(--font56);
+	}
+
+	p {
+		line-height: var(--line-height32);
 	}
 
 	.template-wrapper img {
