@@ -653,6 +653,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		flex-direction: row;
 		justify-content: space-evenly;
 		width: 80%;
+		margin: 0 auto;
 	}
 	.links-child {
 		display: flex;
@@ -752,6 +753,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		display: flex;
 		flex-direction: row;
 		align-items: center;
+		gap: 5%;
 	}
 
 	/* removing margin on button to align with content */
@@ -851,6 +853,5 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	.text-input {
 		flex-direction: row;
 		align-items: center;
-		gap: 5%;
 	}
 }
