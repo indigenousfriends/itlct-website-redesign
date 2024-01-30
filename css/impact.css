@@ -209,9 +209,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 /* Desktop Only */
 @media screen and (min-width: 1024px) {
 	/* Add styles that apply specifically to desktop */
-  .responsible-wrapper {
-	max-width: 85%;
-  }
+
 	/* top and bottom section */
 	.h4-styles {
 		font-size: var(--font46);
