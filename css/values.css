@@ -443,6 +443,7 @@ Media Queries (overriding styles for different screen sizes)
 		font-size: var(--font46);
 		font-weight: var(--font-weight-bold);
 		line-height: var(--line-height50);
+		max-width: 1000px;
 	}
 	.support-text a {
 		font-size: var(--font28);
