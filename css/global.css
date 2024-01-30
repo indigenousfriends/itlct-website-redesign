@@ -118,6 +118,17 @@ Variables (colors, text, spacing, etc.)
 	--mobile-wrapper-width: 95%;
 }
 
+/* accessibility */
+.sr-only:not(:focus):not(:active) {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
 /* button styles and a tags */
 /* overwrite sizes if needed. */
 a {
@@ -180,10 +191,10 @@ a:visited {
 .button3 {
 	min-width: 300px;
 	min-height: 50px;
-	padding: 11px 92px;
-	border: none;
+	padding: 11px 0px;
+	border: 3px solid var(--button3-color);
 	border-radius: 10px;
-	background-color: var(--button2-color);
+	background-color: var(--button3-color);
 	color: var(--color-white);
 	font-family: var(--main-font);
 	font-weight: var(--font-weight-bold);
@@ -193,7 +204,8 @@ a:visited {
 
 .button3:hover,
 .button3:focus {
-	background-color: var(--button3-hover-border);
+	border: 3px solid var(--button3-hover-border);
+	background-color: transparent;
 	color: var(--color-dark-onyx);
 }
 
@@ -653,6 +665,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		flex-direction: row;
 		justify-content: space-evenly;
 		width: 80%;
+		margin: 0 auto;
 	}
 	.links-child {
 		display: flex;
@@ -752,6 +765,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		display: flex;
 		flex-direction: row;
 		align-items: center;
+		gap: 5%;
 	}
 
 	/* removing margin on button to align with content */
@@ -851,6 +865,5 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	.text-input {
 		flex-direction: row;
 		align-items: center;
-		gap: 5%;
 	}
 }
