@@ -19,62 +19,67 @@ Page Component Styles (icon grid, team member card)
 .values-card {
 	min-height: 204px;
 	border: none;
-	border-radius: 10px;
+	border-radius: var(--spacing10);
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	text-align: center;
-	margin: 0 20px;
+	margin: 0 var(--spacing20);
 }
 .text-container {
 	min-height: 204px;
-	padding: 0 20px 0 20px;
-	margin-bottom: 20px;
+	padding: 0 var(--spacing20) 0 var(--spacing20);
+	margin-bottom: var(--spacing20);
 	display: flex;
 	flex-direction: column;
-	border-radius: 10px;
+	border-radius: var(--spacing10);
 	justify-content: center;
 }
 .values-card img {
-	margin-bottom: 20px;
+	margin-bottom: var(--spacing20);
 }
 .values-card h2 {
-	margin: 20px 0px 10px 0px;
+	margin: var(--spacing20) 0px var(--spacing10) 0px;
 	font-size: var(--font28);
 	font-weight: var(--font-weight-bold);
 	line-height: var(--line-height32);
 	color: var(--color-white);
 }
 .values-card p {
+	margin-top: 0px;
 	display: flex;
 	text-align: left;
 	font-size: var(--font16);
 	font-weight: var(--font-weight-regular);
-	line-height: var(--line-height20);
+	line-height: var(--line-height26);
 }
 /* Turns Our Values Title Black */
 .values-head {
 	display: flex;
 	flex-direction: column;
 	text-align: center;
-	margin-bottom: 100px;
+	margin-bottom: var(--spacing100);
 }
 
 .h1-black {
 	color: var(--color-onyx);
-	margin: 60px 0 20px 0;
+	margin: 60px 0 var(--spacing20) 0;
+	font-size: var(--font36);
+	font-weight: var(--font-weight-bold);
+	line-height: var(--line-height40);
 }
 
 .values-head p {
 	color: var(--color-onyx);
-	margin: 0 20px 0;
+	margin: 0 var(--spacing20) 0;
+	line-height: var(--line-height26);
 }
 .copperback {
 	background-color: var(--color-copper);
 	display: flex;
 	flex-direction: column;
 	text-align: center;
-	margin-bottom: 20px;
+	margin-bottom: var(--spacing20);
 }
 .onyxback {
 	background-color: var(--color-onyx);
@@ -93,7 +98,7 @@ Page Component Styles (icon grid, team member card)
 }
 .tech-text {
 	background-color: var(--color-teal);
-	padding-bottom: 20px;
+	padding-bottom: var(--spacing20);
 }
 .grapeback {
 	background-color: var(--color-cybergrape);
@@ -104,16 +109,18 @@ Page Component Styles (icon grid, team member card)
 .tealback {
 	background-color: var(--color-teal);
 }
+
+/* desktop text for Technology and Innovation title */
+.desktop-text {
+	display: none;
+}
 .support {
 	background-color: var(--color-yaleblue);
-}
-.support-header,
-.support-text {
-	width: var(--desktop-wrapper-width);
-	margin-left: 20px;
+	margin-top: 90px;
 }
 
 .support-header {
+	padding-top: 90px;
 	display: flex;
 	flex-direction: row;
 	justify-content: left;
@@ -126,32 +133,37 @@ Page Component Styles (icon grid, team member card)
 	color: var(--color-white);
 	font-size: var(--font28);
 	line-height: var(--line-height32);
+	margin-bottom: 0px;
 }
 .support-header svg {
 	position: relative;
-	bottom: 2.5px;
-	left: 5px;
+	bottom: -7px;
+	left: 9px;
 }
 .support-text p {
 	font-size: var(--font28);
 	font-weight: var(--font-weight-bold);
 	line-height: var(--line-height32);
-	margin: 20px 0px 0px 0px;
+	margin: var(--spacing20) 0px;
+	font-family: var(--main-font);
 }
 .support-text a {
+	font-family: var(--body-font);
 	font-size: var(--font21);
 	font-weight: var(--font-weight-regular);
 	line-height: var(--line-height32);
+	color: var(--color-white);
 }
 .support-logos {
 	display: flex;
 	flex-direction: column;
-	padding-bottom: 116px;
+	padding-bottom: var(--spacing80);
+	
 }
 .support-logo-01 {
 	width: 82px;
 	height: 69px;
-	margin: 40px 0px 20px;
+	margin: var(--spacing40) 0px var(--spacing20);
 }
 .support-logo-02 {
 	width: 149px;
@@ -169,7 +181,7 @@ Page Component Styles (icon grid, team member card)
 	font-weight: var(--font-weight-bold);
 	line-height: var(--line-height32);
 	color: var(--color-onyx);
-	margin-bottom: 20px;
+	margin-bottom: var(--spacing20);
 }
 .empowering p {
 	text-align: left;
@@ -182,9 +194,10 @@ Page Component Styles (icon grid, team member card)
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	align-items: center;
 	background-color: var(--color-amaranth);
 }
-.empowering-img-block img {
+.empowering-img-block picture {
 	margin: 30px;
 }
 
@@ -212,12 +225,15 @@ Media Queries (overriding styles for different screen sizes)
 /* Desktop Only */
 @media screen and (min-width: 1024px) {
 	/* Add styles that apply specifically to desktop */
+	.mobile-hero {
+		display: none;
+	}
 
 	/* Values header and p needs to be on top of the hero */
 	.desktop-parent {
 		display: flex;
 		flex-direction: column;
-		gap: 20px;
+		gap: var(--spacing20);
 		margin: 190px auto 193px auto;
 		max-width: 1328px;
 	}
@@ -227,26 +243,25 @@ Media Queries (overriding styles for different screen sizes)
 		left: 50%;
 	}
 	.values-card {
-		margin: 0px 10px;
+		margin: 0px var(--spacing10);
 	}
 	.values-card p {
 		margin: 0px var(--spacing20);
 		font-size: var(--font21);
 		font-weight: var(--font-weight-regular);
-		line-height: var(--line-height32);
 	}
 	.copperback,
 	.authenticity,
 	.education {
-		margin-right: 10px;
+		margin-right: var(--spacing10);
 	}
 	.sustainability-text,
 	.grapeback,
 	.technology {
-		margin-left: 10px;
+		margin-left: var(--spacing10);
 	}
 	.values-card h2 {
-		margin: 20px 0px 0px 20px;
+		margin: var(--spacing20) 0px 0px var(--spacing20);
 		font-size: var(--font36);
 		font-weight: var(--font-weight-bold);
 		line-height: var(--line-height40);
@@ -257,13 +272,19 @@ Media Queries (overriding styles for different screen sizes)
 		margin: 0;
 		font-size: var(--font21);
 		font-weight: var(--font-weight-regular);
-		line-height: var(--line-height26);
+		line-height: var(--line-height32);
 	}
 	.onyxback,
 	.grapeback,
 	.tealback {
 		padding-right: 44px;
 	}
+
+	/* desktop text for Technology and Innovation title */
+	.desktop-text {
+		display: block;
+	}
+
 	/* Cards need to change from column to row with some stylized sizing and padding*/
 	.desktop-group {
 		display: flex;
@@ -272,12 +293,15 @@ Media Queries (overriding styles for different screen sizes)
 	}
 	/* Gradients */
 	.hero {
+		width: 100%;
+		height: 100vh;
+		max-height: 1000px;
 		background-image: linear-gradient(
 				260deg,
 				rgba(9, 9, 9, 0.8) 46.9%,
 				rgba(9, 9, 9, 0) 86.82%
 			),
-			url(../assets/images/pages/values/hero-values.jpg);
+			url(/assets/images/pages/values/hero-values.jpg);
 		background-position: center center;
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -292,7 +316,7 @@ Media Queries (overriding styles for different screen sizes)
 				#0e0e0e 46.26%,
 				rgba(27, 27, 27, 0) 99.04%
 			),
-			url(../assets/images/pages/values/sustainability.jpg);
+			url(/assets/images/pages/values/sustainability.jpg);
 		background-position: center center;
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -304,7 +328,7 @@ Media Queries (overriding styles for different screen sizes)
 				rgba(185, 21, 21, 0.73) 55.57%,
 				rgba(119, 45, 45, 0.4) 68.47%
 			),
-			url(../assets/images/pages/values/authenticity.jpg);
+			url(/assets/images/pages/values/authenticity.jpg);
 		background-position: center center;
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -315,7 +339,7 @@ Media Queries (overriding styles for different screen sizes)
 				#184f85 63.23%,
 				rgba(24, 79, 133, 0) 83.39%
 			),
-			url(../assets/images/pages/values/education.jpg);
+			url(/assets/images/pages/values/education.jpg);
 		background-position: center center;
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -326,7 +350,7 @@ Media Queries (overriding styles for different screen sizes)
 				#007a80 67.16%,
 				rgba(0, 122, 128, 0) 80.36%
 			),
-			url(../assets/images/pages/values/techinnovation.jpg);
+			url(/assets/images/pages/values/techinnovation.jpg);
 		background-position: center center;
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -343,21 +367,21 @@ Media Queries (overriding styles for different screen sizes)
 		width: 60%;
 		margin-left: auto;
 		background-color: transparent;
-		border-radius: 10px;
+		border-radius: var(--spacing10);
 	}
 	.authenticity-text {
 		display: flex;
 		flex-direction: column;
 		width: 50%;
 		background-color: transparent;
-		border-radius: 10px;
+		border-radius: var(--spacing10);
 	}
 	.education-text {
 		display: flex;
 		flex-direction: column;
 		width: 65%;
 		background-color: transparent;
-		border-radius: 10px;
+		border-radius: var(--spacing10);
 	}
 	.tech-text {
 		display: flex;
@@ -365,7 +389,7 @@ Media Queries (overriding styles for different screen sizes)
 		width: 70%;
 		margin-left: auto;
 		background-color: transparent;
-		border-radius: 10px;
+		border-radius: var(--spacing10);
 	}
 	/* setting copper and grape cards maximum widths */
 	.copperback,
@@ -382,12 +406,11 @@ Media Queries (overriding styles for different screen sizes)
 	.technology {
 		width: 50%;
 	}
-	/* .support {
-		padding-left: 100px;
-	} */
+
 	.support-logos {
 		display: flex;
-		gap: 40px;
+		gap: var(--spacing40);
+		padding-bottom: 116px;
 	}
 	/* All Text white except Empowerment section and We Support Header */
 	.h1-black {
@@ -396,7 +419,8 @@ Media Queries (overriding styles for different screen sizes)
 	.values-head {
 		text-align: left;
 		max-width: 475px;
-		padding-left: 20px;
+		padding-left: var(--spacing20);
+		margin-bottom: 0px;
 	}
 	.values-head p {
 		color: var(--color-white);
@@ -404,26 +428,22 @@ Media Queries (overriding styles for different screen sizes)
 	p {
 		color: var(--color-white);
 	}
-	.support {
-		/* margin-top: 116px; */
-		/* padding-bottom: 116px; */
-	}
+	
 	.support-header {
 		padding-top: 115px;
 	}
-	.support-header,
-	.support-text {
-		margin-left: 200px;
-	}
+	
 	.support-header h2.h2-styles {
 		font-size: var(--font46);
 		font-weight: var(--font-weight-bold);
 		line-height: var(--line-height50);
+		margin-bottom: 20px;
 	}
 	.support p {
 		font-size: var(--font46);
 		font-weight: var(--font-weight-bold);
 		line-height: var(--line-height50);
+		max-width: 1000px;
 	}
 	.support-text a {
 		font-size: var(--font28);
@@ -442,54 +462,76 @@ Media Queries (overriding styles for different screen sizes)
 	.support-logo-01,
 	.support-logo-02 {
 		width: auto;
-		height: 100px;
+		height: var(--spacing100);
 	}
 	.empowering {
+		width: var(--desktop-wrapper-width);
+		max-width: var(--wrapper-width-max);
+		margin: 0 auto;
+		padding: var(--spacing100) 0px;
 		display: flex;
 		flex-direction: row-reverse;
-		padding-bottom: 100px;
+		gap: 90px;
 	}
 	.empowering-text,
 	.empowering-img-block {
 		width: 50%;
 	}
 	.empowering-text {
+		margin-top: 0px;
 		text-align: left;
-		padding-right: 270px;
 		color: var(--color-onyx);
 	}
 	.empowering-text h2 {
 		font-size: var(--font46);
 		font-weight: var(--font-weight-bold);
 		line-height: var(--line-height50);
-		margin-bottom: 20px;
+		margin-bottom: var(--spacing20);
 	}
 	.empowering-text p {
 		margin: 0 0 0 0;
 		padding: 0 0 0 0;
+		line-height: var(--line-height32);
 	}
 	.empowering-img-block {
 		background-color: transparent;
 		position: relative;
+		flex-direction: row;
+		justify-content: right;
 	}
-	.empowering-img-block img {
-		position: absolute;
-		top: 15%;
-		left: 25%;
+	.empowering-img-block.style-left::before {
+		transform: translate(-10%, -15%);
+	}
+	.empowering-img-block picture {
+		margin: 0px;
+		display: flex;
+		justify-content: flex-end;
+		width: 80%;
+		max-width: 350px;
+		border-radius: var(--spacing10);
 		object-fit: cover;
-		aspect-ratio: 1;
-		width: 40%;
-		border-radius: 10px;
+		object-position: top;
+		aspect-ratio: 1/1;
 	}
 	.empowering-img-block::before {
-		position: absolute;
-		top: 10%;
-		left: 20%;
-		content: " ";
 		background-color: var(--color-amaranth);
-		border-radius: 10px;
-		width: 299px;
-		height: 299px;
+		border-radius: var(--spacing10);
+		position: absolute;
+		content: " ";
+		width: 80%;
+		max-width: 350px;
+		margin-top: 30px;
+		aspect-ratio: 1/1;
 		z-index: -1;
+	}
+
+	.empowering-img-block picture img {
+		border-radius: var(--spacing10);
+	}
+}
+/* For 1300px and larger */
+@media screen and (min-width: 1300px) {
+	.values-card p {
+	line-height: var(--line-height32);
 	}
 }
