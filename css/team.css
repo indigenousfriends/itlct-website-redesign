@@ -222,7 +222,8 @@ picture img {
 	overflow-y: scroll;
 	height: 40%;
 }
-.modal-header {
+.marsha-modal .modal-header,
+.natasha-modal .modal-header {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
