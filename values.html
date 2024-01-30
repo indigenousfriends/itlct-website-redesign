@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-	<!-- This file is a placeholder for a page. Rename this file to the name of the page you are working on. -->
-
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,7 +12,6 @@
 		/>
 		<link rel="stylesheet" href="css/normalize.css" />
 		<link rel="stylesheet" href="css/global.css" />
-		<link rel="stylesheet" href="css/header.css" />
 		<link rel="stylesheet" href="css/values.css" />
 	</head>
 
@@ -27,21 +24,19 @@
 					<!-- logo container -->
 					<div class="logo-container">
 						<div class="img-container logo-icon">
-							<picture>
-								<source
-									media="(min-width:768px)"
-									srcset="./assets/icons/global/logo-icon-big.svg"
-								/>
-								<img
-									src="./assets/icons/global/logo-icon.svg"
-									alt="If These Lands Could Talk logo-icon"
-									style="width: auto"
-								/>
-							</picture>
-						</div>
-						<div>
-							<!-- waiting for sr class -->
-							<!-- <h1 class="sr-only">If These Lands <span class="block"> Could Talk</span></h1> -->
+							<a href="/index.html">
+								<picture>
+									<source
+										media="(min-width:1180px)"
+										srcset="/assets/icons/global/logo-icon-big.svg"
+									/>
+									<img
+										src="/assets/icons/global/logo-icon.svg"
+										alt="If These Lands Could Talk logo-icon"
+										style="width: auto"
+									/>
+								</picture>
+							</a>
 						</div>
 					</div>
 					<!-- end logo -->
@@ -52,10 +47,10 @@
 								<a href="/about.html"> About Us</a>
 							</li>
 							<li>
-								<a href="/imapct.html"> Our Impact</a>
+								<a href="/impact.html"> Our Impact</a>
 							</li>
 							<li>
-								<a href="/values.html"> Our Value</a>
+								<a href="/values.html"> Our Values</a>
 							</li>
 							<li>
 								<a href="/events.html"> Events</a>
@@ -63,14 +58,13 @@
 							<li>
 								<a href="/team.html"> Our Team</a>
 							</li>
-							<li>
-								<a href="#"> Contact</a>
-							</li>
 						</ul>
 					</div>
-					<a href="#" class="button2"> Support Us</a>
+					<a href="/contact.html" class="button2"> Contact Us</a>
+					<!-- hamburger menu -->
 					<div id="menu-container">
 						<button id="mobile-menu">
+							<span class="sr-only">Mobile menu button</span>
 							<svg
 								id="mobileOpen"
 								width="24"
@@ -115,7 +109,7 @@
 								</g>
 							</svg>
 						</button>
-	
+
 						<div id="nav-links-container" class="hidden">
 							<ul id="nav-links">
 								<li>
@@ -125,7 +119,7 @@
 									<a href="/impact.html"> Our Impact</a>
 								</li>
 								<li>
-									<a href="/values.html"> Our Value</a>
+									<a href="/values.html"> Our Values</a>
 								</li>
 								<li>
 									<a href="/events.html"> Events</a>
@@ -134,17 +128,11 @@
 									<a href="/team.html"> Our Team</a>
 								</li>
 								<li>
-									<a href="/contact.html"> Contact</a>
-								</li>
-								<li>
-									<a href="#"> Support Us</a>
+									<a href="/contact.html"> Contact Us</a>
 								</li>
 							</ul>
 						</div>
 					</div>
-	
-					<!-- hamburger menu -->
-	
 				</div>
 			</nav>
 		</header>
@@ -314,7 +302,7 @@
 				/>
 			</div>
 		</section>
-	
+
 		<!-- Footer -->
 
 		<footer>
@@ -489,6 +477,6 @@
 		<!-- JavaScript -->
 		<script src="js/footer-modal.js"></script>
 		<script src="js/main.js"></script>
-		<script src="./js/header.js"></script>
+		<script src="/js/header.js"></script>
 	</body>
 </html>
