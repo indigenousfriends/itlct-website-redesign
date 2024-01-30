@@ -15,7 +15,7 @@ Page Component Styles (icon grid, team member card)
 */
 
 .wrapper {
-	max-width: var(--mobile-wrapper-width);
+	max-width: var(--desktop-wrapper-width);
 	margin: none;
 }
 
@@ -46,23 +46,24 @@ h3 {
 }
 
 section div p {
-	font-family: var(--main-font);
+	font-family: var(--body-font);
 	font-size: var(--font16);
 	font-weight: var(--font-weight-regular);
 	line-height: var(--line-height20);
 	margin-bottom: var(--spacing100);
 }
 
-p,
-.h4-styles {
+.about-wrapper p,
+.about-wrapper .h4-styles {
 	color: var(--color-onyx);
 }
 
-.h4-styles {
+.about-wrapper .h4-styles {
 	text-align: center;
 }
 
 .signature {
+	font-family: var(--body-font);
 	font-size: var(--font21);
 	font-weight: var(--font-weight-regular);
 	line-height: var(--line-height26);
@@ -83,6 +84,7 @@ p,
 .about-wrapper .button3 {
 	display: flex;
 	align-items: center;
+	justify-content: center;
 }
 
 .about-wrapper a:visited {
@@ -130,6 +132,11 @@ Media Queries (overriding styles for different screen sizes)
 			rgba(9, 9, 9, 0.8) 9.51%,
 			rgba(9, 9, 9, 0) 76.72%
 		);
+		background: linear-gradient(
+			107deg,
+			rgba(9, 9, 9, 0.8) 9.51%,
+			rgba(9, 9, 9, 0) 76.72%
+		);
 		z-index: 1;
 	}
 
@@ -142,6 +149,12 @@ Media Queries (overriding styles for different screen sizes)
 		border: 2px solid transparent;
 		left: 31%;
 		transform: translate(-50%, -33%);
+	}
+
+	.hero-text p {
+		font-size: var(--font21);
+		line-height: var(--line-height32);
+		text-align: left;
 	}
 
 	.about-wrapper {
@@ -163,16 +176,16 @@ Media Queries (overriding styles for different screen sizes)
 		text-align: left;
 	}
 
-	section div p {
-		font-family: var(--main-font);
+	.about-wrapper p {
+		font-family: var(--body-font);
 		font-size: var(--font21);
 		font-weight: var(--font-weight-regular);
-		line-height: var(--line-height26);
-		margin-bottom: 0px;
+		line-height: var(--line-height32);
+		margin-bottom: 40px;
 		text-align: left;
 	}
 
-	.h4-styles {
+	.about-wrapper .h4-styles {
 		font-size: var(--font46);
 		font-weight: var(--font-weight-bold);
 		line-height: var(--line-height50);
@@ -181,27 +194,30 @@ Media Queries (overriding styles for different screen sizes)
 		margin-bottom: 0px;
 	}
 
-	p {
-		font-size: var(--font21);
-		font-weight: var(--font-weight-regular);
-		line-height: var(--line-height26);
+	.signature {
+		font-family: var(--main-font);
+		font-size: var(--font24);
+		font-weight: var(--font-weight-medium);
+		line-height: var(--line-height32);
 		color: var(--color-onyx);
 	}
 
-	.signature {
-		margin-top: var(--spacing40);
-	}
-
-	.btn-container {
-		display: none;
-	}
+	
 }
 
 /* Desktop Only */
 @media screen and (min-width: 1024px) {
 	.signature {
+		font-family: var(--main-font);
 		font-size: var(--font24);
 		font-weight: var(--font-weight-medium);
-		line-height: var(--line-height28);
+		line-height: var(--line-height58);
 	}
+}
+
+@media screen and (min-width: 1180px) { 
+	.btn-container {
+	display: none;
+}
+
 }
