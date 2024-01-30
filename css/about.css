@@ -15,7 +15,7 @@ Page Component Styles (icon grid, team member card)
 */
 
 .wrapper {
-	max-width: var(--mobile-wrapper-width);
+	max-width: var(--desktop-wrapper-width);
 	margin: none;
 }
 
@@ -28,7 +28,6 @@ Page Component Styles (icon grid, team member card)
 
 .hero-text {
 	border: 2px solid transparent;
-	/* width: 369px; */
 	padding: 0px 25px;
 }
 
@@ -47,7 +46,7 @@ h3 {
 }
 
 section div p {
-	font-family: var(--main-font);
+	font-family: var(--body-font);
 	font-size: var(--font16);
 	font-weight: var(--font-weight-regular);
 	line-height: var(--line-height20);
@@ -64,6 +63,7 @@ p,
 }
 
 .signature {
+	font-family: var(--body-font);
 	font-size: var(--font21);
 	font-weight: var(--font-weight-regular);
 	line-height: var(--line-height26);
@@ -108,10 +108,8 @@ Media Queries (overriding styles for different screen sizes)
 	/* Add styles that only apply to tablet. These are usually fixes to get responsiveness right */
 }
 
-
 /* Tablet and Larger */
 @media screen and (min-width: 768px) {
-
 	/* Add styles that apply to table and desktop */
 	.wrapper {
 		max-width: var(--desktop-wrapper-width);
@@ -128,11 +126,12 @@ Media Queries (overriding styles for different screen sizes)
 		left: 0;
 		width: 100%;
 		height: 100%;
-		background: linear-gradient(107deg,
-				rgba(9, 9, 9, 0.8) 9.51%,
-				rgba(9, 9, 9, 0) 76.72%);
+		background: linear-gradient(
+			107deg,
+			rgba(9, 9, 9, 0.8) 9.51%,
+			rgba(9, 9, 9, 0) 76.72%
+		);
 		z-index: 1;
-
 	}
 
 	.hero-text {
@@ -165,12 +164,12 @@ Media Queries (overriding styles for different screen sizes)
 		text-align: left;
 	}
 
-	section div p {
-		font-family: var(--main-font);
+	p {
+		font-family: var(--body-font);
 		font-size: var(--font21);
 		font-weight: var(--font-weight-regular);
-		line-height: var(--line-height26);
-		margin-bottom: 0px;
+		line-height: var(--line-height32);
+		margin-bottom: 40px;
 		text-align: left;
 	}
 
@@ -183,29 +182,25 @@ Media Queries (overriding styles for different screen sizes)
 		margin-bottom: 0px;
 	}
 
-	p {
-		font-size: var(--font21);
-		font-weight: var(--font-weight-regular);
-		line-height: var(--line-height26);
-		color: var(--color-onyx);
-	}
-
 	.signature {
-		margin-top: var(--spacing40);
+		font-family: var(--main-font);
+		font-size: var(--font24);
+		font-weight: var(--font-weight-medium);
+		line-height: var(--line-height32);
+		color: var(--color-onyx);
 	}
 
 	.btn-container {
 		display: none;
-
 	}
 }
 
 /* Desktop Only */
 @media screen and (min-width: 1024px) {
-
 	.signature {
+		font-family: var(--main-font);
 		font-size: var(--font24);
 		font-weight: var(--font-weight-medium);
-		line-height: var(--line-height28);
+		line-height: var(--line-height58);
 	}
 }
