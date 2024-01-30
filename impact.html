@@ -12,9 +12,13 @@
 			href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;700&display=swap"
 			rel="stylesheet"
 		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap"
+			rel="stylesheet"
+		/>
 		<link rel="stylesheet" href="css/normalize.css" />
 		<link rel="stylesheet" href="css/global.css" />
-		<link rel="stylesheet" href="css/header.css">
+		<link rel="stylesheet" href="css/header.css" />
 		<!-- In a new branch, rename the page.css file adding the name of that actual page (Example: home.css) -->
 		<link rel="stylesheet" href="css/impact.css" />
 	</head>
@@ -145,7 +149,6 @@
 			</nav>
 		</header>
 
-
 		<!-- Title section -->
 		<div class="hero">
 			<div class="title-img"></div>
@@ -163,7 +166,6 @@
 			<section class="tech-around">
 				<!-- img and background red thing -->
 				<div class="red-background">
-					
 					<div class="tech-img style-left">
 						<picture>
 							<source
@@ -260,7 +262,6 @@
 					</p>
 				</div>
 				<div class="red-background">
-				
 					<div class="responsible-img right-style">
 						<picture>
 							<source
@@ -287,9 +288,9 @@
 				<div class="footer-main">
 					<div class="footer-logo-btn">
 						<!-- logo -->
-						<a href="./index.html">
+						<a href="/index.html">
 							<img
-								src="./assets/icons/global/itlct-logo.svg"
+								src="/assets/icons/global/itlct-logo.svg"
 								alt="If These Lands Could Talk Logo"
 							/>
 						</a>
@@ -298,61 +299,62 @@
 						<button class="btn-la">Land Acknowledgement</button>
 					</div>
 					<!-- Links list -->
-					<!-- need to replace with the real page links -->
-					<ul>
-						<li>
-							<a href="/index.html">Home</a>
-						</li>
-						<li>
-							<!-- Need to double check once Our Impact team is started -->
-							<a href="/impact.html">Our Impact</a>
-						</li>
-						<li>
-							<a href="/values.html">Our Values</a>
-						</li>
-						<li>
-							<a href="/events.html">Events & Programs</a>
-						</li>
-						<li>
-							<a href="/team.html">Our Team</a>
-						</li>
-						<li>
-							<a href="#">Join the Team</a>
-						</li>
-						<li>
-							<a href="/contact.html">Contact</a>
-						</li>
-						<li>
-							<a href="#">Support Us</a>
-						</li>
-					</ul>
+					<div class="links-columns">
+						<ul class="links-child">
+							<li>
+								<a href="/index.html">Home</a>
+							</li>
+							<li>
+								<a href="/about.html">About Us</a>
+							</li>
+							<li>
+								<a href="/impact.html">Our Impact</a>
+							</li>
+							<li>
+								<a href="/values.html">Our Values</a>
+							</li>
+						</ul>
+						<ul class="links-child">
+							<li>
+								<a href="/events.html">Events & Programs</a>
+							</li>
+							<li>
+								<a href="/team.html">Our Team</a>
+							</li>
+							<li>
+								<a href="/contact.html">Contact</a>
+							</li>
+						</ul>
+					</div>
 
 					<!-- form -->
-					<form action="" class="">
-						<h2 class="h4-styles">Stay up to date with us</h2>
-						<p>
-							Register with our newsletter to receive updates on our website,
-							events, and more!
-						</p>
-						<div class="text-input">
-							<label class="hidden" for="newsletter-input">Newsletter</label>
-							<input
-								type="email"
-								name="newsletter-input"
-								id="newsletter-input"
-								size="40"
-								placeholder="Enter your email"
-								aria-label="newsletter"
-							/>
-							<button type="submit" class="button2">Submit</button>
-						</div>
-					</form>
+					<div class="footer-form">
+						<form action="" class="">
+							<h2 class="h4-styles">Stay up to date with us</h2>
+							<p>
+								Register with our newsletter to receive updates on our website,
+								events, and more!
+							</p>
+							<div class="text-input">
+								<label class="hidden" for="newsletter-input">Newsletter</label>
+								<input
+									type="email"
+									name="newsletter-input"
+									id="newsletter-input"
+									size="40"
+									placeholder="Enter your email"
+									aria-label="newsletter"
+								/>
+								<button type="submit" class="button2">Submit</button>
+							</div>
+						</form>
+					</div>
 				</div>
 				<hr />
 
 				<div class="bottom-links">
 					<!-- privacy policy -->
-					<a href="">Privacy Policy</a>
+					<a href="#">Privacy Policy</a>
 					<!-- social links -->
 					<ul class="social-svgs">
 						<li>
@@ -361,7 +363,7 @@
 								target="_blank"
 							>
 								<img
-									src="./assets/icons/global/linkedin.svg"
+									src="/assets/icons/global/linkedin.svg"
 									alt="If These Lands Could Talk LinkedIn Page"
 								/>
 							</a>
@@ -372,7 +374,7 @@
 								target="_blank"
 							>
 								<img
-									src="./assets/icons/global/facebook.svg"
+									src="/assets/icons/global/facebook.svg"
 									alt="If These Lands Could Talk Facebook Page"
 								/>
 							</a>
@@ -383,7 +385,7 @@
 								target="_blank"
 							>
 								<img
-									src="./assets/icons/global/instagram.svg"
+									src="/assets/icons/global/instagram.svg"
 									alt="If These Lands Could Talk Instagram Page"
 								/>
 							</a>
@@ -454,6 +456,6 @@
 		<!-- JavaScript -->
 		<script src="js/footer-modal.js"></script>
 		<script src="js/main.js"></script>
-		<script src="./js/header.js"></script>
+		<script src="js/header.js"></script>
 	</body>
 </html>
