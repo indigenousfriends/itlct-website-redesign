@@ -39,7 +39,8 @@ Variables (colors, text, spacing, etc.)
 	--color-amaranth: #b91515;
 	--color-teal: #007a80;
 	--color-cybergrape: #6c4681;
-	--color-onyx: #1f1d1d;
+	--color-dark-onyx: #1f1d1d;
+	--color-onyx: #424241;
 	--color-yaleblue: #184f85;
 	--color-hotpink: #fa6cb7;
 	--color-citrine: #d3c53f;
@@ -164,7 +165,7 @@ a:visited {
 .button1:hover,
 .button1:focus {
 	background: var(--button1-hover-border);
-	color: var(--color-onyx);
+	color: var(--color-dark-onyx);
 }
 
 .button2 {
@@ -184,7 +185,7 @@ a:visited {
 .button2:hover,
 .button2:focus {
 	background-color: var(--button2-hover);
-	color: var(--color-onyx);
+	color: var(--color-dark-onyx);
 }
 
 .button3 {
@@ -204,7 +205,7 @@ a:visited {
 .button3:hover,
 .button3:focus {
 	background-color: var(--button3-hover-border);
-	color: var(--color-onyx);
+	color: var(--color-dark-onyx);
 }
 
 /* 
@@ -342,7 +343,7 @@ Global Component Styles (buttons, forms, etc.)
 
 .text-input .button2:hover {
 	background-color: var(--color-white);
-	color: var(--color-onyx);
+	color: var(--color-dark-onyx);
 }
 
 /* HEADER STYLES BB */
@@ -353,7 +354,7 @@ body {
 
 /* top bar section */
 .top-bar {
-	background-color: var(--color-onyx);
+	background-color: var(--color-dark-onyx);
 	color: var(--color-white);
 	display: flex;
 	justify-content: space-around;
@@ -450,7 +451,7 @@ nav .img-container {
 	margin: 0;
 	gap: 20px;
 	flex-direction: column;
-	background-color: var(--color-onyx);
+	background-color: var(--color-dark-onyx);
 	width: 200px;
 	height: auto;
 	overflow: hidden;
@@ -471,7 +472,7 @@ nav .img-container {
 
 /* FOOTER STYLES */
 footer {
-	background-color: var(--color-onyx);
+	background-color: var(--color-dark-onyx);
 	color: var(--color-white);
 }
 
@@ -663,6 +664,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		flex-direction: row;
 		justify-content: space-evenly;
 		width: 80%;
+		margin: 0 auto;
 	}
 	.links-child {
 		display: flex;
@@ -762,6 +764,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		display: flex;
 		flex-direction: row;
 		align-items: center;
+		gap: 5%;
 	}
 
 	/* removing margin on button to align with content */
@@ -829,7 +832,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 
 	.button2:hover {
 		background: var(--color-white);
-		color: var(--color-onyx);
+		color: var(--color-dark-onyx);
 		text-decoration: none;
 	}
 
@@ -861,6 +864,5 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	.text-input {
 		flex-direction: row;
 		align-items: center;
-		gap: 5%;
 	}
 }
