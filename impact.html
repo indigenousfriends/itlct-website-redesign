@@ -1,114 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- This file is a placehodler for a page. Rename this file to the name of the page you are working on. -->
+	<!-- This file is a placehodler for a page. Rename this file to the name of the page you are working on. -->
 
-<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>If These Lands Could Talk - Page Name</title>
-	<link rel="preconnect" href="https://fonts.googleapis.com" />
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-	<link
-		href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;700&display=swap"
-		rel="stylesheet" />
-	<link
-		href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap"
-		rel="stylesheet" />
-	<link rel="stylesheet" href="css/normalize.css" />
-	<link rel="stylesheet" href="css/global.css" />
-	<!-- <link rel="stylesheet" href="css/header.css"> -->
-	<!-- In a new branch, rename the page.css file adding the name of that actual page (Example: home.css) -->
-	<link rel="stylesheet" href="css/impact.css" />
-</head>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>If These Lands Could Talk - Page Name</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="css/normalize.css" />
+		<link rel="stylesheet" href="css/global.css" />
+		<link rel="stylesheet" href="css/impact.css" />
+	</head>
 
-<body>
-	<!-- Header Navigation-->
-	<header>
-		<!-- nav -->
-		<nav class="top-bar">
-			<div class="dp-wrapper">
-				<!-- logo container -->
-				<div class="logo-container">
-					<div class="img-container logo-icon">
-						<a href="/index.html">
-							<picture>
-								<source
-									media="(min-width:1180px)"
-									srcset="/assets/icons/global/logo-icon-big.svg" />
-								<img
-									src="/assets/icons/global/logo-icon.svg"
-									alt="If These Lands Could Talk logo-icon"
-									style="width: auto" />
-							</picture>
-						</a>
+	<body>
+		<!-- Header Navigation-->
+		<header>
+			<!-- nav -->
+			<nav class="top-bar">
+				<div class="dp-wrapper">
+					<!-- logo container -->
+					<div class="logo-container">
+						<div class="img-container logo-icon">
+							<a href="/index.html">
+								<picture>
+									<source
+										media="(min-width:1180px)"
+										srcset="/assets/icons/global/logo-icon-big.svg"
+									/>
+									<img
+										src="/assets/icons/global/logo-icon.svg"
+										alt="If These Lands Could Talk logo-icon"
+										style="width: auto"
+									/>
+								</picture>
+							</a>
+						</div>
 					</div>
-				</div>
-				<!-- end logo -->
-				<!-- desktop menu -->
-				<div class="desktop-menu">
-					<ul class="desktop-nav">
-						<li>
-							<a href="/about.html"> About Us</a>
-						</li>
-						<li>
-							<a href="/impact.html"> Our Impact</a>
-						</li>
-						<li>
-							<a href="/values.html"> Our Values</a>
-						</li>
-						<li>
-							<a href="/events.html"> Events</a>
-						</li>
-						<li>
-							<a href="/team.html"> Our Team</a>
-						</li>
-					</ul>
-				</div>
-				<a href="/contact.html" class="button2"> Contact Us</a>
-				<!-- hamburger menu -->
-				<div id="menu-container">
-					<button id="mobile-menu">
-						<span class="sr-only">Mobile menu button</span>
-						<svg
-							id="mobileOpen"
-							width="24"
-							height="19"
-							viewBox="0 0 24 19"
-							xmlns="http://www.w3.org/2000/svg">
-							<path
-								d="M22.3465 0H1.65354C1.215 0 0.794411 0.174212 0.484311 0.484311C0.174212 0.794411 0 1.215 0 1.65354C0 2.09209 0.174212 2.51267 0.484311 2.82277C0.794411 3.13287 1.215 3.30709 1.65354 3.30709H22.3465C22.785 3.30709 23.2056 3.13287 23.5157 2.82277C23.8258 2.51267 24 2.09209 24 1.65354C24 1.215 23.8258 0.794411 23.5157 0.484311C23.2056 0.174212 22.785 0 22.3465 0Z" />
-							<path
-								d="M22.3465 7.79492H1.65354C1.215 7.79492 0.794411 7.96913 0.484311 8.27923C0.174212 8.58933 0 9.00992 0 9.44847C0 9.88701 0.174212 10.3076 0.484311 10.6177C0.794411 10.9278 1.215 11.102 1.65354 11.102H22.3465C22.785 11.102 23.2056 10.9278 23.5157 10.6177C23.8258 10.3076 24 9.88701 24 9.44847C24 9.00992 23.8258 8.58933 23.5157 8.27923C23.2056 7.96913 22.785 7.79492 22.3465 7.79492Z" />
-							<path
-								d="M24 17.2444C24 16.8058 23.8258 16.3852 23.5157 16.0751C23.2056 15.765 22.785 15.5908 22.3465 15.5908H1.65354C1.215 15.5908 0.794411 15.765 0.484311 16.0751C0.174212 16.3852 0 16.8058 0 17.2444C0 17.6829 0.174212 18.1035 0.484311 18.4136C0.794411 18.7237 1.215 18.8979 1.65354 18.8979H22.3465C22.785 18.8979 23.2056 18.7237 23.5157 18.4136C23.8258 18.1035 24 17.6829 24 17.2444Z" />
-						</svg>
-						<svg
-							id="mobileClose"
-							class="hidden"
-							width="24"
-							height="24"
-							viewBox="0 0 24 24"
-							fill="none"
-							xmlns="http://www.w3.org/2000/svg">
-							<g id="Group">
-								<g id="Group_2">
-									<path
-										id="Vector"
-										d="M1.7416 23.9993C1.29575 23.9993 0.849903 23.8293 0.509942 23.4894C-0.169981 22.8094 -0.169981 21.7067 0.509942 21.026L21.0267 0.509942C21.7067 -0.169981 22.8094 -0.169981 23.4901 0.509942C24.17 1.18986 24.17 2.29265 23.4901 2.97327L2.97257 23.4894C2.63261 23.8293 2.18745 23.9993 1.7416 23.9993Z"
-										fill="white" />
-								</g>
-								<g id="Group_3">
-									<path
-										id="Vector_2"
-										d="M22.2577 24C21.8118 24 21.366 23.83 21.026 23.4901L0.509942 2.97327C-0.169981 2.29334 -0.169981 1.19056 0.509942 0.509942C1.18986 -0.169981 2.29265 -0.169981 2.97327 0.509942L23.4901 21.0267C24.17 21.7067 24.17 22.8094 23.4901 23.4901C23.1494 23.83 22.7035 24 22.2577 24Z"
-										fill="white" />
-								</g>
-							</g>
-						</svg>
-					</button>
-
-					<div id="nav-links-container" class="hidden">
-						<ul id="nav-links">
+					<!-- end logo -->
+					<!-- desktop menu -->
+					<div class="desktop-menu">
+						<ul class="desktop-nav">
 							<li>
 								<a href="/about.html"> About Us</a>
 							</li>
@@ -124,305 +64,391 @@
 							<li>
 								<a href="/team.html"> Our Team</a>
 							</li>
-							<li>
-								<a href="/contact.html"> Contact Us</a>
-							</li>
 						</ul>
 					</div>
+					<a href="/contact.html" class="button2"> Contact Us</a>
+					<!-- hamburger menu -->
+					<div id="menu-container">
+						<button id="mobile-menu">
+							<span class="sr-only">Mobile menu button</span>
+							<svg
+								id="mobileOpen"
+								width="24"
+								height="19"
+								viewBox="0 0 24 19"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M22.3465 0H1.65354C1.215 0 0.794411 0.174212 0.484311 0.484311C0.174212 0.794411 0 1.215 0 1.65354C0 2.09209 0.174212 2.51267 0.484311 2.82277C0.794411 3.13287 1.215 3.30709 1.65354 3.30709H22.3465C22.785 3.30709 23.2056 3.13287 23.5157 2.82277C23.8258 2.51267 24 2.09209 24 1.65354C24 1.215 23.8258 0.794411 23.5157 0.484311C23.2056 0.174212 22.785 0 22.3465 0Z"
+								/>
+								<path
+									d="M22.3465 7.79492H1.65354C1.215 7.79492 0.794411 7.96913 0.484311 8.27923C0.174212 8.58933 0 9.00992 0 9.44847C0 9.88701 0.174212 10.3076 0.484311 10.6177C0.794411 10.9278 1.215 11.102 1.65354 11.102H22.3465C22.785 11.102 23.2056 10.9278 23.5157 10.6177C23.8258 10.3076 24 9.88701 24 9.44847C24 9.00992 23.8258 8.58933 23.5157 8.27923C23.2056 7.96913 22.785 7.79492 22.3465 7.79492Z"
+								/>
+								<path
+									d="M24 17.2444C24 16.8058 23.8258 16.3852 23.5157 16.0751C23.2056 15.765 22.785 15.5908 22.3465 15.5908H1.65354C1.215 15.5908 0.794411 15.765 0.484311 16.0751C0.174212 16.3852 0 16.8058 0 17.2444C0 17.6829 0.174212 18.1035 0.484311 18.4136C0.794411 18.7237 1.215 18.8979 1.65354 18.8979H22.3465C22.785 18.8979 23.2056 18.7237 23.5157 18.4136C23.8258 18.1035 24 17.6829 24 17.2444Z"
+								/>
+							</svg>
+							<svg
+								id="mobileClose"
+								class="hidden"
+								width="24"
+								height="24"
+								viewBox="0 0 24 24"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<g id="Group">
+									<g id="Group_2">
+										<path
+											id="Vector"
+											d="M1.7416 23.9993C1.29575 23.9993 0.849903 23.8293 0.509942 23.4894C-0.169981 22.8094 -0.169981 21.7067 0.509942 21.026L21.0267 0.509942C21.7067 -0.169981 22.8094 -0.169981 23.4901 0.509942C24.17 1.18986 24.17 2.29265 23.4901 2.97327L2.97257 23.4894C2.63261 23.8293 2.18745 23.9993 1.7416 23.9993Z"
+											fill="white"
+										/>
+									</g>
+									<g id="Group_3">
+										<path
+											id="Vector_2"
+											d="M22.2577 24C21.8118 24 21.366 23.83 21.026 23.4901L0.509942 2.97327C-0.169981 2.29334 -0.169981 1.19056 0.509942 0.509942C1.18986 -0.169981 2.29265 -0.169981 2.97327 0.509942L23.4901 21.0267C24.17 21.7067 24.17 22.8094 23.4901 23.4901C23.1494 23.83 22.7035 24 22.2577 24Z"
+											fill="white"
+										/>
+									</g>
+								</g>
+							</svg>
+						</button>
+
+						<div id="nav-links-container" class="hidden">
+							<ul id="nav-links">
+								<li>
+									<a href="/about.html"> About Us</a>
+								</li>
+								<li>
+									<a href="/impact.html"> Our Impact</a>
+								</li>
+								<li>
+									<a href="/values.html"> Our Values</a>
+								</li>
+								<li>
+									<a href="/events.html"> Events</a>
+								</li>
+								<li>
+									<a href="/team.html"> Our Team</a>
+								</li>
+								<li>
+									<a href="/contact.html"> Contact Us</a>
+								</li>
+							</ul>
+						</div>
+					</div>
 				</div>
-			</div>
-		</nav>
-	</header>
-	<!-- Title section -->
-	<div class="hero">
-		<div class="title-img"></div>
-		<div class="title-text">
-			<div>
-				<h1 class="h2-styles">Our Impact</h1>
-				<p>Providing opportunities through technology</p>
+			</nav>
+		</header>
+		<!-- Title section -->
+		<div class="hero">
+			<div class="title-img"></div>
+			<div class="title-text">
+				<div>
+					<h1 class="h2-styles">Our Impact</h1>
+					<p>Providing opportunities through technology</p>
+				</div>
 			</div>
 		</div>
-	</div>
 
-	<!-- page wrapper -->
-	<div class="impact-wrapper">
-		<!-- tech all around us section -->
-		<section class="tech-around">
-			<!-- img and background red thing -->
-			<div class="red-background">
-				<div class="tech-img style-left">
-					<picture>
-						<source
-							media="(min-width:768px)"
-							srcset="/assets/images/pages/our-impact/desktop/ar-d.jpg" />
-						<img
-							src="/assets/images/pages/our-impact/ar.jpg"
-							alt="person using ar glasses"
-							style="width: auto" />
-					</picture>
+		<!-- page wrapper -->
+		<div class="impact-wrapper">
+			<!-- tech all around us section -->
+			<section class="tech-around">
+				<!-- img and background red thing -->
+				<div class="red-background">
+					<div class="tech-img style-left">
+						<picture>
+							<source
+								media="(min-width:768px)"
+								srcset="/assets/images/pages/our-impact/desktop/ar-d.jpg"
+							/>
+							<img
+								src="/assets/images/pages/our-impact/ar.jpg"
+								alt="person using ar glasses"
+								style="width: auto"
+							/>
+						</picture>
+					</div>
 				</div>
+
+				<div class="tech-around-info wrapper">
+					<h2 class="h4-styles">
+						Technology is all <span class="block">Around us</span>
+					</h2>
+					<p>
+						Whether it be physical or digital. We acknowledge and appreciate the
+						ingenuity of many Native and Indigenous pioneers that paved the way
+						for our understanding of the world through technology.
+					</p>
+				</div>
+			</section>
+
+			<!-- Icons section -->
+			<div class="yellow-background">
+				<section class="icons-parent wrapper">
+					<!-- first icon -->
+					<div class="icon-child">
+						<div>
+							<picture>
+								<img
+									src="/assets/icons/our-impact-icons/workshops&programs.svg"
+									alt="decorative abstract icon for Workshops & Programs"
+									style="width: 190px"
+								/>
+							</picture>
+						</div>
+						<p class="h5-styles">Workshops & Programs</p>
+					</div>
+					<div class="icon-child">
+						<!-- second icon -->
+						<div>
+							<picture>
+								<img
+									src="/assets/icons/our-impact-icons/consulting.svg"
+									alt="decorative abstract icon for Consulting"
+									style="width: 190px"
+								/>
+							</picture>
+						</div>
+						<p class="h5-styles">Consulting</p>
+					</div>
+					<div class="icon-child">
+						<!-- third icon -->
+						<div>
+							<picture>
+								<img
+									src="/assets/icons/our-impact-icons/speaking.svg"
+									alt="decorative abstract icon for Speaking"
+									style="width: 190px"
+								/>
+							</picture>
+						</div>
+						<p class="h5-styles">Speaking</p>
+					</div>
+					<div class="icon-child">
+						<!-- fourth icon -->
+						<div>
+							<picture>
+								<img
+									src="/assets/icons/our-impact-icons/mentorship-support.svg"
+									alt="decorative abstract icon for Mentorship Support"
+									style="width: 190px"
+								/>
+							</picture>
+						</div>
+						<p class="h5-styles">Mentorship Support</p>
+					</div>
+				</section>
 			</div>
 
-			<div class="tech-around-info wrapper">
-				<h2 class="h4-styles">
-					Technology is all <span class="block">Around us</span>
-				</h2>
-				<p>
-					Whether it be physical or digital. We acknowledge and appreciate the
-					ingenuity of many Native and Indigenous pioneers that paved the way
-					for our understanding of the world through technology.
-				</p>
-			</div>
-		</section>
-
-		<!-- Icons section -->
-		<div class="yellow-background">
-			<section class="icons-parent wrapper">
-				<!-- first icon -->
-				<div class="icon-child">
-					<div>
-						<picture>
-							<img
-								src="/assets/icons/our-impact-icons/workshops&programs.svg"
-								alt="decorative abstract icon for Workshops & Programs"
-								style="width: 190px" />
-						</picture>
-					</div>
-					<p class="h5-styles">Workshops & Programs</p>
+			<!-- Responsible section -->
+			<section class="responsible-parent">
+				<div class="responsible-info wrapper">
+					<h2 class="h4-styles">Responsible Stewardship</h2>
+					<p>
+						Whether it be physical or digital. We acknowledge and appreciate the
+						ingenuity of many Native and Indigenous pioneers that paved the way
+						for our understanding of the world through technology.
+					</p>
 				</div>
-				<div class="icon-child">
-					<!-- second icon -->
-					<div>
+				<div class="red-background">
+					<div class="responsible-img right-style">
 						<picture>
+							<source
+								media="(min-width:768px)"
+								srcset="
+									/assets/images/pages/our-impact/desktop/remote-connections-d.jpg
+								"
+							/>
 							<img
-								src="/assets/icons/our-impact-icons/consulting.svg"
-								alt="decorative abstract icon for Consulting"
-								style="width: 190px" />
+								src="/assets/images/pages/our-impact/remote-connections.jpg"
+								alt="two people holding a laptop computer in a grassy field"
+								style="width: auto"
+							/>
 						</picture>
 					</div>
-					<p class="h5-styles">Consulting</p>
-				</div>
-				<div class="icon-child">
-					<!-- third icon -->
-					<div>
-						<picture>
-							<img
-								src="/assets/icons/our-impact-icons/speaking.svg"
-								alt="decorative abstract icon for Speaking"
-								style="width: 190px" />
-						</picture>
-					</div>
-					<p class="h5-styles">Speaking</p>
-				</div>
-				<div class="icon-child">
-					<!-- fourth icon -->
-					<div>
-						<picture>
-							<img
-								src="/assets/icons/our-impact-icons/mentorship-support.svg"
-								alt="decorative abstract icon for Mentorship Support"
-								style="width: 190px" />
-						</picture>
-					</div>
-					<p class="h5-styles">Mentorship Support</p>
 				</div>
 			</section>
 		</div>
 
-		<!-- Responsible section -->
-		<section class="responsible-parent">
-			<div class="responsible-info wrapper">
-				<h2 class="h4-styles">Responsible Stewardship</h2>
-				<p>
-					Whether it be physical or digital. We acknowledge and appreciate the
-					ingenuity of many Native and Indigenous pioneers that paved the way
-					for our understanding of the world through technology.
-				</p>
+		<!-- Footer -->
+
+		<footer>
+			<div class="wrapper">
+				<div class="footer-main">
+					<div class="footer-logo-btn">
+						<!-- logo -->
+						<a href="/index.html">
+							<img
+								src="/assets/icons/global/itlct-logo.svg"
+								alt="If These Lands Could Talk Logo"
+							/>
+						</a>
+
+						<!-- Button for modal -->
+						<button class="btn-la">Land Acknowledgement</button>
+					</div>
+					<!-- Links list -->
+					<div class="links-columns">
+						<ul class="links-child">
+							<li>
+								<a href="/index.html">Home</a>
+							</li>
+							<li>
+								<a href="/about.html">About Us</a>
+							</li>
+							<li>
+								<a href="/impact.html">Our Impact</a>
+							</li>
+							<li>
+								<a href="/values.html">Our Values</a>
+							</li>
+						</ul>
+						<ul class="links-child">
+							<li>
+								<a href="/events.html">Events & Programs</a>
+							</li>
+							<li>
+								<a href="/team.html">Our Team</a>
+							</li>
+							<li>
+								<a href="/contact.html">Contact</a>
+							</li>
+						</ul>
+					</div>
+
+					<!-- form -->
+					<div class="footer-form">
+						<form action="" class="">
+							<h2 class="h4-styles">Stay up to date with us</h2>
+							<p>
+								Register with our newsletter to receive updates on our website,
+								events, and more!
+							</p>
+							<div class="text-input">
+								<label class="hidden" for="newsletter-input">Newsletter</label>
+								<input
+									type="email"
+									name="newsletter-input"
+									id="newsletter-input"
+									size="40"
+									placeholder="Enter your email"
+									aria-label="newsletter"
+								/>
+								<button type="submit" class="button2">Submit</button>
+							</div>
+						</form>
+					</div>
+				</div>
+				<hr />
+
+				<div class="bottom-links">
+					<!-- privacy policy -->
+					<a href="#">Privacy Policy</a>
+					<!-- social links -->
+					<ul class="social-svgs">
+						<li>
+							<a
+								href="https://www.linkedin.com/company/if-these-lands-could-talk-itlct/"
+								target="_blank"
+							>
+								<img
+									src="/assets/icons/global/linkedin.svg"
+									alt="If These Lands Could Talk LinkedIn Page"
+								/>
+							</a>
+						</li>
+						<li>
+							<a
+								href="https://www.facebook.com/people/If-These-Lands-Could-Talk-ITLCT/61550097182345/"
+								target="_blank"
+							>
+								<img
+									src="/assets/icons/global/facebook.svg"
+									alt="If These Lands Could Talk Facebook Page"
+								/>
+							</a>
+						</li>
+						<li>
+							<a
+								href="https://www.instagram.com/p/Cyn_NiuOxm7/"
+								target="_blank"
+							>
+								<img
+									src="/assets/icons/global/instagram.svg"
+									alt="If These Lands Could Talk Instagram Page"
+								/>
+							</a>
+						</li>
+					</ul>
+				</div>
 			</div>
-			<div class="red-background">
-				<div class="responsible-img right-style">
-					<picture>
-						<source
-							media="(min-width:768px)"
-							srcset="
-									/assets/images/pages/our-impact/desktop/remote-connections-d.jpg
-								" />
-						<img
-							src="/assets/images/pages/our-impact/remote-connections.jpg"
-							alt="two people holding a laptop computer in a grassy field"
-							style="width: auto" />
-					</picture>
+		</footer>
+
+		<!-- MODAL -->
+		<!-- LAND ACKNOWLEDGEMENTS -->
+		<section class="modal hidden">
+			<div class="modal-wrapper">
+				<div class="btn-close">
+					<button>
+						<svg
+							width="64"
+							height="64"
+							viewBox="0 0 64 64"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<title>Close pop-up window</title>
+							<path
+								d="M17.0668 50.6667L13.3335 46.9333L28.2668 32L13.3335 17.0667L17.0668 13.3333L32.0002 28.2667L46.9335 13.3333L50.6668 17.0667L35.7335 32L50.6668 46.9333L46.9335 50.6667L32.0002 35.7333L17.0668 50.6667Z"
+								fill="#1A1A1A"
+							/>
+						</svg>
+					</button>
+				</div>
+				<div class="modal-header">
+					<h4>Land Acknowledgement</h4>
+				</div>
+				<div class="modal-content">
+					<div class="modal-scroll">
+						<p>
+							ITLCT operates predominantly through digital means. The Atlanta,
+							Georgia area is the official home for ITLCT. Our leaders are
+							located in the United States between the states of Georgia and
+							Florida and so we wish to acknowledge both locations.
+						</p>
+						<p>
+							We acknowledge that ITLCT leaders reside on the traditional
+							homelands and territories of Florida consisting of but not limited
+							to the Seminole Nation and other first peoples such as the Calusa,
+							Tobobaga, Timucua, Apalachee, Miccosukee, Mascogo, Taíno, amongst
+							others. ITLCT also acknowledge that we operate, and our leaders
+							also reside on the traditional homelands and territories of
+							Georgia consisting of the Cherokee Nation and other first peoples
+							such as but not limited to the Catawba, Muscogee (Creek),
+							Chickasaw, Shawnee, Oconee, Apalachicola, Chatot, amongst others.
+						</p>
+
+						<p>
+							The first peoples of Florida and Georgia who lived, worked,
+							nurtured the land, and shared knowledge were involuntarily
+							removed, faced difficult challenges and oppression, may still be
+							seeking recognition and reconciliation in some cases, but today,
+							they continue to shape their
+						</p>
+					</div>
 				</div>
 			</div>
 		</section>
-	</div>
 
-	<!-- Footer -->
+		<div class="overlay-la hidden"></div>
 
-	<footer>
-		<div class="wrapper">
-			<div class="footer-main">
-				<div class="footer-logo-btn">
-					<!-- logo -->
-					<a href="/index.html">
-						<img
-							src="/assets/icons/global/itlct-logo.svg"
-							alt="If These Lands Could Talk Logo" />
-					</a>
-
-					<!-- Button for modal -->
-					<button class="btn-la">Land Acknowledgement</button>
-				</div>
-				<!-- Links list -->
-				<div class="links-columns">
-					<ul class="links-child">
-						<li>
-							<a href="/index.html">Home</a>
-						</li>
-						<li>
-							<a href="/about.html">About Us</a>
-						</li>
-						<li>
-							<a href="/impact.html">Our Impact</a>
-						</li>
-						<li>
-							<a href="/values.html">Our Values</a>
-						</li>
-					</ul>
-					<ul class="links-child">
-						<li>
-							<a href="/events.html">Events & Programs</a>
-						</li>
-						<li>
-							<a href="/team.html">Our Team</a>
-						</li>
-						<li>
-							<a href="/contact.html">Contact</a>
-						</li>
-					</ul>
-				</div>
-
-				<!-- form -->
-				<div class="footer-form">
-					<form action="" class="">
-						<h2 class="h4-styles">Stay up to date with us</h2>
-						<p>
-							Register with our newsletter to receive updates on our website,
-							events, and more!
-						</p>
-						<div class="text-input">
-							<label class="hidden" for="newsletter-input">Newsletter</label>
-							<input
-								type="email"
-								name="newsletter-input"
-								id="newsletter-input"
-								size="40"
-								placeholder="Enter your email"
-								aria-label="newsletter" />
-							<button type="submit" class="button2">Submit</button>
-						</div>
-					</form>
-				</div>
-			</div>
-			<hr />
-
-			<div class="bottom-links">
-				<!-- privacy policy -->
-				<a href="#">Privacy Policy</a>
-				<!-- social links -->
-				<ul class="social-svgs">
-					<li>
-						<a
-							href="https://www.linkedin.com/company/if-these-lands-could-talk-itlct/"
-							target="_blank">
-							<img
-								src="/assets/icons/global/linkedin.svg"
-								alt="If These Lands Could Talk LinkedIn Page" />
-						</a>
-					</li>
-					<li>
-						<a
-							href="https://www.facebook.com/people/If-These-Lands-Could-Talk-ITLCT/61550097182345/"
-							target="_blank">
-							<img
-								src="/assets/icons/global/facebook.svg"
-								alt="If These Lands Could Talk Facebook Page" />
-						</a>
-					</li>
-					<li>
-						<a
-							href="https://www.instagram.com/p/Cyn_NiuOxm7/"
-							target="_blank">
-							<img
-								src="/assets/icons/global/instagram.svg"
-								alt="If These Lands Could Talk Instagram Page" />
-						</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</footer>
-
-	<!-- MODAL -->
-	<!-- LAND ACKNOWLEDGEMENTS -->
-	<section class="modal hidden">
-		<div class="modal-wrapper">
-			<div class="btn-close">
-				<button>
-					<svg
-						width="64"
-						height="64"
-						viewBox="0 0 64 64"
-						fill="none"
-						xmlns="http://www.w3.org/2000/svg">
-						<title>Close pop-up window</title>
-						<path
-							d="M17.0668 50.6667L13.3335 46.9333L28.2668 32L13.3335 17.0667L17.0668 13.3333L32.0002 28.2667L46.9335 13.3333L50.6668 17.0667L35.7335 32L50.6668 46.9333L46.9335 50.6667L32.0002 35.7333L17.0668 50.6667Z"
-							fill="#1A1A1A" />
-					</svg>
-				</button>
-			</div>
-			<div class="modal-header">
-				<h4>Land Acknowledgement</h4>
-			</div>
-			<div class="modal-content">
-				<div class="modal-scroll">
-					<p>
-						ITLCT operates predominantly through digital means. The Atlanta,
-						Georgia area is the official home for ITLCT. Our leaders are
-						located in the United States between the states of Georgia and
-						Florida and so we wish to acknowledge both locations.
-					</p>
-					<p>
-						We acknowledge that ITLCT leaders reside on the traditional
-						homelands and territories of Florida consisting of but not limited
-						to the Seminole Nation and other first peoples such as the Calusa,
-						Tobobaga, Timucua, Apalachee, Miccosukee, Mascogo, Taíno, amongst
-						others. ITLCT also acknowledge that we operate, and our leaders
-						also reside on the traditional homelands and territories of
-						Georgia consisting of the Cherokee Nation and other first peoples
-						such as but not limited to the Catawba, Muscogee (Creek),
-						Chickasaw, Shawnee, Oconee, Apalachicola, Chatot, amongst others.
-					</p>
-
-					<p>
-						The first peoples of Florida and Georgia who lived, worked,
-						nurtured the land, and shared knowledge were involuntarily
-						removed, faced difficult challenges and oppression, may still be
-						seeking recognition and reconciliation in some cases, but today,
-						they continue to shape their
-					</p>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<div class="overlay-la hidden"></div>
-
-	<!-- JavaScript -->
-	<script src="js/footer-modal.js"></script>
-	<script src="js/main.js"></script>
-	<script src="js/header.js"></script>
-</body>
-
+		<!-- JavaScript -->
+		<script src="js/footer-modal.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/header.js"></script>
+	</body>
 </html>
