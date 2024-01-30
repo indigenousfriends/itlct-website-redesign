@@ -131,6 +131,7 @@ Variables (colors, text, spacing, etc.)
 
 /* button styles and a tags */
 /* overwrite sizes if needed. */
+
 a {
 	text-decoration: none;
 	color: inherit;
@@ -390,21 +391,6 @@ body {
 
 .desktop-nav li {
 	padding: 10px 20px;
-}
-
-a {
-	text-decoration: none;
-	color: inherit;
-}
-
-a:hover,
-a:focus {
-	text-decoration: underline;
-	cursor: pointer;
-}
-
-a:visited {
-	color: inherit;
 }
 
 .dp-wrapper .button2 {
@@ -701,6 +687,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		width: 100%;
 		padding-bottom: var(--spacing10);
 	}
+
 	/* Footer styles */
 	.wrapper {
 		width: var(--desktop-wrapper-width);
@@ -783,14 +770,8 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 
 	/* End of footer styles */
 }
-/* desktop 1180px */
-@media screen and (min-width: 1180px) {
-	/* adjusting font sizes and styling for p tags (in figma this is body1)*/
-	a {
-		font-weight: var(--font-weight-regular);
-		line-height: var(--line-height26);
-	}
-
+@media screen and (min-width: 1049px) {
+	/* header */
 	/* hide menu bar for larger screen */
 	#menu-container {
 		display: none;
@@ -838,7 +819,6 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	}
 
 	.dp-wrapper {
-		/* max-width: var(--desktop-wrapper-width); */
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -847,6 +827,71 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	.logo-icon {
 		min-width: 205px;
 	}
+	/* header */
+}
+/* desktop 1180px */
+@media screen and (min-width: 1180px) {
+	/* adjusting font sizes and styling for p tags (in figma this is body1)*/
+	a {
+		font-weight: var(--font-weight-regular);
+		line-height: var(--line-height26);
+	}
+
+	/* hide menu bar for larger screen
+	#menu-container {
+		display: none;
+	}
+
+	.desktop-menu {
+		display: flex;
+	}
+
+	/* top bar positioning */
+	/* header {
+		position: relative;
+	}
+
+	.top-bar {
+		position: absolute;
+		width: 100%;
+		z-index: 20;
+	} */
+
+	/* .dp-wrapper .button2 {
+		font-family: var(--main-font);
+		display: flex;
+		width: 194px;
+		height: 50px;
+		padding: 10px 40px;
+		justify-content: center;
+		align-items: center;
+		gap: 10px;
+		flex-shrink: 0;
+		border-radius: 10px;
+		background: var(--button2-color);
+		color: var(--color-white);
+		cursor: pointer;
+		border: none;
+		font-size: var(--font21);
+		font-weight: var(--font-weight-bold);
+		line-height: var(--line-height32);
+	}
+
+	.button2:hover {
+		background: var(--color-white);
+		color: var(--color-dark-onyx);
+		text-decoration: none;
+	}
+
+	.dp-wrapper {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.logo-icon {
+		min-width: 205px;
+	} */
 }
 /* desktop 1217px */
 @media screen and (min-width: 1217px) {
