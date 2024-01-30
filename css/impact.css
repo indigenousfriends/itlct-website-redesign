@@ -80,6 +80,7 @@ img {
 .tech-around-info,
 .responsible-info {
 	margin: 60px auto;
+	text-align: center;
 }
 
 
@@ -100,6 +101,7 @@ img {
 	padding-bottom: var(--spacing80);
 	margin: 0 auto;
 	gap: var(--spacing40);
+	width: 90%;
 }
 
 .icon-child {
@@ -133,6 +135,10 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 /* Tablet Only */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
 	/* Add styles that only apply to tablet. These are usually fixes to get resposnivenes right */
+	.tech-around-info, .responsible-info {
+		width: 80%;
+		text-align: center;
+	}
 }
 
 /* Tablet and Larger */
@@ -186,8 +192,6 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		line-height: var(--line-height58);
 	}
 
-	
-
 	/* icon section */
 	.icons-parent {
 		flex-direction: row;
@@ -205,7 +209,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 /* Desktop Only */
 @media screen and (min-width: 1024px) {
 	/* Add styles that apply specifically to desktop */
-  
+
 	/* top and bottom section */
 	.h4-styles {
 		font-size: var(--font46);
@@ -243,6 +247,10 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		max-width: 500px;
 		margin: 0 auto;
 	}
+	.tech-around-info,
+.responsible-info {
+	text-align: left;
+}
 	/* tech around section */
 	/* red block */
 	.tech-img.style-left::before {
