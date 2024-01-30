@@ -216,6 +216,9 @@ Media Queries (overriding styles for different screen sizes)
 /* Desktop Only */
 @media screen and (min-width: 1024px) {
 	/* Add styles that apply specifically to desktop */
+	.mobile-hero {
+		display: none;
+	}
 
 	/* Values header and p needs to be on top of the hero */
 	.desktop-parent {
@@ -260,7 +263,7 @@ Media Queries (overriding styles for different screen sizes)
 		margin: 0;
 		font-size: var(--font21);
 		font-weight: var(--font-weight-regular);
-		line-height: var(--line-height26);
+		line-height: var(--line-height32);
 	}
 	.onyxback,
 	.grapeback,
