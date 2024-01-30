@@ -142,3 +142,8 @@ Media Queries (overriding styles for different screen sizes)
 		margin: var(--spacing10) 0px;
 	}
 }
+@media screen and (min-width: 1180px) {
+	.contact-form-parent {
+		margin-top: var(--spacing100);
+	}
+}
