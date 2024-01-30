@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-	<!-- This file is a placehodler for a page. Rename this file to the name of the page you are working on. -->
-
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -18,8 +16,6 @@
 		/>
 		<link rel="stylesheet" href="css/normalize.css" />
 		<link rel="stylesheet" href="css/global.css" />
-		<link rel="stylesheet" href="css/header.css" />
-		<!-- In a new branch, rename the page.css file adding the name of that actual page (Example: home.css) -->
 		<link rel="stylesheet" href="css/impact.css" />
 	</head>
 
@@ -32,17 +28,19 @@
 					<!-- logo container -->
 					<div class="logo-container">
 						<div class="img-container logo-icon">
-							<picture>
-								<source
-									media="(min-width:768px)"
-									srcset="./assets/icons/global/logo-icon-big.svg"
-								/>
-								<img
-									src="./assets/icons/global/logo-icon.svg"
-									alt="If These Lands Could Talk logo-icon"
-									style="width: auto"
-								/>
-							</picture>
+							<a href="/index.html">
+								<picture>
+									<source
+										media="(min-width:1180px)"
+										srcset="/assets/icons/global/logo-icon-big.svg"
+									/>
+									<img
+										src="/assets/icons/global/logo-icon.svg"
+										alt="If These Lands Could Talk logo-icon"
+										style="width: auto"
+									/>
+								</picture>
+							</a>
 						</div>
 					</div>
 					<!-- end logo -->
@@ -53,7 +51,7 @@
 								<a href="/about.html"> About Us</a>
 							</li>
 							<li>
-								<a href="/imapct.html"> Our Impact</a>
+								<a href="/impact.html"> Our Impact</a>
 							</li>
 							<li>
 								<a href="/values.html"> Our Values</a>
@@ -64,14 +62,13 @@
 							<li>
 								<a href="/team.html"> Our Team</a>
 							</li>
-							<li>
-								<a href="#"> Contact</a>
-							</li>
 						</ul>
 					</div>
-					<a href="#" class="button2"> Support Us</a>
+					<a href="/contact.html" class="button2"> Contact Us</a>
+					<!-- hamburger menu -->
 					<div id="menu-container">
 						<button id="mobile-menu">
+							<span class="sr-only">Mobile menu button</span>
 							<svg
 								id="mobileOpen"
 								width="24"
@@ -135,20 +132,14 @@
 									<a href="/team.html"> Our Team</a>
 								</li>
 								<li>
-									<a href="/contact.html"> Contact</a>
-								</li>
-								<li>
-									<a href="#"> Support Us</a>
+									<a href="/contact.html"> Contact Us</a>
 								</li>
 							</ul>
 						</div>
 					</div>
-
-					<!-- hamburger menu -->
 				</div>
 			</nav>
 		</header>
-
 		<!-- Title section -->
 		<div class="hero">
 			<div class="title-img"></div>

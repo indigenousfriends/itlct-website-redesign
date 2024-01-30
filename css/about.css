@@ -28,7 +28,6 @@ Page Component Styles (icon grid, team member card)
 
 .hero-text {
 	border: 2px solid transparent;
-	/* width: 369px; */
 	padding: 0px 25px;
 }
 
@@ -108,10 +107,8 @@ Media Queries (overriding styles for different screen sizes)
 	/* Add styles that only apply to tablet. These are usually fixes to get responsiveness right */
 }
 
-
 /* Tablet and Larger */
 @media screen and (min-width: 768px) {
-
 	/* Add styles that apply to table and desktop */
 	.wrapper {
 		max-width: var(--desktop-wrapper-width);
@@ -128,11 +125,12 @@ Media Queries (overriding styles for different screen sizes)
 		left: 0;
 		width: 100%;
 		height: 100%;
-		background: linear-gradient(107deg,
-				rgba(9, 9, 9, 0.8) 9.51%,
-				rgba(9, 9, 9, 0) 76.72%);
+		background: linear-gradient(
+			107deg,
+			rgba(9, 9, 9, 0.8) 9.51%,
+			rgba(9, 9, 9, 0) 76.72%
+		);
 		z-index: 1;
-
 	}
 
 	.hero-text {
@@ -196,13 +194,11 @@ Media Queries (overriding styles for different screen sizes)
 
 	.btn-container {
 		display: none;
-
 	}
 }
 
 /* Desktop Only */
 @media screen and (min-width: 1024px) {
-
 	.signature {
 		font-size: var(--font24);
 		font-weight: var(--font-weight-medium);
