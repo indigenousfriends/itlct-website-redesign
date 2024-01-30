@@ -53,12 +53,12 @@ section div p {
 	margin-bottom: var(--spacing100);
 }
 
-p,
-.h4-styles {
+.about-wrapper p,
+.about-wrapper .h4-styles {
 	color: var(--color-onyx);
 }
 
-.h4-styles {
+.about-wrapper .h4-styles {
 	text-align: center;
 }
 
@@ -145,6 +145,12 @@ Media Queries (overriding styles for different screen sizes)
 		transform: translate(-50%, -33%);
 	}
 
+	.hero-text p {
+		font-size: var(--font21);
+		line-height: var(--line-height32);
+		text-align: left;
+	}
+
 	.about-wrapper {
 		max-width: 800px;
 		margin-bottom: 200px;
@@ -164,7 +170,7 @@ Media Queries (overriding styles for different screen sizes)
 		text-align: left;
 	}
 
-	p {
+	.about-wrapper p {
 		font-family: var(--body-font);
 		font-size: var(--font21);
 		font-weight: var(--font-weight-regular);
@@ -173,7 +179,7 @@ Media Queries (overriding styles for different screen sizes)
 		text-align: left;
 	}
 
-	.h4-styles {
+	.about-wrapper .h4-styles {
 		font-size: var(--font46);
 		font-weight: var(--font-weight-bold);
 		line-height: var(--line-height50);
@@ -190,9 +196,7 @@ Media Queries (overriding styles for different screen sizes)
 		color: var(--color-onyx);
 	}
 
-	.btn-container {
-		display: none;
-	}
+	
 }
 
 /* Desktop Only */
@@ -203,4 +207,11 @@ Media Queries (overriding styles for different screen sizes)
 		font-weight: var(--font-weight-medium);
 		line-height: var(--line-height58);
 	}
+}
+
+@media screen and (min-width: 1180px) { 
+	.btn-container {
+	display: none;
+}
+
 }
