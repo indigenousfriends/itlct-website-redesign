@@ -490,6 +490,7 @@ Media Queries (overriding styles for different screen sizes)
 	.empowering-text p {
 		margin: 0 0 0 0;
 		padding: 0 0 0 0;
+		line-height: var(--line-height32);
 	}
 	.empowering-img-block {
 		background-color: transparent;
