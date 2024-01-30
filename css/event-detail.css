@@ -59,23 +59,24 @@ html {
 	align-items: center;
 }
 
+.template-two-img {
+	padding-top: 40px;
+	padding-bottom: 30px;
+}
+
 .template-three-img {
 	justify-content: center;
 	padding-top: 0px;
+	padding-bottom: 80px;
 }
 
 .button3 {
 	text-align: center;
 	text-decoration: none !important;
-	color: var(--color-white);
-	padding: 15px 0px;
 }
 
-.button3:hover,
-.button3:focus {
-	background-color: transparent;
-	border-color: 10px solid var(--button3-hover-border);
-	color: var(--color-onyx);
+.template-button a {
+	color: var(--color-white);
 }
 
 /* Tablet Only */
@@ -126,6 +127,5 @@ html {
 	}
 	.template-button {
 		justify-content: center;
-		color: var(--color-white);
 	}
 }
