@@ -127,5 +127,6 @@ html {
 	}
 	.template-button {
 		justify-content: center;
+		padding-top: 0px;
 	}
 }
