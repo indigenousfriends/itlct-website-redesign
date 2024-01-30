@@ -109,6 +109,11 @@ Page Component Styles (icon grid, team member card)
 .tealback {
 	background-color: var(--color-teal);
 }
+
+/* desktop text for Technology and Innovation title */
+.desktop-text {
+	display: none;
+}
 .support {
 	background-color: var(--color-yaleblue);
 	margin-top: 90px;
@@ -128,19 +133,22 @@ Page Component Styles (icon grid, team member card)
 	color: var(--color-white);
 	font-size: var(--font28);
 	line-height: var(--line-height32);
+	margin-bottom: 0px;
 }
 .support-header svg {
 	position: relative;
-	bottom: 2.5px;
-	left: 5px;
+	bottom: -7px;
+	left: 9px;
 }
 .support-text p {
 	font-size: var(--font28);
 	font-weight: var(--font-weight-bold);
 	line-height: var(--line-height32);
 	margin: var(--spacing20) 0px;
+	font-family: var(--main-font);
 }
 .support-text a {
+	font-family: var(--body-font);
 	font-size: var(--font21);
 	font-weight: var(--font-weight-regular);
 	line-height: var(--line-height32);
@@ -271,6 +279,12 @@ Media Queries (overriding styles for different screen sizes)
 	.tealback {
 		padding-right: 44px;
 	}
+
+	/* desktop text for Technology and Innovation title */
+	.desktop-text {
+		display: block;
+	}
+
 	/* Cards need to change from column to row with some stylized sizing and padding*/
 	.desktop-group {
 		display: flex;
@@ -423,6 +437,7 @@ Media Queries (overriding styles for different screen sizes)
 		font-size: var(--font46);
 		font-weight: var(--font-weight-bold);
 		line-height: var(--line-height50);
+		margin-bottom: 20px;
 	}
 	.support p {
 		font-size: var(--font46);
