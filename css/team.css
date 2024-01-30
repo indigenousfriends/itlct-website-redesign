@@ -24,12 +24,12 @@ h1 {
 }
 
 .button2 {
-	min-width: 187px;
+	min-width: var(--spacing185);
 	min-height: 50px;
-	padding: 10px 40px;
+	padding: var(--spacing10) var(--spacing40);
 	color: var(--color-white);
 	border: none;
-	border-radius: 10px;
+	border-radius: var(--border-radius10);
 	background-color: var(--button2-color);
 	font-family: var(--main-font);
 	font-weight: var(--font-weight-bold);
@@ -40,11 +40,11 @@ h1 {
 	color: var(--color-onyx);
 }
 .button3 {
-	min-width: 300px;
+	width: 300px;
 	min-height: 50px;
-	padding: 11px 92px;
+	padding: var(--spacing10) 0px;
 	border: none;
-	border-radius: 10px;
+	border-radius: var(--border-radius10);
 	background-color: var(--button2-color);
 	color: var(--color-white);
 	font-family: var(--main-font);
@@ -54,6 +54,10 @@ h1 {
 .button3:hover {
 	background-color: var(--color-white);
 	color: var(--color-onyx);
+}
+
+.button3 a:hover {
+	text-decoration: none;
 }
 
 /* 
@@ -101,7 +105,7 @@ picture img {
 	padding: 60px 26px;
     background: var(--color-teal);
 	border: none;
-	border-radius: 10px;
+	border-radius: var(--border-radius10);
 
 	display: flex;
 	flex-direction: column;
@@ -110,7 +114,7 @@ picture img {
 }
 
 .team-card .h4-styles{
-	margin: 20px 0px 0px 0px;
+	margin: var(--spacing20) 0px 0px 0px;
 }
 .team-card .h5-styles {
 	margin: var(--spacing10) 0px;
@@ -120,19 +124,8 @@ picture img {
 	color: var(--color-white);
 }
 
-/* icon and button container */
-.icon-button {
-	margin: 0px;
-	display: flex;
-	flex-direction: column;
-	align-items: self-start;
-	gap: 20px;
-}
-/* icon container */
-.icons {
-	display: flex;
-	align-items: center;
-	gap: 20px;
+.team-card-info {
+	max-width: 530px;
 }
 
 
@@ -143,16 +136,18 @@ picture img {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	max-width: 700px;
+	width: 90%;
 }
 
 /* Margin for current positions and get involved text */
 .current-positions .h4-styles,
 .get-involved .h4-styles {
-	margin: 0px 0px 20px 0px;
+	margin: 0px 0px var(--spacing20) 0px;
 }
 .current-positions p,
 .get-involved p {
-	margin: 0px 0px 40px 0px;
+	margin: 0px 0px var(--spacing40) 0px;
 }
 
 /* get involved section */
@@ -176,7 +171,7 @@ picture img {
 }
 
 .team-card img, .get-involved img {
-	border-radius: 10px;
+	border-radius: var(--border-radius10);
 }
 
 
@@ -186,11 +181,10 @@ picture img {
 }
 /* positioning for body to stop scroll when modal is open */
 .fixed {
-	position: fixed;
-	width: 100%;
+	overflow: hidden;
 }
 /* modal overlay */
-.overlay-la {
+.overlay-team {
 	position: fixed;
 	top: 0;
 	bottom: 0;
@@ -205,7 +199,7 @@ picture img {
 .natasha-modal, .marsha-modal {
 	width: 90%;
 	max-width: 1100px;
-	height: 95vh;
+	max-height: 95vh;
 	margin: 0 auto;
 	/* was 26px and replaced with variable */
 	padding: 26px;
@@ -223,13 +217,13 @@ picture img {
 
 .modal-wrapper {
 	position: relative;
-	height: 95vh;
 }
 .modal-content {
 	overflow-y: scroll;
 	height: 40%;
 }
-.modal-header {
+.marsha-modal .modal-header,
+.natasha-modal .modal-header {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -239,6 +233,9 @@ picture img {
 	max-width: 140px;
 }
 /* modal text content */
+.natasha-modal .modal-scroll, .marsha-modal .modal-scroll {
+	padding: 0px;
+}
 .natasha-modal p, .marsha-modal p {
 	color: var(--color-onyx);
 }
@@ -246,25 +243,23 @@ picture img {
 .team-card-info-modal {
 	display: flex;
 	flex-direction: column;
-	align-items: flex-start;
-	
 }
 
 .team-card-info-modal .h4-styles, .team-card-info-modal .h5-styles {
 	text-align: center;
 	color: var(--color-onyx);
-	margin: 10px 0px;
+	margin: var(--spacing10) 0px;
 }
-.btn-close {
+.team-btn-close {
 	position: absolute;
 	right: -10px;
 	top: 1px;
 }
-.btn-close button {
+.team-btn-close button {
 	border: none;
 	background-color: transparent;
 }
-.btn-close svg {
+.team-btn-close svg {
 	width: 32px;
 	height: 32px;
 }
@@ -320,9 +315,9 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	.header-content > * {
 		width: 50%;
 	}
-	/* .header-info {
-		width: 30%;
-	} */
+	.header-info {
+		margin-bottom: 0px;
+	}
 	.header-info .h3-styles {
 		font-weight: var(--font-weight-bold);
 		line-height: var(--line-height58);
@@ -335,16 +330,17 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	}
 
 	/* team card section */
+	.team-parent {
+		margin: var(--spacing164) auto;
+	}
 	.team-card {
 		flex-direction: row;
 		justify-content: left;
 		gap: 30px;
+		padding: 30px;
 	}
 	.team-card-picture {
 		min-width: 240px;
-	}
-	.icon-button {
-		flex-direction: row;
 	}
 
 	/* current positions */
@@ -354,9 +350,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 
 	/* get involved */
 	.get-involved {
-		height: 70vh;
 		min-height: 70vh;
-		max-height: 800px;
 		margin-bottom: 0px;
 		/* gradient is opposite- needs to be adjusted in global styles */
 		background: var(--color-bluepurple);
@@ -366,7 +360,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	}
 	.get-involved-wrapper {
 		width: 70%;
-		margin: 0 auto;
+		margin: 190px auto;
 		display: flex;
 		flex-direction: row-reverse;
 		justify-content: center;
@@ -384,23 +378,42 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	}
 	.get-involved p {
 		color: var(--color-white);
-		margin-bottom: 20px;
+		margin-bottom: var(--spacing20);
 	}
-	.get-involved-text .button3 {
-		padding: 11px 10%;
+	/* .get-involved-text .button3 {
+		width: 300px;
+		padding: var(--spacing10) 10%;
 		width: 90%;
 		max-width: 350px;
+		background-color: transparent;
+		border: 3px solid #FFF;
+	} */
+	.get-involved-text .button3 {
+		width: 300px;
+		height: 50px;
+		margin: 0 auto;
+		margin-left: 0px;
+		gap: 10px;
+		flex-shrink: 0;
+		border-radius: 10px;
+		background: rgb(0, 0, 0, 0);
+		color: var(--color-white);
+		border: 3px solid var(--color-white);
+		font-size: var(--font21);
+		font-weight: var(--font-weight-bold);
+		line-height: var(--line-height26);
+		cursor: pointer;
+	}
+	
+	.get-involved-text .button3:hover,
+	.get-involved-text .button3:focus {
+		color: var(--color-onyx);
+		background: var(--color-white) !important;
 	}
 
 	.get-involved-picture {
 		margin-bottom: 0px;
 		width: 435px;
-	}
-
-	/* get involved button */
-	.get-involved-text .button3 {
-		background-color: transparent;
-		border: 3px solid #FFF;
 	}
 
 	/* Modal */
@@ -411,13 +424,18 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		flex-direction: row;
 		gap: 5%;
 	}
-
 	.modal-content {
 		height: 55%;
 	}
 	.btn-close {
 		right: -50px;
 		top: -50px;
+	}
+	.team-card-info-modal .h4-styles, .team-card-info-modal .h5-styles {
+		text-align: left;
+	}
+	.modal-header .team-card-picture {
+		min-width: fit-content;
 	}
 }
 
@@ -430,6 +448,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	.header-content picture {
 		max-width: 300px;
 	}
+	
 }
 
 /* Desktop Only */
@@ -445,9 +464,10 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		font-size: var(--font21);
 	}
 
-	/* .team-card h4 {
-		margin: 0px;
-	} */
+	.team-card-info {
+		max-width: 100%;
+	}
+	
 	.team-card p {
 		/* adjust later */
 		margin-top: 8px;
@@ -462,6 +482,9 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	}
 
 	/* current positions */
+	.current-positions {
+		margin: var(--spacing213) auto;
+	}
 	.current-positions .h4-styles {
 		font-size: var(--font46);
 		line-height: var(--line-height50);
@@ -472,7 +495,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 @media screen and (min-width: 1300px) {
 	.header-content {
 		width: 62%;
-		gap: 185px;
+		gap: 15%;
 	}
 	.header-content .h3-styles {
 		font-size: var(--font56);
@@ -486,11 +509,8 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	}
 	.team-card {
 		width: 48%;
-		padding: 20px;
-		/* might need to adjust height later */
-		height: 45vh; 
-		max-height: 600px;
-		min-height: 420px;
+		padding: var(--spacing20);
+		min-height: 375px;
 	}
 	.team-card-picture {
 		width: 200px;
@@ -498,29 +518,16 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	.team-card-info {
 		width: 50%;
 	}
-	.icons a {
-		min-width: 50px;
-	}
-	.icon-button .button2 {
-		padding: 0px;
-		max-width: 50%;
-	}
-	.icon-button {
-		display: flex;
-		flex-direction: column;
-	}
 }
 /* for screen sizes 1600 and larger */
 @media screen and (min-width: 1600px) {
-	.icon-button {
-		flex-direction: row;
-	}
 	.team-card-parent {
 	width: 75%;
 	}
 	.team-card {
-		min-height: 400px;
+		min-height: 320px;
 	}
+
 	.get-involved-text {
 		width: 40%;
 	}
