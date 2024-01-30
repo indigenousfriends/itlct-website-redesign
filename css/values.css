@@ -138,12 +138,13 @@ Page Component Styles (icon grid, team member card)
 	font-size: var(--font28);
 	font-weight: var(--font-weight-bold);
 	line-height: var(--line-height32);
-	margin: var(--spacing20) 0px 0px 0px;
+	margin: var(--spacing20) 0px;
 }
 .support-text a {
 	font-size: var(--font21);
 	font-weight: var(--font-weight-regular);
 	line-height: var(--line-height32);
+	color: var(--color-white);
 }
 .support-logos {
 	display: flex;
