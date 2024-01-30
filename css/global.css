@@ -39,7 +39,8 @@ Variables (colors, text, spacing, etc.)
 	--color-amaranth: #b91515;
 	--color-teal: #007a80;
 	--color-cybergrape: #6c4681;
-	--color-onyx: #1f1d1d;
+	--color-dark-onyx: #1f1d1d;
+	--color-onyx: #424241;
 	--color-yaleblue: #184f85;
 	--color-hotpink: #fa6cb7;
 	--color-citrine: #d3c53f;
@@ -48,11 +49,13 @@ Variables (colors, text, spacing, etc.)
 	--color-grey: #6c6c6c;
 	--color-bluepurple: linear-gradient(0deg, #6c4681 -5.71%, #184f85 103.44%);
 	--color-purpleblue: linear-gradient(180deg, #6c4681 -5.71%, #184f85 103.44%);
-	--color-yellowgreen: linear-gradient(180deg,
-			#d3c53f 0%,
-			#d3c53f 26.04%,
-			#92a32d 58.85%,
-			#b37122 100%);
+	--color-yellowgreen: linear-gradient(
+		180deg,
+		#d3c53f 0%,
+		#d3c53f 26.04%,
+		#92a32d 58.85%,
+		#b37122 100%
+	);
 
 	/* Color Assignment */
 	--body-background-color: var(--color-white);
@@ -115,85 +118,84 @@ Variables (colors, text, spacing, etc.)
 	--mobile-wrapper-width: 95%;
 }
 
-	/* button styles and a tags */
-	/* overwrite sizes if needed. */
-	a {
-		text-decoration: none;
-		color: inherit;
-	}
+/* button styles and a tags */
+/* overwrite sizes if needed. */
+a {
+	text-decoration: none;
+	color: inherit;
+}
 
-	a:hover,
-	a:focus {
-		text-decoration: underline;
-		cursor: pointer;
-	}
+a:hover,
+a:focus {
+	text-decoration: underline;
+	cursor: pointer;
+}
 
-	a:visited {
-		color: inherit;
-	}
+a:visited {
+	color: inherit;
+}
 
-	.button1 {
-		width: 300px;
-		height: 50px;
-		margin: 0 auto;
-		gap: 10px;
-		flex-shrink: 0;
-		border-radius: 10px;
-		background: rgb(0, 0, 0, 0);
-		color: var(--color-white);
-		border: 3px solid var(--color-white);
-		font-size: var(--font21);
-		font-weight: var(--font-weight-bold);
-		line-height: var(--line-height26);
-		cursor: pointer;
-	}
+.button1 {
+	width: 300px;
+	height: 50px;
+	margin: 0 auto;
+	gap: 10px;
+	flex-shrink: 0;
+	border-radius: 10px;
+	background: rgb(0, 0, 0, 0);
+	color: var(--color-white);
+	border: 3px solid var(--color-white);
+	font-size: var(--font21);
+	font-weight: var(--font-weight-bold);
+	line-height: var(--line-height26);
+	cursor: pointer;
+}
 
-	.button1:hover,
-	.button1:focus {
-		background: var(--button1-hover-border);
-		color: var(--color-onyx);
-	}
+.button1:hover,
+.button1:focus {
+	background: var(--button1-hover-border);
+	color: var(--color-dark-onyx);
+}
 
-	.button2 {
-		min-width: 187px;
-		min-height: 50px;
-		padding: 10px 40px;
-		color: var(--color-white);
-		border: none;
-		border-radius: 10px;
-		background-color: var(--button2-color);
-		font-family: var(--main-font);
-		font-weight: var(--font-weight-bold);
-		font-size: var(--font21);
-		cursor: pointer;
-	}
+.button2 {
+	min-width: 187px;
+	min-height: 50px;
+	padding: 10px 40px;
+	color: var(--color-white);
+	border: none;
+	border-radius: 10px;
+	background-color: var(--button2-color);
+	font-family: var(--main-font);
+	font-weight: var(--font-weight-bold);
+	font-size: var(--font21);
+	cursor: pointer;
+}
 
-	.button2:hover,
-	.button2:focus {
-		background-color: var(--button2-hover);
-		color: var(--color-onyx);
-	}
+.button2:hover,
+.button2:focus {
+	background-color: var(--button2-hover);
+	color: var(--color-dark-onyx);
+}
 
-	.button3 {
-		min-width: 300px;
-		min-height: 50px;
-		padding: 11px 92px;
-		border: none;
-		border-radius: 10px;
-		background-color: var(--button2-color);
-		color: var(--color-white);
-		font-family: var(--main-font);
-		font-weight: var(--font-weight-bold);
-		font-size: var(--font21);
-		cursor: pointer;
-	}
+.button3 {
+	min-width: 300px;
+	min-height: 50px;
+	padding: 11px 92px;
+	border: none;
+	border-radius: 10px;
+	background-color: var(--button2-color);
+	color: var(--color-white);
+	font-family: var(--main-font);
+	font-weight: var(--font-weight-bold);
+	font-size: var(--font21);
+	cursor: pointer;
+}
 
-	.button3:hover,
-	.button3:focus {
-		background-color: var(--button3-hover-border);
-		color: var(--color-onyx);
-	}
-
+.button3:hover,
+.button3:focus {
+	background-color: var(--button3-hover-border);
+	color: var(--color-dark-onyx);
+}
 
 /* 
 ===================================
@@ -330,7 +332,7 @@ Global Component Styles (buttons, forms, etc.)
 
 .text-input .button2:hover {
 	background-color: var(--color-white);
-	color: var(--color-onyx);
+	color: var(--color-dark-onyx);
 }
 
 /* HEADER STYLES BB */
@@ -341,7 +343,7 @@ body {
 
 /* top bar section */
 .top-bar {
-	background-color: var(--color-onyx);
+	background-color: var(--color-dark-onyx);
 	color: var(--color-white);
 	display: flex;
 	justify-content: space-around;
@@ -438,7 +440,7 @@ nav .img-container {
 	margin: 0;
 	gap: 20px;
 	flex-direction: column;
-	background-color: var(--color-onyx);
+	background-color: var(--color-dark-onyx);
 	width: 200px;
 	height: auto;
 	overflow: hidden;
@@ -452,17 +454,14 @@ nav .img-container {
 	font-size: var(--font16);
 }
 
-
-
 /* The Mobile X */
 #mobileClose {
 	display: hidden;
 }
 
-
 /* FOOTER STYLES */
 footer {
-	background-color: var(--color-onyx);
+	background-color: var(--color-dark-onyx);
 	color: var(--color-white);
 }
 
@@ -480,7 +479,6 @@ footer a img:hover {
 	padding-top: var(--spacing40);
 	display: flex;
 	flex-direction: column;
-
 }
 
 .footer-form .h4-styles {
@@ -553,7 +551,6 @@ footer a img:hover {
 }
 
 /* MODAL */
-
 
 /* positioning for body to stop scroll when modal is open */
 .fixed {
@@ -774,7 +771,6 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 }
 /* desktop 1180px */
 @media screen and (min-width: 1180px) {
-
 	/* adjusting font sizes and styling for p tags (in figma this is body1)*/
 	a {
 		font-weight: var(--font-weight-regular);
@@ -823,7 +819,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 
 	.button2:hover {
 		background: var(--color-white);
-		color: var(--color-onyx);
+		color: var(--color-dark-onyx);
 		text-decoration: none;
 	}
 
@@ -858,4 +854,3 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		gap: 5%;
 	}
 }
-
