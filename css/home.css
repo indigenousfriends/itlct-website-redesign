@@ -80,7 +80,6 @@ Community Partnerships Section
 
 .partnerships-paragraph p {
 	width: 90%;
-	
 }
 
 .partnerships-paragraph h4 {
@@ -121,7 +120,7 @@ Global Ecosystem Section
 	padding: 45px 15px;
 	width: 90%;
 	border-radius: var(--spacing10);
-	background-color: var(--color-onyx);
+	background-color: var(--color-dark-onyx);
 	position: relative;
 }
 
@@ -197,7 +196,7 @@ Our Values Section
 
 /* the entire section */
 .values {
-	background-color: var(--color-onyx);
+	background-color: var(--color-dark-onyx);
 	padding-top: var(--spacing20);
 	padding-bottom: var(--spacing40);
 }
@@ -258,8 +257,6 @@ Events and Programs Section
 .events-and-programs h3 {
 	text-align: center;
 }
-
-
 
 /* 
 ===================================
@@ -656,7 +653,6 @@ Global Ecosystems Section
 		border-radius: var(--spacing10);
 		padding: var(--spacing100);
 		width: 70%;
-		
 	}
 	/* targeting the color of the font in the div */
 	.ecosystem-subsection p {
@@ -867,10 +863,8 @@ Global Ecosystem Section
 	}
 	/* positioning for the cybergrape ecosystem div */
 	.ecosystem-subsection {
-		
 		position: relative;
 		left: 30px;
-		
 	}
 	/* positioning for the onyx blockquote */
 	.blockquote {
