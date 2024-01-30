@@ -158,7 +158,6 @@ Page Component Styles (icon grid, team member card)
 	display: flex;
 	flex-direction: column;
 	padding-bottom: var(--spacing80);
-	
 }
 .support-logo-01 {
 	width: 82px;
@@ -428,11 +427,11 @@ Media Queries (overriding styles for different screen sizes)
 	p {
 		color: var(--color-white);
 	}
-	
+
 	.support-header {
 		padding-top: 115px;
 	}
-	
+
 	.support-header h2.h2-styles {
 		font-size: var(--font46);
 		font-weight: var(--font-weight-bold);
@@ -532,6 +531,6 @@ Media Queries (overriding styles for different screen sizes)
 /* For 1300px and larger */
 @media screen and (min-width: 1300px) {
 	.values-card p {
-	line-height: var(--line-height32);
+		line-height: var(--line-height32);
 	}
 }
