@@ -47,6 +47,7 @@ Section Styles (background, padding, etc.)
 	line-height: var(--line-height40);
 }
 .title p {
+	font-family: var(--body-font);
 	line-height: var(--line-height26);
 	margin: 0px;
 	color: var(--color-onyx);
@@ -103,6 +104,10 @@ Section Styles (background, padding, etc.)
 	line-height: var(--line-height32);
 }
 
+.event-page-card-title p {
+	font-family: var(--body-font);
+}
+
 /* card title background colors */
 .card-item1 .event-page-card-title {
 	background-color: var(--color-yaleblue);
@@ -124,6 +129,7 @@ Section Styles (background, padding, etc.)
 .event-page-card-text p {
 	color: var(--color-onyx);
 	line-height: var(--line-height26);
+	font-family: var(--body-font);
 }
 
 /* Upcoming Events/Previous Events */
@@ -166,6 +172,7 @@ Section Styles (background, padding, etc.)
 }
 .event-info p {
 	margin: 0px;
+	font-family: var(--body-font);
 	font-size: var(--font21);
 	line-height: var(--line-height32);
 	color: var(--color-onyx);
