@@ -1,0 +1,95 @@
+html {
+	box-sizing: border-box;
+}
+
+.template-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: var(--mobile-wrapper-width);
+	margin: 0 auto;
+	max-width: var(--wrapper-width-max);
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.template-wrapper img {
+	display: flex;
+	align-items: center;
+	margin-bottom: 60px;
+	margin-top: 40px;
+}
+
+.template-main-header {
+	text-align: center;
+	color: var(--color-onyx);
+	--spacing20: 20px;
+}
+
+.template-p {
+	color: var(--color-onyx);
+	--spacing20: 20px;
+	font-family: var(--body-font);
+}
+
+.template-button {
+	display: flex;
+	padding-top: 40px;
+	padding-bottom: 150px;
+	text-wrap: nowrap;
+}
+
+.template-hero-img {
+	padding-top: 80px;
+}
+
+.template-gradient {
+	display: flex;
+	min-height: 73px;
+	background-image: linear-gradient(180deg, #184f85 -29.55%, #6c4681 118.18%);
+	width: 100%;
+	justify-content: center;
+}
+.template-highlights {
+	color: var(--color-white);
+}
+.template-concept-img {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.template-three-img {
+	justify-content: center;
+}
+
+/* Tablet Only */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+	/* Add styles that only apply to tablet. These are usually fixes to get resposnivenes right */
+}
+
+/* Tablet and Larger */
+@media screen and (min-width: 768px) {
+	/* Add styles that apply to table and desktop */
+}
+
+/* Desktop Only */
+@media screen and (min-width: 1024px) {
+	/* Add styles that apply specifically to desktop */
+
+	.template-wrapper {
+		display: flex;
+		flex-direction: column;
+		padding-top: 128.5px;
+		margin-bottom: 380px;
+		margin-top: 71px;
+	}
+	.template-button {
+		justify-content: center;
+		color: var(--color-white);
+	}
+
+	.button3 {
+		padding: 0%;
+	}
+}
