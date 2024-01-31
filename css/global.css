@@ -836,66 +836,6 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		font-weight: var(--font-weight-regular);
 		line-height: var(--line-height26);
 	}
-
-	/* hide menu bar for larger screen
-	#menu-container {
-		display: none;
-	}
-
-	.desktop-menu {
-		display: flex;
-	}
-
-	/* top bar positioning */
-	/* header {
-		position: relative;
-	}
-
-	.top-bar {
-		position: absolute;
-		width: 100%;
-		z-index: 20;
-	} */
-
-	/* .dp-wrapper .button2 {
-		font-family: var(--main-font);
-		display: flex;
-		width: 194px;
-		height: 50px;
-		padding: 10px 40px;
-		justify-content: center;
-		align-items: center;
-		gap: 10px;
-		flex-shrink: 0;
-		border-radius: 10px;
-		background: var(--button2-color);
-		color: var(--color-white);
-		cursor: pointer;
-		border: none;
-		font-size: var(--font21);
-		font-weight: var(--font-weight-bold);
-		line-height: var(--line-height32);
-	}
-
-	.button2:hover {
-		background: var(--color-white);
-		color: var(--color-dark-onyx);
-		text-decoration: none;
-	}
-
-	.dp-wrapper {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-	}
-
-	.logo-icon {
-		min-width: 205px;
-	} */
-}
-/* desktop 1217px */
-@media screen and (min-width: 1217px) {
-	/* Add styles that apply specifically to desktop */
 }
 
 /* For larger screens */
