@@ -15,8 +15,10 @@ Styles for an individual page
 Page Component Styles (icon grid, team member card)
 ===================================
 */
-.black-text .h3-styles, .black-text .h4-styles, .black-text p {
-    color: var(--color-onyx);
+.black-text .h3-styles,
+.black-text .h4-styles,
+.black-text p {
+	color: var(--color-onyx);
 }
 
 h1 {
@@ -69,7 +71,7 @@ Section Styles (background, padding, etc.)
 	width: var(--mobile-wrapper-width);
 }
 .h5-styles {
-    color: var(--color-white);
+	color: var(--color-white);
 }
 
 /* header section */
@@ -94,7 +96,7 @@ picture img {
 /* team card section */
 .team-parent {
 	display: flex;
-	flex-direction: column;
+	flex-direction: column-reverse;
 	justify-content: space-between;
 	width: 90%;
 	margin: 0 auto;
@@ -103,7 +105,7 @@ picture img {
 .team-card {
 	margin: var(--spacing20) 0;
 	padding: 60px 26px;
-    background: var(--color-teal);
+	background: var(--color-teal);
 	border: none;
 	border-radius: var(--border-radius10);
 
@@ -113,12 +115,11 @@ picture img {
 	align-items: center;
 }
 
-.team-card .h4-styles{
+.team-card .h4-styles {
 	margin: var(--spacing20) 0px 0px 0px;
 }
 .team-card .h5-styles {
 	margin: var(--spacing10) 0px;
-
 }
 .team-card p {
 	color: var(--color-white);
@@ -127,7 +128,6 @@ picture img {
 .team-card-info {
 	max-width: 530px;
 }
-
 
 /* Current positions */
 .current-positions {
@@ -165,15 +165,15 @@ picture img {
 	align-items: center;
 }
 
-
-.black-text .h3-styles, .black-text .h4-styles {
+.black-text .h3-styles,
+.black-text .h4-styles {
 	text-align: center;
 }
 
-.team-card img, .get-involved img {
+.team-card img,
+.get-involved img {
 	border-radius: var(--border-radius10);
 }
-
 
 /* MODAL STYLES */
 .hidden {
@@ -183,6 +183,67 @@ picture img {
 .fixed {
 	overflow: hidden;
 }
+
+/* Modal Content */
+.modal-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.406);
+}
+
+.modal-content {
+	border-radius: var(--border-radius10);
+	background-color: var(--color-white);
+	padding: var(--spacing65);
+	width: 80%;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	max-width: 1100px;
+	max-height: 90vh;
+}
+
+.modal-btn-container {
+	display: flex;
+	justify-content: flex-end;
+}
+.modal-text-container,
+.modal-scroll-container {
+	display: flex;
+	flex-direction: column;
+	gap: var(--spacing-sm);
+	font-size: var(--font21);
+	line-height: var(--line-height28);
+}
+
+.modal-scroll-container {
+	/* max-height: calc(85vh - 300px); */
+	overflow-y: auto;
+	padding-bottom: var(--spacing40);
+}
+
+.modal-text-container h4 {
+	font-size: var(--font-size-title-lg);
+	text-align: center;
+}
+
+.close-modal {
+	background-color: transparent;
+	border: transparent;
+	padding: 0;
+}
+.close-modal svg {
+	fill: var(--color-onyx);
+}
+.close-modal svg:hover {
+	fill: var(--color-amaranth);
+}
+/* 
 /* modal overlay */
 .overlay-team {
 	position: fixed;
@@ -196,7 +257,8 @@ picture img {
 	backdrop-filter: blur(3px);
 	z-index: 1;
 }
-.natasha-modal, .marsha-modal {
+.natasha-modal,
+.marsha-modal {
 	width: 90%;
 	max-width: 1100px;
 	max-height: 95vh;
@@ -212,18 +274,18 @@ picture img {
 	border: 1px solid var(--body-background-color);
 	border-radius: 4px;
 	z-index: 2;
-	overflow: hidden;
+	/* overflow: hidden; */
 }
 
 .modal-wrapper {
 	position: relative;
 }
 .modal-content {
-	overflow-y: scroll;
+	/* overflow-y: scroll; */
 	height: 40%;
 }
-.marsha-modal .modal-header,
-.natasha-modal .modal-header {
+
+.team-modal .modal-header {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -231,12 +293,15 @@ picture img {
 }
 .modal-header .team-card-picture {
 	max-width: 140px;
+	border-radius: var(--border-radius10);
 }
 /* modal text content */
-.natasha-modal .modal-scroll, .marsha-modal .modal-scroll {
+.natasha-modal .modal-scroll,
+.marsha-modal .modal-scroll {
 	padding: 0px;
 }
-.natasha-modal p, .marsha-modal p {
+.natasha-modal p,
+.marsha-modal p {
 	color: var(--color-onyx);
 }
 
@@ -245,15 +310,16 @@ picture img {
 	flex-direction: column;
 }
 
-.team-card-info-modal .h4-styles, .team-card-info-modal .h5-styles {
+.team-card-info-modal .h4-styles,
+.team-card-info-modal .h5-styles {
 	text-align: center;
 	color: var(--color-onyx);
 	margin: var(--spacing10) 0px;
 }
 .team-btn-close {
 	position: absolute;
-	right: -10px;
-	top: 1px;
+	right: var(--spacing20);
+	top: var(--spacing20);
 }
 .team-btn-close button {
 	border: none;
@@ -404,7 +470,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		line-height: var(--line-height26);
 		cursor: pointer;
 	}
-	
+
 	.get-involved-text .button3:hover,
 	.get-involved-text .button3:focus {
 		color: var(--color-onyx);
@@ -417,10 +483,12 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	}
 
 	/* Modal */
-	.modal-wrapper {
+	/* .modal-wrapper {
 		margin: 50px;
-	}
-	.modal-header {
+	} */
+	.modal-header,
+	.team-modal .modal-header {
+		display: flex;
 		flex-direction: row;
 		gap: 5%;
 	}
@@ -431,24 +499,25 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		right: -50px;
 		top: -50px;
 	}
-	.team-card-info-modal .h4-styles, .team-card-info-modal .h5-styles {
+	.team-card-info-modal .h4-styles,
+	.team-card-info-modal .h5-styles {
 		text-align: left;
 	}
 	.modal-header .team-card-picture {
-		min-width: fit-content;
+		min-width: auto;
 	}
 }
 
 /* Tablet Only */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
 	/* Add styles that only apply to tablet. These are usually fixes to get resposnivenes right */
-	.header-info .h3-styles, .header-info p {
+	.header-info .h3-styles,
+	.header-info p {
 		margin: 0px;
 	}
 	.header-content picture {
 		max-width: 300px;
 	}
-	
 }
 
 /* Desktop Only */
@@ -467,12 +536,12 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	.team-card-info {
 		max-width: 100%;
 	}
-	
+
 	.team-card p {
 		/* adjust later */
 		margin-top: 8px;
 	}
-	
+
 	.get-involved .h4-styles {
 		font-size: var(--font46);
 		font-weight: var(--font-weight-bold);
@@ -502,7 +571,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	}
 	.team-parent {
 		display: flex;
-		flex-direction: row;
+		flex-direction: row-reverse;
 		justify-content: space-evenly;
 		align-items: center;
 		width: 90%;
@@ -522,7 +591,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 /* for screen sizes 1600 and larger */
 @media screen and (min-width: 1600px) {
 	.team-card-parent {
-	width: 75%;
+		width: 75%;
 	}
 	.team-card {
 		min-height: 320px;

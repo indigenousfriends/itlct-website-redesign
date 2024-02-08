@@ -4,6 +4,10 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link
+		rel="shortcut icon"
+		href="assets/favicon/favicon.svg"
+		type="image/svg+xml" />
 	<title>If These Lands Could Talk - About Us</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -131,7 +135,7 @@
 		</nav>
 	</header>
 	<!-- mobile hero and pictures -->
-	<section class="hero">
+	<section id="hero" class="hero">
 		<div class="parent">
 			<div class="overlay"></div>
 			<picture>
@@ -141,23 +145,24 @@
 				<img
 					src="/assets/images/pages/about/mobile/hero-about-mobile.jpg"
 					alt="woman meditating"
-					style="width: 100%" />
+					style="width: 100%"
+					id="hero-image" />
 			</picture>
 		</div>
 
 		<div class="invis-flex">
 			<div class="hero-text">
-				<h1 class="h3-styles">
+				<h1 id="hero-heading" class="h3-styles">
 					If These Lands Could Talk... What Would They Say?
 				</h1>
-				<p>
+				<p id="hero-subheading">
 					Born from spoken words. A question, a conversation for humanity.
 				</p>
 			</div>
 		</div>
 	</section>
 
-	<section class="wrapper about-wrapper">
+	<section id="main-content" class="wrapper about-wrapper">
 		<h2 class="h4-styles">Our Story</h2>
 		<p>
 			The land has a way of teaching us if we want to know, if we want to
@@ -193,7 +198,7 @@
 			<a class="button3" href="/impact.html">Our Impact</a>
 		</div>
 	</section>
-	
+
 	<!-- Footer -->
 
 	<footer>
@@ -204,8 +209,7 @@
 					<a href="/index.html">
 						<img
 							src="/assets/icons/global/itlct-logo.svg"
-							alt="If These Lands Could Talk Logo"
-						/>
+							alt="If These Lands Could Talk Logo" />
 					</a>
 
 					<!-- Button for modal -->
@@ -242,70 +246,52 @@
 
 				<!-- form -->
 				<div class="footer-form">
-					<form action="" class="">
-						<h2 class="h4-styles">Stay up to date with us</h2>
-						<p>
-							Register with our newsletter to receive updates on our website,
-							events, and more!
-						</p>
-						<div class="text-input">
-							<label class="hidden" for="newsletter-input">Newsletter</label>
-							<input
-								type="email"
-								name="newsletter-input"
-								id="newsletter-input"
-								size="40"
-								placeholder="Enter your email"
-								aria-label="newsletter"
-							/>
-							<button type="submit" class="button2">Submit</button>
-						</div>
-					</form>
+					<!-- CAT Newsletter -->
+					<div class="ml-embedded" data-form="w80VC7"></div>
 				</div>
 			</div>
 			<hr />
 
 			<div class="bottom-links">
-				<!-- privacy policy -->
-				<a href="#">Privacy Policy</a>
-				<!-- social links -->
-				<ul class="social-svgs">
-					<li>
-						<a
-							href="https://www.linkedin.com/company/if-these-lands-could-talk-itlct/"
-							target="_blank"
-						>
-							<img
-								src="/assets/icons/global/linkedin.svg"
-								alt="If These Lands Could Talk LinkedIn Page"
-							/>
-						</a>
-					</li>
-					<li>
-						<a
-							href="https://www.facebook.com/people/If-These-Lands-Could-Talk-ITLCT/61550097182345/"
-							target="_blank"
-						>
-							<img
-								src="/assets/icons/global/facebook.svg"
-								alt="If These Lands Could Talk Facebook Page"
-							/>
-						</a>
-					</li>
-					<li>
-						<a
-							href="https://www.instagram.com/p/Cyn_NiuOxm7/"
-							target="_blank"
-						>
-							<img
-								src="/assets/icons/global/instagram.svg"
-								alt="If These Lands Could Talk Instagram Page"
-							/>
-						</a>
-					</li>
-				</ul>
+				<!-- policy links -->
+				<div class="policy-links">
+					<a href="/privacy-policy.html">Privacy Policy</a>
+					<a href="/terms-of-use.html">Terms of Use</a>
+					<a href="/accessibility-statement.html">Accessibility</a>
+				</div>
+				<div>
+					<!-- social links -->
+					<ul class="social-svgs">
+						<li>
+							<a
+								href="https://www.linkedin.com/company/if-these-lands-could-talk-itlct/"
+								target="_blank">
+								<img
+									src="/assets/icons/global/linkedin.svg"
+									alt="If These Lands Could Talk LinkedIn Page" />
+							</a>
+						</li>
+						<li>
+							<a
+								href="https://www.facebook.com/people/If-These-Lands-Could-Talk-ITLCT/61550097182345/"
+								target="_blank">
+								<img
+									src="/assets/icons/global/facebook.svg"
+									alt="If These Lands Could Talk Facebook Page" />
+							</a>
+						</li>
+						<li>
+							<a
+								href="https://www.instagram.com/p/Cyn_NiuOxm7/"
+								target="_blank">
+								<img
+									src="/assets/icons/global/instagram.svg"
+									alt="If These Lands Could Talk Instagram Page" />
+							</a>
+						</li>
+					</ul>
+				</div>
 			</div>
-		</div>
 	</footer>
 
 	<!-- MODAL -->
@@ -319,13 +305,11 @@
 						height="64"
 						viewBox="0 0 64 64"
 						fill="none"
-						xmlns="http://www.w3.org/2000/svg"
-					>
+						xmlns="http://www.w3.org/2000/svg">
 						<title>Close pop-up window</title>
 						<path
 							d="M17.0668 50.6667L13.3335 46.9333L28.2668 32L13.3335 17.0667L17.0668 13.3333L32.0002 28.2667L46.9335 13.3333L50.6668 17.0667L35.7335 32L50.6668 46.9333L46.9335 50.6667L32.0002 35.7333L17.0668 50.6667Z"
-							fill="#1A1A1A"
-						/>
+							fill="#1A1A1A" />
 					</svg>
 				</button>
 			</div>
@@ -367,9 +351,13 @@
 	<div class="overlay-la hidden"></div>
 
 	<!-- JavaScript -->
-	<script src="js/footer-modal.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 	<script src="js/main.js"></script>
-	<script src="js/header.js"></script>
+	<script src="js/cms.js"></script>
+	<script>
+		getPageData('about');
+	</script>
+
 </body>
 
 </html>
