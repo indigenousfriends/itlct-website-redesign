@@ -6,24 +6,22 @@ html {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	width: var(--mobile-wrapper-width);
 	margin: 0 auto;
 	max-width: var(--wrapper-width-max);
-}
-
-.template-wrapper img {
-	align-items: center;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 
 .template-main-header {
 	text-align: center;
 	color: var(--color-onyx);
-	--spacing20: 20px;
+	padding: var(--spacing20);
 }
 
 .template-p {
 	color: var(--color-onyx);
 	--spacing20: 20px;
+	font-family: var(--body-font);
 }
 
 .template-button {
@@ -37,6 +35,10 @@ html {
 	padding-top: 80px;
 }
 
+.template-hero-img img {
+	max-width: 400px;
+}
+
 .template-gradient {
 	display: flex;
 	min-height: 73px;
@@ -48,12 +50,40 @@ html {
 	color: var(--color-white);
 }
 .template-concept-img {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.template-two-img {
 	padding-top: 40px;
+	padding-bottom: 30px;
 }
 
 .template-three-img {
-	padding-top: 60px;
-	padding-bottom: 100px;
+	justify-content: center;
+	padding-top: 0px;
+	padding-bottom: 80px;
+}
+
+.button3 {
+	text-align: center;
+	text-decoration: none !important;
+}
+
+.template-button a {
+	color: var(--color-white);
+}
+
+.event-detail-container h2,
+.event-detail-container h3,
+.event-detail-container h4 {
+	color: var(--color-onyx);
+}
+
+.event-detail-container img {
+	margin: 0 auto;
 }
 
 /* Tablet Only */
@@ -73,13 +103,42 @@ html {
 	.template-wrapper {
 		display: flex;
 		flex-direction: column;
+		padding-top: 70px;
+		width: 57%;
+	}
+
+	.template-hero-img {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding-top: 0px;
+		padding-bottom: 30px;
+		padding-top: 180px;
+	}
+
+	.template-main-header {
+		margin-top: var(--spacing20);
+	}
+
+	.h3-styles {
+		line-height: var(--line-height58);
+		font-size: var(--font56);
+	}
+
+	p {
+		line-height: var(--line-height32);
+	}
+
+	.template-wrapper img {
+		padding-top: 0px;
+	}
+
+	.template-three-img {
+		padding-top: 200px;
+		padding-bottom: 120px;
 	}
 	.template-button {
 		justify-content: center;
-		color: var(--color-white);
-	}
-
-	.button3 {
-		padding: 0%;
+		padding-top: 0px;
 	}
 }

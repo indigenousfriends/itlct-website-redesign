@@ -47,6 +47,7 @@ Section Styles (background, padding, etc.)
 	line-height: var(--line-height40);
 }
 .title p {
+	font-family: var(--body-font);
 	line-height: var(--line-height26);
 	margin: 0px;
 	color: var(--color-onyx);
@@ -57,19 +58,20 @@ Section Styles (background, padding, etc.)
 /* Event Page Cards */
 .event-page-cards {
 	margin: var(--spacing100) 0px;
+	width: 100%;
 }
 /* card img */
 .event-page-card-img {
 	width: 100%;
-	height: var(--spacing213);
+	min-height: 250px;
 	border-radius: var(--spacing10);
 	background-size: cover;
-	background-position: center;
+	background-position: 50% 0%;
 	background-repeat: no-repeat;
 }
 /* Network card */
 .card-item1 .event-page-card-img {
-	background-image: url("/assets/images/pages/event-program/networking.jpg");
+	background-image: url("/assets/images/pages/event-program/network.jpg");
 }
 
 /* Share card */
@@ -102,6 +104,10 @@ Section Styles (background, padding, etc.)
 	line-height: var(--line-height32);
 }
 
+.event-page-card-title p {
+	font-family: var(--body-font);
+}
+
 /* card title background colors */
 .card-item1 .event-page-card-title {
 	background-color: var(--color-yaleblue);
@@ -118,11 +124,12 @@ Section Styles (background, padding, etc.)
 
 /* text below the cards */
 .event-page-card-text {
-	margin-bottom: var(--spacing80);
+	margin-bottom: var(--spacing20);
 }
 .event-page-card-text p {
 	color: var(--color-onyx);
 	line-height: var(--line-height26);
+	font-family: var(--body-font);
 }
 
 /* Upcoming Events/Previous Events */
@@ -165,6 +172,7 @@ Section Styles (background, padding, etc.)
 }
 .event-info p {
 	margin: 0px;
+	font-family: var(--body-font);
 	font-size: var(--font21);
 	line-height: var(--line-height32);
 	color: var(--color-onyx);
@@ -188,7 +196,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 */
 
 /* Tablet Only */
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1300px) {
 	/* Add styles that only apply to tablet. These are usually fixes to get resposnivenes right */
 	/* Event page cards */
 	/* Event page card background/container */
@@ -300,6 +308,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	}
 	.event-page-card-title p {
 		color: var(--color-white);
+		margin-top: 10px;
 	}
 
 	/* page card title background color changes */
@@ -338,7 +347,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 }
 
 /* Desktop Only */
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1300px) {
 	/* Add styles that apply specifically to desktop */
 	
 	/* page cards */

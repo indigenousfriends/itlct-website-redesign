@@ -6,9 +6,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link
 		rel="shortcut icon"
-		href="assets/favicon/favicon.svg"
+		href="../assets/favicon/favicon.svg"
 		type="image/svg+xml" />
-	<title>If These Lands Could Talk - Page Name</title>
+	<title>If These Lands Could Talk - Event Details</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 	<link
@@ -17,9 +17,9 @@
 	<link
 		href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap"
 		rel="stylesheet" />
-	<link rel="stylesheet" href="css/normalize.css" />
-	<link rel="stylesheet" href="css/global.css" />
-	<link rel="stylesheet" href="css/impact.css" />
+	<link rel="stylesheet" href="../css/normalize.css" />
+	<link rel="stylesheet" href="../css/global.css" />
+	<link rel="stylesheet" href="../css/event-detail.css" />
 </head>
 
 <body>
@@ -34,7 +34,7 @@
 						<a href="/index.html">
 							<picture>
 								<source
-									media="(min-width:1180px)"
+									media="(min-width:768px)"
 									srcset="/assets/icons/global/logo-icon-big.svg" />
 								<img
 									src="/assets/icons/global/logo-icon.svg"
@@ -134,130 +134,23 @@
 			</div>
 		</nav>
 	</header>
-	<!-- Title section -->
-	<div id="hero" class="hero">
-		<div id="hero-image" class="title-img"></div>
-		<div class="title-text">
-			<div>
-				<h1 id="hero-heading" class="h2-styles">Our Impact</h1>
-				<p id="hero-subheading">Providing opportunities through technology</p>
-			</div>
+
+	<div class="template-wrapper">
+		<div class="cta-container">
+			<div id="poster-container"></div>
+			<h1 id="post-title" class="h3-styles template-main-header">
+			</h1>
+			<div id="description-container"></div>
+			<div id="button-container " class="button-container"></div>
 		</div>
 	</div>
-
-	<!-- page wrapper -->
-	<div class="impact-wrapper">
-		<!-- tech all around us section -->
-		<section id="section-1" class="tech-around">
-			<!-- img and background red thing -->
-			<div class="red-background">
-				<div class="tech-img style-left">
-					<picture>
-						<source
-							media="(min-width:768px)"
-							srcset="/assets/images/pages/our-impact/desktop/ar-d.jpg" />
-						<img
-							src="/assets/images/pages/our-impact/ar.jpg"
-							alt="person using ar glasses"
-							style="width: auto" />
-					</picture>
-				</div>
-			</div>
-
-			<div class="tech-around-info wrapper">
-				<h2 class="h4-styles">
-					Technology is all <span class="block">Around us</span>
-				</h2>
-				<p>
-					Whether it be physical or digital. We acknowledge and appreciate the
-					ingenuity of many Native and Indigenous pioneers that paved the way
-					for our understanding of the world through technology.
-				</p>
-			</div>
-		</section>
-
-		<!-- Icons section -->
-		<div class="yellow-background">
-			<section class="icons-parent wrapper">
-				<!-- first icon -->
-				<div class="icon-child">
-					<div>
-						<picture>
-							<img
-								src="/assets/icons/our-impact-icons/workshops&programs.svg"
-								alt="decorative abstract icon for Workshops & Programs"
-								style="width: 190px" />
-						</picture>
-					</div>
-					<p class="h5-styles">Workshops & Programs</p>
-				</div>
-				<div class="icon-child">
-					<!-- second icon -->
-					<div>
-						<picture>
-							<img
-								src="/assets/icons/our-impact-icons/consulting.svg"
-								alt="decorative abstract icon for Consulting"
-								style="width: 190px" />
-						</picture>
-					</div>
-					<p class="h5-styles">Consulting</p>
-				</div>
-				<div class="icon-child">
-					<!-- third icon -->
-					<div>
-						<picture>
-							<img
-								src="/assets/icons/our-impact-icons/speaking.svg"
-								alt="decorative abstract icon for Speaking"
-								style="width: 190px" />
-						</picture>
-					</div>
-					<p class="h5-styles">Speaking</p>
-				</div>
-				<div class="icon-child">
-					<!-- fourth icon -->
-					<div>
-						<picture>
-							<img
-								src="/assets/icons/our-impact-icons/mentorship-support.svg"
-								alt="decorative abstract icon for Mentorship Support"
-								style="width: 190px" />
-						</picture>
-					</div>
-					<p class="h5-styles">Mentorship Support</p>
-				</div>
-			</section>
-		</div>
-
-		<!-- Responsible section -->
-		<section id="section-3" class="responsible-parent">
-			<div class="responsible-info wrapper">
-				<h2 class="h4-styles">Responsible Stewardship</h2>
-				<p>
-					Whether it be physical or digital. We acknowledge and appreciate the
-					ingenuity of many Native and Indigenous pioneers that paved the way
-					for our understanding of the world through technology.
-				</p>
-			</div>
-			<div class="red-background">
-				<div class="responsible-img right-style">
-					<picture>
-						<source
-							media="(min-width:768px)"
-							srcset="
-									/assets/images/pages/our-impact/desktop/remote-connections-d.jpg
-								" />
-						<img
-							src="/assets/images/pages/our-impact/remote-connections.jpg"
-							alt="two people holding a laptop computer in a grassy field"
-							style="width: auto" />
-					</picture>
-				</div>
-			</div>
-		</section>
+	<div class="template-gradient">
+		<h4 class="template-highlights">Event Highlights</h4>
 	</div>
-
+	<div class="template-wrapper">
+		<div id="highlights-container" class="event-detail-container"></div>
+	</div>
+	</div>
 	<!-- Footer -->
 
 	<footer>
@@ -411,12 +304,12 @@
 
 	<!-- JavaScript -->
 	<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-	<script src="js/main.js"></script>
-	<script src="js/cms.js"></script>
+	<script src="../js/main.js"></script>
+	<script src="../js/cms.js"></script>
+	<script src="../js/events.js"></script>
 	<script>
-		getPageData("impact");
+		getSingleEventData();
 	</script>
-
 </body>
 
 </html>
