@@ -6,9 +6,9 @@ Contact Form
 // HTML Reference Variables
 // form elements
 let contactForm = document.querySelector("#contact-form");
-let nameInput = document.querySelector("#name-input");
-let emailInput = document.querySelector("#email-input");
-let messageInput = document.querySelector("#message-input");
+let nameInput = document.querySelector("#name");
+let emailInput = document.querySelector("#email");
+let messageInput = document.querySelector("#message");
 
 // User response element
 let formResponseContainer = document.querySelector("#form-response-container");

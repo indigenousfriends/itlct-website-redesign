@@ -201,6 +201,7 @@ a:visited {
 	font-weight: var(--font-weight-bold);
 	font-size: var(--font21);
 	cursor: pointer;
+	text-align: center;
 }
 
 .button3:hover,
@@ -287,6 +288,13 @@ a {
 	text-decoration: none;
 }
 
+strong,
+time,
+address {
+	color: var(--color-onyx);
+	font-style: normal;
+}
+
 /* Lists */
 footer li {
 	list-style-type: none;
@@ -320,6 +328,11 @@ Wrappers (container, flexbox, etc.)
 /* Global Hidden Class */
 .hidden {
 	display: none;
+}
+
+/* custom disable scroll class: for modal functionality */
+.disable-scroll {
+	overflow: hidden;
 }
 
 /* 
@@ -476,11 +489,30 @@ footer a img:hover {
 .footer-main {
 	padding-top: var(--spacing40);
 	display: flex;
-	flex-direction: column;
+	flex-direction: column-reverse;
 }
 
-.footer-form h4 {
+footer .policy-links {
+	display: flex;
+	flex-direction: column;
+	gap: var(--spacing20);
+	padding: var(--spacing20) 0;
+}
+
+.footer-form
+	#mlb2-11072124.ml-form-embedContainer
+	.ml-form-embedWrapper
+	.ml-form-embedBody
+	.ml-form-embedContent
+	h4,
+.footer-form
+	#mlb2-11072124.ml-form-embedContainer
+	.ml-form-embedWrapper
+	.ml-form-successBody
+	.ml-form-successContent
+	h4 {
 	margin-top: 0px;
+	margin-bottom: var(--spacing20);
 }
 
 /* Logo and land acknowledgement button container*/
@@ -543,18 +575,8 @@ footer a img:hover {
 	.ml-form-embedBody
 	.ml-form-embedPermissions
 	.ml-form-embedPermissionsOptionsCheckbox
-	label {
-	padding-left: 15px;
-}
-
-.ml-embedded
-	#mlb2-11072124.ml-form-embedContainer
-	.ml-form-embedWrapper
-	.ml-form-embedBody
-	.ml-form-embedPermissions
-	.ml-form-embedPermissionsOptionsCheckbox
 	.label-description {
-	padding-left: var(--spacing-xs);
+	padding-left: var(--spacing10);
 	line-height: 28px;
 }
 
@@ -583,7 +605,7 @@ footer a img:hover {
 	.ml-form-embedPermissions
 	.ml-form-embedPermissionsContent.horizontal {
 	font-size: 12px;
-	margin: var(--spacing-xs) 0 0;
+	margin: var(--spacing10) 0 0;
 	display: flex;
 	justify-content: flex-end;
 	flex-flow: row-reverse;
@@ -648,7 +670,7 @@ footer a img:hover {
 /* bottom links */
 .bottom-links {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
 }
@@ -740,6 +762,17 @@ footer a img:hover {
 }
 
 /* End of modal styles */
+
+/* Policy Page Styles */
+.policy-page #main-content {
+	padding: var(--spacing80) var(--spacing20);
+}
+
+.policy-page #main-content h1,
+.policy-page #main-content a {
+	color: var(--color-onyx);
+}
+
 /* 
 ===================================
 Media Queries (overriding styles for different screen sizes)
@@ -843,6 +876,14 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		width: fit-content;
 	}
 
+	.bottom-links {
+		flex-direction: row;
+	}
+
+	footer .policy-links {
+		flex-direction: row;
+	}
+
 	.footer-form {
 		width: 40%;
 		text-align: left;
@@ -872,7 +913,8 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	}
 
 	.modal-content {
-		overflow-y: auto;
+		/* overflow-y: auto; */
+		overflow: hidden;
 	}
 
 	.modal-scroll {
@@ -901,6 +943,10 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		position: absolute;
 		width: 100%;
 		z-index: 20;
+	}
+
+	.policy-page .top-bar {
+		position: relative;
 	}
 
 	.dp-wrapper .button2 {

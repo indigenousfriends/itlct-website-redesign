@@ -147,7 +147,11 @@
 				<p>We look forward to connecting!</p>
 			</div>
 			<div>
-				<form action="" class="contact-form">
+				<form action="/data/contact-form.php"
+					name="contactForm"
+					method="post"
+					id="contact-form"
+					class="contact-form">
 					<div class="form-input">
 						<label for="name" class="hidden">Name</label>
 						<input
@@ -172,7 +176,9 @@
 							required="true"
 							placeholder="Message"
 							aria-label="message"></textarea>
-						<p>Success we will get back to you soon!</p>
+						<div id="form-response-container">
+							<p id="form-response"></p>
+						</div>
 						<button type="submit" class="button2">Send Message</button>
 					</div>
 				</form>
@@ -234,40 +240,45 @@
 			<hr />
 
 			<div class="bottom-links">
-				<!-- privacy policy -->
-				<a href="#">Privacy Policy</a>
-				<!-- social links -->
-				<ul class="social-svgs">
-					<li>
-						<a
-							href="https://www.linkedin.com/company/if-these-lands-could-talk-itlct/"
-							target="_blank">
-							<img
-								src="/assets/icons/global/linkedin.svg"
-								alt="If These Lands Could Talk LinkedIn Page" />
-						</a>
-					</li>
-					<li>
-						<a
-							href="https://www.facebook.com/people/If-These-Lands-Could-Talk-ITLCT/61550097182345/"
-							target="_blank">
-							<img
-								src="/assets/icons/global/facebook.svg"
-								alt="If These Lands Could Talk Facebook Page" />
-						</a>
-					</li>
-					<li>
-						<a
-							href="https://www.instagram.com/p/Cyn_NiuOxm7/"
-							target="_blank">
-							<img
-								src="/assets/icons/global/instagram.svg"
-								alt="If These Lands Could Talk Instagram Page" />
-						</a>
-					</li>
-				</ul>
+				<!-- policy links -->
+				<div class="policy-links">
+					<a href="/privacy-policy.html">Privacy Policy</a>
+					<a href="/terms-of-use.html">Terms of Use</a>
+					<a href="/accessibility-statement.html">Accessibility</a>
+				</div>
+				<div>
+					<!-- social links -->
+					<ul class="social-svgs">
+						<li>
+							<a
+								href="https://www.linkedin.com/company/if-these-lands-could-talk-itlct/"
+								target="_blank">
+								<img
+									src="/assets/icons/global/linkedin.svg"
+									alt="If These Lands Could Talk LinkedIn Page" />
+							</a>
+						</li>
+						<li>
+							<a
+								href="https://www.facebook.com/people/If-These-Lands-Could-Talk-ITLCT/61550097182345/"
+								target="_blank">
+								<img
+									src="/assets/icons/global/facebook.svg"
+									alt="If These Lands Could Talk Facebook Page" />
+							</a>
+						</li>
+						<li>
+							<a
+								href="https://www.instagram.com/p/Cyn_NiuOxm7/"
+								target="_blank">
+								<img
+									src="/assets/icons/global/instagram.svg"
+									alt="If These Lands Could Talk Instagram Page" />
+							</a>
+						</li>
+					</ul>
+				</div>
 			</div>
-		</div>
 	</footer>
 
 	<!-- MODAL -->

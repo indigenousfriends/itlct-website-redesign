@@ -96,7 +96,7 @@ picture img {
 /* team card section */
 .team-parent {
 	display: flex;
-	flex-direction: column;
+	flex-direction: column-reverse;
 	justify-content: space-between;
 	width: 90%;
 	margin: 0 auto;
@@ -183,6 +183,67 @@ picture img {
 .fixed {
 	overflow: hidden;
 }
+
+/* Modal Content */
+.modal-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.406);
+}
+
+.modal-content {
+	border-radius: var(--border-radius10);
+	background-color: var(--color-white);
+	padding: var(--spacing65);
+	width: 80%;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	max-width: 1100px;
+	max-height: 90vh;
+}
+
+.modal-btn-container {
+	display: flex;
+	justify-content: flex-end;
+}
+.modal-text-container,
+.modal-scroll-container {
+	display: flex;
+	flex-direction: column;
+	gap: var(--spacing-sm);
+	font-size: var(--font21);
+	line-height: var(--line-height28);
+}
+
+.modal-scroll-container {
+	/* max-height: calc(85vh - 300px); */
+	overflow-y: auto;
+	padding-bottom: var(--spacing40);
+}
+
+.modal-text-container h4 {
+	font-size: var(--font-size-title-lg);
+	text-align: center;
+}
+
+.close-modal {
+	background-color: transparent;
+	border: transparent;
+	padding: 0;
+}
+.close-modal svg {
+	fill: var(--color-onyx);
+}
+.close-modal svg:hover {
+	fill: var(--color-amaranth);
+}
+/* 
 /* modal overlay */
 .overlay-team {
 	position: fixed;
@@ -213,18 +274,18 @@ picture img {
 	border: 1px solid var(--body-background-color);
 	border-radius: 4px;
 	z-index: 2;
-	overflow: hidden;
+	/* overflow: hidden; */
 }
 
 .modal-wrapper {
 	position: relative;
 }
 .modal-content {
-	overflow-y: scroll;
+	/* overflow-y: scroll; */
 	height: 40%;
 }
-.marsha-modal .modal-header,
-.natasha-modal .modal-header {
+
+.team-modal .modal-header {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -232,6 +293,7 @@ picture img {
 }
 .modal-header .team-card-picture {
 	max-width: 140px;
+	border-radius: var(--border-radius10);
 }
 /* modal text content */
 .natasha-modal .modal-scroll,
@@ -256,8 +318,8 @@ picture img {
 }
 .team-btn-close {
 	position: absolute;
-	right: -10px;
-	top: 1px;
+	right: var(--spacing20);
+	top: var(--spacing20);
 }
 .team-btn-close button {
 	border: none;
@@ -421,10 +483,12 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	}
 
 	/* Modal */
-	.modal-wrapper {
+	/* .modal-wrapper {
 		margin: 50px;
-	}
-	.modal-header {
+	} */
+	.modal-header,
+	.team-modal .modal-header {
+		display: flex;
 		flex-direction: row;
 		gap: 5%;
 	}
@@ -440,7 +504,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		text-align: left;
 	}
 	.modal-header .team-card-picture {
-		min-width: fit-content;
+		min-width: auto;
 	}
 }
 
@@ -507,7 +571,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	}
 	.team-parent {
 		display: flex;
-		flex-direction: row;
+		flex-direction: row-reverse;
 		justify-content: space-evenly;
 		align-items: center;
 		width: 90%;

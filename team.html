@@ -197,9 +197,7 @@
 					As we grow the community and build impact, you or someone you know
 					may want to know how to get involved with our events.
 				</p>
-				<button class="button3">
-					<a href="/contact.html">Contact Us</a>
-				</button>
+				<a href="/contact.html" class="button3">Contact Us</a>
 			</div>
 		</div>
 	</div>
@@ -230,20 +228,21 @@
 			<div class="member">
 				<!-- img -->
 				<div class="img modal-header">
-					<img id="modal-member-img" src="" alt="" />
-				</div>
-				<!-- text -->
-				<div class="text team-card-info-modal">
-					<!-- SM Bio -->
-					<div class="bio">
-						<h2 id="modal-member-name" class="h4-styles"></h2>
-						<h3 class="role h5-styles" id="modal-member-role"></h3>
+					<img id="modal-member-img" class="team-card-picture " src="" alt="" />
+					<!-- text -->
+					<div class="text team-card-info-modal">
+						<!-- SM Bio -->
+						<div class="bio">
+							<h2 id="modal-member-name" class="h4-styles"></h2>
+							<h3 class="role h5-styles" id="modal-member-role"></h3>
+						</div>
 					</div>
 				</div>
+
 			</div>
 			<!-- text container -->
 			<div class="modal-text-container">
-				<div class="modal-scroll-container" id="modal-member-bio"></div>
+				<div class="modal-scroll-container" id="modal-member-bio"> </div>
 			</div>
 		</div>
 	</div>
@@ -302,40 +301,45 @@
 			<hr />
 
 			<div class="bottom-links">
-				<!-- privacy policy -->
-				<a href="#">Privacy Policy</a>
-				<!-- social links -->
-				<ul class="social-svgs">
-					<li>
-						<a
-							href="https://www.linkedin.com/company/if-these-lands-could-talk-itlct/"
-							target="_blank">
-							<img
-								src="/assets/icons/global/linkedin.svg"
-								alt="If These Lands Could Talk LinkedIn Page" />
-						</a>
-					</li>
-					<li>
-						<a
-							href="https://www.facebook.com/people/If-These-Lands-Could-Talk-ITLCT/61550097182345/"
-							target="_blank">
-							<img
-								src="/assets/icons/global/facebook.svg"
-								alt="If These Lands Could Talk Facebook Page" />
-						</a>
-					</li>
-					<li>
-						<a
-							href="https://www.instagram.com/p/Cyn_NiuOxm7/"
-							target="_blank">
-							<img
-								src="/assets/icons/global/instagram.svg"
-								alt="If These Lands Could Talk Instagram Page" />
-						</a>
-					</li>
-				</ul>
+				<!-- policy links -->
+				<div class="policy-links">
+					<a href="/privacy-policy.html">Privacy Policy</a>
+					<a href="/terms-of-use.html">Terms of Use</a>
+					<a href="/accessibility-statement.html">Accessibility</a>
+				</div>
+				<div>
+					<!-- social links -->
+					<ul class="social-svgs">
+						<li>
+							<a
+								href="https://www.linkedin.com/company/if-these-lands-could-talk-itlct/"
+								target="_blank">
+								<img
+									src="/assets/icons/global/linkedin.svg"
+									alt="If These Lands Could Talk LinkedIn Page" />
+							</a>
+						</li>
+						<li>
+							<a
+								href="https://www.facebook.com/people/If-These-Lands-Could-Talk-ITLCT/61550097182345/"
+								target="_blank">
+								<img
+									src="/assets/icons/global/facebook.svg"
+									alt="If These Lands Could Talk Facebook Page" />
+							</a>
+						</li>
+						<li>
+							<a
+								href="https://www.instagram.com/p/Cyn_NiuOxm7/"
+								target="_blank">
+								<img
+									src="/assets/icons/global/instagram.svg"
+									alt="If These Lands Could Talk Instagram Page" />
+							</a>
+						</li>
+					</ul>
+				</div>
 			</div>
-		</div>
 	</footer>
 
 	<!-- MODAL -->
@@ -398,7 +402,6 @@
 	<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 	<script src="js/main.js"></script>
 	<script src="js/cms.js"></script>
-	<!-- <script src="js/our-team-modal.js"></script> -->
 	<script src="js/team.js"></script>
 	<script>
 		getPageData('team');

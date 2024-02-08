@@ -1,7 +1,58 @@
+/* 
+===================================
+Modals
+===================================
+*/
+
+// HTML Reference Variables
+let openModalBtns = document.querySelectorAll(`[data-role="open-modal"]`);
+let closeModalBtns = document.querySelectorAll(`[data-role="close-modal"]`);
+console.log(openModalBtns);
+console.log(closeModalBtns);
+// toggle modal on and off
 const toggleModal = modal => {
 	document.body.classList.toggle("disable-scroll");
 	modal.classList.toggle("hidden");
 };
+
+// Global Modal Events
+// open modal button events
+openModalBtns.forEach(button => {
+	button.addEventListener("click", () => {
+		let modalElement = document.querySelector(`#${button.dataset.type}`);
+		// open modal
+		toggleModal(modalElement);
+	});
+});
+
+// exit via close modal button
+closeModalBtns.forEach(button => {
+	button.addEventListener("click", () => {
+		let modalElement = button.closest(".modal-overlay");
+		toggleModal(modalElement);
+	});
+});
+
+// exit modal via click on modal overlay
+document.addEventListener("click", event => {
+	if (event.target.classList.contains("modal-overlay")) {
+		toggleModal(event.target);
+	}
+});
+
+// escape key on modal
+document.addEventListener("keydown", function (event) {
+	console.log(event);
+	let allModalElements = document.querySelectorAll(".modal-overlay");
+
+	if (event.key === "Escape") {
+		allModalElements.forEach(modal => {
+			if (!modal.classList.contains("hidden")) {
+				toggleModal(modal);
+			}
+		});
+	}
+});
 
 // Populate modal
 function populateTeamModal(data) {

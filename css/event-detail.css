@@ -12,17 +12,10 @@ html {
 	padding-right: 20px;
 }
 
-.template-wrapper img {
-	display: flex;
-	align-items: center;
-	padding-top: 0px;
-	padding-bottom: 30px;
-}
-
 .template-main-header {
 	text-align: center;
 	color: var(--color-onyx);
-	--spacing20: 20px;
+	padding: var(--spacing20);
 }
 
 .template-p {
@@ -40,6 +33,10 @@ html {
 
 .template-hero-img {
 	padding-top: 80px;
+}
+
+.template-hero-img img {
+	max-width: 400px;
 }
 
 .template-gradient {
@@ -79,6 +76,16 @@ html {
 	color: var(--color-white);
 }
 
+.event-detail-container h2,
+.event-detail-container h3,
+.event-detail-container h4 {
+	color: var(--color-onyx);
+}
+
+.event-detail-container img {
+	margin: 0 auto;
+}
+
 /* Tablet Only */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
 	/* Add styles that only apply to tablet. These are usually fixes to get resposnivenes right */
@@ -101,11 +108,16 @@ html {
 	}
 
 	.template-hero-img {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding-top: 0px;
+		padding-bottom: 30px;
 		padding-top: 180px;
 	}
 
 	.template-main-header {
-		margin-top: 150px;
+		margin-top: var(--spacing20);
 	}
 
 	.h3-styles {

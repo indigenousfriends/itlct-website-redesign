@@ -392,68 +392,7 @@
 			<h3>Upcoming Events and Programs</h3>
 			<!-- "events-container" holds the "placeholder" divs - applying flexbox and styling to them -->
 			<!-- global class of "wrapper" is applied -->
-			<div class="events-container">
-				<!-- "placeholder" is the linked div that holds the image and the event heading and description -->
-				<div class="placeholder">
-					<!-- "image-link" is used to remove the underline for the link -->
-					<a href="#" class="image-link">
-						<!-- the image is a source set, currently using events-placeholder.jpg and events-placeholder-mobile.jpg -->
-						<picture>
-							<source
-								media="(min-width:768px)"
-								srcset="./assets/images/pages/home/events-placeholder.jpg" />
-							<img
-								src="./assets/images/pages/home/mobile/events-placeholder-mobile.jpg"
-								alt="a person with a globe" />
-						</picture>
-						<!-- event-description contains and styles the heading and paragraph -->
-						<div class="event-description">
-							<h4>Walking in Multiple Worlds</h4>
-							<p>Is an ITLCT program series consisting of global workshops</p>
-						</div>
-					</a>
-				</div>
-				<!-- "placeholder" is the linked div that holds the image and the event heading and description -->
-				<div class="placeholder">
-					<!-- "image-link" is used to remove the underline for the link -->
-					<a href="#" class="image-link">
-						<!-- the image is a source set, currently using events-placeholder.jpg and events-placeholder-mobile.jpg -->
-						<picture>
-							<source
-								media="(min-width:768px)"
-								srcset="./assets/images/pages/home/events-placeholder.jpg" />
-							<img
-								src="./assets/images/pages/home/mobile/events-placeholder-mobile.jpg"
-								alt="a person with a globe" />
-						</picture>
-						<!-- event-description contains and styles the heading and paragraph -->
-						<div class="event-description">
-							<h4>Walking in Multiple Worlds</h4>
-							<p>Is an ITLCT program series consisting of global workshops</p>
-						</div>
-					</a>
-				</div>
-				<!-- "placeholder" is the linked div that holds the image and the event heading and description -->
-				<div class="placeholder">
-					<!-- "image-link" is used to remove the underline for the link -->
-					<a href="#" class="image-link">
-						<!-- the image is a source set, currently using events-placeholder.jpg and events-placeholder-mobile.jpg -->
-						<picture>
-							<source
-								media="(min-width:768px)"
-								srcset="./assets/images/pages/home/events-placeholder.jpg" />
-							<img
-								src="./assets/images/pages/home/mobile/events-placeholder-mobile.jpg"
-								alt="a person with a globe" />
-						</picture>
-						<!-- event-description contains and styles the heading and paragraph -->
-						<div class="event-description">
-							<h4>Walking in Multiple Worlds</h4>
-							<p>Is an ITLCT program series consisting of global workshops</p>
-						</div>
-					</a>
-				</div>
-			</div>
+			<div id="events-container" class="events-container" id="events-container"></div>
 		</div>
 	</section>
 
@@ -511,40 +450,45 @@
 			<hr />
 
 			<div class="bottom-links">
-				<!-- privacy policy -->
-				<a href="#">Privacy Policy</a>
-				<!-- social links -->
-				<ul class="social-svgs">
-					<li>
-						<a
-							href="https://www.linkedin.com/company/if-these-lands-could-talk-itlct/"
-							target="_blank">
-							<img
-								src="/assets/icons/global/linkedin.svg"
-								alt="If These Lands Could Talk LinkedIn Page" />
-						</a>
-					</li>
-					<li>
-						<a
-							href="https://www.facebook.com/people/If-These-Lands-Could-Talk-ITLCT/61550097182345/"
-							target="_blank">
-							<img
-								src="/assets/icons/global/facebook.svg"
-								alt="If These Lands Could Talk Facebook Page" />
-						</a>
-					</li>
-					<li>
-						<a
-							href="https://www.instagram.com/p/Cyn_NiuOxm7/"
-							target="_blank">
-							<img
-								src="/assets/icons/global/instagram.svg"
-								alt="If These Lands Could Talk Instagram Page" />
-						</a>
-					</li>
-				</ul>
+				<!-- policy links -->
+				<div class="policy-links">
+					<a href="/privacy-policy.html">Privacy Policy</a>
+					<a href="/terms-of-use.html">Terms of Use</a>
+					<a href="/accessibility-statement.html">Accessibility</a>
+				</div>
+				<div>
+					<!-- social links -->
+					<ul class="social-svgs">
+						<li>
+							<a
+								href="https://www.linkedin.com/company/if-these-lands-could-talk-itlct/"
+								target="_blank">
+								<img
+									src="/assets/icons/global/linkedin.svg"
+									alt="If These Lands Could Talk LinkedIn Page" />
+							</a>
+						</li>
+						<li>
+							<a
+								href="https://www.facebook.com/people/If-These-Lands-Could-Talk-ITLCT/61550097182345/"
+								target="_blank">
+								<img
+									src="/assets/icons/global/facebook.svg"
+									alt="If These Lands Could Talk Facebook Page" />
+							</a>
+						</li>
+						<li>
+							<a
+								href="https://www.instagram.com/p/Cyn_NiuOxm7/"
+								target="_blank">
+								<img
+									src="/assets/icons/global/instagram.svg"
+									alt="If These Lands Could Talk Instagram Page" />
+							</a>
+						</li>
+					</ul>
+				</div>
 			</div>
-		</div>
 	</footer>
 
 	<!-- MODAL -->
@@ -610,6 +554,7 @@
 	<script src="js/events.js"></script>
 	<script>
 		getPageData('home');
+		getAllEventsData();
 	</script>
 
 </body>

@@ -31,15 +31,17 @@
 				<!-- logo container -->
 				<div class="logo-container">
 					<div class="img-container logo-icon">
-						<picture>
-							<source
-								media="(min-width:768px)"
-								srcset="../assets/icons/global/logo-icon-big.svg" />
-							<img
-								src="../assets/icons/global/logo-icon.svg"
-								alt="If These Lands Could Talk logo-icon"
-								style="width: auto" />
-						</picture>
+						<a href="/index.html">
+							<picture>
+								<source
+									media="(min-width:768px)"
+									srcset="/assets/icons/global/logo-icon-big.svg" />
+								<img
+									src="/assets/icons/global/logo-icon.svg"
+									alt="If These Lands Could Talk logo-icon"
+									style="width: auto" />
+							</picture>
+						</a>
 					</div>
 				</div>
 				<!-- end logo -->
@@ -50,7 +52,7 @@
 							<a href="/about.html"> About Us</a>
 						</li>
 						<li>
-							<a href="/imapct.html"> Our Impact</a>
+							<a href="/impact.html"> Our Impact</a>
 						</li>
 						<li>
 							<a href="/values.html"> Our Values</a>
@@ -61,15 +63,13 @@
 						<li>
 							<a href="/team.html"> Our Team</a>
 						</li>
-						<li>
-							<a href="/contact.html"> Contact</a>
-						</li>
 					</ul>
 				</div>
-				<!-- TODO: Double check this header -->
-				<a href="#" class="button2"> Support Us</a>
+				<a href="/contact.html" class="button2"> Contact Us</a>
+				<!-- hamburger menu -->
 				<div id="menu-container">
 					<button id="mobile-menu">
+						<span class="sr-only">Mobile menu button</span>
 						<svg
 							id="mobileOpen"
 							width="24"
@@ -126,16 +126,11 @@
 								<a href="/team.html"> Our Team</a>
 							</li>
 							<li>
-								<a href="/contact.html"> Contact</a>
-							</li>
-							<li>
-								<a href="#"> Support Us</a>
+								<a href="/contact.html"> Contact Us</a>
 							</li>
 						</ul>
 					</div>
 				</div>
-
-				<!-- hamburger menu -->
 			</div>
 		</nav>
 	</header>
@@ -163,9 +158,9 @@
 			<div class="footer-main">
 				<div class="footer-logo-btn">
 					<!-- logo -->
-					<a href="index.html">
+					<a href="/index.html">
 						<img
-							src="../assets/icons/global/itlct-logo.svg"
+							src="/assets/icons/global/itlct-logo.svg"
 							alt="If These Lands Could Talk Logo" />
 					</a>
 
@@ -173,8 +168,8 @@
 					<button class="btn-la">Land Acknowledgement</button>
 				</div>
 				<!-- Links list -->
-				<ul class="links-columns">
-					<div class="links-child">
+				<div class="links-columns">
+					<ul class="links-child">
 						<li>
 							<a href="/index.html">Home</a>
 						</li>
@@ -187,8 +182,8 @@
 						<li>
 							<a href="/values.html">Our Values</a>
 						</li>
-					</div>
-					<div class="links-child">
+					</ul>
+					<ul class="links-child">
 						<li>
 							<a href="/events.html">Events & Programs</a>
 						</li>
@@ -198,8 +193,8 @@
 						<li>
 							<a href="/contact.html">Contact</a>
 						</li>
-					</div>
-				</ul>
+					</ul>
+				</div>
 
 				<!-- form -->
 				<div class="footer-form">
@@ -210,40 +205,45 @@
 			<hr />
 
 			<div class="bottom-links">
-				<!-- privacy policy -->
-				<a href="">Privacy Policy</a>
-				<!-- social links -->
-				<ul class="social-svgs">
-					<li>
-						<a
-							href="https://www.linkedin.com/company/if-these-lands-could-talk-itlct/"
-							target="_blank">
-							<img
-								src="../assets/icons/global/linkedin.svg"
-								alt="If These Lands Could Talk LinkedIn Page" />
-						</a>
-					</li>
-					<li>
-						<a
-							href="https://www.facebook.com/people/If-These-Lands-Could-Talk-ITLCT/61550097182345/"
-							target="_blank">
-							<img
-								src="../assets/icons/global/facebook.svg"
-								alt="If These Lands Could Talk Facebook Page" />
-						</a>
-					</li>
-					<li>
-						<a
-							href="https://www.instagram.com/p/Cyn_NiuOxm7/"
-							target="_blank">
-							<img
-								src="../assets/icons/global/instagram.svg"
-								alt="If These Lands Could Talk Instagram Page" />
-						</a>
-					</li>
-				</ul>
+				<!-- policy links -->
+				<div class="policy-links">
+					<a href="/privacy-policy.html">Privacy Policy</a>
+					<a href="/terms-of-use.html">Terms of Use</a>
+					<a href="/accessibility-statement.html">Accessibility</a>
+				</div>
+				<div>
+					<!-- social links -->
+					<ul class="social-svgs">
+						<li>
+							<a
+								href="https://www.linkedin.com/company/if-these-lands-could-talk-itlct/"
+								target="_blank">
+								<img
+									src="/assets/icons/global/linkedin.svg"
+									alt="If These Lands Could Talk LinkedIn Page" />
+							</a>
+						</li>
+						<li>
+							<a
+								href="https://www.facebook.com/people/If-These-Lands-Could-Talk-ITLCT/61550097182345/"
+								target="_blank">
+								<img
+									src="/assets/icons/global/facebook.svg"
+									alt="If These Lands Could Talk Facebook Page" />
+							</a>
+						</li>
+						<li>
+							<a
+								href="https://www.instagram.com/p/Cyn_NiuOxm7/"
+								target="_blank">
+								<img
+									src="/assets/icons/global/instagram.svg"
+									alt="If These Lands Could Talk Instagram Page" />
+							</a>
+						</li>
+					</ul>
+				</div>
 			</div>
-		</div>
 	</footer>
 
 	<!-- MODAL -->
