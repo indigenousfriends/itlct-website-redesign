@@ -8,9 +8,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message = $_POST['message'];
 
     // Email addresses
-    // $info = 'info@iftheselandscouldtalk.org';
-    $info = 'max@indigenousfriends.org';
-
+    $info = 'info@iftheselandscouldtalk.org';
 
     // Sender and recipient email addresses
     $from = "info+websiteform@iftheselandscouldtalk.org";
