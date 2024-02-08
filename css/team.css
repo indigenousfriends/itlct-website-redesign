@@ -15,8 +15,10 @@ Styles for an individual page
 Page Component Styles (icon grid, team member card)
 ===================================
 */
-.black-text .h3-styles, .black-text .h4-styles, .black-text p {
-    color: var(--color-onyx);
+.black-text .h3-styles,
+.black-text .h4-styles,
+.black-text p {
+	color: var(--color-onyx);
 }
 
 h1 {
@@ -69,7 +71,7 @@ Section Styles (background, padding, etc.)
 	width: var(--mobile-wrapper-width);
 }
 .h5-styles {
-    color: var(--color-white);
+	color: var(--color-white);
 }
 
 /* header section */
@@ -103,7 +105,7 @@ picture img {
 .team-card {
 	margin: var(--spacing20) 0;
 	padding: 60px 26px;
-    background: var(--color-teal);
+	background: var(--color-teal);
 	border: none;
 	border-radius: var(--border-radius10);
 
@@ -113,12 +115,11 @@ picture img {
 	align-items: center;
 }
 
-.team-card .h4-styles{
+.team-card .h4-styles {
 	margin: var(--spacing20) 0px 0px 0px;
 }
 .team-card .h5-styles {
 	margin: var(--spacing10) 0px;
-
 }
 .team-card p {
 	color: var(--color-white);
@@ -127,7 +128,6 @@ picture img {
 .team-card-info {
 	max-width: 530px;
 }
-
 
 /* Current positions */
 .current-positions {
@@ -165,15 +165,15 @@ picture img {
 	align-items: center;
 }
 
-
-.black-text .h3-styles, .black-text .h4-styles {
+.black-text .h3-styles,
+.black-text .h4-styles {
 	text-align: center;
 }
 
-.team-card img, .get-involved img {
+.team-card img,
+.get-involved img {
 	border-radius: var(--border-radius10);
 }
-
 
 /* MODAL STYLES */
 .hidden {
@@ -196,7 +196,8 @@ picture img {
 	backdrop-filter: blur(3px);
 	z-index: 1;
 }
-.natasha-modal, .marsha-modal {
+.natasha-modal,
+.marsha-modal {
 	width: 90%;
 	max-width: 1100px;
 	max-height: 95vh;
@@ -233,10 +234,12 @@ picture img {
 	max-width: 140px;
 }
 /* modal text content */
-.natasha-modal .modal-scroll, .marsha-modal .modal-scroll {
+.natasha-modal .modal-scroll,
+.marsha-modal .modal-scroll {
 	padding: 0px;
 }
-.natasha-modal p, .marsha-modal p {
+.natasha-modal p,
+.marsha-modal p {
 	color: var(--color-onyx);
 }
 
@@ -245,7 +248,8 @@ picture img {
 	flex-direction: column;
 }
 
-.team-card-info-modal .h4-styles, .team-card-info-modal .h5-styles {
+.team-card-info-modal .h4-styles,
+.team-card-info-modal .h5-styles {
 	text-align: center;
 	color: var(--color-onyx);
 	margin: var(--spacing10) 0px;
@@ -404,7 +408,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		line-height: var(--line-height26);
 		cursor: pointer;
 	}
-	
+
 	.get-involved-text .button3:hover,
 	.get-involved-text .button3:focus {
 		color: var(--color-onyx);
@@ -431,7 +435,8 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		right: -50px;
 		top: -50px;
 	}
-	.team-card-info-modal .h4-styles, .team-card-info-modal .h5-styles {
+	.team-card-info-modal .h4-styles,
+	.team-card-info-modal .h5-styles {
 		text-align: left;
 	}
 	.modal-header .team-card-picture {
@@ -442,13 +447,13 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 /* Tablet Only */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
 	/* Add styles that only apply to tablet. These are usually fixes to get resposnivenes right */
-	.header-info .h3-styles, .header-info p {
+	.header-info .h3-styles,
+	.header-info p {
 		margin: 0px;
 	}
 	.header-content picture {
 		max-width: 300px;
 	}
-	
 }
 
 /* Desktop Only */
@@ -467,12 +472,12 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	.team-card-info {
 		max-width: 100%;
 	}
-	
+
 	.team-card p {
 		/* adjust later */
 		margin-top: 8px;
 	}
-	
+
 	.get-involved .h4-styles {
 		font-size: var(--font46);
 		font-weight: var(--font-weight-bold);
@@ -522,7 +527,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 /* for screen sizes 1600 and larger */
 @media screen and (min-width: 1600px) {
 	.team-card-parent {
-	width: 75%;
+		width: 75%;
 	}
 	.team-card {
 		min-height: 320px;
