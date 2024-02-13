@@ -282,6 +282,11 @@ p {
 	font-family: var(--body-font);
 }
 
+time {
+	font-size: var(--font16);
+	font-weight: var(--font-weight-regular);
+}
+
 /* Links */
 a {
 	color: var(--color-white);
@@ -404,6 +409,12 @@ body {
 
 .desktop-nav li {
 	padding: 10px 20px;
+}
+
+.desktop-nav li a:hover,
+.desktop-nav li [aria-current="page"] {
+	border-bottom: 2px solid var(--color-white);
+	text-decoration: none;
 }
 
 .dp-wrapper .button2 {
@@ -616,6 +627,16 @@ footer .policy-links {
 	.ml-form-embedWrapper
 	.ml-form-embedBody
 	.ml-form-embedPermissions
+	.ml-form-embedPermissionsContent.horizontal
+	span {
+	font-size: var(--font16) !important;
+}
+
+.ml-embedded
+	#mlb2-11072124.ml-form-embedContainer
+	.ml-form-embedWrapper
+	.ml-form-embedBody
+	.ml-form-embedPermissions
 	.ml-form-embedPermissionsContent
 	a {
 	color: var(--color-white);
@@ -769,6 +790,8 @@ footer .policy-links {
 }
 
 .policy-page #main-content h1,
+.policy-page #main-content h2,
+.policy-page #main-content h3,
 .policy-page #main-content a {
 	color: var(--color-onyx);
 }
@@ -819,6 +842,11 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		line-height: var(--line-height26);
 		color: var(--color-onyx);
 	}
+
+	time {
+		font-size: var(--font21);
+	}
+
 	.text-input {
 		display: flex;
 		flex-direction: column;
@@ -992,6 +1020,10 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	a {
 		font-weight: var(--font-weight-regular);
 		line-height: var(--line-height26);
+	}
+
+	.button3 a {
+		font-weight: var(--font-weight-bold);
 	}
 }
 

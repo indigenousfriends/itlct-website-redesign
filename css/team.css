@@ -41,27 +41,10 @@ h1 {
 	background-color: var(--color-white);
 	color: var(--color-onyx);
 }
-.button3 {
-	width: 300px;
-	min-height: 50px;
-	padding: var(--spacing10) 0px;
-	border: none;
-	border-radius: var(--border-radius10);
-	background-color: var(--button2-color);
-	color: var(--color-white);
-	font-family: var(--main-font);
-	font-weight: var(--font-weight-bold);
-	font-size: var(--font21);
-}
-.button3:hover {
-	background-color: var(--color-white);
-	color: var(--color-onyx);
-}
 
 .button3 a:hover {
 	text-decoration: none;
 }
-
 /* 
 ===================================
 Section Styles (background, padding, etc.)
@@ -195,7 +178,7 @@ picture img {
 	background-color: rgba(0, 0, 0, 0.406);
 }
 
-.modal-content {
+.team-modal .modal-content {
 	border-radius: var(--border-radius10);
 	background-color: var(--color-white);
 	padding: var(--spacing65);
@@ -277,10 +260,10 @@ picture img {
 	/* overflow: hidden; */
 }
 
-.modal-wrapper {
+.team-modal .modal-wrapper {
 	position: relative;
 }
-.modal-content {
+.team-modal .modal-content {
 	/* overflow-y: scroll; */
 	height: 40%;
 }
@@ -486,16 +469,16 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	/* .modal-wrapper {
 		margin: 50px;
 	} */
-	.modal-header,
+	/* .modal-header, */
 	.team-modal .modal-header {
 		display: flex;
 		flex-direction: row;
 		gap: 5%;
 	}
-	.modal-content {
+	.team-modal .modal-content {
 		height: 55%;
 	}
-	.btn-close {
+	.team-modal .btn-close {
 		right: -50px;
 		top: -50px;
 	}
