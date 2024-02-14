@@ -80,7 +80,7 @@ function populateTeamModal(data) {
 	memberRole.textContent = role;
 
 	// bio
-	appendData(bio, "p", "text", memberBio);
+	appendData(bio, "p", "markup", memberBio);
 }
 
 function generateCards(items) {

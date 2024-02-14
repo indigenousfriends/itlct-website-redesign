@@ -143,10 +143,6 @@ a:focus {
 	cursor: pointer;
 }
 
-a:visited {
-	color: inherit;
-}
-
 .button1 {
 	width: 300px;
 	height: 50px;
@@ -282,6 +278,11 @@ p {
 	font-family: var(--body-font);
 }
 
+time {
+	font-size: var(--font16);
+	font-weight: var(--font-weight-regular);
+}
+
 /* Links */
 a {
 	color: var(--color-white);
@@ -406,6 +407,12 @@ body {
 	padding: 10px 20px;
 }
 
+.desktop-nav li a:hover,
+.desktop-nav li [aria-current="page"] {
+	border-bottom: 2px solid var(--color-white);
+	text-decoration: none;
+}
+
 .dp-wrapper .button2 {
 	display: none;
 }
@@ -513,6 +520,7 @@ footer .policy-links {
 	h4 {
 	margin-top: 0px;
 	margin-bottom: var(--spacing20);
+	line-height: var(--line-height40);
 }
 
 /* Logo and land acknowledgement button container*/
@@ -609,6 +617,16 @@ footer .policy-links {
 	display: flex;
 	justify-content: flex-end;
 	flex-flow: row-reverse;
+}
+
+.ml-embedded
+	#mlb2-11072124.ml-form-embedContainer
+	.ml-form-embedWrapper
+	.ml-form-embedBody
+	.ml-form-embedPermissions
+	.ml-form-embedPermissionsContent.horizontal
+	span {
+	font-size: var(--font16) !important;
 }
 
 .ml-embedded
@@ -736,7 +754,6 @@ footer .policy-links {
 /* modal text content */
 .modal p {
 	color: var(--color-onyx);
-	margin: var(--spacing20);
 }
 
 .modal-header h4 {
@@ -769,6 +786,8 @@ footer .policy-links {
 }
 
 .policy-page #main-content h1,
+.policy-page #main-content h2,
+.policy-page #main-content h3,
 .policy-page #main-content a {
 	color: var(--color-onyx);
 }
@@ -819,6 +838,11 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		line-height: var(--line-height26);
 		color: var(--color-onyx);
 	}
+
+	time {
+		font-size: var(--font21);
+	}
+
 	.text-input {
 		display: flex;
 		flex-direction: column;
@@ -915,6 +939,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	.modal-content {
 		/* overflow-y: auto; */
 		overflow: hidden;
+		font-size: var(--font21);
 	}
 
 	.modal-scroll {
@@ -992,6 +1017,10 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	a {
 		font-weight: var(--font-weight-regular);
 		line-height: var(--line-height26);
+	}
+
+	.button3 a {
+		font-weight: var(--font-weight-bold);
 	}
 }
 

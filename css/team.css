@@ -41,27 +41,10 @@ h1 {
 	background-color: var(--color-white);
 	color: var(--color-onyx);
 }
-.button3 {
-	width: 300px;
-	min-height: 50px;
-	padding: var(--spacing10) 0px;
-	border: none;
-	border-radius: var(--border-radius10);
-	background-color: var(--button2-color);
-	color: var(--color-white);
-	font-family: var(--main-font);
-	font-weight: var(--font-weight-bold);
-	font-size: var(--font21);
-}
-.button3:hover {
-	background-color: var(--color-white);
-	color: var(--color-onyx);
-}
 
 .button3 a:hover {
 	text-decoration: none;
 }
-
 /* 
 ===================================
 Section Styles (background, padding, etc.)
@@ -116,13 +99,14 @@ picture img {
 }
 
 .team-card .h4-styles {
-	margin: var(--spacing20) 0px 0px 0px;
+	margin: 0;
 }
 .team-card .h5-styles {
 	margin: var(--spacing10) 0px;
 }
 .team-card p {
 	color: var(--color-white);
+	font-size: var(--font16);
 }
 
 .team-card-info {
@@ -149,7 +133,9 @@ picture img {
 .get-involved p {
 	margin: 0px 0px var(--spacing40) 0px;
 }
-
+.current-positions p {
+	text-align: center;
+}
 /* get involved section */
 .get-involved {
 	margin-bottom: 140px;
@@ -175,6 +161,10 @@ picture img {
 	border-radius: var(--border-radius10);
 }
 
+.team-card img {
+	max-width: 240px;
+}
+
 /* MODAL STYLES */
 .hidden {
 	display: none;
@@ -195,10 +185,10 @@ picture img {
 	background-color: rgba(0, 0, 0, 0.406);
 }
 
-.modal-content {
+.team-modal .modal-content {
 	border-radius: var(--border-radius10);
 	background-color: var(--color-white);
-	padding: var(--spacing65);
+	padding: var(--spacing20);
 	width: 80%;
 	position: fixed;
 	top: 50%;
@@ -217,13 +207,13 @@ picture img {
 	display: flex;
 	flex-direction: column;
 	gap: var(--spacing-sm);
-	font-size: var(--font21);
 	line-height: var(--line-height28);
+	font-family: var(--body-font);
 }
 
 .modal-scroll-container {
-	/* max-height: calc(85vh - 300px); */
-	overflow-y: auto;
+	max-height: calc(60vh - 300px);
+	overflow-y: scroll;
 	padding-bottom: var(--spacing40);
 }
 
@@ -277,12 +267,11 @@ picture img {
 	/* overflow: hidden; */
 }
 
-.modal-wrapper {
+.team-modal .modal-wrapper {
 	position: relative;
 }
-.modal-content {
-	/* overflow-y: scroll; */
-	height: 40%;
+.team-modal .modal-content {
+	overflow: visible;
 }
 
 .team-modal .modal-header {
@@ -446,14 +435,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		color: var(--color-white);
 		margin-bottom: var(--spacing20);
 	}
-	/* .get-involved-text .button3 {
-		width: 300px;
-		padding: var(--spacing10) 10%;
-		width: 90%;
-		max-width: 350px;
-		background-color: transparent;
-		border: 3px solid #FFF;
-	} */
+
 	.get-involved-text .button3 {
 		width: 300px;
 		height: 50px;
@@ -469,6 +451,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		font-weight: var(--font-weight-bold);
 		line-height: var(--line-height26);
 		cursor: pointer;
+		color: var(--color-white);
 	}
 
 	.get-involved-text .button3:hover,
@@ -486,16 +469,17 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	/* .modal-wrapper {
 		margin: 50px;
 	} */
-	.modal-header,
+	/* .modal-header, */
 	.team-modal .modal-header {
 		display: flex;
 		flex-direction: row;
 		gap: 5%;
 	}
-	.modal-content {
+	.team-modal .modal-content {
 		height: 55%;
+		padding: var(--spacing65);
 	}
-	.btn-close {
+	.team-modal .btn-close {
 		right: -50px;
 		top: -50px;
 	}
