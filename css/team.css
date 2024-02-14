@@ -99,13 +99,14 @@ picture img {
 }
 
 .team-card .h4-styles {
-	margin: var(--spacing20) 0px 0px 0px;
+	margin: 0;
 }
 .team-card .h5-styles {
 	margin: var(--spacing10) 0px;
 }
 .team-card p {
 	color: var(--color-white);
+	font-size: var(--font16);
 }
 
 .team-card-info {
@@ -160,6 +161,10 @@ picture img {
 	border-radius: var(--border-radius10);
 }
 
+.team-card img {
+	max-width: 240px;
+}
+
 /* MODAL STYLES */
 .hidden {
 	display: none;
@@ -208,7 +213,7 @@ picture img {
 
 .modal-scroll-container {
 	max-height: calc(60vh - 300px);
-	overflow-y: auto;
+	overflow-y: scroll;
 	padding-bottom: var(--spacing40);
 }
 

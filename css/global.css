@@ -520,6 +520,7 @@ footer .policy-links {
 	h4 {
 	margin-top: 0px;
 	margin-bottom: var(--spacing20);
+	line-height: var(--line-height40);
 }
 
 /* Logo and land acknowledgement button container*/
@@ -753,7 +754,6 @@ footer .policy-links {
 /* modal text content */
 .modal p {
 	color: var(--color-onyx);
-	margin: var(--spacing20);
 }
 
 .modal-header h4 {
