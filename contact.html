@@ -147,40 +147,17 @@
 				<p>We look forward to connecting!</p>
 			</div>
 			<div>
-				<form action="/data/contact-form.php"
-					name="contactForm"
-					method="post"
-					id="contact-form"
-					class="contact-form">
-					<div class="form-input">
+				<form id="fs-frm" class="contact-form" name="contactForm" accept-charset="utf-8" action="https://formspree.io/f/myyrwpzo" method="post">
+					<fieldset id="fs-frm-inputs" class="form-input">
 						<label for="name" class="hidden">Name</label>
-						<input
-							type="text"
-							name="name"
-							id="name"
-							placeholder="Name"
-							aria-label="name" />
-						<label for="email" class="hidden">Email</label>
-						<input
-							type="email"
-							name="email"
-							id="email"
-							placeholder="Email"
-							aria-label="email" />
+						<input type="text" name="name" id="name" placeholder="Name" aria-label="name" required="">
+						<label for="email-address" class="hidden">Email</label>
+						<input type="email" name="_replyto" id="email" placeholder="Email" aria-label="email" required="">
 						<label for="message" class="hidden">Message</label>
-						<textarea
-							type="text"
-							name="message"
-							id="message"
-							class="message"
-							required="true"
-							placeholder="Message"
-							aria-label="message"></textarea>
-						<div id="form-response-container">
-							<p id="form-response"></p>
-						</div>
-						<button type="submit" class="button2">Send Message</button>
-					</div>
+						<textarea rows="6" name="message" id="message" aria-label="message" placeholder="Message" required=""></textarea>
+						<input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+					</fieldset>
+					<input type="submit" class="button2" value="Send Message">
 				</form>
 			</div>
 		</div>

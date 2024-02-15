@@ -626,7 +626,16 @@ footer .policy-links {
 	.ml-form-embedPermissions
 	.ml-form-embedPermissionsContent.horizontal
 	span {
-	font-size: var(--font16) !important;
+	font-size: 14px !important;
+	line-height: 14px !important;
+}
+
+#mlb2-11072124.ml-form-embedContainer
+	.ml-form-embedWrapper
+	.ml-form-embedBody
+	.ml-form-embedPermissions
+	p {
+	width: 100%;
 }
 
 .ml-embedded
