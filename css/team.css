@@ -509,10 +509,12 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		right: -50px;
 		top: -50px;
 	}
+
 	.team-card-info-modal .h4-styles,
 	.team-card-info-modal .h5-styles {
 		text-align: left;
 	}
+
 	.modal-header .team-card-picture {
 		min-width: auto;
 	}
