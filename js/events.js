@@ -93,7 +93,7 @@ function getSingleEventData() {
 			const description = document.getElementById("description-container");
 			const highlights = document.getElementById("highlights-container");
 			const btnContainer = document.getElementById("button-container");
-			console.log(btnContainer);
+
 			if (data.featured_image.url) {
 				const imageContainer = document.createElement("div");
 				imageContainer.classList.add("template-hero-img");
