@@ -76,7 +76,7 @@ Page Component Styles (icon grid, team member card)
 	min-width: 187px;
 	min-height: 50px;
 	width: auto;
-	margin: var(--spacing40) var(--spacing20) 0;
+	margin: var(--spacing40) auto 0;
 	font-weight: var(--font-weight-bold);
 	font-size: var(--font21);
 }
