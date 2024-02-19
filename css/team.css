@@ -91,7 +91,6 @@ picture img {
 	background: var(--color-teal);
 	border: none;
 	border-radius: var(--border-radius10);
-
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -111,6 +110,10 @@ picture img {
 
 .team-card-info {
 	max-width: 530px;
+}
+
+.team-card .text-container button {
+	margin-top: var(--spacing65);
 }
 
 /* Current positions */
@@ -163,6 +166,7 @@ picture img {
 
 .team-card img {
 	max-width: 240px;
+	margin-bottom: var(--spacing20);
 }
 
 /* MODAL STYLES */
@@ -212,9 +216,14 @@ picture img {
 }
 
 .modal-scroll-container {
-	max-height: calc(60vh - 300px);
+	max-height: calc(90vh - 300px);
 	overflow-y: scroll;
 	padding-bottom: var(--spacing40);
+}
+
+.modal-scroll-container p {
+	color: var(--color-onyx);
+	margin-top: 0px;
 }
 
 .modal-text-container h4 {
@@ -396,6 +405,14 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	}
 	.team-card-picture {
 		min-width: 240px;
+	}
+
+	.team-card img {
+		margin-bottom: 0px;
+	}
+
+	.team-card .text-container button {
+		margin-top: var(--spacing40);
 	}
 
 	/* current positions */

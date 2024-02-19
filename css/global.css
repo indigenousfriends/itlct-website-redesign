@@ -205,6 +205,7 @@ a:focus {
 	border: 3px solid var(--button3-hover-border);
 	background-color: transparent;
 	color: var(--color-dark-onyx);
+	text-decoration: none;
 }
 
 /* 
@@ -553,9 +554,26 @@ footer .policy-links {
 	font-family: var(--font-main) !important;
 }
 
-.ml-embedded button,
+.ml-embedded
+	#mlb2-11072124.ml-form-embedContainer
+	.ml-form-embedWrapper
+	.ml-form-embedBody
+	.ml-form-horizontalRow
+	button,
+.ml-embedded #mlb2-11072124 .ml-mobileButton-horizontal button,
 .ml-embedded input[type="email"] {
-	height: 50px;
+	height: 50px !important;
+}
+
+.ml-embedded
+	#mlb2-11072124.ml-form-embedContainer
+	.ml-form-embedWrapper
+	.ml-form-embedBody
+	.ml-form-horizontalRow
+	button,
+.ml-embedded #mlb2-11072124 .ml-mobileButton-horizontal button {
+	font-family: var(--font-main) !important;
+	font-size: var(--font21) !important;
 }
 
 .ml-embedded
@@ -623,7 +641,6 @@ footer .policy-links {
 	#mlb2-11072124.ml-form-embedContainer
 	.ml-form-embedWrapper
 	.ml-form-embedBody
-	.ml-form-embedPermissions
 	.ml-form-embedPermissionsContent.horizontal
 	span {
 	font-size: 14px !important;
