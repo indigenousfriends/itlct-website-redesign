@@ -496,6 +496,15 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		height: 55%;
 		padding: var(--spacing65);
 	}
+
+	.modal-scroll-container {
+		max-height: calc(60vh - 300px);
+	}
+
+	.modal-scroll-container p {
+		line-height: var(--line-height28);
+	}
+
 	.team-modal .btn-close {
 		right: -50px;
 		top: -50px;
