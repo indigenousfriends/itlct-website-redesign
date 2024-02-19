@@ -82,7 +82,8 @@ html {
 
 .event-detail-container h2,
 .event-detail-container h3,
-.event-detail-container h4 {
+.event-detail-container h4,
+.event-detail-container a {
 	color: var(--color-onyx);
 }
 
