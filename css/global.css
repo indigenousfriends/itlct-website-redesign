@@ -344,6 +344,16 @@ Global Component Styles (buttons, forms, etc.)
 */
 
 /* Buttons */
+
+.button-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: var(--spacing20);
+	margin: var(--spacing40) 0 var(--spacing65);
+}
+
 /* footer submit button */
 .text-input .button2 {
 	border-radius: 10px;
@@ -852,6 +862,10 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 @media screen and (min-width: 768px) {
 	#nav-links-container {
 		top: 80px;
+	}
+
+	.button-container {
+		flex-direction: row;
 	}
 
 	/* Add styles that apply to table and desktop */

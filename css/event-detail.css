@@ -12,6 +12,10 @@ html {
 	padding-right: 20px;
 }
 
+.template-wrapper p {
+	color: var(--color-onyx);
+}
+
 .template-main-header {
 	text-align: center;
 	color: var(--color-onyx);

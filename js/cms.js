@@ -21,7 +21,7 @@ function appendData(data, element, method, dest) {
 				el = document.createElement("a");
 				el.href = data.url;
 				el.textContent = data.title;
-				el.classList.add("btn-main", "btn-hover-drk");
+				el.classList.add("button3");
 				el.target = data.target ? data.target : "_self";
 				dest.appendChild(el);
 			}
