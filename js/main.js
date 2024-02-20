@@ -1,5 +1,4 @@
 /* HEADER */
-console.log("Hello, World!");
 
 // FOR BUTTON DROP DOWN
 
@@ -20,6 +19,40 @@ mobileMenu.addEventListener("click", function () {
 	mobileClose.classList.toggle("hidden");
 	mobileOpen.classList.toggle("hidden");
 });
+
+function getNavigationData() {
+	const apiURL = `https://wp.iftheselandscouldtalk.org/wp-json/wp/v2/pages?slug="home""&acf_format=standard`;
+
+	fetch(`${apiURL}`, {
+		method: "GET",
+		headers: {
+			"Content-Type": "application/json",
+		},
+	})
+		.then(response => response.json())
+		.then(response => {
+			// Page data
+			const data = response[0].acf;
+			const navButton = document.getElementById("nav-button");
+			const navButtonURL = data.navigation.header_navigation_button.url;
+			const navButtonLabel = data.navigation.header_navigation_button.title;
+			const navButtonTarget = data.navigation.header_navigation_button.target;
+
+			if (navButtonURL) {
+				navButton.href = navButtonURL;
+			}
+
+			if (navButtonLabel) {
+				navButton.textContent = navButtonLabel;
+			}
+
+			if (navButtonTarget) {
+				navButton.target = navButtonTarget;
+			}
+		});
+}
+
+getNavigationData();
 
 // Footer Modal
 const modal = document.querySelector(".modal");
