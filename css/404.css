@@ -75,6 +75,15 @@ article {
 	margin: var(--spacing10);
 }
 
+.page-links {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	gap: var(--spacing20);
+	margin: var(--spacing40) 0 var(--spacing20);
+}
+
 /* 
 ===================================
 Media Queries (overriding styles for different screen sizes)
@@ -90,6 +99,10 @@ Media Queries (overriding styles for different screen sizes)
 	h1,
 	p {
 		text-align: center;
+	}
+
+	.page-links {
+		flex-direction: column;
 	}
 }
 
