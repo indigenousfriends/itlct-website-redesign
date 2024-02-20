@@ -461,7 +461,7 @@ nav .img-container {
 
 #nav-links-container {
 	position: absolute;
-	top: 50px;
+	top: 100px;
 	bottom: 0px;
 	right: -20px;
 	z-index: 10;
