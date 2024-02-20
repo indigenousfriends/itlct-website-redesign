@@ -1,0 +1,114 @@
+/*
+===================================
+===================================
+404 Page Styles
+===================================
+===================================
+*/
+
+/* 
+===================================
+Page Component Styles (icon grid, team member card)
+===================================
+*/
+
+/* 
+===================================
+Section Styles (background, padding, etc.)
+===================================
+*/
+
+/* header: resetting min height */
+header {
+	min-height: auto;
+}
+/* 404 styles */
+
+main {
+	/* background and text */
+	background: linear-gradient(0deg, #6c4681 -8.79%, #184f85 132.08%);
+	color: var(--color-onxy);
+
+	/* height */
+	min-height: 90vh;
+	/* centering content for smaller screens */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* text adjustments */
+body h1 {
+	text-align: center;
+	color: var(--color-onxy);
+	margin: var(--spacing40) auto var(--spacing40);
+}
+
+body p,
+body .page-links {
+	color: var(--color-onxy);
+	font-size: var(--font21);
+}
+
+span {
+	display: block;
+	text-transform: uppercase;
+	font-size: var(--font46);
+}
+
+/* layout */
+
+main .wrapper {
+	max-width: 800px;
+}
+article,
+.page-links {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+article {
+	background-color: var(--color-white);
+	border-radius: var(--border-radius10);
+	padding: var(--spacing40);
+	margin: var(--spacing10);
+}
+
+.page-links {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	gap: var(--spacing20);
+	margin: var(--spacing40) 0 var(--spacing20);
+}
+
+/* 
+===================================
+Media Queries (overriding styles for different screen sizes)
+===================================
+*/
+
+/* Tablet and smaller 1024px*/
+@media (max-width: 1024px) {
+}
+
+/* Tablet and smaller 768px */
+@media screen and (max-width: 768px) {
+	h1,
+	p {
+		text-align: center;
+	}
+
+	.page-links {
+		flex-direction: column;
+	}
+}
+
+/* Mobile Only 400px */
+@media screen and (max-width: 470px) {
+	article {
+		padding: var(--spacing-med);
+	}
+}

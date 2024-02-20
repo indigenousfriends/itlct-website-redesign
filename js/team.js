@@ -7,8 +7,7 @@ Modals
 // HTML Reference Variables
 let openModalBtns = document.querySelectorAll(`[data-role="open-modal"]`);
 let closeModalBtns = document.querySelectorAll(`[data-role="close-modal"]`);
-console.log(openModalBtns);
-console.log(closeModalBtns);
+
 // toggle modal on and off
 const toggleModal = modal => {
 	document.body.classList.toggle("disable-scroll");
@@ -42,7 +41,6 @@ document.addEventListener("click", event => {
 
 // escape key on modal
 document.addEventListener("keydown", function (event) {
-	console.log(event);
 	let allModalElements = document.querySelectorAll(".modal-overlay");
 
 	if (event.key === "Escape") {

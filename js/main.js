@@ -20,6 +20,32 @@ mobileMenu.addEventListener("click", function () {
 	mobileOpen.classList.toggle("hidden");
 });
 
+function getNavigationData() {
+	const apiURL = `https://wp.iftheselandscouldtalk.org/wp-json/wp/v2/pages?slug="home""&acf_format=standard`;
+
+	fetch(`${apiURL}`, {
+		method: "GET",
+		headers: {
+			"Content-Type": "application/json",
+		},
+	})
+		.then(response => response.json())
+		.then(response => {
+			// Page data
+			const data = response[0].acf;
+			const navButton = document.getElementById("nav-button");
+			const navButtonURL = data.navigation.header_navigation_button.url;
+			const navButtonLabel = data.navigation.header_navigation_button.title;
+			const navButtonTarget = data.navigation.header_navigation_button.target;
+
+			navButtonURL ? (navButton.href = navButtonURL) : null;
+			navButtonLabel ? (navButton.textContent = navButtonLabel) : null;
+			navButtonTarget ? (navButton.target = navButtonTarget) : null;
+		});
+}
+
+getNavigationData();
+
 // Footer Modal
 const modal = document.querySelector(".modal");
 const overlay = document.querySelector(".overlay-la");

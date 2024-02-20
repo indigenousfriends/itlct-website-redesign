@@ -6,8 +6,6 @@ const natashaBtn = document.querySelector("#natasha-modal-open");
 const marshaBtn = document.querySelector("#marsha-modal-open");
 const bodyTeam = document.body;
 
-console.log(closeModalBtns);
-
 // Function for opening the natasha modal
 const openNatashaModal = function () {
 	natashaModal.classList.remove("hidden");
