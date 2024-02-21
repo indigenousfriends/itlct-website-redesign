@@ -144,9 +144,8 @@ a:focus {
 }
 
 .button1 {
-	width: 300px;
-	height: 50px;
 	margin: 0 auto;
+	padding: var(--spacing10) var(--spacing40);
 	gap: 10px;
 	flex-shrink: 0;
 	border-radius: 10px;
@@ -166,9 +165,7 @@ a:focus {
 }
 
 .button2 {
-	min-width: 187px;
-	min-height: 50px;
-	padding: 10px 40px;
+	padding: var(--spacing10) var(--spacing40);
 	color: var(--color-white);
 	border: none;
 	border-radius: 10px;
@@ -186,9 +183,7 @@ a:focus {
 }
 
 .button3 {
-	min-width: 300px;
-	min-height: 50px;
-	padding: 11px 0px;
+	padding: var(--spacing10) var(--spacing40);
 	border: 3px solid var(--button3-color);
 	border-radius: 10px;
 	background-color: var(--button3-color);
@@ -350,7 +345,7 @@ Global Component Styles (buttons, forms, etc.)
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	gap: var(--spacing20);
+	gap: var(--spacing40);
 	margin: var(--spacing40) 0 var(--spacing65);
 }
 
