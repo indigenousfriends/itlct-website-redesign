@@ -417,9 +417,7 @@ Media Queries (overriding styles for different screen sizes)
 	}
 	.values-head {
 		text-align: left;
-		/* max-width: 475px; */
 		width: 65%;
-		/* padding-left: var(--spacing20); */
 		margin-bottom: 0px;
 	}
 	.values-head p {
