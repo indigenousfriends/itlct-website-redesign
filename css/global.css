@@ -114,7 +114,7 @@ Variables (colors, text, spacing, etc.)
 
 	/* Wrappers */
 	--wrapper-width-max: 1328px;
-	--desktop-wrapper-width: 90%;
+	--desktop-wrapper-width: 85%;
 	--mobile-wrapper-width: 95%;
 }
 
@@ -1046,6 +1046,8 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		width: var(--desktop-wrapper-width);
+		max-width: var(--wrapper-width-max);
 	}
 
 	.logo-icon {
