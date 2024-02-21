@@ -53,7 +53,7 @@ Hero Section
 .hero h1,
 .hero p {
 	color: var(--color-onyx);
-	margin: var(--spacing20);
+	margin: 0 0 var(--spacing40);
 }
 
 /* ================================
@@ -231,7 +231,7 @@ Events and Programs Section
 }
 
 .events-container .card {
-	flex: 0 1 33%;
+	flex: 0 0 320px;
 }
 
 /* overriding global styles*/
@@ -502,7 +502,8 @@ Events and Programs Section
 /* Desktop Only */
 @media screen and (min-width: 1025px) {
 	section .wrapper {
-		max-width: 1130px;
+		width: var(--desktop-wrapper-width);
+		max-width: var(--wrapper-width-max);
 	}
 
 	/* ================================
@@ -529,11 +530,11 @@ Hero Section
 	}
 
 	/* contains heading, paragraph, and buttons for the hero image */
-	.hero-home {
+	.hero-home.wrapper {
 		position: absolute;
 		z-index: 10;
 		bottom: 10%;
-		max-width: var(--wrapper-width-max);
+		max-width: var(--wrapper-width-max-sm);
 		left: 50%;
 		transform: translate(-50%, 0%);
 	}
@@ -619,7 +620,7 @@ Community Partnerships Section
 	/* overriding the .wrapper class */
 	.community-partnerships.wrapper {
 		margin: 0 auto;
-		max-width: 1130px;
+		max-width: 1328px;
 	}
 
 	/* ================================

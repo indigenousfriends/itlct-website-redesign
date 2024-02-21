@@ -114,7 +114,8 @@ Variables (colors, text, spacing, etc.)
 
 	/* Wrappers */
 	--wrapper-width-max: 1328px;
-	--desktop-wrapper-width: 90%;
+	--wrapper-width-max-sm: 1080px;
+	--desktop-wrapper-width: 85%;
 	--mobile-wrapper-width: 95%;
 }
 
@@ -144,9 +145,8 @@ a:focus {
 }
 
 .button1 {
-	width: 300px;
-	height: 50px;
 	margin: 0 auto;
+	padding: var(--spacing10) var(--spacing40);
 	gap: 10px;
 	flex-shrink: 0;
 	border-radius: 10px;
@@ -166,9 +166,7 @@ a:focus {
 }
 
 .button2 {
-	min-width: 187px;
-	min-height: 50px;
-	padding: 10px 40px;
+	padding: var(--spacing10) var(--spacing40);
 	color: var(--color-white);
 	border: none;
 	border-radius: 10px;
@@ -186,9 +184,7 @@ a:focus {
 }
 
 .button3 {
-	min-width: 300px;
-	min-height: 50px;
-	padding: 11px 0px;
+	padding: var(--spacing10) var(--spacing40);
 	border: 3px solid var(--button3-color);
 	border-radius: 10px;
 	background-color: var(--button3-color);
@@ -350,7 +346,7 @@ Global Component Styles (buttons, forms, etc.)
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	gap: var(--spacing20);
+	gap: var(--spacing40);
 	margin: var(--spacing40) 0 var(--spacing65);
 }
 
@@ -896,9 +892,24 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	.text-input .button2 {
 		margin-left: 0px;
 	}
+
 	form p {
 		width: 100%;
 		padding-bottom: var(--spacing10);
+	}
+
+	/* Hero Styles */
+	#hero {
+		padding-top: 0;
+	}
+
+	#hero p {
+		line-height: var(--line-height32);
+	}
+
+	#hero #hero-heading {
+		font-size: var(--font56);
+		line-height: var(--line-height58);
 	}
 
 	/* Footer styles */
@@ -1051,6 +1062,12 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		width: var(--desktop-wrapper-width);
+		max-width: var(--wrapper-width-max);
+	}
+
+	#hero .dp-wrapper {
+		align-items: flex-start;
 	}
 
 	.logo-icon {

@@ -412,7 +412,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	}
 
 	.team-card .text-container button {
-		margin-top: var(--spacing40);
+		margin-top: var(--spacing20);
 	}
 
 	/* current positions */
@@ -454,7 +454,6 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	}
 
 	.get-involved-text .button3 {
-		width: 300px;
 		height: 50px;
 		margin: 0 auto;
 		margin-left: 0px;
@@ -575,8 +574,9 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 /* for screen sizes 1300 and larger */
 @media screen and (min-width: 1300px) {
 	.header-content {
-		width: 62%;
-		gap: 15%;
+		/* width: 62%; */
+		max-width: var(--wrapper-width-max-sm);
+		gap: initial;
 	}
 	.header-content .h3-styles {
 		font-size: var(--font56);
@@ -592,6 +592,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		width: 48%;
 		padding: var(--spacing20);
 		min-height: 375px;
+		align-items: flex-start;
 	}
 	.team-card-picture {
 		width: 200px;
@@ -606,7 +607,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		width: 75%;
 	}
 	.team-card {
-		min-height: 320px;
+		min-height: auto;
 	}
 
 	.get-involved-text {
