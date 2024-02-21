@@ -149,7 +149,6 @@ Media Queries (overriding styles for different screen sizes)
 		z-index: 10;
 		top: 43%;
 		max-width: 40%;
-		/* min-width: 400px; */
 		padding: 0px var(--spacing65);
 		border: 2px solid transparent;
 		left: 31%;
