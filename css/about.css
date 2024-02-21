@@ -28,8 +28,11 @@ Page Component Styles (icon grid, team member card)
 
 .hero-text {
 	border: 2px solid transparent;
-	padding: 0px var(--spacing65);
-	max-width: 40%;
+	padding: var(--spacing40) var(--spacing20);
+}
+
+.hero-text p {
+	margin-bottom: 0;
 }
 
 .h3-styles,
@@ -145,8 +148,9 @@ Media Queries (overriding styles for different screen sizes)
 		position: absolute;
 		z-index: 10;
 		top: 43%;
-		width: 50%;
+		max-width: 40%;
 		/* min-width: 400px; */
+		padding: 0px var(--spacing65);
 		border: 2px solid transparent;
 		left: 31%;
 		transform: translate(-50%, -33%);
