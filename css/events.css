@@ -54,7 +54,6 @@ Section Styles (background, padding, etc.)
 	text-align: center;
 }
 
-
 /* Event Page Cards */
 .event-page-cards {
 	margin: var(--spacing100) 0px;
@@ -209,7 +208,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 /* Tablet and Larger */
 @media screen and (min-width: 768px) {
 	/* Add styles that apply to table and desktop */
-	
+
 	/* Title/Hero section */
 	.title-img {
 		display: none;
@@ -226,8 +225,14 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	.title-text {
 		width: 100%;
 		height: 100%;
-		background: linear-gradient(92deg, rgba(9, 9, 9, 0.77) 40.35%, rgba(9, 9, 9, 0.74) 44.51%, rgba(9, 9, 9, 0.71) 48.63%, rgba(9, 9, 9, 0.00) 83.13%);
-		
+		background: linear-gradient(
+			92deg,
+			rgba(9, 9, 9, 0.77) 40.35%,
+			rgba(9, 9, 9, 0.74) 44.51%,
+			rgba(9, 9, 9, 0.71) 48.63%,
+			rgba(9, 9, 9, 0) 83.13%
+		);
+
 		/* aligning the title text div */
 		display: flex;
 		align-items: center;
@@ -236,14 +241,14 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		/* adding width instead of margin for responsiveness */
 		width: 70%;
 		margin: 0 auto;
-		
+
 		display: flex;
 		flex-direction: column;
 	}
 	.title-text p,
 	.title-text .h2-styles {
 		/* adding width to make sure text stays on left side */
-		width: 40%;
+		width: 48%;
 		text-align: left;
 		color: var(--color-white);
 	}
@@ -255,7 +260,6 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	.title-text p {
 		line-height: var(--line-height32);
 	}
-
 
 	/* hiding the div that's below the card title */
 	.event-page-card-text {
@@ -269,7 +273,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		justify-content: center;
 		gap: var(--spacing20);
 	}
-	
+
 	/* Network card */
 	.card-item1 .event-page-card-img {
 		background-image: url("/assets/images/pages/event-program/desktop/network-d.jpg");
@@ -296,7 +300,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		/* positioning for the card title */
 		position: relative;
 	}
-	
+
 	.event-page-card-title {
 		height: 110px;
 		margin: 0px;
@@ -313,22 +317,37 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 
 	/* page card title background color changes */
 	.card-item1 .event-page-card-title {
-		background: linear-gradient(60deg, #195085 55.81%, rgba(66, 66, 65, 0.00) 70.18%);
+		background: linear-gradient(
+			60deg,
+			#195085 55.81%,
+			rgba(66, 66, 65, 0) 70.18%
+		);
 	}
 	.card-item2 .event-page-card-title {
-		background: linear-gradient(60deg, #563867 55.81%, rgba(66, 66, 65, 0.00) 70.18%);
+		background: linear-gradient(
+			60deg,
+			#563867 55.81%,
+			rgba(66, 66, 65, 0) 70.18%
+		);
 	}
 	.card-item3 .event-page-card-title {
-		background: linear-gradient(60deg, #955C17 55.81%, rgba(66, 66, 65, 0.00) 70.18%);
+		background: linear-gradient(
+			60deg,
+			#955c17 55.81%,
+			rgba(66, 66, 65, 0) 70.18%
+		);
 	}
 	.card-item4 .event-page-card-title {
-		background: linear-gradient(60deg, #017B80 55.81%, rgba(66, 66, 65, 0.00) 70.18%);
+		background: linear-gradient(
+			60deg,
+			#017b80 55.81%,
+			rgba(66, 66, 65, 0) 70.18%
+		);
 	}
 
-	
 	/* Upcoming Events */
 	/* Previous Events */
-	
+
 	/* Displaying larger screen only events */
 	.larger-screen {
 		display: block;
@@ -343,13 +362,12 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		font-size: var(--font46);
 		line-height: var(--line-height50);
 	}
-
 }
 
 /* Desktop Only */
 @media screen and (min-width: 1300px) {
 	/* Add styles that apply specifically to desktop */
-	
+
 	/* page cards */
 	.event-page-cards {
 		/* adding top and bottom margin to section for desktop */
@@ -370,10 +388,9 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		font-size: var(--font36);
 		line-height: var(--line-height40);
 	}
-	
+
 	/* Upcoming/previous title margin bottom */
 	.h4-title {
 		margin-bottom: var(--spacing65);
 	}
-
 }
