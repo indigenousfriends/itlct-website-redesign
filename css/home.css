@@ -47,6 +47,7 @@ Hero Section
 .hero-home {
 	display: flex;
 	flex-direction: column;
+	padding: var(--spacing40) var(--spacing10);
 }
 
 /* overriding global styles */
