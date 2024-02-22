@@ -38,9 +38,17 @@ function getNavigationData() {
 			const navButtonLabel = data.navigation.header_navigation_button.title;
 			const navButtonTarget = data.navigation.header_navigation_button.target;
 
-			navButtonURL ? (navButton.href = navButtonURL) : null;
-			navButtonLabel ? (navButton.textContent = navButtonLabel) : null;
-			navButtonTarget ? (navButton.target = navButtonTarget) : null;
+			if (navButton && navButtonURL) {
+				navButton.href = navButtonURL;
+			}
+
+			if (navButton && navButtonLabel) {
+				navButton.textContent = navButtonLabel;
+			}
+
+			if (navButton && navButtonTarget) {
+				navButton.target = navButtonTarget;
+			}
 		});
 }
 
