@@ -105,7 +105,7 @@ document.addEventListener("keydown", function (e) {
 	window,
 	document,
 	"script",
-	"https://assets.mailerlite.com/js/universal.js",
+	"https://assets.mailerlite.com/js/universal.js?v=3",
 	"ml",
 );
 ml("account", "764283");
